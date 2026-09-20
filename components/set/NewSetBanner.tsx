@@ -5,9 +5,10 @@ import { safeGet, safeSet } from "@/lib/storage";
 
 export function NewSetBanner({ setNumber }: { setNumber: number }) {
   const key = `tftlab.banner.set-${setNumber}.dismissed`;
-  const [hidden, setHidden] = useState(true);
+  // Rendered in the static HTML by default; hidden after hydration only if dismissed before.
+  const [hidden, setHidden] = useState(false);
   useEffect(() => {
-    setHidden(safeGet(key) === "1");
+    if (safeGet(key) === "1") setHidden(true);
   }, [key]);
   if (hidden) return null;
   return (

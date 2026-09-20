@@ -11,11 +11,14 @@ const cinzel = Cinzel({
   display: "swap",
 });
 
+// Body text uses `optional`: on a slow connection the system fallback stays,
+// which keeps the first paragraph (the LCP element on guide pages) from being
+// re-painted late by the font swap. Headings keep `swap` because Cinzel is the look.
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   weight: ["400", "600"],
-  display: "swap",
+  display: "optional",
 });
 
 export const metadata: Metadata = {
