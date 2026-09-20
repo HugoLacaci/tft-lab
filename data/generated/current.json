@@ -1,7 +1,7 @@
 {
-  "setNumber": 0,
-  "setName": "Not synced",
-  "mutator": "",
-  "syncedAt": "1970-01-01T00:00:00.000Z",
-  "patch": "0.0"
+  "setNumber": 18,
+  "setName": "Set10",
+  "mutator": "TFTSet18",
+  "syncedAt": "2026-09-20T16:52:59.914Z",
+  "patch": "16.18"
 }

@@ -44,7 +44,7 @@ describe("cdragonAsset", () => {
   });
   it("produces a safe local filename", () => {
     expect(localAssetName("assets/maps/tft/icons/augments/hexcore/caretaker_s-chosen-i.tex")).toBe(
-      "caretaker_s-chosen-i.png",
+      "hexcore__caretaker_s-chosen-i.png",
     );
   });
 });

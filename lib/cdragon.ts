@@ -27,9 +27,15 @@ export function cdragonAsset(path: string): string {
   return CDRAGON_GAME + p;
 }
 
-/** Stable local filename for a mirrored asset: keep the basename, force .png. */
+/**
+ * Stable local filename for a mirrored asset: "<parent-folder>__<basename>.png".
+ * The parent folder is kept because basenames collide across folders
+ * (augments/hexcore/boosterpack1_ii.png vs augments/choiceui/boosterpack1_ii.png).
+ */
 export function localAssetName(path: string): string {
   const url = cdragonAsset(path);
-  const base = url.slice(url.lastIndexOf("/") + 1);
-  return base.replace(/[^a-z0-9._-]/g, "_");
+  const parts = url.split("/");
+  const base = parts[parts.length - 1]!;
+  const parent = parts[parts.length - 2] ?? "";
+  return `${parent}__${base}`.replace(/[^a-z0-9._-]/g, "_");
 }
