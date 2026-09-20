@@ -1,0 +1,42 @@
+{
+  "id": "pivot-contested-after-2-1-scout",
+  "category": "pivot",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1 augment round. You opened with a pair of the 1-cost carry of a reroll line you like. Scouting shows three players holding that carry and one of them already has a pair too. What is your plan?",
+  "state": {
+    "stage": "2-1",
+    "gold": 12,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 6,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 1, "items": ["generic:item:ad"] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-1", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:carry-1", "generic:tank-2", "generic:caster-1", "generic:bruiser-2", "generic:support-1"],
+    "items": ["generic:item:ap"],
+    "lobby": [
+      { "player": "Seat 2", "hp": 100, "note": "Pair of your carry on board, AD items" },
+      { "player": "Seat 5", "hp": 100, "note": "One copy of your carry, holding an AD component" },
+      { "player": "Seat 7", "hp": 100, "note": "One copy, playing the same trait" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "force", "label": "Commit: you have the pair, roll early to win the race" },
+      { "id": "flex", "label": "Keep the pair, play a flexible opener, decide at 3-2 based on who drops it" },
+      { "id": "sell", "label": "Sell the pair now and buy the tank pair from the shop" }
+    ],
+    "correct": ["flex"]
+  },
+  "explanation": "Three players on a reroll carry means the pool is split four ways; the 3-star needs 9 copies out of a pool that is already 4+ copies lighter. Winning that race from a pair requires rolling gold you do not have at 2-1. But selling now is also wrong: contest at 2-1 is soft. Two of those three players will be pushed off the line by their 2-1 augment or a bad 2-5, and the one who stays is the one you need to know about.\n\nThe correct plan is to keep the pair (it costs one bench slot and 2 gold of tempo), play the strongest board for stage 2 regardless of trait, and re-scout at 3-2. If two players are still holding at 3-2, you pivot with no loss; if they dropped it, you were the one who held.",
+  "principle": "Contest is read at 3-2, not decided at 2-1.",
+  "guideLink": "/guides/pivoting#reading-contest",
+  "commonMistake": "Forcing because \"I have the pair\". A pair is 2 of 9 copies; it is not a lead."
+}

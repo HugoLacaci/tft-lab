@@ -1,0 +1,41 @@
+{
+  "id": "hp-management-greed-at-25-hp-stage-4",
+  "category": "hp-management",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-3. You are at 25 HP, level 8 with 54 gold, on a 4-loss streak. Your board is uncapped: the 4-cost carry is 1-star. The lobby averages 12–15 damage per loss at this stage. What do you do?",
+  "state": {
+    "stage": "4-3",
+    "gold": 54,
+    "hp": 25,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": { "type": "loss", "count": 4 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 1, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-4", "generic:caster-2", "generic:support-1", "generic:bruiser-4"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "hold", "label": "Hold 50 for interest, level 9 at 5-1, then roll for a stronger cap" },
+      { "id": "roll-now", "label": "Roll down to ~10 gold now for 2-star 4-costs and stabilise" },
+      { "id": "roll-half", "label": "Roll to 30, keeping 3 interest" }
+    ],
+    "correct": ["roll-now"]
+  },
+  "explanation": "At 25 HP with 12–15 damage per loss you have two losses left, and the second one might kill you. Interest is worth 5 gold a round; being alive is worth the game. Holding for level 9 means one more loss at 4-3, one at 4-5, and you enter stage 5 at ~0 HP if you enter at all. The rolldown at 8 is where your 4-cost odds are highest relative to your gold, the shop already shows a copy of your carry, and a 2-star carry plus a 2-star tank is the difference between losing by 3 units and winning.\n\nRolling to 30 is the half-measure that loses both ways: you give up the interest anyway and you stop before the odds pay off. If you are going to break 50, break it fully and with a stop condition (both 4-costs 2-starred, or 10 gold).",
+  "principle": "Below the two-loss line, HP is the only resource that matters. Spend gold to stop the bleeding.",
+  "guideLink": "/guides/hp#thresholds",
+  "commonMistake": "Rolling \"a bit\" to stay above 30. Half a rolldown gets you half the units and none of the interest."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "econ-rolling-at-3-5-stable-board",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5. You are level 6 with 46 gold on a win streak of 3, your board is two-starred and beating most of the lobby. Nothing in the shop upgrades you. You are 4 gold off 50. What do you do this round?",
+  "state": {
+    "stage": "3-5",
+    "gold": 46,
+    "hp": 84,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": { "type": "win", "count": 3 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:ad"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:caster-1", "generic:bruiser-2", "generic:support-2", "generic:carry-1"],
+    "items": ["generic:item:ap"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "roll", "label": "Roll 2–3 times looking for an upgrade; you are winning anyway" },
+      { "id": "hold", "label": "Buy nothing, bank to 50+ next round, keep the streak and the interest" },
+      { "id": "level", "label": "Buy 4 XP toward level 7 now" },
+      { "id": "buy", "label": "Buy the pair of 2-cost bruisers for a future 3-star" }
+    ],
+    "correct": ["hold"]
+  },
+  "explanation": "You are one round from full interest with a board that already wins. Rolling here spends 2 gold per roll at level 6 odds for a shop that is mostly 1- and 2-costs you do not need, and it delays your first 5-interest round by one or two turns. Every round you sit at 50+ is worth 1 gold more than 40+, compounding into the 4-1 level or the 4-2 rolldown. The win streak is doing the work for you: keep it by not touching the board.\n\nLeveling is the second-best option, but 3-5 is early for 7 on a stable board; you want to hit 50 first so that leveling at 4-1 costs you no interest. Buying the bruiser pair is a common Emerald reflex that ties up 4 gold in a unit you will not 3-star without committing to a reroll plan you have not chosen.",
+  "principle": "50 gold is a floor you reach as fast as possible, not a target you drift toward.",
+  "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+  "commonMistake": "\"Rolling a little\" because the board is strong and you feel safe. The safety is exactly why you should not roll: you have nothing to fix."
+}

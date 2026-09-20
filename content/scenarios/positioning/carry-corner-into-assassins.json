@@ -1,0 +1,42 @@
+{
+  "id": "positioning-carry-corner-into-assassins",
+  "category": "positioning",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2. You scouted: two of the three boards you can face next have assassins that jump to the backline. Your 4-cost AD carry is on the bench after an item swap. Place it.",
+  "state": {
+    "stage": "4-2",
+    "gold": 52,
+    "hp": 58,
+    "level": 8,
+    "xpToNext": 30,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 2, "col": 1, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:caster-3", "row": 3, "col": 1, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": [null, null, null, null, null],
+    "items": [],
+    "enemyBoard": [
+      { "championId": "generic:assassin-3", "row": 3, "col": 0, "star": 2, "items": [] },
+      { "championId": "generic:assassin-4", "row": 3, "col": 6, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:carry-4",
+    "correctHexes": [{ "row": 3, "col": 3 }, { "row": 3, "col": 4 }, { "row": 2, "col": 3 }]
+  },
+  "explanation": "Assassins jump to the hex furthest from them, which in practice means the back corners. A carry in the corner is exactly where both enemy assassins land. Move the carry to the middle of the back two rows, surrounded by the bruisers you already placed on row 2 as bodyguards. The assassins now land on the corners, hit a 2-star bruiser or nothing, and your carry keeps shooting. Row 2 centre is acceptable too: it is out of assassin landing zones and still behind the frontline.\n\nAgainst the third opponent (no assassins) the corner would be right, but you place for the two boards you are likely to face, not the one that is comfortable.",
+  "principle": "Position against the threats you scouted, not against the default.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Corner-by-default. It is the right answer against most boards, which is why it becomes a habit you stop thinking about."
+}

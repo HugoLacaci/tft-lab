@@ -1,0 +1,35 @@
+{
+  "id": "items-who-gets-the-tank-item",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-1. You just completed a defensive item. Your frontline is a 2-star 3-cost tank, a 2-star 2-cost bruiser and a 1-star 1-cost tank on the wing. Who holds it?",
+  "state": {
+    "stage": "3-1",
+    "gold": 31,
+    "hp": 78,
+    "level": 6,
+    "xpToNext": 8,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 5, "star": 1, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-2", "generic:carry-1", "generic:caster-3", "generic:support-1", "generic:bruiser-1"],
+    "items": ["generic:item:tank-completed"]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:tank-completed",
+    "correctUnitIds": ["generic:tank-3"]
+  },
+  "explanation": "The tank item goes on the unit that will be your frontline for the longest and takes the most damage: the 2-star 3-cost tank in the centre. It has the highest base HP and resistances, so flat defensive stats and percentage effects both do more on it, and it is the unit enemies target first when they walk in. The 1-cost on the wing will be sold at 4-1; an item on it is an item you have to move later, which is free in the planning phase but costs you the rounds you forget. The bruiser is a reasonable second holder if you ever hold two tank items, but never the first.",
+  "principle": "Tank items go on the unit that will still be your frontline three stages from now.",
+  "guideLink": "/guides/items#who-gets-the-tank-item",
+  "commonMistake": "Itemising the unit currently dying first (the wing 1-cost) instead of the unit you want to keep alive."
+}

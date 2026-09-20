@@ -1,0 +1,39 @@
+{
+  "id": "carousel-fourth-component-vs-slam",
+  "category": "carousel",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-4 carousel. You hold three loose components: two AD and one defensive. Your 3-cost carry has one completed item and is doing all your damage. The carousel offers an AD component, a defensive component, and a completed carry item on a unit you do not need. What do you take?",
+  "state": {
+    "stage": "3-4",
+    "gold": 38,
+    "hp": 66,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-1", "generic:support-1", "generic:bruiser-2"],
+    "items": ["generic:item:ad", "generic:item:ad", "generic:item:tank"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "ad", "label": "AD component: it pairs with the AD you hold for a BIS carry item" },
+      { "id": "tank", "label": "Defensive component: completes a tank item on the frontline this round" },
+      { "id": "completed", "label": "The completed carry item, even though the unit is useless" }
+    ],
+    "correct": ["completed"]
+  },
+  "explanation": "You are on a loss streak at 66 HP with three loose components and one itemised unit. The board's problem is not damage: it is that your frontline holds nothing. The completed carry item is two components of value that you can slam immediately (sell the unit, keep the item), and it lets you keep the two AD components for the pair you already own. That is the most total item power out of the carousel.\n\nThe AD component is the trap: it makes a fourth loose component. You would hold four components \"waiting for BIS\" while losing 8 HP a round. The defensive component is a fine second choice because it completes a tank item now, which is what a losing board needs. But the completed item gives you that *and* keeps the defensive pair in hand.",
+  "principle": "On carousel, take the most item power you can use this round, not the component that completes a plan.",
+  "guideLink": "/guides/items#carousel-priority",
+  "commonMistake": "Grabbing the component that matches your carry's BIS while your board bleeds HP with a naked frontline."
+}

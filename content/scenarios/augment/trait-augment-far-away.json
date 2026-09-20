@@ -1,0 +1,39 @@
+{
+  "id": "augment-trait-augment-far-away",
+  "category": "augment",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 augment. You are level 6 with 34 gold at 72 HP. Your board is a generic frontline with a 3-cost AD carry. The Trait Crest offered is for a vertical whose two best carries you have seen two other players buy every round. Which augment do you take?",
+  "state": {
+    "stage": "3-2",
+    "gold": 34,
+    "hp": 72,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-1", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:support-1", "generic:bruiser-3"],
+    "items": ["generic:item:ad", "generic:item:tank"],
+    "lobby": [
+      { "player": "Seat 3", "hp": 80, "note": "Holding both carries of that vertical, 2-starring one" },
+      { "player": "Seat 6", "hp": 65, "note": "Also on that vertical, took its Heart at 2-1" }
+    ]
+  },
+  "question": {
+    "type": "augment",
+    "options": ["generic:aug:trait-crest", "generic:aug:combat-backline-as", "generic:aug:item-component"],
+    "correct": "generic:aug:item-component"
+  },
+  "explanation": "The Crest is the strongest augment on paper and the worst for this seat. You have zero units of the trait, and the two players already on it will eat the pool; you would need the emblem *and* to hit contested carries at level 7 odds. The framework is: can I build it from here? No. Does it fit my econ plan? It forces a reroll or an early level you have not saved for. Is it a floor-raiser given HP? It raises nothing until you hit.\n\nThe Component Anvil slams a completed item this round on the carry you already have, converting your two loose components into a real item now. That is a floor-raiser at 72 HP that keeps every line open. Backline Tempo is fine but scales with a carry you may replace; the component is the more flexible power.",
+  "principle": "Evaluate an augment against the board you have, not the board it advertises.",
+  "guideLink": "/guides/augments#the-evaluation-framework",
+  "commonMistake": "Picking the highest-tier or highest-winrate augment. The stats site number belongs to players who hit; two of them are already in your lobby."
+}

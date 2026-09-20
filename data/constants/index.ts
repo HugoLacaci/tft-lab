@@ -36,9 +36,9 @@ export interface SetConstants {
   notes?: string[];
 }
 
-import set18 from "./set-18";
+import set18 from "./set-18"; // set-nocheck: the one explicit registry of per-set constant files
 
-const FILES: SetConstants[] = [set18];
+const FILES: SetConstants[] = [set18]; // set-nocheck
 
 export function getConstants(setNumber: number = CURRENT_SET.setNumber): SetConstants & { stale: boolean } {
   const exact = FILES.find((f) => f.setNumber === setNumber);

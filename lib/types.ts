@@ -4,7 +4,7 @@ export type { Cost, TraitStyle };
 /** Normalised, upstream-independent set data. The UI only ever sees these. */
 
 export interface Champion {
-  id: string; // apiName, e.g. "TFT18_Ivern" or "DA_18_Ivern"
+  id: string; // upstream apiName (prefix varies per set)
   name: string;
   cost: Cost;
   traits: string[]; // trait ids

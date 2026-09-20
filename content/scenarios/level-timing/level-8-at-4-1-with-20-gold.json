@@ -1,0 +1,40 @@
+{
+  "id": "level-timing-level-8-at-4-1-with-20-gold",
+  "category": "level-timing",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 7 with 20 gold, 61 HP, board is fine but not scaling. Next round (4-2) is an augment round. You have 12 XP to level 8. Do you level now?",
+  "state": {
+    "stage": "4-1",
+    "gold": 20,
+    "hp": 61,
+    "level": 7,
+    "xpToNext": 12,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-4", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-2", "generic:bruiser-1", "generic:caster-3", "generic:support-1", "generic:tank-3"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "level-now", "label": "Level to 8 now (12 gold) and roll the remaining 8 for 4-costs" },
+      { "id": "hold-42", "label": "Hold. Take the 4-2 augment, then level and roll with ~30 gold" },
+      { "id": "roll-7", "label": "Roll down at 7 for 3-cost upgrades" }
+    ],
+    "correct": ["hold-42"]
+  },
+  "explanation": "Leveling at 4-1 with 20 gold gives you level 8 odds with 8 gold to spend: two rolls. That is not a rolldown; it is a hope. At 4-2 you gain the augment, 5 base income plus interest and the win/loss gold, so you enter the round with roughly 30 gold and, more importantly, you know which augment you took. An augment that gives gold, XP or a component changes what the level-8 rolldown is for. Leveling before you see it means committing to a plan the augment might overrule.\n\nThe board has enough 2-stars to survive one more round of a 1-loss streak at 61 HP. Rolling at 7 for 3-cost upgrades is worst: you are already 2-starred where it matters and 3-cost odds at 7 mostly find units you cannot fit.",
+  "principle": "Around an augment round, level after the augment, not before it.",
+  "guideLink": "/guides/leveling#augment-rounds-change-the-timing",
+  "commonMistake": "Treating \"level 8 at 4-1\" as a rule rather than as \"level 8 with enough gold to roll\"."
+}

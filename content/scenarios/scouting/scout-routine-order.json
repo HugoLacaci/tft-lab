@@ -1,0 +1,40 @@
+{
+  "id": "scouting-scout-routine-order",
+  "category": "scouting",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "It is the planning phase of 3-2 and you have about 25 seconds. Put the scouting steps in the order that gives you the most decision-relevant information for the time.",
+  "state": {
+    "stage": "3-2",
+    "gold": 41,
+    "hp": 74,
+    "level": 6,
+    "xpToNext": 10,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:support-1", "generic:bruiser-1"],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Check the player you are most likely to face next: their frontline shape and where their carry sits",
+      "Check who else holds the units you are trying to hit (the contest)",
+      "Check the strongest board in the lobby to see how far behind your board is",
+      "Read the augments the top two players took"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "Scouting is worthless unless it changes a decision, so you order it by which decision it changes first. The next opponent changes this round's positioning, which is the only decision you cannot undo after the timer ends. The contest changes whether you roll or hold gold, which you decide before the next combat. The lobby's strongest board tells you how urgent stabilising is over the next two rounds. Augments on the top players are context that matters at 4-2 and later; they are last because they rarely change what you do this round.",
+  "principle": "Scout in the order of the decisions the information changes: positioning now, rolling next, tempo after.",
+  "guideLink": "/guides/scouting#the-scout-routine",
+  "commonMistake": "Starting with the strongest board because it is the most interesting, and running out of timer before checking the opponent you actually fight."
+}
