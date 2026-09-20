@@ -1,0 +1,13 @@
+{
+  "note": "Units that reach the board through traits, augments or wisps. Riot ships stats only for the Training Dummy and the PvE monsters; the Elderwood plants are not in the game files, so their numbers are estimates for the simulator (marked in the picker).",
+  "verifiedOn": "2026-09-21",
+  "summons": [
+    { "id": "summon:training-dummy", "name": "Training Dummy", "role": "tank", "hp": 550, "ad": 0, "armor": 30, "mr": 30, "range": 1, "attackSpeed": 0.0, "note": "Does nothing; soaks damage. Stats from the game files.", "estimated": false },
+    { "id": "summon:stonebark-tree", "name": "Stonebark Tree", "role": "tank", "hp": 1100, "ad": 0, "armor": 60, "mr": 60, "range": 1, "attackSpeed": 0.0, "note": "Elderwood 3: a placeable tree that only tanks. Stats estimated.", "estimated": true },
+    { "id": "summon:lifebloom", "name": "Lifebloom", "role": "support", "hp": 700, "ad": 0, "armor": 30, "mr": 30, "range": 2, "attackSpeed": 0.5, "abilityDesc": "Heals the lowest ally over time.", "note": "Elderwood 3: a healing plant. Stats estimated.", "estimated": true },
+    { "id": "summon:deepwood-protector", "name": "Deepwood Protector", "role": "bruiser", "hp": 1600, "ad": 90, "armor": 50, "mr": 50, "range": 1, "attackSpeed": 0.7, "abilityDesc": "Slams nearby enemies.", "note": "Elderwood 7: a bruiser plant. Stats estimated.", "estimated": true },
+    { "id": "summon:voidspawn", "name": "Voidspawn", "role": "bruiser", "hp": 900, "ad": 60, "armor": 30, "mr": 30, "range": 1, "attackSpeed": 0.6, "note": "Generic summoned minion (Summoner trait). Stats estimated.", "estimated": true },
+    { "id": "summon:krug", "name": "Krug (summon)", "role": "tank", "hp": 1200, "ad": 110, "armor": 40, "mr": 40, "range": 1, "attackSpeed": 0.6, "note": "PvE Krug stats from the game files.", "estimated": false },
+    { "id": "summon:murkwolf", "name": "Murk Wolf (summon)", "role": "bruiser", "hp": 1300, "ad": 230, "armor": 30, "mr": 30, "range": 1, "attackSpeed": 0.7, "note": "PvE Murk Wolf stats from the game files.", "estimated": false }
+  ]
+}

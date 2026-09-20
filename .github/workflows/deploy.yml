@@ -1,0 +1,65 @@
+name: deploy
+
+# Builds the static export and publishes it to GitHub Pages on every push to
+# the default branch. Enable Pages in the repo settings (Build and deployment →
+# Source: GitHub Actions) once; nothing else is needed.
+#
+# URL: https://<user>.github.io/<repo>/  (a repo named <user>.github.io is
+# served at the root and needs no base path; the job detects that).
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Work out the public URL and base path
+        id: url
+        shell: bash
+        run: |
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          repo="${GITHUB_REPOSITORY#*/}"
+          if [ "${repo,,}" = "${owner}.github.io" ]; then
+            echo "base=" >> "$GITHUB_OUTPUT"
+            echo "site=https://${owner}.github.io" >> "$GITHUB_OUTPUT"
+          else
+            echo "base=/${repo}" >> "$GITHUB_OUTPUT"
+            echo "site=https://${owner}.github.io/${repo}" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build static export
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.url.outputs.base }}
+          NEXT_PUBLIC_SITE_URL: ${{ steps.url.outputs.site }}
+        run: npm run build
+      - run: touch out/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

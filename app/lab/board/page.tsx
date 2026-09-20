@@ -1,33 +1,40 @@
 import { PageTitle } from "@/components/ui/Panel";
-import { BoardSandbox } from "@/components/board/BoardSandbox";
-import { itemLookup, traitLookup, unitLookup, loadSetData } from "@/lib/set-data";
-import { GENERIC_ITEMS, GENERIC_UNITS } from "@/data/archetypes";
+import { TeamPlanner, type PlannerData } from "@/components/lab/TeamPlanner";
+import { loadSetData } from "@/lib/set-data";
+import { CURRENT_SET } from "@/lib/current-set";
+import { loadTiers, ranksById } from "@/lib/tiers";
+import { loadSummons } from "@/lib/summons";
 
-export const metadata = { title: "Board sandbox" };
+export const metadata = { title: "Team planner" };
+
+const PLANNER_ITEM_KINDS = new Set(["component", "completed", "emblem", "artifact", "radiant", "support"]);
 
 export default function BoardSandboxPage() {
   const data = loadSetData();
-  const units = { ...GENERIC_UNITS, ...unitLookup() };
-  const items = { ...GENERIC_ITEMS, ...itemLookup() };
-  const traitNames = Object.fromEntries(Object.values(traitLookup()).map((t) => [t.id, t.name]));
-  const sample = data
-    ? {
-        tank: data.champions.filter((c) => c.cost === 4)[0]?.id,
-        carry: data.champions.filter((c) => c.cost === 4)[1]?.id,
-        one: data.champions.filter((c) => c.cost === 1)[0]?.id,
-        two: data.champions.filter((c) => c.cost === 2)[0]?.id,
-        three: data.champions.filter((c) => c.cost === 3)[0]?.id,
-        five: data.champions.filter((c) => c.cost === 5)[0]?.id,
-        items: data.items.filter((i) => i.kind === "completed").slice(0, 6).map((i) => i.id),
-        comps: data.items.filter((i) => i.kind === "component").slice(0, 4).map((i) => i.id),
-      }
-    : null;
+  if (!data) {
+    return (
+      <div>
+        <PageTitle lede="Run `npm run sync-set` to load the live set; the planner needs champions, items and augments.">Team planner</PageTitle>
+      </div>
+    );
+  }
+  const tiers = loadTiers();
+  const planner: PlannerData = {
+    setNumber: CURRENT_SET.setNumber,
+    patch: CURRENT_SET.patch,
+    itemRanks: ranksById(data.items, tiers?.items),
+    augmentRanks: ranksById(data.augments, tiers?.augments),
+    champions: [...data.champions.map((c) => ({ ...c, ability: { ...c.ability, icon: "" } })), ...loadSummons()],
+    items: data.items.filter((i) => PLANNER_ITEM_KINDS.has(i.kind)),
+    traits: data.traits,
+    augments: data.augments,
+  };
   return (
     <div>
-      <PageTitle lede="Standalone sandbox for the board component: own and versus modes, drag-and-drop, keyboard navigation, and the responsive hex size. Resize the window down to 360px; the board must never overflow.">
-        Board sandbox
+      <PageTitle lede="Build a board with every champion, item and augment of the live set, put an enemy board opposite it, and simulate the fight. The trait tracker updates as you place units; the result is an estimate for comparing boards, not a replay of the client.">
+        Team planner
       </PageTitle>
-      <BoardSandbox units={units} items={items} traitNames={traitNames} sample={sample} />
+      <TeamPlanner data={planner} />
     </div>
   );
 }

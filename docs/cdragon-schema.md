@@ -142,3 +142,12 @@ CDragon sends strong ETags (`"6a824dc6-6028"`); `lib/sync/mirror.ts` uses them t
 | `tft-augments.json` | 758 | `data["DA_18_BigGrabBag"] = { id, name, description, image }` |
 
 No traits per champion, no stats, no breakpoints, no compositions. Set number is parsed from the `TFTSet<n>` segment of the champion keys. Images: `https://ddragon.leagueoflegends.com/cdn/<ver>/img/tft-champion/<image.full>`.
+
+## Combat fields kept since 2026-09-20 (for the Lab team planner)
+
+- Champion `stats.attackSpeed`, `critChance` (0..1), `critMultiplier` are copied verbatim (defaults 0 / 0.25 / 1.4 when missing).
+- `ability.scaling` is derived from the `%i:scaleAD%` / `%i:scaleAP%` icon tokens in the raw ability text (Set 18: 46 AP-only, 28 AD+AP, 0 AD-only). `ability.variables` is still empty upstream, so numbers are not available; the simulator uses cost/star heuristics.
+- Item `effects` keeps every numeric, non-hashed key. **The canonical `DA_*` copies ship with empty `effects`**; `dedupeItems` borrows them from the same-named `TFT_Item_*` twin, the same way it borrows `desc`. Conventions: `AD` is a fraction of base AD (0.1 = +10%), `AP` is flat (+10), `AS` is a percentage (10 = +10%), `Armor`/`MagicResist`/`Health` flat, `CritChance` percentage, `ManaRegen` per second, `StatOmnivamp`/`LifeSteal` fraction or percentage (both seen).
+- Item `associatedTraits` is kept so emblems count towards a trait.
+- Tag `{5b609ae2}` / icon `set18_mechanicicon` entries are the set's **charms** (one-shot shop effects, 158 after dedupe); they are `kind: "charm"` since 2026-09-20 and listed at `/set/charms`. They have no price field upstream.
+- `ability.rich` / `items[].rich` keep `%i:scaleAD%`-style icon tokens as `[[AD]]` markers (see `ICON_LABELS` in `lib/text.ts`) so the hover cards can draw stat badges.

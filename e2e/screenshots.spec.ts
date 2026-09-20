@@ -32,7 +32,7 @@ test("tracker with logged games, odds and cheat sheet screenshots", async ({ pag
   for (const [p, comp, leak] of games) {
     await page.getByRole("group", { name: "Placement" }).getByRole("button", { name: String(p), exact: true }).click();
     await page.getByPlaceholder(/e\.g\./).fill(comp);
-    await page.locator("select").selectOption(leak);
+    await page.getByLabel("One leak").selectOption(leak);
     await page.getByRole("button", { name: "Log game" }).click();
   }
   await expect(page.getByText("7", { exact: true }).first()).toBeVisible();

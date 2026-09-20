@@ -11,6 +11,7 @@ import type { Rendered, SessionData } from "@/lib/trainer-props";
 import { drawDaily, seedFromString } from "@/lib/daily";
 import { isoDay, rollingAccuracy } from "@/lib/progress";
 import { leakWeights, readTracker } from "@/lib/tracker-data";
+import { mergeWeights, readFocus } from "@/lib/focus";
 import { ScenarioBoard } from "./ScenarioBoard";
 import { ChoiceQuestion, AugmentQuestion, ItemHolderQuestion, OrderingQuestion, PlacementControls } from "./Questions";
 import { Panel } from "@/components/ui/Panel";
@@ -31,7 +32,7 @@ export function Session({ data, rendered, mode, title }: { data: SessionData; re
   useEffect(() => {
     if (queue || !hydrated) return;
     if (mode === "daily") {
-      const extra = leakWeights(readTracker().games);
+      const extra = mergeWeights(leakWeights(readTracker().games), readFocus()?.weights);
       setQueue(drawDaily(data.scenarios, progress, 10, { seed: seedFromString(isoDay() + Object.keys(progress.seen).length), extraWeights: extra }));
     } else {
       // Due cards first, then unseen, then the rest; stable order within groups.

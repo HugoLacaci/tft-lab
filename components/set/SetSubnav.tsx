@@ -9,6 +9,9 @@ const TABS = [
   { href: "/set/traits", label: "Traits" },
   { href: "/set/items", label: "Items" },
   { href: "/set/augments", label: "Augments" },
+  { href: "/set/wisps", label: "Wisps" },
+  { href: "/set/comps", label: "Comps" },
+  { href: "/set/patch-notes", label: "Patch notes" },
 ];
 
 export function SetSubnav() {

@@ -47,8 +47,8 @@ export function normalizeDdragon(
       cost: (c.tier ?? c.cost) as Champion["cost"],
       traits: [],
       icon: ddragonImage(version, "tft-champion", c.image.full),
-      stats: { hp: 0, ad: 0, armor: 0, mr: 0, range: 0, mana: 0, initialMana: 0 },
-      ability: { name: "", desc: "", icon: "" },
+      stats: { hp: 0, ad: 0, armor: 0, mr: 0, range: 0, mana: 0, initialMana: 0, attackSpeed: 0, critChance: 0.25, critMultiplier: 1.4 },
+      ability: { name: "", desc: "", icon: "", scaling: { ad: false, ap: false }, rich: "" },
     }))
     .sort((a, b) => a.cost - b.cost || a.name.localeCompare(b.name));
 
@@ -65,6 +65,9 @@ export function normalizeDdragon(
       icon: ddragonImage(version, "tft-item", i.image.full),
       composition: [],
       kind: classifyDdItem(i.id, i.name),
+      effects: {},
+      associatedTraits: [],
+      rich: "",
     }));
 
   const augs: Augment[] = Object.entries(augments)

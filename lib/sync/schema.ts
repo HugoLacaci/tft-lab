@@ -26,6 +26,9 @@ export const RawCdChampion = z
         range: z.number().nullable().optional(),
         mana: z.number().nullable().optional(),
         initialMana: z.number().nullable().optional(),
+        attackSpeed: z.number().nullable().optional(),
+        critChance: z.number().nullable().optional(),
+        critMultiplier: z.number().nullable().optional(),
       })
       .loose(),
     ability: z

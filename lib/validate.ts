@@ -7,6 +7,7 @@ import { extractSection, guideSlugs, headings, parseGuideLink, readGuide } from 
 import { GENERIC_UNITS, GENERIC_ITEMS } from "@/data/archetypes";
 import { GENERIC_AUGMENTS } from "@/data/generic-augments";
 import type { SetData } from "./types";
+import { CompsFileSchema } from "./comps";
 
 export interface Problem {
   file: string;
@@ -236,5 +237,74 @@ export async function validateMdxSyntax(root = process.cwd()): Promise<Problem[]
 }
 
 export async function runValidation(root = process.cwd()): Promise<Problem[]> {
-  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateNoHardcodedSet(root), ...(await validateMdxSyntax(root))];
+  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+}
+
+/**
+ * Curated per-set content (comps, tiers, wisp costs) must reference real ids
+ * and names from the synced set, so a typo or a set change fails the build.
+ */
+export function validateCurated(root = process.cwd()): Problem[] {
+  const problems: Problem[] = [];
+  const { number: liveSet, data } = loadSet(root);
+  if (!data) return problems;
+  const dir = path.join(root, "content", "sets", String(liveSet));
+  const champs = new Set(data.champions.map((c) => c.id));
+  const items = new Set(data.items.map((i) => i.id));
+  const augs = new Set(data.augments.map((a) => a.id));
+  const norm = (s: string) => s.toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9+]/g, "");
+  const itemNames = new Set(data.items.map((i) => norm(i.name)));
+  const augNames = new Set(data.augments.map((a) => norm(a.name)));
+  const wispNames = new Set(data.items.filter((i) => i.kind === "charm").map((i) => norm(i.name)));
+
+  const compsFile = path.join(dir, "comps.json");
+  if (fs.existsSync(compsFile)) {
+    const rel = `content/sets/${liveSet}/comps.json`;
+    const parsed = CompsFileSchema.safeParse(JSON.parse(fs.readFileSync(compsFile, "utf8")));
+    if (!parsed.success) {
+      for (const i of parsed.error.issues) problems.push({ file: rel, field: i.path.join("."), message: i.message });
+    } else {
+      const ids = new Set<string>();
+      parsed.data.comps.forEach((c, ci) => {
+        if (ids.has(c.id)) problems.push({ file: rel, field: `comps[${ci}].id`, message: `duplicate comp id "${c.id}"` });
+        ids.add(c.id);
+        c.board.forEach((u, ui) => {
+          if (!champs.has(u[0])) problems.push({ file: rel, field: `comps[${ci}].board[${ui}]`, message: `unknown champion id "${u[0]}"` });
+          for (const it of u[4]) if (!items.has(it)) problems.push({ file: rel, field: `comps[${ci}].board[${ui}]`, message: `unknown item id "${it}"` });
+        });
+        for (const x of [...c.carries, ...c.flex, ...c.extra]) if (!champs.has(x.championId)) problems.push({ file: rel, field: `comps[${ci}]`, message: `unknown champion id "${x.championId}"` });
+        for (const x of c.carries) for (const it of x.items) if (!items.has(it)) problems.push({ file: rel, field: `comps[${ci}].carries`, message: `unknown item id "${it}"` });
+        for (const a of c.augments) if (!augs.has(a.augmentId)) problems.push({ file: rel, field: `comps[${ci}].augments`, message: `unknown augment id "${a.augmentId}"` });
+      });
+    }
+  }
+
+  const tiersFile = path.join(dir, "tiers.json");
+  if (fs.existsSync(tiersFile)) {
+    const rel = `content/sets/${liveSet}/tiers.json`;
+    const t = JSON.parse(fs.readFileSync(tiersFile, "utf8")) as { items?: Record<string, string>; augments?: Record<string, string> };
+    for (const [name, rank] of Object.entries(t.items ?? {})) {
+      if (!/^[SABCDF]$/.test(rank)) problems.push({ file: rel, field: `items.${name}`, message: `rank must be S–F, got "${rank}"` });
+      if (!itemNames.has(norm(name))) problems.push({ file: rel, field: `items.${name}`, message: "no item with that name in the synced set" });
+    }
+    for (const [name, rank] of Object.entries((t as { wisps?: Record<string, string> }).wisps ?? {})) {
+      if (!/^[SABCDF]$/.test(rank)) problems.push({ file: rel, field: `wisps.${name}`, message: `rank must be S–F, got "${rank}"` });
+      if (!wispNames.has(norm(name))) problems.push({ file: rel, field: `wisps.${name}`, message: "no wisp with that name in the synced set" });
+    }
+    for (const [name, rank] of Object.entries(t.augments ?? {})) {
+      if (!/^[SABCDF]$/.test(rank)) problems.push({ file: rel, field: `augments.${name}`, message: `rank must be S–F, got "${rank}"` });
+      if (!augNames.has(norm(name))) problems.push({ file: rel, field: `augments.${name}`, message: "no augment with that name in the synced set" });
+    }
+  }
+
+  const wispsFile = path.join(dir, "wisps.json");
+  if (fs.existsSync(wispsFile)) {
+    const rel = `content/sets/${liveSet}/wisps.json`;
+    const w = JSON.parse(fs.readFileSync(wispsFile, "utf8")) as { costs?: Record<string, number> };
+    for (const [name, cost] of Object.entries(w.costs ?? {})) {
+      if (typeof cost !== "number" || cost < 0) problems.push({ file: rel, field: `costs.${name}`, message: "cost must be a non-negative number" });
+      if (!wispNames.has(norm(name))) problems.push({ file: rel, field: `costs.${name}`, message: "no wisp with that name in the synced set" });
+    }
+  }
+  return problems;
 }

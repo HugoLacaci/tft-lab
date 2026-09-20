@@ -24,7 +24,7 @@ export default function TraitsPage() {
             {t.desc ? <p className="mt-2 text-sm text-dim">{t.desc}</p> : null}
             <ul className="mt-3 space-y-1.5 text-sm">
               {t.breakpoints.map((b) => (
-                <li key={b.units} className="flex items-start gap-2">
+                <li key={`${b.units}-${b.style}-${b.desc.slice(0, 12)}`} className="flex items-start gap-2">
                   <StyleBadge style={b.style}>{b.units}</StyleBadge>
                   <span>{b.desc.replace(/^\(\d+\)\s*/, "")}</span>
                 </li>

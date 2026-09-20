@@ -175,6 +175,20 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   background-size: 200% 200%;
   animation: shimmer 6s linear infinite;
 }
+/* Prismatic badge: dark fill, shimmering border, light text (the full shimmer fill was unreadable). */
+.prismatic-badge {
+  position: relative;
+  color: var(--gold-bright);
+  background: linear-gradient(var(--bg-deep), var(--bg-deep)) padding-box, linear-gradient(120deg, #d7c8ff, #9fe3ff 35%, #ffd6f5 65%, #d7c8ff) border-box;
+  background-size: 100% 100%, 200% 200%;
+  border: 1px solid transparent;
+  animation: shimmer-border 6s linear infinite;
+  text-shadow: 0 0 6px rgba(215, 200, 255, 0.5);
+}
+@keyframes shimmer-border {
+  0% { background-position: 0 0, 0% 50%; }
+  100% { background-position: 0 0, 200% 50%; }
+}
 @keyframes shimmer {
   0% { background-position: 0% 50%; }
   100% { background-position: 200% 50%; }

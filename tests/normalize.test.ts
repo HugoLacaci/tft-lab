@@ -81,7 +81,7 @@ describe("normalizeCdragon", () => {
     expect(kinds["DA_Artifact_Fishbones"]).toBe("artifact");
     expect(kinds["DA_ArchangelsStaffRadiant"]).toBe("radiant");
     expect(kinds["TFT_Item_SupportKnightsVow"]).toBe("support");
-    expect(kinds["DA_18_AfterShock"]).toBe("other");
+    expect(kinds["DA_18_AfterShock"]).toBe("charm");
   });
   it("renders item descriptions with effect values", () => {
     const bf = data.items.find((i) => i.id === "DA_Component_BFSword")!;

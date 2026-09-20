@@ -1,0 +1,2683 @@
+{
+  "patch": "18.2b",
+  "verifiedOn": "2026-09-20",
+  "note": "Hand-curated from published meta snapshots for the current patch; positions are a sensible default for the board on a neutral matchup, not a rule. Board tuples are [championId, row, col, star, items]: row 0 is the frontline, col 0..6.",
+  "sources": [
+    "https://bunnymuffins.lol/meta/",
+    "https://tftacademy.com/tierlist/comps"
+  ],
+  "comps": [
+    {
+      "id": "ashe-fast-9",
+      "name": "Ashe Fast 9",
+      "tier": "S",
+      "style": "fast-9",
+      "summary": "The best comp of the patch even after the 18.2b nerf: a Blossom/Hunter board that levels to 9 by 5-2 and caps with Ashe and Ahri.",
+      "board": [
+        [
+          "DA_18_Sett",
+          0,
+          2,
+          2,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_BrambleVest"
+          ]
+        ],
+        [
+          "DA_18_Maokai",
+          0,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_Taric18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Yorick",
+          1,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_GnarSmall",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Alune",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ahri",
+          3,
+          2,
+          2,
+          [
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail",
+            "DA_NashorsTooth"
+          ]
+        ],
+        [
+          "DA_18_Ashe",
+          3,
+          5,
+          2,
+          [
+            "DA_SpearOfShojin",
+            "DA_RedBuff",
+            "DA_LastWhisper"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Ashe",
+          "items": [
+            "DA_SpearOfShojin",
+            "DA_RedBuff",
+            "DA_LastWhisper"
+          ],
+          "note": "Shojin or Blue Buff is mandatory; Morello and IE are fine third slots."
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "items": [
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail",
+            "DA_NashorsTooth"
+          ],
+          "note": "Nashor's, Shojin or Blue Buff as the mana item."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Taric18",
+          "note": "Interchangeable with Gnar as the last frontliner."
+        },
+        {
+          "championId": "DA_18_GnarSmall",
+          "note": "Interchangeable with Taric."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_Lux18_Blossom",
+          "note": "Level 10 or spare gold: Blossom Lux for the 5th/7th breakpoint."
+        },
+        {
+          "championId": "DA_Karma18",
+          "note": "Early Blossom body; drop for Alune at 9."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_LevelUp",
+          "note": "Any econ augment first; then items over combat."
+        },
+        {
+          "augmentId": "DA_18_BlossomTraitAugment",
+          "note": "Blossom's Call makes the opener free."
+        },
+        {
+          "augmentId": "DA_18_WispRebatePlus",
+          "note": "Wisp Rebate turns the Blossom wisps into pure profit."
+        },
+        {
+          "augmentId": "DA_Epoch"
+        },
+        {
+          "augmentId": "DA_PrismaticTicket"
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        }
+      ],
+      "howToPlay": [
+        "Open with Invoker Morgana + Ahri or any Blossom board; do not itemise Maokai early, he scales with game length.",
+        "Keep whichever streak you are on through stages 2–5; the comp wants a clean econ, not a stage-3 roll.",
+        "Level 8 at 4-2/4-5 for Ahri 2 and Sett 2, then 9 by 5-2 for Ashe and Alune.",
+        "Buy econ Wisps early and the cheap combat Wisps on rounds you must win."
+      ],
+      "positioning": "Ashe shoots towards the largest enemy line: put her on the opposite side to their frontline clump so the arrows cross the whole board. Ahri sits one hex in from the corner; Sett takes the side the enemy carry is on.",
+      "stages": {
+        "stage2": "Buy every pair; play the strongest 4–5 units at level 4 by 2-1 and level 5 at 2-5. Slam the first two components on whatever tank and carry you own; interest matters more than the exact unit. Take econ Wisps (gold, XP) unless a 0–1 gold combat Wisp saves a streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 3-5 or 4-1 depending on HP; do not roll. Hold the streak you are on: a clean win- or loss-streak both bank gold. Keep 50 gold from 3-2 onwards and only break it to stay above 40 HP.",
+        "stage4": "Level 8 at 4-2 or 4-5 and roll only for the 4-cost 2★s the board needs to survive; stop at 30–40 gold. If HP is fine, keep econ and go 9 at 5-1/5-2. If HP is under 30, roll deeper now: dying with gold is the worst outcome.",
+        "stage5": "Level 9 by 5-2 and roll down for the 5-cost carries and the missing 2★s; from here every round of gold is board strength. Scout every fight: position the carry away from the assassin side and the tank on the side of their damage. Level 10 only when the lobby is slow and you are already stable."
+      }
+    },
+    {
+      "id": "dragon-fast-9",
+      "name": "Dragon Fast 9",
+      "tier": "A",
+      "style": "fast-9",
+      "summary": "Feast-or-famine: level 9 for Elder Dragon and Draven with AD items. Sacrifices stage 4 for the cap.",
+      "board": [
+        [
+          "DA_Krug18",
+          0,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_Sentinel18",
+          0,
+          2,
+          2,
+          [
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_18_ElderDragon",
+          0,
+          3,
+          2,
+          [
+            "DA_InfinityEdge",
+            "DA_HandOfJustice",
+            "DA_SteraksGage"
+          ]
+        ],
+        [
+          "DA_18_Maokai",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_Amumu18",
+          1,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_Taric18",
+          1,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Alune",
+          3,
+          1,
+          1,
+          []
+        ],
+        [
+          "DA_Draven18",
+          3,
+          5,
+          2,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_Deathblade"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_ElderDragon",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_HandOfJustice",
+            "DA_SteraksGage"
+          ],
+          "note": "Takes two hexes and counts as two Riftbeasts."
+        },
+        {
+          "championId": "DA_Draven18",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_Deathblade"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Sett",
+          "note": "Sett + Krug, Amumu, or Sentinel + Taric are all valid frontlines."
+        },
+        {
+          "championId": "DA_Amumu18",
+          "note": "Any tanky Juggernaut works."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_Lux18_Base",
+          "note": "Level 10 cap-out; pick the origin your board already has."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_LevelUp",
+          "note": "Level Up! is the dream; then econ > items > combat."
+        },
+        {
+          "augmentId": "DA_BirthdayPresent"
+        },
+        {
+          "augmentId": "DA_Epoch"
+        },
+        {
+          "augmentId": "DA_SwordOverflow"
+        },
+        {
+          "augmentId": "DA_18_RiftbeastTraitAugment"
+        }
+      ],
+      "howToPlay": [
+        "Play the strongest opener around AD items; slam early.",
+        "Lose stage 4 on purpose if needed and level on 5-1/5-2; the board is nothing without level 9.",
+        "If you cannot reach 9 with 30+ gold, this is an 8th: pivot to Aphelios Flex at level 8 instead."
+      ],
+      "positioning": "Elder Dragon centre-front so both hexes soak; Draven in the corner opposite the enemy assassin threat; Alune far from Draven so a single Zephyr cannot hit both.",
+      "stages": {
+        "stage2": "Buy every pair; play the strongest 4–5 units at level 4 by 2-1 and level 5 at 2-5. Slam the first two components on whatever tank and carry you own; interest matters more than the exact unit. Take econ Wisps (gold, XP) unless a 0–1 gold combat Wisp saves a streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 3-5 or 4-1 depending on HP; do not roll. Hold the streak you are on: a clean win- or loss-streak both bank gold. Keep 50 gold from 3-2 onwards and only break it to stay above 40 HP.",
+        "stage4": "Sacrifice stage 4: level 8 at 4-5 with the strongest AD board you can field and do not roll for 4-costs. If HP drops under 30 before 5-1, this line is dead; pivot to Aphelios Flex at 8.",
+        "stage5": "Level 9 by 5-2 and roll down for the 5-cost carries and the missing 2★s; from here every round of gold is board strength. Scout every fight: position the carry away from the assassin side and the tank on the side of their damage. Level 10 only when the lobby is slow and you are already stable."
+      }
+    },
+    {
+      "id": "draven-fast-9",
+      "name": "Draven Fast 9",
+      "tier": "A",
+      "style": "fast-9",
+      "summary": "Bounty Seeker Draven with a Guinsoo's slam; needs level 9 or it goes 8th.",
+      "board": [
+        [
+          "DA_18_GnarSmall",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Maokai",
+          0,
+          3,
+          2,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor"
+          ]
+        ],
+        [
+          "DA_Taric18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sett",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Alistar",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Kennen",
+          2,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ezreal",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_Draven18",
+          3,
+          5,
+          2,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_Deathblade"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_Draven18",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_Deathblade"
+          ],
+          "note": "Guinsoo's is required; it is the slam that decides whether you play this."
+        },
+        {
+          "championId": "DA_18_Maokai",
+          "items": [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor"
+          ],
+          "note": "Generic tank items."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Ezreal",
+          "note": "Any Elderwood/Executioner body until Kennen."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Alune",
+          "note": "Ninth unit if you reach 10 or find her early."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_LevelUp"
+        },
+        {
+          "augmentId": "DA_BirthdayPresent"
+        },
+        {
+          "augmentId": "DA_SwordOverflow"
+        },
+        {
+          "augmentId": "DA_Swordsmith"
+        },
+        {
+          "augmentId": "DA_Epoch"
+        }
+      ],
+      "howToPlay": [
+        "Strong opener around the Guinsoo's slam; roll down stage 4 for Draven 2 and Maokai 2.",
+        "Bounty Seeker cash-outs count takedowns and kills differently: position so Draven last-hits.",
+        "Level 9 is mandatory; if the econ is not there by 5-1, you are playing for 5th."
+      ],
+      "positioning": "Draven corner-back, away from the side with enemy assassins; Maokai and Sett in front of him, Gnar on the far side to split aggro.",
+      "stages": {
+        "stage2": "Buy every pair; play the strongest 4–5 units at level 4 by 2-1 and level 5 at 2-5. Slam the first two components on whatever tank and carry you own; interest matters more than the exact unit. Take econ Wisps (gold, XP) unless a 0–1 gold combat Wisp saves a streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 3-5 or 4-1 depending on HP; do not roll. Hold the streak you are on: a clean win- or loss-streak both bank gold. Keep 50 gold from 3-2 onwards and only break it to stay above 40 HP.",
+        "stage4": "Level 8 at 4-2 and roll down to 30 gold for Draven 2★ and Maokai 2★; Draven must last-hit for the Bounty Seeker cash-outs, so position him where the fights end.",
+        "stage5": "Level 9 by 5-2 and roll down for the 5-cost carries and the missing 2★s; from here every round of gold is board strength. Scout every fight: position the carry away from the assassin side and the tank on the side of their damage. Level 10 only when the lobby is slow and you are already stable."
+      }
+    },
+    {
+      "id": "aphelios-flex",
+      "name": "Aphelios Flex",
+      "tier": "A",
+      "style": "standard",
+      "summary": "Mid-cost bridge between an AD opener and Fast 9: Aphelios with Nidalee and Brambleback at level 8.",
+      "board": [
+        [
+          "DA_18_Rakan",
+          0,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_Sentinel18",
+          0,
+          2,
+          2,
+          [
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_Brambleback18",
+          0,
+          3,
+          2,
+          [
+            "DA_SteraksGage",
+            "DA_EdgeOfNight",
+            "DA_Quicksilver"
+          ]
+        ],
+        [
+          "DA_Amumu18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Diana",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_Nidalee18_AP",
+          1,
+          3,
+          2,
+          [
+            "DA_SpearOfShojin",
+            "DA_InfinityEdge",
+            "DA_SteraksGage"
+          ]
+        ],
+        [
+          "DA_18_Alune",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Aphelios",
+          3,
+          5,
+          2,
+          [
+            "DA_InfinityEdge",
+            "DA_RedBuff",
+            "DA_KrakensFury"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Aphelios",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_RedBuff",
+            "DA_KrakensFury"
+          ]
+        },
+        {
+          "championId": "DA_Nidalee18_AP",
+          "items": [
+            "DA_SpearOfShojin",
+            "DA_InfinityEdge",
+            "DA_SteraksGage"
+          ]
+        },
+        {
+          "championId": "DA_Brambleback18",
+          "items": [
+            "DA_SteraksGage",
+            "DA_EdgeOfNight",
+            "DA_Quicksilver"
+          ],
+          "note": "Only worth items at 2–3 copies."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Sentinel18",
+          "note": "Frontline is fully flexible."
+        },
+        {
+          "championId": "DA_Amumu18",
+          "note": "Nidalee variant drops the Sentinels for Amumu + Juggernauts."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Ashe",
+          "note": "Level 9: Ashe replaces the weakest Rapidfire body."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_SwordOverflow"
+        },
+        {
+          "augmentId": "DA_Swordsmith"
+        },
+        {
+          "augmentId": "DA_CarveAPath",
+          "note": "Item > trait > econ."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        },
+        {
+          "augmentId": "DA_LevelUp"
+        }
+      ],
+      "howToPlay": [
+        "Roll down stage 4 for the carries; do not go to 9 until Aphelios and Brambleback are 2★.",
+        "Collect swords: both carries want IE, and Sterak's is shared by Nidalee and Brambleback."
+      ],
+      "positioning": "Aphelios corner opposite the enemy backline threats; Nidalee second row so she jumps late; Brambleback centre-front to take the first cast.",
+      "stages": {
+        "stage2": "Strongest board at level 4 (2-1) and level 5 at 2-5; slam the first two items on the units you already play. Take econ Wisps and a cheap combat Wisp only on a contested streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Level 8 at 4-2 if HP allows, otherwise roll at 7 on 4-1 for the 2★ carries and go 8 at 4-5. Stop rolling at 30 gold with a stable board; roll to 0 if the next loss is an 8th.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "primal-malphite",
+      "name": "Primal Malphite",
+      "tier": "A",
+      "style": "standard",
+      "summary": "Expensive level-8 comp around Malphite and the Primal carries; contests Malphite and Sentinel, so roll before the lobby does.",
+      "board": [
+        [
+          "DA_Sentinel18",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Malphite",
+          0,
+          3,
+          2,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage",
+            "DA_Crownguard"
+          ]
+        ],
+        [
+          "DA_Vi18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_Krug18",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_Nidalee18_AP",
+          1,
+          4,
+          2,
+          [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_HandOfJustice"
+          ]
+        ],
+        [
+          "DA_18_Caitlyn",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_KogMaw18_AD",
+          3,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sivir",
+          3,
+          5,
+          2,
+          [
+            "DA_InfinityEdge",
+            "DA_StrikersFlail",
+            "DA_RedBuff"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_Nidalee18_AP",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Sivir",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_StrikersFlail",
+            "DA_RedBuff"
+          ]
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "items": [
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage",
+            "DA_Crownguard"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Krug18",
+          "note": "The 3-cost you sacrifice to Malphite; its Alpha Mark does not proc when eaten."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Primal",
+          "note": "Primal Lux at 9 for the next breakpoint."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_PrimalAugment_Nidalee",
+          "note": "Beast Within is the signature augment."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_SwordOverflow"
+        },
+        {
+          "augmentId": "DA_Swordsmith"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        },
+        {
+          "augmentId": "DA_18_PrimalAugment_Sivir"
+        }
+      ],
+      "howToPlay": [
+        "Roll aggressively on 4-2 before the other Malphite player does; both carries want IE, so collect swords.",
+        "Feed Malphite a 3-cost (usually Krug) to max his stats; keep Sentinel as the second tank."
+      ],
+      "positioning": "Malphite front-centre; Nidalee second row on the side she should jump to; Sivir back-corner, Caitlyn and Kog'Maw on the other side so one Zephyr never takes two carries.",
+      "stages": {
+        "stage2": "Strongest board at level 4 (2-1) and level 5 at 2-5; slam the first two items on the units you already play. Take econ Wisps and a cheap combat Wisp only on a contested streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Roll at 4-2 before the other Malphite player: Malphite 2★, Nidalee 2★ and Sivir 2★ first; sacrifice Krug to Malphite as soon as he is on the board. Stop at 20 gold if stable.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "invoker-morgana-ahri",
+      "name": "Invoker Morgana & Ahri",
+      "tier": "A",
+      "style": "standard",
+      "summary": "Very item-hungry AP board; with an Invoker emblem on Ahri it is S tier.",
+      "board": [
+        [
+          "DA_Sentinel18",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sett",
+          0,
+          3,
+          2,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor"
+          ]
+        ],
+        [
+          "DA_Taric18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Morgana",
+          2,
+          4,
+          2,
+          [
+            "DA_VoidStaff",
+            "DA_Morellonomicon",
+            "DA_RabadonsDeathcap"
+          ]
+        ],
+        [
+          "DA_18_Sentry",
+          3,
+          0,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ahri",
+          3,
+          2,
+          2,
+          [
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail",
+            "DA_SpearOfShojin"
+          ]
+        ],
+        [
+          "DA_18_Teemo",
+          3,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_KogMaw18_AD",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Ahri",
+          "items": [
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail",
+            "DA_SpearOfShojin"
+          ],
+          "note": "An Invoker Emblem on Ahri bumps the comp a tier."
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "items": [
+            "DA_VoidStaff",
+            "DA_Morellonomicon",
+            "DA_RabadonsDeathcap"
+          ],
+          "note": "Morello or Red Buff for the wound."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Teemo",
+          "note": "Any Invoker body; Pebbles and Kog'Maw fill the same slots."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Alune",
+          "note": "Level 9: Alune or Lux plus more Invokers."
+        },
+        {
+          "championId": "DA_Lux18_Base",
+          "note": "Lux (Coven or Blossom) at 9."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_PortableForge",
+          "note": "Item augments first; emblems > econ > combat."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_PandorasItemsII"
+        },
+        {
+          "augmentId": "DA_Epoch"
+        },
+        {
+          "augmentId": "DA_18_BlossomTraitAugment"
+        }
+      ],
+      "howToPlay": [
+        "Needs high-quality AP items; do not play it from a tank-item start.",
+        "Roll stage 4 for Ahri 2 and Morgana 2; level 9 for Taric/Lux and the Invoker breakpoint."
+      ],
+      "positioning": "Put Ahri on the same side as the enemy carries so her cast deletes the backline before your frontline dies; Morgana in the second row behind Sett.",
+      "stages": {
+        "stage2": "Strongest board at level 4 (2-1) and level 5 at 2-5; slam the first two items on the units you already play. Take econ Wisps and a cheap combat Wisp only on a contested streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Level 8 at 4-2 if HP allows, otherwise roll at 7 on 4-1 for the 2★ carries and go 8 at 4-5. Stop rolling at 30 gold with a stable board; roll to 0 if the next loss is an 8th.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "flora-malphite",
+      "name": "Flora Malphite",
+      "tier": "A",
+      "style": "standard",
+      "summary": "Flora Fatalis keeps Malphite alive while Soraka and Zyra cast; five core units and three flex slots at 8.",
+      "board": [
+        [
+          "DA_18_Rammus",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Malphite",
+          0,
+          3,
+          2,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_Crownguard",
+            "DA_SpiritVisage"
+          ]
+        ],
+        [
+          "DA_Fiddlesticks18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Lillia",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Yorick",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Soraka",
+          3,
+          2,
+          2,
+          [
+            "DA_RabadonsDeathcap",
+            "DA_NashorsTooth",
+            "DA_AdaptiveHelm"
+          ]
+        ],
+        [
+          "DA_18_Zyra",
+          3,
+          4,
+          2,
+          [
+            "DA_JeweledGauntlet",
+            "DA_VoidStaff",
+            "DA_SpearOfShojin"
+          ]
+        ],
+        [
+          "DA_18_Azir",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Soraka",
+          "items": [
+            "DA_RabadonsDeathcap",
+            "DA_NashorsTooth",
+            "DA_AdaptiveHelm"
+          ],
+          "note": "Hits the same target twice; more damage on a hex she already cast on."
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "items": [
+            "DA_JeweledGauntlet",
+            "DA_VoidStaff",
+            "DA_SpearOfShojin"
+          ]
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "items": [
+            "DA_GargoyleStoneplate",
+            "DA_Crownguard",
+            "DA_SpiritVisage"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Fiddlesticks18",
+          "note": "Usually the 3-cost fed to Malphite."
+        },
+        {
+          "championId": "DA_18_Azir",
+          "note": "Any Summoner/Executioner; 5-costs are flexible."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_Lux18_Base",
+          "note": "Any Lux at 9."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_FloraFatalisAugment",
+          "note": "Consuming Flora: emblem generation first, then items, then econ."
+        },
+        {
+          "augmentId": "DA_TheTraitTree"
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        },
+        {
+          "augmentId": "DA_SpreadingRoots"
+        }
+      ],
+      "howToPlay": [
+        "Collect items through stage 3, roll stage 4 for Malphite 2, then fill the three flex slots with whatever 4/5-costs you hit."
+      ],
+      "positioning": "Malphite front-centre with Rammus beside him; Soraka and Zyra split across the back row so both get their first cast; Yorick's summons take the second row.",
+      "stages": {
+        "stage2": "Strongest board at level 4 (2-1) and level 5 at 2-5; slam the first two items on the units you already play. Take econ Wisps and a cheap combat Wisp only on a contested streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Roll at 4-2 for Malphite 2★ and Soraka/Zyra 2★; feed Fiddlesticks to Malphite. Three flex slots at 8: take the strongest 4/5-costs you hit.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "solar-yunara",
+      "name": "Solar Yunara",
+      "tier": "A",
+      "style": "reroll",
+      "summary": "Expensive 2-cost reroll that needs several 3★s; the LeBlanc clones print units and the economy.",
+      "board": [
+        [
+          "DA_18_Sejuani",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Yorick",
+          0,
+          3,
+          3,
+          []
+        ],
+        [
+          "DA_18_Leona",
+          0,
+          4,
+          2,
+          [
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_18_Kayle",
+          2,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_Karma18",
+          3,
+          0,
+          3,
+          []
+        ],
+        [
+          "DA_18_LeBlanc",
+          3,
+          2,
+          3,
+          [
+            "DA_SpearOfShojin",
+            "DA_JeweledGauntlet",
+            "DA_VoidStaff"
+          ]
+        ],
+        [
+          "DA_18_Yunara",
+          3,
+          5,
+          3,
+          [
+            "DA_SpearOfShojin",
+            "DA_LastWhisper",
+            "DA_Deathblade"
+          ]
+        ],
+        [
+          "DA_18_Azir",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Yunara",
+          "items": [
+            "DA_SpearOfShojin",
+            "DA_LastWhisper",
+            "DA_Deathblade"
+          ]
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "items": [
+            "DA_SpearOfShojin",
+            "DA_JeweledGauntlet",
+            "DA_VoidStaff"
+          ]
+        },
+        {
+          "championId": "DA_Karma18",
+          "items": [],
+          "note": "Utility items only."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Azir",
+          "note": "Blossom, Executioner or Summoner bodies as available."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Sunbeam",
+          "note": "Solar Lux at 8/9."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_PrismaticTicket",
+          "note": "Prismatic Ticket is BIS; econ = items > combat."
+        },
+        {
+          "augmentId": "DA_18_BlossomTraitAugment"
+        },
+        {
+          "augmentId": "DA_18_WispRebatePlus"
+        },
+        {
+          "augmentId": "DA_Hustler"
+        }
+      ],
+      "howToPlay": [
+        "Strong Blossom or LeBlanc opener to print gold; roll aggressively stages 3–4 and buy Wisps almost every turn.",
+        "Level 4→5→6 (start rolling), 7 by 4-5, 8 by 5-2."
+      ],
+      "positioning": "Yunara and LeBlanc in opposite back corners; Karma between them; Yorick 3★ centre-front.",
+      "stages": {
+        "stage2": "Blossom or LeBlanc opener; level 4 at 2-1, 5 at 2-5, 6 at 3-1 and start rolling for Yunara/LeBlanc/Karma/Yorick pairs. Buy nearly every Wisp: the clones and the Blossom upgrades print the economy.",
+        "stage3": "Level 5 at 3-1 and roll down to 30–40 gold for the 3-cost 2★ and the frontline pairs, then stop. At 3-5 level 6 for the trait breakpoint. Buy every copy of the carry you see; slow-roll above 50 only if the board is winning.",
+        "stage4": "Level 7 at 4-1 or 4-2 and slow-roll at 7 for the 3★ carry and the 3★ tank; roll down to 20 gold on a loss-streak, hold 50 on a win-streak. Do not level to 8 before the carry is 3★ unless HP is under 20.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "solar-akali-reroll",
+      "name": "Solar Akali Reroll",
+      "tier": "B",
+      "style": "reroll",
+      "summary": "1-cost reroll around Akali and Camille; played from a premium reroll augment or many early copies.",
+      "board": [
+        [
+          "DA_18_Shen",
+          0,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ornn",
+          0,
+          2,
+          3,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor"
+          ]
+        ],
+        [
+          "DA_18_Camille",
+          0,
+          3,
+          3,
+          [
+            "DA_SteraksGage",
+            "DA_InfinityEdge",
+            "DA_Quicksilver"
+          ]
+        ],
+        [
+          "DA_18_Leona",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sejuani",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Akali_AD",
+          1,
+          3,
+          3,
+          [
+            "DA_EdgeOfNight",
+            "DA_HandOfJustice",
+            "DA_Artifact_LichBane"
+          ]
+        ],
+        [
+          "DA_18_Warwick",
+          1,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Kayle",
+          3,
+          5,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Akali_AD",
+          "items": [
+            "DA_EdgeOfNight",
+            "DA_HandOfJustice",
+            "DA_Artifact_LichBane"
+          ],
+          "note": "Lich Bane artifact is BIS; Jeweled Lotus augment replaces the crit item."
+        },
+        {
+          "championId": "DA_18_Camille",
+          "items": [
+            "DA_SteraksGage",
+            "DA_InfinityEdge",
+            "DA_Quicksilver"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Kayle",
+          "note": "Not necessary."
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "note": "Not necessary; any Solar/Ravager/Inferno body."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Sunbeam",
+          "note": "Solar Lux if you reach 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_EarlyLearnings"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        },
+        {
+          "augmentId": "DA_Hustler",
+          "note": "Reroll > items > econ."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_CookingPot"
+        },
+        {
+          "augmentId": "DA_PrismaticTicket"
+        }
+      ],
+      "howToPlay": [
+        "Do not level until the 1-costs are 3★; roll at 3-1 down to 32 gold, all-in at 4-1 if needed.",
+        "An Inferno emblem can grief the first shop; prefer Solar."
+      ],
+      "positioning": "Akali second row so she dashes after the frontline engages; Camille and Ornn front-centre.",
+      "stages": {
+        "stage2": "Buy every copy of Akali and Camille and the other 1-cost carries; play them 2★ on 2-1 and stay level 3–4. Slam the carry's core item first, then a tank item. Take rerolls and econ Wisps; stay above 30 gold.",
+        "stage3": "Do not level. Roll at 3-1 down to about 32 gold for the 3★s, then at 3-2/3-5 with any gold above 50. If two 1-costs are already 3★, level 5 for the second breakpoint.",
+        "stage4": "Level 6 at 4-1 and roll for the last 3★ and the 2-cost 2★s; all-in at 4-1 if the board is not stabilised. From 4-2 play for the 3★ frontline.",
+        "stage5": "Level 7 at 5-1 and 8 only late; the board caps with 3★ 1- and 2-costs plus one 5-cost. Position the carry in the second row so it engages after the tanks; scout for Zephyr and assassins."
+      }
+    },
+    {
+      "id": "caitlyn-reroll",
+      "name": "Caitlyn Reroll",
+      "tier": "B",
+      "style": "reroll",
+      "summary": "2-cost reroll that scales with attack speed; Scuttle Crab 3★ holds the front.",
+      "board": [
+        [
+          "DA_18_Sejuani",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_Scuttlecrab18",
+          0,
+          3,
+          3,
+          [
+            "DA_WarmogsArmor",
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage"
+          ]
+        ],
+        [
+          "DA_18_Yorick",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_Vi18",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Elise",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_Cinderling18",
+          3,
+          0,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sivir",
+          3,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Caitlyn",
+          3,
+          5,
+          3,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_GiantSlayer"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Caitlyn",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_KrakensFury",
+            "DA_GiantSlayer"
+          ],
+          "note": "Specialist: mana items are useless on her."
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "items": [
+            "DA_WarmogsArmor",
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Vi18",
+          "note": "Any Juggernaut for the stabilisation breakpoint."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Ashe",
+          "note": "Level 9 cap-out."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_PortableForge",
+          "note": "Items > econ > combat."
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_Swordsmith"
+        }
+      ],
+      "howToPlay": [
+        "Play a Caitlyn orb with Guinsoo's or Kraken; roll 3-2 for Caitlyn 2 and the Juggernauts, slow-roll for 3★.",
+        "Hunters gain damage amp after 4 s on the same target: she wants a frontline that lasts."
+      ],
+      "positioning": "Caitlyn back-corner with Sivir on the other side; Scuttle Crab front-centre, Elise behind him to soak assassins.",
+      "stages": {
+        "stage2": "Buy every Caitlyn and any pair; play the strongest board at level 4 (2-1) and stay level 4–5. Slam early tank and AD/AP components on the units you will keep. Econ Wisps and rerolls are welcome; the goal is 50 gold by 3-1 with the carry at 2★.",
+        "stage3": "Level 5 at 3-1 and roll at 3-2 for Caitlyn 2★ and the Juggernauts; slow-roll at 5–6 for Caitlyn 3★ and Scuttle 3★ while holding 50.",
+        "stage4": "Level 7 at 4-1 or 4-2 and slow-roll at 7 for the 3★ carry and the 3★ tank; roll down to 20 gold on a loss-streak, hold 50 on a win-streak. Do not level to 8 before the carry is 3★ unless HP is under 20.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "veigar-reroll",
+      "name": "Veigar Consuming Flora",
+      "tier": "B",
+      "style": "emblem",
+      "summary": "Played from the Consuming Flora augment or artifact; Veigar 3★ with Blackthorn/Spellweaver.",
+      "board": [
+        [
+          "DA_18_RekSai",
+          0,
+          2,
+          3,
+          []
+        ],
+        [
+          "DA_18_Ornn",
+          0,
+          3,
+          3,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor"
+          ]
+        ],
+        [
+          "DA_18_Alistar",
+          0,
+          4,
+          3,
+          []
+        ],
+        [
+          "DA_Fiddlesticks18",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Malphite",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_Karma18",
+          3,
+          0,
+          3,
+          []
+        ],
+        [
+          "DA_18_LeBlanc",
+          3,
+          2,
+          3,
+          [
+            "DA_SpearOfShojin"
+          ]
+        ],
+        [
+          "DA_18_Veigar",
+          3,
+          4,
+          3,
+          [
+            "DA_JeweledGauntlet",
+            "DA_BlueBuff",
+            "DA_RabadonsDeathcap"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Veigar",
+          "items": [
+            "DA_JeweledGauntlet",
+            "DA_BlueBuff",
+            "DA_RabadonsDeathcap"
+          ],
+          "note": "Blue Buff or Shojin; Consuming Flora artifact when offered."
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "items": [
+            "DA_SpearOfShojin"
+          ],
+          "note": "Leftover AP."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Alistar",
+          "note": "Optional 3★ tank."
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "note": "Alternative frontline if Veigar 3 hits early."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_Lux18_Blackthorn",
+          "note": "Blackthorn Lux at 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_FloraFatalisAugment",
+          "note": "Consuming Flora is BIS; emblem > items > econ."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_Hustler"
+        }
+      ],
+      "howToPlay": [
+        "Start strong around an AP slam; roll at 3-1 for copies while staying above 40 gold.",
+        "Feed LeBlanc 3★ to Blackthorn once you have a replacement carry."
+      ],
+      "positioning": "Veigar in the corner with Karma next to him; Rek'Sai and Ornn front-centre; Malphite second row to eat a 3-cost late.",
+      "stages": {
+        "stage2": "Only commit with the emblem or augment on 2-1; otherwise play a normal opener. Buy the carries, slam their core items, take econ Wisps.",
+        "stage3": "Roll at 3-1 for Veigar and LeBlanc copies while staying above 40 gold; slam the AP items on Veigar. Level 6 at 3-5.",
+        "stage4": "Slow-roll at 7 for the 3★s while keeping 30+ gold; go 8 at 4-5 only after the carries are 3★ or HP is under 25.",
+        "stage5": "Level 8/9 and add the 5-cost that shares the emblem's trait. Position the carry two hexes from assassins and the emblem holder in the second row where its trait matters, not where it dies first."
+      }
+    },
+    {
+      "id": "blossom-ahri",
+      "name": "Blossom Ahri",
+      "tier": "B",
+      "style": "standard",
+      "summary": "Blossom opener that keeps its Wisps rolling into an Ahri/Sett/Ashe board.",
+      "board": [
+        [
+          "DA_18_Yorick",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sett",
+          0,
+          3,
+          2,
+          [
+            "DA_WarmogsArmor",
+            "DA_BrambleVest",
+            "DA_DragonsClaw"
+          ]
+        ],
+        [
+          "DA_18_GnarSmall",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_MasterYi_AD",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_Karma18",
+          3,
+          0,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ahri",
+          3,
+          2,
+          2,
+          [
+            "DA_SpearOfShojin",
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail"
+          ]
+        ],
+        [
+          "DA_18_Ashe",
+          3,
+          5,
+          2,
+          [
+            "DA_RedBuff",
+            "DA_SpearOfShojin",
+            "DA_LastWhisper"
+          ]
+        ],
+        [
+          "DA_18_Zyra",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Ahri",
+          "items": [
+            "DA_SpearOfShojin",
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail"
+          ]
+        },
+        {
+          "championId": "DA_18_Sett",
+          "items": [
+            "DA_WarmogsArmor",
+            "DA_BrambleVest",
+            "DA_DragonsClaw"
+          ]
+        },
+        {
+          "championId": "DA_18_Ashe",
+          "items": [
+            "DA_RedBuff",
+            "DA_SpearOfShojin",
+            "DA_LastWhisper"
+          ],
+          "note": "Red Buff or Morello."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_MasterYi_AD",
+          "note": "Any Blossom body until 9."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_GnarSmall",
+          "note": "Ashe and Gnar come in at 9."
+        },
+        {
+          "championId": "DA_Lux18_Blossom",
+          "note": "Blossom Lux for 7 Blossom."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_WispRebatePlus",
+          "note": "Wisp Rebate is BIS; econ = items > combat."
+        },
+        {
+          "augmentId": "DA_18_BlossomTraitAugment"
+        },
+        {
+          "augmentId": "DA_PrismaticTicket"
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_Epoch"
+        }
+      ],
+      "howToPlay": [
+        "Click most econ Wisps; buy combat Wisps only at 1 gold or less.",
+        "Roll 4-2 for Ahri 2 and Sett 2; level 9 for Ashe and Gnar. You cannot toggle 3 Blossom: field all three every round for the upgraded Wisps."
+      ],
+      "positioning": "Ahri one hex in from the corner on the enemy carry's side; Ashe opposite corner; Sett front-centre.",
+      "stages": {
+        "stage2": "Blossom opener with Karma/Yorick and an AP slam; click every econ Wisp and combat Wisps at 1 gold or less. Field three Blossom every round for the upgraded Wisps.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Level 8 at 4-2 if HP allows, otherwise roll at 7 on 4-1 for the 2★ carries and go 8 at 4-5. Stop rolling at 30 gold with a stable board; roll to 0 if the next loss is an 8th.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "adaptor-yi-reroll",
+      "name": "Adaptor Master Yi Reroll",
+      "tier": "B",
+      "style": "reroll",
+      "summary": "3-cost reroll from a 2-1 Yi orb or an artifact; Rengar and Kog'Maw as the side carries.",
+      "board": [
+        [
+          "DA_Krug18",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_Vi18",
+          0,
+          3,
+          2,
+          [
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_18_Rengar",
+          0,
+          4,
+          3,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_EdgeOfNight",
+            "DA_TitansResolve"
+          ]
+        ],
+        [
+          "DA_18_MasterYi_AD",
+          1,
+          3,
+          3,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_EdgeOfNight",
+            "DA_TitansResolve"
+          ]
+        ],
+        [
+          "DA_Nidalee18_AP",
+          1,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_Gromp18_AP",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_KogMaw18_AD",
+          3,
+          4,
+          3,
+          [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_RedBuff"
+          ]
+        ],
+        [
+          "DA_18_Sivir",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_MasterYi_AD",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_EdgeOfNight",
+            "DA_TitansResolve"
+          ],
+          "note": "AD Yi swaps Guinsoo's for QSS."
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_RedBuff"
+          ]
+        },
+        {
+          "championId": "DA_18_Rengar",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_EdgeOfNight",
+            "DA_TitansResolve"
+          ],
+          "note": "Only with his items; do not force from behind."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Nidalee18_AP",
+          "note": "Replaces Kog'Maw 3★ if you miss it."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Primal",
+          "note": "Primal Lux at 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_CookingPot",
+          "note": "Artifact generation and Cooking Pot are BIS; items > reroll > econ."
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        }
+      ],
+      "howToPlay": [
+        "Roll stage 3 for copies; level 7 on 4-1 once stabilised.",
+        "Do not commit without the orb or an artifact: it is a losing line from behind."
+      ],
+      "positioning": "Yi second row centre so he dives after the tanks engage; Rengar on the side of the enemy carry; Kog'Maw back-centre.",
+      "stages": {
+        "stage2": "Buy every Master Yi and any pair; play the strongest board at level 4 (2-1) and stay level 4–5. Slam early tank and AD/AP components on the units you will keep. Econ Wisps and rerolls are welcome; the goal is 50 gold by 3-1 with the carry at 2★.",
+        "stage3": "Level 5 at 3-1 and roll down to 30–40 gold for the 3-cost 2★ and the frontline pairs, then stop. At 3-5 level 6 for the trait breakpoint. Buy every copy of the carry you see; slow-roll above 50 only if the board is winning.",
+        "stage4": "Level 7 at 4-1 or 4-2 and slow-roll at 7 for the 3★ carry and the 3★ tank; roll down to 20 gold on a loss-streak, hold 50 on a win-streak. Do not level to 8 before the carry is 3★ unless HP is under 20.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "invoker-nidalee",
+      "name": "Invoker Nidalee",
+      "tier": "B",
+      "style": "standard",
+      "summary": "Item-hungry Nidalee/Morgana board contesting Sentinel and Morgana; only the carries and Sentinel are static.",
+      "board": [
+        [
+          "DA_Vi18",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_Sentinel18",
+          0,
+          3,
+          2,
+          [
+            "DA_ProtectorsVow",
+            "DA_AdaptiveHelm",
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_Taric18",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_Nidalee18_AP",
+          1,
+          3,
+          2,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail"
+          ]
+        ],
+        [
+          "DA_18_Morgana",
+          2,
+          4,
+          2,
+          [
+            "DA_Morellonomicon",
+            "DA_VoidStaff"
+          ]
+        ],
+        [
+          "DA_18_Teemo",
+          3,
+          0,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sentry",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_KogMaw18_AD",
+          3,
+          5,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_Nidalee18_AP",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_JeweledGauntlet",
+            "DA_StrikersFlail"
+          ]
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "items": [
+            "DA_Morellonomicon",
+            "DA_VoidStaff"
+          ],
+          "note": "Morello is required."
+        },
+        {
+          "championId": "DA_Sentinel18",
+          "items": [
+            "DA_ProtectorsVow",
+            "DA_AdaptiveHelm",
+            "DA_GargoyleStoneplate"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Vi18",
+          "note": "Frontline is flexible; Amumu replaces a missing Sentinel."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Alune",
+          "note": "Level 9: Alune or Taric."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_PrimalAugment_Nidalee",
+          "note": "Beast Within is BIS; items > econ > combat."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        },
+        {
+          "augmentId": "DA_PandorasItemsII"
+        }
+      ],
+      "howToPlay": [
+        "Click item augments at 3-2; roll 4-2 for Morgana, Nidalee and Sentinel 2★ plus a supporting board."
+      ],
+      "positioning": "Nidalee second row on the side she should jump to; Morgana behind Sentinel; the Invokers spread along the back row.",
+      "stages": {
+        "stage2": "Strongest board at level 4 (2-1) and level 5 at 2-5; slam the first two items on the units you already play. Take econ Wisps and a cheap combat Wisp only on a contested streak.",
+        "stage3": "Level 6 at 3-2 and 7 at 4-1; hold 50 gold. Pick the direction at 3-2 from items and the 2-costs you hit; do not roll before 4-1 unless HP is under 40.",
+        "stage4": "Level 8 at 4-2 if HP allows, otherwise roll at 7 on 4-1 for the 2★ carries and go 8 at 4-5. Stop rolling at 30 gold with a stable board; roll to 0 if the next loss is an 8th.",
+        "stage5": "Level 9 at 5-2/5-5 for the 5-cost cap-out and the last breakpoint. Scout: put the carry opposite the enemy backline threats, keep the tank on the side of their damage, and move every round."
+      }
+    },
+    {
+      "id": "cassiopeia-reroll",
+      "name": "Cassiopeia Reroll",
+      "tier": "B",
+      "style": "reroll",
+      "summary": "3-cost reroll with Defenders; Rammus taunts next to Fiddlesticks so he can heal.",
+      "board": [
+        [
+          "DA_18_Shen",
+          0,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Elise",
+          0,
+          2,
+          3,
+          []
+        ],
+        [
+          "DA_18_Rammus",
+          0,
+          3,
+          3,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_Crownguard",
+            "DA_BrambleVest"
+          ]
+        ],
+        [
+          "DA_Fiddlesticks18",
+          0,
+          4,
+          2,
+          [
+            "DA_SunfireCape",
+            "DA_IonicSpark",
+            "DA_SpiritVisage"
+          ]
+        ],
+        [
+          "DA_18_Leona",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Camille",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Lillia",
+          1,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Cassiopeia",
+          3,
+          4,
+          3,
+          [
+            "DA_HextechGunblade",
+            "DA_RabadonsDeathcap",
+            "DA_SpearOfShojin"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Cassiopeia",
+          "items": [
+            "DA_HextechGunblade",
+            "DA_RabadonsDeathcap",
+            "DA_SpearOfShojin"
+          ],
+          "note": "Gunblade + Deathcap/Archangel's + Shojin/Blue Buff; she needs the full BIS."
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "items": [
+            "DA_GargoyleStoneplate",
+            "DA_Crownguard",
+            "DA_BrambleVest"
+          ]
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "items": [
+            "DA_SunfireCape",
+            "DA_IonicSpark",
+            "DA_SpiritVisage"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Camille",
+          "note": "Coven variant uses the cash-outs instead of Defenders."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Coven",
+          "note": "Coven Lux at 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_FloraFatalisAugment",
+          "note": "Consuming Flora is BIS; items > reroll > econ."
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        }
+      ],
+      "howToPlay": [
+        "Roll 3-2 to stabilise; slow-roll stage 4 for the 3★s; level only when it unlocks Flora Fatalis."
+      ],
+      "positioning": "Rammus beside Fiddlesticks so the taunt juggles aggro while Fiddle heals; Cassiopeia back-centre with Elise in front of the assassin side.",
+      "stages": {
+        "stage2": "Buy every Cassiopeia and any pair; play the strongest board at level 4 (2-1) and stay level 4–5. Slam early tank and AD/AP components on the units you will keep. Econ Wisps and rerolls are welcome; the goal is 50 gold by 3-1 with the carry at 2★.",
+        "stage3": "Level 5 at 3-1 and roll down to 30–40 gold for the 3-cost 2★ and the frontline pairs, then stop. At 3-5 level 6 for the trait breakpoint. Buy every copy of the carry you see; slow-roll above 50 only if the board is winning.",
+        "stage4": "Slow-roll at 7 for Cassiopeia 3★ and Rammus 3★; level 8 only when it unlocks the Flora Fatalis breakpoint.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "riftbeast-reroll",
+      "name": "Riftbeast Reroll",
+      "tier": "B",
+      "style": "reroll",
+      "summary": "Vertical Riftbeast with Cinderling and Pebbles 3★; Krug 3★ enables the scaling.",
+      "board": [
+        [
+          "DA_Scuttlecrab18",
+          0,
+          2,
+          3,
+          []
+        ],
+        [
+          "DA_Krug18",
+          0,
+          3,
+          3,
+          [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor",
+            "DA_BrambleVest"
+          ]
+        ],
+        [
+          "DA_Murkwolf18",
+          0,
+          4,
+          3,
+          []
+        ],
+        [
+          "DA_Sentinel18",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_Gromp18_AP",
+          3,
+          0,
+          2,
+          []
+        ],
+        [
+          "DA_18_Sentry",
+          3,
+          2,
+          3,
+          [
+            "DA_BlueBuff",
+            "DA_ArchangelsStaff"
+          ]
+        ],
+        [
+          "DA_Cinderling18",
+          3,
+          4,
+          3,
+          [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_LastWhisper"
+          ]
+        ],
+        [
+          "DA_CrimsonRaptor18",
+          3,
+          6,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_Cinderling18",
+          "items": [
+            "DA_InfinityEdge",
+            "DA_SpearOfShojin",
+            "DA_LastWhisper"
+          ],
+          "note": "Cinderling over Pebbles when items are scarce."
+        },
+        {
+          "championId": "DA_18_Sentry",
+          "items": [
+            "DA_BlueBuff",
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_Krug18",
+          "items": [
+            "DA_GargoyleStoneplate",
+            "DA_WarmogsArmor",
+            "DA_BrambleVest"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "note": "Alpha-Mark Scuttle or Krug 3★ for the frontline stall."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_ElderDragon",
+          "note": "Elder Dragon at 8/9 counts as two Riftbeasts."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_18_RiftbeastTraitAugment",
+          "note": "Omega Riftbeast or Verticality are BIS; items = combat > econ."
+        },
+        {
+          "augmentId": "DA_VerticalityII"
+        },
+        {
+          "augmentId": "DA_VerticalityIII"
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PortableForge"
+        }
+      ],
+      "howToPlay": [
+        "Strong Cinderling/Pebbles 2 opener; hit 5 Riftbeast by 2-5, level 7 on 4-1 for 7 Riftbeast, slow-roll Krug 3★."
+      ],
+      "positioning": "Krug front-centre; Cinderling and Pebbles in opposite back corners; Mama Beak's summons cover the middle.",
+      "stages": {
+        "stage2": "Cinderling/Pebbles 2★ opener; hit 5 Riftbeast by 2-5 for the Alpha Mark stacks. Slam AD/AP components on the two carries.",
+        "stage3": "Level 5 at 3-1 and roll down to 30–40 gold for the 3-cost 2★ and the frontline pairs, then stop. At 3-5 level 6 for the trait breakpoint. Buy every copy of the carry you see; slow-roll above 50 only if the board is winning.",
+        "stage4": "Level 7 at 4-1 or 4-2 and slow-roll at 7 for the 3★ carry and the 3★ tank; roll down to 20 gold on a loss-streak, hold 50 on a win-streak. Do not level to 8 before the carry is 3★ unless HP is under 20.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "kayle-reroll",
+      "name": "Kayle Reroll",
+      "tier": "C",
+      "style": "reroll",
+      "summary": "Needs five 3★s to come online; Cursed Crown makes it comfortable, Field of Mice accelerates it.",
+      "board": [
+        [
+          "DA_18_Hecarim",
+          0,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Rakan",
+          0,
+          2,
+          3,
+          []
+        ],
+        [
+          "DA_18_Ornn",
+          0,
+          3,
+          3,
+          [
+            "DA_WarmogsArmor",
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage"
+          ]
+        ],
+        [
+          "DA_18_Leona",
+          0,
+          4,
+          3,
+          []
+        ],
+        [
+          "DA_18_Sejuani",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Kobuko",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Xayah",
+          3,
+          3,
+          3,
+          [
+            "DA_GuinsoosRageblade"
+          ]
+        ],
+        [
+          "DA_18_Kayle",
+          3,
+          5,
+          3,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_JeweledGauntlet",
+            "DA_RabadonsDeathcap"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Kayle",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_JeweledGauntlet",
+            "DA_RabadonsDeathcap"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "items": [
+            "DA_GuinsoosRageblade"
+          ],
+          "note": "Leftover AD."
+        },
+        {
+          "championId": "DA_18_Ornn",
+          "items": [
+            "DA_WarmogsArmor",
+            "DA_GargoyleStoneplate",
+            "DA_SpiritVisage"
+          ]
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Kobuko",
+          "note": "Any cheap Lunar/Rapidfire/Elderwood body."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Sunbeam",
+          "note": "Solar Lux if you ever reach 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_CursedCrown",
+          "note": "Cursed Crown lets you farm eight 3★s at level 6; econ = items > combat."
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_PrismaticTicket"
+        }
+      ],
+      "howToPlay": [
+        "Kayle/Xayah opener to save HP; dig 3-1 for 1-cost pairs, slow-roll from 3-2, level 6 after the first 3★s.",
+        "Field 5+ different 1-costs to unlock the Field of Mice Wisp."
+      ],
+      "positioning": "Kayle corner-back; Xayah on the other side; three 3★ tanks across the front.",
+      "stages": {
+        "stage2": "Buy every copy of Kayle and Xayah and the other 1-cost carries; play them 2★ on 2-1 and stay level 3–4. Slam the carry's core item first, then a tank item. Take rerolls and econ Wisps; stay above 30 gold.",
+        "stage3": "Dig at 3-1 for the 1-cost pairs and slow-roll from 3-2; level 6 only after the first 3★s land (better 2-cost odds). Field five different 1-costs for the Field of Mice Wisp.",
+        "stage4": "Level 6 at 4-1 and roll for the last 3★ and the 2-cost 2★s; all-in at 4-1 if the board is not stabilised. From 4-2 play for the 3★ frontline.",
+        "stage5": "Level 7 at 5-1 and 8 only late; the board caps with 3★ 1- and 2-costs plus one 5-cost. Position the carry in the second row so it engages after the tanks; scout for Zephyr and assassins."
+      }
+    },
+    {
+      "id": "khazix-rival",
+      "name": "Lunarwood Kha'Zix",
+      "tier": "S",
+      "style": "reroll",
+      "summary": "TFT Academy's S tier: an early Kha'Zix that evolves at 8, 30 and 60 kills with Ravager/Executioner support.",
+      "board": [
+        [
+          "DA_18_Camille",
+          0,
+          2,
+          2,
+          []
+        ],
+        [
+          "DA_18_KhaZix",
+          0,
+          3,
+          3,
+          [
+            "DA_EdgeOfNight",
+            "DA_RabadonsDeathcap",
+            "DA_HandOfJustice"
+          ]
+        ],
+        [
+          "DA_18_Diana",
+          0,
+          4,
+          2,
+          []
+        ],
+        [
+          "DA_18_Warwick",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Shen",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Varus",
+          3,
+          1,
+          2,
+          []
+        ],
+        [
+          "DA_18_Cassiopeia",
+          3,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Ezreal",
+          3,
+          5,
+          2,
+          []
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_KhaZix",
+          "items": [
+            "DA_EdgeOfNight",
+            "DA_RabadonsDeathcap",
+            "DA_HandOfJustice"
+          ],
+          "note": "Lich Bane artifact when offered. Rengar must stay off the board for Rival."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Cassiopeia",
+          "note": "Trait priority Ravager > Executioner > Rapidfire > Spellweaver (healing)."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Kennen",
+          "note": "Inferno/Executioner cap at 8."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_PortableForge",
+          "note": "Items > econ > combat; trait-specific augments for the support traits."
+        },
+        {
+          "augmentId": "DA_JeweledLotus_I"
+        },
+        {
+          "augmentId": "DA_CookingPot"
+        },
+        {
+          "augmentId": "DA_Hustler"
+        }
+      ],
+      "howToPlay": [
+        "Requires an early Kha'Zix (2-1 to 2-3) and lots of items; play high tempo and let him farm kills.",
+        "Never field Rengar alongside him: Rival only rewards a lone Rival."
+      ],
+      "positioning": "Kha'Zix front-centre so he reaches the first kill fast; Camille and Diana beside him, casters spread in the back.",
+      "stages": {
+        "stage2": "Needs Kha'Zix by 2-3; play him in the front with the strongest board and slam Edge of Night or an AP item on him early. Never field Rengar.",
+        "stage3": "Level 5 at 3-1 and roll down to 30–40 gold for the 3-cost 2★ and the frontline pairs, then stop. At 3-5 level 6 for the trait breakpoint. Buy every copy of the carry you see; slow-roll above 50 only if the board is winning.",
+        "stage4": "Slow-roll at 7 for Kha'Zix 3★ while he farms the 30-kill evolution; level 8 at 4-5 with the Ravager/Executioner bodies.",
+        "stage5": "Level 8 at 5-1 once the 3★s are done and add the 5-cost cap-out; the 3★ carry wants a frontline that lasts, so late gold goes into 2★ tanks first. Position the carry two hexes from the side with enemy assassins and scout every round."
+      }
+    },
+    {
+      "id": "tristana-rengar-reroll",
+      "name": "Tristana Rengar Reroll",
+      "tier": "X",
+      "style": "emblem",
+      "summary": "Emblem-dependent 3-cost reroll: the Sprykin, Hunter or Fae emblem dictates the build around Rengar and Tristana.",
+      "board": [
+        [
+          "DA_18_Rammus",
+          0,
+          2,
+          3,
+          [
+            "DA_GargoyleStoneplate"
+          ]
+        ],
+        [
+          "DA_18_Rengar",
+          0,
+          3,
+          3,
+          [
+            "DA_TitansResolve",
+            "DA_SteraksGage",
+            "DA_Bloodthirster"
+          ]
+        ],
+        [
+          "DA_18_Rakan",
+          0,
+          4,
+          3,
+          []
+        ],
+        [
+          "DA_18_Lillia",
+          0,
+          5,
+          2,
+          []
+        ],
+        [
+          "DA_18_Kobuko",
+          1,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Xayah",
+          3,
+          1,
+          3,
+          []
+        ],
+        [
+          "DA_18_Teemo",
+          3,
+          3,
+          2,
+          []
+        ],
+        [
+          "DA_18_Tristana",
+          3,
+          5,
+          3,
+          [
+            "DA_GuinsoosRageblade",
+            "DA_HextechGunblade",
+            "DA_GiantSlayer"
+          ]
+        ]
+      ],
+      "carries": [
+        {
+          "championId": "DA_18_Tristana",
+          "items": [
+            "DA_GuinsoosRageblade",
+            "DA_HextechGunblade",
+            "DA_GiantSlayer"
+          ]
+        },
+        {
+          "championId": "DA_18_Rengar",
+          "items": [
+            "DA_TitansResolve",
+            "DA_SteraksGage",
+            "DA_Bloodthirster"
+          ],
+          "note": "Titan's always; the other two depend on the emblem variant."
+        }
+      ],
+      "flex": [
+        {
+          "championId": "DA_18_Teemo",
+          "note": "Sprykin/Hunter/Fae bodies by variant."
+        }
+      ],
+      "extra": [
+        {
+          "championId": "DA_18_Lux_Fae",
+          "note": "Fae Lux in the Fae variant."
+        }
+      ],
+      "augments": [
+        {
+          "augmentId": "DA_UrfsGrabBag"
+        },
+        {
+          "augmentId": "DA_TheTraitTree"
+        },
+        {
+          "augmentId": "DA_SpreadingRoots"
+        },
+        {
+          "augmentId": "DA_18_BranchingOut",
+          "note": "Emblem > items > econ."
+        },
+        {
+          "augmentId": "DA_Hustler"
+        },
+        {
+          "augmentId": "DA_PandorasBench"
+        },
+        {
+          "augmentId": "DA_CookingPot"
+        }
+      ],
+      "howToPlay": [
+        "Commit from an early Rengar or an emblem at 2-1; level 7 on 3-5 from a loss-streak (or 4-1 if winning), slow-roll for the 3★s."
+      ],
+      "positioning": "Rengar front-centre; Tristana back-corner away from the enemy assassins; Rammus on the side that takes the first engage.",
+      "stages": {
+        "stage2": "Only commit with the emblem or augment on 2-1; otherwise play a normal opener. Buy the carries, slam their core items, take econ Wisps.",
+        "stage3": "Level 6 at 3-2 and roll down to 30 gold for the 2★ carries; the emblem unit must hold its trait slot. Level 7 at 3-5 on a loss-streak or 4-1 on a win-streak.",
+        "stage4": "Slow-roll at 7 for the 3★s while keeping 30+ gold; go 8 at 4-5 only after the carries are 3★ or HP is under 25.",
+        "stage5": "Level 8/9 and add the 5-cost that shares the emblem's trait. Position the carry two hexes from assassins and the emblem holder in the second row where its trait matters, not where it dies first."
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ const TOOLS = [
   { href: "/lab/odds", title: "Roll-odds calculator", body: "How likely are you to hit 2★ or 3★ on a unit given your level, the pool and your gold? Closed-form per slot, Monte-Carlo for the distribution." },
   { href: "/lab/econ", title: "Econ simulator", body: "Project gold and level over the next five rounds under two plans side by side: save, level, or roll." },
   { href: "/lab/cheatsheet", title: "Printable cheat sheet", body: "Odds, interest, level timings, item matrix and the scout routine on one page. Prints in black and white." },
-  { href: "/lab/board", title: "Board sandbox", body: "The board component on its own: modes, drag-and-drop, keyboard path, responsive sizing." },
+  { href: "/lab/board", title: "Team planner & fight simulator", body: "Build a board with every champion, item and augment of the set, set an enemy board opposite it, and simulate the fight: win rate, survivors, damage per unit." },
 ];
 
 export default function LabPage() {

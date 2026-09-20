@@ -1,6 +1,6 @@
 import { isCost } from "../costs";
 import type { Augment, AugmentTier, Champion, Item, ItemKind, SetData, SetMeta, Trait, TraitBreakpoint, TraitStyle } from "../types";
-import { renderDesc, traitRows } from "../text";
+import { renderDesc, renderDescRich, traitRows } from "../text";
 import type { RawCdItemT, RawCdSetEntryT, RawCdChampionT, RawCdTraitT } from "./schema";
 
 /**
@@ -35,6 +35,7 @@ export const TIER_TAGS: Record<string, AugmentTier> = {
 
 /** Item classification tags observed on Set 18 items. */
 export const ITEM_TAGS = {
+  charm: "{5b609ae2}",
   emblem: "{ebcd1bac}",
   artifact: "{44ace175}",
   radiant: "{6ef5c598}",
@@ -59,7 +60,7 @@ export function normalizeCdragon(entry: RawCdSetEntryT, allItems: RawCdItemT[], 
 
   const byApi = new Map(allItems.map((i) => [i.apiName, i]));
   const rawItems = entry.items.map((id) => byApi.get(id)).filter((i): i is RawCdItemT => !!i && !i.isAugment);
-  const items = dedupeItems(rawItems.map(normalizeItem).filter((i) => i.name.length > 0 && i.icon.length > 0));
+  const items = dedupeItems(rawItems.map(normalizeItem).filter((i) => i.name.length > 0 && i.icon.length > 0)).map((i) => linkEmblem(i, traits));
 
   const rawAugs = entry.augments.map((id) => byApi.get(id)).filter((i): i is RawCdItemT => !!i && i.isAugment);
   const augments = rawAugs
@@ -112,13 +113,31 @@ function normalizeChampion(c: RawCdChampionT, traitIdByName: Map<string, string>
       range: c.stats.range ?? 0,
       mana: c.stats.mana ?? 0,
       initialMana: c.stats.initialMana ?? 0,
+      attackSpeed: c.stats.attackSpeed ?? 0,
+      critChance: c.stats.critChance ?? 0.25,
+      critMultiplier: c.stats.critMultiplier ?? 1.4,
     },
     ability: {
       name: c.ability.name ?? "",
       desc: renderDesc(c.ability.desc, vars),
       icon: c.ability.icon && c.ability.icon !== "None" ? c.ability.icon : "",
+      scaling: abilityScaling(c.ability.desc),
+      rich: renderDescRich(c.ability.desc, vars),
     },
   };
+}
+
+/** Riot marks scaling stats in ability text with %i:scaleAD% / %i:scaleAP% icon tokens. */
+export function abilityScaling(rawDesc: string | null | undefined): { ad: boolean; ap: boolean } {
+  const s = rawDesc ?? "";
+  return { ad: /%i:scaleAD%/i.test(s), ap: /%i:scaleAP%/i.test(s) };
+}
+
+/** Keep numeric, non-hashed effect values. */
+export function numericEffects(effects: Record<string, number | null> | undefined): Record<string, number> {
+  const out: Record<string, number> = {};
+  for (const [k, v] of Object.entries(effects ?? {})) if (typeof v === "number" && !k.startsWith("{")) out[k] = Math.round(v * 10000) / 10000;
+  return out;
 }
 
 function normalizeTrait(t: RawCdTraitT): Trait {
@@ -151,6 +170,7 @@ export function classifyItem(i: RawCdItemT): ItemKind {
   if (tags.has(ITEM_TAGS.radiant) || /Radiant$/i.test(id)) return "radiant";
   if (tags.has(ITEM_TAGS.artifact) || /Artifact|_Ornn/i.test(id)) return "artifact";
   if (tags.has(ITEM_TAGS.support)) return "support";
+  if (tags.has(ITEM_TAGS.charm) || /set\d+_mechanicicon/i.test(i.icon ?? "")) return "charm";
   if (i.composition.length >= 2) return "completed";
   return "other";
 }
@@ -163,6 +183,9 @@ function normalizeItem(i: RawCdItemT): Item {
     icon: i.icon ?? "",
     composition: i.composition,
     kind: classifyItem(i),
+    effects: numericEffects(i.effects),
+    associatedTraits: i.associatedTraits,
+    rich: renderDescRich(i.desc, i.effects ?? {}),
   };
 }
 
@@ -203,13 +226,17 @@ export function dedupeItems(items: Item[]): Item[] {
     scored.sort((a, b) => b.score - a.score || a.idx - b.idx);
     // Keep the winner, plus any losers that have a different kind (real distinct items).
     let winner = scored[0]!.it;
-    // The canonical copy sometimes ships without a description (DA_Component_* do); borrow it.
+    // The canonical copy sometimes ships without a description or effects (DA_* do); borrow them.
     if (!winner.desc) {
       const donor = scored.slice(1).find((s) => s.it.desc && s.it.kind === winner.kind);
-      if (donor) winner = { ...winner, desc: donor.it.desc };
+      if (donor) winner = { ...winner, desc: donor.it.desc, rich: donor.it.rich };
+    }
+    if (Object.keys(winner.effects).length === 0) {
+      const donor = scored.slice(1).find((s) => Object.keys(s.it.effects).length > 0 && s.it.kind === winner.kind);
+      if (donor) winner = { ...winner, effects: donor.it.effects };
     }
     out.push(winner);
-    for (const s of scored.slice(1)) if (s.it.kind !== winner.kind && s.it.kind === "other") out.push(s.it);
+    for (const s of scored.slice(1)) if (s.it.kind !== winner.kind && (s.it.kind === "other" || s.it.kind === "charm")) out.push(s.it);
   }
   return out.sort((a, b) => a.name.localeCompare(b.name));
 }
@@ -261,6 +288,14 @@ export function rewriteIcons(data: SetData, map: (upstreamPath: string) => strin
     items: data.items.map((i) => ({ ...i, icon: f(i.icon) })),
     augments: data.augments.map((a) => ({ ...a, icon: f(a.icon) })),
   };
+}
+
+/** Emblems ship with empty associatedTraits; resolve "<Trait> Emblem" by trait name. */
+export function linkEmblem(item: Item, traits: Trait[]): Item {
+  if (item.kind !== "emblem" || item.associatedTraits.length > 0) return item;
+  const base = item.name.replace(/\s*emblem\s*$/i, "").trim().toLowerCase();
+  const t = traits.find((tr) => tr.name.toLowerCase() === base);
+  return t ? { ...item, associatedTraits: [t.id] } : item;
 }
 
 /** All distinct upstream icon paths referenced by a SetData. */

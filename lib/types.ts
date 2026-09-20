@@ -17,8 +17,21 @@ export interface Champion {
     range: number;
     mana: number;
     initialMana: number;
+    /** Attacks per second at 1★ (0 when the upstream lacks it). */
+    attackSpeed: number;
+    /** 0..1 */
+    critChance: number;
+    critMultiplier: number;
   };
-  ability: { name: string; desc: string; icon: string };
+  ability: {
+    name: string;
+    desc: string;
+    icon: string;
+    /** Which stats the ability text scales with (from %i:scaleAD% / %i:scaleAP% tokens). */
+    scaling: { ad: boolean; ap: boolean };
+    /** Same as desc but stat-icon tokens are kept as [[AD]] / [[AP]] / [[HP]] … markers for the UI. */
+    rich: string;
+  };
 }
 
 export interface TraitBreakpoint {
@@ -42,6 +55,7 @@ export type ItemKind =
   | "artifact"
   | "radiant"
   | "support"
+  | "charm"
   | "other";
 
 export interface Item {
@@ -51,6 +65,12 @@ export interface Item {
   icon: string;
   composition: string[]; // component ids, empty for components
   kind: ItemKind;
+  /** Numeric effect values as shipped upstream (AD is a fraction, AP/Armor flat, AS in %). Empty when unknown. */
+  effects: Record<string, number>;
+  /** Trait ids an emblem grants. */
+  associatedTraits: string[];
+  /** desc with stat-icon markers kept ([[AD]] …). */
+  rich: string;
 }
 
 export type AugmentTier = "silver" | "gold" | "prismatic";

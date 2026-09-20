@@ -25,11 +25,27 @@ jobs:
       - name: Sync live set from CommunityDragon
         run: npm run sync-set
 
+      - name: Sync patch notes from Riot's news site
+        run: npm run sync-patch-notes
+        continue-on-error: true
+
+      - name: Sync wisp costs and stages
+        run: npm run sync-wisps
+        continue-on-error: true
+
+      - name: Sync item / unit / comp statistics from the Riot API
+        if: ${{ secrets.RIOT_API_KEY != '' }}
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: npm run sync-meta
+        continue-on-error: true
+
       - name: Inspect result
         id: inspect
         shell: bash
         run: |
           echo "changed=$(git status --porcelain data/generated public/assets | wc -l | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "patch=$(node -e "try{const p=require('./data/generated/patch-notes.json');console.log(p.notes[0]?.title||'')}catch{console.log('')}")" >> "$GITHUB_OUTPUT"
           echo "set_name=$(node -e "const c=require('./data/generated/current.json');const fs=require('fs');const m='content/sets/'+c.setNumber+'/meta.json';const d=fs.existsSync(m)?JSON.parse(fs.readFileSync(m,'utf8')).displayName:null;console.log((d&&d.trim())||('Set '+c.setNumber))")" >> "$GITHUB_OUTPUT"
           if [ -f data/generated/SET_CHANGED ]; then
             echo "new_set=true" >> "$GITHUB_OUTPUT"

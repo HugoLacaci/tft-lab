@@ -1,0 +1,1224 @@
+{
+ "syncedAt": "2026-09-20T23:17:52.899Z",
+ "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
+ "wisps": [
+  {
+   "name": "Abandon Ship",
+   "cost": 0,
+   "desc": "Sell your board and bench, gain 6 gold and 8 rerolls.Requirements: no 3-star champion",
+   "stage": "3-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "All Ones",
+   "cost": 0,
+   "desc": "Reroll your shop with all 1-cost champions.Requirements: at least 5 gold",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Bark Armor",
+   "cost": 0,
+   "desc": "Your champions gain 150 shield for 10 seconds.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Beggar's Wisp",
+   "cost": 0,
+   "desc": "The wilds couldn't find a wisp for you this roll. Gain 3 gold.",
+   "stage": "2-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Coin Flip",
+   "cost": 0,
+   "desc": "Flip a coin, gain 1 gold if it's heads.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Curio Cart",
+   "cost": 0,
+   "desc": "Open an item store. Items cost 0 to 15 gold.Requirements: at least 10 gold",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Doodad Jar",
+   "cost": 0,
+   "desc": "Gain 1 consumable that gives permanent Armor and Magic Resist or Health.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Early Fix",
+   "cost": 0,
+   "desc": "Gain 1 Item Reforger.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Found Friend",
+   "cost": 0,
+   "desc": "Gain a temporary Training Dummy with a Giant's Belt.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Knick-Knack Jar",
+   "cost": 0,
+   "desc": "Gain 1 consumable that gives permanent Attack Damage or Attack Speed.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Life Debt",
+   "cost": 0,
+   "desc": "Gain 1 gold for every 12 missing Player Health.Requirements: at least 70 missing player health",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Major Polymorph",
+   "cost": 0,
+   "desc": "A random 4-cost you own permanently transforms into a 5-cost.Requirements: during the first 3 seconds of planning",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Minor Polymorph",
+   "cost": 0,
+   "desc": "A random 1-cost you own permanently transforms into a 2-cost.Requirements: during the first 3 seconds of planning",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Peddler",
+   "cost": 0,
+   "desc": "Open a random item store. Random items cost 0 to 14 gold.Requirements: at least 10 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Polymorph",
+   "cost": 0,
+   "desc": "A random 2-cost you own permanently transforms into a 3-cost.Requirements: during the first 3 seconds of planning",
+   "stage": "2-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Prolific Power",
+   "cost": 0,
+   "desc": "Your champions gain 4% Attack Damage and Ability Power.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Salvager",
+   "cost": 0,
+   "desc": "Any units you bench have items removed and broken apart.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Sinister Deal",
+   "cost": 0,
+   "desc": "Lose 4 Player Health. Gain 2 Gold.Requirements: at least 4 player health",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Stealthy",
+   "cost": 0,
+   "desc": "Your 2 strongest Fighters or Assassins are untargetable for 6 seconds.Requirements: 2 or more fighters on board",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Thingamajig Jar",
+   "cost": 0,
+   "desc": "Gain 1 consumable that gives permanent Ability Power or Mana Regen.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Truce",
+   "cost": 0,
+   "desc": "Gain 1 gold. Your opponent gains 1 gold.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Verdant Vitality",
+   "cost": 0,
+   "desc": "Your champions gain 50 Health.Requirements: less than 10 gold",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "All Twos",
+   "cost": 1,
+   "desc": "Reroll your shop with all 2-cost champions.Requirements: at least 5 gold",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Backrow Star",
+   "cost": 1,
+   "desc": "A random back row champion gains 85% Attack Speed for 7 seconds.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Big Boom",
+   "cost": 1,
+   "desc": "The first ally to die explodes, dealing 25% Max Health magic damage.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Blast Potion",
+   "cost": 1,
+   "desc": "Gain a temporary equippable Blast Potion.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Borrowed Gear",
+   "cost": 1,
+   "desc": "At the start of combat, a champion gains a temporary recommended item.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Bunch-o'-Belts",
+   "cost": 1,
+   "desc": "Your allies gain 7 temporary, non-removable Giant's Belts.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Crystal Ball",
+   "cost": 1,
+   "desc": "Reveal your next opponent. Your team gains 12% Attack Speed.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Doodad Bag",
+   "cost": 1,
+   "desc": "Gain 2 consumables that give permanent Armor and Magic Resist or Health.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Drought",
+   "cost": 1,
+   "desc": "Add 2 to your loss streak.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Essence Theft",
+   "cost": 1,
+   "desc": "Gain 50% bonus Coven Essence this combat.Requirements: Coven trait active",
+   "stage": "2-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Experienced",
+   "cost": 1,
+   "desc": "Gain 2 XP.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Fertilize",
+   "cost": 1,
+   "desc": "Gain 1 XP for each enemy that dies.",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Flash Fire",
+   "cost": 1,
+   "desc": "Reroll your shop. Inferno lights 2 shop slots on fire, upgrading them.Requirements: Inferno trait active",
+   "stage": "3-5 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Flip Frenzy",
+   "cost": 1,
+   "desc": "Flip a coin, gain 1 gold if it's heads. Continue until you flip tails.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Flood",
+   "cost": 1,
+   "desc": "Add 1 to your win streak.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Forest Mage",
+   "cost": 1,
+   "desc": "Fill your shop with Wisps. You can only buy one.Requirements: during the first 8 seconds of planning",
+   "stage": "3-5 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Golden Goose",
+   "cost": 1,
+   "desc": "Gain 1 gold for every 1700 damage your highest damage champion deals.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Health Potion",
+   "cost": 1,
+   "desc": "Gain a tempoary equippable Health Potion.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Hugify",
+   "cost": 1,
+   "desc": "Your highest Health unit grows, gaining 350 Health.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Hummingbird",
+   "cost": 1,
+   "desc": "Your highest Attack Speed unit shrinks, gaining 20% Attack Speed.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Iron Core",
+   "cost": 1,
+   "desc": "Your front center champion gains 6% Max Health per front-row unit.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Killer's Regret",
+   "cost": 1,
+   "desc": "Your first 3 champions to die stun their killer for 1.5 seconds.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Knick-Knack Bag",
+   "cost": 1,
+   "desc": "Gain 2 consumables that give permanent Attack Damage or Attack Speed.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Lesser Chaos",
+   "cost": 1,
+   "desc": "Cast a random Wisp.",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Lightning Strike",
+   "cost": 1,
+   "desc": "Deal 10% Max Health true damage to all enemies.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Mana Potion",
+   "cost": 1,
+   "desc": "Gain a temporary equippable Mana Potion.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Minor Gambit",
+   "cost": 1,
+   "desc": "If you win the next player combat, gain 2 Gold.Requirements: Coven trait inactive",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Mitosis",
+   "cost": 1,
+   "desc": "Gain a Tiny Champion Duplicator.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Nature's Wrath",
+   "cost": 1,
+   "desc": "Kill EVERYONE without an item after 10 seconds.Requirements: 5 or more champions with 1+ items; Elderwood trait inactive",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Petrify Shields",
+   "cost": 1,
+   "desc": "10% Slow enemies and reduce their shields by 20% for 10 seconds.",
+   "stage": "4-2 to 4-7, 6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Pocket Change",
+   "cost": 1,
+   "desc": "Your one-star champions drop 1 gold on death.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Potted Lifebloom",
+   "cost": 1,
+   "desc": "Gain a temporary Lifeblossom.Requirements: Elderwood trait active",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Potted Stonebark",
+   "cost": 1,
+   "desc": "Gain a temporary Stonebark Tree.Requirements: Elderwood trait active",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Rain",
+   "cost": 1,
+   "desc": "Your team gains 1 Mana Regen.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Search Party",
+   "cost": 1,
+   "desc": "Each of your shops has a 4-cost in it this round until you buy one.Requirements: at least 8 gold",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Starfall",
+   "cost": 1,
+   "desc": "The first 6 times you reroll your shop this round, the lowest cost champion becomes 2-star.Requirements: at least 10 gold",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Take One With Ya",
+   "cost": 1,
+   "desc": "If you lose and kill at least one enemy, gain 4 XP.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Tattered Armor",
+   "cost": 1,
+   "desc": "30% Shred and Sunder enemies for 10 seconds.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Thingamajig Bag",
+   "cost": 1,
+   "desc": "Gain 2 consumables that give permanent Ability Power or Mana Regen.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Ultra Ascension",
+   "cost": 1,
+   "desc": "After 25 seconds, allies gain 300% Damage Amp.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Aftershock",
+   "cost": 2,
+   "desc": "After 8 seconds, stun all enemies for 1.5 seconds.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "All Threes",
+   "cost": 2,
+   "desc": "Reroll your shop with all 3-cost champions.Requirements: at least 5 gold",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Artifactinate",
+   "cost": 2,
+   "desc": "Lose 3 components, including ones built into items. Gain an Artifact anvil.Requirements: at least 3 item components",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Barter",
+   "cost": 2,
+   "desc": "The next champion sold this round sells for 200% gold.",
+   "stage": "3-5 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Blood Money",
+   "cost": 2,
+   "desc": "Gain 1 gold for every champion you kill.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Counterspell",
+   "cost": 2,
+   "desc": "Increase all enemies' Max Mana by 15 until their next cast.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Cutpurse",
+   "cost": 2,
+   "desc": "Every 5 seconds, your champions have a 20% chance to drop 1 Gold.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Die Roll",
+   "cost": 2,
+   "desc": "Roll a six-sided die. Gain gold equal to the result.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Downpour",
+   "cost": 2,
+   "desc": "Your team gains 2 Mana Regen.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Freeroller",
+   "cost": 2,
+   "desc": "Gain 2 rerolls.",
+   "stage": "2-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Golden Road",
+   "cost": 2,
+   "desc": "After 3 player combats, gain 2 Gold per fight won.",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Healing Pool",
+   "cost": 2,
+   "desc": "Heal 5 Player Health.Requirements: at least 10 missing player health",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Hero's Entrance",
+   "cost": 2,
+   "desc": "After 8 seconds, the leftmost benched champion joins combat and gains 2 recommended items.Requirements: at least 1 champion on the bench",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Hireling",
+   "cost": 2,
+   "desc": "A temporary 1-star 5-cost with 1 recommended items joins your team.",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Homing Fireflies",
+   "cost": 2,
+   "desc": "Your Casters spawn a firefly per 20 Mana spent. Each deals 110 magic damage.Requirements: 2 or more casters on board",
+   "stage": "3-5 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Improved Reach",
+   "cost": 2,
+   "desc": "Your Fighters gain 1 range.Requirements: 2 or more fighters on board; at least 1 itemized fighters on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Ironwood",
+   "cost": 2,
+   "desc": "Enemies attacking your highest health champion deal 14% less damage.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Killing Frenzy",
+   "cost": 2,
+   "desc": "Fighters execute targets under 12% Health. They gain 15% Attack Speed on kill.Requirements: at least 1 itemized fighters on board; 2 or more fighters on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Living Soil",
+   "cost": 2,
+   "desc": "Every 4 seconds, roots stun an enemy for 1 second.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Mana-Rich Soil",
+   "cost": 2,
+   "desc": "Your Casters have 18% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Marksmen's Gale",
+   "cost": 2,
+   "desc": "Your Marksmen's attacks grant 3% stacking Attack Speed.Requirements: 2 or more marksmen on board; at least 1 itemized marksmen on board",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Moonlight Ritual",
+   "cost": 2,
+   "desc": "Your lowest star 1-cost or 2-cost champion stars up in combat.Requirements: at least 1 2-star 1 or 2-cost champion",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Moonrise",
+   "cost": 2,
+   "desc": "After 8 seconds, increase Lunar's effects by 100%.Requirements: Lunar trait active",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Nature's Ally",
+   "cost": 2,
+   "desc": "Every 3 ally deaths, summon a random Riftbeast.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Petrified Dummy",
+   "cost": 2,
+   "desc": "Your first champion to die turns into a 900 Health dummy with their defenses.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Phantom Armor",
+   "cost": 2,
+   "desc": "Gain a temporary Warmog's Armor.",
+   "stage": "3-1 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Phantom Emblem",
+   "cost": 2,
+   "desc": "Gain a temporary emblem of your most active trait.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Phantom Splash",
+   "cost": 2,
+   "desc": "Combat start: Up to 2 inactive traits activate at the lowest level.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Phantom Vest",
+   "cost": 2,
+   "desc": "Gain a temporary Bramble Vest.",
+   "stage": "3-1 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Plated Shields",
+   "cost": 2,
+   "desc": "Shields are 15% stronger. Allies gain 150 shield for 10 seconds.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Potioncraft",
+   "cost": 2,
+   "desc": "Gain three temporary equippable Potions.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Preppers",
+   "cost": 2,
+   "desc": "Your stacking items start next combat partially stacked.Requirements: at least 2 stacking items",
+   "stage": "3-1 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Propagate",
+   "cost": 2,
+   "desc": "Gain a copy of the first allied champion to die.",
+   "stage": "2-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Quicken",
+   "cost": 2,
+   "desc": "On cast, your champions gain 30% Attack Speed for 4 seconds.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Resistant",
+   "cost": 2,
+   "desc": "Tanks reduce instances of incoming damage by 10.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Revenge",
+   "cost": 2,
+   "desc": "Whenever an ally dies, your champions gain 4% stacking Damage Amp.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Snacktime!",
+   "cost": 2,
+   "desc": "The BFF eats enemies he damages under 16% Max Health.Requirements: Sprykin trait active",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Solitude's Cloak",
+   "cost": 2,
+   "desc": "Champions with no adjacent allies gain 10% Max Health and 10% Damage Amp.Requirements: Sunbeam and Moonbeam are inactive",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Stand Alone",
+   "cost": 2,
+   "desc": "Champions alone in their row gain 15% Health and 15% Damage Amp.Requirements: Elderwood trait inactive; Lunar trait inactive; Greenfather trait inactive",
+   "stage": "3-5 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Starting Town",
+   "cost": 2,
+   "desc": "Reroll your shop with all 2-star 1-cost champions.",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Sunfire Sorcery",
+   "cost": 2,
+   "desc": "Burn and Wound enemies for 10 seconds.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Supercritical",
+   "cost": 2,
+   "desc": "Allies with Precision gain 25% Critical Strike Damage.Requirements: at least 1 allied champion has Precision",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Terraforming",
+   "cost": 2,
+   "desc": "Gain 7 seeds at start of combat.Requirements: Greenfather trait active",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Trophy Hunter",
+   "cost": 2,
+   "desc": "Next player combat, your Rivals' takedowns count twice.Requirements: Rival trait active",
+   "stage": "2-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Wrapped In Thorns",
+   "cost": 2,
+   "desc": "Your Tanks reflect 12% of damage taken to adjacent enemies every 4 seconds.Requirements: 2 or more tanks on board",
+   "stage": "3-5 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Yordle Spirit",
+   "cost": 2,
+   "desc": "Allies have a 99% chance to dodge attacks for 4 seconds.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "All Fours",
+   "cost": 3,
+   "desc": "Reroll your shop with all 4-cost champions.Requirements: at least 8 gold",
+   "stage": "5-1 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Apprentice",
+   "cost": 3,
+   "desc": "Gain a random 2-star 1-cost champion.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Barrier",
+   "cost": 3,
+   "desc": "Allies gain 1250 Shield, decaying over 6 seconds.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Bear's Visit",
+   "cost": 3,
+   "desc": "Gain the Bear Primal buff for this combat.Requirements: Primal trait active",
+   "stage": "3-5 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Blaze",
+   "cost": 3,
+   "desc": "Fire spreads across the board, dealing true damage to enemies.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Blood and Iron",
+   "cost": 3,
+   "desc": "After 20 champion deaths, gain a component anvil.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Border Village",
+   "cost": 3,
+   "desc": "Reroll your shop with all 2-star 2-cost champions.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Bronze Spoon",
+   "cost": 3,
+   "desc": "Gain 4 XP.",
+   "stage": "2-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Bulwark",
+   "cost": 3,
+   "desc": "Your Tanks gain a 20% Max Health shield upon falling below 50% Health.Requirements: 2 or more tanks on board",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Combust",
+   "cost": 3,
+   "desc": "Your champions explode on death, dealing 12% Max Health magic damage.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Diversified",
+   "cost": 3,
+   "desc": "Your team gains 30 Health for each active non-unique trait.Requirements: at least 5 non-unique traits active",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Doodad Sack",
+   "cost": 3,
+   "desc": "Gain 3 consumables that give permanent Armor and Magic Resist or Health.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Fellowship",
+   "cost": 3,
+   "desc": "Champions gain 4% Max Health Shield and 4% Damage Amp per adjacent ally.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Flow",
+   "cost": 3,
+   "desc": "Your champions are Unstoppable and gain 15% Attack Speed for 10 seconds.",
+   "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Giant's Aura",
+   "cost": 3,
+   "desc": "Your highest Health ally deals 2% max Health damage per second in an area.Requirements: at least 1 itemized tanks on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Heated Rivalry",
+   "cost": 3,
+   "desc": "Gain a Rengar or a Kha'Zix. They gain 3 takedowns.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Knick-Knack Sack",
+   "cost": 3,
+   "desc": "Gain 3 consumables that give permanent Attack Damage or Attack Speed.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Lightning Storm",
+   "cost": 3,
+   "desc": "Every 1 second deal 5% Max Health true damage to an enemy.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Lost Travelers",
+   "cost": 3,
+   "desc": "Gain 3 gold worth of random champions.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Major Gambit",
+   "cost": 3,
+   "desc": "If you win the next player combat, gain 8 Gold.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Marksmen's Marks",
+   "cost": 3,
+   "desc": "Your Marksmen have a 30% chance to double attack.Requirements: 2 or more marksmen on board; at least 1 itemized marksmen on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Mercenary Force",
+   "cost": 3,
+   "desc": "Gain 3% Damage Amp for every 10 gold you have.Requirements: at least 30 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Minor Blood Ritual",
+   "cost": 3,
+   "desc": "Lose 3 Player Health. Gain a Lesser Champion Duplicator.Requirements: at least 3 player health",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Payday",
+   "cost": 3,
+   "desc": "For each ally champion that survives combat, gain 2 Gold.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Phantom Gloves",
+   "cost": 3,
+   "desc": "Gain a temporary Thief's Gloves.",
+   "stage": "3-1 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Radiantize",
+   "cost": 3,
+   "desc": "After 8 seconds, 1 random equipped item temporarily becomes Radiant.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Regeneration",
+   "cost": 3,
+   "desc": "Your team heals 1% max Health per second.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Ride the Wave",
+   "cost": 3,
+   "desc": "The next 2 rerolls this round will have 2+ champions fielded last combat.Requirements: during the first 20 seconds of planning; at least 20 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Rolling Bones",
+   "cost": 3,
+   "desc": "You have a 50% chance to get a free reroll with each kill.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Roly-Polys",
+   "cost": 3,
+   "desc": "For each ally champion alive after 18 seconds, gain a reroll.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Scrappy",
+   "cost": 3,
+   "desc": "Combat start: 2 champions without items gain a temporary recommended item.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Slow Study",
+   "cost": 3,
+   "desc": "For each ally champion alive after 15 seconds, gain 2 XP.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Thingamajig Sack",
+   "cost": 3,
+   "desc": "Gain 3 consumables that give permanent Ability Power or Mana Regen.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Tiger's Visit",
+   "cost": 3,
+   "desc": "Gain the Tiger Primal buff for this combat.Requirements: Primal trait active",
+   "stage": "3-5 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Training Yard",
+   "cost": 3,
+   "desc": "Gain 2 Training Dummies each with a random tank item.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Treetop Archers",
+   "cost": 3,
+   "desc": "Archers fire from the trees, dealing 500 physical damage every 3 seconds.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Tremors",
+   "cost": 3,
+   "desc": "Every 8 seconds, Stun enemies for 1 second.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Turtle's Visit",
+   "cost": 3,
+   "desc": "Gain the Turtle Primal buff for this combat.Requirements: Primal trait active",
+   "stage": "3-5 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Component Bounty",
+   "cost": 4,
+   "desc": "If you win the next player combat, gain a random component.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Forest Twins",
+   "cost": 4,
+   "desc": "Gain 2 copies of a 2-cost champion you don't have.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Giant Growth",
+   "cost": 4,
+   "desc": "Your highest Health unit grows, gaining 750 Health.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Good Loss",
+   "cost": 4,
+   "desc": "For the next 3 player combats, gain 4 XP if you lose.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Greater Chaos",
+   "cost": 4,
+   "desc": "Cast 2 random Wisps.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Idle Craftsman",
+   "cost": 4,
+   "desc": "A component on your bench turns into a completed item it builds.Requirements: at least 1 item components",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Infliction",
+   "cost": 4,
+   "desc": "Slow, Burn, Shred, and Sunder enemies for 8 seconds.",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Jungling",
+   "cost": 4,
+   "desc": "Overrun the shop with Riftbeasts.Requirements: Riftbeast trait active",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Late Bloomer",
+   "cost": 4,
+   "desc": "A temporary 3-star 1-cost joins your team.",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Middle Path",
+   "cost": 4,
+   "desc": "Reroll your shop with all 2-star 3-cost champions.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Forest Guide",
+   "cost": 5,
+   "desc": "Gain a random 4-cost champion.",
+   "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Heroic Sacrifice",
+   "cost": 5,
+   "desc": "Your 3 strongest Champions gain HEROIC POWER, but other allies are sacrificed.Requirements: 2 or more champions with 3+ items",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Blood Ritual",
+   "cost": 6,
+   "desc": "Lose 10 Player Health. Gain a Champion Duplicator.Requirements: at least 10 player health",
+   "stage": "4-2 to 4-7 once per game",
+   "locale": "en"
+  },
+  {
+   "name": "Booster Shot",
+   "cost": 6,
+   "desc": "Up to 2 1-star champions temporarily star up during combat.Requirements: 2 or more 1-star champions on board, or an itemized 5-cost",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Hand Of Baron",
+   "cost": 6,
+   "desc": "Your team gains Baron Buff, increasing their stats.Requirements: Riftbeast trait active",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Journeyman",
+   "cost": 6,
+   "desc": "Gain a random 2-star 2-cost champion.",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Refreshing Light",
+   "cost": 6,
+   "desc": "Gain a free reroll per star level of each unique Solar champion.Requirements: Solar trait active",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Smurfing",
+   "cost": 6,
+   "desc": "Gain a random 5 cost champion.",
+   "stage": "3-5 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Solar Gift",
+   "cost": 6,
+   "desc": "Gain a Leona, Sejuani, and KayleRequirements: Solar trait active",
+   "stage": "2-1 to 3-4",
+   "locale": "en"
+  },
+  {
+   "name": "Grow Up",
+   "cost": 7,
+   "desc": "Gain 10 XP.",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Lucky 7",
+   "cost": 7,
+   "desc": "Gain 7 shop rerolls.",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "All Fives",
+   "cost": 8,
+   "desc": "Reroll your shop with all 5-cost champions.Requirements: at least 15 gold",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Animate Shop",
+   "cost": 8,
+   "desc": "For 18 seconds, your shop rerolls for free every 2 seconds.Requirements: at least 12 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Big Guns",
+   "cost": 8,
+   "desc": "Gain 2 random 1-star 4-cost champions.",
+   "stage": "4-2 to 4-7",
+   "locale": "en"
+  },
+  {
+   "name": "Three Me",
+   "cost": 9,
+   "desc": "Gain a random 2-star 3-cost champion.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
+   "name": "Grandmaster",
+   "cost": 18,
+   "desc": "Gain a random 2-star 5-cost champion.",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Hero Of Prophecy",
+   "cost": 35,
+   "desc": "Gain a 5-cost champion. Gain them again each round FOREVER.Requirements: at least 35 gold; at least 50 player health; level 10 or higher",
+   "stage": "6-1 to 10-1 once per game",
+   "locale": "en"
+  },
+  {
+   "name": "Circle of Elders",
+   "cost": 45,
+   "desc": "Gain one of each 5-cost champion.",
+   "stage": "6-1 to 10-1",
+   "locale": "en"
+  }
+ ]
+}

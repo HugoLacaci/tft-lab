@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import { useDraggable, useDroppable } from "@dnd-kit/core";
 import type { BenchUnit } from "@/lib/scenario-schema";
 import type { ItemLookup, UnitLookup } from "@/lib/set-data";
@@ -72,8 +73,10 @@ export function BoardChrome({
                 <div key={i} className="notch flex items-center gap-1.5 border border-[var(--gold-dim)] bg-[var(--bg-panel)] p-1" style={{ minHeight: "calc(var(--hex-size) * 0.9)" }}>
                   {u ? (
                     <>
-                      <span className="block shrink-0 overflow-hidden rounded-full" style={{ width: "calc(var(--hex-size) * 0.5)", height: "calc(var(--hex-size) * 0.5)", boxShadow: `0 0 0 2px ${costColor(u.cost)}` }}>
-                        <Image src={u.icon} alt="" width={32} height={32} className="h-full w-full object-cover" unoptimized loading="eager" />
+                      <span className="hex flex shrink-0 items-center justify-center" style={{ width: "calc(var(--hex-size) * 0.5)", height: "calc(var(--hex-size) * 0.577)", background: costColor(u.cost) }}>
+                        <span className="hex block h-[88%] w-[88%] overflow-hidden">
+                          <Image src={asset(u.icon)} alt="" width={32} height={32} className="h-full w-full object-cover" unoptimized loading="eager" />
+                        </span>
                       </span>
                       <span className="min-w-0 text-[0.62rem] leading-tight">
                         <span className="block truncate text-gold-bright">{u.name}</span>
@@ -117,7 +120,7 @@ function StatusBar({ status, items }: { status: BoardStatus; items: Record<strin
           <span className="display text-[0.6rem] uppercase tracking-wider text-dim">Items</span>
           {its.map((i, idx) => (
             <span key={idx} className="block h-5 w-5 overflow-hidden border border-[var(--gold-dim)]" title={i.name}>
-              <Image src={i.icon} alt={i.name} width={20} height={20} className="h-full w-full object-cover" unoptimized loading="eager" />
+              <Image src={asset(i.icon)} alt={i.name} width={20} height={20} className="h-full w-full object-cover" unoptimized loading="eager" />
             </span>
           ))}
         </span>

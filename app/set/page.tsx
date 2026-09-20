@@ -28,8 +28,11 @@ export default async function SetHubPage() {
         {[
           ["Champions", data.champions.length, "/set/champions"],
           ["Traits", data.traits.length, "/set/traits"],
-          ["Items", data.items.filter((i) => i.kind !== "other").length, "/set/items"],
+          ["Items", data.items.filter((i) => i.kind !== "other" && i.kind !== "charm").length, "/set/items"],
           ["Augments", data.augments.length, "/set/augments"],
+          ["Wisps", data.items.filter((i) => i.kind === "charm" && !/_Upgrade$/i.test(i.id)).length, "/set/wisps"],
+          ["Comps", "→", "/set/comps"],
+          ["Patch notes", "→", "/set/patch-notes"],
         ].map(([label, n, href]) => (
           <Link key={String(label)} href={String(href)} className="panel block p-4 hover:no-underline">
             <div className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold">{label}</div>

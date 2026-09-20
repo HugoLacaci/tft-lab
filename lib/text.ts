@@ -19,6 +19,40 @@ function fmt(n: number): string {
   return String(r);
 }
 
+/** Stat-icon token → short marker label. Unknown tokens keep their name. */
+export const ICON_LABELS: Record<string, string> = {
+  scaleAD: "AD",
+  scaleAP: "AP",
+  scaleHealth: "HP",
+  scaleArmor: "Armor",
+  scaleMR: "MR",
+  scaleAS: "AS",
+  scaleMana: "Mana",
+  scaleRange: "Range",
+  scaleCrit: "Crit",
+  scaleCritMult: "Crit dmg",
+  scaleDA: "Dmg amp",
+  scaleDR: "Durability",
+  scaleOmnivamp: "Omnivamp",
+  scaleSV: "Omnivamp",
+  scaleLevel: "Level",
+  scaleStar: "Star",
+  TFTManaRegen: "Mana regen",
+  TFTBonusManaRegen: "Mana regen",
+};
+
+/** Like renderDesc but keeps stat icons as `[[AD]]`-style markers for the UI to render as badges. */
+export function renderDescRich(raw: string | null | undefined, vars: Vars = {}): string {
+  if (!raw) return "";
+  const kept = raw.replace(/%i:([a-zA-Z0-9_]+)%/g, (_m, k: string) => `[[${ICON_LABELS[k] ?? k.replace(/^scale/, "")}]]`);
+  return renderDesc(kept, vars)
+    .replace(/[ \t]*(\[\[[^\]]+\]\])[ \t]*/g, " $1 ")
+    .replace(/[ \t]{2,}/g, " ")
+    .replace(/ \n/g, "\n")
+    .replace(/\n /g, "\n")
+    .trim();
+}
+
 export function renderDesc(raw: string | null | undefined, vars: Vars = {}): string {
   if (!raw) return "";
   let s = raw;

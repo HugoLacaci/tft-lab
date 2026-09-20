@@ -3,32 +3,26 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { COSTS, type Cost } from "@/lib/costs";
+import { ChampionCard, Hover, type ChampionCardData } from "./hovers";
 import { TraitIcon, UnitIcon } from "./icons";
 
-interface C {
-  id: string;
-  name: string;
-  cost: Cost;
-  icon: string;
-  traits: string[];
-}
 interface T {
   id: string;
   name: string;
   icon: string;
 }
 
-export function ChampionGrid({ champions, traits }: { champions: C[]; traits: T[] }) {
+export function ChampionGrid({ champions, traits }: { champions: ChampionCardData[]; traits: T[] }) {
   const [q, setQ] = useState("");
   const [cost, setCost] = useState<Cost | 0>(0);
   const [trait, setTrait] = useState("");
-  const traitName = useMemo(() => new Map(traits.map((t) => [t.id, t])), [traits]);
+  const traitMap = useMemo(() => Object.fromEntries(traits.map((t) => [t.id, t])), [traits]);
 
   const list = champions.filter(
     (c) =>
       (!cost || c.cost === cost) &&
       (!trait || c.traits.includes(trait)) &&
-      (!q || c.name.toLowerCase().includes(q.toLowerCase()) || c.traits.some((t) => traitName.get(t)?.name.toLowerCase().includes(q.toLowerCase()))),
+      (!q || c.name.toLowerCase().includes(q.toLowerCase()) || c.traits.some((t) => traitMap[t]?.name.toLowerCase().includes(q.toLowerCase()))),
   );
 
   return (
@@ -66,25 +60,27 @@ export function ChampionGrid({ champions, traits }: { champions: C[]; traits: T[
             </option>
           ))}
         </select>
-        <span className="text-xs text-dim">{list.length} shown</span>
+        <span className="text-xs text-dim">{list.length} shown · hover a card for the ability</span>
       </div>
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {list.map((c) => (
           <li key={c.id}>
-            <Link href={`/set/champions/${c.id}`} className="panel flex h-full items-center gap-3 p-3 hover:no-underline">
-              <UnitIcon icon={c.icon} name={c.name} cost={c.cost} size={44} />
-              <div className="min-w-0">
-                <div className="truncate text-sm text-gold-bright">{c.name}</div>
-                <div className="mt-1 flex flex-wrap gap-1">
-                  {c.traits.map((t) => (
-                    <span key={t} className="inline-flex items-center gap-0.5 text-[0.65rem] text-dim" title={traitName.get(t)?.name}>
-                      <TraitIcon icon={traitName.get(t)?.icon ?? ""} name={traitName.get(t)?.name ?? t} size={12} />
-                      {traitName.get(t)?.name ?? t}
-                    </span>
-                  ))}
+            <Hover content={<ChampionCard c={c} traits={traitMap} />}>
+              <Link href={`/set/champions/${c.id}`} className="panel flex h-full items-center gap-3 p-3 hover:no-underline">
+                <UnitIcon icon={c.icon} name={c.name} cost={c.cost} size={44} />
+                <div className="min-w-0">
+                  <div className="truncate text-sm text-gold-bright">{c.name}</div>
+                  <div className="mt-1 flex flex-wrap gap-1">
+                    {c.traits.map((t) => (
+                      <span key={t} className="inline-flex items-center gap-0.5 text-[0.65rem] text-dim" title={traitMap[t]?.name}>
+                        <TraitIcon icon={traitMap[t]?.icon ?? ""} name={traitMap[t]?.name ?? t} size={12} />
+                        {traitMap[t]?.name ?? t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </Hover>
           </li>
         ))}
       </ul>

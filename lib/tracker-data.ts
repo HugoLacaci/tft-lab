@@ -9,6 +9,9 @@ export interface GameLog {
   comp: string;
   leak: ScenarioCategory | "none";
   note: string;
+  /** "riot" when imported from the match history; absent for hand-logged games. */
+  source?: "riot";
+  matchId?: string;
 }
 
 export interface TrackerData {
@@ -26,6 +29,18 @@ export function readTracker(): TrackerData {
 
 export function writeTracker(d: TrackerData): boolean {
   return writeJson(TRACKER_KEY, d);
+}
+
+/** Merge Riot-imported games into the log; existing entries keep their leak tag and note. */
+export function mergeRiotGames(d: TrackerData, games: { matchId: string; at: string; placement: number; comp: string }[]): TrackerData {
+  const have = new Set(d.games.map((g) => g.matchId ?? g.id));
+  const added: GameLog[] = [];
+  for (const g of games) {
+    if (have.has(g.matchId) || g.placement < 1 || g.placement > 8) continue;
+    added.push({ id: `riot:${g.matchId}`, at: g.at, placement: g.placement as GameLog["placement"], comp: g.comp, leak: "none", note: "", source: "riot", matchId: g.matchId });
+  }
+  if (!added.length) return d;
+  return { ...d, games: [...d.games, ...added].sort((a, b) => a.at.localeCompare(b.at)) };
 }
 
 /** Leak tag frequency over the last N games → extra weight per category for Daily 10. */

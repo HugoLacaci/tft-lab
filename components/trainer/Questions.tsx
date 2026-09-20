@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { asset } from "@/lib/asset";
 import type { HexCoord } from "@/lib/hex";
 import { hexLabel } from "@/lib/hex";
 import type { Question, Scenario } from "@/lib/scenario-schema";
@@ -35,7 +36,7 @@ export function ChoiceQuestion({ q, value, onChange, locked }: { q: Choice; valu
               }}
             >
               <span aria-hidden className="inline-block h-3 w-3 shrink-0 rotate-45 border border-gold" style={{ background: on ? "var(--gold)" : "transparent" }} />
-              {o.icon ? <Image src={o.icon} alt="" width={20} height={20} unoptimized /> : null}
+              {o.icon ? <Image src={asset(o.icon)} alt="" width={20} height={20} unoptimized /> : null}
               <span>{o.label}</span>
               {isCorrect ? <span className="ml-auto text-xs text-teal">✓</span> : null}
             </button>

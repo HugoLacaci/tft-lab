@@ -1,0 +1,28 @@
+{
+  "note": "Gold costs are not in the game files; these come from published guides and change with the stage of the game (Wisps get pricier later). Fill in as verified.",
+  "verifiedOn": "2026-09-20",
+  "sources": ["https://tftsense.gg/study-hall/tft-set-18-wisps/", "https://tftraits.com/set18/"],
+  "costs": {
+    "Mitosis": 1,
+    "Propagate": 1,
+    "Apprentice": 3,
+    "Forest Twins": 4,
+    "Field of Mice": 5,
+    "Smurfing": 8,
+    "Three Me": 9,
+    "Grandmaster": 18,
+    "Hero of Prophecy": 35,
+    "Circle of Elders": 45,
+    "Prolific Power": 0,
+    "Coin Flip": 0,
+    "Early Fix": 0,
+    "Abandon Ship": 0,
+    "Peddler": 6,
+    "Lucky 7": 7,
+    "All Ones": 0,
+    "Starfall": 1,
+    "Search Party": 3,
+    "Blood and Iron": 3,
+    "Idle Craftsman": 4
+  }
+}
