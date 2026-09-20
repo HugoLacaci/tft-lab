@@ -7,16 +7,68 @@ trainerCategory: "augment"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Augments are the three decisions per game with the largest variance in outcome and the least time to make them. The stats sites will tell you which augment has the best average placement across a million games. They cannot tell you which one is best from *your* seat, with *your* components, at *your* HP, in a lobby where two players already hold the units the augment wants you to play. That evaluation takes about twenty seconds if you do it in a fixed order, and it is the order that matters.
 
 ## The evaluation framework
 
+Run these four questions in sequence for each of the three options. Stop evaluating an augment the moment it fails one.
+
+**1. Can I actually build this from here?** Look at your board, bench and components, not at what the augment suggests you could have. A trait augment for a trait you hold zero units of is asking you to find three to five specific units at your current odds while keeping your current board alive. A carry augment for a damage type your components cannot itemise is asking you to hit items on carousel. If the honest answer is "only if I hit", the augment is a lottery ticket, and lottery tickets are for players with HP to burn.
+
+**2. Does it fit my econ plan?** You decided at 3-2 whether you are fast 8, fast 9 or reroll (see the [leveling guide](/guides/leveling#fast-8-fast-9-reroll)). An XP augment on a reroll board is dead. A free-rerolls augment on a fast 9 board is dead. A big lump of gold fits everything, which is why it is usually the safe second choice. An augment that pays out over ten rounds fits only a plan that survives ten rounds.
+
+**3. Is it a floor-raiser or a ceiling-raiser, and which do I need at this HP?** A floor-raiser makes your current board better now (flat stats, a completed item, a free 2-star). A ceiling-raiser makes your final board better if you reach it (scaling per round, a late payout, a legendary at stage 5). Above 70 HP you can afford ceiling. Below 50 HP you buy floor, always, because there is no ceiling for a player who is eliminated at 5-1. The [HP guide](/guides/hp#thresholds) has the lines.
+
+**4. Is the trait or unit it names contested?** If the augment points at a specific line, you scouted at 2-1 and 3-2; use it. Two players already on the line means the pool arithmetic from the [rolling guide](/guides/rolling#contest-math) applies, and a Crest that needs you to hit two contested carries is worse than a generic stat augment that needs nothing.
+
+Only after all four do you compare the survivors on raw strength. Most of the time only one or two survive, and the choice makes itself.
+
+<Callout type="tip" title="Evaluate the board, not the augment">
+The augment text describes a board. Your job is to check whether that board is reachable from the one in front of you within the rounds you can afford. If the answer needs the word "if" more than once, move on.
+</Callout>
+
 ## Silver, gold, prismatic
+
+Tier sets your expectations for what "strong" means, and each tier has a characteristic trap.
+
+**Silver** augments are small: one component, a modest stat boost, a couple of gold per round. Because the differences between silver options are small, the correct pick is nearly always the one that fits your econ plan and can be used *this round*. The trap is the silver trait augment that promises a breakpoint: +1 to a trait is only worth taking if it moves you across a breakpoint you will hold for the rest of the game.
+
+**Gold** augments are where the real decisions live: a completed item, a meaningful combat multiplier, a lump of gold, a Crest. The trap is the Crest or trait-locked augment taken with two units of the trait, which fails question 1 quietly because the trait *feels* close.
+
+**Prismatic** augments define games: legendary units, emblems plus units plus items, huge scaling. The trap is taking the highest ceiling regardless of HP and reachability. A prismatic that pays out at stage 5 is a great pick at 3-2 with 90 HP and a joke at 4-2 with 30. When the prismatic round is 2-1, the combat-now options are undervalued by players who assume every prismatic must be about scaling.
 
 ## Why the highest-winrate augment is wrong for you
 
+The number on the stats site is the average placement of players who *took* that augment. Three selection effects make that number misleading from your seat:
+
+- **Survivorship in the pick itself.** Strong players take trait augments only when they already have the units. The average is built from games where question 1 was already answered yes. Your game, where the answer is no, is not in that sample.
+- **The players.** Augments with narrow, high-skill lines are taken disproportionately by players who know the line. The augment's winrate includes their skill; you get the augment without it.
+- **Lobby context.** The average is across lobbies of every composition. Yours has two players on the trait the augment names, and the stats site does not know.
+
+Use the stats site to learn *which augments are strong in general*, so your baseline is right. Then apply the framework. If the site's top augment survives all four questions, take it. If it fails one, take the boring augment that passes, and understand that you are not "playing below the stats"; you are playing the game you are in.
+
+<Callout type="leak" title="Tier list tunnel vision">
+The Emerald pattern is opening the augment list, recognising the one at the top of the tier list, and taking it before reading the other two. Read all three. The tier list was built by people who read all three.
+</Callout>
+
 ## Econ augments below 50 HP
+
+Econ augments (extra interest, delayed gold payouts, gold per round for the rest of the game) are the clearest example of a ceiling-raiser that reads as safe. They are safe at 90 HP at 2-1. Below 50 HP they are a trap, and the reason is arithmetic.
+
+An augment that pays 2 gold a round needs ten rounds to be worth a completed item. Ten rounds from 3-2 is 5-2. A player at 45 HP at 3-2 who takes it has committed to being alive at 5-2 with a board that received no help for the entire middle of the game, during which the lobby's damage per loss doubles. The augment's payout arrives, if it arrives, when you are at 10 HP and it cannot buy you enough units to matter.
+
+<Callout type="math" title="Interest augment at 45 HP">
++1 interest per 10 gold above the cap sounds like 2 to 3 gold a round. Over eight rounds that is roughly 20 gold, delivered by 4-6. Compare a completed-item augment: two components of value today, on the board for every one of those eight fights, each of which you are otherwise losing by 6 to 10 HP. Twenty gold at 4-6 does not buy back the 50 HP you spent getting there.
+</Callout>
+
+Concrete cases where the econ option is the wrong pick despite being "strong":
+
+- **3-2, 48 HP, loss streak, three loose components.** Take the component augment and slam two items. Not the gold.
+- **4-2, 35 HP, board is 1-star 4-costs.** Take the flat combat augment or the free 2-star. The delayed payout arrives after you are dead.
+- **2-1, 100 HP, weak opener.** Here the econ augment is *correct*: you have the HP to cash it in.
+
+The general form: econ augments are bought with HP. Take them when HP is the resource you have the most of, and never when it is the one you are running out of.
 
 <DrillThis category="augment" />
 
-<CheckYourself items={["Did I run the four questions in order before picking?", "Did I take a trait augment for a trait I had fewer than 3 units of?", "Did I take an econ augment below 50 HP?"]} />
+<CheckYourself items={["Did I run the four questions in order before picking?", "Did I take a trait augment for a trait I had fewer than 3 units of?", "Did I take an econ augment below 50 HP?", "Did I read all three options before choosing?", "Could I name, one round later, why the augment I took fit my econ plan?"]} />

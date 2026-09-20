@@ -1,0 +1,48 @@
+{
+  "id": "hp-management-relative-hp-at-5-1",
+  "category": "hp-management",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8 with 52 gold at 31 HP, five players left. Stage-5 losses cost about 15 HP. Your Blossom board is 2-star Ahri and 2-star Sett, capped for level 8. Scouting: Seat 2 has 84 HP and the best board; Seats 4, 5 and 7 are at 19, 14 and 9 HP and all three lose to you. You are 24 XP from level 9. What do you do?",
+  "state": {
+    "stage": "5-1",
+    "gold": 52,
+    "hp": 31,
+    "level": 8,
+    "xpToNext": 24,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Sett", "row": 0, "col": 3, "star": 2, "items": ["DA_WarmogsArmor", "DA_GargoyleStoneplate"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Elise", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Rakan", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_MasterYi_AD", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_18_Ahri", "row": 3, "col": 3, "star": 2, "items": ["DA_RabadonsDeathcap", "DA_BlueBuff", "DA_JeweledGauntlet"] },
+      { "championId": "DA_18_Yunara", "row": 3, "col": 1, "star": 2, "items": [] },
+      { "championId": "DA_Karma18", "row": 3, "col": 5, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Ashe", "DA_18_Caitlyn", "DA_18_Hecarim", "DA_18_Cassiopeia", "DA_18_Shen"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 2", "hp": 84, "note": "Best board, 2-star 5-costs, beats you cleanly" },
+      { "player": "Seat 4", "hp": 19, "note": "Loses to you" },
+      { "player": "Seat 5", "hp": 14, "note": "Loses to you" },
+      { "player": "Seat 7", "hp": 9, "note": "Loses to you" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "level-9", "label": "Buy the Ashe, level to 9 (24 XP) and hold the rest: three players die before you can, so 31 HP is safe and the gold should buy cap for the fight against Seat 2" },
+      { "id": "roll-now", "label": "Roll down now to 10 gold for a 3-star Yunara and safety: 31 HP is two losses from dead" },
+      { "id": "hold-50", "label": "Hold 50 and stay level 8; your board already beats three of the four" }
+    ],
+    "correct": ["level-9"]
+  },
+  "explanation": "Thirty-one HP is dangerous in the abstract and safe in this lobby. Three players sit at 19, 14 and 9, they lose to everyone including you, and stage-5 losses cost 15: all three are dead within two rounds, and every fight you have against them is a win. The only player who can take HP from you is Seat 2, and you meet them at most once in the next three rounds. Your real placement question is 2nd or 1st, and the gold answers that only if it becomes cap.\n\nLevel 9 with Ashe in the shop is the direct route: a ninth unit, a 5-cost, and better 5-cost odds for the rolls that follow. Rolling for a 3-star 2-cost at 5-1 adds nothing against Seat 2's board and spends the gold that would have been 5-cost rolls. Holding 50 at level 8 is safe, and safe here means 2nd. Relative HP, not absolute HP, is the threshold that matters.",
+  "principle": "Your HP is measured against the lobby: if three players die before you can, low HP is not a reason to stop spending on cap.",
+  "guideLink": "/guides/hp#stabilise-vs-push",
+  "commonMistake": "Reading 31 HP as an emergency and stabilising a board that is already beating everyone who could hurt it."
+}

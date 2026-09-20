@@ -1,0 +1,72 @@
+name: sync-set
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # 06:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Sync live set from CommunityDragon
+        run: npm run sync-set
+
+      - name: Inspect result
+        id: inspect
+        shell: bash
+        run: |
+          echo "changed=$(git status --porcelain data/generated public/assets | wc -l | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          echo "set_name=$(node -e "const c=require('./data/generated/current.json');const fs=require('fs');const m='content/sets/'+c.setNumber+'/meta.json';const d=fs.existsSync(m)?JSON.parse(fs.readFileSync(m,'utf8')).displayName:null;console.log((d&&d.trim())||('Set '+c.setNumber))")" >> "$GITHUB_OUTPUT"
+          if [ -f data/generated/SET_CHANGED ]; then
+            echo "new_set=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "body<<EOF"
+              echo "A new set was detected. The data below is live; the written content needs a human pass."
+              echo
+              echo '```'
+              cat data/generated/SET_CHANGED
+              echo '```'
+              echo
+              echo "Runbook: see README → *When a new set drops*."
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            rm data/generated/SET_CHANGED
+          else
+            echo "new_set=false" >> "$GITHUB_OUTPUT"
+            {
+              echo "body<<EOF"
+              echo "Scheduled sync of the live set data and mirrored icons. No set change."
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate and test with the new data
+        if: steps.inspect.outputs.changed != '0'
+        run: |
+          npm run validate
+          npm test
+
+      - name: Open pull request
+        if: steps.inspect.outputs.changed != '0'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/sync-set
+          delete-branch: true
+          commit-message: "chore: sync set data (${{ steps.inspect.outputs.set_name }})"
+          title: "chore: sync set data (${{ steps.inspect.outputs.set_name }})"
+          body: ${{ steps.inspect.outputs.body }}
+          labels: ${{ steps.inspect.outputs.new_set == 'true' && 'new-set,sync' || 'sync' }}

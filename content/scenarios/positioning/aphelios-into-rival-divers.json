@@ -1,0 +1,45 @@
+{
+  "id": "positioning-aphelios-into-rival-divers",
+  "category": "positioning",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5, level 8. Your next opponent runs Kha'Zix and Rengar in their back corners; both dive to the hex furthest from them at combat start, and Rengar targets the lowest-health backliner if two are equally far. Cassiopeia sits in their backline centre and her spell hits a line of three hexes through her target. Your Aphelios (three items, your only damage) is on the bench after an item move. Your bruisers on row 2 are bodyguards. Place Aphelios.",
+  "state": {
+    "stage": "4-5",
+    "gold": 33,
+    "hp": 46,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "DA_Sentinel18", "row": 0, "col": 3, "star": 2, "items": ["DA_WarmogsArmor", "DA_BrambleVest"] },
+      { "championId": "DA_18_Sejuani", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Hecarim", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Kayle", "row": 3, "col": 1, "star": 2, "items": [] },
+      { "championId": "DA_18_Diana", "row": 2, "col": 1, "star": 2, "items": [] },
+      { "championId": "DA_Vi18", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_18_Alune", "row": 3, "col": 5, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Aphelios", "DA_18_Teemo", "DA_18_Shen", "DA_18_Tristana", null],
+    "items": [],
+    "enemyBoard": [
+      { "championId": "DA_18_KhaZix", "row": 3, "col": 0, "star": 2, "items": ["DA_InfinityEdge"] },
+      { "championId": "DA_18_Rengar", "row": 3, "col": 6, "star": 2, "items": ["DA_Bloodthirster"] },
+      { "championId": "DA_18_Cassiopeia", "row": 3, "col": 3, "star": 2, "items": ["DA_RabadonsDeathcap"] },
+      { "championId": "DA_18_Elise", "row": 0, "col": 3, "star": 2, "items": ["DA_GargoyleStoneplate"] },
+      { "championId": "DA_18_Warwick", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Malphite", "row": 0, "col": 4, "star": 1, "items": [] }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Aphelios",
+    "correctHexes": [{ "row": 3, "col": 3 }, { "row": 3, "col": 2 }]
+  },
+  "explanation": "Three threats, one hex. The two divers land on your back corners, so Aphelios cannot be in a corner or next to one. Cassiopeia's line spell punishes rows: a unit sitting directly behind another on the same column takes the follow-through. The centre of the back row is the only zone that is two hexes from both landing corners, has Diana and Vi on row 2 to collapse onto the divers, and keeps Aphelios off the column Sentinel occupies so the line spell through your frontline does not reach him.\n\nColumn 2 works for the same reasons and stays out of Sentinel's column; column 4 does not, because it lines up behind Hecarim and puts Aphelios one hex closer to Rengar's corner, which is where the lowest-health tiebreak sends him. Alune at 1-star on the right is bait you are happy to give Rengar for one cast.",
+  "principle": "With more than one threat, find the hex that is bad for all of them, not the hex that is good against the scariest one.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Solving only the dive and putting Aphelios directly behind the main tank, which is the exact column a line spell wants."
+}

@@ -7,14 +7,93 @@ trainerCategory: "positioning"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Positioning is the one decision you make every single round that costs no gold, and it is the one that Emerald players change the least. A default layout that was right at 2-5 sits untouched until 5-1 while the lobby around it fills with assassins, hooks and area damage. The habit to build is not "know the perfect layout"; it is *move something every round after scouting*, even if only by one hex.
 
 ## Frontline and backline defaults
 
+The board is four rows of seven, with row 0 nearest the enemy and row 3 at the back. The default layout is about three things: who gets hit first, who gets to attack, and how far the enemy has to walk.
+
+**Frontline (row 0, sometimes row 1).** Your tanks sit in row 0 in the centre columns (2 to 4), because enemies target the closest unit and the centre is closest to the most enemies. The bruisers flank them in columns 1 and 5. The itemised tank goes in the exact hex you want the fight to happen on; see [who gets the tank item](/guides/items#who-gets-the-tank-item). A unit you *want* to die last should not be the unit that is hit first.
+
+**Backline (row 3, sometimes row 2).** Ranged carries go in row 3; the default is a corner hex (column 0 or 6) because it is the farthest point from most enemy frontlines and gives the carry the most time before anything reaches it. Casters that need to survive the first cast go beside the carry, not in the other corner, so your utility (shields, heals) covers both.
+
+**The middle rows.** Row 1 holds units that should engage a second late (a second tank, a bruiser that jumps). Row 2 holds bodyguards for the carry: a cheap unit in row 2 directly in front of a corner carry intercepts anything that walks in.
+
+<BoardExample
+  board={[
+    { championId: "generic:tank-4", row: 0, col: 3, star: 2, items: ["generic:item:tank-completed"] },
+    { championId: "generic:bruiser-3", row: 0, col: 2, star: 2, items: [] },
+    { championId: "generic:tank-2", row: 0, col: 4, star: 2, items: [] },
+    { championId: "generic:bruiser-1", row: 0, col: 1, star: 2, items: [] },
+    { championId: "generic:support-3", row: 1, col: 3, star: 2, items: [] },
+    { championId: "generic:bruiser-2", row: 2, col: 5, star: 2, items: [] },
+    { championId: "generic:carry-4", row: 3, col: 6, star: 2, items: ["generic:item:carry-completed", "generic:item:carry-completed"] },
+    { championId: "generic:caster-3", row: 3, col: 5, star: 2, items: [] }
+  ]}
+  caption="The default: itemised tank centre-front, bruisers on the flanks, carry in the corner with a bodyguard one row in front and the caster beside it."
+/>
+
+Two default rules that are worth more than any layout diagram: **the carry never shares a column with the tank** (when the tank dies, the enemy frontline walks straight down the column), and **never leave row 0 empty on one side** (an empty flank is a lane).
+
+### Melee carries
+
+A melee carry is a frontliner who must not be hit first. Put it in row 1 behind the tank, or on a flank in row 0 opposite the enemy's strongest unit, so it engages a second later than the tank and against a weaker part of the enemy line. Melee carries in the centre of row 0 die before they cast.
+
 ## Spread vs clump
+
+Clumping (units adjacent) is the default because adjacency is how auras, shields and heals reach the units that need them. Spreading is the counter to area damage, and the whole decision is *which threat is bigger this round*.
+
+**Clump when** the enemy has single-target damage (a hyper-carry, an assassin), or your board depends on adjacency effects (shields that hit neighbours, traits that buff adjacent units), or the enemy has a pull or hook that punishes isolated units.
+
+**Spread when** the enemy has area damage that hits a radius (a caster with a splash ult, a frontline that explodes, chain effects). Spread the *backline* first: two carries side by side is how one ability kills your whole damage output. One empty hex between backline units is usually enough; a full spread across the row costs you your utility coverage.
+
+<Callout type="math" title="One hex of spread">
+Most area abilities in the current set hit a radius of one hex around the target. Two carries adjacent means one cast hits both. Two carries with a gap of one hex means one cast hits one. That is the entire calculation, and it is free.
+</Callout>
+
+The mistake is treating this as a global setting. It is per-opponent. Against the AoE board you spread; against the assassin board next round you clump the backline around a bodyguard. If you are not changing between those two layouts across a stage, you are not positioning.
 
 ## Counter-positioning
 
+Counter-positioning means moving units because of what a specific opponent has. It only works after scouting (see the [scout routine](/guides/scouting#the-scout-routine)), and it is the concrete output of that scouting.
+
+**Against assassins and dives.** Units that jump land on the hex farthest from their start, which in practice is your back corners. A corner carry is a corner target. Move the carry to the centre of row 3 (or row 2), put bruisers in the corners of row 2 or 3 as landing pads, and let the assassin jump onto a 2-star bruiser instead of your damage. If you scouted two assassin boards among your likely opponents, the centre is your default this stage.
+
+<BoardExample
+  board={[
+    { championId: "generic:tank-4", row: 0, col: 2, star: 2, items: ["generic:item:tank-completed"] },
+    { championId: "generic:bruiser-3", row: 0, col: 3, star: 2, items: [] },
+    { championId: "generic:tank-2", row: 0, col: 4, star: 2, items: [] },
+    { championId: "generic:support-3", row: 1, col: 3, star: 2, items: [] },
+    { championId: "generic:bruiser-1", row: 3, col: 0, star: 2, items: [] },
+    { championId: "generic:bruiser-2", row: 3, col: 6, star: 2, items: [] },
+    { championId: "generic:carry-4", row: 3, col: 3, star: 2, items: ["generic:item:carry-completed", "generic:item:carry-completed"] },
+    { championId: "generic:caster-3", row: 2, col: 3, star: 2, items: [] }
+  ]}
+  enemyBoard={[
+    { championId: "generic:assassin-3", row: 3, col: 0, star: 2, items: [] },
+    { championId: "generic:assassin-4", row: 3, col: 6, star: 2, items: ["generic:item:carry-completed"] },
+    { championId: "generic:tank-3", row: 0, col: 3, star: 2, items: [] },
+    { championId: "generic:bruiser-2", row: 0, col: 2, star: 2, items: [] }
+  ]}
+  highlight={[{ row: 3, col: 3 }]}
+  caption="Against two assassins: carry moved to the centre of the back row, bruisers parked in the corners as landing pads."
+/>
+
+**Against hooks and pulls.** A hook pulls whichever of your units is closest along its line. Bait it with a unit you do not mind losing, placed one hex closer to the hook than your carry, on the same side. Do not put the carry on the hook's side of the board at all if you can help it.
+
+**Against area damage.** Spread the backline as above, and consider moving the itemised tank off the exact centre so the splash on it does not also hit the support behind it.
+
+**Against a hyper-carry with a single target.** Mirror it: put your itemised tank in the column opposite that carry so it wastes its first seconds on the unit that can take it. If the carry is in a corner, that means your tank goes to the same side, not the centre.
+
+**Against your own mirror.** When another player is on your comp, they have your positioning. Position *for* the mirror: swap sides so their carry faces your tank and their tank faces your carry, and expect them to do the same next round.
+
+The general form of every counter-position: identify the enemy unit that decides the fight, work out which of your hexes it will interact with first, and make sure the unit on that hex is the one you chose.
+
+<Callout type="leak" title="Positioning for last round's opponent">
+The Emerald pattern is adjusting after losing, so the board is always set up for the player you just fought, who you will not see again for three rounds. Position for the *next* opponent; the scouting guide covers how to know who that is.
+</Callout>
+
 <DrillThis category="positioning" />
 
-<CheckYourself items={["Did I move my carry after scouting, or leave it in the corner by habit?", "Against AoE boards, did I spread the backline?", "Did I position against the opponent I was about to face or the one I fought last?"]} />
+<CheckYourself items={["Did I move my carry after scouting, or leave it in the corner by habit?", "Against AoE boards, did I spread the backline?", "Did I position against the opponent I was about to face or the one I fought last?", "Was my itemised tank on the hex I wanted the fight to happen on?", "Did my carry ever share a column with my main tank?"]} />

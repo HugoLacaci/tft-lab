@@ -1,0 +1,45 @@
+{
+  "id": "pivot-executing-the-pivot-in-order",
+  "category": "pivot",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 7 with 52 gold and 54 HP. Your reroll line is dead: two players 3-starred the carry before you. You are going to pivot to a 4-cost AD carry line that uses the same AD items. Put the steps of the pivot in the order that loses the least tempo.",
+  "state": {
+    "stage": "4-1",
+    "gold": 52,
+    "hp": 54,
+    "level": 7,
+    "xpToNext": 24,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [
+      { "championId": "generic:carry-2", "star": 1, "items": [], "slot": 0 },
+      { "championId": "generic:carry-2", "star": 1, "items": [], "slot": 1 },
+      { "championId": "generic:carry-1", "star": 1, "items": [], "slot": 2 }
+    ],
+    "shop": ["generic:tank-2", "generic:carry-3", "generic:caster-1", "generic:support-3", "generic:bruiser-3"],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Decide what carries over: the tank line, the two AD items, and the 3-cost caster stay; the reroll copies go",
+      "Scout who holds the 4-cost carry you are moving to, so you know the pool before you spend",
+      "Sell the spare reroll copies from the bench to free slots and recover gold",
+      "Level to 8 and roll with a gold floor of 10, keeping the 2-star reroll carry on the board as the item holder until you hit"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "A pivot is a plan before it is an action. First you separate what stays from what goes, because the tank line and the items are most of your board strength and they do not change. Then you scout the destination: if the 4-cost is contested by three players you pick a different destination before you sell anything. Only then do you sell, and you sell the bench, not the 2-star on the board, because it is still holding your items and winning fights until the replacement arrives.\n\nThe last step is the expensive one, so it comes last: level 8 and the rolldown with a floor. Doing it first, before selling the bench, means rolling with no bench space and no read on the pool; doing it before deciding what stays means selling units you then have to buy back.",
+  "principle": "Plan the pivot, scout the destination, free the bench, then spend. Spending comes last.",
+  "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+  "commonMistake": "Pressing D the moment you decide to pivot, with a full bench of dead copies and no idea who else is on the new line."
+}

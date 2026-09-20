@@ -7,20 +7,74 @@ trainerCategory: "level-timing"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Gold does three things: it earns interest, it buys XP, and it buys rolls. The [Economy guide](/guides/economy#interest-and-the-50-gold-floor) covers the first; this one covers the second, and specifically the question that decides most of your stage-4 games: *when* the gold becomes XP.
 
 ## XP is the other econ lever
 
 <LevelTable />
 
+Four gold buys four XP, and you gain the passive XP in the table each round for free. Two consequences fall out of that table. First, the levels have very different prices: 6 and 7 are cheap, 8 is the first expensive level, and 9 is expensive enough that most games never pay for it honestly. Second, because passive XP is constant, the *later* you buy a level the less of it you have to pay for. Level 7 at 4-1 costs you noticeably less gold than level 7 at 3-2, because the rounds in between gave it to you for free.
+
+That is the whole tension. Leveling early buys board size and shop odds now; leveling late buys the same level for less gold. Every level timing in this guide is an answer to "is the odds increase worth more than the gold I save by waiting?"
+
+Two things a level buys that are easy to forget: a unit slot (which is worth a whole trait breakpoint in stage 3) and a shift in shop odds toward the cost tier you want. Look at the [odds table](/guides/rolling#odds-and-the-pool): the jump from 7 to 8 triples your 4-cost odds. That is why "roll at 7 for 4-costs" is almost never right, and why the 8 timing is the fulcrum of the standard game.
+
+<Callout type="math" title="The price of a level changes each round">
+Suppose you are 20 XP from level 8 at 3-5. Buying it now costs 20 gold. Waiting two rounds gives you the passive XP in the table twice, so at 4-1 the same level costs a few gold less. Whether those saved gold are worth two rounds of a smaller board depends entirely on whether you are winning or losing those rounds.
+</Callout>
+
 ## Standard level timings
+
+The timings in the table's right-hand column are the default, not the law. They describe a player who opened neutral, is neither win- nor loss-streaking hard, and is playing a standard 4-cost carry board. Read them as: level 4 naturally in stage 2, buy to 5 at 2-5, to 6 at 3-2 to fit the augment round board, to 7 at 4-1, to 8 at 4-2 or 4-5 for the rolldown, and to 9 only when you have hit and have gold left.
+
+What makes a game non-standard is anything that changes the value of a unit slot or the value of odds right now:
+
+- **A strong win streak.** Leveling ahead of the curve (6 at 2-5, 7 at 3-2) keeps the streak, and the streak gold pays for a chunk of the XP. This is the one situation where being a level ahead is "free".
+- **A hard loss streak.** You are not fighting, so a slot is worth nothing. Stay low, hit 50, level big at 3-5 or 4-1 with a surplus.
+- **A reroll line.** You stop at 6 or 7 on purpose; see below.
+- **An econ augment or a lot of extra gold.** If the augment paid you 20 gold, the standard timing is a round early for you.
+- **A dead board at 3-5.** If you have nothing, hitting 8 early to roll for anything is better than sitting at 7 with a shop that cannot save you.
+
+The mistake in both directions is the same: copying a timing from a stronger player's VOD without checking whether their game was standard.
 
 ## Fast 8, fast 9, reroll
 
+These are three separate econ plans with three different loss profiles, and you should know which one you are on by 3-2.
+
+**Fast 8.** The default. Bank to 50 through stage 3, level 7 at 4-1, level 8 at 4-2 (or 4-5 if the augment was weak), roll for two 2-star 4-costs, stabilise, then play for 9 if the game allows. Loss profile: you take some damage in stage 3 with a mid board, and you can bleed out if the rolldown misses. Strength: it is the most forgiving plan because the 4-cost pool is the deepest relative to the number of players who want it.
+
+**Fast 9.** A win-streak or high-econ plan: you are already strong at 7 or 8, you keep 50 and level to 9 at 5-1 (or 4-6 with a big surplus) before rolling, to hit 5-costs and the level-9 4-cost odds. Loss profile: catastrophic if the streak breaks early, because you arrive at 9 with an uncapped board and no gold. Strength: the highest cap in the lobby if it works. You only choose it from strength; nobody "decides" to fast 9 from a losing board.
+
+**Reroll.** You stop at the level where your target cost has the best odds (see the odds table: 1-costs at 5, 2-costs at 6, 3-costs at 7) and roll every round above 50 for the 3-star. Loss profile: slow and flat; you lose small fights early and win big ones once you hit, but if you hit late or the unit is contested you never spike and finish 6th to 8th with a 2-star 3-cost board. Strength: it ignores the 4-cost rolldown lottery entirely.
+
+<Callout type="leak" title="Being on two plans at once">
+Emerald players roll at 6 for 2-cost pairs (reroll behaviour) and *then* level to 8 at 4-2 (fast 8 behaviour) with 25 gold. That is the cost of both plans and the payoff of neither. Pick one by 3-2; if you cannot say which one you are on, you are on fast 8 by default and should stop rolling.
+</Callout>
+
 ## Augment rounds change the timing
+
+Augments land at fixed rounds (see the [stage plan](/guides/stage-plan#stage-4) for the rounds in the current set). The augment you take at 4-2 can hand you gold, XP, a component, or a reason to change lines, and every one of those changes what the level-8 rolldown is for. So the rule near an augment round is simple: **take the augment first, then level.** Leveling at 4-1 with 20 gold, 12 XP from 8, to "be ready" gives you level-8 odds and two rolls; leveling at 4-2 after the augment gives you the same level plus income, plus whatever the augment gave, plus the knowledge of what you are rolling for.
+
+The exception is when you are on a win streak and leveling at 4-1 keeps it. Then the level pays for itself and the augment is chosen for the board you already have.
+
+Augment rounds also change the *board-size* calculation. Some augments are worth a unit slot (anything that gives you a free unit), and some are worth nothing until you have a slot free. If you are one level short of fielding the unit an augment gives you, the augment just told you to level.
 
 ## Levelling and rolling in the same round
 
+This is the second most common Emerald leak after rolling a little each round, and it is the same mistake in a different costume. You have 42 gold at 4-2, you buy level 8 for 20, and you roll the other 22. Eleven rolls at 30% four-cost odds, for two specific units out of the fourteen or so in the tier: expected copies of your carry in eleven rolls, a little over one. You did not roll down; you sampled.
+
+The math is simple: leveling reduces the gold you roll with, and rolling reduces the gold you could have leveled with. Doing both means doing both badly. Instead:
+
+- If the board is stable enough to lose one round, level this round and roll next round with the full income.
+- If the board is dying, roll at the current level now (7 is bad for 4-costs but it is not zero) and level next round.
+- If you have 60 or more, do both, because 40 gold at level 8 is a real rolldown.
+
+The threshold is roughly 40 gold *after* the level. Below that, it is not a rolldown and you should not call it one.
+
+<Callout type="tip" title="Say the plan out loud">
+"Level now, roll next round" or "roll now, level next round". If the sentence has both verbs in the same round and fewer than 60 gold, stop and pick.
+</Callout>
+
 <DrillThis category="level-timing" />
 
-<CheckYourself items={["Did I know at 3-2 which of the three econ plans I was on?", "Did I level before or after the 4-2 augment, and why?", "Did I ever level and roll in the same round with under 40 gold?"]} />
+<CheckYourself items={["Did I know at 3-2 which of the three econ plans I was on?", "Did I level before or after the 4-2 augment, and why?", "Did I ever level and roll in the same round with under 60 gold?", "When I deviated from the standard timings, could I name what made the game non-standard?", "Did I go to 9 with gold to roll, or just to see the level?"]} />

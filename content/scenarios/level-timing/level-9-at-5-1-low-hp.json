@@ -1,0 +1,42 @@
+{
+  "id": "level-timing-level-9-at-5-1-low-hp",
+  "category": "level-timing",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8 with 62 gold, 40 HP, 1-loss streak. Your board is 2-star Sett, Malphite, Aphelios and Sivir with items. Two players are already level 9 and two more will be next round. Level 9 costs 20 gold (5 purchases). Do you level now or hold 50 and roll at 8 for a 3-star?",
+  "state": {
+    "stage": "5-1",
+    "gold": 62,
+    "hp": 40,
+    "level": 8,
+    "xpToNext": 20,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Malphite", "row": 0, "col": 2, "star": 2, "items": ["DA_GargoyleStoneplate", "DA_DragonsClaw"] },
+      { "championId": "DA_18_Sett", "row": 0, "col": 3, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Rammus", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Diana", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_Vi18", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_18_Aphelios", "row": 3, "col": 4, "star": 2, "items": ["DA_GuinsoosRageblade", "DA_InfinityEdge", "DA_LastWhisper"] },
+      { "championId": "DA_18_Sivir", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Tristana", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "DA_18_Aphelios", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["DA_18_Kayle", "DA_18_Ashe", "DA_18_Azir", "DA_18_Elise", "DA_18_Warwick"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "nine", "label": "Level 9 now, then roll the remaining ~40 for Ashe or Maokai and a 9th unit" },
+      { "id": "three-star", "label": "Stay 8, hold 50, and roll at 5-2 for the 3-star Aphelios (you have 7 copies)" },
+      { "id": "hold", "label": "Hold 50 this round and level 9 at 5-2 with more gold" }
+    ],
+    "correct": ["nine"]
+  },
+  "explanation": "At 40 HP in stage 5 a loss costs 15+ HP, so you have two losses left and no time to wait for a better round. The lobby is capping to 9 around you, which means your 8-unit board loses to boards with a 5-cost and a ninth unit even with your 2-stars. Level 9 now moves 5-cost odds from 3% to 15% and there is already an Ashe in the shop; buying her on the way through and rolling 40 gold at 9 gives you a realistic shot at a second 5-cost or a 2-star Ashe over the next two rounds. That is the upgrade path that keeps pace with the lobby.\n\nThe 3-star Aphelios is a trap here: two more copies out of a pool of 10, with 7 in your hands, leaves 3 in the entire pool, and level-8 4-cost odds at 30% still make each specific copy a roughly 10%-per-slot event. You would likely burn all 60 gold and stay at 8 units. Holding for 5-2 costs 5 interest but risks a 15-HP loss for a board that does not improve; at 40 HP that trade is wrong.",
+  "principle": "In stage 5 the level decides the cap; with two losses left, buy the level before the loss.",
+  "guideLink": "/guides/leveling#standard-level-timings",
+  "commonMistake": "Chasing a 3-star 4-cost with 3 copies left in the pool because \"I already have 7\"."
+}

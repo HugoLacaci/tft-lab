@@ -1,0 +1,42 @@
+{
+  "id": "positioning-tank-to-catch-the-dive",
+  "category": "positioning",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1. Your next opponent has two 2-star assassins in their back corners; they jump to the hex furthest from themselves, which is your back corner on the same side as your carry (bottom right). Your carry is already in the centre-right of the back row and your 4-cost tank with two defensive items is on the bench after an item swap. Place the tank where it catches the dive.",
+  "state": {
+    "stage": "4-1",
+    "gold": 50,
+    "hp": 64,
+    "level": 7,
+    "xpToNext": 20,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 2, "col": 5, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-2", "generic:support-1", "generic:bruiser-2", "generic:caster-4"],
+    "items": [],
+    "enemyBoard": [
+      { "championId": "generic:assassin-3", "row": 3, "col": 0, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:assassin-2", "row": 3, "col": 6, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 4, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 3, "star": 2, "items": [] }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:tank-4",
+    "correctHexes": [{ "row": 3, "col": 6 }, { "row": 3, "col": 5 }]
+  },
+  "explanation": "A tank does not have to stand in the front row. Its job is to be the first thing the enemy damage touches, and against divers that place is the landing zone. Both assassins jump to the far corner on your carry's side, so the bottom-right corner and the hex next to it are where they arrive. A 4-cost tank with two defensive items parked there absorbs both jumps, the bruiser on row 2 collapses onto them, and your carry keeps attacking from one hex away.\n\nPutting the tank in the front row instead leaves the assassins landing on an empty corner next to your carry, which is the same loss you would have taken without the tank. The enemy frontline is only two units; your bruiser and 2-cost tank hold it long enough for the assassins to die first.",
+  "principle": "Position the tank where the damage arrives, not where tanks usually stand.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Frontline-by-default: the tank goes to row 0 because that is where tanks go, and the dive lands on the carry anyway."
+}

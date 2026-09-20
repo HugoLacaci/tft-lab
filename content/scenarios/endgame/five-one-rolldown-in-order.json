@@ -1,0 +1,42 @@
+{
+  "id": "endgame-five-one-rolldown-in-order",
+  "category": "endgame",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 5-1, level 8 with 78 gold at 40 HP, five players left. Your board is 2-star 4-costs with two 1-costs still filling slots. You are 30 XP from level 9. Put the steps of this round in the order that gets the most out of the gold.",
+  "state": {
+    "stage": "5-1",
+    "gold": 78,
+    "hp": 40,
+    "level": 8,
+    "xpToNext": 30,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-4", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-5", "generic:carry-2", "generic:caster-3", "generic:support-1", "generic:bruiser-4"],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Scout: who holds the 5-costs you want and which boards are still alive to fight you",
+      "Level to 9 first (30 XP, 32 gold): it adds a slot and raises 5-cost odds before any roll is spent",
+      "Roll the remaining ~46 gold to a floor of 10, replacing the 1-costs with 5-costs or a 2-star 4-cost bruiser as they appear",
+      "Reposition against the next opponent with the new units before the timer ends"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "Level before rolling, because every roll at 8 that shows a 5-cost is a roll that would have shown it more often at 9, and because the slot matters: a 5-cost you hit at level 8 can only go in by selling something. Scouting comes before both, since a 5-cost that two other players already 2-starred is one you skip in the rolldown, and knowing who you fight decides how you spend the last twenty seconds. The roll itself has a floor, because 40 HP at stage 5 is two losses and you want ten gold to rebuild from.\n\nRepositioning is last only in sequence; it is not optional. New units in old hexes lose fights the old board would have won.",
+  "principle": "Scout, level, roll, reposition: the level comes before the roll because it changes what the roll shows.",
+  "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+  "commonMistake": "Rolling at 8 'to see what shows up' and then leveling with what is left, which is the same gold at worse odds with nowhere to put the hits."
+}

@@ -24,3 +24,22 @@ for (const w of WIDTHS) {
     await page.screenshot({ path: `e2e/screenshots/board-versus-${w}.png`, fullPage: true });
   });
 }
+
+test("tracker with logged games, odds and cheat sheet screenshots", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 1000 });
+  await page.goto("/tracker/", { waitUntil: "networkidle" });
+  const games: [number, string, string][] = [[4, "AD flex", "econ"], [7, "Reroll", "hp-management"], [2, "AD flex", "none"], [6, "AP fast 8", "items"], [3, "AD flex", "econ"], [8, "Reroll", "econ"], [1, "AP fast 8", "none"]];
+  for (const [p, comp, leak] of games) {
+    await page.getByRole("group", { name: "Placement" }).getByRole("button", { name: String(p), exact: true }).click();
+    await page.getByPlaceholder(/e\.g\./).fill(comp);
+    await page.locator("select").selectOption(leak);
+    await page.getByRole("button", { name: "Log game" }).click();
+  }
+  await expect(page.getByText("7", { exact: true }).first()).toBeVisible();
+  await page.screenshot({ path: "e2e/screenshots/tracker.png", fullPage: true });
+  await page.goto("/lab/odds/", { waitUntil: "networkidle" });
+  await page.screenshot({ path: "e2e/screenshots/odds.png", fullPage: true });
+  await page.goto("/lab/cheatsheet/", { waitUntil: "networkidle" });
+  await page.emulateMedia({ media: "print" });
+  await page.screenshot({ path: "e2e/screenshots/cheatsheet-print.png", fullPage: true });
+});

@@ -1,0 +1,39 @@
+{
+  "id": "hp-management-loss-streak-exit-condition",
+  "category": "hp-management",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 augment round, level 6 with 62 gold at 46 HP on a 6-loss streak you started on purpose at 2-2. You hold a 1-star 3-cost AD carry with two completed AD items, a second copy on the bench, and a 2-star 3-cost tank. Stage-3 losses cost 6 to 8 HP; stage 4 will cost 12 to 16. When does the loss streak end?",
+  "state": {
+    "stage": "3-2",
+    "gold": 62,
+    "hp": 46,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": { "type": "loss", "count": 6 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:support-2", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:caster-1", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-3", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:carry-3", "generic:tank-2", "generic:bruiser-3", "generic:support-3", "generic:caster-2"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "now", "label": "Now. Level to 7, roll to ~30 for 2-star 3-costs, and start winning at 3-2: you are below 50 HP with three stage-3 fights left and stage 4 damage ahead" },
+      { "id": "4-1", "label": "At 4-1: two more rounds of streak gold and interest, then level 8 with 80 gold" },
+      { "id": "3-5", "label": "At 3-5: one more round of income, then roll at level 6" }
+    ],
+    "correct": ["now"]
+  },
+  "explanation": "A loss streak is a loan against HP, and the exit condition is set by the repayment: you stop when the next losses start costing more than the streak pays, or when the HP left cannot absorb the stage-4 damage you will take before the board is good. At 46 HP, three more stage-3 losses leave you at roughly 25 entering stage 4, where a single miss on the 4-1 rolldown ends the game. The streak has done its job: 62 gold at 3-2 with the augment in hand is exactly what it was for.\n\nWaiting to 4-1 for 'level 8 with 80 gold' is the plan that sounds like Master and plays like 8th: the extra 18 gold buys nine rolls and costs 25 HP, and the board at 4-1 must hit on the first rolldown or die. Stopping at 3-2 gives you three rounds at level 7 to convert gold into 2-stars with fights that only cost 8 when you lose. The 3-5 option is the half-measure: one more round of losses for one more round of income, at a level where rolling barely finds 3-costs.",
+  "principle": "A loss streak ends when the HP left cannot pay for the losses between now and a stable board. Set that number before you start streaking.",
+  "guideLink": "/guides/economy#loss-streaking-on-purpose",
+  "commonMistake": "Extending a loss streak past 50 HP because the gold looks good and the board 'will come together at 8'."
+}

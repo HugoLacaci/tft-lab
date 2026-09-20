@@ -1,0 +1,38 @@
+{
+  "id": "carousel-spatula-with-no-plan",
+  "category": "carousel",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 2-4 carousel, 88 HP, level 5. You hold one AD component. Your board is a mixed opener with no vertical. The carousel offers a Spatula, a completed defensive item on a 2-cost tank, and an AD component. What do you take?",
+  "state": {
+    "stage": "2-4",
+    "gold": 21,
+    "hp": 88,
+    "level": 5,
+    "xpToNext": 12,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:caster-1", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-1", "row": 1, "col": 3, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:support-2", "generic:bruiser-1"],
+    "items": ["generic:item:ad"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "spatula", "label": "The Spatula: emblems win games and you can decide the trait later" },
+      { "id": "completed", "label": "The completed defensive item on the 2-cost tank: an item now plus a unit you can play" },
+      { "id": "ad", "label": "The AD component to pair with the one you hold" }
+    ],
+    "correct": ["completed"]
+  },
+  "explanation": "A Spatula is only an item once you have a trait worth an emblem, and at 2-4 with a mixed board you do not. It sits on the bench as a dead component through stage 3, the stage where losses start to cost real HP, and there is a fair chance it never becomes anything better than the trait you happened to fall into. The completed tank item is two components of value on a unit you can put on the board immediately, and it stabilises the frontline for the stage 3 rounds you are about to play at 1-loss. That is the most item power you can use this round.\n\nThe AD component is the tempting one because it completes a pair: but a pair of AD components makes one carry item on a 1-star 2-cost, while the carousel is offering a finished item for free. Take the finished item, keep your AD component for the 3-4 carousel or a shop drop, and make the emblem decision when there is a trait to make it about.",
+  "principle": "A Spatula without a plan is a dead component; a completed item without a plan is still an item.",
+  "guideLink": "/guides/items#carousel-priority",
+  "commonMistake": "Taking the Spatula reflexively because emblems are strong, then carrying it uncombined into stage 4."
+}

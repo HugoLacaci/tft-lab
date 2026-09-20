@@ -30,6 +30,7 @@ export const GENERIC_AUGMENTS: Record<string, GenericAugment> = Object.fromEntri
       { id: "generic:aug:item-radiant-late", name: "Radiant Promise", tier: "prismatic", kind: "item", desc: "At stage 5-1, turn one item radiant. Nothing until then." },
       { id: "generic:aug:tempo-reroll", name: "Free Rerolls", tier: "silver", kind: "tempo", desc: "Gain 1 free shop refresh per round. Best for reroll lines that stay low-level." },
       { id: "generic:aug:tempo-xp", name: "Level Up!", tier: "gold", kind: "tempo", desc: "Gain 8 XP now and 2 extra XP per round. A fast-8 augment; wasted on a level-6 reroll board." },
+      { id: "generic:aug:utility-stabilise", name: "Reinforcements", tier: "prismatic", kind: "utility", desc: "Gain a 2-star copy of your strongest unit and a completed defensive item now. Maximum floor, no scaling." },
       { id: "generic:aug:utility-hp", name: "Second Wind", tier: "silver", kind: "utility", desc: "Heal 20 player HP over the next 4 rounds. Buys time when you are low; a wasted slot at 90 HP." },
     ] as GenericAugment[]
   ).map((a) => [a.id, a]),

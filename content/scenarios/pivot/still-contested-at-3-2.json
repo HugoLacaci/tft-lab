@@ -1,0 +1,43 @@
+{
+  "id": "pivot-still-contested-at-3-2",
+  "category": "pivot",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 augment round. At 2-1 you scouted three other players on your 2-cost reroll carry and decided to wait. Now, at 3-2, two of them are still holding the carry with a 2-star each, and you have a pair. You are level 5 with 44 gold at 78 HP, and your items are flexible AD components. Your board has a 2-star 3-cost AD carry from a different line. What is the play?",
+  "state": {
+    "stage": "3-2",
+    "gold": 44,
+    "hp": 78,
+    "level": 5,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:carry-2", "row": 3, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-2", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:bruiser-3", "generic:support-1"],
+    "items": ["generic:item:ad", "generic:item:ad"],
+    "lobby": [
+      { "player": "Seat 3", "hp": 88, "note": "2-star of your carry, holding 3 more copies on bench" },
+      { "player": "Seat 5", "hp": 70, "note": "2-star of your carry, AD items on it" },
+      { "player": "Seat 8", "hp": 60, "note": "Dropped the line, now on a tank vertical" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "pivot", "label": "Sell the pair, put the AD items on the 3-cost carry, and go up levels on the uncontested line" },
+      { "id": "roll", "label": "Roll down to 20 at level 5 to hit the 3-star before they do" },
+      { "id": "wait", "label": "Keep holding the pair to 4-1 and see if a third player drops" }
+    ],
+    "correct": ["pivot"]
+  },
+  "explanation": "One competitor holding five copies plus another 2-star means at least eight of the twenty-five copies are gone before you roll, and the two of them will keep buying. Your 3-star needs nine. That is not a race you win from a pair, and every roll at level 5 that misses is gold you needed for the 4-1 level. The read you postponed at 2-1 is now clear, and clear is the moment to act.\n\nThe pivot is cheap because your items are AD components and you already own a 2-star 3-cost AD carry with an item: nothing you sell was doing work. Waiting to 4-1 is the trap: you would spend stage 3 at level 5 with a 1-star carry on the board while the pool shrinks further and your HP pays for it.",
+  "principle": "When the contest read becomes clear, pivot with gold in hand, not after a failed rolldown.",
+  "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+  "commonMistake": "Rolling to prove you can hit. The pool does not care that you had the pair first."
+}

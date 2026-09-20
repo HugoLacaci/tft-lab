@@ -185,7 +185,8 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
  */
 export function validateNoHardcodedSet(root = process.cwd()): Problem[] {
   const problems: Problem[] = [];
-  const scan = ["app", "components", "lib", "content/guides", "content/scenarios", "data/constants/index.ts", "data/archetypes.ts", "data/generic-augments.ts", "data/creators.ts", "data/constants/circuit.ts", "scripts"];
+  // content/scenarios is excluded: setAgnostic:false scenarios legitimately carry set ids and are filtered at runtime.
+  const scan = ["app", "components", "lib", "content/guides", "data/constants/index.ts", "data/archetypes.ts", "data/generic-augments.ts", "data/creators.ts", "data/constants/circuit.ts", "scripts"];
   const re = /\b(?:Set|set)[ _-]?(1[0-9]|[2-9][0-9])\b|\bTFT(?:Set)?(1[0-9])_|\bDA_(1[0-9])_|set-(1[0-9])\.json/g;
   const walk = (p: string) => {
     const abs = path.join(root, p);

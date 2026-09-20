@@ -1,0 +1,43 @@
+{
+  "id": "endgame-two-players-left-at-20-hp",
+  "category": "endgame",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 6-1, two players left. You are at 20 HP with 70 gold at level 9; the other player is at 58 HP with a 2-star 5-cost board that beats yours slightly. Losses now cost about 20. Your board has a 1-star 5-cost caster with two copies of it sitting in the shop this round, and a 1-star 5-cost tank. You are 40 XP from level 10. What do you do?",
+  "state": {
+    "stage": "6-1",
+    "gold": 70,
+    "hp": 20,
+    "level": 9,
+    "xpToNext": 40,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-5", "row": 0, "col": 3, "star": 1, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-4", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-4", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-4", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-3", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-5", "row": 3, "col": 2, "star": 1, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:support-3", "row": 3, "col": 6, "star": 2, "items": [] },
+      { "championId": "generic:assassin-4", "row": 2, "col": 1, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:caster-5", "generic:caster-5", "generic:tank-3", "generic:carry-2", "generic:support-1"],
+    "items": [],
+    "lobby": [{ "player": "Seat 2", "hp": 58, "note": "2-star 5-cost tank and carry; beats you by two or three units" }]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "two-star-now", "label": "Buy both caster copies for the 2-star (10 gold), then roll the rest for the tank's second copy: you have one loss left, so the board must win this fight" },
+      { "id": "level-10", "label": "Level to 10 (40 gold) and put in a tenth unit; a bigger board beats a slightly stronger one" },
+      { "id": "interest", "label": "Hold 50, buy one caster copy, and wait for the shop to show the tank" }
+    ],
+    "correct": ["two-star-now"]
+  },
+  "explanation": "One loss left changes the arithmetic completely. Interest is worth nothing to a player who might not see another income round, and level 10 costs 40 gold for a unit slot you would fill with a 2-cost, while the 2-star 5-cost caster is sitting in the shop for 10. A 2-star 5-cost with an item is the single biggest power jump available on the board, and it is guaranteed, not rolled for. After that, 60 gold at level 9 with 15% 5-cost odds is a real chance at the tank's second copy, which would put you ahead.\n\nThe opponent has three losses to give; you have one. Every plan that does not maximise the probability of winning the next fight is a plan to finish 2nd. Level 10 is what you do with 100 gold and 60 HP, not with 70 gold and 20.",
+  "principle": "With one loss left, every gold goes into the next fight. Guaranteed upgrades before rolled ones, rolls before levels.",
+  "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+  "commonMistake": "Leveling to 10 at 20 HP because 'level 10' sounds like the endgame, while a 2-star 5-cost sits in the shop."
+}

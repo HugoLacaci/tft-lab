@@ -1,0 +1,38 @@
+{
+  "id": "hp-management-open-fort-at-2-5",
+  "category": "hp-management",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 5 with 26 gold at 94 HP. Your board has no 2-stars and nothing in the shop pairs. Three other players have clearly stronger stage-2 boards. You lost the last two fights for 4 HP each. What is your plan through stage 2?",
+  "state": {
+    "stage": "2-5",
+    "gold": 26,
+    "hp": 94,
+    "level": 5,
+    "xpToNext": 14,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 1, "items": ["generic:item:ad"] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:caster-1", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-1", "generic:support-2", "generic:bruiser-3", "generic:caster-2"],
+    "items": ["generic:item:tank"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "streak", "label": "Accept the losses: buy nothing, bank toward 50, take the loss-streak gold, and plan the first real spend at 3-2" },
+      { "id": "roll", "label": "Roll 10 gold now for pairs so you stop losing" },
+      { "id": "level", "label": "Level to 6 early to fit more units and win a round" }
+    ],
+    "correct": ["streak"]
+  },
+  "explanation": "Stage 2 losses cost 2 to 4 HP each. At 94 HP you can lose every remaining stage-2 fight and enter 3-1 above 80. Meanwhile a loss streak pays up to 3 gold a round on top of interest, so a deliberate open-fort gets you to 50 gold by 3-1 with the whole lobby ahead of you on board and behind you on econ. HP spent in stage 2 is the cheapest HP in the game; HP spent in stage 4 costs 12 a fight.\n\nRolling ten gold at level 5 to stop losing 4-HP fights is paying interest to avoid a cost that is smaller than the interest. Leveling to 6 at 2-5 to win one round breaks the streak, delays the 50, and buys a unit slot you have nothing good to put in. The exit condition of this plan is fixed now: at 3-2 you have the augment, ~50 gold, and you spend.",
+  "principle": "HP is cheapest in stage 2: a planned loss streak converts it into gold at the best rate you will ever get.",
+  "guideLink": "/guides/hp#hp-is-a-resource",
+  "commonMistake": "Rolling in stage 2 to stop a loss streak that is paying you, because losing feels bad."
+}

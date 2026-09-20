@@ -1,0 +1,40 @@
+{
+  "id": "positioning-spread-against-aoe-caster",
+  "category": "positioning",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5. Your next opponent runs a 2-star 4-cost AP caster in the centre of their backline whose spell hits a 3-hex cluster around its target and it targets the unit in the middle of your largest group. Your two backline units and their bodyguard are clumped on the right. Your 3-cost AP carry is on the bench. Place it so the spell cannot hit more than two of your units.",
+  "state": {
+    "stage": "3-5",
+    "gold": 48,
+    "hp": 70,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 5, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-2", "generic:caster-1", "generic:bruiser-1", "generic:support-3", "generic:carry-2"],
+    "items": [],
+    "enemyBoard": [
+      { "championId": "generic:caster-4", "row": 3, "col": 3, "star": 2, "items": ["generic:item:carry-completed", "generic:item:ap"] },
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 2, "col": 4, "star": 2, "items": [] }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:caster-3",
+    "correctHexes": [{ "row": 3, "col": 0 }, { "row": 3, "col": 1 }, { "row": 2, "col": 0 }]
+  },
+  "explanation": "The enemy spell punishes clumps: it picks the centre of your biggest group and hits everything within one hex. Your carry and support already form a two-unit cluster on the right; adding a third backline unit next to them turns one cast into three units eaten. Placing the caster on the far left splits the backline into two groups of two and one, so the biggest cluster the spell can find is still just the pair on the right, and your new caster never takes the hit at all.\n\nThe cost of spreading is small at this stage: the caster has no items and does not need the bodyguard, and nothing on the enemy board dives corners. The rule is to spread against area damage and clump against single-target dives; you scouted area damage, so you spread.",
+  "principle": "Against area damage, spread the backline so the biggest cluster is two units.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Tucking every backliner behind the same bodyguard because it feels safe. Against area damage the bodyguard is the thing that gets everyone killed."
+}

@@ -7,14 +7,56 @@ trainerCategory: "hp-management"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+HP is the resource you cannot buy back, and the one most players spend without looking at the price. Every econ decision in this site (holding 50, loss-streaking, leveling late) is a decision to *spend HP now for power later*. That trade is correct when you have HP to spend and disastrous when you do not. This guide is about knowing which one you are in.
 
 ## HP is a resource
 
+Start from what HP actually buys. It buys rounds: each point of HP is a fraction of a loss you can absorb before elimination. Because damage per loss rises with the stage, the same 20 HP buys four losses in stage 2 and barely one in stage 5. So HP is a resource whose *value rises over the game*, and that has a clean implication: **spend HP early, when it is cheap, and protect it late, when it is not.**
+
+That is why loss-streaking in stage 2 and early stage 3 is a real strategy and why the same behaviour in stage 4 is a disaster. It is also why "I'm at 60 HP, I'm fine" means something different at 3-1 (you are very fine) and at 5-1 (you are two losses from 7th).
+
+The second thing HP buys is *options*. A player at 80 HP at 4-2 can take the scaling augment, hold for 9, and pivot if the rolldown misses. A player at 30 HP at 4-2 has one move: stabilise now. High HP is the ability to still be making decisions.
+
+<Callout type="tip" title="Count losses, not points">
+Never think "I have 34 HP". Think "I have two losses" (or three, or one). The conversion depends on the stage and on how much damage the boards you will face are dealing; scouting the strongest boards tells you. The number of losses is what changes your decision; the HP number is just how you compute it.
+</Callout>
+
 ## Thresholds
+
+Damage per loss is a function of stage and of how many units the winner had left. The exact numbers change with the set, but the shape does not: single digits in stage 2, high single digits to low teens in stage 3, mid-teens in stage 4, twenty or more in stage 5 against a capped board. Convert your HP into losses using the damage you have actually been taking, not the minimum.
+
+The thresholds that should change your play:
+
+- **The two-losses line.** When two losses at the current damage rate would eliminate you, every other consideration stops. No interest, no level timing, no waiting for the augment. Roll and stabilise now. At 4-3 taking 13 a loss, that line is around 26 HP; at 5-2 taking 20, it is 40.
+- **The one-more-loss-then-decide line.** Roughly three to four losses of HP. You can afford exactly one more round of greed: one level, one round of holding for the augment. Not two.
+- **The comfortable line.** Six or more losses of HP. You can loss-streak, hold for 9, take the scaling augment. Above this line HP is cheap and you should be spending it.
+
+**Streak gold versus HP.** Loss-streak gold (see the [interest table](/guides/economy#interest-and-the-50-gold-floor)) is worth taking while a loss costs less HP than the gold is worth to you. In stage 2 a loss is a few HP and the streak is paying 2 to 3 gold: obviously worth it. At 4-1 a loss is 12 to 15 HP for the same 3 gold: never. The crossover is around 3-5, which is exactly when the loss-streak plan must convert.
+
+<Callout type="math" title="How many losses is that?">
+55 HP at 4-2 in a lobby whose winning boards have been dealing 12 to 14 per loss. 55 ÷ 13 ≈ 4.2, so four losses, but the fourth one leaves you at 3 HP entering stage 5, where any loss is elimination. Realistically: three losses of decisions left, and the third one had better be a win. That is the "one more loss then decide" line, not the "comfortable" line, even though 55 sounds comfortable.
+</Callout>
 
 ## Stabilise vs push
 
+Stabilising means converting gold into board strength now to stop losing HP: rolling down, slamming items, leveling for a slot. Pushing means spending on ceiling: leveling to 9, holding for a 3-star, rolling for the second 5-cost. The decision is a comparison of two things: how many losses you have left, and how many rounds the push takes to pay off.
+
+**Stabilise when** you are at or below the one-more-loss line, or when the push needs more rounds than you have losses. A level-9 push that pays off at 5-3 is not available to a player who will be eliminated at 5-2.
+
+**Push when** you are above the comfortable line *and* the push makes your board win fights it currently loses. Pushing from strength turns HP into placement; pushing from weakness turns HP into nothing.
+
+### Playing for top 4 with a 6th-place board
+
+At 4-5 with a board that is clearly the 5th or 6th strongest, the honest goal is 4th, and 4th is achieved by *not losing HP*, not by hitting a miracle. Concretely: roll for the 2-stars that turn losses into close losses, slam every item, level for the extra body, and position defensively. Each of those actions costs you the chance of 1st, which you did not have, and buys you the 4th that you can reach.
+
+The players who go 7th from this position are the ones who "play for 1st": hold 50 for level 9, roll for the 5-cost, and get eliminated with 60 gold on the bench. The players who go 5th are the ones who half-commit. The 4th is there for the player who accepts the board they have.
+
+<Callout type="leak" title="Greeding at 25 HP">
+The Emerald pattern is sitting on 50 gold at 4-3 with 25 HP and a 1-star carry, "because interest". Interest is 5 gold a round. Elimination is the game. Below the two-losses line there is no econ decision left, only a stabilise-now decision, and the whole 50 goes into it.
+</Callout>
+
+The reverse mistake exists too: stabilising at 80 HP at 4-2 by rolling for a mediocre board when holding one more round would have put you at 9 with 70 gold. High HP is permission to be greedy; not using it is also a leak, just a quieter one.
+
 <DrillThis category="hp-management" />
 
-<CheckYourself items={["Did I know how many losses I had left at 4-1?", "Did I greed interest below the two-loss line?", "Did I play for 1st with a top-4 board?"]} />
+<CheckYourself items={["Did I know how many losses I had left at 4-1?", "Did I greed interest below the two-losses line?", "Did I play for 1st with a top-4 board?", "Did I convert my loss streak before the damage curve turned at 3-5?", "At 80+ HP, did I use the HP, or stabilise out of habit?"]} />

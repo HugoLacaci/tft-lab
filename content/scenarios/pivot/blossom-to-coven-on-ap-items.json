@@ -1,0 +1,44 @@
+{
+  "id": "pivot-blossom-to-coven-on-ap-items",
+  "category": "pivot",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2 augment round, level 6, 42 gold, 66 HP. You are playing Blossom around Yunara with Rabadon's Deathcap and Blue Buff, but Seat 2 and Seat 7 both have 2-star Ahri and are itemising Blossom hard. This shop shows Cassiopeia, Elise and Caitlyn; you already own a 2-star Elise and a Morgana. Cassiopeia and Morgana are AP casters that use Deathcap and Blue Buff. What is the plan?",
+  "state": {
+    "stage": "3-2",
+    "gold": 42,
+    "hp": 66,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Elise", "row": 0, "col": 3, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Shen", "row": 0, "col": 4, "star": 1, "items": [] },
+      { "championId": "DA_18_Yunara", "row": 3, "col": 4, "star": 2, "items": ["DA_RabadonsDeathcap", "DA_BlueBuff"] },
+      { "championId": "DA_18_Morgana", "row": 3, "col": 2, "star": 1, "items": [] },
+      { "championId": "DA_Karma18", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "DA_18_Sett", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["DA_18_Cassiopeia", "DA_18_Elise", "DA_18_Caitlyn", "DA_18_Rakan", "DA_18_Warwick"],
+    "items": ["DA_Component_NeedlesslyLargeRod"],
+    "lobby": [
+      { "player": "Seat 2", "hp": 84, "note": "2-star Ahri with AP items, three Blossom units on board" },
+      { "player": "Seat 7", "hp": 72, "note": "2-star Ahri, holding Sett and Yunara copies" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "coven", "label": "Buy Cassiopeia and Caitlyn, move Deathcap and Blue Buff to Cassiopeia when she is 2-star, and build Coven around Morgana; keep Yunara until then" },
+      { "id": "force", "label": "Keep Blossom: two players on Ahri means the 4-cost is contested, but Yunara is a 2-cost and you can 3-star her" },
+      { "id": "sell-all", "label": "Sell Yunara and Sett now and roll 20 gold for Coven units immediately" }
+    ],
+    "correct": ["coven"]
+  },
+  "explanation": "The items decide the pivot. Deathcap and Blue Buff are generic AP items that any caster uses, so moving from Yunara to Cassiopeia and Morgana costs nothing in item value, and Elise is already a Coven frontliner you own at 2-star. Two players itemising Blossom and holding Ahri means the 4-cost you would eventually need is the most contested unit in the lobby; a Yunara 3-star does not carry stage 5 against that. Coven is open, the shop is offering it, and your board barely changes shape.\n\nThe execution matters: Yunara stays on the board holding the items until Cassiopeia is 2-star, because a 1-star caster with items loses fights a 2-star Yunara wins. Selling everything now to roll at level 6 is a tempo loss on a board that is not losing yet.",
+  "principle": "Pivot along your items: the line that uses what you already hold is the cheap pivot.",
+  "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+  "commonMistake": "Reading contest on the 2-cost you have and ignoring the 4-cost you would need."
+}

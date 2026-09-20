@@ -1,0 +1,46 @@
+{
+  "id": "econ-rolldown-discipline-order",
+  "category": "econ",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-5, level 8, 66 gold, 44 HP. This is your planned rolldown for two 1-star 4-costs (tank and carry). Your bench holds three units that are not in the comp. Put the rolldown steps in the order a disciplined player executes them.",
+  "state": {
+    "stage": "4-5",
+    "gold": 66,
+    "hp": 44,
+    "level": 8,
+    "xpToNext": 48,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 1, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [
+      { "championId": "generic:assassin-2", "star": 1, "items": [], "slot": 0 },
+      { "championId": "generic:caster-1", "star": 2, "items": [], "slot": 1 },
+      { "championId": "generic:carry-2", "star": 1, "items": [], "slot": 2 }
+    ],
+    "shop": ["generic:tank-3", "generic:carry-2", "generic:caster-4", "generic:support-1", "generic:bruiser-1"],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Decide the stop conditions before touching the shop: both targets 2-starred, or a gold floor of 10, whichever comes first",
+      "Sell the three off-comp bench units so every shop copy you hit has a slot to land in",
+      "Roll, buying every copy of both targets on sight, and also buy any 4-cost that would upgrade the weakest board slot",
+      "When a stop condition triggers, stop immediately and re-position the new 2-stars before the timer ends"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "The stop condition is set first because once you are pressing D you will not set it honestly: at 18 gold with one target hit, the pull to \"just three more\" is exactly how a 66-gold rolldown becomes a 0-gold rolldown that leaves you at level 8 with no interest at 5-1. Clearing the bench is next and it is the step Emerald players skip: with three dead units on the bench you have six slots, and a shop that shows two copies of your carry and a useful 4-cost needs three. A missed copy because the bench was full is the most expensive mistake in the whole sequence.\n\nRolling comes third, and \"buy any 4-cost that upgrades the weakest slot\" is part of the same step because the point of the rolldown is board strength, not the specific names you wrote down. Re-positioning is last and it is not optional: a freshly 2-starred tank sitting where the 1-star was is often in the wrong hex for the new opponent, and the timer will not wait.",
+  "principle": "Set the floor and the stop before you press D; after that the shop makes the decisions for you.",
+  "guideLink": "/guides/rolling#rolldown-discipline",
+  "commonMistake": "Rolling with a full bench, then selling in a panic mid-rolldown and missing the copy that was in the shop you just refreshed."
+}

@@ -7,7 +7,7 @@ trainerCategory: "econ"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Every shop you have ever hated was produced by two numbers: the odds for your level, and how many copies of the unit you wanted were still in the pool. Neither number is hidden. Players who climb read them before they roll; players who plateau read them after, as an explanation for why the roll "went badly".
 
 ## Odds and the pool
 
@@ -15,12 +15,63 @@ updated: "2026-09-20"
 
 <PoolTable />
 
+The odds table says what fraction of each shop slot is drawn from each cost tier at your level. The pool table says how many copies of each unit exist and how many distinct units share the tier. Together they give you the only number that matters when you roll: the chance that a specific slot shows the specific unit you want.
+
+The formula for one slot is: `tier odds × (copies of your unit still in the pool ÷ total copies still in the pool for that tier)`. The second factor is the part Emerald players ignore. A 4-cost at level 8 is "30%"; *your* 4-cost at level 8 is 30% of a share of the 4-cost pool, and that share shrinks every time anyone in the lobby buys a copy, including you.
+
+<Callout type="math" title="One specific 4-cost at level 8">
+Use the pool table: 10 copies per 4-cost and, in the current set, 14 distinct 4-costs, so 140 copies in a full tier. With none out, one slot shows your unit with probability 0.30 × 10/140 ≈ 2.1%, so a five-slot shop shows it about 10.5% of the time and one roll yields ~0.107 expected copies. You need 3 copies for a 2-star; the naive expectation is roughly 28 rolls, 56 gold.
+
+Now 3 copies are gone (you hold 1, an opponent holds 2) and 12 other 4-cost copies are out across the lobby. Your unit: 7 copies left; tier: 125 copies. One slot: 0.30 × 7/125 ≈ 1.7%. You need 2 more copies; expected rolls to find them ≈ 24. Still a real rolldown, but 3 copies out took roughly a fifth off your odds.
+
+If a single player holds 6 copies (a 2-star and a spare), you have 4 left in a 125-copy tier: 0.96% per slot. Two copies now take about 42 rolls on average. That is what "contested" means in gold.
+</Callout>
+
+The [roll-odds calculator](/lab/odds) does this arithmetic for any unit, level and gold amount, and simulates the full rolldown so you can see the distribution rather than the average. Use it *before* the game to build intuition, not during the planning phase.
+
+Two things fall out of the pool model that are worth internalising:
+
+- **Units already on your board raise your odds for everything else.** Every copy of a 4-cost you are not playing that someone else holds is a slot that could have been your unit.
+- **Levelling changes your odds more than any amount of rolling.** From 7 to 8, 4-cost odds triple. Twenty gold of rolls at 7 is worth roughly seven gold of rolls at 8 for a 4-cost. Level first; see the [leveling guide](/guides/leveling#levelling-and-rolling-in-the-same-round).
+
 ## Contest math
+
+Contest is the pool model applied to other players. When you scout at 3-2 and see two other boards holding your carry, translate that into copies: each of them holds one to three, and each of them will buy every copy they see from now on. Your effective pool is not 10; it is 10 minus what they hold, and it keeps shrinking at three times the rate it would if you were alone.
+
+The worked example above shows the shape: uncontested, your 2-star 4-cost costs around 50 to 60 gold of rolls at 8; with one serious contester, 70 to 90; with two, you are gambling. Reroll lines are harsher because the target is a 3-star: nine copies out of a pool of 30 (1-costs) or 25 (2-costs), where two other players each holding a 2-star already removes six copies.
+
+The practical rule: **one contester on a 4-cost line is normal, two is a pivot signal, and any contester holding a 2-star of your reroll unit before you do is a pivot signal.** The [pivoting guide](/guides/pivoting#reading-contest) covers what to do about it; the rolling guide's job is to make sure you have done the subtraction before the rolldown, not after.
+
+<Callout type="leak" title="Counting after the rolldown">
+The Emerald pattern is to roll 50 gold at 4-2, miss, scout, and *then* discover two players had the carry 2-starred. The information was free at 3-2. Contest you learn about after rolling is a placement lost; contest you learn about before is a decision.
+</Callout>
 
 ## Rolldown discipline
 
+A rolldown is a single planned event with three parameters you set before you press D the first time:
+
+1. **The target.** Named units and the number of copies. "2-star carry and 2-star tank" is a target. "Upgrades" is not.
+2. **The gold floor.** The gold you will not go below. Usually 0 or 10 at 4-2 if you are stabilising; 30 or 50 if you are rolling "the interest" at a reroll level.
+3. **The stop condition.** The state at which you stop rolling *even if you have gold left*: the target is hit, or you found enough to stabilise and the rest is better saved for the next level.
+
+Set all three before rolling and say them to yourself. Then execute without re-deciding between rolls. The rolldown fails in two ways, and both are the result of re-deciding mid-roll: stopping early because you found "something" and telling yourself you will finish next round (you will not, you will be 10 gold poorer and the shop will be worse), or blowing past the floor because you are one copy away (you are always one copy away).
+
+A few habits that make rolldowns cheaper:
+
+- **Sell nothing during the roll.** Selling to make bench space mid-rolldown is how you sell the pair you needed. Clear the bench before you start.
+- **Buy every copy of the target you see,** even the ones that would put you at four copies. The spare goes back to the pool when you sell it, and it stops the contester finding it while you were deciding.
+- **Roll at a level, not between levels.** The odds jump when the level does; spending gold on a level after you have half-rolled means the first half was at the wrong odds.
+
 ## The shop is a pool
+
+Players describe the shop as random because that is how it feels when you do not track the pool. It is not random in any sense that should change how you play. Every slot is an independent draw from a known, finite bag whose contents are set by the pool sizes, your level, and what the other seven players have bought. You cannot see the bag, but you can see the seven boards, and the arithmetic is the same every game.
+
+This matters for your psychology more than your math. "I never hit" is a feeling; "I rolled 40 gold at level 7 for a 4-cost two other players held" is a diagnosis, and the diagnosis has a fix. When you accept that the shop is a pool, a missed rolldown stops being bad luck and starts being a mistake you can locate: wrong level, wrong count of the pool, wrong stop condition, or a correct decision that lost to variance you had already priced. Only the last one is luck, and it is rarer than it feels.
+
+<Callout type="tip" title="Two questions before every D">
+"At what level am I rolling and what are my odds there?" and "how many copies of my target are already out?" If you cannot answer both, you are not rolling, you are hoping.
+</Callout>
 
 <DrillThis category="econ" />
 
-<CheckYourself items={["Before my rolldown, did I know how many copies of my carry were out of the pool?", "Did I set a gold floor and a stop condition before rolling?", "Did I roll at the level where my target's odds were actually highest?"]} />
+<CheckYourself items={["Before my rolldown, did I know how many copies of my carry were out of the pool?", "Did I set a gold floor and a stop condition before rolling?", "Did I roll at the level where my target's odds were actually highest?", "Did I stop mid-rolldown because I found something, and then not finish it?", "When I missed, can I name which of the two numbers (odds or pool) I got wrong?"]} />

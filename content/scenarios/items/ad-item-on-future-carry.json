@@ -1,0 +1,37 @@
+{
+  "id": "items-ad-item-on-future-carry",
+  "category": "items",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2, level 8, 63 HP. You just completed an AD carry item. Your 2-star 2-cost AD carry has done all your damage so far and already holds two items; your 4-cost AD carry arrived last round at 1-star and has none. You plan to roll for the 4-cost at 4-5. Who gets the new item?",
+  "state": {
+    "stage": "4-2",
+    "gold": 52,
+    "hp": 63,
+    "level": 8,
+    "xpToNext": 70,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 1, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:carry-4", "row": 3, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:caster-3", "row": 3, "col": 1, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-4", "generic:caster-2", "generic:support-1", "generic:bruiser-1"],
+    "items": ["generic:item:carry-completed"]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:carry-completed",
+    "correctUnitIds": ["generic:carry-4"]
+  },
+  "explanation": "Items go on the unit that will be your carry at the end of the game, and that is the 4-cost. It is on the board now, it is in the shop now (buy it), and your 4-5 rolldown exists to 2-star it. A 1-star 4-cost with one item already out-damages a 2-star 2-cost with two by stage 4, and every round the item sits on the 2-cost is a round of damage you leave on the table. The 2-cost is a bridge; you do not keep investing in a bridge once the other side is in sight.\n\nThe usual counter is \"the 2-cost is doing the damage right now\", which is true and is exactly why it keeps the two items it already has. The third item decides who the future is. When the 4-cost hits 2-star, you move the 2-cost's items across as well, but that transfer is a planning-phase decision for later.",
+  "principle": "New items go on the carry you will have at stage 5, not the one that carried stage 3.",
+  "guideLink": "/guides/items#who-gets-the-tank-item",
+  "commonMistake": "Stacking a third item on the early carry \"because it works\", then facing a 4-5 rolldown where the 4-cost you hit has nothing to hold."
+}

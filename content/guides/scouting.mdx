@@ -7,14 +7,67 @@ trainerCategory: "scouting"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Every player above Gold "scouts". Most of them click through the seven boards, look at them, and click back to their own board having decided nothing. That is sightseeing. Scouting is looking at the specific things that change a specific decision you are about to make, in the order those decisions come due, and stopping as soon as the timer is at risk.
 
 ## The scout routine
 
+The routine is built backwards from what you are about to decide. Positioning is decided before the timer runs out this round; rolling and leveling are decided before next combat; tempo (how aggressive to be over the next stage) is decided at the augment rounds. So the order is always the same, and you go as far down the list as the timer allows.
+
+1. **Your next opponent.** Their frontline shape, where their carry sits, and whether they have a jump, a hook, or area damage. This is the only information that changes something you cannot undo after the timer, so it comes first. If you only have ten seconds, this is the ten seconds.
+2. **Your contest.** Every board holding a copy of the units you are rolling for, and how many. This changes whether you roll at all, at what level, and when to pivot. Do this before every rolldown without exception.
+3. **The strongest board in the lobby.** Not to admire it: to measure how many rounds you have before that board is the one you face and how much HP you lose when it is.
+4. **The augments of the top two or three players.** Context for stage 4 onward: who is scaling, who is a tempo board that will fall off, who has an item augment and will out-item you at 5-1.
+
+Rounds where the routine is mandatory: **2-1** (contest for openers; who took what augment), **3-2** (contest before you commit; strongest board), **4-2** (everything above before the rolldown), and **every round from 5-1 on**, because with four or five players left, the next-opponent check is nearly deterministic and the positioning it drives decides 3rd versus 5th.
+
+<Callout type="tip" title="Know who you fight next">
+In the current set the client shows your next opponent or a short list of possible opponents during the planning phase. If it shows one, scout that one. If it shows two or three, scout the two most dangerous and position for both; the [positioning guide](/guides/positioning#counter-positioning) covers how.
+</Callout>
+
 ## What to look for
+
+On any board, in about four seconds, you can read:
+
+- **Frontline shape.** Two tanks centre? A wall of five? An empty flank? That tells you where their fight happens and which of your hexes gets pressure.
+- **Carry position and range.** Corner or centre, row 3 or row 2. Long-range carries in the corner mean your assassins have a target; centre carries mean their board expects assassins.
+- **Threat units.** Anything that jumps, hooks, pulls, or explodes. One glance at the traits row usually tells you.
+- **Items on the carry.** Three completed items on a 2-star 4-cost is a board that wins now; three components on the bench is a board that wins later.
+- **Level and gold** (shown next to the board). A level-8 player with 60 gold at 4-1 is about to roll; a level-7 with 10 gold is not a contest threat this round even if they hold your carry.
+- **Copies of your units.** Count them. Board plus bench. Two copies on a bench at 3-2 is a player who is going to roll for the third.
+
+<BoardExample
+  board={[
+    { championId: "generic:tank-3", row: 0, col: 2, star: 2, items: ["generic:item:tank-completed"] },
+    { championId: "generic:tank-2", row: 0, col: 3, star: 2, items: [] },
+    { championId: "generic:bruiser-2", row: 0, col: 4, star: 2, items: [] },
+    { championId: "generic:assassin-3", row: 3, col: 0, star: 2, items: ["generic:item:carry-completed"] },
+    { championId: "generic:assassin-2", row: 3, col: 6, star: 2, items: [] },
+    { championId: "generic:caster-3", row: 3, col: 3, star: 2, items: ["generic:item:carry-completed"] },
+    { championId: "generic:support-2", row: 2, col: 3, star: 1, items: [] }
+  ]}
+  caption="An opponent board read in four seconds: three-unit frontline, two assassins in the back corners (they will land in yours), an itemised caster in the centre. Decision: move your carry off the corner, spread the backline."
+/>
+
+What you do *not* need to look at: their bench units that are not your contest, their exact item components, their placement history. If it does not feed a decision on the list above, skip it.
 
 ## Scouting must change a decision
 
+The test of a scout is whether you did something differently because of it. Write down, for one game, every scout and the decision it changed. Most players discover that the honest list is short: a couple of positioning adjustments and one "oh, they're also on my comp". The point of the routine is to make the list long.
+
+Decisions that scouting should feed, by round:
+
+- **2-1:** which pairs to hold (contest), which augment to take (if a trait augment is offered, who else is on the trait).
+- **3-2:** commit or pivot on your line (contest), how urgently to stabilise (strongest board), and the augment.
+- **3-5 to 4-1:** the level timing, based on how strong the lobby is and how much damage you will take by waiting.
+- **4-2:** the rolldown (contest, again, freshly counted), the augment, and the positioning for your first fight at level 8.
+- **Stage 5+:** positioning every round for a known opponent; whether to play for 1st or lock top 4 based on the two boards above you.
+
+If you scout and change nothing, one of two things happened: your board was already correct, which is rare, or you looked at the wrong things. It is almost always the second.
+
+<Callout type="leak" title="The 30-second tour">
+The Emerald pattern is a full tour of all seven boards at 3-2, spending the whole planning phase, then rushing your own board with two seconds left and changing nothing. Scout three boards with purpose in fifteen seconds, then spend the rest on your own board acting on what you saw.
+</Callout>
+
 <DrillThis category="scouting" />
 
-<CheckYourself items={["Did I scout at 2-1, 3-2 and 4-2 at minimum?", "Did I check my next opponent before the timer ran out?", "Name one decision this game that scouting changed."]} />
+<CheckYourself items={["Did I scout at 2-1, 3-2 and 4-2 at minimum?", "Did I check my next opponent before the timer ran out?", "Name one decision this game that scouting changed.", "Before my rolldown, had I counted the copies of my carry on other boards?", "Did I scout every round from 5-1 on?"]} />

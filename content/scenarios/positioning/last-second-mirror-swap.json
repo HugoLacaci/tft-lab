@@ -1,0 +1,46 @@
+{
+  "id": "positioning-last-second-mirror-swap",
+  "category": "positioning",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 5-1, four players left. You lost to Seat 4 last round because their two assassins dove your carry in the bottom-right corner. Scouting now, you see they have not touched their board, but you know Seat 4 scouts every round and reacts. You will fight Seat 4 again in two rounds; this round you fight Seat 6, whose board is a slow melee frontline with no divers. What do you do with your carry this round?",
+  "state": {
+    "stage": "5-1",
+    "gold": 58,
+    "hp": 41,
+    "level": 8,
+    "xpToNext": 34,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-4", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 6, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 1, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 4, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:carry-4", "generic:tank-3", "generic:caster-5", "generic:bruiser-4", "generic:support-1"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 4", "hp": 55, "note": "Assassins in both back corners; scouts and repositions every round" },
+      { "player": "Seat 6", "hp": 30, "note": "Six melee frontliners, no divers, no area damage" },
+      { "player": "Seat 2", "hp": 18, "note": "AP board, backline caster in the centre" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "keep", "label": "Leave the carry in the corner this round; against Seat 6 the corner is fine and it gives Seat 4 nothing new to react to" },
+      { "id": "move-now", "label": "Move the carry to the centre now so it is safe for Seat 4 in two rounds" },
+      { "id": "swap-left", "label": "Swap the carry to the bottom-left corner now, so Seat 4 sees the new corner and adjusts" }
+    ],
+    "correct": ["keep"]
+  },
+  "explanation": "Positioning is a per-round decision against a specific opponent, and this round's opponent has no divers, so the corner is the best hex: maximum distance from a melee frontline. Moving now costs you nothing against Seat 6 but shows Seat 4 the change two rounds early, and a player who scouts every round will re-aim the assassins. The information you give away is worth more than the convenience of setting up early.\n\nThe play against Seat 4 happens in the planning phase of that round: leave the carry in the corner until the last three seconds, then swap it to the centre or the opposite corner after their scout is over. That is a Master-level habit, and it only works if you have not already shown your hand.",
+  "principle": "Position for this round's opponent, and change position against a scouting opponent only at the last second.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Fixing the corner problem immediately because the last loss hurt, and letting the opponent scout the fix."
+}

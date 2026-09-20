@@ -1,0 +1,41 @@
+{
+  "id": "carousel-take-the-carry-copy",
+  "category": "carousel",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-4 carousel, level 8, 47 HP, you pick third. Your 4-cost AD carry is 1-star with two items and you plan to roll for it at 4-5. The carousel shows a second copy of that carry holding a random defensive component, and separately the exact AD component that completes its BIS third item, carried by a 1-cost. Which do you take?",
+  "state": {
+    "stage": "4-4",
+    "gold": 58,
+    "hp": 47,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": [null, null, null, null, null],
+    "items": ["generic:item:ad"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "copy", "label": "The carry copy with the defensive component: 4 gold of unit, pool progress, and a component anyway" },
+      { "id": "bis", "label": "The exact BIS component on the 1-cost: the third item is a damage multiplier you cannot roll for" },
+      { "id": "either", "label": "Either is fine; take whichever is closer when the carousel unlocks" }
+    ],
+    "correct": ["copy"]
+  },
+  "explanation": "Count the value. The carry copy is a 4-cost unit (4 gold if you sold it) that moves your 4-5 rolldown from \"find two copies\" to \"find one\", which at roughly 10% per slot for one specific 4-cost is a saving of 15-20 gold of rolling on average, and it comes with a component you can combine into a tank item for the bruiser. The BIS component is 1 component of value plus a 1-cost you will sell for 1 gold; it completes a third item that is a multiplier on a 1-star carry, and a 1-star carry with three items still loses to a 2-star carry with two.\n\nAt 47 HP on a 2-loss streak the 2-star is the stabiliser, not the third item. Late carousels are where units outvalue components precisely because the unit is the one thing the shop makes expensive. \"Either\" is not a position; carousel picks at stage 4 decide placements.",
+  "principle": "From stage 4 on, a copy of your itemised carry on the carousel is worth more than any component, BIS included.",
+  "guideLink": "/guides/items#carousel-priority",
+  "commonMistake": "Grabbing the BIS component because it is the item you have been waiting for, and rolling 20 extra gold at 4-5 to find the copy you left on the carousel."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "augment-trait-crest-when-you-have-the-units",
+  "category": "augment",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 gold augment, 84 HP, 44 gold, level 6. You already run four units of a vertical, two of them 2-star, and your scout shows nobody else holding its units. The Crest offered is for that trait. Which augment?",
+  "state": {
+    "stage": "3-2",
+    "gold": 44,
+    "hp": 84,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-3", "row": 0, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-1", "generic:support-3", "generic:bruiser-2"],
+    "items": ["generic:item:ad"],
+    "lobby": [
+      { "player": "Seat 2", "hp": 90, "note": "Different vertical, no overlap with yours" },
+      { "player": "Seat 4", "hp": 71, "note": "Reroll line on 1-costs, no overlap" }
+    ]
+  },
+  "question": {
+    "type": "augment",
+    "options": ["generic:aug:trait-crest", "generic:aug:econ-lump", "generic:aug:combat-backline-as"],
+    "correct": "generic:aug:trait-crest"
+  },
+  "explanation": "Run the framework in order. Fit: you already have four units of the trait and the Crest adds an emblem plus a fifth unit, so the next breakpoint is reached the moment you take it, no rolling required. Econ plan: it costs nothing and it does not change your 4-1 level timing. Floor or ceiling: at 84 HP you can afford a ceiling-raiser, and this one also raises the floor because the breakpoint bonus applies now. Contest: two scouted players are on other lines. Every question comes back yes; this is the case where the trait augment is correct and taking a safe generic augment instead would be the leak.\n\nWindfall is fine but replaceable by one good round of interest. Backline Tempo helps a 1-star carry a little. Neither changes what your board is; the Crest turns a loose collection into a committed vertical with a free emblem that lets you put the trait on a 4-cost later.",
+  "principle": "Trait augments are excellent when you already own the units and nobody else does; the framework says yes, so say yes.",
+  "guideLink": "/guides/augments#the-evaluation-framework",
+  "commonMistake": "Over-learning \"trait augments are traps\" and passing on one that the board has already paid for."
+}

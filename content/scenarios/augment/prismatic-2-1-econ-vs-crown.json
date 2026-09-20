@@ -1,0 +1,33 @@
+{
+  "id": "augment-prismatic-2-1-econ-vs-crown",
+  "category": "augment",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1, prismatic augment, 100 HP, level 4 with 9 gold. Your opener is four random 1-costs with no shared trait; you have not scouted yet. Options: Delayed Payout (8 gold at the start of every stage from now on), Trait Crown (emblem, 2-star unit and an item for a named trait) and Radiant Promise (one item turns radiant at 5-1). Which do you take?",
+  "state": {
+    "stage": "2-1",
+    "gold": 9,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 8,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": ["generic:item:tank"] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:caster-1", "generic:carry-2", "generic:bruiser-1", "generic:support-2"],
+    "items": ["generic:item:ad"]
+  },
+  "question": {
+    "type": "augment",
+    "options": ["generic:aug:econ-delayed", "generic:aug:trait-crown", "generic:aug:item-radiant-late"],
+    "correct": "generic:aug:econ-delayed"
+  },
+  "explanation": "Prismatic expectations are the point: a prismatic should decide the game, and the question is which of these decides it in your favour given what you know. At 2-1 you know nothing: no scout, no direction, four unrelated 1-costs. The Crown is enormous power, but it locks you into a vertical before you have seen whether three other players opened it, and a contested Crown at 3-2 is a board that cannot hit its own units. Delayed Payout at 2-1 with 100 HP is the safe prismatic: 8 gold at 3-1, 4-1, 5-1, 6-1 is 32 gold plus the interest it compounds, roughly a full extra rolldown, and it leaves you free to take whichever line the 3-2 scout shows is open. The prismatic ceiling is preserved because the gold is spent on 4-costs at the moment you know which ones.\n\nRadiant Promise is the worst of the three here: it does nothing for four stages and you have no item worth making radiant yet. Note the reversal from the low-HP case: at 100 HP with the whole game ahead, an econ prismatic is a ceiling-raiser; at 40 HP on 4-2 the same augment would be a trap.",
+  "principle": "Prismatic augments should decide the game; at 2-1 with no information, take the one that decides it later, when you know more.",
+  "guideLink": "/guides/augments#silver-gold-prismatic",
+  "commonMistake": "Taking the Crown for the raw power and discovering at 3-2 that two players opened the same trait."
+}

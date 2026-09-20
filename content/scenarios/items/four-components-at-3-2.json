@@ -1,0 +1,39 @@
+{
+  "id": "items-four-components-at-3-2",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2. You are at 58 HP after losing three in a row, holding four loose components (two AD, one AP, one defensive) because none of the pairs make the BIS for the 4-cost carry you plan to hit at 4-2. Your 3-cost carry and 2-cost tank are both naked. What do you do with the components?",
+  "state": {
+    "stage": "3-2",
+    "gold": 40,
+    "hp": 58,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": { "type": "loss", "count": 3 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-1", "generic:support-1", "generic:bruiser-3"],
+    "items": ["generic:item:ad", "generic:item:ad", "generic:item:ap", "generic:item:tank"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "hold", "label": "Keep holding: the BIS components will come from the 3-4 carousel and you do not want a wasted item" },
+      { "id": "slam-two", "label": "Slam two items now: the AD pair on the 3-cost carry and the AP + defensive into a tank item on the 2-cost tank" },
+      { "id": "slam-one", "label": "Slam only the AD pair on the carry and keep the other two for BIS" }
+    ],
+    "correct": ["slam-two"]
+  },
+  "explanation": "Four components on the bench at 3-2 while losing is two completed items you are refusing to use, and each loss is costing 8 HP. The HP rule is simple: below roughly 70 HP on a loss streak in stage 3, every pair of components becomes an item this round. The AD pair is a real carry item on a 2-star 3-cost that is already your damage; the AP plus defensive component makes a serviceable tank item for the unit taking the hits. Both stay useful for the whole game because items move freely in planning and a 4-cost carry with two \"non-BIS\" items beats a 4-cost you never itemised. The 3-4 carousel is two rounds and 16 HP away.\n\nSlamming only one item is the compromise that still loses: the frontline stays naked and you keep losing 8 HP, now for the sake of one hypothetical BIS. BIS is a preference, not a requirement, and it costs HP you do not have to hold out for it.",
+  "principle": "Below 70 HP on a loss streak, components on the bench are HP you are choosing to lose.",
+  "guideLink": "/guides/items#slam-or-hold",
+  "commonMistake": "Waiting for perfect items on a carry you have not found yet, while the carry you have fights with nothing."
+}

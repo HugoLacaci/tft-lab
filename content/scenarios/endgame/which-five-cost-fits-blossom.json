@@ -1,0 +1,43 @@
+{
+  "id": "endgame-which-five-cost-fits-blossom",
+  "category": "endgame",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-3, level 9 with 41 gold at 38 HP, four players left. Your board is a Blossom line: 2-star Ahri as the AP carry, 2-star Sett as the tank, Yunara and Master Yi as Blossom bodies. The shop shows Ashe (Blossom, Hunter, a physical-damage carry) and Draven (no shared trait, a physical-damage carry). You have no spare AD items. Which 5-cost do you buy?",
+  "state": {
+    "stage": "5-3",
+    "gold": 41,
+    "hp": 38,
+    "level": 9,
+    "xpToNext": 92,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Sett", "row": 0, "col": 3, "star": 2, "items": ["DA_WarmogsArmor", "DA_GargoyleStoneplate"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Elise", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Rakan", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_MasterYi_AD", "row": 2, "col": 5, "star": 2, "items": ["DA_Bloodthirster"] },
+      { "championId": "DA_18_Ahri", "row": 3, "col": 3, "star": 2, "items": ["DA_RabadonsDeathcap", "DA_BlueBuff", "DA_JeweledGauntlet"] },
+      { "championId": "DA_18_Yunara", "row": 3, "col": 1, "star": 2, "items": [] },
+      { "championId": "DA_Karma18", "row": 3, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_18_Caitlyn", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Ashe", "DA_Draven18", "DA_18_Hecarim", "DA_18_Cassiopeia", "DA_18_Teemo"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "ashe", "label": "Ashe: she replaces Caitlyn, adds a Blossom body for the next breakpoint, and her Hunter trait pairs with Caitlyn's if you keep both" },
+      { "id": "draven", "label": "Draven: the stronger standalone carry, so he raises the cap more" },
+      { "id": "neither", "label": "Neither: without AD items a 1-star 5-cost carry does nothing, so hold the gold" }
+    ],
+    "correct": ["ashe"]
+  },
+  "explanation": "A 5-cost at level 9 is judged by what it adds to the board that exists, not by its ceiling with items you do not have. Ashe is a Blossom unit: she advances the trait your whole board is built around, she can take Caitlyn's slot without losing a body, and a 1-star 5-cost with no items is still a better unit than a 2-star 2-cost. Draven with no items and no shared trait is a 1-star body that turns off a trait when he replaces someone.\n\n'Neither' overcorrects: 5-cost bodies raise a level-9 board even naked, because their base stats and abilities are tuned for stage 5 while your 2-cost fillers are tuned for stage 2. The gold left after Ashe still rolls for her second copy at 15% odds, and every Ashe you see is one that the Blossom player on 71 HP does not get.",
+  "principle": "Buy the 5-cost that improves the board you have; the ceiling is only worth chasing when the board is not yet capped.",
+  "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+  "commonMistake": "Ranking 5-costs by their power with a full item set and buying the one your board cannot use."
+}

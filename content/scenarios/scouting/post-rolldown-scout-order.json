@@ -1,0 +1,46 @@
+{
+  "id": "scouting-post-rolldown-scout-order",
+  "category": "scouting",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2 augment round. You just finished a level-8 rolldown: both 4-costs are 2-star and you have 12 gold left at 49 HP. The planning timer has about 20 seconds left. Put the remaining scouting steps in the order that protects the most.",
+  "state": {
+    "stage": "4-2",
+    "gold": 12,
+    "hp": 49,
+    "level": 8,
+    "xpToNext": 72,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:support-1", "generic:bruiser-3"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 5", "hp": 60, "note": "Your next opponent" },
+      { "player": "Seat 3", "hp": 90, "note": "Strongest board" }
+    ]
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Open your next opponent's board and move your carry away from their divers or area damage",
+      "Check whether anyone else has a 2-star of your carry, to know if a third copy is realistic later",
+      "Glance at the strongest board's items to know what your frontline will face at 4-5",
+      "Read the other players' 4-2 augments"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "With twenty seconds and 12 gold, the only decision you can still change this round is positioning, so the next opponent comes first and it comes with an action attached: you move something or you confirm you do not need to. Contest is second because it decides whether the gold you rebuild goes toward a third copy or toward level 9, and that decision is made before the next augment round arrives.\n\nThe strongest board's items shape what your tank items should be at 4-5 and later, which is a slower decision. Augments are last: after the rolldown they are context you can read at any point in the next three rounds without losing anything.",
+  "principle": "After spending, scout for the decision you can still change: positioning first, then the read for next round's gold.",
+  "guideLink": "/guides/scouting#the-scout-routine",
+  "commonMistake": "Spending the last twenty seconds admiring the strongest board and fighting the next opponent with last round's positioning."
+}

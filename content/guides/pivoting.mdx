@@ -7,14 +7,65 @@ trainerCategory: "pivot"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+A pivot is a change of line made *before* the line has failed, with gold in hand. A "pivot" made after a failed rolldown at 4-2, with 8 gold and 30 HP, is not a pivot; it is a slow 7th. The skill is not knowing how to change comps (any Emerald player can do that); it is reading, at 3-2, that the line you like is not available to you in this lobby, and being fine with that.
 
 ## Reading contest
 
+Contest is arithmetic before it is a feeling. Each unit has the copies listed in the [pool table](/guides/rolling#odds-and-the-pool); every copy on another board or bench is out of your pool until they sell it. A 4-cost carry with two other players each holding two copies has lost 4 of its 10 copies before your rolldown starts; your per-slot odds at level 8 drop by roughly 40%. A 2-cost reroll unit with two other players each holding a 2-star has lost 6 of its 25 copies and, more importantly, both of those players will buy every copy they see for the rest of the game.
+
+The reads, in the order they become available:
+
+- **2-1.** Contest is *soft*. Pairs are everywhere because everyone buys pairs. Note who holds what; do not act on it yet except to avoid taking a trait augment for a trait two players are visibly on.
+- **3-2.** Contest is *real*. A player still holding your unit at 3-2, with an item on it or a trait around it, has committed. Count them. One is normal for a 4-cost line and a pivot signal for a reroll line. Two is a pivot signal for either.
+- **4-2.** Contest is *final*. If you learn about it here you are learning it from the rolldown you just lost. Never let the first count happen at 4-2.
+
+Contest is also asymmetric: it matters who is ahead. If the other player has the 2-star already and you have a pair, they are not contesting you, you are contesting them, and the pool math says you lose. If you have the 2-star and they have a pair, hold your line and they will pivot off you (or should).
+
+<Callout type="math" title="Two pairs on a reroll unit">
+A 2-cost reroll target: 25 copies. You hold 2. Two other players hold 2-stars, 6 copies. Seventeen remain for three players who all want seven more. Even uncontested from here, your third 3-star is roughly the last copy in the pool. The line is not "hard"; it is closed.
+</Callout>
+
 ## Flex openers
+
+A flex opener is a stage 2 and early stage 3 board that wins or nearly wins fights without committing to a final comp. Its purpose is to hold the decision open until 3-2, when contest is real and the augment is known.
+
+The shape of a flex opener: the strongest 2-star units available regardless of trait, a frontline that holds, one itemised unit whose item is broadly useful (a flat tank item, a generic damage item), and pairs on the bench of any unit that appears in more than one endgame line. What it is not: a stage-2 version of a specific comp with 1-star placeholders for units you hope to hit.
+
+The reason flex openers are correct at Emerald and above is not that commitment is bad; it is that *early* commitment is expensive in exactly the currency you cannot recover. Committing at 2-3 to a reroll line means buying copies at 2-5 and 3-1, taking the trait augment at 3-2, and holding 6 while the lobby levels. If two other players are on it, you find out at 3-5 with a bench of 1-costs and no HP to spare.
+
+<Callout type="tip" title="Two lines minimum">
+Coming out of 3-2 you should be able to name two comps your current board and items can become. If you can only name one, you have already committed, and you should check the contest on it right now.
+</Callout>
+
+The cost of flexing is small and specific: a couple of bench slots and 4 to 6 gold of pairs you will sell. The cost of not flexing is a game.
 
 ## When to abandon a line
 
+There are two abandonment points, and they are not equally good.
+
+**At 3-2, with gold in hand.** This is the pivot. You scouted, counted two committed players on your line, and you still have 50 gold, a flexible board and 70+ HP. You sell the pairs that only belong to the contested line (usually 4 to 8 gold of loss), keep the units that fit the second line, and take the augment for the board you can actually build. Nothing about your econ plan changes; the target of the rolldown does. Done here, a pivot costs almost nothing.
+
+**After a failed 4-2 rolldown.** You rolled 50 gold at level 8 for a carry three players held, hit one copy, and now sit at 8 gold and 40 HP. You can still change comps, but you are changing to whatever the rolldown accidentally found, with no gold, on a board that lost two more rounds while you rolled. This is not a pivot; it is damage control, and its outcome is usually 6th. The correct response is the [top-4 play](/guides/hp#stabilise-vs-push): slam everything, 2-star what you found, position defensively.
+
+The rule is: **decide at 3-2, or accept the line.** The middle, "I'll see how the 4-2 rolldown goes", is choosing the second abandonment point while pretending you have not chosen.
+
+Signals that it is time, at any round:
+
+- two or more committed players on your carry (counted, not felt);
+- a committed player who is *ahead* of you on the unit (their 2-star to your pair);
+- your components cannot build the line's core item and the carousel did not fix it;
+- the augment you were offered makes a different line clearly stronger from where you stand.
+
+Signals that it is *not* time, despite the temptation:
+
+- one contester on a 4-cost line (normal; the pool is deep enough);
+- a bad shop this round (variance, not information);
+- the stats site says your comp is "B tier" (irrelevant to the board in front of you).
+
+<Callout type="leak" title="Forcing what you scouted">
+The Emerald pattern is seeing three players on a comp at 2-1, noting it, and playing the comp anyway because "I have the pair" or "I know this comp". Knowing a comp is worth nothing if the pool is empty. A pair is two copies of nine. The information was there; the pivot was free; the placement was lost at 2-1.
+</Callout>
+
 <DrillThis category="pivot" />
 
-<CheckYourself items={["Did I re-scout contest at 3-2 before committing?", "Did I force a line three players were visibly on?", "When I pivoted, did I do it with gold in hand or after the rolldown failed?"]} />
+<CheckYourself items={["Did I re-scout contest at 3-2 before committing?", "Did I force a line three players were visibly on?", "When I pivoted, did I do it with gold in hand or after the rolldown failed?", "Coming out of 3-2, could I name two comps my board could become?", "Did I confuse a bad shop with real contest?"]} />

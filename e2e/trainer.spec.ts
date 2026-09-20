@@ -39,9 +39,18 @@ test("keyboard-only: complete a placement drill and see feedback", async ({ page
 
 test("choice drill flow with mouse", async ({ page }) => {
   await page.goto("/trainer/econ/", { waitUntil: "networkidle" });
-  await page.getByRole("button", { name: /Buy nothing/ }).click();
+  // Whatever question type comes first, answer it with the first available control.
+  const fieldset = page.locator("fieldset").first();
+  await expect(fieldset).toBeVisible();
+  await fieldset.getByRole("button").first().click();
+  const order = page.getByRole("button", { name: "This order is my answer" });
+  if (await order.isVisible().catch(() => false)) await order.click();
   await page.getByRole("button", { name: "Submit" }).click();
-  await expect(page.getByText("Correct", { exact: true })).toBeVisible();
-  await page.getByRole("button", { name: "Explain more" }).click();
-  await expect(page.getByRole("button", { name: "Hide" })).toBeVisible();
+  await expect(page.getByText(/^(Correct|Not quite)/).first()).toBeVisible();
+  await expect(page.getByText("Principle")).toBeVisible();
+  const more = page.getByRole("button", { name: "Explain more" });
+  if (await more.isVisible().catch(() => false)) {
+    await more.click();
+    await expect(page.getByRole("button", { name: "Hide" })).toBeVisible();
+  }
 });

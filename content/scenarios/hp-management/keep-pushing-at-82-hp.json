@@ -1,0 +1,39 @@
+{
+  "id": "hp-management-keep-pushing-at-82-hp",
+  "category": "hp-management",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 6 with 54 gold at 82 HP on a 5-win streak. Your board is the strongest in the lobby and you are 12 XP from level 7. The next round is the 4-1 carousel and then 4-2 augment. What do you do this round?",
+  "state": {
+    "stage": "3-5",
+    "gold": 54,
+    "hp": 82,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 5 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-4", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:support-2", "generic:bruiser-1", "generic:caster-2"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "level", "label": "Level to 7 now (12 gold, stays above 40) and put the 4-cost in: keep the streak going through stage 4" },
+      { "id": "hold", "label": "Hold 50 and stay level 6; interest is interest and the board wins anyway" },
+      { "id": "roll", "label": "Roll 20 gold for more 2-stars to make the board even stronger" }
+    ],
+    "correct": ["level"]
+  },
+  "explanation": "HP is a resource and so is a win streak, and at 82 HP with the strongest board you are holding both at full. The 5-streak pays 3 gold a round, more than the interest step you give up by dropping from 54 to 42, and the level itself adds the 4-cost to the board, which is what keeps the streak alive against the level-7 boards that appear at 4-1. Being at 7 before the carousel also means you pick the carousel item for a board that already exists.\n\nHolding is the Emerald reflex that mistakes econ for safety: you would enter stage 4 at level 6 with 60 gold, lose the streak to the first level-7 board, and spend the gold catching up. Rolling is worse still: the board has no holes to fill and rolls at level 6 mostly show 1- and 2-costs.",
+  "principle": "At high HP with the strongest board, push: the streak and the damage you deal are worth more than a step of interest.",
+  "guideLink": "/guides/hp#hp-is-a-resource",
+  "commonMistake": "Treating 50 gold as a rule that overrides a win streak. The rule exists to reach a strong board; you already have one."
+}

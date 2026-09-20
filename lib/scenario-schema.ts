@@ -112,6 +112,8 @@ export const ScenarioSchema = z
     if (s.state.board.length > s.state.level)
       ctx.addIssue({ code: "custom", path: ["state", "board"], message: `${s.state.board.length} units on board but level ${s.state.level}` });
     if (s.question.type === "placement") {
+      if (s.state.board.length >= s.state.level)
+        ctx.addIssue({ code: "custom", path: ["state", "board"], message: `placement question needs a free slot: ${s.state.board.length} units on board at level ${s.state.level}` });
       for (const h of s.question.correctHexes)
         if (occupied.has(`${h.row},${h.col}`))
           ctx.addIssue({ code: "custom", path: ["question", "correctHexes"], message: `correct hex ${h.row},${h.col} is already occupied` });

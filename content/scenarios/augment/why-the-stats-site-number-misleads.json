@@ -1,0 +1,46 @@
+{
+  "id": "augment-why-the-stats-site-number-misleads",
+  "category": "augment",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2 gold augment, 61 HP, level 8, 48 gold. Your board is a generic frontline with a 2-star 4-cost AD carry holding two items. A stats site lists the Trait Crest for a vertical you have one unit of as the best gold augment this patch (avg placement 3.9). Two players in your lobby are on that vertical. Which statement about that 3.9 is the one that should change your pick?",
+  "state": {
+    "stage": "4-2",
+    "gold": 48,
+    "hp": 61,
+    "level": 8,
+    "xpToNext": 56,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 1, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-3", "generic:caster-2", "generic:support-1", "generic:bruiser-4"],
+    "items": ["generic:item:ad"],
+    "lobby": [
+      { "player": "Seat 1", "hp": 74, "note": "Five units of the Crest's trait, 2-star carry" },
+      { "player": "Seat 6", "hp": 58, "note": "Four units of the same trait" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "survivorship", "label": "The 3.9 is the average of players who took it AND had a board that could use it; a player with one unit and two contesters is not in that sample" },
+      { "id": "sample", "label": "The sample size is too small this early in the patch, so the number is noise" },
+      { "id": "tier", "label": "Gold augments are all within 0.3 of each other, so the ranking never matters" },
+      { "id": "patch", "label": "The number is from last patch and the augment was nerfed" }
+    ],
+    "correct": ["survivorship"]
+  },
+  "explanation": "The average placement on a stats site is conditional on the population that picked the augment, and players pick trait augments when they already have the trait. A 3.9 for a Crest means \"players who were already on this vertical, took the Crest, and placed 3.9\". It says nothing about a player with one unit, a 2-star AD carry from a different line, and two lobby opponents who will empty the pool. Your expected placement with the Crest is nowhere near 3.9; it is the placement of a player who pivots off a working board at 4-2 into a contested line, which is the 6th-place story the sample never records.\n\nThe other statements can be true and still irrelevant: sample size, tier spread and patch drift are reasons to distrust any number, but they do not tell you what to do. The survivorship point does: it says the number belongs to a different player. Take the augment that improves the board you have, most likely an item or combat augment for the carry that is already 2-star.",
+  "principle": "A stats-site average describes the players who hit; it is not your odds of hitting.",
+  "guideLink": "/guides/augments#why-the-highest-winrate-augment-is-wrong-for-you",
+  "commonMistake": "Reading a tier list as a recommendation instead of as a description of who took what and what happened to them."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "econ-pair-of-carry-below-50",
+  "category": "econ",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-2, level 8, 51 gold, 57 HP. Your board is built around a 1-star Ahri holding two items. The shop shows a second Ahri. Buying her drops you to 47 gold, one interest tick below the cap, and you planned to roll at 4-5. Do you buy?",
+  "state": {
+    "stage": "4-2",
+    "gold": 51,
+    "hp": 57,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Sett", "row": 0, "col": 2, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_Yorick", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Yunara", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_MasterYi_AD", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_18_Ahri", "row": 3, "col": 4, "star": 1, "items": ["DA_JeweledGauntlet", "DA_RabadonsDeathcap"] },
+      { "championId": "DA_18_LeBlanc", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_Karma18", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Ahri", "DA_18_Caitlyn", "DA_18_Rammus", "DA_18_Teemo", "DA_18_Elise"],
+    "items": ["DA_Component_ChainVest"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "buy", "label": "Buy the Ahri. A pair on your itemised carry is worth far more than 1 gold of interest" },
+      { "id": "hold", "label": "Skip it to stay at 50; you will find her again at 4-5" },
+      { "id": "roll", "label": "Buy her and roll to 30 right now for the third copy" }
+    ],
+    "correct": ["buy"]
+  },
+  "explanation": "Interest is a 1-gold difference between 47 and 50 for one round: buying the pair costs you exactly 1 gold of income at 4-3. In return you hold 2 of the 10 Ahri copies in the pool, which turns the 4-5 rolldown from \"find two copies\" into \"find one\". At level 8 a shop has a 30% chance per slot of a 4-cost and there are fourteen 4-costs in this set, so a single Ahri appears in roughly 10% of slots. Needing one hit instead of two roughly halves the gold your rolldown will cost, which is worth far more than the 1 gold you gave up. You will also be back above 50 by 4-4 with the base income.\n\nRolling now is the wrong direction: 4-2 is not your planned rolldown, you are at 57 HP with two losses of slack, and rolling 20 gold at 4-2 leaves you with a weak rolldown at 4-5. The right shape is buy, hold, roll at the planned point with the pair already in hand.",
+  "principle": "Breaking 50 by a few gold for a copy of your itemised carry is not greed; it is the cheapest roll you will ever get.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Treating the interest threshold as sacred and skipping a natural copy that a rolldown would later pay 10+ gold to find."
+}

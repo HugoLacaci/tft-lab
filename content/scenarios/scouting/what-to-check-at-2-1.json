@@ -1,0 +1,37 @@
+{
+  "id": "scouting-what-to-check-at-2-1",
+  "category": "scouting",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1, the first augment round, and the first time the planning timer is long enough to scout all seven boards. You have a pair of a 1-cost carry and two AD components. What is the single most useful thing to look for on each board during this scout?",
+  "state": {
+    "stage": "2-1",
+    "gold": 8,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 1, "items": ["generic:item:ad"] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-1", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:caster-1", "generic:tank-2", "generic:carry-1", "generic:support-2", "generic:bruiser-1"],
+    "items": ["generic:item:ad"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "items-and-units", "label": "Which components each player holds and which 1-cost units they are pairing: it tells you who will contest your carry" },
+      { "id": "strongest", "label": "Which board is strongest, so you know who will beat you" },
+      { "id": "positioning", "label": "Where each player puts their carry, to prepare positioning" }
+    ],
+    "correct": ["items-and-units"]
+  },
+  "explanation": "At 2-1 nobody has a board worth fearing and positioning against 1-cost units is irrelevant. The one thing that changes a decision this early is contest, and contest shows in two places: the components a player holds (AD components on a bench mean an AD carry line) and the 1-cost pairs they are keeping. Two players with your carry paired and AD items is the information that turns your reroll plan into a flex opener before you spend a gold on it.\n\nThe strongest board matters from 3-2 onward, when HP starts to move. Carry positions matter from 4-1, when carries exist. Scouting is a budget; at 2-1 you spend all of it on the contest read.",
+  "principle": "At 2-1 scout for contest: components held and 1-cost pairs, not board strength.",
+  "guideLink": "/guides/scouting#what-to-look-for",
+  "commonMistake": "Looking at everyone's board strength at 2-1 and concluding nothing, because there is nothing to conclude from it yet."
+}

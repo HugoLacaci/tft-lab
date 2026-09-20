@@ -1,0 +1,40 @@
+{
+  "id": "items-non-bis-slam-at-4-1",
+  "category": "items",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 7, 55 HP, 2-loss streak. Your 2-star 4-cost carry already holds its two best items. You hold an AD component and a defensive component, which combine into a decent but off-list third item for the carry, or would make BIS pieces if you found their exact partners. The lobby's boards are ahead of yours. What do you do?",
+  "state": {
+    "stage": "4-1",
+    "gold": 46,
+    "hp": 55,
+    "level": 7,
+    "xpToNext": 20,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-2", "generic:caster-4", "generic:support-1", "generic:bruiser-2"],
+    "items": ["generic:item:ad", "generic:item:tank"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "slam", "label": "Combine them into the off-list item and put it on the carry as its third slot now" },
+      { "id": "hold", "label": "Hold both: the third BIS item is a big damage multiplier and you will find the partners by 4-5" },
+      { "id": "tank", "label": "Put the raw defensive component on the tank and hold the AD component" }
+    ],
+    "correct": ["slam"]
+  },
+  "explanation": "BIS is a ranking of items for a unit, not a requirement for the unit to function, and the gap between the third-best and the sixth-best item on a carry is small next to the gap between having a third item and not. At 55 HP on a loss streak with the lobby ahead, an item that adds 15-20% damage now is worth more than a hypothetical item that adds 25% in three rounds, because those three rounds cost 25 HP you will need in stage 5. The off-list item also keeps its value: when the exact BIS components arrive later, the slot is not lost, the item moves to a secondary carry or the caster.\n\nPutting a single component on the tank is the worst option: a raw component is a fraction of an item and it blocks the slot you would later want for a real tank item. Holding is the Diamond-flavoured version of the Emerald leak: same wait, better vocabulary, same HP loss.",
+  "principle": "The third-best item now beats the best item in three rounds when the HP is paying for the wait.",
+  "guideLink": "/guides/items#bis-is-a-preference",
+  "commonMistake": "Treating the stats-site BIS list as a shopping list and refusing to craft anything not on it."
+}

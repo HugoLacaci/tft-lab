@@ -1,0 +1,42 @@
+{
+  "id": "econ-loss-streak-exit-condition",
+  "category": "econ",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-3. You deliberately loss-streaked stage 2 and are on a 6-loss streak at 62 HP with 58 gold, level 6. You hold two completed items and a pair of your 3-cost carry. Losses now cost 8–9 HP each. Which is the exit condition that should end the streak?",
+  "state": {
+    "stage": "3-3",
+    "gold": 58,
+    "hp": 62,
+    "level": 6,
+    "xpToNext": 16,
+    "streak": { "type": "loss", "count": 6 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:support-1", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:caster-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [
+      { "championId": "generic:carry-3", "star": 1, "items": [], "slot": 0 },
+      { "championId": "generic:carry-3", "star": 1, "items": [], "slot": 1 },
+      { "championId": "generic:tank-3", "star": 1, "items": [], "slot": 2 }
+    ],
+    "shop": ["generic:tank-2", "generic:carry-3", "generic:caster-2", "generic:support-2", "generic:bruiser-2"],
+    "items": ["generic:item:carry-completed", "generic:item:tank-completed"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "hp", "label": "Exit at 3-5: the streak ends when losses cost more HP than the gold is worth, and 8–9 HP per loss at 62 HP is that point" },
+      { "id": "now", "label": "Exit now: buy the shop carry for the 2-star, slam both items, level to 7, and win-streak from 3-3" },
+      { "id": "never", "label": "Keep streaking to 4-1 for the maximum streak gold and roll at 8" }
+    ],
+    "correct": ["now"]
+  },
+  "explanation": "A planned loss streak has a defined exit: the moment you can convert the gold into a board that wins, you convert. You are there. The shop offers the third copy of your 3-cost carry, you hold two completed items for it and a 3-cost tank, and you are at 58 gold with the interest cap already reached. Buying the carry, slamming both items and leveling to 7 costs about 24 gold and leaves you above 30, still earning 3 interest, with a board that beats the stage-3 lobby. Every further loss from here is an 8–9 HP trade for 1 gold of streak income: a terrible rate once the streak gold is already capped.\n\nWaiting to 3-5 is a compromise that throws away two rounds of win-streak gold and 17 HP for nothing extra. Streaking to 4-1 is the Emerald version of the plan: it treats the streak as the goal instead of the setup, and arrives at level 8 with 90 gold, 30 HP and a lobby that has already stabilised. Loss streaks are a stage-2 tool with a stage-3 exit.",
+  "principle": "A loss streak ends the round you can buy a winning board, not when the HP runs out.",
+  "guideLink": "/guides/economy#loss-streaking-on-purpose",
+  "commonMistake": "Setting the exit by HP instead of by the board. Waiting for a threshold means you exit late, when the gold buys less."
+}

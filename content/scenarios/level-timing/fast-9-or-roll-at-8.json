@@ -1,0 +1,41 @@
+{
+  "id": "level-timing-fast-9-or-roll-at-8",
+  "category": "level-timing",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-5, level 8 with 74 gold, 68 HP, 3-win streak. Both of your 4-cost carries are already 2-star with full items. Level 9 costs 32 XP (8 purchases). Do you roll at 8 for more 2-star 4-costs or push level 9?",
+  "state": {
+    "stage": "4-5",
+    "gold": 74,
+    "hp": 68,
+    "level": 8,
+    "xpToNext": 32,
+    "streak": { "type": "win", "count": 3 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-4", "row": 3, "col": 2, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-3", "generic:caster-2", "generic:support-4", "generic:bruiser-1"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "roll-8", "label": "Roll down to 30 at level 8 to 2-star the tank's partner and the support" },
+      { "id": "nine", "label": "Level 9 at 5-1 (hold now, buy XP next round with 80+), then roll for 5-costs and the last 2-stars at 9" },
+      { "id": "nine-now", "label": "Buy all 8 XP now for level 9 at 4-5 and roll the remaining ~40" }
+    ],
+    "correct": ["nine"]
+  },
+  "explanation": "The question is which lever has the higher ceiling from here, and with both carries capped at 2-star the answer is board size and 5-costs, not more 4-cost copies. Level 9 adds a ninth unit and moves 5-cost odds from 3% to 15%, and 4-cost odds actually go up slightly too (30% to 33%). Rolling at 8 finds 2-stars on units that are not carrying, a small gain, and leaves you at 30 gold entering stage 5 where a level-9 push then costs the interest you no longer have. Fast 9 is the plan whose loss profile is \"I might not find the 5-cost\"; the roll-at-8 plan's loss profile is \"I am capped at 8 units while three players are at 9\".\n\nThe timing detail matters: at 4-5 you have 74 gold, so buying 32 XP now leaves 42, which is a thin rolldown at 9 and costs 2 interest at 5-1. Holding one round puts you at ~85 gold at 5-1 with a full-interest round banked, then 9 with 50+ to roll. On a 3-win streak at 68 HP you can afford the round.",
+  "principle": "Fast 8, fast 9 and reroll are different econ plans with different losses; pick the one whose failure you can afford.",
+  "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+  "commonMistake": "Rolling at 8 \"to stabilise\" a board that is already stable. Stabilising is for boards that lose; this one wins."
+}

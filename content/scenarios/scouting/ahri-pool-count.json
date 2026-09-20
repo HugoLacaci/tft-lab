@@ -1,0 +1,50 @@
+{
+  "id": "scouting-ahri-pool-count",
+  "category": "scouting",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5, level 8, 58 gold, 44 HP. You hold one Ahri with Deathcap, Blue Buff and Jeweled Gauntlet. The 4-cost pool is 10 copies per champion. Scouting: Seat 3 has a 2-star Ahri (three copies), Seat 5 has one Ahri on their bench. You also hold two copies of Sett on the bench and nobody else has Sett. Given the pool, what do you do with the 58 gold?",
+  "state": {
+    "stage": "4-5",
+    "gold": 58,
+    "hp": 44,
+    "level": 8,
+    "xpToNext": 48,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Sett", "row": 0, "col": 3, "star": 1, "items": ["DA_WarmogsArmor", "DA_GargoyleStoneplate"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Elise", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Yunara", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Ahri", "row": 3, "col": 4, "star": 1, "items": ["DA_RabadonsDeathcap", "DA_BlueBuff", "DA_JeweledGauntlet"] },
+      { "championId": "DA_18_MasterYi_AD", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "DA_Karma18", "row": 3, "col": 6, "star": 2, "items": [] },
+      { "championId": "DA_18_Rakan", "row": 1, "col": 3, "star": 2, "items": [] }
+    ],
+    "bench": [
+      { "championId": "DA_18_Sett", "star": 1, "items": [], "slot": 0 },
+      { "championId": "DA_18_Sett", "star": 1, "items": [], "slot": 1 }
+    ],
+    "shop": ["DA_18_Caitlyn", "DA_18_Sett", "DA_18_Hecarim", "DA_18_Cassiopeia", "DA_18_Shen"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 3", "hp": 71, "note": "2-star Ahri, Blossom board with AP items" },
+      { "player": "Seat 5", "hp": 52, "note": "One Ahri on the bench, playing Coven" },
+      { "player": "Seat 8", "hp": 33, "note": "No Blossom units" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "sett", "label": "Buy the Sett in the shop for the 2-star now, roll to ~20 for one more Ahri, and stop: 5 of 10 Ahri are gone, so a 3-star Ahri is off the table and 2-star is the cap" },
+      { "id": "ahri-3", "label": "Roll to zero for Ahri: four more copies gives you the 3-star that wins the lobby" },
+      { "id": "hold", "label": "Hold 50 and level 9 at 5-1; the shop is not showing Ahri anyway" }
+    ],
+    "correct": ["sett"]
+  },
+  "explanation": "Count the pool before you roll. Ten Ahri exist; you hold one, Seat 3 holds three, Seat 5 holds one. Five remain in a pool that is shared with two players actively buying them. A 3-star needs eight more copies than you have, out of five. It is not unlikely; it is impossible, and the roll-to-zero option is a plan that cannot succeed no matter how the shops go. A 2-star Ahri, one more copy, is a real target: at level 8 with 4-cost odds at 30% and five Ahri among the remaining 4-cost pool, thirty-odd gold of rolling finds it more often than not.\n\nSett is the free upgrade: the shop shows the fourth copy, nobody contests him, and the 2-star Sett with two tank items is the frontline that keeps you alive at 44 HP while you look for the Ahri copy. Holding 50 and leveling with a 1-star carry is how you arrive at 5-1 with 30 HP.",
+  "principle": "Scouting turns 'roll for the 3-star' into arithmetic: copies in the pool minus copies you can see.",
+  "guideLink": "/guides/rolling#contest-math",
+  "commonMistake": "Rolling for a 3-star 4-cost when the visible copies on other boards already make it arithmetically impossible."
+}

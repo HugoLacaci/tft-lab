@@ -1,0 +1,42 @@
+{
+  "id": "endgame-slam-the-last-components",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 5-2, level 9 with 28 gold at 36 HP, five players left. You hold an AD component and a defensive component that do not make anything your carry wants; your carry already has three items. Your 5-cost tank has one item. What do you do with the two components?",
+  "state": {
+    "stage": "5-2",
+    "gold": 28,
+    "hp": 36,
+    "level": 9,
+    "xpToNext": 90,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-5", "row": 0, "col": 3, "star": 1, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-4", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-3", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-4", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-4", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 3, "col": 6, "star": 2, "items": [] },
+      { "championId": "generic:assassin-3", "row": 2, "col": 1, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-4", "generic:carry-3", "generic:caster-5", "generic:support-2", "generic:bruiser-5"],
+    "items": ["generic:item:ad", "generic:item:tank"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "slam", "label": "Combine them into whatever they make and put it on the 5-cost tank or the 4-cost bruiser now" },
+      { "id": "hold", "label": "Hold them for the next carousel to complete a better item" },
+      { "id": "second-carry", "label": "Hold them until you find a second carry to itemise" }
+    ],
+    "correct": ["slam"]
+  },
+  "explanation": "At 5-2 with 36 HP the game has three or four fights left for you, and an item on the bench contributes to none of them. Two components on a frontliner are a completed item's worth of stats in every one of those fights, and the tank with one item is the unit whose survival decides whether your three-item carry gets to cast. 'Not BIS' is a stage-3 concern; at stage 5 an item is either on the board or wasted.\n\nThe next carousel is at 5-4, two fights away, and even then you would have to pick a component you need over a completed item. A second carry you have not found yet is a unit that does not exist. Slam now, and if a better holder shows up, the item can be moved for free in the planning phase.",
+  "principle": "In the endgame every component on the bench is a fight you played without it. Slam.",
+  "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+  "commonMistake": "Holding components for a perfect item on a board that does not have enough fights left to use it."
+}

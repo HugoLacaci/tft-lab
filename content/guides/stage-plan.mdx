@@ -7,16 +7,65 @@ trainerCategory: "endgame"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+A default plan is not a script; it is the thing you deviate *from*. Without one, every round is a fresh decision and most of them get made on feel. With one, you only have to think in the rounds where the game has told you it is not standard, and you can name what made it so. The plan below assumes a neutral opener, a standard 4-cost carry board and the augment rounds of the current set (historically 2-1, 3-2, 4-2; check the [cheat sheet](/lab/cheatsheet) for the verified dates).
 
 ## Stage 2
 
+The round-by-round default:
+
+- **2-1 (augment).** Scout the openers: who is holding pairs of what. Take the augment that fits the widest range of boards, which at 100 HP is often the econ or component option. Buy pairs of anything; do not buy singles of units that do not go on the board. Level 4 is natural.
+- **2-2 to 2-3.** Play the strongest board you can from what you hold. Decide by 2-3 whether you are win-streaking (strong 2-star opener) or loss-streaking (weak opener); the middle path costs the most.
+- **2-4 (carousel).** If you are last on the carousel, you are loss-streaking; take the component that completes a slam or a defensive component you will use on any board.
+- **2-5.** Level 5 if you are win-streaking or have a unit to add; otherwise hold. Reach 20 to 30 gold by the end of the stage.
+- **2-6, 2-7.** Bank. Slam one item if you are bleeding and have the pair; hold if the HP loss is single digits.
+
+What is decided in stage 2: your streak direction, your first item, and a *soft* line based on pairs and components. Nothing is committed.
+
 ## Stage 3
+
+- **3-1.** Bank. Slam a second item if you have four components. Level 6 only on a win streak.
+- **3-2 (augment).** The real decision round. Scout contest and the strongest board. Level 6 for the slot if you were not already there. Take the augment through the [framework](/guides/augments#the-evaluation-framework); now you know your HP and your contest. Commit to your econ plan: fast 8, fast 9, or reroll. Reach 50 by the end of this round or the next.
+- **3-3, 3-4 (carousel).** Hold 50. Carousel: item power you can use now.
+- **3-5.** The damage curve turns here. A loss streak must be converting: level 7 with a surplus and roll for the stabilising 2-stars. A win streak keeps leveling. A neutral board holds 50 and levels 7 at 4-1.
+- **3-6, 3-7.** Bank above 50; slam anything with a pair if you are below the comfortable HP line.
+
+What is decided in stage 3: the econ plan, the line (subject to a pivot if contest blows up), and the second and third items.
 
 ## Stage 4
 
+- **4-1.** Level 7 (if you are not already there). Do not roll. If you are on a win streak with 60+, level 8 now to keep it.
+- **4-2 (augment).** Scout: contest counted freshly, next opponent, strongest board. Augment first, then level 8, then the rolldown with a floor and a stop condition (see [rolldown discipline](/guides/rolling#rolldown-discipline)). If the augment was weak and the board is stable, the rolldown can wait to 4-5. If you are below the two-losses line, it cannot.
+- **4-3, 4-4 (carousel).** Position for the known opponent. Carousel is a 5-cost or the last item.
+- **4-5.** The second rolldown window if you skipped 4-2. Stabilise anyone who is not stable; there is no later.
+- **4-6, 4-7.** If stable and hitting, bank toward 9. If stable and not hitting, decide now whether you are playing for 1st or for 4th (see [stabilise vs push](/guides/hp#stabilise-vs-push)).
+
+What is decided in stage 4: the board you will finish with, and the placement bracket you are playing for.
+
 ## Stage 5 and beyond
+
+From 5-1 the lobby is four to six players and every fight is against someone you can name. The default:
+
+- **Scout every round.** The next-opponent check is short because the choices are few; do it every planning phase and position for that board.
+- **Level 9 only with gold to roll after it.** Nine at 5-1 with 10 gold is a bigger board with worse units. If you cannot roll at 9, stay 8 and roll for the 2-stars you are missing.
+- **Cap the board.** At 9, every unit is judged against a 2-star 4-cost or a 1-star 5-cost. A 2-star 1-cost held for a trait breakpoint is the weakest unit in the lobby; sell it for the 5-cost. Breakpoints were designed for stage 3 boards.
+- **Play for the placement you can reach.** If two boards are clearly stronger, position to beat the other three and take 3rd; do not roll 60 gold chasing a 1st that needs three hits.
+- **Bleed intentionally.** When you have a fixed number of losses left and the strongest board is unbeatable, position to lose by as few units as possible (a full frontline that dies slowly) rather than trying to win.
+
+### What makes a game non-standard
+
+Deviate from the plan, and name the reason, when:
+
+- an augment gives you gold, XP, units or items that move a timing a round earlier;
+- a strong or weak opener creates a real streak (level ahead, or bank harder);
+- contest at 3-2 forces a pivot (the plan resets to "strongest available line");
+- your HP drops below the two-losses line at any point (the plan becomes "stabilise now");
+- you hit early (a 2-star 4-cost at 3-5): push tempo, level ahead, play for 1st;
+- the lobby is unusually strong or weak (measure it at 3-2 and 4-2 by the strongest board).
+
+<Callout type="leak" title="Following the plan into the ground">
+The Emerald pattern is executing the stage 4 default (hold 50, level 8 at 4-2, roll) on a board that was already dead at 3-5, because "that's the plan". The plan assumes a standard game. Check the HP and the streak at 3-5; if either says non-standard, the plan changes there.
+</Callout>
 
 <DrillThis category="endgame" />
 
-<CheckYourself items={["At each stage, did I know what my default was before deviating?", "Did I cap my board at 9, or keep 1-costs for a trait?", "Did I decide at 4-2 whether I was playing for 1st or for top 4?"]} />
+<CheckYourself items={["At each stage, did I know what my default was before deviating?", "Did I cap my board at 9, or keep 1-costs for a trait?", "Did I decide at 4-2 whether I was playing for 1st or for top 4?", "When I deviated from the plan, could I name which of the six reasons applied?", "In stage 5, did I scout and reposition every round?"]} />

@@ -1,0 +1,42 @@
+{
+  "id": "level-timing-reroll-level-6-before-rolling",
+  "category": "level-timing",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 5 with 54 gold, 76 HP. You are on a 2-cost reroll plan: your 2-cost carry is at 6 of 9 copies and you have counted 4 copies on other boards. You hold a 3-star-ready pair of 2-cost tanks too. Do you roll now at level 5 or level to 6 first?",
+  "state": {
+    "stage": "3-2",
+    "gold": 54,
+    "hp": 76,
+    "level": 5,
+    "xpToNext": 2,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:ad"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [
+      { "championId": "generic:carry-2", "star": 2, "items": [], "slot": 0 },
+      { "championId": "generic:tank-2", "star": 2, "items": [], "slot": 1 },
+      { "championId": "generic:tank-2", "star": 2, "items": [], "slot": 2 }
+    ],
+    "shop": ["generic:carry-1", "generic:tank-2", "generic:caster-2", "generic:support-1", "generic:bruiser-1"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "roll-5", "label": "Roll at 5 now: 2-cost odds are 33% and you need only 3 copies" },
+      { "id": "level-6", "label": "Level to 6 (2 XP, one purchase), then roll to a 20-gold floor at 40% 2-cost odds" },
+      { "id": "hold-7", "label": "Hold and level 7 at 4-1 before rolling" }
+    ],
+    "correct": ["level-6"]
+  },
+  "explanation": "The reroll plan is not \"stay low forever\"; it is \"roll at the level where the target cost's odds peak, and no higher\". For 2-costs that is level 6: 40% per slot against 33% at 5 and only 30% at 7. You are 2 XP from 6, so the level costs a single 4-gold purchase and also gives you a sixth board slot for the bench tank pair that is about to 3-star. Rolling at 5 spends 20% worse odds on every gold, which over a 34-gold rolldown is the difference between an expected 3 copies and 2.\n\nContest math supports rolling now rather than at 4-1: 4 copies are already gone, 6 are yours, and a pool of 25 has 15 left; every round you wait lets the other holders take more. Level 7 at 4-1 would drop your odds and the pool would be thinner. Level 6, set a 20-gold floor, roll.",
+  "principle": "A reroll plan rolls at the level where the target cost peaks, not at the lowest level you happen to be.",
+  "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+  "commonMistake": "Confusing \"reroll\" with \"never level\". Skipping the 2-XP purchase costs you 7 percentage points on every shop."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "level-timing-level-5-at-2-5",
+  "category": "level-timing",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 4 with 16 gold, 96 HP, on a 2-win streak. You are 4 XP from level 5 and a 2-star 2-cost is sitting on your bench with no room on the board. What is the standard play?",
+  "state": {
+    "stage": "2-5",
+    "gold": 16,
+    "hp": 96,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank"] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 4, "star": 2, "items": ["generic:item:ad"] },
+      { "championId": "generic:caster-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:support-2", "star": 2, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-1", "generic:caster-2", "generic:support-1", "generic:bruiser-1", "generic:carry-1"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "level", "label": "Buy 4 XP for level 5 so the 2-star support joins the board for the stage 2 to 3 transition" },
+      { "id": "hold", "label": "Hold the 16 gold; you reach 5 naturally at 3-1" },
+      { "id": "roll", "label": "Roll twice for a 2-star on the caster" }
+    ],
+    "correct": ["level"]
+  },
+  "explanation": "Level 5 at 2-5 is the standard timing because the stage 3 opener (3-1) is the first round where boards are strong enough to take 6+ HP a loss, and a fifth unit is the single biggest jump you can buy at this point. You are 4 XP short, so it is one purchase for 4 gold, and the unit going onto the board is already a 2-star. That converts a bench unit into a win at 3-1 and a longer streak, which pays the 4 gold back in streak income within two rounds.\n\nWaiting for the natural level at 3-1 means fighting 3-1 with four units against lobbies that already have five, and probably dropping the streak that is currently your best income source. Rolling twice for a caster upgrade at level 4 odds (55% 1-cost) is not a bad hit rate, but it spends 4 gold on a smaller improvement than the unit you already own.",
+  "principle": "Standard level timings exist because the units they buy are already on your bench: level 5 at 2-5, 6 at 3-2, 7 at 4-1.",
+  "guideLink": "/guides/leveling#standard-level-timings",
+  "commonMistake": "Sitting on 16 gold for interest at stage 2 while a 2-star rots on the bench. Interest on 16 gold is 1 gold; a fifth unit is a win."
+}

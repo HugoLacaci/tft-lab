@@ -1,0 +1,41 @@
+{
+  "id": "hp-management-counting-losses-left-at-4-1",
+  "category": "hp-management",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 7 with 46 gold at 38 HP. Losses at stage 4 in this lobby cost 12 to 16 HP. Your board is mid, your 4-cost carry is 1-star. Put the steps of deciding how much to spend this round in the right order.",
+  "state": {
+    "stage": "4-1",
+    "gold": 46,
+    "hp": 38,
+    "level": 7,
+    "xpToNext": 16,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-1", "row": 3, "col": 6, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:carry-4", "generic:tank-1", "generic:bruiser-3", "generic:support-2", "generic:caster-3"],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Take the highest damage per loss this stage (16) and count how many losses you can survive: two, and the second is not guaranteed",
+      "Decide what a stabilised board needs: one more copy of the 4-cost carry, which is in the shop",
+      "Set the gold floor from the losses left: with two losses left you can spend to ~20 and rebuild, not to zero",
+      "Level to 8 for the odds, buy the copy in the shop, roll to the floor for the tank upgrade, and stop"
+    ],
+    "correctOrder": [0, 1, 2, 3]
+  },
+  "explanation": "The order is arithmetic first, target second, budget third, action last. Thirty-eight HP against 16 per loss is two losses, and the second one ends at 6 HP, so the honest count is 'one safe loss'. That number decides everything after it. The target is the smallest change that turns losses into wins: the carry's second copy, which the shop is already showing, plus a frontline upgrade. The floor follows from the count: one safe loss means you can afford to rebuild from 20 gold if the rolldown half-hits, but not from zero, because zero and a loss is 6 HP with no econ.\n\nOnly then do you act, and the action is bounded: level 8 because 4-cost odds double, buy the copy, roll to the floor, stop. Players who start at the last step spend to zero, hit one of two upgrades, lose anyway, and enter 4-2 dead.",
+  "principle": "Count losses left before touching gold; the count sets the floor and the floor sets the rolldown.",
+  "guideLink": "/guides/hp#thresholds",
+  "commonMistake": "Deciding to 'stabilise' without a number, and discovering after the rolldown that stabilising cost every gold you had."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "positioning-second-tank-away-from-the-cleave",
+  "category": "positioning",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2. Your next opponent's frontline is a 2-star 3-cost bruiser with a cleave that damages every unit adjacent to its target, and it walks straight at whichever of your units is closest. Your 3-cost tank holds the centre-left of your front row. Your second tank (a 2-star 2-cost) is on the bench. Place it so the cleave never hits two of your frontliners at once.",
+  "state": {
+    "stage": "3-2",
+    "gold": 30,
+    "hp": 76,
+    "level": 6,
+    "xpToNext": 30,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-3", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 3, "star": 2, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 1, "star": 2, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 5, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:bruiser-2", "generic:caster-1", "generic:support-3", "generic:carry-2"],
+    "items": ["generic:item:tank"],
+    "enemyBoard": [
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:ad"] },
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:carry-2", "row": 3, "col": 3, "star": 2, "items": [] }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:tank-2",
+    "correctHexes": [{ "row": 0, "col": 5 }, { "row": 0, "col": 6 }, { "row": 0, "col": 0 }]
+  },
+  "explanation": "The cleave is a clump punisher for frontlines. Two tanks side by side means every swing on one of them also hits the other, and your support on row 1 behind them takes it too. Splitting the tanks to opposite wings forces the bruiser to pick one side; it walks to the nearer tank, cleaves only that tank, and the other side of your board stays untouched while your carries shoot from the middle.\n\nThe far-left hex is also acceptable: what matters is that no two of your frontliners share an edge. What you must not do is fill the row 0 centre, which is where instinct puts a second tank and where the cleave does the most work.",
+  "principle": "A frontline is spread the same way a backline is: two units that share an edge share the damage.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Building a wall in the middle of row 0. It looks solid and it feeds every area effect on the enemy frontline."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "carousel-first-carousel-flexible-component",
+  "category": "carousel",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 1-4, first carousel, you pick late. Your opener is a 1-cost tank and a 1-cost carry with no items yet. The remaining units carry: an AD component, an AP component, a defensive component and a 1-cost you already own a pair of. Which do you take?",
+  "state": {
+    "stage": "1-4",
+    "gold": 4,
+    "hp": 100,
+    "level": 3,
+    "xpToNext": 2,
+    "streak": { "type": "win", "count": 0 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:bruiser-1", "star": 1, "items": [], "slot": 0 }],
+    "shop": [null, null, null, null, null],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "ad", "label": "The AD component: it builds the most carry items and slams on the 1-cost carry immediately" },
+      { "id": "ap", "label": "The AP component: you might end up on a caster line" },
+      { "id": "unit", "label": "The 1-cost you have a pair of, for the 2-star, whatever item it carries" }
+    ],
+    "correct": ["ad"]
+  },
+  "explanation": "The first carousel is about flexibility because you know nothing about your line yet. Components differ in how many good items they build and how many of those items are useful on any board; the AD component is the one that combines into the widest set of carry items and into tank items when paired with a defensive piece, so it keeps every line open. It also goes onto the 1-cost carry now and wins 2-1 for you, which is a real advantage when everyone has three units. The AP component is a fine second choice if the shop is showing casters, but with an AD carry already on the board you are guessing.\n\nThe 2-star 1-cost is the Emerald pick: it feels like power, but a 2-star 1-cost from a pair is worth about 3 gold and the stage-2 shops will give it to you anyway at 100% 1-cost odds. The component is the only thing on that carousel you cannot buy in a shop.",
+  "principle": "On the first carousel, take the component that keeps the most lines open; units are cheap, components are not.",
+  "guideLink": "/guides/items#carousel-priority",
+  "commonMistake": "Grabbing the 2-star for stage 2 tempo and starting stage 3 with a component that builds nothing your board wants."
+}

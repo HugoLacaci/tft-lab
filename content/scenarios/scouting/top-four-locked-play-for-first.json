@@ -1,0 +1,47 @@
+{
+  "id": "scouting-top-four-locked-play-for-first",
+  "category": "scouting",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 5-2, four players left, level 9 with 64 gold and 44 HP. Scouting: Seat 1 has 70 HP and the strongest board; Seat 3 is at 20 HP and Seat 6 at 12 HP, both losing to everyone including you. You fight Seat 6 next. Your board is capped at 2-star 4-costs with one 1-star 5-cost. What does the scout tell you to do with the gold?",
+  "state": {
+    "stage": "5-2",
+    "gold": 64,
+    "hp": 44,
+    "level": 9,
+    "xpToNext": 80,
+    "streak": { "type": "win", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-4", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-3", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-4", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-5", "row": 3, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:support-3", "row": 3, "col": 6, "star": 2, "items": [] },
+      { "championId": "generic:assassin-4", "row": 2, "col": 1, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:caster-5", "generic:tank-5", "generic:carry-3", "generic:support-2", "generic:bruiser-5"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 1", "hp": 70, "note": "Strongest board, 2-star 5-costs, beats everyone" },
+      { "player": "Seat 3", "hp": 20, "note": "Losing to all three remaining players" },
+      { "player": "Seat 6", "hp": 12, "note": "Your next opponent; dies to any loss" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "roll-cap", "label": "Roll now for the 2-star 5-cost and a second 5-cost: top 4 is locked by the two dying players, so the gold is only useful against Seat 1" },
+      { "id": "hold", "label": "Hold 50 and keep the interest; you are winning fights and do not need to spend" },
+      { "id": "level-10", "label": "Save for level 10 to add one more unit" }
+    ],
+    "correct": ["roll-cap"]
+  },
+  "explanation": "The scout has changed the question. Seat 3 and Seat 6 will die within two rounds to anyone, so 4th and 3rd are decided and you cannot finish below 2nd without three straight losses to Seat 1. Interest at this point buys nothing you need: there is no stage 6 econ plan that beats a 2-star 5-cost board today. The only placement still in play is 1st versus 2nd, and that fight is against Seat 1, whose board yours loses to right now.\n\nSo the gold converts into cap: the 5-cost caster's second copy is in the shop, and 64 gold at level 9 with 15% 5-cost odds is a real rolldown for a second 5-cost too. Level 10 is 80 XP away, which is the whole bank for a slot that arrives at 6-2 if you are still alive. Scouting told you the top 4 was locked; the correct response to a locked top 4 is to spend for 1st.",
+  "principle": "When the scout shows the low players cannot recover, top 4 is locked and gold should buy 1st, not safety.",
+  "guideLink": "/guides/scouting#scouting-must-change-a-decision",
+  "commonMistake": "Sitting on 50 gold in a 4-player lobby because holding interest has always been right, without checking whether there is still anything to lose."
+}

@@ -1,0 +1,44 @@
+{
+  "id": "scouting-which-observation-changes-a-decision",
+  "category": "scouting",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 augment round, level 6, 48 gold, 74 HP, holding a pair of your 3-cost AD carry. You scouted and noted three things (see the scout panel). Which one changes what you do this round?",
+  "state": {
+    "stage": "3-2",
+    "gold": 48,
+    "hp": 74,
+    "level": 6,
+    "xpToNext": 16,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed", "generic:item:ad"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-3", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:carry-3", "generic:tank-1", "generic:support-1", "generic:bruiser-1", "generic:caster-3"],
+    "items": [],
+    "lobby": [
+      { "player": "Seat 4", "hp": 80, "note": "Has a 2-star of your 3-cost carry and two more copies on the bench" },
+      { "player": "Seat 2", "hp": 38, "note": "Lowest HP in the lobby, loss-streaking with 60 gold" },
+      { "player": "Seat 7", "hp": 90, "note": "Took an econ augment at 2-1, strong board" }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "seat4", "label": "Seat 4 holding five copies of your carry: buy the copy in the shop now and decide at 4-1 whether the line is still open" },
+      { "id": "seat2", "label": "Seat 2 at 38 HP: they will die early, so the lobby gets smaller and you can play slower" },
+      { "id": "seat7", "label": "Seat 7's econ augment: they will out-scale you, so level now to stay ahead" }
+    ],
+    "correct": ["seat4"]
+  },
+  "explanation": "Five of eighteen copies sitting on one player's board and bench is the fact that changes a decision this round: the copy in your shop becomes worth buying immediately, because the pool is draining, and it starts a clock on whether you stay on this carry at all. That is a purchase and a plan you would not have made without the scout.\n\nSeat 2's HP and Seat 7's augment are true and useless right now. A low player dying at 4-3 does not change your 3-2 shop, and an opponent's econ augment does not make leveling at 3-2 with 48 gold correct. Diamond scouting is not about noticing things; it is about spending the timer on the one thing that moves your hand.",
+  "principle": "Scouting only counts when it changes a decision this round. Everything else is trivia.",
+  "guideLink": "/guides/scouting#scouting-must-change-a-decision",
+  "commonMistake": "Reacting to the scariest player instead of the player who is taking your units."
+}

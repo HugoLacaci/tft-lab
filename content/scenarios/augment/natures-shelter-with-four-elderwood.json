@@ -1,0 +1,36 @@
+{
+  "id": "augment-natures-shelter-with-four-elderwood",
+  "category": "augment",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2 gold augment, level 6, 46 gold, 77 HP. Your board is four Elderwood units (Ornn, Alistar, Xayah, Hecarim) with Xayah carrying. Options: Nature's Shelter (Elderwood trait augment, also gives an Alistar, an Ornn and a Xayah), Big Grab Bag (3 components, 2 gold, a Reforger) and FOURcing (a random 4-cost). Which do you take?",
+  "state": {
+    "stage": "3-2",
+    "gold": 46,
+    "hp": 77,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Ornn", "row": 0, "col": 2, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_Hecarim", "row": 0, "col": 4, "star": 1, "items": [] },
+      { "championId": "DA_18_Sejuani", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "DA_18_Xayah", "row": 3, "col": 4, "star": 2, "items": ["DA_GuinsoosRageblade", "DA_Component_BFSword"] },
+      { "championId": "DA_18_LeBlanc", "row": 3, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Kobuko", "DA_18_Xayah", "DA_18_Caitlyn", "DA_18_Teemo", "DA_18_Elise"],
+    "items": ["DA_Component_RecurveBow"]
+  },
+  "question": {
+    "type": "augment",
+    "options": ["DA_18_ElderwoodTraitAugment", "DA_18_BigGrabBag", "DA_18_FOURcing"],
+    "correct": "DA_18_ElderwoodTraitAugment"
+  },
+  "explanation": "Nature's Shelter is a trait augment for a vertical you already own, and it ships with three units: a copy of your carry, a copy of your itemised tank and a copy of Alistar. That is 3-star progress on Xayah, a 2-star Ornn already done, and the trait bonus turns your Elderwood frontline into a self-healing wall around the plants you are already placing. Fit is perfect, it does not touch your econ plan, and at 77 HP a ceiling-raiser that also raises the floor is exactly right. The only reason to refuse it would be contest, and you are the Elderwood player in this lobby.\n\nBig Grab Bag is the generic pick with the higher stats-site average because it is good for every board, and it would be a fine choice with no direction. You have a direction. FOURcing hands you a random 4-cost that probably shares no trait with your board and a scaling bonus that only pays if you itemise a unit you did not choose.",
+  "principle": "A trait augment that also hands you copies of the units you already itemised is a floor-raiser, not a gamble.",
+  "guideLink": "/guides/augments#the-evaluation-framework",
+  "commonMistake": "Taking the generic components augment on autopilot because it tops the tier list, while the trait augment would have given you a 2-star and a breakpoint for free."
+}

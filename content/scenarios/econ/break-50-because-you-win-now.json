@@ -1,0 +1,40 @@
+{
+  "id": "econ-break-50-because-you-win-now",
+  "category": "econ",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 7 (you leveled early on a 4-win streak), 55 gold, 91 HP. Your board is two 2-star 4-costs with items and it is the strongest in the lobby by a margin. The shop shows a third copy of your 4-cost tank. Nobody else is close to level 8. What do you do?",
+  "state": {
+    "stage": "3-5",
+    "gold": 55,
+    "hp": 91,
+    "level": 7,
+    "xpToNext": 12,
+    "streak": { "type": "win", "count": 4 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 3, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-4", "generic:carry-1", "generic:caster-2", "generic:support-1", "generic:bruiser-2"],
+    "items": ["generic:item:ap"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "greed", "label": "Skip the tank copy, sit at 55 and level 8 at 4-1 like everyone else" },
+      { "id": "push", "label": "Buy the tank copy, level to 8 now (12 gold), and roll to ~30 to extend the win streak and cap early" },
+      { "id": "buy-only", "label": "Buy the copy but keep the gold; level and roll at 4-2" }
+    ],
+    "correct": ["push"]
+  },
+  "explanation": "This is the third legitimate reason to break 50: you have a board that wins now, and winning now compounds. A 4-win streak at stage 3 is worth 2 gold a round on top of interest, and every win is 0 HP lost while the lobby bleeds 8 a round against you. Reaching level 8 at 3-5, a full stage before anyone, turns your 4-cost odds from 10% to 30% while the pool is untouched by other level-8 rolldowns: the copies you find now are copies nobody else will contest. Spending 25 gold here likely buys a 2-star carry plus a stronger 8th unit and a streak that runs to 4-5. That is more gold than the interest you gave up, paid back in HP and tempo.\n\n\"Buy the copy but keep the gold\" is the half-measure: it holds a pair on the bench for three rounds while you sit at 7 with a 7-unit board. Greeding interest with the strongest board in the lobby is how a 1st-place position becomes a 3rd: your lead is temporary and the interest is only 5 gold.",
+  "principle": "When the board wins now, gold spent extending the win is cheaper than gold saved for later.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Applying the 50-gold floor to a win-streaking board. The floor protects players who are behind; it caps players who are ahead."
+}

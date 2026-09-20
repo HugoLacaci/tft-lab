@@ -1,0 +1,35 @@
+{
+  "id": "augment-econ-augment-below-50-hp",
+  "category": "augment",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 gold augment. You are at 42 HP after a 4-loss streak, level 6 with 31 gold. Your 3-cost carry is 2-star but naked; you hold two loose components that do not combine into anything good. Which augment?",
+  "state": {
+    "stage": "3-2",
+    "gold": 31,
+    "hp": 42,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": { "type": "loss", "count": 4 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:caster-1", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-2", "generic:support-1", "generic:bruiser-3"],
+    "items": ["generic:item:ap", "generic:item:tank"]
+  },
+  "question": {
+    "type": "augment",
+    "options": ["generic:aug:econ-lump", "generic:aug:item-completed", "generic:aug:combat-backline-as"],
+    "correct": "generic:aug:item-completed"
+  },
+  "explanation": "At 42 HP on a 4-loss streak at 3-2 you are about five losses from dead and each round costs 8+ HP; the augment has to be power on the board this round. The Item Anvil is exactly that: a completed item of your choice onto the 2-star carry immediately, which is the single biggest strength gain available. Windfall's 18 gold is the trap: gold is only power once it converts, and at level 6 with 49 gold you would have to roll at 25% 3-cost odds to turn it into anything, which means spending it all and still probably losing. An econ augment below 50 HP asks you to survive long enough to cash it, and you cannot promise that.\n\nBackline Tempo is a fair floor-raiser but 20% attack speed on a carry with no items is a fraction of what one completed item does. Take the item, slam it, and use the 31 gold to level at 4-1 where the loss streak ends.",
+  "principle": "Below 50 HP an augment must be power this round; gold that needs rounds to convert is a bet you cannot cover.",
+  "guideLink": "/guides/augments#econ-augments-below-50-hp",
+  "commonMistake": "Taking the gold because \"18 gold is a lot\" and rolling it away at bad odds while the HP keeps falling."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "level-timing-level-and-roll-same-round",
+  "category": "level-timing",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 5 with 32 gold, 70 HP, 1-loss streak. You are 8 XP from level 6. Your board has a 1-star 3-cost carry and you want a 2-star. Do you level to 6 and roll the rest this round?",
+  "state": {
+    "stage": "3-2",
+    "gold": 32,
+    "hp": 70,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:support-2", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-1", "generic:carry-2", "generic:caster-1", "generic:support-1", "generic:bruiser-2"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "both", "label": "Level to 6 (8 gold) and roll the remaining ~24 for the carry" },
+      { "id": "level-only", "label": "Level to 6, put the bench support on the board, and keep the rest of the gold" },
+      { "id": "roll-only", "label": "Stay 5 and roll 20 gold at level 5 odds" }
+    ],
+    "correct": ["level-only"]
+  },
+  "explanation": "Leveling and rolling in the same round only makes sense when you have enough gold to finish both jobs, and 32 is not that number. Level 6 costs 8 and puts a sixth unit on the board: that alone is a real strength jump at 3-2, where most of the lobby is also at 6 units. Rolling the remaining 24 at 20% 3-cost odds finds, on average, less than one copy of a specific 3-cost, and leaves you at 0 gold with no interest into 3-3 and 3-4. You would have spent your whole economy for a coin flip and a permanent tempo deficit.\n\nLevel, bank the 24, and you are at 30+ next round earning 3 interest. If the carry still needs its 2-star at 3-5, you roll then with 40+ gold at the same odds, or level to 7 at 4-1 and roll at 43% 3-cost odds where the copy actually shows up. Rolling at 5 is worst of all: 20 gold at 20% for a unit that a level would find later at double the rate.",
+  "principle": "Level or roll in a round, not both, unless the gold covers both jobs completely.",
+  "guideLink": "/guides/leveling#levelling-and-rolling-in-the-same-round",
+  "commonMistake": "Leveling \"to improve the odds\" and then rolling with whatever is left, which is never enough to matter."
+}

@@ -1,0 +1,39 @@
+{
+  "id": "econ-roll-a-little-each-round",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 6 with 38 gold, 79 HP, on a 2-loss streak that costs you about 6 HP a round. Your board is 2-starred everywhere except a 1-star 3-cost carry. The shop has nothing. You have rolled twice each of the last three rounds \"to look for the carry\". What is the correct habit here?",
+  "state": {
+    "stage": "3-1",
+    "gold": 38,
+    "hp": 79,
+    "level": 6,
+    "xpToNext": 18,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "generic:tank-2", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-2", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:tank-1", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-2", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:carry-3", "row": 3, "col": 4, "star": 1, "items": ["generic:item:carry-completed"] },
+      { "championId": "generic:caster-2", "row": 3, "col": 2, "star": 2, "items": [] }
+    ],
+    "bench": [{ "championId": "generic:carry-3", "star": 1, "items": [], "slot": 0 }],
+    "shop": ["generic:tank-1", "generic:support-1", "generic:bruiser-1", "generic:caster-1", "generic:tank-2"],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "two-rolls", "label": "Roll twice again: you only need one more copy" },
+      { "id": "stop", "label": "Stop rolling entirely. Bank to 50, accept the 6 HP losses, and roll once with purpose at a planned point" },
+      { "id": "level", "label": "Level to 7 now to raise 3-cost odds" }
+    ],
+    "correct": ["stop"]
+  },
+  "explanation": "Two rolls a round at level 6 is 4 gold a round, and over the four rounds from 3-1 to 3-5 that is 16 gold plus the interest those 16 gold would have earned: you arrive at 4-1 with roughly 25 gold less than the player who did nothing. For that price you bought eight shops at 25% 3-cost odds, each shop with a 5-slot chance of one specific unit out of a pool of thirteen 3-costs. The expected number of copies found is under one. You are paying a full level's worth of gold for a coin flip on a single 2-star.\n\nThe 6 HP a round is real but affordable at 79 HP: four more losses leaves you at 55, still above every threshold that matters at 4-1. What is not affordable is entering stage 4 with 25 gold when the 4-2 rolldown is where the actual carry upgrade lives at 10% 4-cost and 43% 3-cost odds at level 7. Bank, level at 4-1, and roll at 4-2 with 50+. Leveling to 7 now spends 18 gold for slightly better odds on a board that cannot afford to roll at all.",
+  "principle": "Rolling a little each round is the most expensive habit in Emerald: it spends the rolldown before the rolldown.",
+  "guideLink": "/guides/economy#roll-a-little-each-round",
+  "commonMistake": "Believing a small roll is cheap because it is only 2 gold. The cost is the compound interest and the rolldown you no longer have."
+}

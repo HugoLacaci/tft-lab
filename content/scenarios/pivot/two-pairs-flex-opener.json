@@ -1,0 +1,40 @@
+{
+  "id": "pivot-two-pairs-flex-opener",
+  "category": "pivot",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1 augment round, level 4 with 10 gold and full HP. You hold a pair of a 1-cost tank and a pair of a 1-cost AD carry from two different lines, plus an AD component. The shop shows a 2-cost bruiser that fits the tank's line and nothing for the carry's line. Which opener do you commit to?",
+  "state": {
+    "stage": "2-1",
+    "gold": 10,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 6,
+    "streak": { "type": "win", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-1", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:carry-1", "row": 3, "col": 4, "star": 1, "items": [] },
+      { "championId": "generic:support-1", "row": 3, "col": 2, "star": 1, "items": [] },
+      { "championId": "generic:bruiser-1", "row": 0, "col": 2, "star": 1, "items": [] }
+    ],
+    "bench": [
+      { "championId": "generic:tank-1", "star": 1, "items": [], "slot": 0 },
+      { "championId": "generic:carry-1", "star": 1, "items": [], "slot": 1 }
+    ],
+    "shop": ["generic:bruiser-2", "generic:caster-1", "generic:tank-2", "generic:support-2", "generic:carry-2"],
+    "items": ["generic:item:ad"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "neither", "label": "Neither. Play both pairs, buy the bruiser for board strength, and let stage 2 tell you which line is open" },
+      { "id": "tank-line", "label": "The tank line: the bruiser is in the shop, so it is already forming" },
+      { "id": "carry-line", "label": "The carry line: you have an AD component, so the carry is your item holder" }
+    ],
+    "correct": ["neither"]
+  },
+  "explanation": "At 2-1 you have seen four shops and one augment. Nothing about a pair or a single component is a commitment; both pairs cost you two bench slots and nothing else. The strongest thing you can do is buy the bruiser because it makes your board win the next three fights, keep both pairs, and let the next scouts and the 2-1 augment decide. Two-starring either 1-cost naturally over stage 2 is the signal you are waiting for.\n\nCommitting now means selling units that might have been the open line and buying rolls you do not need at level 4. The AD component is not a reason either: every line uses an AD carry or can slam that component on a bruiser. The opener is flexible until something in the shop or the lobby makes it not.",
+  "principle": "A flex opener commits to board strength, not to a line, until the lobby shows you which line is open.",
+  "guideLink": "/guides/pivoting#flex-openers",
+  "commonMistake": "Deciding your comp at 2-1 from a pair and a component, then spending stage 2 fighting the pool for it."
+}

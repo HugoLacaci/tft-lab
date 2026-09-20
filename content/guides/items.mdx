@@ -7,22 +7,86 @@ trainerCategory: "items"
 updated: "2026-09-20"
 ---
 
-{/* SKELETON: headings are load-bearing. Expand; do not rename. */}
+Items are the resource Emerald players hoard and Master players spend. The difference is not knowledge of the best-in-slot lists; both groups have those. The difference is that the better player treats a component sitting on the bench as HP leaking out of the board, and prices it that way.
 
 ## The combine matrix
 
 <ItemCombineMatrix />
 
+The matrix is generated from the current set's data, so trust it over any memorised version. The structure does not change: ten components, and every pair combines into exactly one completed item, including a component with itself. The Spatula and the Frying Pan rows are the emblems and the odd utility items; everything else is a stat item you should be able to name from the pair without looking by the time you leave Diamond.
+
+What you should actually memorise is not the full grid but three things per component: which completed item it makes with itself, which of its combines is the flexible "slam on anyone" item, and which combine is the trap that you should never make unless it is BIS for a unit you are already playing.
+
 ## Slam or hold
+
+Slamming means combining two components now, onto a unit that may not be the final holder, to win fights this round. Holding means keeping components loose for a better combine later. Both are correct in the right situation, and the situation is decided by HP and streak, not by item quality.
+
+The rule with numbers attached:
+
+- **Above 70 HP with a winning or neutral board:** hold up to two components for one round if a specific better combine is one component away. Never hold three.
+- **Between 40 and 70 HP:** slam anything that improves the fight. Hold at most one component, and only for a combine you can name.
+- **Below 40 HP, or on a loss streak of 3 or more at any HP:** slam everything. The tank item on the wrong tank is still a tank item.
+- **Any HP, four or more loose components:** you have already made the mistake. Slam two now.
+
+<Callout type="leak" title="Waiting for BIS at 3-2">
+The Emerald pattern is sitting on four components at 3-2, losing 6 to 10 HP a round, because none of the pairs is the exact item for the carry you are hoping to hit at 4-2. Every one of those rounds costs more HP than the difference between a slammed "good" item and the BIS you were waiting for. The items guide in three words: **slam, then move.** Items move for free in the planning phase; HP does not come back.
+</Callout>
+
+The one honest reason to hold is a component that only has one good combine and the second half is clearly coming (you are first on the next carousel, or an augment hands you components). Even then, hold *that* component and slam everything around it.
 
 ## BIS is a preference
 
+The "best in slot" list on a stats site tells you which three items the top players ended with when they placed first on that carry. It is a *preference ranking*, not a requirement, and it is built from games where those players hit their items, not from your game where you hold two AD components and a Chain Vest.
+
+The practical version of BIS is a priority order: the one item the carry cannot function without (usually the mana or the crit item that unlocks the ability), then the best damage multiplier, then the flexible third. Get the first one; the other two are "whatever you have that is good". A carry with its core item and two second-choice items beats a bench with three perfect components on it every single round.
+
+Two corollaries. First, if your components cannot build the core item, that is information about which carry to play, not a reason to hold. Second, a completed item that is nobody's BIS but is broadly good (a flat tank item, a generic AD or AP item) should be built the moment you can, because it will find a home on any board you end up with.
+
 ## Who gets the tank item
+
+Defensive items go on the unit that will be your frontline the longest and takes the most damage. In order: the highest-cost tank you will still have at stage 5, then the highest-cost tank you have now, then the bruiser in the middle of the front row. Never the wing 1-cost that is currently dying first; the fix for that unit dying is to replace it, not to itemise it.
+
+<BoardExample
+  board={[
+    { championId: "generic:tank-3", row: 0, col: 3, star: 2, items: ["generic:item:tank-completed"] },
+    { championId: "generic:bruiser-2", row: 0, col: 2, star: 2, items: [] },
+    { championId: "generic:tank-1", row: 0, col: 5, star: 1, items: [] },
+    { championId: "generic:support-2", row: 1, col: 3, star: 1, items: [] },
+    { championId: "generic:carry-3", row: 3, col: 4, star: 2, items: ["generic:item:carry-completed"] },
+    { championId: "generic:caster-2", row: 3, col: 2, star: 1, items: [] }
+  ]}
+  highlight={[{ row: 0, col: 3 }]}
+  caption="The completed tank item goes on the centre 3-cost tank: highest base stats, first target, still on the board at stage 5. Not the wing 1-cost that is dying first."
+/>
+
+The reasoning is stats multiplication. Defensive items add flat armor and HP or percentage effects; both scale with the base stats of the holder, and a 3-cost 2-star tank has roughly double the base HP of a 1-cost. The same item is literally worth twice as much on the better unit. And there is a positional reason: enemies target the closest unit, so the item belongs on the unit you are *choosing* to have hit first, in the centre, with the bruisers on the wings taking the overflow.
+
+When you hold two tank items, the second goes on the second-best frontline unit, not on the same one. Stacking three defensive items on one unit produces a tank that outlives the rest of your board by ten seconds, alone.
 
 ## Emblems
 
+An emblem is a component pair that adds a trait to a unit, and it is the one item that can legitimately redirect your whole game. The decision is binary: either the emblem enables a breakpoint you could not otherwise reach on a board you are already building, or it is a mediocre stat item with a Spatula in it.
+
+Take the redirect when: you are early enough (2-1 or 3-2) that the pivot is cheap, the trait's carries are not contested, and the emblem gets you to a breakpoint that changes the board's power tier rather than just adding one more bronze. Ignore it when: you are at 4-2 with a working board, the trait's units overlap with the units you already play, or the breakpoint it reaches is "more of the same".
+
+The common mistake is the middle path: keeping the emblem on the bench for four stages "in case", while the components it is made of could have been two slammed items. An emblem you are not going to use is two components you are wasting.
+
 ## Carousel priority
+
+Carousel is not "pick the best item". It is "pick the most item power you can *use this round*". In order:
+
+1. **A completed item you can slam now**, on any unit, if you are losing HP. The unit under it is irrelevant; sell it.
+2. **The component that completes a pair you already hold** into an item you will slam this round.
+3. **A Spatula or Frying Pan**, only if you are actively building the emblem line or can use the utility combine.
+4. **A component whose self-combine is broadly good** (a flat defensive component, or the one that makes your set's generic damage item).
+5. **The component that matches your carry's BIS** but that you cannot combine this round. This is the trap option: it makes a fourth loose component.
+
+The unit on the carousel matters at 2-4 (a pair or a 3-cost you can play) and at stage 5 (a 5-cost). In between, the unit is a sell for gold and the item is the decision.
+
+<Callout type="tip" title="Pick before the carousel opens">
+While the carousel is spinning, look at your bench and say which single component or completed item you would slam immediately. Walk to that. If you are still deciding when the cage opens, you will pick the shiny one.
+</Callout>
 
 <DrillThis category="items" />
 
-<CheckYourself items={["Did I hold more than two components while losing HP?", "Did my tank item go on the unit that will still be on the board at stage 5?", "On carousel, did I take item power or a component for a plan?"]} />
+<CheckYourself items={["Did I hold more than two components while losing HP?", "Did my tank item go on the unit that will still be on the board at stage 5?", "On carousel, did I take item power or a component for a plan?", "When I held a component, could I name the exact combine I was waiting for?", "Did I ever sit on an emblem for more than two stages without using it?"]} />

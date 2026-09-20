@@ -1,0 +1,37 @@
+{
+  "id": "items-emblem-holder-at-4-5",
+  "category": "items",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-5, level 8, 49 HP. You crafted an emblem for the trait your carry and casters share; adding one more unit of it reaches the next breakpoint. Candidate holders: the 2-star 4-cost tank (no trait overlap, permanent), the 1-star 3-cost bruiser (will be sold at 9), the 2-star support (already has the trait). Who holds it?",
+  "state": {
+    "stage": "4-5",
+    "gold": 44,
+    "hp": 49,
+    "level": 8,
+    "xpToNext": 30,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "generic:tank-4", "row": 0, "col": 2, "star": 2, "items": ["generic:item:tank-completed", "generic:item:tank-completed"] },
+      { "championId": "generic:bruiser-3", "row": 0, "col": 3, "star": 1, "items": [] },
+      { "championId": "generic:tank-2", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "generic:support-3", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "generic:bruiser-2", "row": 2, "col": 5, "star": 2, "items": [] },
+      { "championId": "generic:carry-4", "row": 3, "col": 4, "star": 2, "items": ["generic:item:carry-completed", "generic:item:carry-completed"] },
+      { "championId": "generic:caster-3", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "generic:caster-4", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["generic:tank-3", "generic:carry-3", "generic:caster-2", "generic:support-1", "generic:bruiser-4"],
+    "items": ["generic:item:emblem"]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:emblem",
+    "correctUnitIds": ["generic:tank-4"]
+  },
+  "explanation": "An emblem is a permanent trait count, so it goes on a unit that is permanent, does not already have the trait, and has an item slot you will not need for something better. The 2-star 4-cost tank satisfies all three: it stays until the end, it has no overlap, and its third slot is worth less than the breakpoint. The support already counts for the trait, so an emblem there is a dead item. The 3-cost bruiser reaches the breakpoint too, but you will sell it for a 5-cost or a second 4-cost at level 9, and the emblem comes back to the bench mid-stage-5 when you can least afford to re-plan.\n\nThere is a subtler point: an emblem redirects what your level-9 board looks like. With the trait count locked onto the tank, every future slot is free to be the strongest unit available instead of a trait filler, which is how emblem boards cap higher than natural verticals.",
+  "principle": "Emblems go on the permanent unit that does not have the trait; that frees every other slot to be pure strength.",
+  "guideLink": "/guides/items#emblems",
+  "commonMistake": "Putting the emblem on the unit that is easiest to give it to now, then moving it every stage as that unit gets sold."
+}

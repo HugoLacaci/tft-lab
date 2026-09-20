@@ -1,0 +1,38 @@
+{
+  "id": "items-infinity-edge-holder",
+  "category": "items",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5, level 8, 51 HP. You just completed an Infinity Edge. Your board: Malphite and Sett frontline, Ahri (AP, two items) in the backline, Aphelios (2-star, Guinsoo's Rageblade) and Sivir (1-star, no items, played for Hunter). Who holds the Infinity Edge?",
+  "state": {
+    "stage": "4-5",
+    "gold": 47,
+    "hp": 51,
+    "level": 8,
+    "xpToNext": 36,
+    "streak": { "type": "loss", "count": 1 },
+    "board": [
+      { "championId": "DA_18_Malphite", "row": 0, "col": 2, "star": 2, "items": ["DA_GargoyleStoneplate"] },
+      { "championId": "DA_18_Sett", "row": 0, "col": 3, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Rammus", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Diana", "row": 1, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_Ahri", "row": 3, "col": 1, "star": 1, "items": ["DA_JeweledGauntlet", "DA_RabadonsDeathcap"] },
+      { "championId": "DA_18_Aphelios", "row": 3, "col": 4, "star": 2, "items": ["DA_GuinsoosRageblade"] },
+      { "championId": "DA_18_Sivir", "row": 3, "col": 6, "star": 1, "items": [] },
+      { "championId": "DA_18_Tristana", "row": 2, "col": 5, "star": 2, "items": [] }
+    ],
+    "bench": [],
+    "shop": ["DA_18_Kayle", "DA_18_Aphelios", "DA_18_Azir", "DA_18_Elise", "DA_18_Warwick"],
+    "items": ["DA_InfinityEdge"]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "DA_InfinityEdge",
+    "correctUnitIds": ["DA_18_Aphelios"]
+  },
+  "explanation": "Infinity Edge is an attack-damage crit item, and the question is which unit converts crit into the most damage over the rest of the game. Aphelios is 2-star, already has an attack-speed item that multiplies every crit, and is the unit your comp is built to protect. Sivir is 1-star and on the board for a trait; giving her the item asks you to itemise a unit you will not 2-star, and splits your damage across two AD carries when the board only has one frontline to hold for both. Ahri is an AP caster with two AP items; Infinity Edge on her wastes the attack-damage half of the item.\n\nIf Sivir 2-stars naturally she becomes a fine second holder for later AD items, but the first completed AD item follows the rule: the itemised, 2-star, protected carry gets the multiplier.",
+  "principle": "Damage multipliers stack on the one carry you are protecting; splitting items across two AD units halves both.",
+  "guideLink": "/guides/items#bis-is-a-preference",
+  "commonMistake": "Spreading items \"so the board has two threats\" before the first threat is fully built."
+}

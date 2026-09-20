@@ -1,0 +1,41 @@
+{
+  "id": "carousel-ezreal-with-the-bow",
+  "category": "carousel",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-4 carousel, level 7 (you leveled early), 60 HP, 32 gold, you pick sixth. Your board is Elderwood: Ornn, Alistar, Hecarim frontline, Xayah 2-star carrying Guinsoo's Rageblade plus a spare B.F. Sword on the bench. The carousel still shows: Ezreal (Elderwood 4-cost) carrying a Recurve Bow, Ahri carrying a Needlessly Large Rod, Ornn carrying a Spatula. Which do you take?",
+  "state": {
+    "stage": "3-4",
+    "gold": 32,
+    "hp": 60,
+    "level": 7,
+    "xpToNext": 34,
+    "streak": { "type": "loss", "count": 2 },
+    "board": [
+      { "championId": "DA_18_Ornn", "row": 0, "col": 2, "star": 2, "items": ["DA_SunfireCape"] },
+      { "championId": "DA_18_Alistar", "row": 0, "col": 3, "star": 2, "items": [] },
+      { "championId": "DA_18_Hecarim", "row": 0, "col": 4, "star": 2, "items": [] },
+      { "championId": "DA_18_Sejuani", "row": 1, "col": 3, "star": 1, "items": [] },
+      { "championId": "DA_18_Xayah", "row": 3, "col": 4, "star": 2, "items": ["DA_GuinsoosRageblade"] },
+      { "championId": "DA_18_LeBlanc", "row": 3, "col": 2, "star": 2, "items": [] },
+      { "championId": "DA_18_Kayle", "row": 3, "col": 6, "star": 1, "items": [] }
+    ],
+    "bench": [],
+    "shop": [null, null, null, null, null],
+    "items": ["DA_Component_BFSword"]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      { "id": "ezreal", "label": "Ezreal with the Recurve Bow: a 4-cost in your trait, and the Bow plus your B.F. Sword completes an AD item for Xayah" },
+      { "id": "ahri", "label": "Ahri with the Rod: the strongest unit on the wheel, pivot to AP later" },
+      { "id": "spatula", "label": "Ornn with the Spatula: an Elderwood emblem later, plus an Ornn copy" }
+    ],
+    "correct": ["ezreal"]
+  },
+  "explanation": "Carousel priority is total usable value this round, and Ezreal is the rare pick that scores on every axis: a 4-cost you could not hit at level 7 odds (10% per slot) that slots straight into your Elderwood count, plus a Recurve Bow that combines with the B.F. Sword on your bench into a completed AD item for Xayah before the next fight. That is a unit and an item, both used immediately, on a 2-loss streak at 60 HP where you need to stop the bleeding. Ahri is a stronger unit in a vacuum, but she is AP on a board with AD items and would become a 4-gold sell or a pivot you have no components for.\n\nThe Spatula plus Ornn is the seductive one because Elderwood emblems are real. But an emblem needs a second component you do not hold, and this board is not short of Elderwood units; it is short of damage now. Ezreal also gives you a second 4-cost body to hold your future third item.",
+  "principle": "The best carousel pick is the one you use this round on the line you are already on.",
+  "guideLink": "/guides/items#carousel-priority",
+  "commonMistake": "Taking the strongest unit on the wheel regardless of whether it fits, and selling it two rounds later."
+}
