@@ -222,7 +222,12 @@ function mostCommonPrefix(ids: string[]): string | null {
   }
   let best: string | null = null;
   let n = 0;
-  for (const [p, c] of counts) if (c > n) ((best = p), (n = c));
+  for (const [p, c] of counts) {
+    if (c > n) {
+      best = p;
+      n = c;
+    }
+  }
   return best;
 }
 

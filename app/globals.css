@@ -99,6 +99,9 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   outline-offset: 2px;
 }
 
+/* Component classes live in the components layer so Tailwind utilities
+   (md:hidden, !p-3, …) can override them. */
+@layer components {
 /* Panels: 1px gold trim at ~35%, notched corners, subtle vignette. */
 .panel {
   position: relative;
@@ -206,6 +209,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .data-table th { text-align: left; font-family: var(--font-display); font-weight: 600; color: var(--gold); border-bottom: 1px solid var(--gold-dim); padding: 0.4rem 0.5rem; white-space: nowrap; }
 .data-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid rgba(200, 170, 110, 0.12); }
 .data-table td.num, .data-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }

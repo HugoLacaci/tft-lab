@@ -28,7 +28,7 @@ export function renderDesc(raw: string | null | undefined, vars: Vars = {}): str
   s = s.replace(/<rules>/gi, "\n").replace(/<\/rules>/gi, "");
   s = s.replace(/%i:[a-zA-Z0-9_]+%/g, "");
   s = s.replace(/\{\{([^}]+)\}\}/g, (_m, k: string) => `[${k.replace(/^TFT_Keyword_/, "")}]`);
-  s = s.replace(/@([A-Za-z0-9_{}]+)(\*(-?\d+(?:\.\d+)?))?@/g, (_m, key: string, _g, mult?: string) => {
+  s = s.replace(/@([^@*]+?)(\*(-?\d+(?:\.\d+)?))?@/g, (_m, key: string, _g, mult?: string) => {
     const k = KEY_ALIASES[key] ?? key;
     const v = vars[k];
     if (typeof v === "number") return fmt(mult ? v * Number(mult) : v);
