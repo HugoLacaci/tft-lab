@@ -1,103 +1,100 @@
-import Image from "next/image";
+import Link from "next/link";
+import { Panel } from "@/components/ui/Panel";
+import { CURRENT_SET, isSynced } from "@/lib/current-set";
+import { setDisplayName } from "@/lib/set-meta";
 
-export default function Home() {
+const PILLARS = [
+  {
+    href: "/guides",
+    title: "Guides",
+    kicker: "Learn the fundamentals",
+    body: "Economy, leveling, rolling, items, augments, positioning, scouting and HP management. Set-agnostic, written for players who already know the vocabulary and want the reasoning.",
+    cta: "Start with Economy",
+    ctaHref: "/guides/economy",
+  },
+  {
+    href: "/trainer",
+    title: "Trainer",
+    kicker: "Drill the decisions",
+    body: "Real board states on a real hex board. Make the call, get scored, read why. Missed drills come back on a spaced schedule until they stick.",
+    cta: "Run a Daily 10",
+    ctaHref: "/trainer",
+  },
+  {
+    href: "/routine",
+    title: "Path",
+    kicker: "Climb with a plan",
+    body: "A weekly routine, a VOD-review method that fits in twenty minutes, a leak tracker that lives in your browser, and the real road from ladder to the Pro Circuit.",
+    cta: "See the routine",
+    ctaHref: "/routine",
+  },
+];
+
+export default function HomePage() {
+  const synced = isSynced();
+  const setName = synced ? setDisplayName(CURRENT_SET.setNumber, CURRENT_SET.setName) : null;
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="space-y-12">
+      <section className="relative overflow-hidden py-10 sm:py-16">
+        <div className="display text-[0.7rem] uppercase tracking-[0.3em] text-gold">Emerald → Master+ → Competitive</div>
+        <h1 className="mt-3 max-w-3xl text-3xl leading-tight sm:text-5xl">
+          Stop losing games in the rounds you don&apos;t remember.
+        </h1>
+        <p className="mt-5 max-w-2xl text-lg text-dim">
+          TFT Lab is a study tool for Teamfight Tactics. Not a meta site: the comps live elsewhere. This is where you
+          learn <em>why</em> the standard play is standard, drill the decisions that separate Diamond from Master,
+          and keep a record of the leaks you keep repeating.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/trainer" className="btn btn-primary">
+            Open the Trainer
+          </Link>
+          <Link href="/guides/economy" className="btn">
+            Read the Economy guide
+          </Link>
+          {synced ? (
+            <Link href="/set" className="btn">
+              Set {CURRENT_SET.setNumber} · {setName}
+            </Link>
+          ) : null}
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-3">
+        {PILLARS.map((p) => (
+          <Panel key={p.href} as="article" className="flex flex-col">
+            <div className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold">{p.kicker}</div>
+            <h2 className="mt-1 text-2xl">
+              <Link href={p.href} className="text-gold-bright hover:no-underline">
+                {p.title}
+              </Link>
+            </h2>
+            <p className="mt-3 flex-1 text-sm text-dim">{p.body}</p>
+            <Link href={p.ctaHref} className="btn btn-sm mt-5 self-start">
+              {p.cta}
+            </Link>
+          </Panel>
+        ))}
+      </section>
+
+      <section className="grid gap-4 md:grid-cols-2">
+        <Panel>
+          <h2 className="text-lg">What this is not</h2>
+          <p className="mt-2 text-sm text-dim">
+            It is not a stats site. We do not scrape MetaTFT, tactics.tools, Mobalytics or anyone else. When you need
+            the current meta, go to them; <Link href="/resources">Resources</Link> tells you which one to use for what.
+            Teaching is what lives here.
+          </p>
+        </Panel>
+        <Panel>
+          <h2 className="text-lg">How it stays current</h2>
+          <p className="mt-2 text-sm text-dim">
+            Champions, traits, items and augments sync from CommunityDragon on a schedule. When a new set ships, the{" "}
+            <Link href="/set">Set hub</Link> updates on its own and the written guides get a human pass. The
+            fundamentals do not change with the set.
+          </p>
+        </Panel>
+      </section>
     </div>
   );
 }

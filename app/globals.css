@@ -1,26 +1,217 @@
 @import "tailwindcss";
 
+/* ---------------------------------------------------------------------------
+   TFT Lab design tokens. Dark is the primary theme; light exists but is not
+   optimised. Cost and trait-style colours live in lib/costs.ts and are mirrored
+   here so CSS can use them without JS (tests/costs.test.ts guards the pairing).
+--------------------------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-deep: #070b12;
+  --bg-panel: #0e1520;
+  --bg-raised: #16202e;
+  --gold: #c8aa6e;
+  --gold-bright: #f0e6d2;
+  --gold-dim: rgba(200, 170, 110, 0.35);
+  --teal: #0ac8b9;
+  --red: #e0483a;
+  --text: #d9e2ec;
+  --text-dim: #8fa3b8;
+
+  --cost-1: #9aa4b0;
+  --cost-2: #1bc47d;
+  --cost-3: #2f7fdc;
+  --cost-4: #c440e0;
+  --cost-5: #ffb642;
+
+  --style-bronze: #b06d3a;
+  --style-silver: #a3b0bd;
+  --style-gold: #ffb642;
+  --style-prismatic: #d7c8ff;
+  --style-unique: #ff8a5c;
+
+  --font-display: var(--font-cinzel), "Cinzel", Georgia, serif;
+  --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
+
+  --hex-size: 56px;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg-deep: #f3efe6;
+  --bg-panel: #ffffff;
+  --bg-raised: #ece6d9;
+  --gold: #8a6d2f;
+  --gold-bright: #2b2416;
+  --gold-dim: rgba(138, 109, 47, 0.4);
+  --teal: #067f77;
+  --red: #b8301f;
+  --text: #1e2630;
+  --text-dim: #5c6b7a;
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-deep: var(--bg-deep);
+  --color-panel: var(--bg-panel);
+  --color-raised: var(--bg-raised);
+  --color-gold: var(--gold);
+  --color-gold-bright: var(--gold-bright);
+  --color-teal: var(--teal);
+  --color-danger: var(--red);
+  --color-ink: var(--text);
+  --color-dim: var(--text-dim);
+  --color-cost-1: var(--cost-1);
+  --color-cost-2: var(--cost-2);
+  --color-cost-3: var(--cost-3);
+  --color-cost-4: var(--cost-4);
+  --color-cost-5: var(--cost-5);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100dvh;
+  background:
+    radial-gradient(1200px 600px at 50% -200px, rgba(200, 170, 110, 0.08), transparent 60%),
+    var(--bg-deep);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .display {
+  font-family: var(--font-display);
+  color: var(--gold-bright);
+  letter-spacing: 0.02em;
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+/* Panels: 1px gold trim at ~35%, notched corners, subtle vignette. */
+.panel {
+  position: relative;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(200, 170, 110, 0.06), transparent 70%),
+    var(--bg-panel);
+  border: 1px solid var(--gold-dim);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+.panel-raised { background: var(--bg-raised); }
+
+.notch {
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold) 30%, var(--gold) 70%, transparent);
+  opacity: 0.6;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  background: var(--bg-raised);
+  border: 1px solid var(--gold-dim);
+  clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+  cursor: pointer;
+  transition: border-color 120ms, background 120ms;
+}
+.btn:hover { border-color: var(--gold); text-decoration: none; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary { background: linear-gradient(180deg, rgba(10, 200, 185, 0.25), rgba(10, 200, 185, 0.08)); border-color: var(--teal); }
+.btn-primary:hover { background: rgba(10, 200, 185, 0.3); }
+.btn-danger { border-color: var(--red); }
+.btn-sm { padding: 0.35rem 0.7rem; font-size: 0.7rem; }
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  border: 1px solid var(--gold-dim);
+  background: var(--bg-raised);
+}
+.chip-active { color: var(--gold-bright); border-color: var(--gold); }
+
+.input {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  color: var(--text);
+  background: var(--bg-deep);
+  border: 1px solid var(--gold-dim);
+  font: inherit;
+}
+.input:focus { border-color: var(--teal); outline: none; }
+
+.prismatic {
+  background: linear-gradient(120deg, #d7c8ff, #9fe3ff 35%, #ffd6f5 65%, #d7c8ff);
+  background-size: 200% 200%;
+  animation: shimmer 6s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Hexagon. Pointy-top. */
+.hex {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* Prose for MDX guides */
+.prose-tft { max-width: 72ch; line-height: 1.65; }
+.prose-tft > * + * { margin-top: 1rem; }
+.prose-tft h2 { font-size: 1.5rem; margin-top: 2.5rem; scroll-margin-top: 5rem; }
+.prose-tft h3 { font-size: 1.15rem; margin-top: 1.75rem; scroll-margin-top: 5rem; }
+.prose-tft h2::after { content: ""; display: block; height: 1px; margin-top: 0.4rem; background: linear-gradient(90deg, var(--gold), transparent); opacity: 0.5; }
+.prose-tft p { color: var(--text); }
+.prose-tft ul, .prose-tft ol { padding-left: 1.4rem; }
+.prose-tft ul { list-style: disc; }
+.prose-tft ol { list-style: decimal; }
+.prose-tft li + li { margin-top: 0.35rem; }
+.prose-tft strong { color: var(--gold-bright); }
+.prose-tft code { font-size: 0.9em; padding: 0.1em 0.35em; background: var(--bg-raised); border: 1px solid var(--gold-dim); }
+.prose-tft table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.prose-tft th { text-align: left; font-family: var(--font-display); font-weight: 600; color: var(--gold); border-bottom: 1px solid var(--gold-dim); padding: 0.4rem 0.5rem; }
+.prose-tft td { padding: 0.4rem 0.5rem; border-bottom: 1px solid rgba(200, 170, 110, 0.12); }
+.prose-tft blockquote { border-left: 2px solid var(--gold); padding-left: 1rem; color: var(--text-dim); }
+
+.table-wrap { overflow-x: auto; max-width: 100%; }
+.table-wrap table { min-width: 100%; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.data-table th { text-align: left; font-family: var(--font-display); font-weight: 600; color: var(--gold); border-bottom: 1px solid var(--gold-dim); padding: 0.4rem 0.5rem; white-space: nowrap; }
+.data-table td { padding: 0.35rem 0.5rem; border-bottom: 1px solid rgba(200, 170, 110, 0.12); }
+.data-table td.num, .data-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  .no-print { display: none !important; }
 }
