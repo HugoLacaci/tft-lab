@@ -10,11 +10,12 @@
  */
 import { runValidation } from "../lib/validate";
 
-const problems = runValidation();
-if (problems.length > 0) {
-  console.error(`\n✖ ${problems.length} validation problem(s):\n`);
-  for (const p of problems) console.error(`  ${p.file}${p.field ? ` › ${p.field}` : ""}: ${p.message}`);
-  console.error("");
-  process.exit(1);
-}
-console.log("✓ validation passed");
+runValidation().then((problems) => {
+  if (problems.length > 0) {
+    console.error(`\n✖ ${problems.length} validation problem(s):\n`);
+    for (const p of problems) console.error(`  ${p.file}${p.field ? ` › ${p.field}` : ""}: ${p.message}`);
+    console.error("");
+    process.exit(1);
+  }
+  console.log("✓ validation passed");
+});

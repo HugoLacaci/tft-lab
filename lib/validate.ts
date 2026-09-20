@@ -208,6 +208,32 @@ export function validateNoHardcodedSet(root = process.cwd()): Problem[] {
   return problems;
 }
 
-export function runValidation(root = process.cwd()): Problem[] {
-  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateNoHardcodedSet(root)];
+/** Every MDX file under content/ must at least parse (catches HTML comments, bad JSX). */
+export async function validateMdxSyntax(root = process.cwd()): Promise<Problem[]> {
+  const { compile } = await import("@mdx-js/mdx");
+  const problems: Problem[] = [];
+  const files: string[] = [];
+  const walk = (dir: string) => {
+    if (!fs.existsSync(dir)) return;
+    for (const f of fs.readdirSync(dir)) {
+      const p = path.join(dir, f);
+      if (fs.statSync(p).isDirectory()) walk(p);
+      else if (f.endsWith(".mdx")) files.push(p);
+    }
+  };
+  walk(path.join(root, "content"));
+  for (const file of files) {
+    const rel = path.relative(root, file).replace(/\\/g, "/");
+    const src = fs.readFileSync(file, "utf8").replace(/^---[\s\S]*?\n---\n/, "");
+    try {
+      await compile(src, { outputFormat: "function-body" });
+    } catch (e) {
+      problems.push({ file: rel, message: `MDX does not compile: ${e instanceof Error ? e.message : String(e)}` });
+    }
+  }
+  return problems;
+}
+
+export async function runValidation(root = process.cwd()): Promise<Problem[]> {
+  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateNoHardcodedSet(root), ...(await validateMdxSyntax(root))];
 }

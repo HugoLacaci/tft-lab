@@ -114,7 +114,7 @@ export function Session({ data, rendered, mode, title }: { data: SessionData; re
           <ScenarioBoard
             scenario={s}
             data={data}
-            placementUnit={q.type === "placement" && !result ? q.unitId : null}
+            placementUnit={q.type === "placement" ? q.unitId : null}
             onPlaced={setPlaced}
             highlight={highlight}
             selectedHex={q.type === "item-holder" && typeof answer === "string" ? s.state.board.find((u) => u.championId === answer) ?? null : null}
