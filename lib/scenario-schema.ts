@@ -68,15 +68,25 @@ const OrderingQ = z.object({
   steps: z.array(z.string()).min(2),
   correctOrder: z.array(z.number().int().min(0)),
 });
+/** Pick two units on the board to swap places (the chess-puzzle "one move"). */
+const SwapQ = z.object({
+  type: z.literal("swap"),
+  correctPairs: z.array(z.tuple([z.string(), z.string()])).min(1),
+});
 
-export const QuestionSchema = z.discriminatedUnion("type", [ChoiceQ, PlacementQ, AugmentQ, ItemHolderQ, OrderingQ]);
+export const QuestionSchema = z.discriminatedUnion("type", [ChoiceQ, PlacementQ, AugmentQ, ItemHolderQ, OrderingQ, SwapQ]);
 export type Question = z.infer<typeof QuestionSchema>;
 
 export const ScenarioSchema = z
   .object({
     id: z.string().regex(/^[a-z0-9-]+$/, "kebab-case id"),
     category: z.enum(SCENARIO_CATEGORIES),
-    difficulty: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+    /** Rank tier the drill is written for: 1 Iron–Silver, 2 Gold–Platinum, 3 Emerald–Diamond, 4 Master+ (lib/rank-tiers.ts). */
+    difficulty: z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4)]),
+    /** "drill" (default) or "puzzle": puzzles also appear in the tactics-puzzle ladder grouped by tier. */
+    kind: z.enum(["drill", "puzzle"]).default("drill"),
+    /** Short card title for puzzles; falls back to the first sentence of the prompt. */
+    title: z.string().min(4).max(64).optional(),
     setAgnostic: z.boolean(),
     /** Required when setAgnostic is false: the set the champion ids belong to. */
     set: z.number().int().positive().optional(),
@@ -100,6 +110,16 @@ export const ScenarioSchema = z
       const ids = new Set(s.question.options.map((o) => o.id));
       for (const c of s.question.correct)
         if (!ids.has(c)) ctx.addIssue({ code: "custom", path: ["question", "correct"], message: `unknown option id "${c}"` });
+    }
+    if (s.question.type === "swap") {
+      const onBoard = new Set(s.state.board.map((u) => u.championId));
+      s.question.correctPairs.forEach((p, i) => {
+        if (p[0] === p[1]) ctx.addIssue({ code: "custom", path: ["question", "correctPairs", i], message: "a pair needs two different units" });
+        for (const id of p) if (!onBoard.has(id)) ctx.addIssue({ code: "custom", path: ["question", "correctPairs", i], message: `"${id}" is not on the board` });
+      });
+      const counts = new Map<string, number>();
+      for (const u of s.state.board) counts.set(u.championId, (counts.get(u.championId) ?? 0) + 1);
+      for (const [id, n] of counts) if (n > 1) ctx.addIssue({ code: "custom", path: ["state", "board"], message: `swap questions need unique unit ids on the board; "${id}" appears ${n} times` });
     }
     if (s.question.type === "augment" && !s.question.options.includes(s.question.correct))
       ctx.addIssue({ code: "custom", path: ["question", "correct"], message: "correct must be one of options" });

@@ -1,7 +1,7 @@
 {
   "id": "items-ad-item-on-future-carry",
   "category": "items",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-2, level 8, 63 HP. You just completed an AD carry item. Your 2-star 2-cost AD carry has done all your damage so far and already holds two items; your 4-cost AD carry arrived last round at 1-star and has none. You plan to roll for the 4-cost at 4-5. Who gets the new item?",
   "state": {

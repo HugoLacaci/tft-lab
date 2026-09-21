@@ -17,7 +17,7 @@ export function ScenarioBoard({
   placementUnit,
   onPlaced,
   highlight,
-  selectedHex,
+  selected = [],
   onUnitClick,
   locked,
 }: {
@@ -26,7 +26,8 @@ export function ScenarioBoard({
   placementUnit: string | null;
   onPlaced: (hex: HexCoord | null) => void;
   highlight: HexCoord[];
-  selectedHex: PlacedUnit | null;
+  /** Units the user has selected (item-holder: one; swap: up to two), outlined in gold until graded. */
+  selected?: PlacedUnit[];
   onUnitClick?: (unitId: string) => void;
   locked: boolean;
 }) {
@@ -53,7 +54,7 @@ export function ScenarioBoard({
   }, [state, placementUnit, onPlaced, scenario.state.board]);
 
   const editable = !!placementUnit && !locked;
-  const hl = selectedHex ? [{ row: selectedHex.row, col: selectedHex.col }, ...highlight] : highlight;
+  const hl = locked ? highlight : [...selected.map((u) => ({ row: u.row, col: u.col })), ...highlight];
 
   return (
     <div onClickCapture={onUnitClick ? (e) => handleUnitClick(e, state.board, onUnitClick) : undefined}>
@@ -78,7 +79,7 @@ export function ScenarioBoard({
         items={data.items}
         traitNames={data.traitNames}
         highlight={hl}
-        highlightColor={selectedHex && !locked ? "var(--gold)" : "var(--teal)"}
+        highlightColor={selected.length && !locked ? "var(--gold)" : "var(--teal)"}
         onChange={(n) => {
           // Only the placement unit may move; other units snap back.
           const moved = n.board.filter((u) => u.championId === placementUnit || scenario.state.board.some((o) => o.row === u.row && o.col === u.col && o.championId === u.championId));

@@ -1,7 +1,7 @@
 {
   "id": "level-timing-level-and-roll-same-round",
   "category": "level-timing",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-2, level 5 with 32 gold, 70 HP, 1-loss streak. You are 8 XP from level 6. Your board has a 1-star 3-cost carry and you want a 2-star. Do you level to 6 and roll the rest this round?",
   "state": {

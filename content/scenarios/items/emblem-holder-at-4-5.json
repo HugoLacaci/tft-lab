@@ -1,7 +1,7 @@
 {
   "id": "items-emblem-holder-at-4-5",
   "category": "items",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 4-5, level 8, 49 HP. You crafted an emblem for the trait your carry and casters share; adding one more unit of it reaches the next breakpoint. Candidate holders: the 2-star 4-cost tank (no trait overlap, permanent), the 1-star 3-cost bruiser (will be sold at 9), the 2-star support (already has the trait). Who holds it?",
   "state": {

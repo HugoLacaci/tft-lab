@@ -1,0 +1,85 @@
+{
+  "id": "puzzle-master-yi-second-row",
+  "category": "positioning",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Master Yi is a melee carry",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2, level 6. Master Yi 2-star with two items is your carry. He is melee. Alistar, Shen and Rammus are your frontline. Place him.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "3-2",
+    "gold": 41,
+    "hp": 76,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Shen",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Rammus",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_MasterYi_AD",
+    "correctHexes": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 1,
+        "col": 3
+      }
+    ]
+  },
+  "explanation": "A melee carry has to reach the enemy to deal damage, so the back row is wrong: he would walk the whole board while the fight happens without him. The front row is also wrong: he takes the first hits and every enemy cast before your tanks do. Row 1, directly behind the tank line, is the answer. Your tanks engage first, take the aggro, and Yi steps forward one hex into a fight where the enemy is already busy.\n\nColumn 2 or 3 keeps him behind two of your three tanks. Column 4 behind Rammus works too but leaves his other side open.",
+  "principle": "Melee carries sit one row behind the tanks: close enough to engage, protected for the first seconds.",
+  "guideLink": "/guides/positioning#melee-carries",
+  "commonMistake": "Treating every carry as a backliner and dropping Master Yi in row 3, where he arrives to the fight last."
+}

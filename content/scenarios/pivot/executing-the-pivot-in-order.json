@@ -1,7 +1,7 @@
 {
   "id": "pivot-executing-the-pivot-in-order",
   "category": "pivot",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-1, level 7 with 52 gold and 54 HP. Your reroll line is dead: two players 3-starred the carry before you. You are going to pivot to a 4-cost AD carry line that uses the same AD items. Put the steps of the pivot in the order that loses the least tempo.",
   "state": {

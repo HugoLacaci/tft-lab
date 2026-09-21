@@ -3,6 +3,7 @@ import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Backdrop } from "@/components/layout/Backdrop";
 import { SITE_URL } from "@/lib/site";
 
 const cinzel = Cinzel({
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         >
           Skip to content
         </a>
+        <Backdrop />
         <Header />
         <main id="main" className="mx-auto w-full max-w-6xl flex-1 px-4 py-6 sm:px-6">
           {children}

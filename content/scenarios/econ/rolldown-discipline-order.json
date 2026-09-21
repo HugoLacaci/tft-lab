@@ -1,7 +1,7 @@
 {
   "id": "econ-rolldown-discipline-order",
   "category": "econ",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 4-5, level 8, 66 gold, 44 HP. This is your planned rolldown for two 1-star 4-costs (tank and carry). Your bench holds three units that are not in the comp. Put the rolldown steps in the order a disciplined player executes them.",
   "state": {

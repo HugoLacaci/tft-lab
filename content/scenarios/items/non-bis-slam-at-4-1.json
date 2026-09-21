@@ -1,7 +1,7 @@
 {
   "id": "items-non-bis-slam-at-4-1",
   "category": "items",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-1, level 7, 55 HP, 2-loss streak. Your 2-star 4-cost carry already holds its two best items. You hold an AD component and a defensive component, which combine into a decent but off-list third item for the carry, or would make BIS pieces if you found their exact partners. The lobby's boards are ahead of yours. What do you do?",
   "state": {

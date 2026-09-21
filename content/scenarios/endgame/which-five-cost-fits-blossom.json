@@ -1,7 +1,7 @@
 {
   "id": "endgame-which-five-cost-fits-blossom",
   "category": "endgame",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 5-3, level 9 with 41 gold at 38 HP, four players left. Your board is a Blossom line: 2-star Ahri as the AP carry, 2-star Sett as the tank, Yunara and Master Yi as Blossom bodies. The shop shows Ashe (Blossom, Hunter, a physical-damage carry) and Draven (no shared trait, a physical-damage carry). You have no spare AD items. Which 5-cost do you buy?",

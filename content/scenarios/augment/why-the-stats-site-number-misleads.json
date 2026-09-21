@@ -1,7 +1,7 @@
 {
   "id": "augment-why-the-stats-site-number-misleads",
   "category": "augment",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 4-2 gold augment, 61 HP, level 8, 48 gold. Your board is a generic frontline with a 2-star 4-cost AD carry holding two items. A stats site lists the Trait Crest for a vertical you have one unit of as the best gold augment this patch (avg placement 3.9). Two players in your lobby are on that vertical. Which statement about that 3.9 is the one that should change your pick?",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "positioning-last-second-mirror-swap",
   "category": "positioning",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 5-1, four players left. You lost to Seat 4 last round because their two assassins dove your carry in the bottom-right corner. Scouting now, you see they have not touched their board, but you know Seat 4 scouts every round and reacts. You will fight Seat 4 again in two rounds; this round you fight Seat 6, whose board is a slow melee frontline with no divers. What do you do with your carry this round?",
   "state": {

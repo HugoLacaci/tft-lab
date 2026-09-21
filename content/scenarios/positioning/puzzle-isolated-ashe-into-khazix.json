@@ -1,0 +1,148 @@
+{
+  "id": "puzzle-isolated-ashe-into-khazix",
+  "category": "positioning",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Isolated Ashe into Kha'Zix",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1. Kha'Zix deals far more damage to a target that has no adjacent allies, and he leaps to the farthest enemy. Ashe sits alone in your back-right corner. One swap fixes it. Which two units trade places?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-1",
+    "gold": 36,
+    "hp": 40,
+    "level": 8,
+    "xpToNext": 70,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_BrambleVest"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 2,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ashe",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": [
+          "DA_SpearOfShojin",
+          "DA_RedBuff",
+          "DA_LastWhisper"
+        ]
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_KhaZix",
+        "row": 3,
+        "col": 0,
+        "star": 3,
+        "items": [
+          "DA_InfinityEdge",
+          "DA_Bloodthirster"
+        ]
+      },
+      {
+        "championId": "DA_18_Rengar",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Warwick",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sivir",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "swap",
+    "correctPairs": [
+      [
+        "DA_18_Ashe",
+        "DA_18_Yorick"
+      ]
+    ]
+  },
+  "explanation": "In this row geometry Ashe on the back-right corner touches only the hex to her left and the one diagonally in front, and both are empty: she is isolated, so Kha'Zix lands on the farthest enemy, finds nobody next to her, and one-shots your carry. Swap her with Yorick. Ashe moves to column 4, adjacent to Diana, so the isolation bonus is gone and the bodyguard is already there. Yorick takes the corner: he is the bait, and when he dies his Spirit Walker taunts, which pins Kha'Zix in the corner for another few seconds.\n\nSwapping Ashe with Karma just moves the isolation to the other corner.",
+  "principle": "Read the condition on the ability. Isolation is a positioning error you can fix with one body.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Moving the carry to the centre and leaving the corner empty, which makes the next-farthest unit the target with the same isolation problem."
+}

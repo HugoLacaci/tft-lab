@@ -7,6 +7,8 @@ import { requireSetData } from "@/lib/set-data";
 import { CURRENT_SET } from "@/lib/current-set";
 import { COSTS } from "@/lib/costs";
 import { renderMdx } from "@/lib/mdx";
+import { newsStamps } from "@/lib/whats-new-server";
+import { NewPill } from "@/components/ui/NewBadge";
 
 export const metadata = { title: "Set hub" };
 
@@ -21,21 +23,26 @@ export default async function SetHubPage() {
   const prose = await setProse(CURRENT_SET.setNumber);
   const byCost = COSTS.map((c) => ({ cost: c, champs: data.champions.filter((ch) => ch.cost === c) }));
   const traitsSorted = [...data.traits].sort((a, b) => a.name.localeCompare(b.name));
+  const stamps = newsStamps();
+  const cards: { label: string; n: string | number; href: string; news?: "comps" | "patch-notes" }[] = [
+    { label: "Champions", n: data.champions.length, href: "/set/champions" },
+    { label: "Traits", n: data.traits.length, href: "/set/traits" },
+    { label: "Items", n: data.items.filter((i) => i.kind !== "other" && i.kind !== "charm").length, href: "/set/items" },
+    { label: "Augments", n: data.augments.length, href: "/set/augments" },
+    { label: "Wisps", n: data.items.filter((i) => i.kind === "charm" && !/_Upgrade$/i.test(i.id)).length, href: "/set/wisps" },
+    { label: "Comps", n: "→", href: "/set/comps", news: "comps" },
+    { label: "Patch notes", n: "→", href: "/set/patch-notes", news: "patch-notes" },
+  ];
 
   return (
     <div className="space-y-10">
       <section className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {[
-          ["Champions", data.champions.length, "/set/champions"],
-          ["Traits", data.traits.length, "/set/traits"],
-          ["Items", data.items.filter((i) => i.kind !== "other" && i.kind !== "charm").length, "/set/items"],
-          ["Augments", data.augments.length, "/set/augments"],
-          ["Wisps", data.items.filter((i) => i.kind === "charm" && !/_Upgrade$/i.test(i.id)).length, "/set/wisps"],
-          ["Comps", "→", "/set/comps"],
-          ["Patch notes", "→", "/set/patch-notes"],
-        ].map(([label, n, href]) => (
-          <Link key={String(label)} href={String(href)} className="panel block p-4 hover:no-underline">
-            <div className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold">{label}</div>
+        {cards.map(({ label, n, href, news }) => (
+          <Link key={label} href={href} className="panel block p-4 hover:no-underline">
+            <div className="display flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-gold">
+              {label}
+              {news ? <NewPill area={news} stamps={stamps} /> : null}
+            </div>
             <div className="display mt-1 text-3xl text-gold-bright">{n}</div>
           </Link>
         ))}

@@ -1,7 +1,7 @@
 {
   "id": "endgame-five-one-rolldown-in-order",
   "category": "endgame",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 5-1, level 8 with 78 gold at 40 HP, five players left. Your board is 2-star 4-costs with two 1-costs still filling slots. You are 30 XP from level 9. Put the steps of this round in the order that gets the most out of the gold.",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "hp-management-counting-losses-left-at-4-1",
   "category": "hp-management",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-1, level 7 with 46 gold at 38 HP. Losses at stage 4 in this lobby cost 12 to 16 HP. Your board is mid, your 4-cost carry is 1-star. Put the steps of deciding how much to spend this round in the right order.",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "econ-break-50-because-you-win-now",
   "category": "econ",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 3-5, level 7 (you leveled early on a 4-win streak), 55 gold, 91 HP. Your board is two 2-star 4-costs with items and it is the strongest in the lobby by a margin. The shop shows a third copy of your 4-cost tank. Nobody else is close to level 8. What do you do?",
   "state": {

@@ -3,22 +3,36 @@
 import { useState } from "react";
 import { Panel, SectionTitle } from "@/components/ui/Panel";
 import type { PatchNotesFile } from "@/lib/patch-notes";
+import { useMarkSeen } from "@/lib/whats-new";
 
 /**
  * Riot's patch notes, mirrored by scripts/sync-patch-notes.ts. The HTML is
  * whitelist-sanitised at sync time (lib/patch-notes.ts#sanitizeHtml); the
- * page only picks which note to show.
+ * page only picks which note to show. Opening the page marks the newest note
+ * as seen in this browser (lib/whats-new.ts); notes published after the one
+ * seen last time carry a NEW tag for this visit.
  */
 export function PatchNotes({ data }: { data: PatchNotesFile }) {
   const [slug, setSlug] = useState(data.notes[0]!.slug);
   const note = data.notes.find((n) => n.slug === slug) ?? data.notes[0]!;
   const older = data.index.filter((i) => !data.notes.some((n) => n.slug === i.slug));
+  const seenBefore = useMarkSeen("patch-notes", data.notes[0]!.slug);
+  const seenAt = seenBefore ? (data.notes.find((n) => n.slug === seenBefore) ?? data.index.find((i) => i.slug === seenBefore))?.publishedAt ?? null : null;
+  const isNew = (publishedAt: string) => seenBefore !== undefined && seenAt !== null && publishedAt > seenAt;
+  const newCount = data.notes.filter((n) => isNew(n.publishedAt)).length;
   return (
     <div className="space-y-6">
+      {newCount ? (
+        <p className="pop flex items-center gap-2 text-sm text-teal" role="status">
+          <span className="display border border-teal px-1 text-[0.55rem] font-bold uppercase tracking-[0.15em]">New</span>
+          {newCount === 1 ? "One patch note" : `${newCount} patch notes`} published since your last visit.
+        </p>
+      ) : null}
       <div className="flex flex-wrap items-center gap-2">
         <span className="display text-[0.65rem] uppercase tracking-[0.2em] text-gold">Patch</span>
         {data.notes.map((n) => (
-          <button key={n.slug} type="button" className={`chip ${n.slug === note.slug ? "chip-active" : ""}`} aria-pressed={n.slug === note.slug} onClick={() => setSlug(n.slug)}>
+          <button key={n.slug} type="button" className={`chip ${n.slug === note.slug ? "chip-active" : ""}`} aria-pressed={n.slug === note.slug} onClick={() => setSlug(n.slug)} style={isNew(n.publishedAt) ? { borderColor: "var(--teal)" } : undefined}>
+            {isNew(n.publishedAt) ? <span className="h-1.5 w-1.5 rounded-full bg-teal shadow-[0_0_6px_var(--teal)]" aria-label="New" /> : null}
             {n.patch ?? n.title}
             <span className="text-dim">{n.publishedAt.slice(0, 10)}</span>
           </button>

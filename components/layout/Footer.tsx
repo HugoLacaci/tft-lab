@@ -18,7 +18,7 @@ export function Footer() {
           <a href="https://developer.riotgames.com/docs/lol#data-dragon" rel="noopener noreferrer" target="_blank">
             Riot Data Dragon
           </a>
-          . Credits on <Link href="/resources">Resources</Link>.
+          ; Little Legend art via CommunityDragon. Credits on <Link href="/resources">Resources</Link>.
         </p>
       </div>
     </footer>

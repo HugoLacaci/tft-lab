@@ -1,7 +1,7 @@
 {
   "id": "positioning-tank-to-catch-the-dive",
   "category": "positioning",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-1. Your next opponent has two 2-star assassins in their back corners; they jump to the hex furthest from themselves, which is your back corner on the same side as your carry (bottom right). Your carry is already in the centre-right of the back row and your 4-cost tank with two defensive items is on the bench after an item swap. Place the tank where it catches the dive.",
   "state": {

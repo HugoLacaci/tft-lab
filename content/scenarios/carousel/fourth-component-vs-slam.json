@@ -1,7 +1,7 @@
 {
   "id": "carousel-fourth-component-vs-slam",
   "category": "carousel",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-4 carousel. You hold three loose components: two AD and one defensive. Your 3-cost carry has one completed item and is doing all your damage. The carousel offers an AD component, a defensive component, and a completed carry item on a unit you do not need. What do you take?",
   "state": {

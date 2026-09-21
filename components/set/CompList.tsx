@@ -13,6 +13,9 @@ import type { ItemLookup, UnitLookup } from "@/lib/set-data";
 import type { Rank } from "@/lib/tiers";
 import { ItemIcon, TierBadge, TraitIcon, UnitIcon } from "./icons";
 import { RankBadge } from "./RankBadge";
+import { ChangeBadge, ChangeIcon, CHANGE_META } from "./ChangeBadge";
+import { changeCounts, type ChangeKind, type CompChange, type CompsChangesFile } from "@/lib/comps-changes";
+import { useMarkSeen } from "@/lib/whats-new";
 
 const TIER_ORDER: Record<Comp["tier"], number> = { S: 0, A: 1, B: 2, C: 3, X: 4 };
 
@@ -34,6 +37,10 @@ export interface LiveMeta {
 
 export interface CompListProps {
   file: CompsFile;
+  /** data/generated/comps-changes.json: what moved since the previous patch */
+  changes?: CompsChangesFile | null;
+  /** stamp of those changes; opening the page marks it seen (lib/whats-new.ts) */
+  changesStamp?: string | null;
   /** live clusters from data/generated/meta.json (optional) */
   meta?: LiveMeta | null;
   /** curated comp id → matching live cluster, computed server-side */
@@ -52,13 +59,23 @@ const TIER_COLOR: Record<Comp["tier"], string> = { S: "#ffb642", A: "#1bc47d", B
 const TIER_LABEL: Record<Comp["tier"], string> = { S: "S tier", A: "A tier", B: "B tier", C: "C tier", X: "Situational" };
 const STYLE_LABEL: Record<Comp["style"], string> = { "fast-9": "Fast 9", reroll: "Reroll", standard: "Standard", emblem: "Emblem / augment" };
 
-export function CompList({ file, meta, live = {}, units, items, traitNames, traits = {}, augments, itemRanks, augmentRanks }: CompListProps) {
+export function CompList({ file, changes = null, changesStamp = null, meta, live = {}, units, items, traitNames, traits = {}, augments, itemRanks, augmentRanks }: CompListProps) {
   const [open, setOpen] = useState<string | null>(null);
   const [style, setStyle] = useState<Comp["style"] | "">("");
   const [q, setQ] = useState("");
+  const [onlyChanged, setOnlyChanged] = useState(false);
+  useMarkSeen("comps", changesStamp);
+  const counts = changeCounts(changes);
+  const changedIds = new Set(Object.keys(changes?.changes ?? {}));
   const sorted = useMemo(() => [...file.comps].sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier] || a.name.localeCompare(b.name)), [file.comps]);
-  const list = sorted.filter((c) => (!style || c.style === style) && (!q || c.name.toLowerCase().includes(q.toLowerCase()) || c.board.some((u) => units[u[0]]?.name.toLowerCase().includes(q.toLowerCase()))));
-  const tiers = (["S", "A", "B", "C", "X"] as Comp["tier"][]).filter((t) => list.some((c) => c.tier === t));
+  const list = sorted.filter((c) => (!onlyChanged || changedIds.has(c.id)) && (!style || c.style === style) && (!q || c.name.toLowerCase().includes(q.toLowerCase()) || c.board.some((u) => units[u[0]]?.name.toLowerCase().includes(q.toLowerCase()))));
+  // Comps that left a tier this patch: shown as a ghost row in their old tier, pointing at the card in the new one.
+  const movedFrom = (t: Comp["tier"]) => list.filter((c) => { const ch = changes?.changes[c.id]; return ch && (ch.kind === "up" || ch.kind === "down") && ch.from === t; });
+  const tiers = (["S", "A", "B", "C", "X"] as Comp["tier"][]).filter((t) => list.some((c) => c.tier === t) || movedFrom(t).length > 0);
+  const jumpTo = (id: string) => {
+    setOpen(id);
+    document.getElementById(`comp-${id}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <div className="space-y-6">
       <div className="flex flex-wrap items-center gap-2">
@@ -75,6 +92,28 @@ export function CompList({ file, meta, live = {}, units, items, traitNames, trai
         </span>
       </div>
 
+      {changes && changedIds.size ? (
+        <div className="panel pop flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 text-xs" role="status" aria-label="Changes since the previous patch">
+          <span className="display uppercase tracking-[0.2em] text-gold">Since patch {changes.since ?? "?"}</span>
+          {(["new", "up", "down", "adjusted"] as ChangeKind[])
+            .filter((k) => counts[k] > 0)
+            .map((k) => (
+              <span key={k} className="inline-flex items-center gap-1" style={{ color: CHANGE_META[k].color }} title={CHANGE_META[k].title}>
+                <ChangeIcon kind={k} size={13} />
+                <span className="font-semibold tabular-nums">{counts[k]}</span> {CHANGE_META[k].label.toLowerCase()}
+              </span>
+            ))}
+          {changes.removed.length ? (
+            <span className="text-dim" title={changes.removed.map((r) => r.name).join(", ")}>
+              {changes.removed.length} dropped
+            </span>
+          ) : null}
+          <button type="button" className={`chip ml-auto ${onlyChanged ? "chip-active" : ""}`} aria-pressed={onlyChanged} onClick={() => setOnlyChanged((v) => !v)}>
+            {onlyChanged ? "Showing changes only" : "Show changes only"}
+          </button>
+        </div>
+      ) : null}
+
       {tiers.map((t) => (
         <section key={t} aria-label={TIER_LABEL[t]}>
           <div className="mb-2 flex items-center gap-2">
@@ -86,11 +125,33 @@ export function CompList({ file, meta, live = {}, units, items, traitNames, trai
           <ul className="space-y-2">
             {list
               .filter((c) => c.tier === t)
-              .map((c) => (
-                <li key={c.id}>
-                  <CompCard comp={c} liveStat={live[c.id]} isOpen={open === c.id} onToggle={() => setOpen(open === c.id ? null : c.id)} units={units} items={items} traitNames={traitNames} traits={traits} augments={augments} itemRanks={itemRanks} augmentRanks={augmentRanks} />
+              .map((c) => {
+                const ch = changes?.changes[c.id];
+                const moved = ch && (ch.kind === "up" || ch.kind === "down");
+                return (
+                  <li key={c.id} id={`comp-${c.id}`} className={moved ? "comp-moved" : ch ? "pop" : ""} style={moved ? ({ ["--move-color" as string]: CHANGE_META[ch.kind].color } as React.CSSProperties) : undefined}>
+                    <CompCard comp={c} change={ch} liveStat={live[c.id]} isOpen={open === c.id} onToggle={() => setOpen(open === c.id ? null : c.id)} units={units} items={items} traitNames={traitNames} traits={traits} augments={augments} itemRanks={itemRanks} augmentRanks={augmentRanks} />
+                  </li>
+                );
+              })}
+            {movedFrom(t).map((c) => {
+              const ch = changes!.changes[c.id]!;
+              return (
+                <li key={`ghost-${c.id}`}>
+                  <button type="button" onClick={() => jumpTo(c.id)} className="comp-ghost notch flex w-full items-center gap-3 border border-dashed px-3 py-2 text-left text-xs" style={{ borderColor: CHANGE_META[ch.kind].color }} title={`Open ${c.name} in its new tier`}>
+                    <span className="inline-flex items-center gap-1 font-semibold" style={{ color: CHANGE_META[ch.kind].color }}>
+                      <ChangeIcon kind={ch.kind} size={13} />
+                      {ch.kind === "up" ? "Moved up" : "Moved down"}
+                    </span>
+                    <span className="text-gold-bright">{c.name}</span>
+                    <span className="text-dim">
+                      now in {TIER_LABEL[ch.to!]} · was here on patch {changes?.since ?? "?"}
+                    </span>
+                    <span className="ml-auto text-dim">Jump to it →</span>
+                  </button>
                 </li>
-              ))}
+              );
+            })}
           </ul>
         </section>
       ))}
@@ -153,6 +214,7 @@ export function CompList({ file, meta, live = {}, units, items, traitNames, trai
 
 function CompCard({
   comp: c,
+  change,
   liveStat,
   isOpen,
   onToggle,
@@ -163,7 +225,7 @@ function CompCard({
   augments,
   itemRanks,
   augmentRanks,
-}: { comp: Comp; liveStat?: LiveComp; isOpen: boolean; onToggle: () => void } & Omit<CompListProps, "file" | "meta" | "live">) {
+}: { comp: Comp; change?: CompChange; liveStat?: LiveComp; isOpen: boolean; onToggle: () => void } & Omit<CompListProps, "file" | "meta" | "live" | "changes" | "changesStamp">) {
   const board = c.board.map(([championId, row, col, star, its]) => ({ championId, row, col, star, items: its }));
   const carries = new Set(c.carries.map((x) => x.championId));
   const ordered = [...board].sort((a, b) => (carries.has(b.championId) ? 1 : 0) - (carries.has(a.championId) ? 1 : 0) || (units[b.championId]?.cost ?? 0) - (units[a.championId]?.cost ?? 0));
@@ -198,7 +260,10 @@ function CompCard({
           {c.tier}
         </span>
         <span className="min-w-[10rem]">
-          <span className="block text-sm text-gold-bright">{c.name}</span>
+          <span className="flex items-center gap-2 text-sm text-gold-bright">
+            {c.name}
+            {change ? <ChangeBadge change={change} /> : null}
+          </span>
           <span className="block text-[0.65rem] uppercase tracking-wider text-dim">
             {STYLE_LABEL[c.style]}
             {liveStat ? (
@@ -239,6 +304,20 @@ function CompCard({
       {isOpen ? (
         <div className="border-t border-[var(--gold-dim)] p-3 sm:p-4">
           <p className="text-sm">{c.summary}</p>
+          {change ? (
+            <div className="mt-3 border-l-2 pl-3 text-xs" style={{ borderColor: CHANGE_META[change.kind].color }} aria-label="What changed">
+              <span className="display uppercase tracking-[0.15em]" style={{ color: CHANGE_META[change.kind].color }}>
+                {change.kind === "new" ? "New this patch" : change.kind === "adjusted" ? "Adjusted this patch" : `Tier ${change.from} → ${change.to}`}
+              </span>
+              {change.details.length ? (
+                <ul className="mt-1 space-y-0.5 text-dim">
+                  {change.details.map((d, i) => (
+                    <li key={i}>{d}</li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
+          ) : null}
           <ul className="mt-3 flex flex-wrap gap-2" aria-label="Traits on the final board">
             {activeTraits.map((t) => (
               <li key={t.id} className="flex items-center gap-1.5" title={`${traitNames[t.id] ?? t.id}: ${t.n}${t.next ? ` (next ${t.next})` : ""}`}>

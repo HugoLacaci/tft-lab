@@ -1,7 +1,7 @@
 {
   "id": "pivot-blossom-to-coven-on-ap-items",
   "category": "pivot",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 3-2 augment round, level 6, 42 gold, 66 HP. You are playing Blossom around Yunara with Rabadon's Deathcap and Blue Buff, but Seat 2 and Seat 7 both have 2-star Ahri and are itemising Blossom hard. This shop shows Cassiopeia, Elise and Caitlyn; you already own a 2-star Elise and a Morgana. Cassiopeia and Morgana are AP casters that use Deathcap and Blue Buff. What is the plan?",

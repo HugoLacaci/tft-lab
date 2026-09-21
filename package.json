@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run validate && next build",
+    "build": "npm run validate && npm run sync-comps && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
@@ -12,6 +12,7 @@
     "sync-patch-notes": "tsx scripts/sync-patch-notes.ts",
     "sync-meta": "tsx scripts/sync-meta.ts",
     "sync-wisps": "tsx scripts/sync-wisps.ts",
+    "sync-comps": "tsx scripts/sync-comps.ts",
     "validate": "tsx scripts/validate.ts",
     "test": "vitest run",
     "test:watch": "vitest",

@@ -1,0 +1,94 @@
+{
+  "id": "puzzle-3-2-level-six",
+  "category": "level-timing",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "3-2: buy level 6",
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, 54 gold, level 5, 4 XP to level 6. Your board is stable with two 2-star units and 78 HP. The standard play?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "3-2",
+    "gold": 54,
+    "hp": 78,
+    "level": 5,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 2,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "level",
+        "label": "Buy XP to level 6 now, stay above 50 next round."
+      },
+      {
+        "id": "roll",
+        "label": "Stay level 5 and roll 10 gold for 2-stars."
+      },
+      {
+        "id": "save",
+        "label": "Stay level 5, save to 60 and level at 3-5."
+      }
+    ],
+    "correct": [
+      "level"
+    ]
+  },
+  "explanation": "Level 6 at 3-2 is the standard timing: it is one 4-gold purchase away, it puts a sixth unit on the board for the whole of stage 3, and it opens the 3-cost odds you need to hit pairs naturally. You drop to 50 gold, which still earns full interest. Rolling at 5 for 1- and 2-cost pairs is what you do with a weak board and low HP, not with 78 HP and a stable board. Saving to 60 gains one extra interest at the cost of fighting a unit down for three rounds.\n\nThe next question is whether you level again at 3-5 or 4-1, and that depends on HP and the lobby.",
+  "principle": "Take the standard level timing unless you have a reason. Being one XP purchase away is not a reason to wait.",
+  "guideLink": "/guides/leveling#standard-level-timings",
+  "commonMistake": "Waiting to level until you see something in the shop, which means levelling and rolling in the same round."
+}

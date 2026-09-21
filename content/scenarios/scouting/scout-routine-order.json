@@ -1,7 +1,7 @@
 {
   "id": "scouting-scout-routine-order",
   "category": "scouting",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "It is the planning phase of 3-2 and you have about 25 seconds. Put the scouting steps in the order that gives you the most decision-relevant information for the time.",
   "state": {

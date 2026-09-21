@@ -1,7 +1,7 @@
 {
   "id": "augment-trait-augment-far-away",
   "category": "augment",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 3-2 augment. You are level 6 with 34 gold at 72 HP. Your board is a generic frontline with a 3-cost AD carry. The Trait Crest offered is for a vertical whose two best carries you have seen two other players buy every round. Which augment do you take?",
   "state": {

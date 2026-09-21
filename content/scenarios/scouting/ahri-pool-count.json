@@ -1,7 +1,7 @@
 {
   "id": "scouting-ahri-pool-count",
   "category": "scouting",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 4-5, level 8, 58 gold, 44 HP. You hold one Ahri with Deathcap, Blue Buff and Jeweled Gauntlet. The 4-cost pool is 10 copies per champion. Scouting: Seat 3 has a 2-star Ahri (three copies), Seat 5 has one Ahri on their bench. You also hold two copies of Sett on the bench and nobody else has Sett. Given the pool, what do you do with the 58 gold?",

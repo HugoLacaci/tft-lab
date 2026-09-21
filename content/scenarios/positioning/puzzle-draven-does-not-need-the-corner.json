@@ -1,0 +1,155 @@
+{
+  "id": "puzzle-draven-does-not-need-the-corner",
+  "category": "positioning",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Draven does not need the corner",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-3, level 8. Enemy Kha'Zix and Rengar sit in their back corners: Kha'Zix leaps to the farthest enemy in range, Rengar to the lowest-percent-health enemy. Your 1-star Kobuko on the back-left corner is bait. Draven, three items, range 6, is on the bench. Place him.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-3",
+    "gold": 24,
+    "hp": 31,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_BrambleVest"
+        ]
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 2,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 3,
+        "col": 0,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ivern",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_KhaZix",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": [
+          "DA_InfinityEdge"
+        ]
+      },
+      {
+        "championId": "DA_18_Rengar",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": [
+          "DA_Bloodthirster"
+        ]
+      },
+      {
+        "championId": "DA_18_Elise",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Warwick",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_RabadonsDeathcap"
+        ]
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_Draven18",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 4
+      }
+    ]
+  },
+  "explanation": "Two divers, two corners. Kobuko at 1-star is the lowest-health unit on your board, so Rengar goes to him; Kha'Zix goes to whichever corner is farthest from his own. Both of your back corners are therefore landing zones, and the only thing a corner ever bought a carry was distance, which Draven does not need: with range 6 he attacks from anywhere on the board. Put him in the centre of the back two rows, next to Ivern for the shield and with Vi and Diana ready to collapse on whatever lands.\n\nColumn 6 is the other diver corner. Column 5 is adjacent to it and to Diana, which makes the group Kha'Zix wants.",
+  "principle": "Ask what the hex buys the carry. If the answer is distance and the carry has range, the hex buys nothing.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Cornering a long-range carry out of habit, straight into the second diver."
+}

@@ -1,0 +1,164 @@
+{
+  "id": "puzzle-elder-dragon-splash",
+  "category": "positioning",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Elder Dragon splashes",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 6-1, level 9. Enemy Elder Dragon's attacks also hit every enemy adjacent to his target, and Sejuani cleaves a cone. Sett and Maokai stand together in the centre. Taric 2-star is on the bench. Place him so he is not a third head in the cleave.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "6-1",
+    "gold": 18,
+    "hp": 22,
+    "level": 9,
+    "xpToNext": 80,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 2,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth",
+          "DA_RabadonsDeathcap"
+        ]
+      },
+      {
+        "championId": "DA_18_Ashe",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": [
+          "DA_SpearOfShojin",
+          "DA_RedBuff",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Alune",
+        "row": 3,
+        "col": 0,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_ElderDragon",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SteraksGage"
+        ]
+      },
+      {
+        "championId": "DA_18_Sejuani",
+        "row": 0,
+        "col": 4,
+        "star": 3,
+        "items": []
+      },
+      {
+        "championId": "DA_Krug18",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Cinderling18",
+        "row": 3,
+        "col": 3,
+        "star": 3,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_Taric18",
+    "correctHexes": [
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 0,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 5
+      }
+    ]
+  },
+  "explanation": "The Iron rule is that tanks stand together. The Master exception is a frontline built to punish that: Elder Dragon's every attack splashes onto adjacent units and Sejuani's cone hits the same cluster, so three tanks in a row means three tanks taking every hit. Sett and Maokai already share the splash; Taric should not. Put him one hex apart: column 5 on the front row, or row 1 column 4 or 5, where he still meets the enemy melee but is not adjacent to the pair. Column 0 works on the other side for the same reason. Column 4 and column 1 are adjacent to the pair and wrong.\n\nHis passive shields allies near him when he or his pair drops low, so one hex of separation costs nothing.",
+  "principle": "Every default has the board that breaks it. Adjacent tanks share splash; against splash, leave a gap.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Applying the tanks-together rule against the one comp that cleaves the whole line."
+}

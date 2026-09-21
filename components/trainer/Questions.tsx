@@ -174,3 +174,43 @@ export function PlacementControls({ unitName, placed, locked }: { unitName: stri
     </div>
   );
 }
+
+/** Swap questions: pick the two units that should trade hexes (click here or on the board). */
+export function SwapControls({ scenario, units, picked, onChange, locked }: { scenario: Scenario; units: Record<string, UnitLookup>; picked: string[]; onChange: (v: string[]) => void; locked: boolean }) {
+  const q = scenario.question as Extract<Question, { type: "swap" }>;
+  const toggle = (id: string) => onChange(picked.includes(id) ? picked.filter((p) => p !== id) : [...picked.slice(-1), id]);
+  return (
+    <fieldset disabled={locked}>
+      <legend className="display mb-2 text-[0.65rem] uppercase tracking-[0.2em] text-gold">Swap two units</legend>
+      <div className="flex flex-wrap gap-2">
+        {scenario.state.board.map((u) => {
+          const lk = units[u.championId];
+          if (!lk) return null;
+          const on = picked.includes(u.championId);
+          const isCorrect = locked && q.correctPairs[0]!.includes(u.championId);
+          return (
+            <button
+              key={`${u.row},${u.col}`}
+              type="button"
+              aria-pressed={on}
+              onClick={() => toggle(u.championId)}
+              className="notch flex items-center gap-2 border px-2 py-1 text-xs"
+              style={{ borderColor: isCorrect ? "var(--teal)" : on ? "var(--gold)" : "var(--gold-dim)", background: on ? "var(--bg-raised)" : undefined }}
+              title={hexLabel(u)}
+            >
+              <UnitIcon icon={lk.icon} name={lk.name} cost={lk.cost} size={24} />
+              {lk.name}
+            </button>
+          );
+        })}
+      </div>
+      <p className="mt-2 text-xs text-dim" aria-live="polite">
+        {picked.length === 2
+          ? `Swap ${units[picked[0]!]?.name ?? picked[0]} with ${units[picked[1]!]?.name ?? picked[1]}.`
+          : picked.length === 1
+            ? `${units[picked[0]!]?.name ?? picked[0]} selected; pick the unit it trades places with.`
+            : "One move fixes this board: pick the two units that should trade hexes."}
+      </p>
+    </fieldset>
+  );
+}

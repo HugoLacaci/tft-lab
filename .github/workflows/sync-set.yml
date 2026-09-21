@@ -38,6 +38,10 @@ jobs:
         run: npm run sync-wisps
         continue-on-error: true
 
+      - name: Diff the curated comps against the previous patch
+        run: npm run sync-comps
+        continue-on-error: true
+
       - name: Sync item / unit / comp statistics from the Riot API
         if: env.RIOT_API_KEY != ''
         env:

@@ -1,7 +1,7 @@
 {
   "id": "carousel-first-carousel-flexible-component",
   "category": "carousel",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 1-4, first carousel, you pick late. Your opener is a 1-cost tank and a 1-cost carry with no items yet. The remaining units carry: an AD component, an AP component, a defensive component and a 1-cost you already own a pair of. Which do you take?",
   "state": {

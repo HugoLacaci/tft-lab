@@ -1,7 +1,7 @@
 {
   "id": "augment-natures-shelter-with-four-elderwood",
   "category": "augment",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 3-2 gold augment, level 6, 46 gold, 77 HP. Your board is four Elderwood units (Ornn, Alistar, Xayah, Hecarim) with Xayah carrying. Options: Nature's Shelter (Elderwood trait augment, also gives an Alistar, an Ornn and a Xayah), Big Grab Bag (3 components, 2 gold, a Reforger) and FOURcing (a random 4-cost). Which do you take?",

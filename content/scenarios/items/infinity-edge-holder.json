@@ -1,7 +1,7 @@
 {
   "id": "items-infinity-edge-holder",
   "category": "items",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 4-5, level 8, 51 HP. You just completed an Infinity Edge. Your board: Malphite and Sett frontline, Ahri (AP, two items) in the backline, Aphelios (2-star, Guinsoo's Rageblade) and Sivir (1-star, no items, played for Hunter). Who holds the Infinity Edge?",

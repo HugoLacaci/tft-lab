@@ -1,7 +1,7 @@
 {
   "id": "endgame-sixth-place-board-playing-for-first",
   "category": "endgame",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 4-5, level 8 with 44 gold at 34 HP, six players left. Your board has a 1-star 4-cost carry and a 1-star 4-cost tank; you lose to four of the five other players. The shop shows a 5-cost you like for a 'ceiling' version of your comp. What is the play?",
   "state": {

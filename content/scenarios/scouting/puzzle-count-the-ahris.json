@@ -1,0 +1,127 @@
+{
+  "id": "puzzle-count-the-ahris",
+  "category": "scouting",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "Count the Ahris",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-1 after levelling to 8, 44 gold, 51 HP. You hold one Ahri with Jeweled Gauntlet and Nashor's. Scouting: two other players are on Blossom Ahri and between their boards and benches you count five copies. The 4-cost pool is 10 per champion. What is the play?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "4-1",
+    "gold": 44,
+    "hp": 51,
+    "level": 8,
+    "xpToNext": 70,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth"
+        ]
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_MasterYi_AD",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "lobby": [
+      {
+        "player": "Seat 3",
+        "hp": 64,
+        "note": "Ahri 2-star, Blossom 5, three items on her"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 40,
+        "note": "Ahri 1-star plus one on bench, Blossom 3"
+      },
+      {
+        "player": "Seat 2",
+        "hp": 58,
+        "note": "Coven Morgana, uncontested"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "pivot",
+        "label": "Keep the items, pivot the carry to Morgana and Invokers; sell Ahri only when Morgana 2-star is in."
+      },
+      {
+        "id": "roll",
+        "label": "Roll to 10 now for Ahri 2-star before the other two get there."
+      },
+      {
+        "id": "hold",
+        "label": "Hold 50 and hope Seat 6 dies first."
+      }
+    ],
+    "correct": [
+      "pivot"
+    ]
+  },
+  "explanation": "Six of ten Ahris are already out of the pool: your one plus their five. You need two more from the four that remain, while two players who are ahead of you on copies also want them, and Seat 3 is already 2-star. Rolling 44 gold into that pool is the worst odds on the table. Jeweled Gauntlet and Nashor's are not Ahri items; they are AP carry items, and Morgana is an uncontested AP carry with an Invoker line nobody is on. Keep Ahri as a body, roll for Morgana and Invokers, and sell Ahri when she is no longer your carry.\n\nHolding 50 and praying is how you go 7th with a 2-star Sett.",
+  "principle": "Copies out of the pool are the number that decides a contest. Count them before you roll, and pivot on items, not on units.",
+  "guideLink": "/guides/pivoting#reading-contest",
+  "commonMistake": "Racing two players to a unit because you have the items for it, when the items fit a different carry."
+}

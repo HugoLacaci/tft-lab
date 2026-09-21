@@ -8,6 +8,7 @@ import { sameHex, type HexCoord } from "./hex";
  *   augment     → string (augment id)
  *   item-holder → string (unit id)
  *   ordering    → number[] (indices of steps in the chosen order)
+ *   swap        → string[] (the two unit ids to swap, any order)
  */
 export type Answer = string[] | HexCoord | string | number[];
 
@@ -40,6 +41,12 @@ export function grade(q: Question, answer: Answer): Grade {
     case "item-holder": {
       const ok = typeof answer === "string" && q.correctUnitIds.includes(answer);
       return { correct: ok, score: ok ? 1 : 0, detail: ok ? "Right holder." : "Wrong holder." };
+    }
+    case "swap": {
+      const picked = Array.isArray(answer) ? (answer as string[]) : [];
+      const ok = picked.length === 2 && q.correctPairs.some(([a, b]) => (picked[0] === a && picked[1] === b) || (picked[0] === b && picked[1] === a));
+      const half = !ok && picked.length === 2 && q.correctPairs.some((p) => p.includes(picked[0]!) || p.includes(picked[1]!));
+      return { correct: ok, score: ok ? 1 : half ? 0.5 : 0, detail: ok ? "Right swap." : half ? "One of the two units was right." : "Not the swap that fixes the board." };
     }
     case "ordering": {
       const order = Array.isArray(answer) ? (answer as number[]) : [];

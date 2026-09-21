@@ -1,0 +1,143 @@
+{
+  "id": "puzzle-quicksilver-on-ashe",
+  "category": "items",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "Quicksilver against Lillia",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5. The strongest board in the lobby runs Lillia, whose butterflies put units to sleep, and Amumu, whose cast stuns everything nearby. You just built Quicksilver. Who holds it?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [
+      "DA_Quicksilver"
+    ],
+    "bench": [],
+    "stage": "4-5",
+    "gold": 30,
+    "hp": 47,
+    "level": 8,
+    "xpToNext": 50,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth"
+        ]
+      },
+      {
+        "championId": "DA_18_Ashe",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": [
+          "DA_SpearOfShojin",
+          "DA_RedBuff"
+        ]
+      },
+      {
+        "championId": "DA_18_Alune",
+        "row": 3,
+        "col": 1,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_GnarSmall",
+        "row": 1,
+        "col": 1,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Lillia",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Amumu18",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ezreal",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge"
+        ]
+      }
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "DA_Quicksilver",
+    "correctUnitIds": [
+      "DA_18_Ashe"
+    ]
+  },
+  "explanation": "Quicksilver makes its holder immune to crowd control for the opening seconds of the fight, and its value is the damage that keeps happening while everyone else is asleep or stunned. That is your main carry: Ashe already has Shojin and Red Buff, so she is the unit whose uptime decides the fight. Ahri is the second carry and a fine second choice if you had two.\n\nOn Sett it stops one stun on a unit whose job is to absorb casts anyway. On Alune it protects a 1-star body. Defensive items on the carry are not a waste when the enemy's plan is to turn the carry off.",
+  "principle": "Anti-crowd-control goes on the unit whose downtime loses the fight, which is almost always the main carry.",
+  "guideLink": "/guides/items#bis-is-a-preference",
+  "commonMistake": "Putting Quicksilver on the tank because it is a defensive item and tanks get defensive items."
+}

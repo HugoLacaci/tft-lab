@@ -1,7 +1,7 @@
 {
   "id": "econ-roll-a-little-each-round",
   "category": "econ",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-1, level 6 with 38 gold, 79 HP, on a 2-loss streak that costs you about 6 HP a round. Your board is 2-starred everywhere except a 1-star 3-cost carry. The shop has nothing. You have rolled twice each of the last three rounds \"to look for the carry\". What is the correct habit here?",
   "state": {

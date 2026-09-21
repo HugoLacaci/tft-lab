@@ -1,7 +1,7 @@
 {
   "id": "positioning-second-tank-away-from-the-cleave",
   "category": "positioning",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 3-2. Your next opponent's frontline is a 2-star 3-cost bruiser with a cleave that damages every unit adjacent to its target, and it walks straight at whichever of your units is closest. Your 3-cost tank holds the centre-left of your front row. Your second tank (a 2-star 2-cost) is on the bench. Place it so the cleave never hits two of your frontliners at once.",
   "state": {

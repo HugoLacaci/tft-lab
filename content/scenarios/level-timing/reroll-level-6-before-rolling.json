@@ -1,7 +1,7 @@
 {
   "id": "level-timing-reroll-level-6-before-rolling",
   "category": "level-timing",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 3-2, level 5 with 54 gold, 76 HP. You are on a 2-cost reroll plan: your 2-cost carry is at 6 of 9 copies and you have counted 4 copies on other boards. You hold a 3-star-ready pair of 2-cost tanks too. Do you roll now at level 5 or level to 6 first?",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "pivot-still-contested-at-3-2",
   "category": "pivot",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-2 augment round. At 2-1 you scouted three other players on your 2-cost reroll carry and decided to wait. Now, at 3-2, two of them are still holding the carry with a 2-star each, and you have a pair. You are level 5 with 44 gold at 78 HP, and your items are flexible AD components. Your board has a 2-star 3-cost AD carry from a different line. What is the play?",
   "state": {

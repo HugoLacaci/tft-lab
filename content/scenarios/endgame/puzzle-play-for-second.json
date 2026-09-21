@@ -1,0 +1,136 @@
+{
+  "id": "puzzle-play-for-second",
+  "category": "endgame",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Play for second",
+  "setAgnostic": true,
+  "prompt": "Stage 6-2, four players left. You have 34 HP and 52 gold at level 8. First place has 71 HP and a capped board you have not beaten in three tries. Third and fourth have 12 and 9 HP with boards you beat comfortably. What do you do?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "6-2",
+    "gold": 52,
+    "hp": 34,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-4",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed",
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-4",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-4",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-4",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:assassin-3",
+        "row": 2,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "lobby": [
+      {
+        "player": "Seat 1",
+        "hp": 71,
+        "note": "Capped 3-star 4-cost board, 3 five-costs"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 12,
+        "note": "2-star 4-costs, you beat them twice"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 9,
+        "note": "Reroll board, falling off"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "second",
+        "label": "Hold 50, position to beat the two low players every time, and lock second before spending anything."
+      },
+      {
+        "id": "first",
+        "label": "Level to 9 and roll everything for the 5-costs that could beat first."
+      },
+      {
+        "id": "roll8",
+        "label": "Roll all 52 at 8 for a 3-star 4-cost now."
+      }
+    ],
+    "correct": [
+      "second"
+    ]
+  },
+  "explanation": "Count the fights. The two low players die in two or three rounds if you keep beating them, and every round you beat them you take no damage. That is a guaranteed second place, worth far more than the difference between second and first. Rolling for a board that might beat first means losing to the low players while you are mid-transition, which is how a locked second turns into a fourth. Level 9 with 52 gold does not cap a board this round either.\n\nOnce the two low players are out, spend everything: at that point the only question is whether you can beat first, and gold in the bank does nothing.",
+  "principle": "Play for the placement you can actually reach. Lock it, then gamble with what is left.",
+  "guideLink": "/guides/hp#playing-for-top-4-with-a-6th-place-board",
+  "commonMistake": "Seeing first place as the goal in every lobby, and turning a sure second into a coin flip."
+}

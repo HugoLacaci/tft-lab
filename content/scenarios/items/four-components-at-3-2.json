@@ -1,7 +1,7 @@
 {
   "id": "items-four-components-at-3-2",
   "category": "items",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-2. You are at 58 HP after losing three in a row, holding four loose components (two AD, one AP, one defensive) because none of the pairs make the BIS for the 4-cost carry you plan to hit at 4-2. Your 3-cost carry and 2-cost tank are both naked. What do you do with the components?",
   "state": {

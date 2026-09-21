@@ -1,7 +1,7 @@
 {
   "id": "augment-econ-augment-below-50-hp",
   "category": "augment",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-2 gold augment. You are at 42 HP after a 4-loss streak, level 6 with 31 gold. Your 3-cost carry is 2-star but naked; you hold two loose components that do not combine into anything good. Which augment?",
   "state": {

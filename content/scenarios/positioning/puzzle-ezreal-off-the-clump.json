@@ -1,0 +1,130 @@
+{
+  "id": "puzzle-ezreal-off-the-clump",
+  "category": "positioning",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "Ezreal away from the largest group",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5, level 7. Enemy Gnar transforms and leaps into the largest group of enemies he can reach, then smashes everything around him. Your frontline is three adjacent tanks; LeBlanc and Xayah stand together in the back. Ezreal with two items is on the bench. Place him.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "4-5",
+    "gold": 46,
+    "hp": 52,
+    "level": 7,
+    "xpToNext": 36,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_LeBlanc",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_GnarSmall",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_TitansResolve"
+        ]
+      },
+      {
+        "championId": "DA_18_Rammus",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Tristana",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Ezreal",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 6
+      }
+    ]
+  },
+  "explanation": "Mega Gnar counts heads: he leaps into the largest group of enemies in reach. Right now your frontline of three is the largest group, which is what you want. Put Ezreal next to LeBlanc and Xayah and the backline becomes a group of three too, and a tie is a coin flip you lose your carry on. Place him on the far side of the back row, at least two hexes from Xayah: the backline stays two groups of small size, the tanks remain the biggest target, and Ezreal blinks away from whatever reaches him.\n\nColumn 3 is adjacent to Xayah in this row geometry and makes the trio; 4 and beyond do not.",
+  "principle": "Count the groups the way the enemy ability counts them. Your carry should never make the biggest one.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Filling the back row left to right, which lines every ranged unit up into one clump."
+}

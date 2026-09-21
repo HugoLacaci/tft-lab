@@ -1,7 +1,7 @@
 {
   "id": "hp-management-open-fort-at-2-5",
   "category": "hp-management",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 2-5, level 5 with 26 gold at 94 HP. Your board has no 2-stars and nothing in the shop pairs. Three other players have clearly stronger stage-2 boards. You lost the last two fights for 4 HP each. What is your plan through stage 2?",
   "state": {

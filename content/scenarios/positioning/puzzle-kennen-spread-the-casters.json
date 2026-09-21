@@ -1,0 +1,163 @@
+{
+  "id": "puzzle-kennen-spread-the-casters",
+  "category": "positioning",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "Kennen rushes the group",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-2. The player you fight next has Kennen 2-star: he charges through a nearby group of enemies, then drops a firestorm on the area. Your backline is Ahri, Karma and Yunara. What changes before the fight?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-2",
+    "gold": 31,
+    "hp": 38,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_BrambleVest"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth",
+          "DA_RabadonsDeathcap"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_GnarSmall",
+        "row": 1,
+        "col": 1,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Kennen",
+        "row": 2,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_RabadonsDeathcap",
+          "DA_BlueBuff"
+        ]
+      },
+      {
+        "championId": "DA_Amumu18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Shen",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "spread",
+        "label": "Split the casters: one on each side of the back row and one on row 2, none adjacent to another."
+      },
+      {
+        "id": "shield",
+        "label": "Keep them together but move Taric between them so his shield covers the firestorm."
+      },
+      {
+        "id": "front",
+        "label": "Move Ahri to row 1 so Kennen rushes into the tanks instead."
+      },
+      {
+        "id": "nothing",
+        "label": "Nothing: Kennen is melee, Sett will hold him."
+      }
+    ],
+    "correct": [
+      "spread"
+    ]
+  },
+  "explanation": "Kennen does not walk into your tanks; his cast carries him through a group of enemies and the firestorm hits everything around where he stops. Three casters in a row on the back line are exactly the group he picks. Spread them so that no two are adjacent: Ahri in one back corner, Yunara in the other, Karma on row 2 behind the tanks. Now the biggest group on your board is Sett, Maokai and Yorick, which is where the rush goes, and the firestorm catches at most one caster.\n\nTaric between them keeps the group, and the shield does not stop a firestorm that hits three units. Ahri on row 1 hands Kennen your carry.",
+  "principle": "When a cast seeks groups, decide which group it finds. Make it the tanks.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Trusting the frontline to stop a champion whose ability is a dash."
+}

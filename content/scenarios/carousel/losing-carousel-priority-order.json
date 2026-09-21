@@ -1,7 +1,7 @@
 {
   "id": "carousel-losing-carousel-priority-order",
   "category": "carousel",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 3-4 carousel. You are at 38 HP after five losses, level 6, holding one AD component. Your 3-cost carry is 2-star with one item; the frontline is naked. You pick first, so everything is available. Rank what you should take, from first choice to last.",
   "state": {

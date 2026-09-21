@@ -1,7 +1,7 @@
 {
   "id": "positioning-spread-against-aoe-caster",
   "category": "positioning",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-5. Your next opponent runs a 2-star 4-cost AP caster in the centre of their backline whose spell hits a 3-hex cluster around its target and it targets the unit in the middle of your largest group. Your two backline units and their bodyguard are clumped on the right. Your 3-cost AP carry is on the bench. Place it so the spell cannot hit more than two of your units.",
   "state": {

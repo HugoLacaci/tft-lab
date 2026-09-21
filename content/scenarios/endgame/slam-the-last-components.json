@@ -1,7 +1,7 @@
 {
   "id": "endgame-slam-the-last-components",
   "category": "endgame",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 5-2, level 9 with 28 gold at 36 HP, five players left. You hold an AD component and a defensive component that do not make anything your carry wants; your carry already has three items. Your 5-cost tank has one item. What do you do with the two components?",
   "state": {

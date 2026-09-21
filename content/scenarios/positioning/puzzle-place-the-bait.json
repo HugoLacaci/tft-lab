@@ -1,0 +1,152 @@
+{
+  "id": "puzzle-place-the-bait",
+  "category": "positioning",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Place the bait",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-2, level 8 with seven units on the board and one slot free. Enemy Rengar jumps to the lowest-percent-health enemy in range and Warwick chases whoever he bites. You have a spare 1-star Kobuko. Where does he go?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-2",
+    "gold": 22,
+    "hp": 35,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 2,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 2,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth"
+        ]
+      },
+      {
+        "championId": "DA_18_Ashe",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": [
+          "DA_SpearOfShojin",
+          "DA_RedBuff",
+          "DA_LastWhisper"
+        ]
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Rengar",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": [
+          "DA_Bloodthirster"
+        ]
+      },
+      {
+        "championId": "DA_18_Warwick",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Akali_AD",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Kobuko",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 0
+      }
+    ]
+  },
+  "explanation": "A 1-star 1-cost has the lowest health on your board, so Rengar picks him wherever he is. That makes Kobuko a steering wheel: put him in the back-left corner, as far from Ahri and Ashe as the board allows, and Rengar's jump lands three hexes from anything that matters, with Vi next door to punish him. Kobuko dies, Rengar has to walk back across the board, and your carries had five free seconds.\n\nAnywhere near the carries drags Rengar into them. The front row wastes the bait: Rengar jumps over your tanks anyway, and Kobuko in the line just dies to Warwick first.",
+  "principle": "A unit that will die anyway should die where it costs the enemy the most time.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Filling the last slot with the extra body in the frontline because that is where bodies go."
+}

@@ -1,0 +1,73 @@
+{
+  "id": "puzzle-rageblade-on-the-shooter",
+  "category": "items",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "Rageblade on the shooter",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-3. You combined a Recurve Bow and a Needlessly Large Rod into Guinsoo's Rageblade. Who holds it?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [
+      "DA_GuinsoosRageblade"
+    ],
+    "bench": [],
+    "stage": "2-3",
+    "gold": 15,
+    "hp": 94,
+    "level": 4,
+    "xpToNext": 6,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "DA_GuinsoosRageblade",
+    "correctUnitIds": [
+      "DA_18_Varus"
+    ]
+  },
+  "explanation": "Rageblade gives stacking attack speed for every attack. It wants the unit that attacks the most and lives the longest: a ranged auto-attacker in the back row. Varus is a Rapidfire, whose trait already gains attack speed per attack, and he is your only backline attacker.\n\nOrnn and Kobuko are frontliners who want armour and health. Karma is a caster: she wants mana and ability power, not attack speed. Attack items on tanks are the most common item leak at this level.",
+  "principle": "Attack-speed items go on the ranged auto-attacker. Tanks get tank items.",
+  "guideLink": "/guides/items#slam-or-hold",
+  "commonMistake": "Giving the item to the unit with the most health because it feels safer."
+}

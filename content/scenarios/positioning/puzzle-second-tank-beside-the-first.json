@@ -1,0 +1,81 @@
+{
+  "id": "puzzle-second-tank-beside-the-first",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "Second tank beside the first",
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 5. You bought a second frontliner. Your 3-cost tank is already in the centre of the front row. Place the 2-cost tank.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "3-1",
+    "gold": 31,
+    "hp": 84,
+    "level": 5,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 2,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:tank-2",
+    "correctHexes": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 0,
+        "col": 4
+      }
+    ]
+  },
+  "explanation": "Two frontliners standing next to each other share the enemy's attention: whoever the enemy targets, the other one keeps fighting and the pair blocks the path to the backline. Put the second tank directly beside the first, on column 2 or 4.\n\nA tank in a far corner fights alone against whichever enemy walks to it and leaves a hole in the middle of the line. Row 1 behind the first tank is also wrong: it does not block anything until the first tank dies.",
+  "principle": "A frontline is a line. Fill the hex next to your tank before you fill any other hex.",
+  "guideLink": "/guides/positioning#frontline-and-backline-defaults",
+  "commonMistake": "Spreading tanks across the front row, one per corner, so each one takes a whole enemy side alone."
+}

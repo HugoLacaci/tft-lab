@@ -1,0 +1,151 @@
+{
+  "id": "puzzle-ashe-uses-her-range",
+  "category": "positioning",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "Ashe uses her range",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8. Ashe with three items has attack range 6. The opponent runs an all-melee frontline with no divers and no line spells. Place Ashe.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-1",
+    "gold": 28,
+    "hp": 44,
+    "level": 8,
+    "xpToNext": 70,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_GnarSmall",
+        "row": 1,
+        "col": 1,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth"
+        ]
+      },
+      {
+        "championId": "DA_18_Alune",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Warwick",
+        "row": 0,
+        "col": 3,
+        "star": 3,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_MasterYi_AD",
+        "row": 1,
+        "col": 2,
+        "star": 3,
+        "items": [
+          "DA_Bloodthirster"
+        ]
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 1,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Ashe",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 6
+      }
+    ]
+  },
+  "explanation": "Range 6 means Ashe hits anything on the board from her corner. Against a melee-only board with no divers, the corner is the hex that takes the longest to reach: every enemy has to chew through Sett, Maokai and Taric, then walk the full diagonal. That is three or four more seconds of Ashe arrows than the centre-back gives you, and her Spirit Rift arrow through the most enemies in a line loves a long diagonal through their clump.\n\nThe centre-back is the safe default; here it is the worse hex because there is nothing to be safe from except distance.",
+  "principle": "Long range buys distance; use it when the threat is melee. The default hex is a default, not a rule.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Centring the carry against every board, including the ones where the corner is strictly better."
+}

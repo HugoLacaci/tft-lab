@@ -1,7 +1,7 @@
 {
   "id": "augment-prismatic-2-1-econ-vs-crown",
   "category": "augment",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 2-1, prismatic augment, 100 HP, level 4 with 9 gold. Your opener is four random 1-costs with no shared trait; you have not scouted yet. Options: Delayed Payout (8 gold at the start of every stage from now on), Trait Crown (emblem, 2-star unit and an item for a named trait) and Radiant Promise (one item turns radiant at 5-1). Which do you take?",
   "state": {

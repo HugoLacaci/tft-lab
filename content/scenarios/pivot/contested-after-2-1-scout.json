@@ -1,7 +1,7 @@
 {
   "id": "pivot-contested-after-2-1-scout",
   "category": "pivot",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 2-1 augment round. You opened with a pair of the 1-cost carry of a reroll line you like. Scouting shows three players holding that carry and one of them already has a pair too. What is your plan?",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "carousel-take-the-carry-copy",
   "category": "carousel",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-4 carousel, level 8, 47 HP, you pick third. Your 4-cost AD carry is 1-star with two items and you plan to roll for it at 4-5. The carousel shows a second copy of that carry holding a random defensive component, and separately the exact AD component that completes its BIS third item, carried by a 1-cost. Which do you take?",
   "state": {

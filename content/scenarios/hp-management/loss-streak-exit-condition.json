@@ -1,7 +1,7 @@
 {
   "id": "hp-management-loss-streak-exit-condition",
   "category": "hp-management",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 3-2 augment round, level 6 with 62 gold at 46 HP on a 6-loss streak you started on purpose at 2-2. You hold a 1-star 3-cost AD carry with two completed AD items, a second copy on the bench, and a 2-star 3-cost tank. Stage-3 losses cost 6 to 8 HP; stage 4 will cost 12 to 16. When does the loss streak end?",
   "state": {

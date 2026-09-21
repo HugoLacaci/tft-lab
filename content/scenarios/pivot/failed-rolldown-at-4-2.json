@@ -1,7 +1,7 @@
 {
   "id": "pivot-failed-rolldown-at-4-2",
   "category": "pivot",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 4-2, level 8, 40 HP. You just rolled 40 gold looking for a second copy of your 4-cost AD carry and found none, but you hit three copies of a 4-cost AP caster you were not looking for, now 2-star on the bench, and a 2-star 4-cost tank. You have 18 gold left. Your items are two completed AD items on the 1-star carry and one AP item unequipped. What now?",
   "state": {

@@ -5,6 +5,8 @@ import { itemLookup, requireSetData, traitLookup, unitLookup } from "@/lib/set-d
 import { loadTiers, ranksById } from "@/lib/tiers";
 import { loadMeta } from "@/lib/meta";
 import type { LiveComp } from "@/components/set/CompList";
+import { compsChangesStamp } from "@/lib/comps-changes";
+import { loadCompsChanges } from "@/lib/comps-changes-server";
 
 export const metadata = { title: "Comps" };
 
@@ -53,6 +55,8 @@ export default function CompsPage() {
       </p>
       <CompList
         file={file}
+        changes={loadCompsChanges()}
+        changesStamp={compsChangesStamp(loadCompsChanges())}
         meta={meta ? { patch: meta.patch, syncedAt: meta.syncedAt, matches: meta.matches, comps: meta.comps.map((m) => ({ key: m.key, name: m.name, games: m.games, avg: m.avg, top4: m.top4, win: m.win, units: m.units })) } : null}
         live={live}
         units={unitLookup()}

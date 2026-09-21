@@ -1,7 +1,7 @@
 {
   "id": "scouting-top-four-locked-play-for-first",
   "category": "scouting",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 5-2, four players left, level 9 with 64 gold and 44 HP. Scouting: Seat 1 has 70 HP and the strongest board; Seat 3 is at 20 HP and Seat 6 at 12 HP, both losing to everyone including you. You fight Seat 6 next. Your board is capped at 2-star 4-costs with one 1-star 5-cost. What does the scout tell you to do with the gold?",
   "state": {

@@ -1,0 +1,109 @@
+{
+  "id": "puzzle-41-hp-at-4-2",
+  "category": "hp-management",
+  "difficulty": 3,
+  "kind": "puzzle",
+  "title": "41 HP at 4-2",
+  "setAgnostic": true,
+  "prompt": "Stage 4-2, level 7, 58 gold, 41 HP after two losses. Your board is 2-star 3-costs with a completed carry item, no 4-costs yet. Your comp caps with 4-cost units. What do you do this round?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "4-2",
+    "gold": 58,
+    "hp": 41,
+    "level": 7,
+    "xpToNext": 36,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-3",
+        "row": 2,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 1,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "level8",
+        "label": "Level to 8 now and roll down to about 20 gold for 4-cost upgrades."
+      },
+      {
+        "id": "roll7",
+        "label": "Stay 7 and roll to 3-star your 3-costs."
+      },
+      {
+        "id": "save",
+        "label": "Stay 7, hold 50, level at 4-5 with more gold."
+      }
+    ],
+    "correct": [
+      "level8"
+    ]
+  },
+  "explanation": "41 HP at 4-2 is the last comfortable moment: you can afford two or three more losses, not six. Your comp needs 4-costs, and 4-costs are found at level 8, so the standard play is exactly the standard play: level to 8 at 4-2 and roll down to a floor of about 20 gold, stopping as soon as the board is stable. Waiting until 4-5 with 41 HP means bleeding into the 20s before you even start looking, and rolling at 7 chases 3-star 3-costs that your comp does not cap on.\n\nIf you were at 70 HP, saving to 4-5 for a bigger rolldown would be fine. HP is what removes that option.",
+  "principle": "HP decides when you must roll; the comp decides at what level. At 41 HP on 4-2, that is level 8 now.",
+  "guideLink": "/guides/hp#stabilise-vs-push",
+  "commonMistake": "Greeding one more round of interest at 41 HP and rolling at 4-5 from 25."
+}

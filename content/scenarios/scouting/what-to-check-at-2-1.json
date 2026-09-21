@@ -1,7 +1,7 @@
 {
   "id": "scouting-what-to-check-at-2-1",
   "category": "scouting",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 2-1, the first augment round, and the first time the planning timer is long enough to scout all seven boards. You have a pair of a 1-cost carry and two AD components. What is the single most useful thing to look for on each board during this scout?",
   "state": {

@@ -1,0 +1,84 @@
+{
+  "id": "puzzle-leona-holds-the-line",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "Leona holds the line",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-5, level 5. You just made Leona 2-star. Varus and Karma are your damage. Kobuko is your only frontliner. Place Leona.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "2-5",
+    "gold": 22,
+    "hp": 88,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 1,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_Component_RecurveBow"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Leona",
+    "correctHexes": [
+      {
+        "row": 0,
+        "col": 3
+      },
+      {
+        "row": 0,
+        "col": 4
+      },
+      {
+        "row": 0,
+        "col": 1
+      }
+    ]
+  },
+  "explanation": "Leona is a Defender: armour, magic resist and a stun. She exists to be hit. Put her in the front row next to Kobuko so the two of them form a wall in the middle and the enemy melee units have to go through both. Varus and Karma keep shooting from four hexes back.\n\nA tank alone on a corner gets walked around; two tanks side by side in the centre get walked into. Column 3 or 4 is best; column 1 still touches Kobuko and is acceptable.",
+  "principle": "Frontliners stand together, in the middle, in front of the damage.",
+  "guideLink": "/guides/positioning#frontline-and-backline-defaults",
+  "commonMistake": "Putting the new tank on the far side of the board to protect the carry there, which splits the frontline in two and lets enemies through the gap."
+}

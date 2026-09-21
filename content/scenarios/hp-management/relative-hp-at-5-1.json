@@ -1,7 +1,7 @@
 {
   "id": "hp-management-relative-hp-at-5-1",
   "category": "hp-management",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 5-1, level 8 with 52 gold at 31 HP, five players left. Stage-5 losses cost about 15 HP. Your Blossom board is 2-star Ahri and 2-star Sett, capped for level 8. Scouting: Seat 2 has 84 HP and the best board; Seats 4, 5 and 7 are at 19, 14 and 9 HP and all three lose to you. You are 24 XP from level 9. What do you do?",

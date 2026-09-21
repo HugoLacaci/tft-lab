@@ -1,0 +1,89 @@
+{
+  "id": "puzzle-carry-goes-in-the-back",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "The carry goes in the back",
+  "setAgnostic": true,
+  "prompt": "Stage 2-3, level 5. Your frontline is set. Your 2-star ranged carry with an item is on the bench after you combined a component. Put it where it will shoot the longest before anyone reaches it.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "2-3",
+    "gold": 18,
+    "hp": 92,
+    "level": 5,
+    "xpToNext": 6,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:carry-2",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 5
+      }
+    ]
+  },
+  "explanation": "Ranged units attack from four hexes away, so a carry on the back row starts shooting immediately while every enemy melee unit has to walk through your frontline first. Row 0 is where the fight happens; row 3 is where damage is dealt safely. Any back-row hex that is not a corner is fine at this stage: the corners are fine too against most boards, but keep the habit of the centre-back until you scout a reason to move.\n\nThe frontline stays together in the middle so enemies bump into it before they find the carry.",
+  "principle": "Tanks in front, carries in the back. Damage that is not being hit is damage that keeps happening.",
+  "guideLink": "/guides/positioning#frontline-and-backline-defaults",
+  "commonMistake": "Dropping the carry wherever there is a free hex, often row 1 or 2, because the board feels full."
+}

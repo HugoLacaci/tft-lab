@@ -1,0 +1,152 @@
+{
+  "id": "puzzle-sivir-bounces-off-the-bait",
+  "category": "positioning",
+  "difficulty": 4,
+  "kind": "puzzle",
+  "title": "Sivir bounces",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-5. Enemy Sivir's blade hits her target and bounces several times between nearby enemies, bouncing extra when it kills. Your Ahri and Ashe stand together, with 1-star Alune beside them. One swap makes the bounces stop. Which two units trade places?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "5-5",
+    "gold": 27,
+    "hp": 29,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate",
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Taric18",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 2,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Diana",
+        "row": 2,
+        "col": 6,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_JeweledGauntlet",
+          "DA_NashorsTooth"
+        ]
+      },
+      {
+        "championId": "DA_18_Ashe",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SpearOfShojin",
+          "DA_RedBuff",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Alune",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Sivir",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_InfinityEdge",
+          "DA_GuinsoosRageblade",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sejuani",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "swap",
+    "correctPairs": [
+      [
+        "DA_18_Alune",
+        "DA_18_Diana"
+      ]
+    ]
+  },
+  "explanation": "Sivir's blade needs enemies near each other to bounce, and a kill gives it extra bounces. Ahri, Ashe and Alune in a row are a chain with a 1-star at the end of it: the blade lands, kills Alune, and the bonus bounces finish the two carries. Swap Alune with Diana. Diana in column 4 is a 2-star Vanguard body that does not die to one bounce, and Alune in the far corner of row 2 is out of bounce range of everyone. The chain is now two carries and a tank, and the kill bounce never triggers.\n\nSwapping Ahri or Ashe out leaves the 1-star in the chain, and the kill is what makes the cast explode.",
+  "principle": "Bounces and chains are fed by kills. Remove the unit that dies, not the unit that matters.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Spreading the carries apart and leaving the low-star body next to one of them, which still hands the cast its kill."
+}

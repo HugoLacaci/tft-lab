@@ -1,7 +1,7 @@
 {
   "id": "level-timing-fast-9-or-roll-at-8",
   "category": "level-timing",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-5, level 8 with 74 gold, 68 HP, 3-win streak. Both of your 4-cost carries are already 2-star with full items. Level 9 costs 32 XP (8 purchases). Do you roll at 8 for more 2-star 4-costs or push level 9?",
   "state": {

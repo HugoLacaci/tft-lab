@@ -3,7 +3,7 @@
 A static, self-updating study site for Teamfight Tactics players climbing from Emerald/Diamond to Master+ and competitive play. Three pillars:
 
 - **Guides** — set-agnostic fundamentals (economy, leveling, rolling, items, augments, positioning, scouting, HP, stage plan, pivoting) plus a hub for the live set generated from game data.
-- **Trainer** — decision drills on a real hex board with scoring, explanations and spaced repetition.
+- **Trainer** — decision drills on a real hex board with scoring, explanations and spaced repetition, plus a ladder of **tactics puzzles** (chess puzzles, but TFT) graded by rank from Iron–Silver to Master+.
 - **Path** — a weekly routine, a personal game tracker (localStorage, optionally fed by your own Riot match history), and the ladder → Trials → Pro Circuit pathway.
 - **Lab** — odds and econ calculators, a printable cheat sheet, and a team planner: every champion, item and augment of the live set on the real board, an enemy board opposite, and a Monte-Carlo fight simulator.
 
@@ -15,8 +15,26 @@ Planner and Versus modes. Drag champions and items from the pickers onto the boa
 
 The simulator is an estimate, not the client: base stats, attack speed, crit, range, mana and item effects come from the synced data (`stats.attackSpeed`, `ability.scaling`, `items[].effects`, `items[].associatedTraits` were added to the normaliser for this); Riot ships no ability numbers, so abilities are modelled by cost and star and by the stat their text scales with, traits by breakpoint tier and augments by tier and wording. Named items with real behaviour are listed in the page's "How the fight is estimated" panel. State persists in `localStorage` (`tftlab.planner.v1`) and **Copy link** puts it in the URL hash.
 
+## Tactics puzzles (`/trainer/puzzles`)
+
+Scenarios with `kind: "puzzle"` are one-board, one-best-move problems: place a unit, swap two units, or make the call. They sit in the normal category folders (so category drills, the Daily 10 and the SRS include them) and the ladder groups them by rank tier. `difficulty` is the tier: 1 Iron–Silver, 2 Gold–Platinum, 3 Emerald–Diamond, 4 Master+ (`lib/rank-tiers.ts`; every drill carries one too). Each tier page runs a session in ladder order and a `#<id>` hash starts at a given puzzle; the hub renders a static thumbnail of every board (`components/trainer/MiniBoard.tsx`) and the solved/retry state from the browser's progress.
+
+The `swap` question type (`correctPairs`, graded in either order, half credit for one right unit) was added for the "one move fixes it" puzzles; `title` is an optional card title. Puzzles mix generic archetypes (set-agnostic) with real champions of the live set (`setAgnostic: false`), and the set-specific ones are written from the champions' ability text (range, leap/bounce/line rules) so they stay true to the mechanics; when the set changes they are hidden like any other set-specific scenario.
+
+## What changed since you last looked
+
+Two "NEW" markers, kept per browser in localStorage (`tftlab.seen.v1`, `lib/whats-new.ts`): a teal dot on the header set badge and NEW pills on the set hub cards and the set sub-navigation. They compare a build-time stamp (`lib/whats-new-server.ts`) with what the browser saw last.
+
+- **Patch notes**: the stamp is the newest note's slug, so the daily sync flips it whenever Riot publishes. Opening `/set/patch-notes` marks it seen; notes published after the one you saw last carry a dot for that visit. A first-time visitor sees the marker only if the newest note is under two weeks old.
+- **Comps**: `npm run sync-comps` (`scripts/sync-comps.ts`, run before `next build` and in the daily workflow) diffs `content/sets/<n>/comps.json` against the previous patch and writes `data/generated/comps-changes.json`. It keeps two snapshots in `data/generated/comps-history.json`: `baseline` (the comps on the previous patch label) and `latest`; when the `patch` field in comps.json changes, `latest` becomes the new baseline, so the diff always reads "since the last patch". `/set/comps` shows a summary bar (new / up / down / adjusted / dropped, with a "changes only" filter) and a badge on each changed card: ★ new, ↑ / ↓ tier move with the tiers, ✎ adjusted, plus the detail list (board units added or removed, repositioned units, item changes per carry, augments, style, guide text) inside the card. A comp that changed tier sits in its new tier (cards are ordered by the current `tier`) with a coloured edge and a slide-in, and its old tier keeps a dashed ghost row ("Moved up · now in A tier · Jump to it") that scrolls to the card. After editing comps.json, run `npm run sync-comps` and commit `data/generated/comps-*.json` (the daily workflow does it too).
+
+## Visual layer
+
+Dark hextech look: `components/layout/Backdrop.tsx` is a fixed decorative layer (drifting hex grid, three slow colour glows, rising wisps), panels carry corner ticks and a hover lift, and `app/globals.css` holds the motion helpers (`.rise`, `.float`, `.pop`, `.flash-ok/.flash-bad`). The backdrop also carries a **scene per section** (`components/layout/Scenes.tsx`, picked from the pathname and cross-faded on navigation): the home page has Little Legends walking an orbit and hopping while gold rises; `/set` scrolls two endless shop columns of real champion cards in the side gutters; `/trainer` fights two tilted boards in the gutters (units charge, arrows and casts fly, HP and mana bars move); `/lab` turns hextech gears with rising bubbles and a scan line; every other section spins two trait mandalas built from the set's trait icons with drifting gold motes. Gutter scenes appear from 1280px wide so they never sit under the text column. Everything respects `prefers-reduced-motion`. Little Legends (Pengu, Choncc and friends) decorate the hero, the trainer, the puzzle ladder and the session feedback through `components/ui/Legend.tsx`; their art is mirrored from CommunityDragon's companion tooltips into `public/assets/legends/*.webp` (320px, square-cropped). Rank emblems and category glyphs are inline SVG (`components/ui/RankEmblem.tsx`, `components/ui/Glyphs.tsx`).
+
 ## Set hub extras
 
+- **Champion pages** (`/set/champions/<id>`): ability text and a base-stats table at 1, 2 and 3 stars (health ×1.8 and attack damage ×1.5 per star, the constants `lib/sim/stats.ts` uses; auto-attack DPS = AD × attack speed).
 - **Hover cards** (`components/set/hovers.tsx`): champions and items show an in-game style tooltip after ~1 s; ability and item text keep the stat icons as coloured badges (`renderDescRich`).
 - **Tags** (`lib/tags.ts`): augments and wisps are tagged Combat / Gold / Item / Shop / Trait / Utility from their text and filterable by tag.
 - **Wisps** (`/set/wisps`): the set mechanic entries (`kind: "charm"` in the normaliser, CDragon tag `{5b609ae2}`). Gold costs are not in the game files; `content/sets/<n>/wisps.json` holds guide-sourced costs and the page sorts by cost.
@@ -46,6 +64,7 @@ Next.js 15 (App Router, `output: 'export'`), TypeScript strict, Tailwind v4 with
 | `npm run sync-set` | Fetch the live set from CommunityDragon (fallback Data Dragon), mirror icons, write `data/generated/` |
 | `npm run sync-patch-notes` | Mirror Riot's TFT patch notes into `data/generated/patch-notes.json` |
 | `npm run sync-wisps` | Wisp gold costs and stages into `data/generated/wisps.json` |
+| `npm run sync-comps` | Diff the curated comps against the previous patch into `data/generated/comps-changes.json` (runs in `build`) |
 | `npm run sync-meta` | Item / unit / comp statistics from top-ladder Riot matches into `data/generated/meta.json` (needs `RIOT_API_KEY`) |
 | `npm run validate` | Scenario schema + ids, guide links/anchors, MDX syntax, hardcoded-set check |
 | `npm test` | Unit tests (odds math, econ, normalizer, grading, SRS, hex geometry, fight simulator, Riot analysis) |
@@ -82,7 +101,7 @@ To rehearse a rollover without a new set: `npm run sync-set -- --set=<previous>`
 
 ## Content authoring
 
-**Scenarios** live in `content/scenarios/<category>/<slug>.json` and are validated at build time (`lib/scenario-schema.ts`): the build fails with the file and field named. Set-agnostic scenarios use generic ids (`generic:<role>-<cost>`, `generic:item:*`, `generic:aug:*` from `data/`); set-specific ones set `setAgnostic: false, set: <n>` and use real ids from `data/generated/set-<n>.json`. Every scenario needs `explanation`, `principle`, `guideLink` (must resolve to a real guide anchor) and ideally `commonMistake`. Board coordinates: row 0 = frontline, row 3 = backline, col 0–6.
+**Scenarios** live in `content/scenarios/<category>/<slug>.json` and are validated at build time (`lib/scenario-schema.ts`): the build fails with the file and field named. Set-agnostic scenarios use generic ids (`generic:<role>-<cost>`, `generic:item:*`, `generic:aug:*` from `data/`); set-specific ones set `setAgnostic: false, set: <n>` and use real ids from `data/generated/set-<n>.json`. Every scenario needs `explanation`, `principle`, `guideLink` (must resolve to a real guide anchor) and ideally `commonMistake`. `difficulty` is the rank tier (1–4, see Tactics puzzles); `kind: "puzzle"` puts a scenario on the puzzle ladder; question types are `choice`, `placement`, `augment`, `item-holder`, `ordering` and `swap`. Board coordinates: row 0 = frontline, row 3 = backline, col 0–6.
 
 **Guides** live in `content/guides/*.mdx`. Components: `<Callout type="leak|tip|math|note">`, `<OddsTable/>`, `<PoolTable/>`, `<InterestTable/>`, `<LevelTable/>`, `<ItemCombineMatrix/>`, `<TraitBreakpoints trait="…"/>`, `<BoardExample board={[…]}/>`, `<DrillThis category="…"/>`, `<CheckYourself items={[…]}/>`. Headings are anchors that scenarios link to; the validator tells you if you break one.
 
@@ -116,4 +135,4 @@ The site is a static export (`out/`), so it runs anywhere that serves files.
 
 ## Legal
 
-TFT Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc. Data via CommunityDragon and Riot Data Dragon. No Riot fonts are used.
+TFT Lab isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games and all associated properties are trademarks or registered trademarks of Riot Games, Inc. Data and Little Legend art via CommunityDragon and Riot Data Dragon. No Riot fonts are used.

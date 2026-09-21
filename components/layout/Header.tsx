@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SetBadge } from "./SetBadge";
 import { NavLinks } from "./NavLinks";
+import { LogoMark } from "@/components/ui/Glyphs";
 
 export const NAV = [
   { href: "/guides", label: "Guides" },
@@ -15,10 +16,11 @@ export const NAV = [
 
 export function Header() {
   return (
-    <header className="no-print sticky top-0 z-40 border-b border-[var(--gold-dim)] bg-[color-mix(in_srgb,var(--bg-deep)_88%,transparent)] backdrop-blur">
+    <header className="no-print sticky top-0 z-40 border-b border-[var(--gold-dim)] bg-[color-mix(in_srgb,var(--bg-deep)_82%,transparent)] backdrop-blur">
+      <div className="gold-rule gold-rule-shine absolute inset-x-0 bottom-0 opacity-40" aria-hidden />
       <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
         <Link href="/" className="display flex items-center gap-2 text-lg font-bold tracking-widest text-gold-bright hover:no-underline">
-          <span aria-hidden className="inline-block h-4 w-4 rotate-45 border border-gold bg-[var(--bg-raised)]" />
+          <LogoMark />
           TFT LAB
         </Link>
         <SetBadge />

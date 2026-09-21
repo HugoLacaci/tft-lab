@@ -32,7 +32,8 @@ export function loadScenarios(): Scenario[] {
     if (!parsed.success) throw new Error(`invalid scenario ${file}: run npm run validate`);
     all.push(parsed.data);
   }
-  cached = all.filter(isLiveForCurrentSet);
+  // Not `.filter(isLiveForCurrentSet)`: filter passes the index as the second argument, which was read as the set number.
+  cached = all.filter((s) => isLiveForCurrentSet(s));
   return cached;
 }
 

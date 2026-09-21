@@ -1,7 +1,7 @@
 {
   "id": "scouting-post-rolldown-scout-order",
   "category": "scouting",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-2 augment round. You just finished a level-8 rolldown: both 4-costs are 2-star and you have 12 gold left at 49 HP. The planning timer has about 20 seconds left. Put the remaining scouting steps in the order that protects the most.",
   "state": {

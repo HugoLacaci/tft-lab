@@ -1,0 +1,98 @@
+{
+  "id": "puzzle-morgana-range-two",
+  "category": "positioning",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Morgana has range two",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-1, level 7. Morgana 2-star with Rabadon's is your carry. Her attack range is 2, not 4. Elise, Sentinel and Hecarim are your frontline; Cassiopeia and Caitlyn are in the back. Place Morgana.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "4-1",
+    "gold": 34,
+    "hp": 62,
+    "level": 7,
+    "xpToNext": 40,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Elise",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Warwick",
+        "row": 1,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Morgana",
+    "correctHexes": [
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 4
+      }
+    ]
+  },
+  "explanation": "Range decides the row. A range-4 unit in row 3 reaches the enemy frontline without moving. A range-2 unit in row 3 has to walk two hexes forward before her first attack, which is two seconds of not building mana. Put Morgana in row 2, the third row from the front: from there she is one step from being in range, still behind two rows of your own units, and her curse and withering zone land where the fight actually is.\n\nRow 1 puts her in range immediately but in the splash of every frontline cast.",
+  "principle": "Short-range units sit one row closer than long-range ones. Read the range, then pick the row.",
+  "guideLink": "/guides/positioning#frontline-and-backline-defaults",
+  "commonMistake": "Backlining every caster by habit, then wondering why Morgana casts once per fight."
+}

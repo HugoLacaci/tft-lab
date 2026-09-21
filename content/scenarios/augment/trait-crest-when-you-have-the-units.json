@@ -1,7 +1,7 @@
 {
   "id": "augment-trait-crest-when-you-have-the-units",
   "category": "augment",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-2 gold augment, 84 HP, 44 gold, level 6. You already run four units of a vertical, two of them 2-star, and your scout shows nobody else holding its units. The Crest offered is for that trait. Which augment?",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "endgame-uncapped-board-level-9",
   "category": "endgame",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 5-2, level 9, 48 HP, 3 players left with you. Your board holds two 2-star 1-costs for a trait breakpoint. You have 60 gold and the shop shows a 5-cost that fits your board. What is the play?",
   "state": {

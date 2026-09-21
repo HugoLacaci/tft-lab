@@ -1,7 +1,7 @@
 {
   "id": "items-who-gets-the-tank-item",
   "category": "items",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-1. You just completed a defensive item. Your frontline is a 2-star 3-cost tank, a 2-star 2-cost bruiser and a 1-star 1-cost tank on the wing. Who holds it?",
   "state": {

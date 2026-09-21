@@ -1,0 +1,146 @@
+{
+  "id": "puzzle-clump-into-ahri",
+  "category": "positioning",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Three casters into Ahri",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-2. You keep losing your whole backline to one Ahri spirit bomb: it lands on the spot with the most enemies around it and deals less damage the farther a unit is from the centre. Your three casters sit side by side on the back row. What is the fix?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "4-2",
+    "gold": 52,
+    "hp": 55,
+    "level": 7,
+    "xpToNext": 30,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor"
+        ]
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_RabadonsDeathcap"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Teemo",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Sentinel18",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_RabadonsDeathcap",
+          "DA_JeweledGauntlet"
+        ]
+      },
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Maokai",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "spread",
+        "label": "Spread the three casters so no two of them are adjacent; let the frontline be the biggest clump."
+      },
+      {
+        "id": "clump",
+        "label": "Clump them tighter around Sentinel so his shield covers all three."
+      },
+      {
+        "id": "corner",
+        "label": "Move Cassiopeia to the corner and leave the other two."
+      },
+      {
+        "id": "nothing",
+        "label": "Nothing: the bomb targets a random unit."
+      }
+    ],
+    "correct": [
+      "spread"
+    ]
+  },
+  "explanation": "Ahri's bomb goes where the most enemies are grouped, and its damage falls off with distance from the centre. Three units side by side on row 3 are the biggest group on your board, so the bomb lands on Karma and hits all three for near full damage. Spread them: one caster per two hexes, using row 2 and row 3, so the largest group is your frontline of Sett, Alistar and Vi, which is built to take it, and any bomb on the backline catches one unit at full damage instead of three.\n\nClumping tighter makes it worse. Moving only Cassiopeia still leaves a pair, and a pair still beats a single tank for the targeting.",
+  "principle": "Against area damage that seeks groups, your biggest group must be the tanks. Spread the squishies.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Fixing the problem by moving one unit, which leaves a pair that still attracts the cast."
+}

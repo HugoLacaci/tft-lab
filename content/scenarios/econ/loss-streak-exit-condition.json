@@ -1,7 +1,7 @@
 {
   "id": "econ-loss-streak-exit-condition",
   "category": "econ",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 3-3. You deliberately loss-streaked stage 2 and are on a 6-loss streak at 62 HP with 58 gold, level 6. You hold two completed items and a pair of your 3-cost carry. Losses now cost 8–9 HP each. Which is the exit condition that should end the streak?",
   "state": {

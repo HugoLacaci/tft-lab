@@ -1,7 +1,7 @@
 {
   "id": "positioning-carry-corner-into-assassins",
   "category": "positioning",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 4-2. You scouted: two of the three boards you can face next have assassins that jump to the backline. Your 4-cost AD carry is on the bench after an item swap. Place it.",
   "state": {

@@ -1,7 +1,7 @@
 {
   "id": "hp-management-greed-at-25-hp-stage-4",
   "category": "hp-management",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-3. You are at 25 HP, level 8 with 54 gold, on a 4-loss streak. Your board is uncapped: the 4-cost carry is 1-star. The lobby averages 12–15 damage per loss at this stage. What do you do?",
   "state": {

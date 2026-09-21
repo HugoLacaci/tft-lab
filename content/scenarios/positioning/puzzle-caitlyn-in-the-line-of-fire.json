@@ -1,0 +1,125 @@
+{
+  "id": "puzzle-caitlyn-in-the-line-of-fire",
+  "category": "positioning",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Caitlyn in the line of fire",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-5. The opponent you face next has Varus 2-star with items: his arrow flies at the most enemies in a line with his target and hits everything on the way. You lost 4 units to one arrow last time. One swap fixes the board.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "3-5",
+    "gold": 48,
+    "hp": 61,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Shen",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 2,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 2,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge"
+        ]
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_InfinityEdge",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "swap",
+    "correctPairs": [
+      [
+        "DA_18_Caitlyn",
+        "DA_18_Kobuko"
+      ]
+    ]
+  },
+  "explanation": "Sentinel, Karma and Caitlyn stand stacked in column 3, one behind the other, which is the line an arrow through your frontline follows. His arrow picks the line with the most enemies, so every cast goes through your tank, your support and your carry. Swap Caitlyn with Kobuko: Caitlyn moves to column 0 in row 2, off the line and still in range, and Kobuko becomes the body in the column that takes the arrow.\n\nSwapping Karma out instead still leaves two units in the column, and Caitlyn is the one you cannot afford to lose.",
+  "principle": "Against line damage, never stack your important units in one column. Give the line a tank and a body, not a carry.",
+  "guideLink": "/guides/positioning#spread-vs-clump",
+  "commonMistake": "Moving the tank off the column instead of the carry, which just makes the carry the first thing the arrow reaches."
+}

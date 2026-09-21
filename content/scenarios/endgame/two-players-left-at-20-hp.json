@@ -1,7 +1,7 @@
 {
   "id": "endgame-two-players-left-at-20-hp",
   "category": "endgame",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": true,
   "prompt": "Stage 6-1, two players left. You are at 20 HP with 70 gold at level 9; the other player is at 58 HP with a 2-star 5-cost board that beats yours slightly. Losses now cost about 20. Your board has a 1-star 5-cost caster with two copies of it sitting in the shop this round, and a 1-star 5-cost tank. You are 40 XP from level 10. What do you do?",
   "state": {

@@ -3,6 +3,7 @@ import { CURRENT_SET, isSynced } from "@/lib/current-set";
 import { hasSetContent, setDisplayName } from "@/lib/set-meta";
 import { NewSetBanner } from "@/components/set/NewSetBanner";
 import { SetSubnav } from "@/components/set/SetSubnav";
+import { newsStamps } from "@/lib/whats-new-server";
 
 export default function SetLayout({ children }: { children: React.ReactNode }) {
   if (!isSynced()) {
@@ -33,7 +34,7 @@ export default function SetLayout({ children }: { children: React.ReactNode }) {
         <div className="gold-rule mt-3 max-w-md" />
       </div>
       {!hasProse ? <NewSetBanner setNumber={n} /> : null}
-      <SetSubnav />
+      <SetSubnav stamps={newsStamps()} />
       <div className="mt-6">{children}</div>
     </div>
   );

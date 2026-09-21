@@ -1,0 +1,75 @@
+{
+  "id": "puzzle-varus-and-leona-swapped",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "Varus and Leona are swapped",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-2. You lost the last fight in eight seconds and cannot see why. Look at the board: one swap fixes it. Pick the two units that should trade hexes.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "2-2",
+    "gold": 12,
+    "hp": 90,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Varus",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_Component_BFSword"
+        ]
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "swap",
+    "correctPairs": [
+      [
+        "DA_18_Varus",
+        "DA_18_Leona"
+      ]
+    ]
+  },
+  "explanation": "Varus is a ranged carry standing in the front row, so he is the first unit the enemy melee reaches and he dies before he casts. Leona is a tank standing in the back row, so she does nothing until everyone in front of her is dead. Swap them: Leona to the front next to Kobuko, Varus to the back next to Karma.\n\nThis happens more than you think, usually after a carousel or an item move drops a unit on the wrong hex. Before every fight, glance at the two rows: is every melee unit in front of every ranged one?",
+  "principle": "Ranged in the back, melee in the front. Check it every round, not just when you build the board.",
+  "guideLink": "/guides/positioning#frontline-and-backline-defaults",
+  "commonMistake": "Blaming the loss on the enemy having a stronger board and rolling to fix a problem that was two hexes wide."
+}

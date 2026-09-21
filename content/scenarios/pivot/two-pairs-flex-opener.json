@@ -1,7 +1,7 @@
 {
   "id": "pivot-two-pairs-flex-opener",
   "category": "pivot",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 2-1 augment round, level 4 with 10 gold and full HP. You hold a pair of a 1-cost tank and a pair of a 1-cost AD carry from two different lines, plus an AD component. The shop shows a 2-cost bruiser that fits the tank's line and nothing for the carry's line. Which opener do you commit to?",
   "state": {

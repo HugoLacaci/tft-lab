@@ -1,0 +1,127 @@
+{
+  "id": "puzzle-tristana-away-from-khazix",
+  "category": "positioning",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Tristana away from Kha'Zix",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-5. Next opponent has Kha'Zix in his back corner; he leaps to the farthest enemy in his range at the start of combat. Tristana with two items is on your bench. Rek'Sai and Kobuko on row 2 are your bodyguards. Place her.",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [],
+    "bench": [],
+    "stage": "3-5",
+    "gold": 39,
+    "hp": 70,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Rakan",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_BrambleVest"
+        ]
+      },
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_RekSai",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 2,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "enemyBoard": [
+      {
+        "championId": "DA_18_KhaZix",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": [
+          "DA_InfinityEdge"
+        ]
+      },
+      {
+        "championId": "DA_18_Warwick",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Teemo",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "DA_18_Tristana",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 2,
+        "col": 3
+      }
+    ]
+  },
+  "explanation": "Kha'Zix leaps to the farthest enemy he can reach. From a back corner, the farthest hex is your opposite back corner; the closest thing to a safe hex is the middle of your back two rows. Put Tristana in the centre-back with Rek'Sai and Kobuko on either side one row ahead: Kha'Zix lands on a corner, finds a bruiser or nothing, and Tristana keeps attacking with infinite range while her charge is up.\n\nA corner is the default that gets punished here. Row 2 centre is also fine: still behind the tanks and even farther from both corners.",
+  "principle": "Divers land on the hex farthest from them. Scout where they start and keep the carry away from the corner they will pick.",
+  "guideLink": "/guides/positioning#counter-positioning",
+  "commonMistake": "Cornering the carry by habit because it is right against most boards, and the diver is the one board where it is wrong."
+}

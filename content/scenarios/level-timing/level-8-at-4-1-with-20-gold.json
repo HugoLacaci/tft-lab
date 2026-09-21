@@ -1,7 +1,7 @@
 {
   "id": "level-timing-level-8-at-4-1-with-20-gold",
   "category": "level-timing",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": true,
   "prompt": "Stage 4-1, level 7 with 20 gold, 61 HP, board is fine but not scaling. Next round (4-2) is an augment round. You have 12 XP to level 8. Do you level now?",
   "state": {

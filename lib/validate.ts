@@ -143,6 +143,7 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/set/augments",
     "/trainer",
     "/trainer/daily",
+    "/trainer/puzzles",
     "/lab",
     "/lab/odds",
     "/lab/econ",
@@ -154,6 +155,7 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/resources",
   ]);
   for (const c of ["econ", "level-timing", "augment", "items", "positioning", "pivot", "carousel", "scouting", "hp-management", "endgame"]) routes.add(`/trainer/${c}`);
+  for (const tier of ["iron-silver", "gold-platinum", "emerald-diamond", "master-plus"]) routes.add(`/trainer/puzzles/${tier}`);
   for (const g of guides) routes.add(`/guides/${g}`);
 
   for (const slug of guides) {

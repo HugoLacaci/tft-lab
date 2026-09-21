@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Panel, SectionTitle } from "@/components/ui/Panel";
 import { CostPip, StyleBadge, TraitIcon, UnitIcon } from "@/components/set/icons";
 import { requireSetData } from "@/lib/set-data";
+import { STAR_AD, STAR_HP } from "@/lib/sim/stats";
 
 export function generateStaticParams() {
   return requireSetData().champions.map((c) => ({ id: c.id }));
@@ -16,20 +17,29 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: c ? c.name : "Champion" };
 }
 
+const STARS = [1, 2, 3] as const;
+const STAR_COLOR: Record<1 | 2 | 3, string> = { 1: "#b08a4a", 2: "#c8d0d8", 3: "#ffb642" };
+
 export default async function ChampionPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const data = requireSetData();
   const c = data.champions.find((x) => x.id === id);
   if (!c) notFound();
   const traits = c.traits.map((t) => data.traits.find((x) => x.id === t)).filter((t): t is NonNullable<typeof t> => !!t);
-  const stats: [string, number][] = [
-    ["HP", c.stats.hp],
-    ["AD", c.stats.ad],
-    ["Armor", c.stats.armor],
-    ["MR", c.stats.mr],
-    ["Range", c.stats.range],
-    ["Mana", c.stats.mana],
-    ["Start mana", c.stats.initialMana],
+  const s = c.stats;
+  const r0 = (v: number) => String(Math.round(v));
+  const r2 = (v: number) => (Math.round(v * 100) / 100).toString();
+  /** Per-star rows: HP ×1.8 and AD ×1.5 per star (the same constants the fight simulator uses); the rest does not scale with stars. */
+  const rows: { label: string; values: [string, string, string]; scales: boolean; note?: string }[] = [
+    { label: "Health", values: [r0(s.hp * STAR_HP[1]), r0(s.hp * STAR_HP[2]), r0(s.hp * STAR_HP[3])], scales: true },
+    { label: "Attack damage", values: [r0(s.ad * STAR_AD[1]), r0(s.ad * STAR_AD[2]), r0(s.ad * STAR_AD[3])], scales: true },
+    { label: "DPS (auto-attacks)", values: [r0(s.ad * STAR_AD[1] * s.attackSpeed), r0(s.ad * STAR_AD[2] * s.attackSpeed), r0(s.ad * STAR_AD[3] * s.attackSpeed)], scales: true, note: "AD × attack speed, before items, crits and armour" },
+    { label: "Attack speed", values: [r2(s.attackSpeed), r2(s.attackSpeed), r2(s.attackSpeed)], scales: false },
+    { label: "Armor", values: [r0(s.armor), r0(s.armor), r0(s.armor)], scales: false },
+    { label: "Magic resist", values: [r0(s.mr), r0(s.mr), r0(s.mr)], scales: false },
+    { label: "Range", values: [r0(s.range), r0(s.range), r0(s.range)], scales: false },
+    { label: "Mana", values: [`${r0(s.initialMana)} / ${r0(s.mana)}`, `${r0(s.initialMana)} / ${r0(s.mana)}`, `${r0(s.initialMana)} / ${r0(s.mana)}`], scales: false, note: "start / to cast" },
+    { label: "Crit chance", values: [`${r0(s.critChance * 100)}%`, `${r0(s.critChance * 100)}%`, `${r0(s.critChance * 100)}%`], scales: false },
   ];
   return (
     <div className="space-y-8">
@@ -54,24 +64,46 @@ export default async function ChampionPage({ params }: { params: Promise<{ id: s
         </div>
       </header>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        <Panel className="md:col-span-2">
+      <div className="grid gap-4 md:grid-cols-5">
+        <Panel className="md:col-span-3">
           <SectionTitle kicker="Ability">{c.ability.name || "Ability"}</SectionTitle>
           <p className="whitespace-pre-line text-sm leading-relaxed [&_.tok]:text-dim">{c.ability.desc || "No ability text in the synced data."}</p>
           <p className="mt-3 text-xs text-dim">
             Values in braces are scaling variables CommunityDragon does not resolve on this patch; the in-game tooltip has the numbers.
           </p>
         </Panel>
-        <Panel>
-          <SectionTitle kicker="Base stats">1★</SectionTitle>
-          <dl className="grid grid-cols-2 gap-y-1 text-sm">
-            {stats.map(([k, v]) => (
-              <div key={k} className="contents">
-                <dt className="text-dim">{k}</dt>
-                <dd className="text-right font-semibold tabular-nums text-gold-bright">{v}</dd>
-              </div>
-            ))}
-          </dl>
+        <Panel className="md:col-span-2">
+          <SectionTitle kicker="Base stats">By star level</SectionTitle>
+          <div className="table-wrap">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Stat</th>
+                  {STARS.map((st) => (
+                    <th key={st} className="num" style={{ color: STAR_COLOR[st] }}>
+                      {"★".repeat(st)}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row) => (
+                  <tr key={row.label}>
+                    <td className="text-dim">
+                      {row.label}
+                      {row.note ? <span className="block text-[0.65rem] text-dim/80">{row.note}</span> : null}
+                    </td>
+                    {row.values.map((v, i) => (
+                      <td key={i} className={`num whitespace-nowrap font-semibold ${row.scales ? "text-gold-bright" : "text-dim"}`}>
+                        {v}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-xs text-dim">Health scales ×1.8 and attack damage ×1.5 per star; armour, magic resist, range, mana and attack speed do not. Ability damage also grows with stars, but Riot does not ship those numbers.</p>
         </Panel>
       </div>
 

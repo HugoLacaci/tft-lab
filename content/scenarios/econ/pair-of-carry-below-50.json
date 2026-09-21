@@ -1,7 +1,7 @@
 {
   "id": "econ-pair-of-carry-below-50",
   "category": "econ",
-  "difficulty": 2,
+  "difficulty": 3,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 4-2, level 8, 51 gold, 57 HP. Your board is built around a 1-star Ahri holding two items. The shop shows a second Ahri. Buying her drops you to 47 gold, one interest tick below the cap, and you planned to roll at 4-5. Do you buy?",

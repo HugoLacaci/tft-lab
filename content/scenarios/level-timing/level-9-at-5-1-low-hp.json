@@ -1,7 +1,7 @@
 {
   "id": "level-timing-level-9-at-5-1-low-hp",
   "category": "level-timing",
-  "difficulty": 3,
+  "difficulty": 4,
   "setAgnostic": false,
   "set": 18,
   "prompt": "Stage 5-1, level 8 with 62 gold, 40 HP, 1-loss streak. Your board is 2-star Sett, Malphite, Aphelios and Sivir with items. Two players are already level 9 and two more will be next round. Level 9 costs 20 gold (5 purchases). Do you level now or hold 50 and roll at 8 for a 3-star?",

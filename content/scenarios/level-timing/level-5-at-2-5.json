@@ -1,7 +1,7 @@
 {
   "id": "level-timing-level-5-at-2-5",
   "category": "level-timing",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 2-5, level 4 with 16 gold, 96 HP, on a 2-win streak. You are 4 XP from level 5 and a 2-star 2-cost is sitting on your bench with no room on the board. What is the standard play?",
   "state": {

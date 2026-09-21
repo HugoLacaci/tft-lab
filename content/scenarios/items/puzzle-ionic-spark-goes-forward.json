@@ -1,0 +1,90 @@
+{
+  "id": "puzzle-ionic-spark-goes-forward",
+  "category": "items",
+  "difficulty": 2,
+  "kind": "puzzle",
+  "title": "Ionic Spark goes forward",
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2. You built Ionic Spark: it shreds the magic resist of nearby enemies and shocks them when they cast. Who holds it?",
+  "state": {
+    "shop": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "items": [
+      "DA_IonicSpark"
+    ],
+    "bench": [],
+    "stage": "3-2",
+    "gold": 44,
+    "hp": 72,
+    "level": 6,
+    "xpToNext": 16,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 1,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "DA_RabadonsDeathcap"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Teemo",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "DA_IonicSpark",
+    "correctUnitIds": [
+      "DA_18_Sett",
+      "DA_18_Alistar"
+    ]
+  },
+  "explanation": "Ionic Spark is an aura: it only affects enemies within a few hexes of its holder. Your casters are Cassiopeia, Karma and Teemo, and the enemies you want shredded are the ones they hit, which are the enemy frontliners standing against your tanks. So the aura wants to be in the front row. Sett or Alistar both work; Sett is the main tank and stays alive longest, so he is the best holder.\n\nOn Cassiopeia in the back row the aura covers nothing until the enemy is already on top of her, and it takes a slot from a real damage item.",
+  "principle": "Aura items go where the enemies are, which means the frontline, on the unit that survives longest.",
+  "guideLink": "/guides/items#who-gets-the-tank-item",
+  "commonMistake": "Giving Ionic Spark to the AP carry because the tooltip mentions magic resist."
+}

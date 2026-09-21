@@ -1,7 +1,7 @@
 {
   "id": "hp-management-keep-pushing-at-82-hp",
   "category": "hp-management",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-5, level 6 with 54 gold at 82 HP on a 5-win streak. Your board is the strongest in the lobby and you are 12 XP from level 7. The next round is the 4-1 carousel and then 4-2 augment. What do you do this round?",
   "state": {

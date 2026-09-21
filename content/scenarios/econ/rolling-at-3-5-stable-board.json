@@ -1,7 +1,7 @@
 {
   "id": "econ-rolling-at-3-5-stable-board",
   "category": "econ",
-  "difficulty": 1,
+  "difficulty": 2,
   "setAgnostic": true,
   "prompt": "Stage 3-5. You are level 6 with 46 gold on a win streak of 3, your board is two-starred and beating most of the lobby. Nothing in the shop upgrades you. You are 4 gold off 50. What do you do this round?",
   "state": {
