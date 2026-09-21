@@ -64,7 +64,7 @@ Sync flags: `--set=<n>` (force a set number; simulates a rollover), `--source=dd
 
 The UI reads only `current.json` and `set-<n>.json`. Nothing outside `content/sets/`, `data/generated/` and `data/constants/set-<n>.ts` may hardcode a set number; `npm run validate` enforces it. The header badge, the `/set` hub, the trainer's set filter and the constants lookup all derive from `current.json`.
 
-`.github/workflows/sync-set.yml` runs the sync daily at 06:00 UTC (and on dispatch) and opens a PR `chore: sync set data (<name>)`, labelled `new-set` when the set changed, with the list of content that needs a human pass in the body.
+`.github/workflows/sync-set.yml` runs the sync daily at 06:00 UTC (and on dispatch). Same set: it commits the refreshed data directly and dispatches the deploy. New set: it opens a PR `chore: sync set data (<name>)` labelled `new-set`, with the list of content that needs a human pass in the body.
 
 ## When a new set drops (runbook)
 
@@ -110,7 +110,7 @@ The site is a static export (`out/`), so it runs anywhere that serves files.
 
 **Netlify / Cloudflare Pages / Vercel:** build command `npm run build`, output directory `out`, no environment variables needed.
 
-**Daily data updates:** `.github/workflows/sync-set.yml` opens a PR with the refreshed set data, patch notes, wisp costs and (if the `RIOT_API_KEY` secret exists) the live meta; merging it triggers a deploy.
+**Daily data updates:** `.github/workflows/sync-set.yml` refreshes the set data, patch notes, wisp costs and (if the `RIOT_API_KEY` secret exists) the live meta every day at 06:00 UTC. When validation and tests pass it commits straight to the default branch and dispatches the deploy, so the site updates itself with no review. The one exception is a new set: then it opens a PR labelled `new-set`, because the written content needs a human pass (see the runbook).
 
 **Privacy for visitors:** nothing is sent to any server of ours (there is none). The tracker keeps the visitor's Riot API key, games, planner boards and exercise answers in their own browser's localStorage; the only outbound requests from the tracker go to `api.riotgames.com` with the visitor's own key.
 

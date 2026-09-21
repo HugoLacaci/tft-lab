@@ -4,10 +4,15 @@ on:
   schedule:
     - cron: "0 6 * * *" # 06:00 UTC daily
   workflow_dispatch:
+    inputs:
+      count:
+        description: "Unused; present so the run can be started by hand"
+        required: false
 
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 jobs:
   sync:
@@ -76,8 +81,25 @@ jobs:
           npm run validate
           npm test
 
-      - name: Open pull request
-        if: steps.inspect.outputs.changed != '0'
+      # Same set: commit straight to the default branch and redeploy. Nothing to review:
+      # validation and tests just passed on the new data.
+      - name: Commit and deploy
+        if: steps.inspect.outputs.changed != '0' && steps.inspect.outputs.new_set != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/generated public/assets
+          git commit -m "chore: sync set data (${{ steps.inspect.outputs.set_name }})" -m "${{ steps.inspect.outputs.body }}"
+          git push
+          # Pushes made with GITHUB_TOKEN do not trigger other workflows; dispatch the deploy explicitly.
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+
+      # New set: the data is live but the written content needs a human pass, so this stays a PR.
+      - name: Open pull request (new set)
+        if: steps.inspect.outputs.changed != '0' && steps.inspect.outputs.new_set == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           branch: chore/sync-set
@@ -85,4 +107,4 @@ jobs:
           commit-message: "chore: sync set data (${{ steps.inspect.outputs.set_name }})"
           title: "chore: sync set data (${{ steps.inspect.outputs.set_name }})"
           body: ${{ steps.inspect.outputs.body }}
-          labels: ${{ steps.inspect.outputs.new_set == 'true' && 'new-set,sync' || 'sync' }}
+          labels: new-set,sync
