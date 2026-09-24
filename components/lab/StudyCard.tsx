@@ -4,7 +4,7 @@ import { tierByLevel } from "@/lib/rank-tiers";
 import { RankEmblem } from "@/components/ui/RankEmblem";
 
 /** Card on the Study Hall index: thumbnail, who, what line, how long, tags. */
-export function StudyCard({ study }: { study: Study }) {
+export function StudyCard({ study, hasTimeline = false }: { study: Study; hasTimeline?: boolean }) {
   const tier = tierByLevel(study.tier);
   return (
     <Link href={`/lab/study-hall/${study.id}`} className="study-card panel flex h-full flex-col gap-3 p-3 hover:no-underline">
@@ -34,6 +34,11 @@ export function StudyCard({ study }: { study: Study }) {
             {STUDY_TAGS[t] ?? t}
           </span>
         ))}
+        {hasTimeline ? (
+          <span className="chip" style={{ color: "var(--teal)", borderColor: "var(--teal)" }}>
+            timeline
+          </span>
+        ) : null}
         <span className="ml-auto text-dim">{study.timeline.length} stops</span>
       </div>
     </Link>

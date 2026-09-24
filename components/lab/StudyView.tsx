@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { fmtStamp, parseStamp, youtubeThumb, youtubeWatchUrl, type Study } from "@/lib/study-schema";
+import { useEffect, useMemo, useState } from "react";
+import { fmtStamp, parseStamp, type Study } from "@/lib/study-schema";
 import { lessonById } from "@/lib/curriculum";
 import { readJson, writeJson } from "@/lib/storage";
 import { Panel } from "@/components/ui/Panel";
-import { Glyph } from "@/components/ui/Glyphs";
+import { StudyPlayer, type SeekRequest } from "./StudyPlayer";
 
 /**
- * A study: the VOD (click-to-load, privacy-enhanced embed), the stage-by-stage
- * guide that seeks the player, questions with hidden answers, and the player's
- * own timestamped notes (localStorage tftlab.study-notes.v1).
+ * A study: the VOD, the stage-by-stage guide that seeks the player, questions
+ * with hidden answers, and the player's own timestamped notes (localStorage
+ * tftlab.study-notes.v1).
  */
 interface Note {
   at: number;
@@ -25,13 +25,11 @@ interface NotesStore {
 const NOTES_KEY = "tftlab.study-notes.v1";
 
 export function StudyView({ study, compNames }: { study: Study; compNames: Record<string, string> }) {
-  const [loaded, setLoaded] = useState(false);
   const [current, setCurrent] = useState(0);
+  const [seek, setSeek] = useState<SeekRequest | null>(null);
   const [notes, setNotes] = useState<Note[]>([]);
   const [draft, setDraft] = useState("");
   const [open, setOpen] = useState<Record<number, boolean>>({});
-  const frame = useRef<HTMLIFrameElement | null>(null);
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
 
   useEffect(() => {
     const st = readJson<NotesStore | null>(NOTES_KEY, null);
@@ -45,47 +43,9 @@ export function StudyView({ study, compNames }: { study: Study; compNames: Recor
     writeJson(NOTES_KEY, st);
   };
 
-  // The embed reports currentTime through postMessage once we ask it to.
-  useEffect(() => {
-    if (!loaded) return;
-    const onMsg = (e: MessageEvent) => {
-      if (typeof e.data !== "string" || !e.data.startsWith("{")) return;
-      try {
-        const d = JSON.parse(e.data) as { event?: string; info?: { currentTime?: number } };
-        if (d.event === "infoDelivery" && typeof d.info?.currentTime === "number") setCurrent(d.info.currentTime);
-        if (d.event === "onReady") frame.current?.contentWindow?.postMessage(JSON.stringify({ event: "listening", id: 1 }), "*");
-      } catch {
-        /* not ours */
-      }
-    };
-    window.addEventListener("message", onMsg);
-    const t = setInterval(() => frame.current?.contentWindow?.postMessage(JSON.stringify({ event: "listening", id: 1 }), "*"), 2000);
-    return () => {
-      window.removeEventListener("message", onMsg);
-      clearInterval(t);
-    };
-  }, [loaded]);
-
-  const command = useCallback((func: string, args: unknown[] = []) => {
-    frame.current?.contentWindow?.postMessage(JSON.stringify({ event: "command", func, args }), "*");
-  }, []);
-
-  const [startAt, setStartAt] = useState(0);
-  const seek = (sec: number) => {
-    if (!loaded) {
-      setStartAt(sec);
-      setLoaded(true);
-      return;
-    }
-    command("seekTo", [sec, true]);
-    command("playVideo");
-    setCurrent(sec);
-  };
-
-  const embedSrc = `https://www.youtube-nocookie.com/embed/${study.video.id}?enablejsapi=1&autoplay=1&rel=0&start=${Math.floor(startAt)}${origin ? `&origin=${encodeURIComponent(origin)}` : ""}`;
+  const go = (sec: number) => setSeek((s) => ({ sec, n: (s?.n ?? 0) + 1 }));
 
   const stamped = useMemo(() => study.timeline.map((t) => ({ ...t, sec: t.at ? parseStamp(t.at) : null })), [study.timeline]);
-  // The item whose timestamp is the last one at or before the current time.
   const activeIdx = useMemo(() => {
     let best = -1;
     stamped.forEach((t, i) => {
@@ -104,38 +64,7 @@ export function StudyView({ study, compNames }: { study: Study; compNames: Recor
   return (
     <div className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,24rem)]">
       <div className="space-y-4">
-        <div className="panel overflow-hidden p-1">
-          <div className="relative aspect-video w-full bg-black">
-            {loaded ? (
-              <iframe
-                ref={frame}
-                src={embedSrc}
-                title={study.video.title}
-                className="absolute inset-0 h-full w-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                referrerPolicy="strict-origin-when-cross-origin"
-              />
-            ) : (
-              <button type="button" className="group absolute inset-0 flex h-full w-full items-center justify-center" onClick={() => setLoaded(true)} aria-label={`Play ${study.video.title} on YouTube`}>
-                {/* eslint-disable-next-line @next/next/no-img-element -- third-party thumbnail, images are unoptimized anyway */}
-                <img src={youtubeThumb(study.video.id)} alt="" className="absolute inset-0 h-full w-full object-cover opacity-80 transition group-hover:opacity-100" loading="lazy" />
-                <span className="relative flex items-center gap-2 border border-gold bg-[color-mix(in_srgb,var(--bg-deep)_85%,transparent)] px-4 py-2 text-sm text-gold-bright">
-                  <Glyph name="arrow" size={16} />
-                  Play the VOD ({study.video.length})
-                </span>
-                <span className="absolute bottom-2 left-2 right-2 text-[0.65rem] text-dim">Loads the video from YouTube (privacy-enhanced embed) only when you press play.</span>
-              </button>
-            )}
-          </div>
-        </div>
-        <p className="text-xs text-dim">
-          <a href={youtubeWatchUrl(study.video.id)} target="_blank" rel="noopener noreferrer">
-            Open on YouTube ↗
-          </a>{" "}
-          · {study.video.channel} · published {study.video.publishedOn}
-          {loaded ? ` · now at ${fmtStamp(current)}` : ""}
-        </p>
+        <StudyPlayer videoId={study.video.id} title={study.video.title} length={study.video.length} channel={study.video.channel} publishedOn={study.video.publishedOn} seek={seek} onTime={setCurrent} />
 
         <Panel as="section" aria-label="Study guide">
           <div className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold">Stage by stage</div>
@@ -148,7 +77,7 @@ export function StudyView({ study, compNames }: { study: Study; compNames: Recor
                 <li key={i} className={`timeline-item ${active ? "timeline-active" : ""}`}>
                   <div className="flex flex-wrap items-center gap-2">
                     {t.sec !== null ? (
-                      <button type="button" className="chip chip-active tabular-nums" onClick={() => seek(t.sec!)} aria-label={`Jump to ${t.at}`}>
+                      <button type="button" className="chip chip-active tabular-nums" onClick={() => go(t.sec!)} aria-label={`Jump to ${t.at}`}>
                         ▶ {t.at}
                       </button>
                     ) : null}
@@ -221,7 +150,7 @@ export function StudyView({ study, compNames }: { study: Study; compNames: Recor
             <ul className="mt-3 space-y-1.5">
               {notes.map((n) => (
                 <li key={n.created} className="flex items-start gap-2 text-sm">
-                  <button type="button" className="chip tabular-nums" onClick={() => seek(n.at)}>
+                  <button type="button" className="chip tabular-nums" onClick={() => go(n.at)}>
                     {fmtStamp(n.at)}
                   </button>
                   <span className="min-w-0 flex-1">{n.text}</span>

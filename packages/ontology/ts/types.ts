@@ -123,8 +123,16 @@ export interface GameTimeline {
    * Display name for the analysed seat; anonymise before it leaves the browser.
    */
   playerName?: string;
-  source: "vod" | "riot-api" | "upload" | "fixture";
+  source: "vod" | "riot-api" | "upload" | "fixture" | "annotation";
   sourceUrl?: string;
+  /**
+   * Study Hall entry (content/studies/<id>.json) this timeline annotates.
+   */
+  studyId?: string;
+  /**
+   * Who produced the states (a person, or a perception run id).
+   */
+  annotatedBy?: string;
   rounds: RoundState[];
   finalPlacement?: number;
   title?: string;

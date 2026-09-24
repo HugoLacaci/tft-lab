@@ -8,6 +8,7 @@ import { loadStudies } from "@/lib/studies";
 import { STUDY_TAGS } from "@/lib/study-schema";
 import { tierByLevel } from "@/lib/rank-tiers";
 import { CREATORS } from "@/data/creators";
+import { loadTimelines } from "@/lib/timelines-server";
 
 export const metadata = {
   title: "Study Hall: pro and streamer games, broken down",
@@ -24,6 +25,8 @@ const METHOD = [
 export default function StudyHallPage() {
   const studies = loadStudies();
   const tags = [...new Set(studies.flatMap((s) => s.tags))];
+  const timelines = loadTimelines();
+  const withTimeline = new Set(timelines.map((t) => t.studyId).filter(Boolean));
   return (
     <div>
       <div className="mb-2">
@@ -65,7 +68,7 @@ export default function StudyHallPage() {
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {studies.map((s, i) => (
             <li key={s.id} className="rise" style={{ ["--i" as string]: 1 + i * 0.5 } as React.CSSProperties}>
-              <StudyCard study={s} />
+              <StudyCard study={s} hasTimeline={withTimeline.has(s.id)} />
             </li>
           ))}
         </ul>
@@ -82,6 +85,34 @@ export default function StudyHallPage() {
           })}
           = who gets the most out of it.
         </p>
+      </section>
+
+      <section className="mt-10" aria-label="Game timelines">
+        <SectionTitle kicker="Round by round">Timelines and decisions</SectionTitle>
+        <p className="mb-3 text-sm text-dim">
+          A game as exact states (gold, HP, level, shop, board) and the decision between every two of them, derived from the numbers: rolls, buys, sells, items, positioning. Annotated from the VOD in the editor; nothing is asserted that is not in a state. The example timelines are hand-built games that exercise the format.
+        </p>
+        <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {timelines.map((t) => {
+            const last = t.rounds[t.rounds.length - 1]!;
+            const study = t.studyId ? studies.find((x) => x.id === t.studyId) : undefined;
+            return (
+              <li key={t.matchId}>
+                <Link href={`/lab/study-hall/timeline/${t.matchId}`} className="panel flex h-full flex-col gap-1 p-3 hover:no-underline">
+                  <div className="display text-[0.65rem] uppercase tracking-[0.2em] text-gold">{t.source === "fixture" ? "example" : study ? `${study.player.name} · annotated` : t.source}</div>
+                  <div className="display text-sm text-gold-bright">{t.title ?? t.matchId}</div>
+                  <div className="mt-auto flex flex-wrap gap-1.5 pt-2 text-[0.65rem]">
+                    <span className="chip">{t.rounds.length} states</span>
+                    <span className="chip">
+                      {t.rounds[0]?.stage} → {last.stage}
+                    </span>
+                    {t.finalPlacement ? <span className="chip">{t.finalPlacement}th</span> : null}
+                  </div>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       <section className="mt-10" aria-label="Channels to watch">

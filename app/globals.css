@@ -763,3 +763,5 @@ a.panel:hover, .panel-hover:hover {
 .evidence-low { border-style: dashed; border-color: var(--red); }
 .evidence { white-space: normal; text-align: left; }
 .evidence > span:first-child { white-space: nowrap; }
+.inp { width: 100%; border: 1px solid var(--gold-dim); background: var(--bg-raised); color: var(--text); padding: 0.35rem 0.5rem; font-size: 0.8rem; }
+.inp:focus { outline: none; border-color: var(--gold); }

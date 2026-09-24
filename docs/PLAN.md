@@ -6,7 +6,8 @@ Ground rule for everything below: **Oracle never asserts game state it did not r
 
 ## Where we are
 
-- 2026-09-24: M1 built (this commit). Ontology as JSON Schema with generated TypeScript types, `deriveDecisions` with the accounting equation and tests, three fixture timelines, `/analysis/<matchId>` rendering them with the existing `Board`. No perception code.
+- 2026-09-24 (later): M1.5, the annotation editor (`/lab/study-hall/annotate/<study>`): timelines for Study Hall VODs are produced by hand from the video, with the accounting equation running live. First two games to annotate: Wasianiverson's Kha'Zix reroll and Keane's ranked game (edited videos with creator chapters, clean UI).
+- 2026-09-24: M1 built (this commit). Ontology as JSON Schema with generated TypeScript types, `deriveDecisions` with the accounting equation and tests, three fixture timelines, `/lab/study-hall/timeline/<matchId>` rendering them with the existing `Board` (the analysis lives inside the Study Hall, next to the VOD guide). No perception code.
 
 ## Milestones
 

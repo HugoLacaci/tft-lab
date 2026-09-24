@@ -11,6 +11,8 @@ import { CompsFileSchema } from "./comps";
 import { LESSONS, MODULES } from "./curriculum";
 import { StudySchema } from "./study-schema";
 import { studyFiles } from "./studies";
+import { validateTimeline } from "../packages/ontology/ts";
+import { timelineFiles } from "./timelines-server";
 
 export interface Problem {
   file: string;
@@ -164,7 +166,6 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/lab/cheatsheet",
     "/lab/board",
     "/lab/study-hall",
-    "/analysis",
     "/routine",
     "/tracker",
     "/compete",
@@ -256,7 +257,36 @@ export async function validateMdxSyntax(root = process.cwd()): Promise<Problem[]
 }
 
 export async function runValidation(root = process.cwd()): Promise<Problem[]> {
-  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateCurriculum(root), ...validateStudies(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateCurriculum(root), ...validateStudies(root), ...validateTimelines(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+}
+
+/** Game timelines (fixtures + content/timelines): ontology-valid, file name = matchId, studyId points at a real study. */
+export function validateTimelines(root = process.cwd()): Problem[] {
+  const problems: Problem[] = [];
+  const studyIds = new Set(studyFiles(root).map((f) => path.basename(f, ".json")));
+  const ids = new Set<string>();
+  for (const file of timelineFiles(root)) {
+    const rel = path.relative(root, file).replace(/\\/g, "/");
+    let json: unknown;
+    try {
+      json = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (e) {
+      problems.push({ file: rel, message: `invalid JSON: ${e instanceof Error ? e.message : e}` });
+      continue;
+    }
+    const r = validateTimeline(json);
+    if (!r.ok) {
+      for (const m of r.errors.slice(0, 20)) problems.push({ file: rel, message: m });
+      continue;
+    }
+    const t = r.value;
+    if (t.matchId !== path.basename(file, ".json")) problems.push({ file: rel, field: "matchId", message: `matchId "${t.matchId}" must match the file name` });
+    if (ids.has(t.matchId)) problems.push({ file: rel, field: "matchId", message: "duplicate matchId" });
+    ids.add(t.matchId);
+    if (t.studyId && !studyIds.has(t.studyId)) problems.push({ file: rel, field: "studyId", message: `unknown study "${t.studyId}"` });
+    if (t.rounds.length < 2) problems.push({ file: rel, field: "rounds", message: "a timeline needs at least two states" });
+  }
+  return problems;
 }
 
 /** Study Hall entries: schema, unique ids and video ids, guide anchors; unknown comp ids are warnings. */

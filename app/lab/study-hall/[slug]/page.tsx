@@ -6,6 +6,7 @@ import { loadStudies, studyById } from "@/lib/studies";
 import { STUDY_TAGS } from "@/lib/study-schema";
 import { tierByLevel } from "@/lib/rank-tiers";
 import { loadComps } from "@/lib/comps";
+import { timelineForStudy } from "@/lib/timelines-server";
 
 export function generateStaticParams() {
   return loadStudies().map((s) => ({ slug: s.id }));
@@ -25,6 +26,7 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
   const tier = tierByLevel(s.tier);
   const comps = loadComps();
   const compNames = Object.fromEntries((comps?.comps ?? []).map((c) => [c.id, c.name]));
+  const timeline = timelineForStudy(s.id);
   const all = loadStudies();
   const i = all.findIndex((x) => x.id === s.id);
   const prev = all[i + 1];
@@ -55,6 +57,21 @@ export default async function StudyPage({ params }: { params: Promise<{ slug: st
             </span>
           ))}
           <span className="chip">{s.video.length}</span>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-1.5 text-xs" aria-label="Study tabs">
+          <span className="chip chip-active">Guide</span>
+          {timeline ? (
+            <Link href={`/lab/study-hall/timeline/${timeline.matchId}`} className="chip hover:no-underline">
+              Timeline · {timeline.rounds.length} states
+            </Link>
+          ) : (
+            <span className="chip" title="No annotated timeline yet">
+              Timeline · not yet
+            </span>
+          )}
+          <Link href={`/lab/study-hall/annotate/${s.id}`} className="chip hover:no-underline">
+            Annotate
+          </Link>
         </div>
       </div>
       <StudyView study={s} compNames={compNames} />
