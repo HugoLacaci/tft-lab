@@ -94,6 +94,7 @@ function build(): SearchRecord[] {
     ["Drills made for you", "/trainer/ai/", "AI-written drills for your weak spots"],
     ["Puzzles", "/trainer/puzzles/", "Ladder by rank"],
     ["Study Hall", "/lab/study-hall/", "Pro games, broken down"],
+    ["Game analysis", "/analysis/", "Round-by-round timelines (preview)"],
     ["Team planner", "/lab/board/", "Build and simulate a board"],
     ["Roll odds", "/lab/odds/", "Calculator"],
     ["Econ simulator", "/lab/econ/", "Interest and streaks"],

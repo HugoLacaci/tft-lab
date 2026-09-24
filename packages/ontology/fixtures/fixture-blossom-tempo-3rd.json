@@ -1,0 +1,3268 @@
+{
+  "matchId": "fixture-blossom-tempo-3rd",
+  "setNumber": 18,
+  "patch": "18.3",
+  "playerName": "Seat 5",
+  "source": "fixture",
+  "rounds": [
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "videoTimestampMs": 60000,
+      "gold": 12,
+      "level": 3,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Karma18",
+        "DA_18_Kobuko",
+        "DA_18_Varus",
+        "DA_18_Xayah",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [],
+      "augments": [],
+      "augmentOptions": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 90000,
+      "gold": 6,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Karma18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Varus",
+        "DA_18_Xayah",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 150000,
+      "gold": 11,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Karma18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Yorick",
+        "DA_18_Leona",
+        "DA_18_Caitlyn",
+        "DA_18_Warwick",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 180000,
+      "gold": 9,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Karma18",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Caitlyn",
+        "DA_18_Warwick",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 240000,
+      "gold": 15,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Karma18",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Karma18",
+        "DA_18_RekSai",
+        "DA_18_Elise",
+        "DA_18_Varus",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 270000,
+      "gold": 12,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_NeedlesslyLargeRod"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_RekSai",
+        "DA_18_Elise",
+        "DA_18_Varus",
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "videoTimestampMs": 330000,
+      "gold": 19,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_NeedlesslyLargeRod"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 2,
+          "note": "carousel pick: DA_18_Yunara holding DA_Component_TearOfTheGoddess"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 360000,
+      "gold": 19,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_NeedlesslyLargeRod"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 420000,
+      "gold": 27,
+      "level": 4,
+      "xp": {
+        "current": 8,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_NeedlesslyLargeRod"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Yunara",
+        "DA_18_Shen",
+        "DA_18_Kayle",
+        "DA_18_Kobuko",
+        "DA_18_Xayah"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 450000,
+      "gold": 13,
+      "level": 5,
+      "xp": {
+        "current": 0,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Shen",
+        "DA_18_Kayle",
+        "DA_18_Kobuko",
+        "DA_18_Xayah"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 510000,
+      "gold": 21,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Leona",
+        "DA_18_Warwick",
+        "DA_18_Sejuani",
+        "DA_18_Caitlyn",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 540000,
+      "gold": 20,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Warwick",
+        "DA_18_Sejuani",
+        "DA_18_Caitlyn",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 600000,
+      "gold": 32,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_ChainVest",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 2,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 630000,
+      "gold": 32,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 690000,
+      "gold": 43,
+      "level": 5,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Yorick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Cassiopeia",
+        "DA_18_Yorick",
+        "DA_18_Shen",
+        "DA_18_Xayah",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 720000,
+      "gold": 42,
+      "level": 5,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Cassiopeia",
+        null,
+        "DA_18_Shen",
+        "DA_18_Xayah",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 94,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "videoTimestampMs": 780000,
+      "gold": 51,
+      "level": 5,
+      "xp": {
+        "current": 8,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Ahri",
+        "DA_18_Sett",
+        "DA_18_Hecarim",
+        "DA_18_Varus",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "augmentOptions": [
+        "DA_SpreadingRoots",
+        "DA_TraitLadder",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 94,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 810000,
+      "gold": 19,
+      "level": 6,
+      "xp": {
+        "current": 0,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Sett",
+        "DA_18_Hecarim",
+        "DA_18_Varus",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 88,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 870000,
+      "gold": 26,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Elise",
+        "DA_18_Warwick",
+        "DA_18_Xayah",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 88,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 900000,
+      "gold": 26,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Elise",
+        "DA_18_Warwick",
+        "DA_18_Xayah",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 88,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "videoTimestampMs": 960000,
+      "gold": 33,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 4,
+          "note": "carousel pick: DA_18_Sett holding DA_Component_RecurveBow"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 88,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 990000,
+      "gold": 33,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 88,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1050000,
+      "gold": 42,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Sett",
+        "DA_18_Ahri",
+        "DA_18_Rammus",
+        "DA_18_Shen",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 88,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1080000,
+      "gold": 34,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Rammus",
+        "DA_18_Shen",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 82,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1140000,
+      "gold": 42,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Varus",
+        "DA_18_Leona",
+        "DA_18_Tristana",
+        "DA_18_Cassiopeia",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 82,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1170000,
+      "gold": 42,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Varus",
+        "DA_18_Leona",
+        "DA_18_Tristana",
+        "DA_18_Cassiopeia",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 82,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1230000,
+      "gold": 54,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword",
+        "DA_Component_RecurveBow",
+        "DA_Component_SparringGloves"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 3,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 82,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1260000,
+      "gold": 54,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_LastWhisper"
+          ]
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 82,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1320000,
+      "gold": 65,
+      "level": 6,
+      "xp": {
+        "current": 12,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_LastWhisper"
+          ]
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Sett",
+        "DA_18_Morgana",
+        "DA_18_Ahri",
+        "DA_18_Hecarim",
+        "DA_18_Kayle"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 4,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 82,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1350000,
+      "gold": 21,
+      "level": 7,
+      "xp": {
+        "current": 0,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_LastWhisper"
+          ]
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 1,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Morgana",
+        null,
+        "DA_18_Hecarim",
+        "DA_18_Kayle"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 76,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1410000,
+      "gold": 28,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_LastWhisper"
+          ]
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 1,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Ashe",
+        "DA_18_Malphite",
+        "DA_18_Ahri",
+        "DA_18_Lillia",
+        "DA_18_Sett"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "augmentOptions": [
+        "DA_TraitLadder",
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ],
+      "opponentPreview": [
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_GargoyleStoneplate"
+          ]
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Cassiopeia",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_RabadonsDeathcap"
+          ]
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "row": 3,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Elise",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Caitlyn",
+          "row": 3,
+          "col": 6,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "lobby": [
+        {
+          "playerName": "Seat 1",
+          "health": 91,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 2",
+          "health": 44,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 3",
+          "health": 70,
+          "level": 8
+        },
+        {
+          "playerName": "Seat 4",
+          "health": 58,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 6",
+          "health": 22,
+          "level": 6
+        },
+        {
+          "playerName": "Seat 7",
+          "health": 66,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 8",
+          "health": 39,
+          "level": 7
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-blossom-tempo-3rd",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 76,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1440000,
+      "gold": 1,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Lillia",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_ArchangelsStaff"
+          ]
+        },
+        {
+          "championId": "DA_18_Yunara",
+          "row": 3,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_LastWhisper"
+          ]
+        },
+        {
+          "championId": "DA_18_Ahri",
+          "row": 3,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Ahri",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kayle",
+        null,
+        "DA_18_Sivir",
+        null,
+        "DA_18_Varus"
+      ],
+      "benchItems": [
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ],
+      "opponentPreview": [
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_GargoyleStoneplate"
+          ]
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Cassiopeia",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_RabadonsDeathcap"
+          ]
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "row": 3,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Elise",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Caitlyn",
+          "row": 3,
+          "col": 6,
+          "star": 2,
+          "items": []
+        }
+      ]
+    }
+  ],
+  "finalPlacement": 3,
+  "title": "Blossom tempo into Ahri: a standard 3rd",
+  "notes": "Hand-built. Standard level timings, two slams by 3-2, no stage-3 roll, level 7 at 4-1 and a 4-2 rolldown at 7 that spends down to 1 gold. Every round of stage 2 and 3 is present so the accounting closes without estimates beyond round income."
+}

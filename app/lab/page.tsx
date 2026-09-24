@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PageTitle, Panel } from "@/components/ui/Panel";
 
 const TOOLS = [
+  { href: "/analysis", title: "Game analysis (preview)", body: "A game as a timeline of exact states and the decision between every two of them, derived from the numbers: gold, rolls, buys, items, positioning. Fixture games today; Riot API and recordings next." },
   { href: "/lab/study-hall", title: "Study Hall: pro games, broken down", body: "Real games from pros and top streamers with a stage-by-stage guide: what they do at 2-1, 3-2, 4-1 and 5-1, why, the question to answer before they do, and the drill that trains it. Plus the channels worth watching." },
   { href: "/lab/odds", title: "Roll-odds calculator", body: "How likely are you to hit 2★ or 3★ on a unit given your level, the pool and your gold? Closed-form per slot, Monte-Carlo for the distribution." },
   { href: "/lab/econ", title: "Econ simulator", body: "Project gold and level over the next five rounds under two plans side by side: save, level, or roll." },

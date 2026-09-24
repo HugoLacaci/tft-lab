@@ -164,6 +164,7 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/lab/cheatsheet",
     "/lab/board",
     "/lab/study-hall",
+    "/analysis",
     "/routine",
     "/tracker",
     "/compete",

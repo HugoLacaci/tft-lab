@@ -1,0 +1,3715 @@
+{
+  "matchId": "fixture-khazix-reroll-2nd",
+  "setNumber": 18,
+  "patch": "18.3",
+  "playerName": "Seat 2",
+  "source": "fixture",
+  "rounds": [
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 10,
+      "level": 3,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_RekSai",
+        "DA_18_Varus",
+        "DA_18_Kobuko",
+        "DA_18_Warwick",
+        "DA_18_Leona"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [],
+      "augments": [],
+      "augmentOptions": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 3,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Varus",
+        "DA_18_Kobuko",
+        null,
+        "DA_18_Leona"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 8,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Warwick",
+        "DA_18_Kayle",
+        "DA_18_Xayah",
+        "DA_18_Leona",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 5,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Kayle",
+        "DA_18_Xayah",
+        null,
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 11,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Elise",
+        "DA_18_Varus",
+        "DA_18_Kobuko",
+        "DA_18_RekSai"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 6,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Elise",
+        "DA_18_Varus",
+        "DA_18_Kobuko",
+        "DA_18_RekSai"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "gold": 12,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_SparringGloves"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 3,
+          "note": "carousel pick: DA_18_KhaZix holding DA_Component_SparringGloves"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 12,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_SparringGloves"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 20,
+      "level": 4,
+      "xp": {
+        "current": 8,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Leona",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Leona",
+        "DA_18_Shen",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest",
+        "DA_Component_SparringGloves"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 7,
+      "level": 5,
+      "xp": {
+        "current": 0,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword",
+            "DA_Component_SparringGloves"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Shen",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 96,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 12,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword",
+            "DA_Component_SparringGloves"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Ornn",
+        "DA_18_Elise",
+        "DA_18_Caitlyn",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 96,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 12,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword",
+            "DA_Component_SparringGloves"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Ornn",
+        "DA_18_Elise",
+        "DA_18_Caitlyn",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 20,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword",
+            "DA_Component_SparringGloves"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 2,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 20,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 28,
+      "level": 5,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Rammus",
+        "DA_18_Shen",
+        "DA_18_Varus",
+        "DA_18_Diana"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 21,
+      "level": 5,
+      "xp": {
+        "current": 10,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Rammus",
+        "DA_18_Shen",
+        "DA_18_Varus",
+        "DA_18_Diana"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 29,
+      "level": 5,
+      "xp": {
+        "current": 12,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Rammus",
+        "DA_18_Warwick",
+        "DA_18_Sejuani",
+        "DA_18_Hecarim",
+        "DA_18_Kobuko"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "augmentOptions": [
+        "DA_TraitLadder",
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 96,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 0,
+      "level": 6,
+      "xp": {
+        "current": 0,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Sejuani",
+        "DA_18_Hecarim",
+        "DA_18_Kobuko"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 90,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 5,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Caitlyn",
+        "DA_18_Yunara",
+        "DA_18_Xayah",
+        "DA_18_Kayle",
+        "DA_18_Elise"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 90,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 5,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Caitlyn",
+        "DA_18_Yunara",
+        "DA_18_Xayah",
+        "DA_18_Kayle",
+        "DA_18_Elise"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "gold": 10,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 3,
+          "note": "carousel pick: DA_18_Rammus holding DA_Component_GiantsBelt"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 10,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 17,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Rammus",
+        "DA_18_Leona",
+        "DA_18_Diana",
+        "DA_18_Shen"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 5,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Hecarim",
+        "DA_18_Warwick",
+        null,
+        "DA_18_Varus",
+        "DA_18_Tristana"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 11,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kobuko",
+        "DA_18_Sejuani",
+        "DA_18_Varus",
+        "DA_18_Ornn",
+        "DA_18_Xayah"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 11,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kobuko",
+        "DA_18_Sejuani",
+        "DA_18_Varus",
+        "DA_18_Ornn",
+        "DA_18_Xayah"
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 22,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_RecurveBow",
+        "DA_Component_NegatronCloak",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 3,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 22,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 31,
+      "level": 6,
+      "xp": {
+        "current": 12,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Diana",
+        "DA_18_Hecarim",
+        "DA_18_Rengar",
+        "DA_18_Shen"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 24,
+      "level": 6,
+      "xp": {
+        "current": 12,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Kayle",
+        "DA_18_Elise",
+        null,
+        "DA_18_Tristana"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 34,
+      "level": 6,
+      "xp": {
+        "current": 14,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_Sett",
+        "DA_18_Rammus",
+        "DA_18_Varus",
+        "DA_18_Ornn"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ],
+      "augmentOptions": [
+        "DA_SpreadingRoots",
+        "DA_TraitLadder",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 90,
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 23,
+      "level": 6,
+      "xp": {
+        "current": 14,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Hecarim",
+        "DA_18_Caitlyn",
+        "DA_18_Xayah",
+        "DA_18_Kobuko",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "health": 84,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 30,
+      "level": 6,
+      "xp": {
+        "current": 16,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Warwick",
+        "DA_18_Leona",
+        "DA_18_Sejuani",
+        "DA_18_Varus",
+        "DA_18_Diana"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "health": 84,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 11,
+      "level": 6,
+      "xp": {
+        "current": 16,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 3,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kobuko",
+        "DA_18_Rammus",
+        "DA_18_Shen",
+        "DA_18_Xayah",
+        "DA_18_Elise"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "health": 84,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 17,
+      "level": 6,
+      "xp": {
+        "current": 18,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 3,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Sett",
+        "DA_18_Lillia",
+        "DA_18_Hecarim",
+        "DA_18_Aphelios",
+        "DA_18_Kayle"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-khazix-reroll-2nd",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "health": 84,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 1,
+      "level": 6,
+      "xp": {
+        "current": 30,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_Component_ChainVest",
+            "DA_Component_GiantsBelt"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Warwick",
+          "row": 0,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 5,
+          "star": 3,
+          "items": [
+            "DA_InfinityEdge",
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rammus",
+          "row": 0,
+          "col": 1,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Warwick",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Lillia",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Sett",
+        null,
+        "DA_18_Hecarim",
+        "DA_18_Aphelios",
+        "DA_18_Kayle"
+      ],
+      "benchItems": [
+        "DA_Component_NegatronCloak"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion",
+        "DA_TraitLadder"
+      ]
+    }
+  ],
+  "finalPlacement": 2,
+  "title": "Kha'Zix reroll: slow-rolling to the 3-star",
+  "notes": "Hand-built. Kha'Zix by 2-3, level 5 at 3-1 with a small roll, level 6 at 3-5, slow roll above 50 through stage 4; never a second Rival on the board."
+}

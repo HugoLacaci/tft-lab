@@ -29,6 +29,8 @@ const ROUTES = [
   "/lab/",
   "/lab/board/",
   "/lab/study-hall/",
+  "/analysis/",
+  "/analysis/fixture-blossom-tempo-3rd/",
   "/lab/study-hall/wasianiverson-khazix-reroll/",
   "/lab/odds/",
   "/lab/econ/",

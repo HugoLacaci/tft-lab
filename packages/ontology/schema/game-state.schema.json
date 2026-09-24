@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://tftlab.dev/schema/game-state.schema.json",
+  "title": "GameState",
+  "description": "Oracle's game-state ontology. Single source of truth: TypeScript types (packages/ontology/ts) and Pydantic models (packages/ontology/py) are generated from this file. RoundState.board uses the trainer's PlacedUnit shape unchanged so the existing Board component renders a timeline with no adapter.",
+  "type": "object",
+  "definitions": {
+    "Hex": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["row", "col"],
+      "properties": {
+        "row": { "type": "integer", "minimum": 0, "maximum": 3, "description": "0 = frontline (nearest the enemy), 3 = backline." },
+        "col": { "type": "integer", "minimum": 0, "maximum": 6 }
+      }
+    },
+    "PlacedUnit": {
+      "description": "Identical to lib/scenario-schema.ts PlacedUnit.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["championId", "row", "col", "star", "items"],
+      "properties": {
+        "championId": { "type": "string", "minLength": 1 },
+        "row": { "type": "integer", "minimum": 0, "maximum": 3 },
+        "col": { "type": "integer", "minimum": 0, "maximum": 6 },
+        "star": { "type": "integer", "enum": [1, 2, 3] },
+        "items": { "type": "array", "items": { "type": "string" }, "description": "At most 3 (checked by the runtime validator; not expressed as maxItems so the generated type stays string[])." }
+      }
+    },
+    "BenchUnit": {
+      "description": "Identical to lib/scenario-schema.ts BenchUnit.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["championId", "star", "items"],
+      "properties": {
+        "championId": { "type": "string", "minLength": 1 },
+        "star": { "type": "integer", "enum": [1, 2, 3] },
+        "items": { "type": "array", "items": { "type": "string" }, "description": "At most 3 (checked by the runtime validator; not expressed as maxItems so the generated type stays string[])." },
+        "slot": { "type": "integer", "minimum": 0, "maximum": 8 }
+      }
+    },
+    "Phase": { "type": "string", "enum": ["planning", "combat", "carousel", "augment-select", "unknown"] },
+    "Provenance": { "type": "string", "enum": ["vision", "riot-api", "manual", "synthetic"] },
+    "StreakType": { "type": "string", "enum": ["win", "loss"] },
+    "IncomeEvent": {
+      "description": "Gold that arrived outside base income, interest and streak: PvE drops, augment gold, Wisp effects, carousel. Enumerated so the accounting equation has somewhere to put it.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "gold"],
+      "properties": {
+        "kind": { "type": "string", "enum": ["pve-drop", "augment", "wisp", "carousel", "other"] },
+        "gold": { "type": "integer" },
+        "note": { "type": "string" }
+      }
+    },
+    "RoundState": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matchId", "stage", "stageNumber", "roundNumber", "phase", "gold", "health", "level", "xp", "streak", "board", "bench", "shop", "benchItems", "activeTraits", "augments", "confidence", "provenance"],
+      "properties": {
+        "matchId": { "type": "string", "minLength": 1 },
+        "stage": { "type": "string", "pattern": "^[0-9]-[0-9]$", "description": "\"4-2\"" },
+        "stageNumber": { "type": "integer", "minimum": 1, "maximum": 9 },
+        "roundNumber": { "type": "integer", "minimum": 1, "maximum": 9 },
+        "phase": { "$ref": "#/definitions/Phase" },
+        "phaseMoment": { "type": "string", "enum": ["start", "end"], "description": "Within a planning phase: start (shop just rolled, gold known) or end (final board before combat). Decisions compare start→end of one planning phase when both exist." },
+        "videoTimestampMs": { "type": "integer", "minimum": 0, "description": "Present when derived from a VOD." },
+        "gold": { "type": "integer", "minimum": 0 },
+        "health": { "type": "integer", "minimum": 0, "maximum": 150 },
+        "level": { "type": "integer", "minimum": 1, "maximum": 11 },
+        "xp": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["current", "needed"],
+          "properties": { "current": { "type": "integer", "minimum": 0 }, "needed": { "type": "integer", "minimum": 0 } }
+        },
+        "streak": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "count"],
+          "properties": { "type": { "$ref": "#/definitions/StreakType" }, "count": { "type": "integer", "minimum": 0 } }
+        },
+        "board": { "type": "array", "items": { "$ref": "#/definitions/PlacedUnit" } },
+        "bench": { "type": "array", "items": { "$ref": "#/definitions/BenchUnit" }, "description": "At most 9 (runtime check)." },
+        "shop": { "type": "array", "items": { "type": ["string", "null"] }, "description": "Exactly 5 slots (runtime check; not minItems/maxItems so the generated type stays (string | null)[])." },
+        "benchItems": { "type": "array", "items": { "type": "string" } },
+        "activeTraits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["traitId", "count", "style"],
+            "properties": { "traitId": { "type": "string" }, "count": { "type": "integer", "minimum": 0 }, "style": { "type": "string" } }
+          }
+        },
+        "augments": { "type": "array", "items": { "type": "string" } },
+        "augmentOptions": { "type": "array", "items": { "type": "string" }, "description": "The augments on offer in an augment-select phase; lets a Decision record chosen vs offered." },
+        "opponentPreview": { "type": "array", "items": { "$ref": "#/definitions/PlacedUnit" }, "description": "The board fought this round, if visible." },
+        "lobby": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["playerName", "health"],
+            "properties": { "playerName": { "type": "string" }, "health": { "type": "integer" }, "level": { "type": "integer" } }
+          }
+        },
+        "incomeEvents": { "type": "array", "items": { "$ref": "#/definitions/IncomeEvent" } },
+        "confidence": {
+          "type": "object",
+          "description": "Per-field confidence 0..1 from perception; manual and riot-api states use 1.",
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "provenance": { "$ref": "#/definitions/Provenance" }
+      }
+    },
+    "GameTimeline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matchId", "setNumber", "patch", "source", "rounds"],
+      "properties": {
+        "matchId": { "type": "string", "minLength": 1 },
+        "setNumber": { "type": "integer", "minimum": 1 },
+        "patch": { "type": "string", "minLength": 1 },
+        "playerPuuid": { "type": "string" },
+        "playerName": { "type": "string", "description": "Display name for the analysed seat; anonymise before it leaves the browser." },
+        "source": { "type": "string", "enum": ["vod", "riot-api", "upload", "fixture"] },
+        "sourceUrl": { "type": "string" },
+        "rounds": { "type": "array", "items": { "$ref": "#/definitions/RoundState" } },
+        "finalPlacement": { "type": "integer", "minimum": 1, "maximum": 8 },
+        "title": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "Decision": {
+      "description": "The diff between two consecutive RoundStates: what the player did. Pure output of deriveDecisions; the accounting equation must balance or lowConfidence is set.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fromStage", "toStage", "fromIndex", "toIndex", "goldStart", "goldEnd", "income", "incomeEstimated", "goldSpent", "interestLost", "rolls", "xpBought", "levelled", "bought", "sold", "itemsEquipped", "itemsCombined", "repositioned", "starUpsAchieved", "healthLost", "residual", "lowConfidence", "evidence"],
+      "properties": {
+        "fromStage": { "type": "string" },
+        "toStage": { "type": "string" },
+        "fromIndex": { "type": "integer", "minimum": 0, "description": "Index of the source RoundState in the timeline." },
+        "toIndex": { "type": "integer", "minimum": 0 },
+        "goldStart": { "type": "integer" },
+        "goldEnd": { "type": "integer" },
+        "income": { "type": "integer", "description": "Gold that arrived between the two states (0 within one planning phase)." },
+        "incomeEstimated": { "type": "boolean", "description": "true when income was computed from set constants rather than observed." },
+        "goldSpent": { "type": "integer" },
+        "interestLost": { "type": "integer", "description": "Interest breakpoints given up by the spending: interest(goldStart+income) − interest(goldEnd)." },
+        "rolls": { "type": "integer", "minimum": 0 },
+        "xpBought": { "type": "integer", "minimum": 0, "description": "Number of XP purchases (4 gold each by default)." },
+        "levelled": { "type": "boolean" },
+        "bought": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["championId", "copies", "cost"], "properties": { "championId": { "type": "string" }, "copies": { "type": "integer", "minimum": 1 }, "cost": { "type": "integer", "minimum": 0 } } } },
+        "sold": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["championId", "copies", "gold"], "properties": { "championId": { "type": "string" }, "copies": { "type": "integer", "minimum": 1 }, "gold": { "type": "integer", "minimum": 0 } } } },
+        "itemsEquipped": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["itemId", "toUnitId"], "properties": { "itemId": { "type": "string" }, "toUnitId": { "type": "string" } } } },
+        "itemsCombined": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["from", "to"], "properties": { "from": { "type": "array", "items": { "type": "string" } }, "to": { "type": "string" } } } },
+        "repositioned": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["unitId", "from", "to"], "properties": { "unitId": { "type": "string" }, "from": { "$ref": "#/definitions/Hex" }, "to": { "$ref": "#/definitions/Hex" } } } },
+        "augmentPicked": { "type": "object", "additionalProperties": false, "required": ["chosen", "offered"], "properties": { "chosen": { "type": "string" }, "offered": { "type": "array", "items": { "type": "string" } } } },
+        "starUpsAchieved": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["championId", "star"], "properties": { "championId": { "type": "string" }, "star": { "type": "integer", "enum": [2, 3] } } } },
+        "healthLost": { "type": "integer" },
+        "boardStrengthDelta": { "type": "number", "description": "Estimate; flagged as such in the UI." },
+        "residual": { "type": "integer", "description": "goldStart + income + sold − bought − xp − rolls·rollCost − goldEnd. Zero when the equation balances." },
+        "lowConfidence": { "type": "boolean" },
+        "notes": { "type": "array", "items": { "type": "string" }, "description": "Why the decision is low confidence, in words the UI can show." },
+        "evidence": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["stage", "field", "value"], "properties": { "stage": { "type": "string" }, "field": { "type": "string" }, "value": { "type": "string" }, "confidence": { "type": "number" } } } }
+      }
+    }
+  },
+  "properties": {
+    "roundState": { "$ref": "#/definitions/RoundState" },
+    "gameTimeline": { "$ref": "#/definitions/GameTimeline" },
+    "decision": { "$ref": "#/definitions/Decision" }
+  }
+}

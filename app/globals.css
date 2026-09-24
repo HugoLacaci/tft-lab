@@ -748,3 +748,18 @@ a.panel:hover, .panel-hover:hover {
 .timeline-active::before { background: var(--teal); box-shadow: 0 0 8px var(--teal); }
 .study-card .study-thumb { transition: transform 300ms ease; }
 .study-card:hover .study-thumb { transform: scale(1.03); }
+
+/* Analysis ribbon ------------------------------------------------------------ */
+.ribbon { display: flex; gap: 3px; overflow-x: auto; padding-bottom: 2px; }
+.ribbon-seg { flex: 1 0 2.2rem; min-width: 2.2rem; }
+.ribbon-btn { display: flex; width: 100%; flex-direction: column; gap: 0.25rem; background: none; border: 0; padding: 0; cursor: pointer; color: var(--text-dim); }
+.ribbon-bar { display: block; height: 10px; width: 100%; background: var(--seg, var(--gold-dim)); opacity: 0.55; transition: opacity 150ms ease, transform 150ms ease; }
+.ribbon-btn:hover .ribbon-bar { opacity: 0.9; }
+.ribbon-active .ribbon-bar { opacity: 1; transform: scaleY(1.4); box-shadow: 0 0 10px var(--seg); }
+.ribbon-active .ribbon-label { color: var(--gold-bright); }
+.ribbon-low .ribbon-bar { outline: 1px dashed var(--red); outline-offset: -1px; }
+.ribbon-label { font: 600 0.6rem var(--font-display); letter-spacing: 0.08em; text-align: center; }
+.evidence { text-transform: none; letter-spacing: 0; }
+.evidence-low { border-style: dashed; border-color: var(--red); }
+.evidence { white-space: normal; text-align: left; }
+.evidence > span:first-child { white-space: nowrap; }

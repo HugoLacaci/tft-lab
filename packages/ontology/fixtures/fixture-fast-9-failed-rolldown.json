@@ -1,0 +1,3261 @@
+{
+  "matchId": "fixture-fast-9-failed-rolldown",
+  "setNumber": 18,
+  "patch": "18.3",
+  "playerName": "Seat 7",
+  "source": "fixture",
+  "rounds": [
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 11,
+      "level": 3,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kobuko",
+        "DA_18_Xayah",
+        "DA_18_Ornn",
+        "DA_18_Varus",
+        "DA_Karma18"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [],
+      "augmentOptions": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "health": 100,
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 9,
+      "level": 3,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kobuko",
+        null,
+        null,
+        "DA_18_Varus",
+        "DA_Karma18"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 94,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 14,
+      "level": 3,
+      "xp": {
+        "current": 8,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Leona",
+        "DA_18_Kayle",
+        "DA_18_Varus",
+        "DA_18_Elise",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "health": 94,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 14,
+      "level": 3,
+      "xp": {
+        "current": 8,
+        "needed": 10
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Leona",
+        "DA_18_Kayle",
+        "DA_18_Varus",
+        "DA_18_Elise",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 88,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 21,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Xayah",
+        "DA_18_Caitlyn",
+        "DA_18_Warwick",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "health": 88,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 19,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Xayah",
+        "DA_18_Caitlyn",
+        "DA_18_Warwick",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 82,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "gold": 26,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 2,
+          "note": "carousel pick: DA_18_Sejuani holding DA_Component_GiantsBelt"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "health": 82,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 26,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 76,
+      "streak": {
+        "type": "loss",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 35,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Shen",
+        "DA_18_Kayle",
+        "DA_18_Elise",
+        "DA_18_Leona",
+        "DA_18_Varus"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "health": 76,
+      "streak": {
+        "type": "loss",
+        "count": 4
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 15,
+      "level": 5,
+      "xp": {
+        "current": 0,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Shen",
+        null,
+        "DA_18_Elise",
+        "DA_18_Leona",
+        "DA_18_Varus"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 70,
+      "streak": {
+        "type": "loss",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 23,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Yunara",
+        "DA_18_Varus",
+        "DA_18_Ornn",
+        "DA_18_Warwick",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "health": 70,
+      "streak": {
+        "type": "loss",
+        "count": 5
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 23,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Yunara",
+        "DA_18_Varus",
+        "DA_18_Ornn",
+        "DA_18_Warwick",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 70,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 32,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 2,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "health": 70,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 32,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 70,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 41,
+      "level": 5,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Cassiopeia",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Elise",
+        "DA_18_Shen"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "health": 70,
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 41,
+      "level": 5,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Cassiopeia",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Elise",
+        "DA_18_Shen"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 62,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 50,
+      "level": 5,
+      "xp": {
+        "current": 8,
+        "needed": 36
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Hecarim",
+        "DA_18_Leona",
+        "DA_18_Kayle",
+        "DA_18_Varus",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion"
+      ],
+      "augmentOptions": [
+        "DA_TraitLadder",
+        "DA_SpreadingRoots",
+        "DA_BirthdayReunion"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "health": 62,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 19,
+      "level": 6,
+      "xp": {
+        "current": 0,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sejuani",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Hecarim",
+        null,
+        "DA_18_Kayle",
+        "DA_18_Varus",
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 54,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 26,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Sejuani",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Aphelios",
+        "DA_18_Rammus",
+        "DA_18_Warwick",
+        "DA_18_Tristana",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "health": 54,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 10,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_Sejuani",
+        "DA_18_Varus",
+        "DA_18_Diana",
+        "DA_18_Elise"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 46,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "carousel",
+      "phaseMoment": "start",
+      "gold": 17,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "carousel",
+          "gold": 4,
+          "note": "carousel pick: DA_18_Aphelios holding DA_Component_BFSword"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "health": 46,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 17,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 46,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 23,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Shen",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Leona",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_RecurveBow",
+        "DA_Component_GiantsBelt",
+        "DA_Component_ChainVest",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "health": 46,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "vision",
+      "confidence": {
+        "gold": 0.4
+      },
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 20,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Shen",
+        "DA_18_Diana",
+        "DA_18_Xayah",
+        "DA_18_Leona",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 38,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 30,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Varus",
+        "DA_18_Hecarim",
+        "DA_18_Elise",
+        "DA_18_Ornn",
+        "DA_18_Kobuko"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "health": 38,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 30,
+      "level": 6,
+      "xp": {
+        "current": 8,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Varus",
+        "DA_18_Hecarim",
+        "DA_18_Elise",
+        "DA_18_Ornn",
+        "DA_18_Kobuko"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 38,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 41,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 3,
+          "note": "PvE round drop"
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "health": 38,
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 41,
+      "level": 6,
+      "xp": {
+        "current": 10,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 30,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 50,
+      "level": 6,
+      "xp": {
+        "current": 12,
+        "needed": 48
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_Component_RecurveBow"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Rammus",
+        "DA_18_Tristana",
+        "DA_18_Warwick",
+        "DA_18_Sett",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess",
+        "DA_Component_BFSword",
+        "DA_Component_NeedlesslyLargeRod"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "health": 30,
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 14,
+      "level": 7,
+      "xp": {
+        "current": 0,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Rammus",
+        "DA_18_Tristana",
+        "DA_18_Warwick",
+        "DA_18_Sett",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 22,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "augment-select",
+      "phaseMoment": "start",
+      "gold": 21,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Malphite",
+        "DA_18_Morgana",
+        "DA_18_Hecarim",
+        "DA_18_Varus",
+        "DA_18_Diana"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots"
+      ],
+      "augmentOptions": [
+        "DA_BirthdayReunion",
+        "DA_TraitLadder",
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "Seat 1",
+          "health": 88,
+          "level": 8
+        },
+        {
+          "playerName": "Seat 2",
+          "health": 90,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 3",
+          "health": 61,
+          "level": 8
+        },
+        {
+          "playerName": "Seat 4",
+          "health": 47,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 5",
+          "health": 76,
+          "level": 8
+        },
+        {
+          "playerName": "Seat 6",
+          "health": 12,
+          "level": 7
+        },
+        {
+          "playerName": "Seat 8",
+          "health": 55,
+          "level": 8
+        }
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "health": 22,
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 1,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Caitlyn",
+        "DA_18_Sejuani",
+        null,
+        "DA_18_Warwick",
+        null
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "health": 14,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "start",
+      "gold": 7,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Yunara",
+        "DA_18_Leona",
+        "DA_18_Xayah",
+        "DA_18_Kobuko",
+        "DA_18_Varus"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    },
+    {
+      "matchId": "fixture-fast-9-failed-rolldown",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "health": 14,
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "provenance": "manual",
+      "confidence": {},
+      "phase": "planning",
+      "phaseMoment": "end",
+      "gold": 1,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 76
+      },
+      "board": [
+        {
+          "championId": "DA_18_Ornn",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kobuko",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 2,
+          "star": 2,
+          "items": [
+            "DA_SunfireCape"
+          ]
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 4,
+          "star": 2,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": [
+            "DA_Component_BFSword"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_Kayle",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Morgana",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Malphite",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Elise",
+        "DA_18_Shen",
+        "DA_18_Warwick",
+        "DA_18_Caitlyn",
+        "DA_18_Diana"
+      ],
+      "benchItems": [
+        "DA_Component_TearOfTheGoddess"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 3,
+          "style": "gold"
+        }
+      ],
+      "augments": [
+        "DA_BirthdayReunion",
+        "DA_SpreadingRoots",
+        "DA_TraitLadder"
+      ]
+    }
+  ],
+  "finalPlacement": 7,
+  "title": "Fast 9 without the board: a 7th",
+  "notes": "Hand-built. Greedy econ with a weak board, a stage-3 roll that breaks 50, a rolldown to zero at level 7 on 4-2 that misses. Round 3-5's end state comes from perception with a misread gold value (confidence 0.4) to exercise the low-confidence path."
+}
