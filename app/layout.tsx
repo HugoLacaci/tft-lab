@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cinzel, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -7,20 +7,23 @@ import { Backdrop } from "@/components/layout/Backdrop";
 import { BottomNav } from "@/components/layout/BottomNav";
 import { SITE_URL } from "@/lib/site";
 
-const cinzel = Cinzel({
+// Self-hosted variable fonts (app/fonts, latin subset, from Google Fonts).
+// next/font/google fetches at build time and a transient Google outage failed
+// a deploy on 2026-09-24; the automated redeploys must not depend on it.
+const cinzel = localFont({
+  src: "./fonts/cinzel-latin.woff2",
   variable: "--font-cinzel",
-  subsets: ["latin"],
-  weight: ["500", "700"],
+  weight: "400 900",
   display: "swap",
 });
 
 // Body text uses `optional`: on a slow connection the system fallback stays,
 // which keeps the first paragraph (the LCP element on guide pages) from being
 // re-painted late by the font swap. Headings keep `swap` because Cinzel is the look.
-const inter = Inter({
+const inter = localFont({
+  src: "./fonts/inter-latin.woff2",
   variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "600"],
+  weight: "100 900",
   display: "optional",
 });
 

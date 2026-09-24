@@ -144,6 +144,8 @@ e2e/, tests/         Playwright, Vitest
 - **Comps page**: stale-patch note, sticky toolbar with tier jump chips, tier bands, trait chips on phones (first three), deep links in the URL hash.
 - **Brand**: `app/icon.png`, `app/apple-icon.png`, `app/opengraph-image.png` and `public/icons/*` were generated from the header hex mark (sharp, see git history); `app/manifest.ts` makes the site installable.
 
+Fonts are self-hosted (`app/fonts/*.woff2`, latin variable files from Google Fonts, loaded with `next/font/local`): a transient Google Fonts outage failed an automated deploy on 2026-09-24, and redeploys must not depend on a third party at build time.
+
 ## Deploying (GitHub Pages, or any static host)
 
 The site is a static export (`out/`), so it runs anywhere that serves files.
