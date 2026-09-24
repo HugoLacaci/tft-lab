@@ -1,0 +1,102 @@
+{
+  "id": "dishsoap-fast-9-flex-masterclass",
+  "title": "Win-streak into level 9 with a flexible board",
+  "video": {
+    "platform": "youtube",
+    "id": "0-g2ViuVops",
+    "title": "This Game Is a Set 18 Fast 9 (Flex) Masterclass...",
+    "channel": "Dishsoap",
+    "channelUrl": "https://www.youtube.com/@dishsoaptft",
+    "publishedOn": "2026-08-17",
+    "length": "26:22"
+  },
+  "player": {
+    "name": "Dishsoap",
+    "role": "pro",
+    "about": "Two-time World Champion and co-curator of TFT Academy. The reference player for tempo and fast-9 lines: he decides the game plan from what the lobby gives him, not from a comp."
+  },
+  "patch": "PBE",
+  "set": 18,
+  "line": "Fast 9 flex",
+  "comps": ["ashe-fast-9"],
+  "tags": ["fast-9", "flex", "win-streak", "augments"],
+  "tier": 3,
+  "summary": "A PBE game from the set's first week. Dishsoap takes Birthday Reunion and Spreading Roots, win-streaks through the early stages and levels to 9 with a flexible board built from whatever the shop offers rather than a preset comp.",
+  "thesis": "Fast 9 is not a comp, it is an econ line that a strong early board pays for. This game shows the whole chain: a board that wins stage 2 and 3 pays streak gold on top of interest, augments that reward levels (Birthday Reunion pays a 2-star 5-cost at level 9) decide the timing, and the final board is chosen at 8 and 9 from the units that appear, held together by emblems rather than by a plan written before the game. Watch the levels and the gold, not the champions.",
+  "timeline": [
+    {
+      "stage": "2-1",
+      "title": "The augment is a commitment to a timeline",
+      "watch": "Birthday Reunion pays out at levels 5, 7 and 9 (a 2-star 2-cost, a Thief's Gloves, a 2-star 5-cost). Note what he already has when he takes it and when in the game each reward lands relative to the standard level timings.",
+      "why": "An augment that scales with level is a promise to reach those levels on time; taking it at 2-1 means the econ plan for the whole game is decided in round one.",
+      "guideLink": "/guides/augments#the-evaluation-framework",
+      "lesson": "augments-reading",
+      "question": "Which of the three level rewards is the one that justifies the pick, and what does it demand of stages 3 and 4?"
+    },
+    {
+      "stage": "2",
+      "title": "Strongest board every round, no exceptions",
+      "watch": "Count how many rounds in stage 2 he fields a 2-star that arrived that same round, and how often the first components are combined on the units he has rather than held.",
+      "why": "The win streak is the income line of a fast-9 game: streak gold plus interest plus zero HP lost. It is bought by fielding upgrades and slamming, not by saving.",
+      "guideLink": "/guides/hp#hp-is-a-resource",
+      "lesson": "hp-strongest-board"
+    },
+    {
+      "stage": "3-2",
+      "title": "Level 6 on schedule, no roll",
+      "watch": "How much gold is on the bar after the level, and whether the shop is refreshed at all before 4-1. Also whether he keeps the 50-gold breakpoint through 3-5 while still streaking.",
+      "why": "Fast 9 dies to a stage-3 roll. The level is the only purchase; the streak keeps the HP where it needs to be.",
+      "guideLink": "/guides/leveling#standard-level-timings",
+      "lesson": "level-standard-timings",
+      "question": "If the streak broke at 3-3, would you still be on the fast-9 line? What would have to be true?"
+    },
+    {
+      "stage": "3",
+      "title": "Spreading Roots: emblems as flexibility",
+      "watch": "Which units receive the two emblems and whether those emblems decide the line or keep two lines open. Notice how a random emblem changes which 4-costs are worth buying at 8.",
+      "why": "An emblem is a free trait breakpoint; in a flex game it widens the set of boards that are strong, which is exactly what a player who has not committed wants.",
+      "guideLink": "/guides/items#emblems",
+      "lesson": "items-holders"
+    },
+    {
+      "stage": "4-1 / 4-2",
+      "title": "Levels 7 and 8 before any rolldown",
+      "watch": "Level 7 at 4-1 and 8 shortly after, and the size of the roll at 8: he buys the 4-costs that appear, not a shopping list. Track the gold left after the roll.",
+      "why": "At 8 the 4-cost odds are three times what they are at 7; rolling before the level is paying triple. The stop condition is decided by the gold the level-9 plan needs, not by what the shop shows.",
+      "guideLink": "/guides/rolling#rolldown-discipline",
+      "lesson": "level-rolldowns"
+    },
+    {
+      "stage": "4",
+      "title": "Items move to whoever the board became",
+      "watch": "Items placed on early holders get moved to the 4-costs that actually arrived. Count how many items change hands between 4-1 and 5-1.",
+      "why": "In a flex game the carry is decided by the shop; items that cannot move are a commitment made too early. Slam on holders whose items transfer.",
+      "guideLink": "/guides/items#slam-or-hold",
+      "lesson": "items-slam-early"
+    },
+    {
+      "stage": "5-1 / 5-2",
+      "title": "Level 9 and the payout",
+      "watch": "The round he hits 9, what the Birthday Reunion 5-cost turns out to be, and how the ninth slot is filled: a trait breakpoint, a second tank or a 5-cost carry.",
+      "why": "Level 9 is only worth it if the board gets a slot that changes fights: a 5-cost that fits the items, or a breakpoint. Otherwise the gold was better spent two-starring the 4-costs.",
+      "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+      "lesson": "level-fast-9-and-capping",
+      "question": "Before he hits 9: which two units on his board would you two-star first with the gold instead? Was that the better line?"
+    },
+    {
+      "stage": "5+",
+      "title": "Positioning against the boards left",
+      "watch": "How the layout changes between opponents in the last stages: where the carries stand against each remaining board and what gets moved after scouting.",
+      "why": "With three or four boards left, every round is a known opponent; positioning is the last free strength in the game.",
+      "guideLink": "/guides/positioning#counter-positioning",
+      "lesson": "positioning-counter"
+    }
+  ],
+  "questions": [
+    { "q": "Why is a win streak worth more than 50 gold in stage 2?", "a": "Because it pays streak gold on top of interest and costs zero HP, and HP is what lets you reach level 9 while others stabilise. Interest alone caps at 5; a streak adds 2 to 3 more and protects the health that pays for the late levels." },
+    { "q": "What makes this a flex game and not an Ashe game?", "a": "The board is decided at 8 and 9 by the 4- and 5-costs that appear and the emblems he holds; items were slammed on holders that transfer. A player following a set comp would have rolled for specific units at 7 and lost the streak econ." },
+    { "q": "Which single decision would break this line if done wrong?", "a": "Rolling at stage 3. A stage-3 roll spends the interest and the level timing at once; the fast-9 econ never recovers and the augments that pay at 9 pay nothing." }
+  ],
+  "sourceNote": "Title, channel, date, length and the two named augments come from the video page. The stage guide is TFT Lab's reading of a fast-9 flex game and of what to watch for at each point; the video has no creator chapters, so stops are anchored to stages rather than timestamps.",
+  "verifiedOn": "2026-09-24"
+}

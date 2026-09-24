@@ -16,6 +16,7 @@ import { guideSlugs, readGuide } from "../lib/guide-sections";
 import { SCENARIO_CATEGORIES, CATEGORY_LABELS } from "../lib/scenario-categories";
 import { RANK_TIERS } from "../lib/rank-tiers";
 import { LESSONS, moduleById } from "../lib/curriculum";
+import { loadStudies } from "../lib/studies";
 
 export type SearchKind = "comp" | "champion" | "trait" | "item" | "augment" | "wisp" | "guide" | "page";
 
@@ -92,6 +93,7 @@ function build(): SearchRecord[] {
     ["Replay missed drills", "/trainer/missed/", "Trainer"],
     ["Drills made for you", "/trainer/ai/", "AI-written drills for your weak spots"],
     ["Puzzles", "/trainer/puzzles/", "Ladder by rank"],
+    ["Study Hall", "/lab/study-hall/", "Pro games, broken down"],
     ["Team planner", "/lab/board/", "Build and simulate a board"],
     ["Roll odds", "/lab/odds/", "Calculator"],
     ["Econ simulator", "/lab/econ/", "Interest and streaks"],
@@ -104,6 +106,7 @@ function build(): SearchRecord[] {
   for (const [n, h, s] of pages) out.push({ k: "page", n, h, s });
   for (const c of SCENARIO_CATEGORIES) out.push({ k: "page", n: `${CATEGORY_LABELS[c]} drills`, h: `/trainer/${c}/`, s: "Trainer" });
   for (const t of RANK_TIERS) out.push({ k: "page", n: `${t.label} puzzles`, h: `/trainer/puzzles/${t.id}/`, s: "Puzzle ladder" });
+  for (const s of loadStudies()) out.push({ k: "page", n: s.title, h: `/lab/study-hall/${s.id}/`, s: `Study Hall · ${s.player.name} · ${s.line}`, w: s.tags.join(" ") });
   for (const l of LESSONS) out.push({ k: "page", n: l.title, h: `/trainer/path/${l.id}/`, s: `Lesson · ${moduleById(l.module)?.title ?? ""}`, w: l.blurb });
   return out;
 }

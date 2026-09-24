@@ -1,0 +1,94 @@
+{
+  "id": "shurkou-econ-augment-fast-9",
+  "title": "An econ augment as the whole game plan",
+  "video": {
+    "platform": "youtube",
+    "id": "QcIZWEo7tvY",
+    "title": "I took this broken new Econ Augment to try going Fast 9. It worked.",
+    "channel": "shurkou",
+    "channelUrl": "https://www.youtube.com/@shurkou",
+    "publishedOn": "2026-09-01",
+    "length": "39:44"
+  },
+  "player": {
+    "name": "shurkou",
+    "role": "streamer",
+    "about": "Challenger climb content built around one idea per game. Useful for seeing how a single strong pick reshapes the plan for the next thirty minutes."
+  },
+  "patch": "18.1",
+  "set": 18,
+  "line": "Econ augment into fast 9",
+  "comps": ["ashe-fast-9"],
+  "tags": ["econ", "fast-9", "augments", "wisps"],
+  "tier": 2,
+  "summary": "A launch-week game where an econ augment is taken specifically to go fast 9, and the plan works. A long, unedited-feeling game that shows the whole econ arc from the pick to the level-9 board.",
+  "thesis": "An econ augment is a loan against your HP: it pays gold now or per round and asks you to survive long enough to spend it. The pick is right when the HP plan exists (a board that holds stage 3 and 4 without rolling) and wrong when it does not. This game is the positive case; watch the HP as much as the gold, because that is what the augment is actually costing.",
+  "timeline": [
+    {
+      "stage": "2-1",
+      "title": "The econ pick and the HP it will cost",
+      "watch": "The augment taken and the two alternatives. Write down his HP at 2-1 and check it again at 3-5 and 4-5: that difference is the price of the augment.",
+      "why": "Econ augments are only correct with the health to cash them; below 50 HP at 4-1 the gold is worth less than the fights it did not win.",
+      "guideLink": "/guides/augments#econ-augments-below-50-hp",
+      "lesson": "augments-reading",
+      "question": "How much HP is he willing to spend to reach level 9? Where would you have pulled the plug?"
+    },
+    {
+      "stage": "2",
+      "title": "Strongest board with the gold you are not spending",
+      "watch": "How he keeps fights close in stage 2 without rolling: 2-stars fielded from natural shops, components combined early, cheap Wisps only when they save a streak.",
+      "why": "A fast-9 player still needs to not lose every round; the free strength (upgrades from natural shops, early slams) is what makes the econ line survivable.",
+      "guideLink": "/guides/hp#hp-is-a-resource",
+      "lesson": "hp-strongest-board"
+    },
+    {
+      "stage": "3",
+      "title": "Interest, streak gold and the augment together",
+      "watch": "Gold per round in stage 3: base income, interest, streak gold and the augment's payout. Add them up once; it explains why he can afford the levels later.",
+      "why": "Income compounds from several sources at once; understanding the sum is what lets you decide how deep a rolldown can go two stages later.",
+      "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+      "lesson": "econ-interest-basics",
+      "question": "What is his income at 3-5 including the augment? How many rounds until level 9 is paid for?"
+    },
+    {
+      "stage": "3-2 / 4-1",
+      "title": "Levels on schedule, no roll before 8",
+      "watch": "Level 6 at 3-2, 7 at 4-1, 8 at 4-2 or 4-5, and whether the shop is refreshed at all before 8. Note the HP each time.",
+      "why": "The econ augment is wasted by a stage-3 roll: every gold rolled before 8 buys units at odds a third as good as the ones at 8.",
+      "guideLink": "/guides/leveling#standard-level-timings",
+      "lesson": "level-standard-timings"
+    },
+    {
+      "stage": "4",
+      "title": "The board that holds stage 4",
+      "watch": "What keeps him alive through stage 4 while under-rolled: itemised frontline, a 2-star carry from natural copies, and positioning against the boards that could kill him.",
+      "why": "Fast 9 is not 'do nothing until 9'; it is buying the minimum board that loses slowly while the gold accumulates.",
+      "guideLink": "/guides/hp#thresholds",
+      "lesson": "hp-thresholds"
+    },
+    {
+      "stage": "5-1",
+      "title": "Level 9 and the rolldown that follows",
+      "watch": "The round he hits 9, how much gold is left, and the roll: which 5-costs he takes, in what order items move, and when he stops.",
+      "why": "At 9 the 5-cost odds are five times what they were at 8; this is the roll the whole game was for, and it still needs a stop condition.",
+      "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+      "lesson": "level-fast-9-and-capping",
+      "question": "Before the roll: which two 5-costs fit his items? Would you take a third at the cost of two-starring a 4-cost?"
+    },
+    {
+      "stage": "5+",
+      "title": "Converting the cap into placements",
+      "watch": "Players left and their HP; whether the capped board is positioned differently against each, and whether he keeps rolling or holds once the top 2 is locked.",
+      "why": "A capped board still loses to bad positioning; the last stage is about the placement on the table, not more strength.",
+      "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+      "lesson": "endgame-placement"
+    }
+  ],
+  "questions": [
+    { "q": "When is an econ augment the wrong pick even if it is strong?", "a": "When the board cannot hold stage 3 and 4 without rolling, or when HP is already low: the gold is only worth what it buys before you are eliminated, and below 50 HP at 4-1 that is not much." },
+    { "q": "What does fast 9 cost, exactly?", "a": "HP in stages 3 and 4 and a weaker 4-2 board than the lobby's. It is paid back at 5-1 by 5-cost odds five times higher and a ninth slot, if you arrive with the gold and the health." },
+    { "q": "Why no roll before level 8?", "a": "Because 4-cost odds at 6 are 5%, at 7 about 10% and at 8 about 30%; gold rolled at 6 or 7 buys the same units at a third of the rate. The augment makes the gold available; the discipline makes it worth something." }
+  ],
+  "sourceNote": "Title, channel, date and length come from the video page; the description says the game is a fast-9 attempt built around an econ augment. The stage guide is TFT Lab's reading of an econ-augment fast-9 game; the video has no creator chapters, so stops are anchored to stages.",
+  "verifiedOn": "2026-09-24"
+}

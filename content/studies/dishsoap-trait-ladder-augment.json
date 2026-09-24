@@ -1,0 +1,93 @@
+{
+  "id": "dishsoap-trait-ladder-augment",
+  "title": "Playing a prismatic that rewards trait count",
+  "video": {
+    "platform": "youtube",
+    "id": "BwgK6VAJKpU",
+    "title": "This Is Why You Always Take “Trait Ladder” on Set 18!",
+    "channel": "Dishsoap",
+    "channelUrl": "https://www.youtube.com/@dishsoaptft",
+    "publishedOn": "2026-08-27",
+    "length": "25:30"
+  },
+  "player": {
+    "name": "Dishsoap",
+    "role": "pro",
+    "about": "Two-time World Champion and co-curator of TFT Academy. When he calls an augment an always-take, the game shows the conditions that make it one."
+  },
+  "patch": "18.1",
+  "set": 18,
+  "line": "Trait-count board around a prismatic",
+  "comps": [],
+  "tags": ["augments", "flex", "items"],
+  "tier": 2,
+  "summary": "Launch-patch game built around the prismatic augment Trait Ladder: a random emblem now, then a reward each time the board fields a rising number of different traits in a combat. Dishsoap shows how to build a board that keeps climbing the ladder.",
+  "thesis": "An augment is only as good as the board that can use it, and Trait Ladder is the clearest case: its value is the number of distinct traits you can field, which favours flexible boards with many unique traits over verticals. The game is a study in reading an augment against the shop in front of you: which cheap units add a new trait, which emblems change the count, and when a stronger unit is the wrong buy because it duplicates a trait you already have.",
+  "timeline": [
+    {
+      "stage": "2-1",
+      "title": "Why this prismatic and not the others",
+      "watch": "The two alternatives on offer and the board at 2-1. Trait Ladder gives an emblem immediately; note which unit gets it and whether that emblem adds a trait the board did not have.",
+      "why": "The evaluation is strength now versus strength later against your HP and your board. A prismatic that starts paying in stage 2 is a different pick from one that pays at 5-1.",
+      "guideLink": "/guides/augments#silver-gold-prismatic",
+      "lesson": "augments-reading",
+      "question": "How many distinct traits can his stage-2 board field, and which shop unit would add one for the least gold?"
+    },
+    {
+      "stage": "2",
+      "title": "Buying traits, not units",
+      "watch": "Shop purchases that a normal board would skip: 1-costs bought for a trait they bring, not for their strength. Compare with the copies he does not buy because the trait is already covered.",
+      "why": "Trait breakpoints, not unit cost, decide what a board does. With this augment the first breakpoint of many traits is worth more than the third breakpoint of one.",
+      "guideLink": "/guides/welcome#traits-and-breakpoints",
+      "lesson": "welcome-traits"
+    },
+    {
+      "stage": "3-2",
+      "title": "Level 6 buys a trait slot",
+      "watch": "The level at 3-2 and what the sixth unit adds. Watch whether the level is taken before the augment rewards are counted for the round.",
+      "why": "Each level is one more unit, and here one more unit is one more trait toward the next rung of the ladder; the level timing has a second payoff.",
+      "guideLink": "/guides/leveling#standard-level-timings",
+      "lesson": "level-standard-timings"
+    },
+    {
+      "stage": "3",
+      "title": "Items on the board, whatever the board is",
+      "watch": "The first two completed items and who holds them. In a game where the units change often, note which items he chooses because they move well.",
+      "why": "Two completed items by 3-2 is the rule regardless of the plan; tank items and most damage items transfer when the board changes.",
+      "guideLink": "/guides/items#slam-or-hold",
+      "lesson": "items-slam-early"
+    },
+    {
+      "stage": "4-2",
+      "title": "The third augment against a board already built",
+      "watch": "Whether the 4-2 pick adds combat strength or another emblem, and how it interacts with the ladder count.",
+      "why": "The third augment is chosen with the most information; the right pick is the one that fixes what the board lacks at 4-2, not the highest-rated one.",
+      "guideLink": "/guides/augments#why-the-highest-winrate-augment-is-wrong-for-you",
+      "lesson": "augments-vs-board",
+      "question": "What does the board lack at 4-2: frontline, damage, or one more trait? Which augment on offer fixes that?"
+    },
+    {
+      "stage": "4",
+      "title": "Level 8 and the trait-per-slot trade",
+      "watch": "How the roll at 8 is spent: 4-costs that both upgrade the board and add a trait versus stronger units that duplicate one.",
+      "why": "Every slot has two values here, strength and trait count. The best buy maximises the sum, which is why the board ends up unusual.",
+      "guideLink": "/guides/rolling#rolldown-discipline",
+      "lesson": "level-rolldowns"
+    },
+    {
+      "stage": "5",
+      "title": "Capping: when to stop climbing the ladder",
+      "watch": "The point where he stops adding traits and starts two-starring carries or adding a 5-cost. Look at the reward sizes versus the fights he is winning.",
+      "why": "The ladder pays less per rung relative to what a 2-star 4-cost adds late. Knowing when the augment has done its work is part of playing it.",
+      "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+      "lesson": "endgame-placement"
+    }
+  ],
+  "questions": [
+    { "q": "Why does Trait Ladder suit a flexible player more than a vertical player?", "a": "Its rewards count distinct traits fielded in a combat. A vertical board stacks copies of one trait and fields few distinct ones; a flex board of one-of-each traits climbs the ladder faster and gets an emblem that adds another." },
+    { "q": "What is the trap when playing this augment?", "a": "Buying weak units for their traits so long that the board loses fights and bleeds HP. The rewards must convert into a board that wins; if the ladder is climbing while HP falls under 40 by 4-1, the augment is being played, not the game." },
+    { "q": "How would you evaluate it at 2-1 with a board of two Defenders and a Rapidfire pair?", "a": "Count the distinct traits you can reach at level 5 with cheap buys and one emblem; if it is five or more, the augment pays early and the pick is good. If the shop and the emblem push you into duplicates, a strength augment is the safer 2-1." }
+  ],
+  "sourceNote": "Title, channel, date and length come from the video page; the augment text (a random emblem, then rewards for fielding a rising number of non-unique traits) comes from the set data. The stage guide is TFT Lab's reading; the video has no creator chapters, so stops are anchored to stages.",
+  "verifiedOn": "2026-09-24"
+}

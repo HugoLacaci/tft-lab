@@ -1,0 +1,106 @@
+{
+  "id": "wasianiverson-executioner-flex-fast-9",
+  "title": "Tempo opener into a capped Executioner board",
+  "video": {
+    "platform": "youtube",
+    "id": "ULY3JGNgJrk",
+    "title": "How to play Executioner Flex Fast 9 in TFT Set 18 Enchanted Wilds",
+    "channel": "Wasianiverson",
+    "channelUrl": "https://www.youtube.com/@wasianiverson",
+    "publishedOn": "2026-08-04",
+    "length": "31:58"
+  },
+  "player": {
+    "name": "Wasianiverson",
+    "role": "streamer",
+    "about": "Challenger streamer who chapters every game by augment round. This one is an early-set explainer, so he says what he is doing as he does it."
+  },
+  "patch": "PBE",
+  "set": 18,
+  "line": "Tempo Blossom into Executioner fast 9",
+  "comps": ["ashe-fast-9", "blossom-ahri"],
+  "tags": ["fast-9", "tempo", "flex", "wisps"],
+  "tier": 2,
+  "summary": "A PBE game that opens with a tempo Blossom board and converts it into a capped Executioner board at level 9. Chaptered at each augment round, with the creator explaining the plan as it changes.",
+  "thesis": "Most fast-9 games are won in stage 2 and 3 by a board that was never meant to be the final one. The opener buys HP and streak gold; the final comp is chosen later from items and 4-costs. This game shows the handover: when the opener is sold, which units carry over, and how the Wisps of this set fold into the econ plan.",
+  "timeline": [
+    {
+      "at": "1:08",
+      "stage": "2-1",
+      "title": "Augment for a tempo opener",
+      "watch": "The board he opens with and which augment supports tempo now versus payoff at 9. Note whether he takes econ or strength and what the HP plan is.",
+      "why": "A tempo opener wants strength or gold now; the fast-9 payoff comes from the streak the opener buys, not from a scaling augment.",
+      "guideLink": "/guides/augments#the-evaluation-framework",
+      "lesson": "augments-reading"
+    },
+    {
+      "stage": "2",
+      "title": "Wisps as part of the econ",
+      "watch": "Which Wisps he buys and at what price: econ Wisps by default, combat Wisps only when cheap and when a streak is on the line.",
+      "why": "The set's mechanic is another gold decision. A Wisp that saves a streak round is worth its price; one bought for a fight you win anyway is a leak.",
+      "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+      "lesson": "econ-interest-basics",
+      "question": "Which Wisp purchase would you have skipped, and what would the gold have earned instead?"
+    },
+    {
+      "at": "9:42",
+      "stage": "3-2",
+      "title": "Second augment and level 6",
+      "watch": "Level 6 at 3-2 and the augment that goes with a board that is about to change. Look at the items: are they on units that will still be there at 4-2?",
+      "why": "Levelling on schedule keeps the streak; items on transferable holders keep the pivot cheap.",
+      "guideLink": "/guides/leveling#standard-level-timings",
+      "lesson": "level-standard-timings"
+    },
+    {
+      "stage": "3-5 / 4-1",
+      "title": "Where the opener is sold",
+      "watch": "The round the Blossom units start leaving and the Executioner units arrive. Count what transfers (items, frontline) and what is sold at a loss.",
+      "why": "A pivot executed in order never leaves the board weaker for a round: new line in, old units out last, items moved before the fight.",
+      "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+      "lesson": "pivot-execution",
+      "question": "What was the signal to sell the opener: HP, items, a 4-cost, or the augment?"
+    },
+    {
+      "at": "17:48",
+      "stage": "4-2",
+      "title": "Third augment for the board that exists now",
+      "watch": "The 4-2 pick against the actual board: frontline, damage or econ toward 9. Compare with what you would have taken.",
+      "why": "The third augment is chosen with full information; it should fix what the board lacks for the next stage, not chase a stats-site number.",
+      "guideLink": "/guides/augments#why-the-highest-winrate-augment-is-wrong-for-you",
+      "lesson": "augments-vs-board"
+    },
+    {
+      "stage": "4",
+      "title": "Level 8, then the roll",
+      "watch": "The order at 8: level first, decide the targets, roll with a floor. Watch how much gold stays for level 9.",
+      "why": "Rolling before the level pays triple for 4-costs. Keeping a floor is what makes level 9 possible next stage.",
+      "guideLink": "/guides/rolling#rolldown-discipline",
+      "lesson": "level-rolldowns"
+    },
+    {
+      "at": "24:00",
+      "stage": "5-1",
+      "title": "Level 9 and the Executioner cap",
+      "watch": "The round he reaches 9, which unit gets the slot, and whether the Executioner breakpoint or a 5-cost is what makes the board capped.",
+      "why": "Nine is worth it when the slot is a breakpoint or a 5-cost that fits the items; otherwise two-starring the 4-costs is the stronger spend.",
+      "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+      "lesson": "level-fast-9-and-capping"
+    },
+    {
+      "at": "30:46",
+      "stage": "6-1",
+      "title": "Playing for the placement on the table",
+      "watch": "How many players are left, the HP totals, and whether he rolls for upgrades or holds and positions. Note the last positioning changes.",
+      "why": "Endgame is a placement problem: the reachable result decides whether to gamble for 1st or lock the top 2.",
+      "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+      "lesson": "endgame-placement"
+    }
+  ],
+  "questions": [
+    { "q": "Why open with a board you plan to sell?", "a": "Because HP and streak gold in stages 2 and 3 pay for levels 8 and 9, and the opener is the strongest thing the early shop offers. The final board cannot be bought until 8 anyway." },
+    { "q": "What makes a pivot cheap?", "a": "Items on holders that transfer, a frontline that stays, and selling the old units after the new ones are in. The board never loses a round to the pivot itself." },
+    { "q": "When is level 9 the wrong spend?", "a": "When the ninth slot adds nothing that changes fights and the 4-costs are still 1-star. Two 2-star carries beat a ninth 1-star unit." }
+  ],
+  "sourceNote": "Title, channel, date, length, the line described (tempo Blossom into Executioners) and the chapter timestamps come from the creator's video page. Played on the PBE before launch, so unit numbers may differ from the live patch; the decisions do not. The stage guide is TFT Lab's reading.",
+  "verifiedOn": "2026-09-24"
+}

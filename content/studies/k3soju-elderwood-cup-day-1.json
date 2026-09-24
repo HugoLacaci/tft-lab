@@ -1,0 +1,92 @@
+{
+  "id": "k3soju-elderwood-cup-day-1",
+  "title": "Six tournament games in one day: playing for points",
+  "video": {
+    "platform": "youtube",
+    "id": "ABtLkRGRBAc",
+    "title": "k3soju | TFT Pro Circuit Elderwood Cup 2026 | Day 1",
+    "channel": "k3soju vods",
+    "channelUrl": "https://www.youtube.com/@k3sojuvodstwitch",
+    "publishedOn": "2026-09-19",
+    "length": "4:58:41"
+  },
+  "player": {
+    "name": "k3soju",
+    "role": "pro",
+    "about": "One of the most decorated players in the Americas and a fixture of the Pro Circuit. Very high-level flexible play; watch how early he commits or refuses to commit, not the comps."
+  },
+  "patch": "18.2b",
+  "set": 18,
+  "line": "Tournament flex",
+  "comps": [],
+  "tags": ["tournament", "flex", "scouting", "econ"],
+  "tier": 4,
+  "summary": "Full stream VOD of Day 1 of the Americas Elderwood Cup (TFT Pro Circuit, September 18 to 20, 2026): six games in a lobby of professionals, with the uploader's timestamps for each game start. Five hours of the highest-level play available this patch.",
+  "thesis": "Tournament TFT is ranked TFT with a scoreboard. Placement points accumulate across games, so the line that maximises expected points in game 3 depends on the standings after game 2, and a lobby of eight professionals has no free wins: contest is read at 2-1 and respected, positioning changes every round, and top 4 is protected before 1st is attempted. Watch one game with each lens below, then a second game with the standings in mind.",
+  "timeline": [
+    {
+      "at": "8:05",
+      "stage": "Game 1",
+      "title": "Opening a tournament day",
+      "watch": "Game 1 with the tempo lens: the first augment, the stage-2 board, and how early he decides between playing for a streak and saving. In a lobby this strong, note whether the opener is the strongest board or the most flexible one.",
+      "why": "The first game sets the standings the rest of the day is played against; a solid top 4 is worth more than a gamble for 1st when five games remain.",
+      "guideLink": "/guides/stage-plan#stage-2",
+      "lesson": "hp-strongest-board",
+      "question": "Is the stage-2 board built to win now or to keep two lines open? What tells you?"
+    },
+    {
+      "at": "50:08",
+      "stage": "Game 2",
+      "title": "Reading contest in a lobby of pros",
+      "watch": "Game 2 with the scouting lens: how often he scouts in stage 2 and 3, what he looks at (items, pairs, augments) and the round he commits to a line. Count the players on his line at 3-2.",
+      "why": "Eight players who all read the meta means every strong line is contested; the read at 2-1 and 3-2 decides who pivots first and who is left holding pairs.",
+      "guideLink": "/guides/pivoting#reading-contest",
+      "lesson": "pivot-reading-contest"
+    },
+    {
+      "at": "1:43:38",
+      "stage": "Game 3",
+      "title": "Econ with a clock: the 4-1 rolldown",
+      "watch": "Game 3 with the econ lens: the gold at 3-5, level 7 or 8 before the roll, the stop condition, and what is left for stage 5. Compare with his HP entering stage 4.",
+      "why": "The rolldown is sized by HP and by the odds at the level rolled; in a tournament a failed rolldown at 4-2 is a bottom-4 finish that costs points for the rest of the day.",
+      "guideLink": "/guides/rolling#rolldown-discipline",
+      "lesson": "level-rolldowns",
+      "question": "Before he rolls: how much gold would you keep, given the HP and the boards you can see?"
+    },
+    {
+      "at": "2:25:30",
+      "stage": "Game 4",
+      "title": "Positioning every round",
+      "watch": "Game 4 with the positioning lens: from 4-1, how many units move between fights and why. Look for baits against divers, spread against area damage, and the last-second swap when the opponent is known.",
+      "why": "At equal strength, positioning decides fights; in a lobby where every board is capped, it decides placements.",
+      "guideLink": "/guides/positioning#counter-positioning",
+      "lesson": "positioning-multiple-threats"
+    },
+    {
+      "at": "3:19:11",
+      "stage": "Game 5",
+      "title": "The standings change the line",
+      "watch": "Game 5 with the scoreboard in mind: is he playing for 1st or for a safe top 4? Watch the endgame decision at 5-1: roll to cap or hold the placement. Note who else in the lobby is close to him in points.",
+      "why": "Expected points, not expected placement, is the objective in a tournament; sometimes the right play is a guaranteed 3rd over a coin flip between 1st and 6th.",
+      "guideLink": "/guides/hp#playing-for-top-4-with-a-6th-place-board",
+      "lesson": "endgame-placement",
+      "question": "Given his position after four games, should game 5 be played for 1st or for top 4? What would change your answer?"
+    },
+    {
+      "at": "4:01:47",
+      "stage": "Game 6",
+      "title": "Closing the day",
+      "watch": "Game 6 with all lenses: fatigue makes players skip scouting and default to the tier list. Watch whether the routine holds: scout, position, stop conditions.",
+      "why": "Consistency across six games is the skill the format tests; the last game is where habits show because attention is gone.",
+      "guideLink": "/guides/scouting#the-scout-routine",
+      "lesson": "scouting-routine"
+    }
+  ],
+  "questions": [
+    { "q": "How does a points format change the endgame decision?", "a": "You maximise expected points across the remaining games, not this game's placement. A safe 3rd is often worth more than a 40% shot at 1st that is 6th the rest of the time, especially when a checkmate threshold is near." },
+    { "q": "Why is contest so much more important in a pro lobby?", "a": "Everyone knows the strongest lines, so the pool for those units is split from 2-1. Reading contest early and pivoting first is the main edge; nobody hits a contested 4-cost by rolling harder." },
+    { "q": "Which of the six games should a climbing player watch first?", "a": "Game 3 with the econ lens or game 4 with the positioning lens; both are habits that transfer straight to ranked. Save the standings-driven games for when the fundamentals are automatic." }
+  ],
+  "sourceNote": "Title, channel, date, length and the six game timestamps come from the uploader's description; the tournament dates come from the event listing. The uploader is a VOD mirror channel that credits k3soju's own channels. The lens for each game is TFT Lab's suggestion for how to study a tournament day; it does not describe what happens in each game.",
+  "verifiedOn": "2026-09-24"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "wasianiverson-khazix-reroll",
+  "title": "Kha'Zix reroll with three emblems, augment by augment",
+  "video": {
+    "platform": "youtube",
+    "id": "OCNK3KV75ZU",
+    "title": "Kha'Zix Reroll is better than you think.",
+    "channel": "Wasianiverson",
+    "channelUrl": "https://www.youtube.com/@wasianiverson",
+    "publishedOn": "2026-09-18",
+    "length": "34:01"
+  },
+  "player": {
+    "name": "Wasianiverson",
+    "role": "streamer",
+    "about": "Challenger streamer who chapters every game by augment round, so the decision points are one click away. Explains reroll and flex lines as he plays them."
+  },
+  "patch": "18.2b",
+  "set": 18,
+  "line": "Kha'Zix reroll",
+  "comps": ["khazix-rival"],
+  "tags": ["reroll", "items", "augments", "econ"],
+  "tier": 2,
+  "summary": "A Kha'Zix reroll game with a Blackthorn emblem and two Executioner emblems, played on the patch where the line sits at the top of the tier list. Chaptered by the creator at each augment round, which makes it the easiest reroll VOD to study stop by stop.",
+  "thesis": "Reroll lines are econ lines with a different shape: the level stays low on purpose, the roll happens above 50 gold a little each round, and the whole plan depends on hitting the carry early and keeping HP while the 3-star arrives. Kha'Zix adds a twist from his trait: he wants to be the only Rival on the board and to farm kills, so positioning and item order matter more than in most rerolls. The three emblems show the second half of the skill, turning random emblems into breakpoints on the units that are staying.",
+  "timeline": [
+    {
+      "at": "0:38",
+      "stage": "2-1",
+      "title": "First augment for a reroll board",
+      "watch": "What the board and bench hold at 2-1 and which augment he takes. A reroll line wants gold now, free rerolls, or strength that keeps HP through the slow-roll stages.",
+      "why": "A reroll player levels late, so an augment that pays per level is wasted; one that pays per roll or per round is the right shape.",
+      "guideLink": "/guides/augments#the-evaluation-framework",
+      "lesson": "augments-reading",
+      "question": "Would a level-scaling augment be right here? What does the line do with levels 7 to 9?"
+    },
+    {
+      "stage": "2",
+      "title": "The carry appears early and goes in the front",
+      "watch": "When the first Kha'Zix arrives and where he stands: a melee carry who wants kills is placed to reach the fight second, not first. Note the first item that goes on him.",
+      "why": "Kha'Zix is a melee carry; a melee carry who is hit first dies before he casts. Behind the tank or on the flank away from the enemy's strongest unit.",
+      "guideLink": "/guides/positioning#melee-carries",
+      "lesson": "positioning-front-and-back"
+    },
+    {
+      "at": "9:45",
+      "stage": "3-2",
+      "title": "Second augment, and the level question",
+      "watch": "Whether he levels at 3-2 like a standard board or holds the level to keep the 3-cost odds where a reroll wants them, and what the augment adds to a board that will sit at 6 or 7.",
+      "why": "Reroll timings deviate from the standard on purpose: level 6 improves 3-cost odds, level 8 hurts them. The deviation is the plan, not a mistake.",
+      "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+      "lesson": "level-fast-9-and-capping",
+      "question": "At what level are 3-cost odds highest, and how does that decide when he stops leveling?"
+    },
+    {
+      "stage": "3",
+      "title": "Slow-rolling above 50",
+      "watch": "How many rolls per round once he crosses 50 and whether he ever dips under it. Count the Kha'Zix copies as they arrive and when the 2-star lands.",
+      "why": "Rolling only the gold above 50 keeps the full interest and still buys three to five shops a round; over a stage that is more copies than one big rolldown that spends the interest.",
+      "guideLink": "/guides/economy#roll-a-little-each-round",
+      "lesson": "econ-pairs-and-rolls"
+    },
+    {
+      "at": "17:36",
+      "stage": "4-2",
+      "title": "Three emblems and who wears them",
+      "watch": "A Blackthorn emblem and two Executioner emblems go on units that will stay on the final board. Watch which breakpoints they unlock and whether any emblem sits on a unit that gets sold later.",
+      "why": "An emblem is a permanent breakpoint on that unit; putting it on a placeholder wastes it. The right holder is a unit that survives the pivot to the final board.",
+      "guideLink": "/guides/items#emblems",
+      "lesson": "items-holders"
+    },
+    {
+      "stage": "4",
+      "title": "Never field a second Rival",
+      "watch": "Whether a Rengar ever appears on the board next to Kha'Zix. The trait rewards a lone Rival; a second one removes the bonus.",
+      "why": "Trait text decides positioning and roster: a unit that looks like an upgrade can be a downgrade because of what it turns off.",
+      "guideLink": "/guides/welcome#traits-and-breakpoints",
+      "lesson": "welcome-traits"
+    },
+    {
+      "at": "23:55",
+      "stage": "5-1",
+      "title": "Three-star or stabilise",
+      "watch": "How many copies are still missing at 5-1, his HP, and whether he keeps rolling for the 3-star or spends on levels and 4-costs to stabilise around a 2-star carry.",
+      "why": "A reroll that has not hit by 5-1 is a placement decision: the copies left in the pool and the losses you can afford decide whether the 3-star is still reachable.",
+      "guideLink": "/guides/rolling#contest-math",
+      "lesson": "endgame-last-rolldown",
+      "question": "Count the copies of the carry you can see in other boards. How many are left in the pool for him?"
+    },
+    {
+      "at": "30:40",
+      "stage": "6-1",
+      "title": "The capped reroll board",
+      "watch": "What the final board looks like around the carry: the frontline that buys him time, the breakpoints the emblems bought, and where Kha'Zix stands against the last opponents.",
+      "why": "A 3-star carry still loses to a board he cannot reach or that kills him first; the endgame of a reroll is positioning and frontline, not more rolls.",
+      "guideLink": "/guides/positioning#counter-positioning",
+      "lesson": "positioning-counter"
+    }
+  ],
+  "questions": [
+    { "q": "Why does a reroll line stop leveling at 6 or 7?", "a": "Because 3-cost odds are highest around level 7 (over 40% of shop slots) and fall at 8 as 4-costs take their place. Each level past that makes the carry rarer in the shop." },
+    { "q": "Why slow-roll above 50 instead of rolling down at 3-2?", "a": "Interest keeps paying 5 a round while the extra gold buys shops every round. A rolldown at 3-2 spends the interest for the rest of the stage and, if it misses, leaves a weak board and no income." },
+    { "q": "What decides who wears an emblem?", "a": "Whether the unit stays on the final board and whether the breakpoint it unlocks changes fights. An emblem on a unit that is sold at 4-5 was a wasted item." }
+  ],
+  "sourceNote": "Title, channel, date, length, the three emblems and the chapter timestamps (2-1, 3-2, 4-2, 5-1, 6-1) come from the creator's video page. The comp line matches the tier-list entry; the stage guide is TFT Lab's reading of what to watch at each stop.",
+  "verifiedOn": "2026-09-24"
+}

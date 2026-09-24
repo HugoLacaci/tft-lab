@@ -9,6 +9,8 @@ import { GENERIC_AUGMENTS } from "@/data/generic-augments";
 import type { SetData } from "./types";
 import { CompsFileSchema } from "./comps";
 import { LESSONS, MODULES } from "./curriculum";
+import { StudySchema } from "./study-schema";
+import { studyFiles } from "./studies";
 
 export interface Problem {
   file: string;
@@ -161,6 +163,7 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/lab/econ",
     "/lab/cheatsheet",
     "/lab/board",
+    "/lab/study-hall",
     "/routine",
     "/tracker",
     "/compete",
@@ -252,7 +255,47 @@ export async function validateMdxSyntax(root = process.cwd()): Promise<Problem[]
 }
 
 export async function runValidation(root = process.cwd()): Promise<Problem[]> {
-  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateCurriculum(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateCurriculum(root), ...validateStudies(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+}
+
+/** Study Hall entries: schema, unique ids and video ids, guide anchors; unknown comp ids are warnings. */
+export function validateStudies(root = process.cwd()): Problem[] {
+  const problems: Problem[] = [];
+  const ids = new Set<string>();
+  const videos = new Set<string>();
+  const { number: liveSet } = loadSet(root);
+  const compsFile = path.join(root, "content", "sets", String(liveSet), "comps.json");
+  const compIds = new Set<string>(fs.existsSync(compsFile) ? (JSON.parse(fs.readFileSync(compsFile, "utf8")) as { comps: { id: string }[] }).comps.map((c) => c.id) : []);
+  for (const file of studyFiles(root)) {
+    const rel = path.relative(root, file).replace(/\\/g, "/");
+    let json: unknown;
+    try {
+      json = JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch (e) {
+      problems.push({ file: rel, message: `invalid JSON: ${e instanceof Error ? e.message : e}` });
+      continue;
+    }
+    const parsed = StudySchema.safeParse(json);
+    if (!parsed.success) {
+      for (const i of parsed.error.issues) problems.push({ file: rel, field: i.path.join("."), message: i.message });
+      continue;
+    }
+    const s = parsed.data;
+    if (s.id !== path.basename(file, ".json")) problems.push({ file: rel, field: "id", message: `id "${s.id}" must match the file name` });
+    if (ids.has(s.id)) problems.push({ file: rel, field: "id", message: `duplicate id "${s.id}"` });
+    ids.add(s.id);
+    if (videos.has(s.video.id)) problems.push({ file: rel, field: "video.id", message: "video already used by another study" });
+    videos.add(s.video.id);
+    s.timeline.forEach((t, i) => {
+      if (!t.guideLink) return;
+      const gl = parseGuideLink(t.guideLink);
+      const g = gl ? readGuide(gl.slug, path.join(root, "content", "guides")) : null;
+      if (!gl || !g) problems.push({ file: rel, field: `timeline.${i}.guideLink`, message: `dead guide link ${t.guideLink}` });
+      else if (gl.anchor && extractSection(g.content, gl.anchor) === null) problems.push({ file: rel, field: `timeline.${i}.guideLink`, message: `anchor #${gl.anchor} not found in ${gl.slug}.mdx` });
+    });
+    for (const c of s.comps) if (compIds.size && !compIds.has(c)) problems.push({ file: rel, field: "comps", message: `unknown comp id "${c}" (curated comps changed?)`, severity: "warning" });
+  }
+  return problems;
 }
 
 /**

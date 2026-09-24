@@ -740,3 +740,11 @@ a.panel:hover, .panel-hover:hover {
 .path-step { height: 6px; flex: 1; background: var(--bg-raised); position: relative; overflow: hidden; }
 .path-step > span { position: absolute; inset: 0; width: var(--w, 0%); background: var(--c, var(--teal)); transition: width 700ms ease; }
 .key-input { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }
+
+/* Study hall ---------------------------------------------------------------- */
+.timeline-item { position: relative; padding-left: 1rem; border-left: 1px solid var(--gold-dim); }
+.timeline-item::before { content: ""; position: absolute; left: -4px; top: 0.55rem; width: 7px; height: 7px; transform: rotate(45deg); background: var(--gold-dim); }
+.timeline-active { border-left-color: var(--teal); }
+.timeline-active::before { background: var(--teal); box-shadow: 0 0 8px var(--teal); }
+.study-card .study-thumb { transition: transform 300ms ease; }
+.study-card:hover .study-thumb { transform: scale(1.03); }

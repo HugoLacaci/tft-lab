@@ -1,0 +1,107 @@
+{
+  "id": "keane-100s-ranked-game",
+  "title": "A standard ranked game, stage by stage",
+  "video": {
+    "platform": "youtube",
+    "id": "iWq0dcQ6u2g",
+    "title": "SET 18 100's Ranked Game",
+    "channel": "Keane TFT",
+    "channelUrl": "https://www.youtube.com/@KeaneTFT",
+    "publishedOn": "2026-09-08",
+    "length": "28:04"
+  },
+  "player": {
+    "name": "Keane",
+    "role": "streamer",
+    "about": "Long-standing Challenger streamer with calm, methodical ranked play. His edited games are chaptered by stage, which makes them a clean model of a standard tempo game."
+  },
+  "patch": "18.1c",
+  "set": 18,
+  "line": "Standard tempo",
+  "comps": [],
+  "tags": ["tempo", "econ", "scouting", "positioning"],
+  "tier": 1,
+  "summary": "A ranked game on patch 18.1c edited into stage chapters (stage 1, 3, 4, 5, 6). No gimmick and no high-roll: a standard tempo game from a Challenger player, which is exactly what a climbing player should copy first.",
+  "thesis": "Most LP is won by doing the standard things on time: strongest board in stage 2, level 6 at 3-2 and 7 at 4-1, two items slammed early, a scout before every fight from stage 4, and gold turned into placement at 5-1. This game is a checklist you can watch. Pause at each chapter, write what you would do, then compare.",
+  "timeline": [
+    {
+      "at": "0:43",
+      "stage": "1 / 2",
+      "title": "Opening: pairs, components, first board",
+      "watch": "The first carousel pick and what the stage-1 shops buy: pairs over strength, and a board at level 3 and 4 that fields upgrades as they land. Note which components are combined first.",
+      "why": "Stage 2 is decided by pairs and by two early slams; the exact comp is irrelevant until 3-2.",
+      "guideLink": "/guides/stage-plan#stage-2",
+      "lesson": "welcome-first-game-plan",
+      "question": "Which two components would you combine first with his stage-2 board, and on whom?"
+    },
+    {
+      "stage": "2-1",
+      "title": "The first augment against a stage-2 board",
+      "watch": "Whether the pick is econ, strength or trait, and how it fits a board that has not picked a line yet.",
+      "why": "At 2-1 the safest picks keep options open: gold, items, or generic combat. A trait pick this early is a commitment.",
+      "guideLink": "/guides/augments#the-evaluation-framework",
+      "lesson": "augments-reading"
+    },
+    {
+      "at": "4:32",
+      "stage": "3",
+      "title": "Level 6 at 3-2 and the 50-gold floor",
+      "watch": "Level 6 at 3-2, no roll, gold climbing toward 50 by 3-5. Watch how the shop is used: copies of what he owns, nothing speculative.",
+      "why": "Interest and the level timing are the two habits that separate Silver from Platinum; stage 3 is where both are tested.",
+      "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+      "lesson": "econ-interest-basics",
+      "question": "How much gold does he have at 3-5, and how much interest did that earn over the stage?"
+    },
+    {
+      "stage": "3-2",
+      "title": "The direction is picked from items and 2-costs",
+      "watch": "Which line the board leans toward at 3-2 and what decided it: the items on the board, the 2-star 2-costs, the augment. Not the tier list.",
+      "why": "Committing at 3-2 from what you have is how you avoid contest and pivots later.",
+      "guideLink": "/guides/pivoting#flex-openers",
+      "lesson": "pivot-reading-contest"
+    },
+    {
+      "at": "10:14",
+      "stage": "4",
+      "title": "Level 7 at 4-1, the rolldown, level 8",
+      "watch": "The 4-1 level, whether he rolls at 7 or goes to 8 first, and the stop condition. Count the gold left after the roll and the HP that decided the depth.",
+      "why": "The 4-1 rolldown is the most expensive decision of the game; its size is set by HP and by the odds at the level you roll at.",
+      "guideLink": "/guides/rolling#rolldown-discipline",
+      "lesson": "level-rolldowns"
+    },
+    {
+      "stage": "4",
+      "title": "Scouting before every fight",
+      "watch": "How often the camera leaves his board before a fight from 4-1 on, and what changes after: a swapped carry, a moved tank, a bait unit.",
+      "why": "Scouting that does not change a decision was not scouting. Every look should move something or confirm the layout.",
+      "guideLink": "/guides/scouting#scouting-must-change-a-decision",
+      "lesson": "scouting-changes-decisions",
+      "question": "Pick one fight in stage 4: what would you have moved after seeing the opponent's board?"
+    },
+    {
+      "at": "16:48",
+      "stage": "5",
+      "title": "Gold into placement",
+      "watch": "At 5-1: level 9 or roll at 8, and what the gold buys first: 2-stars of the carries already on the board before any 5-cost.",
+      "why": "Once the top 4 is safe, gold turns into placement by two-starring what you have; a 1-star 4-cost is weaker than the 2-star 3-cost it replaced.",
+      "guideLink": "/guides/leveling#fast-8-fast-9-reroll",
+      "lesson": "level-fast-9-and-capping"
+    },
+    {
+      "at": "22:10",
+      "stage": "6",
+      "title": "Endgame: the placement on the table",
+      "watch": "Players left, their HP and boards; whether he plays for 1st or locks a placement; the last positioning changes against a known opponent.",
+      "why": "With two or three boards left, every fight is against a board you can see. The last free strength is where your units stand.",
+      "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+      "lesson": "endgame-placement"
+    }
+  ],
+  "questions": [
+    { "q": "What did he do at 3-2 that a Gold player usually does not?", "a": "Level to 6 and refuse to roll. Gold players roll at 3-2 for upgrades and arrive at 4-1 without the gold for the real rolldown." },
+    { "q": "How is the size of the 4-1 rolldown decided?", "a": "By HP (how many losses are affordable), by the odds at the level he rolls at, and by a stop condition chosen before the first roll. Not by what the shop shows." },
+    { "q": "What is the one habit from this game to copy this week?", "a": "Scout before every fight from 4-1 and move one unit because of it. It costs nothing and it is what the video shows most often." }
+  ],
+  "sourceNote": "Title, channel, date, length, the patch (18.1c from the description) and the stage chapter timestamps come from the creator's video page. The stage guide is TFT Lab's reading of a standard tempo game; it tells you what to look for, not what happens at each second.",
+  "verifiedOn": "2026-09-24"
+}

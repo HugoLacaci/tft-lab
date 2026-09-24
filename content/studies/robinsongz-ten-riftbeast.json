@@ -1,0 +1,93 @@
+{
+  "id": "robinsongz-ten-riftbeast",
+  "title": "Committing to a vertical: 10 Riftbeast",
+  "video": {
+    "platform": "youtube",
+    "id": "KK8wlkcs2Fk",
+    "title": "I Summoned the Entire Jungle... 10 Riftbeast Is Absolutely Busted!!",
+    "channel": "robinsongz - TFT",
+    "channelUrl": "https://www.youtube.com/@robinsongz",
+    "publishedOn": "2026-08-29",
+    "length": "25:29"
+  },
+  "player": {
+    "name": "Robinsongz",
+    "role": "streamer",
+    "about": "High-level player and author of the TFT Handbook; explains positioning changes between rounds more than most streamers."
+  },
+  "patch": "18.1",
+  "set": 18,
+  "line": "Riftbeast vertical",
+  "comps": ["riftbeast-reroll"],
+  "tags": ["vertical", "augments", "positioning", "reroll"],
+  "tier": 2,
+  "summary": "Launch-week game in which Robin hits the prismatic 10-Riftbeast breakpoint and runs the lobby over with the summoned jungle. A vertical-trait game from the decision to commit to the capped board.",
+  "thesis": "A vertical is the one line where the tier list matters less than the question 'can I actually reach the breakpoint?' The commitment is made from emblems and augments, not from wanting to. This game shows what it takes: an early decision, every copy bought, items on the units that stay, and positioning around a board that grows summons. Watch how early the commitment happens and what he would have needed to see to abandon it.",
+  "timeline": [
+    {
+      "stage": "2-1",
+      "title": "The augment that makes the vertical possible",
+      "watch": "Which augment or emblem tips the decision toward a Riftbeast vertical, and what the board holds at that moment. A vertical at 10 needs an emblem source; find it.",
+      "why": "Verticals that reach their top breakpoint are decided by an emblem or a trait augment, not by rolling harder. Without that source the correct play is the flexible board.",
+      "guideLink": "/guides/augments#the-evaluation-framework",
+      "lesson": "augments-reading",
+      "question": "Without the emblem source, what is the highest Riftbeast breakpoint he could reach at level 8, and would it still be worth playing?"
+    },
+    {
+      "stage": "2",
+      "title": "Buying every copy and fielding the count",
+      "watch": "How the early Riftbeast units are bought and fielded even when a stronger non-Riftbeast unit is available. Count the trait number on the board each round.",
+      "why": "A vertical's stage-2 strength comes from the breakpoint, and each breakpoint is a step; skipping one for a stronger single unit loses the streak the trait would have bought.",
+      "guideLink": "/guides/welcome#traits-and-breakpoints",
+      "lesson": "welcome-traits"
+    },
+    {
+      "stage": "3",
+      "title": "Items on the units that stay",
+      "watch": "Which Riftbeast units receive the items and whether any item goes on a unit that is later replaced when the board grows.",
+      "why": "In a vertical the final roster is known early, so items can go straight to their final holders; that is the one luxury the line offers.",
+      "guideLink": "/guides/items#who-gets-the-tank-item",
+      "lesson": "items-holders"
+    },
+    {
+      "stage": "3-2 / 4-1",
+      "title": "Levels for slots, not for odds",
+      "watch": "Level timings in a vertical: each level is one more trait body. Watch whether he levels on schedule or earlier because the breakpoint needs the slot.",
+      "why": "For a vertical the value of a level is a slot toward the breakpoint; that can justify leveling a round early even at the cost of interest.",
+      "guideLink": "/guides/leveling#xp-is-the-other-econ-lever",
+      "lesson": "level-standard-timings"
+    },
+    {
+      "stage": "4-2",
+      "title": "The prismatic breakpoint arrives",
+      "watch": "The round the tenth Riftbeast is fielded and what changed on the board to make room: which non-Riftbeast unit left, and whether an emblem was moved.",
+      "why": "Top breakpoints are usually one emblem and one level away for most of the game; the moment they land, the board changes shape and so should the positioning.",
+      "guideLink": "/guides/items#emblems",
+      "lesson": "items-holders",
+      "question": "Which unit did the tenth slot cost him, and was that unit doing more than the breakpoint adds?"
+    },
+    {
+      "stage": "4 / 5",
+      "title": "Positioning a board that summons",
+      "watch": "Where the summoned units spawn relative to his frontline and how he positions the carries so the summons take the hits. Note the changes between opponents.",
+      "why": "Summons are extra bodies; a board with extra bodies wants its carries farther back and its tanks where the summons appear, not the default layout.",
+      "guideLink": "/guides/positioning#counter-positioning",
+      "lesson": "positioning-counter"
+    },
+    {
+      "stage": "5+",
+      "title": "Capping a vertical",
+      "watch": "Once the breakpoint is fielded: does the gold go to two-starring the carries, to a ninth unit, or to more rolls? Which is worth more for a capped vertical.",
+      "why": "A vertical at its top breakpoint caps by upgrading the units inside it; a ninth slot outside the trait adds less than a 2-star inside it.",
+      "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+      "lesson": "endgame-placement"
+    }
+  ],
+  "questions": [
+    { "q": "What has to be true before committing to a 10-trait vertical?", "a": "An emblem source (augment or emblem) that makes the top breakpoint reachable at a level you can hit, and a stage-2 board that can field the trait count without bleeding out. Wanting it is not enough." },
+    { "q": "Why can a vertical level earlier than the standard timing?", "a": "Because each level is one more trait body and the breakpoints pay per body; the extra slot can be worth more than the interest lost, which is never true for a flexible board." },
+    { "q": "What is the failure mode of this line?", "a": "Committing without the emblem source and getting stuck one unit short of the breakpoint for three stages, bleeding HP with a board that is neither vertical nor strong." }
+  ],
+  "sourceNote": "Title, channel, date, length and the fact that the game reaches the prismatic 10-Riftbeast breakpoint come from the video page. The stage guide is TFT Lab's reading of a vertical game; the video has no creator chapters, so stops are anchored to stages.",
+  "verifiedOn": "2026-09-24"
+}

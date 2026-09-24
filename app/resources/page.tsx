@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { PageTitle, Panel, SectionTitle } from "@/components/ui/Panel";
 import { CREATORS } from "@/data/creators";
 
@@ -74,7 +75,7 @@ export default function ResourcesPage() {
       <section>
         <SectionTitle kicker="Watch and learn">Creators</SectionTitle>
         <p className="mb-3 text-sm text-dim">
-          <span className="chip">teaching</span> channels talk through decisions; <span className="chip">high-level</span> channels play at the top and mostly do not narrate. Watch the second kind for the decisions, not the commentary.
+          <span className="chip">teaching</span> channels talk through decisions; <span className="chip">high-level</span> channels play at the top and mostly do not narrate. Watch the second kind for the decisions, not the commentary. Games with a stage-by-stage guide are in the <Link href="/lab/study-hall">Study Hall</Link>.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {CREATORS.map((c) => (

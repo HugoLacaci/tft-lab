@@ -28,6 +28,8 @@ const ROUTES = [
   "/guides/welcome/",
   "/lab/",
   "/lab/board/",
+  "/lab/study-hall/",
+  "/lab/study-hall/wasianiverson-khazix-reroll/",
   "/lab/odds/",
   "/lab/econ/",
   "/lab/cheatsheet/",
