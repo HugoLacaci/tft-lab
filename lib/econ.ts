@@ -58,7 +58,7 @@ export function interestFor(gold: number, k: EconConstants["interest"]): number 
 }
 
 export function xpNeeded(level: number, k: EconConstants): number {
-  return k.xpToLevel.find((r) => r.level === level + 1)?.xp ?? Infinity;
+  return k.xpToLevel.find((r) => r.level === level)?.xp ?? Infinity;
 }
 
 export function nextStage(stage: string): string {

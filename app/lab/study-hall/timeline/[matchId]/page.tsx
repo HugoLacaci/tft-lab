@@ -30,7 +30,6 @@ export default async function TimelinePage({ params }: { params: Promise<{ match
   const augmentNames = Object.fromEntries((loadSetData()?.augments ?? []).map((a) => [a.id, a.name]));
   const recipes: Record<string, string[]> = Object.fromEntries((loadSetData()?.items ?? []).filter((i) => i.composition.length === 2).map((i) => [i.id, i.composition]));
   const k = getConstants(t.setNumber);
-  const xpNeeded = Object.fromEntries(k.xpToLevel.map((r) => [r.level - 1, r.xp]));
   const rules: EconRules = { ...DEFAULT_RULES, interest: k.interest, xpPerPurchase: k.xpPerPurchase, passiveXp: k.passiveXp, costOf: (id) => units[id]?.cost, recipeOf: (id) => recipes[id] };
   const decisions = deriveDecisions(t, rules);
   const low = decisions.filter((d) => d.lowConfidence).length;
@@ -70,7 +69,7 @@ export default async function TimelinePage({ params }: { params: Promise<{ match
           </span>
         </div>
       </div>
-      <AnalysisView timeline={t} decisions={decisions} units={units} items={items} traitNames={traitNames} xpNeeded={xpNeeded} augmentNames={augmentNames} />
+      <AnalysisView timeline={t} decisions={decisions} units={units} items={items} traitNames={traitNames} augmentNames={augmentNames} />
     </div>
   );
 }

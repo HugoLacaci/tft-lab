@@ -15,7 +15,8 @@ const set = JSON.parse(fs.readFileSync(path.join(here, "..", "..", "..", "data",
 const cost = Object.fromEntries(set.champions.map((c) => [c.id, c.cost]));
 const traitsOf = Object.fromEntries(set.champions.map((c) => [c.id, c.traits]));
 const traitBreak = Object.fromEntries(set.traits.map((t) => [t.id, t.breakpoints ?? []]));
-const XP_TO = { 2: 2, 3: 6, 4: 10, 5: 20, 6: 36, 7: 48, 8: 76, 9: 84, 10: 100 };
+// XP needed while AT a level to reach the next (matches data/constants/set-18.ts).
+const XP_TO = { 1: 2, 2: 2, 3: 6, 4: 10, 5: 20, 6: 36, 7: 56, 8: 80, 9: 84, 10: 100 };
 const base = (s, r) => (s >= 3 ? 5 : s === 2 ? (r === 1 ? 4 : 5) : r <= 3 ? 2 : 3);
 const interest = (g) => Math.min(5, Math.floor(g / 10));
 const streakGold = (n) => (n >= 6 ? 3 : n >= 4 ? 2 : n >= 2 ? 1 : 0);
@@ -65,7 +66,7 @@ function build(game) {
     while (level < 10 && xp.current >= xp.needed) {
       xp.current -= xp.needed;
       level += 1;
-      xp.needed = XP_TO[level + 1] ?? 999;
+      xp.needed = XP_TO[level] ?? 999;
     }
   };
 
@@ -249,7 +250,7 @@ const gameB = {
     { s: "2-6", hp: 96, st: ["loss", 1], shop: ["DA_18_Kayle", "DA_18_Ornn", "DA_18_Elise", "DA_18_Caitlyn", "DA_18_Yorick"] },
     { s: "2-7", hp: 96, st: ["win", 1], pve: { gold: 2, items: ["DA_Component_RecurveBow", "DA_Component_NegatronCloak"] }, board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 1, ["DA_InfinityEdge"]), U("DA_18_Varus", 3, 3)], items: ["DA_Component_RecurveBow", "DA_Component_NegatronCloak"] },
     { s: "3-1", hp: 96, st: ["win", 2], shop: ["DA_18_KhaZix", "DA_18_Rammus", "DA_18_Shen", "DA_18_Varus", "DA_18_Diana"], xp: 1, buy: ["DA_18_KhaZix"], board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 2, ["DA_InfinityEdge"]), U("DA_18_Varus", 3, 3)], bench: [] },
-    { s: "3-2", hp: 96, st: ["win", 3], shop: ["DA_18_Rammus", "DA_18_Warwick", "DA_18_Sejuani", "DA_18_Hecarim", "DA_18_Kobuko"], aug: { opts: ["DA_TraitLadder", "DA_BirthdayReunion", "DA_SpreadingRoots"], pick: "DA_BirthdayReunion" }, xp: 6, buy: ["DA_18_Rammus", "DA_18_Warwick"], board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 2, ["DA_InfinityEdge"]), U("DA_18_Varus", 3, 3), U("DA_18_Rammus", 0, 1)], bench: [B("DA_18_Warwick")] },
+    { s: "3-2", hp: 96, st: ["win", 3], shop: ["DA_18_Rammus", "DA_18_Warwick", "DA_18_Sejuani", "DA_18_Hecarim", "DA_18_Kobuko"], aug: { opts: ["DA_TraitLadder", "DA_BirthdayReunion", "DA_SpreadingRoots"], pick: "DA_BirthdayReunion" }, xp: 3, buy: ["DA_18_Rammus", "DA_18_Warwick"], board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 2, ["DA_InfinityEdge"]), U("DA_18_Varus", 3, 3), U("DA_18_Rammus", 0, 1)], bench: [B("DA_18_Warwick")] },
     { s: "3-3", hp: 90, st: ["loss", 1], shop: ["DA_18_Caitlyn", "DA_18_Yunara", "DA_18_Xayah", "DA_18_Kayle", "DA_18_Elise"] },
     { s: "3-4", hp: 90, st: ["win", 1], car: { id: "DA_18_Rammus", item: "DA_Component_GiantsBelt" }, bench: [B("DA_18_Warwick"), B("DA_18_Rammus")] },
     { s: "3-5", hp: 90, st: ["win", 2], shop: ["DA_18_KhaZix", "DA_18_Rammus", "DA_18_Leona", "DA_18_Diana", "DA_18_Shen"], buy: ["DA_18_KhaZix", "DA_18_Rammus"], roll: 3, shopEnd: ["DA_18_Hecarim", "DA_18_Warwick", null, "DA_18_Varus", "DA_18_Tristana"], board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest", "DA_Component_GiantsBelt"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 2, ["DA_InfinityEdge"]), U("DA_18_Varus", 3, 3), U("DA_18_Rammus", 0, 1, 2)], bench: [B("DA_18_Warwick"), B("DA_18_KhaZix")], items: ["DA_Component_RecurveBow", "DA_Component_NegatronCloak"] },
@@ -258,7 +259,7 @@ const gameB = {
     { s: "4-1", hp: 90, st: ["win", 5], shop: ["DA_18_KhaZix", "DA_18_Diana", "DA_18_Hecarim", "DA_18_Rengar", "DA_18_Shen"], buy: ["DA_18_KhaZix"], roll: 2, shopEnd: ["DA_18_KhaZix", "DA_18_Kayle", "DA_18_Elise", null, "DA_18_Tristana"], bench: [B("DA_18_Warwick"), B("DA_18_KhaZix"), B("DA_18_KhaZix")] },
     { s: "4-2", hp: 90, st: ["win", 6], shop: ["DA_18_KhaZix", "DA_18_Sett", "DA_18_Rammus", "DA_18_Varus", "DA_18_Ornn"], aug: { opts: ["DA_SpreadingRoots", "DA_TraitLadder", "DA_BirthdayReunion"], pick: "DA_TraitLadder" }, buy: ["DA_18_KhaZix"], roll: 4, shopEnd: ["DA_18_Hecarim", "DA_18_Caitlyn", "DA_18_Xayah", "DA_18_Kobuko", "DA_18_Yunara"], bench: [B("DA_18_Warwick"), B("DA_18_KhaZix"), B("DA_18_KhaZix"), B("DA_18_KhaZix")] },
     { s: "4-3", hp: 84, st: ["loss", 1], shop: ["DA_18_Warwick", "DA_18_Leona", "DA_18_Sejuani", "DA_18_Varus", "DA_18_Diana"], roll: 5, shopEnd: ["DA_18_Kobuko", "DA_18_Rammus", "DA_18_Shen", "DA_18_Xayah", "DA_18_Elise"], buy: ["DA_18_KhaZix", "DA_18_KhaZix", "DA_18_KhaZix"], board: [U("DA_18_Leona", 0, 3, 2, ["DA_Component_ChainVest", "DA_Component_GiantsBelt"]), U("DA_18_RekSai", 0, 2), U("DA_18_Warwick", 0, 4, 2), U("DA_18_KhaZix", 1, 5, 3, ["DA_InfinityEdge", "DA_GuinsoosRageblade"]), U("DA_18_Varus", 3, 3), U("DA_18_Rammus", 0, 1, 2)], bench: [B("DA_18_Warwick")] },
-    { s: "4-5", hp: 84, st: ["win", 1], shop: ["DA_18_Sett", "DA_18_Lillia", "DA_18_Hecarim", "DA_18_Aphelios", "DA_18_Kayle"], xp: 3, buy: ["DA_18_Lillia"], bench: [B("DA_18_Warwick"), B("DA_18_Lillia")] },
+    { s: "4-5", hp: 84, st: ["win", 1], shop: ["DA_18_Sett", "DA_18_Lillia", "DA_18_Hecarim", "DA_18_Aphelios", "DA_18_Kayle"], buy: ["DA_18_Lillia"], bench: [B("DA_18_Warwick"), B("DA_18_Lillia")] },
   ],
 };
 

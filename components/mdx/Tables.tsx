@@ -124,11 +124,11 @@ export function LevelTable() {
         <table className="data-table">
           <thead>
             <tr>
-              <th>To level</th>
-              <th className="num">XP needed</th>
+              <th>At level</th>
+              <th className="num">XP to next level</th>
               <th className="num">Cumulative</th>
               <th className="num">Gold to buy (4 XP / 4g)</th>
-              <th>Standard timing</th>
+              <th>Next level, standard timing</th>
             </tr>
           </thead>
           <tbody>
@@ -140,7 +140,7 @@ export function LevelTable() {
                   <td className="num">{row.xp}</td>
                   <td className="num">{cum}</td>
                   <td className="num">{row.xp}</td>
-                  <td>{k.standardTimings[row.level] ?? ""}</td>
+                  <td>{k.standardTimings[row.level + 1] ?? ""}</td>
                 </tr>
               );
             })}

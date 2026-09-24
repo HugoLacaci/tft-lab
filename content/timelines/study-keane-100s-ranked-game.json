@@ -1,0 +1,6958 @@
+{
+  "matchId": "study-keane-100s-ranked-game",
+  "setNumber": 18,
+  "patch": "18.1c",
+  "playerName": "enaek (Keane)",
+  "source": "annotation",
+  "sourceUrl": "https://www.youtube.com/watch?v=iWq0dcQ6u2g",
+  "studyId": "keane-100s-ranked-game",
+  "rounds": [
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 81000,
+      "gold": 4,
+      "health": 100,
+      "level": 3,
+      "xp": {
+        "current": 2,
+        "needed": 6
+      },
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "board": [],
+      "bench": [],
+      "shop": [
+        "DA_18_Leona",
+        "DA_18_Ornn",
+        "DA_18_Ornn",
+        "DA_18_Teemo",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "augmentOptions": [
+        "DA_Expedition",
+        "DA_18_BranchingOut",
+        "DA_CalledShot"
+      ],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 100
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 100
+        },
+        {
+          "playerName": "호이린",
+          "health": 100
+        },
+        {
+          "playerName": "뭉하",
+          "health": 100
+        },
+        {
+          "playerName": "식산생님",
+          "health": 100
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "난장한다",
+          "health": 100
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 111000,
+      "gold": 8,
+      "health": 95,
+      "level": 3,
+      "xp": {
+        "current": 4,
+        "needed": 6
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [],
+      "bench": [],
+      "shop": [
+        "DA_18_Rakan",
+        "DA_18_Leona",
+        "DA_Karma18",
+        "DA_Karma18",
+        "DA_18_Akali_AD"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 100
+        },
+        {
+          "playerName": "호이린",
+          "health": 100
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "난장한다",
+          "health": 100
+        },
+        {
+          "playerName": "식산생님",
+          "health": 97
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 96
+        },
+        {
+          "playerName": "뭉하",
+          "health": 94
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 141000,
+      "gold": 10,
+      "health": 95,
+      "level": 3,
+      "xp": {
+        "current": 4,
+        "needed": 6
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Rakan",
+        "DA_18_Leona",
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 171000,
+      "gold": 12,
+      "health": 90,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Rakan",
+        "DA_18_Rakan",
+        null,
+        "DA_18_RekSai",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 100
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "난장한다",
+          "health": 96
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 96
+        },
+        {
+          "playerName": "호이린",
+          "health": 95
+        },
+        {
+          "playerName": "식산생님",
+          "health": 94
+        },
+        {
+          "playerName": "뭉하",
+          "health": 88
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 201000,
+      "gold": 20,
+      "health": 84,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Karma18",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Teemo",
+        null,
+        "DA_18_Sejuani",
+        "DA_18_Alistar"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 100
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "난장한다",
+          "health": 96
+        },
+        {
+          "playerName": "호이린",
+          "health": 95
+        },
+        {
+          "playerName": "식산생님",
+          "health": 94
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 91
+        },
+        {
+          "playerName": "뭉하",
+          "health": 84
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 231000,
+      "gold": 32,
+      "health": 78,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Camille",
+          "row": 1,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Varus",
+        "DA_18_Sejuani",
+        "DA_18_Rakan",
+        "DA_Karma18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 100
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "호이린",
+          "health": 95
+        },
+        {
+          "playerName": "식산생님",
+          "health": 94
+        },
+        {
+          "playerName": "난장한다",
+          "health": 91
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 91
+        },
+        {
+          "playerName": "뭉하",
+          "health": 84
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.2,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 261000,
+      "gold": 40,
+      "health": 78,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Camille",
+          "row": 1,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_KhaZix",
+        "DA_18_Veigar",
+        "DA_Scuttlecrab18",
+        "DA_18_Rakan"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "식산생님",
+          "health": 94
+        },
+        {
+          "playerName": "호이린",
+          "health": 90
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 84
+        },
+        {
+          "playerName": "뭉하",
+          "health": 74
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.2,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 321000,
+      "gold": 50,
+      "health": 74,
+      "level": 4,
+      "xp": {
+        "current": 8,
+        "needed": 10
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Camille",
+          "row": 1,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_18_MasterYi_AD",
+        "DA_18_Sejuani",
+        "DA_Gromp18_AP",
+        "DA_Karma18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "식산생님",
+          "health": 94
+        },
+        {
+          "playerName": "호이린",
+          "health": 90
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 84
+        },
+        {
+          "playerName": "뭉하",
+          "health": 74
+        }
+      ],
+      "incomeEvents": [
+        {
+          "kind": "other",
+          "gold": 0,
+          "note": "3-1 armory: Aegis of Dawn / Zhonya's Paradox / Statikk Shiv / Blighting Jewel offered; the pick was not visible"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 0.7,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.2,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 351000,
+      "gold": 54,
+      "health": 66,
+      "level": 5,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Yunara",
+        null,
+        "DA_18_Sentry",
+        null
+      ],
+      "benchItems": [
+        "DA_Reforger"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "식산생님",
+          "health": 84,
+          "level": 6
+        },
+        {
+          "playerName": "호이린",
+          "health": 79
+        },
+        {
+          "playerName": "뭉하",
+          "health": 74,
+          "level": 6
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 73
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0,
+        "benchItems": 0.8
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 381000,
+      "gold": 54,
+      "health": 66,
+      "level": 5,
+      "xp": {
+        "current": 0,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Yunara",
+        null,
+        "DA_18_Sentry",
+        null
+      ],
+      "benchItems": [
+        "DA_Reforger"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0,
+        "benchItems": 0.8
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 411000,
+      "gold": 55,
+      "health": 56,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Warwick",
+        "DA_Scuttlecrab18",
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Coven",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "식산생님",
+          "health": 73
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 73
+        },
+        {
+          "playerName": "호이린",
+          "health": 71
+        },
+        {
+          "playerName": "뭉하",
+          "health": 66
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 441000,
+      "gold": 58,
+      "health": 56,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Warwick",
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 100
+        },
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "식산생님",
+          "health": 73
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 73
+        },
+        {
+          "playerName": "호이린",
+          "health": 71
+        },
+        {
+          "playerName": "뭉하",
+          "health": 66
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-4",
+      "stageNumber": 3,
+      "roundNumber": 4,
+      "phase": "carousel",
+      "videoTimestampMs": 471000,
+      "gold": 58,
+      "health": 48,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 90
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "식산생님",
+          "health": 73
+        },
+        {
+          "playerName": "호이린",
+          "health": 71
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "뭉하",
+          "health": 59
+        }
+      ],
+      "confidence": {
+        "gold": 0.3,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 501000,
+      "gold": 58,
+      "health": 48,
+      "level": 6,
+      "xp": {
+        "current": 0,
+        "needed": 36
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        null,
+        "DA_Cinderling18",
+        "DA_18_KhaZix",
+        "DA_18_RekSai"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Caustic",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 96
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 90
+        },
+        {
+          "playerName": "난장한다",
+          "health": 86
+        },
+        {
+          "playerName": "식산생님",
+          "health": 73
+        },
+        {
+          "playerName": "호이린",
+          "health": 71
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "뭉하",
+          "health": 59
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 561000,
+      "gold": 53,
+      "health": 48,
+      "level": 6,
+      "xp": {
+        "current": 18,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_LeBlanc",
+        "DA_Brambleback18",
+        null,
+        "DA_18_Tristana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Caustic",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 87
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 80
+        },
+        {
+          "playerName": "난장한다",
+          "health": 77
+        },
+        {
+          "playerName": "식산생님",
+          "health": 75
+        },
+        {
+          "playerName": "호이린",
+          "health": 63
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "뭉하",
+          "health": 59
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 591000,
+      "gold": 55,
+      "health": 48,
+      "level": 6,
+      "xp": {
+        "current": 18,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Kayle",
+        "DA_18_LeBlanc",
+        "DA_Brambleback18",
+        null,
+        "DA_18_Tristana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Caustic",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Slayer",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 87
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 79
+        },
+        {
+          "playerName": "난장한다",
+          "health": 77
+        },
+        {
+          "playerName": "식산생님",
+          "health": 75
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "뭉하",
+          "health": 59
+        },
+        {
+          "playerName": "호이린",
+          "health": 51
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 621000,
+      "gold": 59,
+      "health": 48,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Akali_AD",
+          "row": 1,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Tristana",
+        "DA_Fiddlesticks18",
+        null,
+        "DA_18_KhaZix",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Caustic",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 79
+        },
+        {
+          "playerName": "난장한다",
+          "health": 77
+        },
+        {
+          "playerName": "식산생님",
+          "health": 75
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 73
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "호이린",
+          "health": 51
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0.7,
+        "board": 0.35,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 650000,
+      "gold": 40,
+      "health": 48,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_KogMaw18_AD",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Leona",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_18_Diana",
+        null,
+        "DA_Fiddlesticks18",
+        "DA_18_Elise"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Caustic",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Adaptor",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Fae",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 711000,
+      "gold": 62,
+      "health": 48,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Azir",
+        "DA_Murkwolf18",
+        "DA_18_Azir",
+        null,
+        "DA_18_Teemo"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 73
+        },
+        {
+          "playerName": "Remind",
+          "health": 70
+        },
+        {
+          "playerName": "난장한다",
+          "health": 67
+        },
+        {
+          "playerName": "식산생님",
+          "health": 67,
+          "level": 8
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "호이린",
+          "health": 38
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 771000,
+      "gold": 57,
+      "health": 48,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Varus",
+        null,
+        null,
+        "DA_18_Cassiopeia",
+        "DA_18_Tristana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 70
+        },
+        {
+          "playerName": "식산생님",
+          "health": 67
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 64
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "난장한다",
+          "health": 57
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "호이린",
+          "health": 28
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 801000,
+      "gold": 47,
+      "health": 38,
+      "level": 7,
+      "xp": {
+        "current": 6,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Nidalee18_AP",
+        "DA_18_RekSai",
+        "DA_18_Kayle",
+        null,
+        "DA_18_Hecarim"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 70
+        },
+        {
+          "playerName": "식산생님",
+          "health": 67
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 64
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 62
+        },
+        {
+          "playerName": "난장한다",
+          "health": 57
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "호이린",
+          "health": 28
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 831000,
+      "gold": 52,
+      "health": 38,
+      "level": 7,
+      "xp": {
+        "current": 6,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Nidalee18_AP",
+        "DA_18_RekSai",
+        "DA_18_Kayle",
+        null,
+        "DA_18_Hecarim"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-4",
+      "stageNumber": 4,
+      "roundNumber": 4,
+      "phase": "carousel",
+      "videoTimestampMs": 861000,
+      "gold": 52,
+      "health": 38,
+      "level": 7,
+      "xp": {
+        "current": 6,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 64
+        },
+        {
+          "playerName": "Remind",
+          "health": 59
+        },
+        {
+          "playerName": "식산생님",
+          "health": 56
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 52
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "난장한다",
+          "health": 44
+        },
+        {
+          "playerName": "호이린",
+          "health": 28
+        }
+      ],
+      "confidence": {
+        "gold": 0.3,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 891000,
+      "gold": 49,
+      "health": 38,
+      "level": 7,
+      "xp": {
+        "current": 8,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_Murkwolf18",
+        "DA_18_Hecarim",
+        "DA_KogMaw18_AD",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 64
+        },
+        {
+          "playerName": "Remind",
+          "health": 59
+        },
+        {
+          "playerName": "식산생님",
+          "health": 56
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 52
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "난장한다",
+          "health": 44
+        },
+        {
+          "playerName": "호이린",
+          "health": 28
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 921000,
+      "gold": 50,
+      "health": 38,
+      "level": 7,
+      "xp": {
+        "current": 8,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Caitlyn",
+        "DA_18_Cassiopeia",
+        "DA_Gromp18_AP",
+        "DA_18_Hecarim",
+        "DA_Karma18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Defender",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-6",
+      "stageNumber": 4,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 952000,
+      "gold": 32,
+      "health": 26,
+      "level": 7,
+      "xp": {
+        "current": 10,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Veigar",
+        "DA_KogMaw18_AD",
+        "DA_18_Kobuko",
+        "DA_18_Tristana",
+        "DA_18_Warwick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 55
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 52
+        },
+        {
+          "playerName": "Remind",
+          "health": 48
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "난장한다",
+          "health": 44
+        },
+        {
+          "playerName": "식산생님",
+          "health": 44
+        },
+        {
+          "playerName": "호이린",
+          "health": 28
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "4-6",
+      "stageNumber": 4,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 982000,
+      "gold": 32,
+      "health": 26,
+      "level": 7,
+      "xp": {
+        "current": 10,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Kayle",
+          "row": 3,
+          "col": 2,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Veigar",
+        "DA_KogMaw18_AD",
+        "DA_18_Kobuko",
+        "DA_18_Tristana",
+        "DA_18_Warwick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Solar",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-1",
+      "stageNumber": 5,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1012000,
+      "gold": 56,
+      "health": 15,
+      "level": 7,
+      "xp": {
+        "current": 14,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Yunara",
+        "DA_18_Aphelios",
+        "DA_18_Diana",
+        "DA_18_Alistar",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "원숭이 물보기",
+          "health": 55
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 52
+        },
+        {
+          "playerName": "Remind",
+          "health": 48
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "난장한다",
+          "health": 44
+        },
+        {
+          "playerName": "식산생님",
+          "health": 34
+        },
+        {
+          "playerName": "호이린",
+          "health": 17
+        }
+      ],
+      "incomeEvents": [
+        {
+          "kind": "other",
+          "gold": 0,
+          "note": "Shop slot 5 offered the Combust consumable (5 gold) instead of a champion"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-1",
+      "stageNumber": 5,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1042000,
+      "gold": 28,
+      "health": 15,
+      "level": 7,
+      "xp": {
+        "current": 14,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_Fiddlesticks18",
+        "DA_18_Yunara",
+        null,
+        "DA_18_Tristana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-2",
+      "stageNumber": 5,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1072000,
+      "gold": 34,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 16,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Diana",
+        "DA_18_MasterYi_AD",
+        "DA_18_Lillia",
+        "DA_18_Sejuani",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "넉벤맨",
+          "health": 52
+        },
+        {
+          "playerName": "Remind",
+          "health": 48
+        },
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 41
+        },
+        {
+          "playerName": "난장한다",
+          "health": 33
+        },
+        {
+          "playerName": "식산생님",
+          "health": 17
+        },
+        {
+          "playerName": "호이린",
+          "health": 17
+        }
+      ],
+      "incomeEvents": [
+        {
+          "kind": "other",
+          "gold": 0,
+          "note": "Shop slot 5 offered the Lightning Strike consumable (2 gold)"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-2",
+      "stageNumber": 5,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1102000,
+      "gold": 4,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 16,
+        "needed": 60
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Elise",
+        "DA_18_Morgana",
+        "DA_18_ElderDragon",
+        "DA_18_LeBlanc",
+        "DA_18_MasterYi_AD"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-3",
+      "stageNumber": 5,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1161000,
+      "gold": 2,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 18,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Alistar",
+        "DA_18_Sejuani",
+        "DA_18_Alistar",
+        "DA_18_Cassiopeia",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "뭉하",
+          "health": 47
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 39
+        },
+        {
+          "playerName": "Remind",
+          "health": 36
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 32
+        },
+        {
+          "playerName": "난장한다",
+          "health": 23
+        },
+        {
+          "playerName": "호이린",
+          "health": 17
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-4",
+      "stageNumber": 5,
+      "roundNumber": 4,
+      "phase": "carousel",
+      "videoTimestampMs": 1191000,
+      "gold": 2,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 18,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 36
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 34
+        },
+        {
+          "playerName": "뭉하",
+          "health": 33
+        },
+        {
+          "playerName": "난장한다",
+          "health": 23
+        },
+        {
+          "playerName": "호이린",
+          "health": 17
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 9
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 0.3,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-5",
+      "stageNumber": 5,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1221000,
+      "gold": 12,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 20,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Tristana",
+        "DA_18_Caitlyn",
+        null,
+        "DA_Scuttlecrab18",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 36
+        },
+        {
+          "playerName": "뭉하",
+          "health": 33
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 24
+        },
+        {
+          "playerName": "난장한다",
+          "health": 23
+        },
+        {
+          "playerName": "호이린",
+          "health": 17
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 9
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-5",
+      "stageNumber": 5,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1251000,
+      "gold": 14,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 20,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Tristana",
+        "DA_18_Caitlyn",
+        null,
+        "DA_Scuttlecrab18",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-6",
+      "stageNumber": 5,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1281000,
+      "gold": 23,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 22,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_Fiddlesticks18",
+        "DA_18_Sett",
+        "DA_18_Akali_AD",
+        "DA_18_Diana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 36
+        },
+        {
+          "playerName": "뭉하",
+          "health": 26
+        },
+        {
+          "playerName": "난장한다",
+          "health": 23
+        },
+        {
+          "playerName": "호이린",
+          "health": 15
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 8
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 0.7,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "5-6",
+      "stageNumber": 5,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1311000,
+      "gold": 23,
+      "health": 2,
+      "level": 7,
+      "xp": {
+        "current": 22,
+        "needed": 60
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        null,
+        "DA_Fiddlesticks18",
+        "DA_18_Sett",
+        "DA_18_Akali_AD",
+        "DA_18_Diana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 0.7,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-1",
+      "stageNumber": 6,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1341000,
+      "gold": 20,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 2,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Brambleback18",
+        "DA_Karma18",
+        "DA_18_Teemo",
+        "DA_18_KhaZix",
+        "DA_Murkwolf18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 5,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 36
+        },
+        {
+          "playerName": "뭉하",
+          "health": 19
+        },
+        {
+          "playerName": "난장한다",
+          "health": 15
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 8
+        },
+        {
+          "playerName": "호이린",
+          "health": 0
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0,
+        "lobby": 0.6
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-1",
+      "stageNumber": 6,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1371000,
+      "gold": 3,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 2,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_LeBlanc",
+        "DA_Fiddlesticks18",
+        "DA_18_Cassiopeia",
+        "DA_18_Teemo",
+        "DA_18_Zyra"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_18_ZyraUniqueTrait",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 0.7,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-2",
+      "stageNumber": 6,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1431000,
+      "gold": 8,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 4,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Taric18",
+        null,
+        "DA_Cinderling18",
+        "DA_18_Kobuko",
+        "DA_18_Caitlyn"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 19
+        },
+        {
+          "playerName": "뭉하",
+          "health": 19
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 4
+        },
+        {
+          "playerName": "난장한다",
+          "health": 0
+        },
+        {
+          "playerName": "호이린",
+          "health": 0
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0,
+        "lobby": 0.7
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-3",
+      "stageNumber": 6,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1491000,
+      "gold": 0,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 6,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_Cinderling18",
+        "DA_18_Aphelios",
+        "DA_18_Soraka",
+        "DA_18_Aphelios"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 19
+        },
+        {
+          "playerName": "뭉하",
+          "health": 4
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 0
+        },
+        {
+          "playerName": "난장한다",
+          "health": 0
+        },
+        {
+          "playerName": "호이린",
+          "health": 0
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-3",
+      "stageNumber": 6,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1521000,
+      "gold": 4,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 6,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_KhaZix",
+        "DA_Cinderling18",
+        "DA_18_Aphelios",
+        "DA_18_Soraka",
+        "DA_18_Aphelios"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-5",
+      "stageNumber": 6,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1551000,
+      "gold": 5,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 8,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_KogMaw18_AD",
+        "DA_18_Hecarim",
+        "DA_Fiddlesticks18",
+        "DA_18_Sett",
+        "DA_18_Warwick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 1,
+          "style": "inactive"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 19
+        },
+        {
+          "playerName": "뭉하",
+          "health": 0
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 0
+        },
+        {
+          "playerName": "난장한다",
+          "health": 0
+        },
+        {
+          "playerName": "호이린",
+          "health": 0
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-5",
+      "stageNumber": 6,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1581000,
+      "gold": 2,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 8,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "row": 1,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_18_Malphite",
+        "DA_Krug18",
+        "DA_18_Lillia",
+        "DA_18_Leona",
+        "DA_18_Azir"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-keane-100s-ranked-game",
+      "stage": "6-6",
+      "stageNumber": 6,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1641000,
+      "gold": 0,
+      "health": 2,
+      "level": 8,
+      "xp": {
+        "current": 10,
+        "needed": 68
+      },
+      "streak": {
+        "type": "win",
+        "count": 8
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemJuggernaut"
+          ]
+        },
+        {
+          "championId": "DA_18_Sejuani",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Varus",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Krug18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 2,
+          "items": []
+        },
+        {
+          "championId": "DA_Vi18",
+          "row": 0,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sett",
+          "row": 1,
+          "col": 1,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [],
+      "shop": [
+        "DA_Murkwolf18",
+        "DA_18_Alistar",
+        "DA_18_Xayah",
+        "DA_18_Yorick",
+        "DA_18_Lillia"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_Juggernaut18",
+          "count": 6,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Rival",
+          "count": 1,
+          "style": "unique"
+        },
+        {
+          "traitId": "DA_Riftbeast18",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Inferno",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Brawler",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blossom",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_Primal18",
+          "count": 1,
+          "style": "inactive"
+        }
+      ],
+      "augments": [],
+      "lobby": [
+        {
+          "playerName": "Remind",
+          "health": 1
+        },
+        {
+          "playerName": "뭉하",
+          "health": 0
+        },
+        {
+          "playerName": "넉벤맨",
+          "health": 0
+        },
+        {
+          "playerName": "난장한다",
+          "health": 0
+        },
+        {
+          "playerName": "호이린",
+          "health": 0
+        },
+        {
+          "playerName": "원숭이 물보기",
+          "health": 0
+        },
+        {
+          "playerName": "식산생님",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0,
+        "augments": 0
+      },
+      "provenance": "manual"
+    }
+  ],
+  "finalPlacement": 1,
+  "title": "From 2 HP at 5-2 to first place: the whole game, state by state",
+  "notes": "Annotated from the VOD on 2026-09-24 by reading paused frames in the owner's browser. HUD fields (gold, HP, level, XP, streak, shop, lobby) are read directly and carry confidence 1; boards list only the units with direct evidence (a shop purchase plus the trait panel) with confidence 0.2–0.35, benches are unknown, and the 2-1 augment pick was not visible (Expedition / Branching Out / Called Shot were offered; Rengar carries a Juggernaut Emblem from 3-5, consistent with Branching Out but unconfirmed). Most rounds have a start state (shop just rolled) and an end state (the board sent into combat). Keane drops to 2 HP at 5-2 with a 3-loss streak and then wins eight fights in a row on Rengar Rival with Juggernaut 6.",
+  "annotatedBy": "Claude Fable 5.1 (frame reading, supervised)"
+}

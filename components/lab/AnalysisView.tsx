@@ -16,7 +16,7 @@ import { fmtStamp } from "@/lib/study-schema";
  * it with evidence chips. No verdicts yet (M5); the ribbon is coloured by what
  * the state itself shows: HP lost and whether the decision balanced.
  */
-export function AnalysisView({ timeline, decisions, units, items, traitNames, xpNeeded, augmentNames }: { timeline: GameTimeline; decisions: Decision[]; units: Record<string, UnitLookup>; items: Record<string, ItemLookup>; traitNames: Record<string, string>; xpNeeded: Record<number, number>; augmentNames: Record<string, string> }) {
+export function AnalysisView({ timeline, decisions, units, items, traitNames, augmentNames }: { timeline: GameTimeline; decisions: Decision[]; units: Record<string, UnitLookup>; items: Record<string, ItemLookup>; traitNames: Record<string, string>; augmentNames: Record<string, string> }) {
   const [idx, setIdx] = useState(Math.max(0, timeline.rounds.length - 1));
   const s = timeline.rounds[idx]!;
   const into = idx > 0 ? decisions[idx - 1] : undefined;
@@ -91,7 +91,7 @@ export function AnalysisView({ timeline, decisions, units, items, traitNames, xp
             bench={s.bench}
             enemyBoard={s.opponentPreview}
             shop={s.shop}
-            status={{ gold: s.gold, hp: s.health, level: s.level, xpToNext: s.xp.current, xpNeeded: xpNeeded[s.level] ?? s.xp.needed, stage: s.stage, streak: s.streak, items: s.benchItems }}
+            status={{ gold: s.gold, hp: s.health, level: s.level, xpToNext: s.xp.needed - s.xp.current, xpNeeded: s.xp.needed, stage: s.stage, streak: s.streak, items: s.benchItems }}
             units={units}
             items={items}
             traitNames={traitNames}

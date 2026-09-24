@@ -35,7 +35,7 @@ export async function buildSessionData(scenarios: Scenario[]): Promise<{ data: S
   const items = Object.fromEntries([...itemIds].filter((id) => allItems[id]).map((id) => [id, allItems[id]!]));
   const traitNames = Object.fromEntries(Object.values(traitLookup()).map((t) => [t.id, t.name]));
   const k = getConstants();
-  const xpNeeded = Object.fromEntries(k.xpToLevel.map((r) => [r.level - 1, r.xp]));
+  const xpNeeded = Object.fromEntries(k.xpToLevel.map((r) => [r.level, r.xp]));
 
   const rendered: Record<string, Rendered> = {};
   for (const s of scenarios) {

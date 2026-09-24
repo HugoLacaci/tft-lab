@@ -129,7 +129,7 @@ export function TimelineEditor({ study, catalog, initial }: { study: Study; cata
       const [sn, rn] = r.stage.split("-").map(Number);
       r.stageNumber = sn || r.stageNumber;
       r.roundNumber = rn || r.roundNumber;
-      r.xp.needed = catalog.xpToLevel.find((x) => x.level === r.level + 1)?.xp ?? r.xp.needed;
+      r.xp.needed = catalog.xpToLevel.find((x) => x.level === r.level)?.xp ?? r.xp.needed;
       r.activeTraits = activeTraits(r.board, catalog);
       return { ...t, rounds };
     });
@@ -267,7 +267,7 @@ export function TimelineEditor({ study, catalog, initial }: { study: Study; cata
               board={s.board}
               bench={s.bench}
               shop={s.shop}
-              status={{ gold: s.gold, hp: s.health, level: s.level, xpToNext: s.xp.current, xpNeeded: s.xp.needed, stage: s.stage, streak: s.streak, items: s.benchItems }}
+              status={{ gold: s.gold, hp: s.health, level: s.level, xpToNext: s.xp.needed - s.xp.current, xpNeeded: s.xp.needed, stage: s.stage, streak: s.streak, items: s.benchItems }}
               units={catalog.units}
               items={catalog.items}
               traitNames={catalog.traitNames}

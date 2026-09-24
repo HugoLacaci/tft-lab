@@ -56,8 +56,8 @@ const constants: SetConstants = {
     { level: 4, xp: 10 },
     { level: 5, xp: 20 },
     { level: 6, xp: 36 },
-    { level: 7, xp: 48 },
-    { level: 8, xp: 76 },
+    { level: 7, xp: 56 },
+    { level: 8, xp: 80 },
     { level: 9, xp: 84 },
     { level: 10, xp: 100 },
   ],
@@ -75,7 +75,7 @@ const constants: SetConstants = {
   augmentRounds: ["2-1", "3-2", "4-2"],
   notes: [
     "Streak gold brackets and the 6+ cap have been stable for several sets but are the first thing to re-check on a new set.",
-    "XP at 8→9 and 9→10 was changed in past sets; the values here are the long-standing ones.",
+    "xpToLevel is the XP needed while at that level (the bar's denominator). Levels 3–7 verified frame by frame from a patch-18.2b VOD on 2026-09-24 (L3 /6, L4 /10, L5 /20, L6 /36, L7 /56); 8, 9 and 10 follow the recent-set table (80, 84, 100) and are unverified. A patch-18.1c VOD read L7 /60 and L8 /68, so the table moved between 18.1 and 18.2; annotated timelines carry the value seen in their own VOD.",
   ],
 };
 

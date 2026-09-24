@@ -1,0 +1,5164 @@
+{
+  "matchId": "study-wasianiverson-khazix-reroll",
+  "setNumber": 18,
+  "patch": "18.2b",
+  "playerName": "ACAD wasian (Wasianiverson)",
+  "source": "annotation",
+  "sourceUrl": "https://www.youtube.com/watch?v=OCNK3KV75ZU",
+  "studyId": "wasianiverson-khazix-reroll",
+  "rounds": [
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-1",
+      "stageNumber": 2,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 96000,
+      "gold": 4,
+      "health": 96,
+      "level": 3,
+      "xp": {
+        "current": 2,
+        "needed": 6
+      },
+      "streak": {
+        "type": "win",
+        "count": 0
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sentry",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Xayah",
+        null,
+        "DA_18_Sentry",
+        "DA_18_Xayah",
+        "DA_18_Teemo"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT k3soju",
+          "health": 100
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 100
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 100
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 100
+        },
+        {
+          "playerName": "inflames",
+          "health": 100
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 100
+        },
+        {
+          "playerName": "Singulares",
+          "health": 100
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.5,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-2",
+      "stageNumber": 2,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 134000,
+      "gold": 3,
+      "health": 92,
+      "level": 3,
+      "xp": {
+        "current": 4,
+        "needed": 6
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sentry",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Sentry",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Teemo",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Gromp18_AP",
+        "DA_18_Camille",
+        "DA_18_Kayle",
+        "DA_18_RekSai",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT k3soju",
+          "health": 100
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 100
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 100
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 100
+        },
+        {
+          "playerName": "Singulares",
+          "health": 96,
+          "level": 4
+        },
+        {
+          "playerName": "inflames",
+          "health": 95
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 94,
+          "level": 4
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.5,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 214000,
+      "gold": 10,
+      "health": 83,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.7,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-3",
+      "stageNumber": 2,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 240000,
+      "gold": 10,
+      "health": 83,
+      "level": 4,
+      "xp": {
+        "current": 0,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Varus",
+        null,
+        "DA_18_Leona"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 100
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 100
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 100
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 97
+        },
+        {
+          "playerName": "Singulares",
+          "health": 96
+        },
+        {
+          "playerName": "inflames",
+          "health": 91
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 88
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.7,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-4",
+      "stageNumber": 2,
+      "roundNumber": 4,
+      "phase": "carousel",
+      "videoTimestampMs": 302000,
+      "gold": 17,
+      "health": 76,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "confidence": {
+        "gold": 0.5,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.7,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 316000,
+      "gold": 17,
+      "health": 76,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Fae",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 100
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 100
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 100
+        },
+        {
+          "playerName": "Singulares",
+          "health": 96
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 92
+        },
+        {
+          "playerName": "inflames",
+          "health": 85
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 84,
+          "level": 5
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.7,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-5",
+      "stageNumber": 2,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 340000,
+      "gold": 13,
+      "health": 76,
+      "level": 4,
+      "xp": {
+        "current": 2,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_Scuttlecrab18",
+        "DA_18_Xayah",
+        "DA_Karma18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.6,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-6",
+      "stageNumber": 2,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 442000,
+      "gold": 22,
+      "health": 71,
+      "level": 4,
+      "xp": {
+        "current": 4,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_LeBlanc",
+        "DA_18_Caitlyn",
+        "DA_18_Camille",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 100
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 99
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 94
+        },
+        {
+          "playerName": "Singulares",
+          "health": 93
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 92
+        },
+        {
+          "playerName": "inflames",
+          "health": 85
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 79
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.6,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "2-7",
+      "stageNumber": 2,
+      "roundNumber": 7,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 478000,
+      "gold": 29,
+      "health": 67,
+      "level": 4,
+      "xp": {
+        "current": 6,
+        "needed": 10
+      },
+      "streak": {
+        "type": "loss",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_RekSai",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_RekSai",
+        "DA_18_Sentry",
+        "DA_Murkwolf18",
+        "DA_18_Rakan",
+        "DA_18_Teemo"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 96
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 96
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 94
+        },
+        {
+          "playerName": "Singulares",
+          "health": 93
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 89
+        },
+        {
+          "playerName": "inflames",
+          "health": 85
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 79
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.6,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-1",
+      "stageNumber": 3,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 541000,
+      "gold": 36,
+      "health": 67,
+      "level": 5,
+      "xp": {
+        "current": 2,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Rakan",
+        "DA_Karma18",
+        "DA_18_MasterYi_AD",
+        "DA_18_Xayah",
+        "DA_18_Alistar"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "pve-drop",
+          "gold": 2,
+          "note": "2-7 PvE drop (estimated from the gold delta)"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.6,
+        "bench": 0.5,
+        "incomeEvents": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "phase": "augment-select",
+      "videoTimestampMs": 604000,
+      "gold": 47,
+      "health": 59,
+      "level": 5,
+      "xp": {
+        "current": 4,
+        "needed": 20
+      },
+      "streak": {
+        "type": "loss",
+        "count": 6
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots"
+      ],
+      "augmentOptions": [
+        "DA_GainGold",
+        "DA_GlassCannon_Gold",
+        "DA_BonusGiftPlus"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 96
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 96
+        },
+        {
+          "playerName": "Singulares",
+          "health": 93
+        },
+        {
+          "playerName": "inflames",
+          "health": 86
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 84,
+          "level": 6
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 78
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 70
+        }
+      ],
+      "confidence": {
+        "gold": 0.3,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.6,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-2",
+      "stageNumber": 3,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 656000,
+      "gold": 29,
+      "health": 59,
+      "level": 6,
+      "xp": {
+        "current": 0,
+        "needed": 36
+      },
+      "streak": {
+        "type": "loss",
+        "count": 6
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "row": 3,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Xayah",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Gromp18_AP",
+        null,
+        null,
+        "DA_18_Ornn",
+        "DA_18_Akali_AD"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Elderwood",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "augment",
+          "gold": 21,
+          "note": "Gain 21 Gold (3-2 pick, inferred from chat and the gold delta)"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.4,
+        "bench": 0.5,
+        "augments": 0.6,
+        "incomeEvents": 0.6
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-3",
+      "stageNumber": 3,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 736000,
+      "gold": 36,
+      "health": 59,
+      "level": 6,
+      "xp": {
+        "current": 2,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Rengar",
+        "DA_18_Cassiopeia",
+        "DA_18_Yorick",
+        "DA_18_Elise"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.4,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-5",
+      "stageNumber": 3,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 846000,
+      "gold": 50,
+      "health": 59,
+      "level": 6,
+      "xp": {
+        "current": 4,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_LeBlanc",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Gromp18_AP",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Veigar",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Cinderling18",
+        "DA_Krug18",
+        "DA_18_Sentry",
+        "DA_18_Yunara",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 87
+        },
+        {
+          "playerName": "Singulares",
+          "health": 85
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 84
+        },
+        {
+          "playerName": "inflames",
+          "health": 83
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 70
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 62
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 53
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.4,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-6",
+      "stageNumber": 3,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 906000,
+      "gold": 50,
+      "health": 59,
+      "level": 6,
+      "xp": {
+        "current": 6,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        "DA_18_Kobuko",
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 87
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 84
+        },
+        {
+          "playerName": "inflames",
+          "health": 83
+        },
+        {
+          "playerName": "Singulares",
+          "health": 78
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 60
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 53
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 42
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "3-7",
+      "stageNumber": 3,
+      "roundNumber": 7,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 986000,
+      "gold": 50,
+      "health": 59,
+      "level": 6,
+      "xp": {
+        "current": 28,
+        "needed": 36
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_Rengar",
+          "row": 1,
+          "col": 3,
+          "star": 1,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Tristana",
+        "DA_Krug18",
+        "DA_Scuttlecrab18",
+        "DA_18_Sejuani",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 87
+        },
+        {
+          "playerName": "inflames",
+          "health": 83
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 74
+        },
+        {
+          "playerName": "Singulares",
+          "health": 67
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 60
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 42
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 33
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1003000,
+      "gold": 43,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_KogMaw18_AD",
+        "DA_Fiddlesticks18",
+        "DA_18_Elise",
+        "DA_18_Rammus",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_FloraFatalis",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 87
+        },
+        {
+          "playerName": "inflames",
+          "health": 83
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 74
+        },
+        {
+          "playerName": "Singulares",
+          "health": 67,
+          "level": 8
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 60
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 42
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 33
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-1",
+      "stageNumber": 4,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1032000,
+      "gold": 38,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 2,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_KogMaw18_AD",
+        null,
+        "DA_18_Elise",
+        "DA_18_Rammus",
+        "DA_Krug18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_FloraFatalis",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "incomeEvents": [
+        {
+          "kind": "wisp",
+          "gold": -2,
+          "note": "Phantom Vest wisp bought (2 gold)"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "phase": "augment-select",
+      "videoTimestampMs": 1070000,
+      "gold": 48,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_FloraFatalis",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 87
+        },
+        {
+          "playerName": "inflames",
+          "health": 73
+        },
+        {
+          "playerName": "Singulares",
+          "health": 67
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 61
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 47
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 33
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 30
+        }
+      ],
+      "confidence": {
+        "gold": 0.3,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.35,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-2",
+      "stageNumber": 4,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1126000,
+      "gold": 34,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 4,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_Tristana",
+        "DA_18_Warwick",
+        "DA_18_Kayle",
+        "DA_Murkwolf18"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_FloraFatalis",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.5,
+        "augments": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-3",
+      "stageNumber": 4,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1206000,
+      "gold": 34,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 6,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Brambleback18",
+        null,
+        "DA_18_Warwick",
+        "DA_18_Alistar",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1258000,
+      "gold": 40,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 8,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "row": 0,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Krug18",
+        "DA_Vi18",
+        "DA_CrimsonRaptor18",
+        "DA_18_MasterYi_AD",
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Vanguard",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 73
+        },
+        {
+          "playerName": "inflames",
+          "health": 61
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "Singulares",
+          "health": 38
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 30
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 24
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 21
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0.5
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-5",
+      "stageNumber": 4,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1287000,
+      "gold": 10,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 8,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Fiddlesticks18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_18_RekSai",
+        "DA_18_Camille",
+        "DA_18_Akali_AD",
+        "DA_18_Yorick"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 3,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "VIT setsuko",
+          "health": 73
+        },
+        {
+          "playerName": "inflames",
+          "health": 61
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "Singulares",
+          "health": 38
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 30
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 24
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 21
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-6",
+      "stageNumber": 4,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1366000,
+      "gold": 21,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 10,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 8
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Yorick",
+          "row": 1,
+          "col": 5,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Vi18",
+        null,
+        "DA_18_Tristana",
+        null,
+        "DA_18_Veigar"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "inflames",
+          "health": 61
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 59
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "Singulares",
+          "health": 25
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 24
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 20
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 7
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "4-7",
+      "stageNumber": 4,
+      "roundNumber": 7,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1426000,
+      "gold": 34,
+      "health": 59,
+      "level": 7,
+      "xp": {
+        "current": 12,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Lillia",
+        "DA_18_Tristana",
+        "DA_18_Teemo",
+        "DA_Gromp18_AP",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 0.5,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-1",
+      "stageNumber": 5,
+      "roundNumber": 1,
+      "phase": "carousel",
+      "videoTimestampMs": 1458000,
+      "gold": 50,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 14,
+        "needed": 56
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "inflames",
+          "health": 61
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52,
+          "level": 9
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 47
+        },
+        {
+          "playerName": "Singulares",
+          "health": 25
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 20
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 14
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "incomeEvents": [
+        {
+          "kind": "other",
+          "gold": 0,
+          "note": "5-1 armory: Chain Vest chosen (B.F. Sword / Tear / Giant's Belt / Chain Vest offered)"
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 0,
+        "board": 0.35,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-1",
+      "stageNumber": 5,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1487000,
+      "gold": 43,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 14,
+        "needed": 56
+      },
+      "streak": {
+        "type": "loss",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Scuttlecrab18",
+        "DA_Fiddlesticks18",
+        "DA_18_Warwick",
+        "DA_18_Alistar",
+        "DA_18_Sejuani"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-2",
+      "stageNumber": 5,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1547000,
+      "gold": 49,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 16,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 1
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_KogMaw18_AD",
+        "DA_Scuttlecrab18",
+        "DA_Fiddlesticks18",
+        "DA_CrimsonRaptor18",
+        "DA_Scuttlecrab18"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "inflames",
+          "health": 44
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 31
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 14
+        },
+        {
+          "playerName": "Singulares",
+          "health": 13
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 9
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-3",
+      "stageNumber": 5,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1607000,
+      "gold": 50,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 18,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 2
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 2,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_KhaZix",
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Kobuko",
+        "DA_18_Rengar",
+        "DA_CrimsonRaptor18",
+        "DA_18_Rengar",
+        "DA_18_Shen"
+      ],
+      "benchItems": [
+        "DA_Component_ChainVest"
+      ],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 5,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 3,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 31
+        },
+        {
+          "playerName": "inflames",
+          "health": 30
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 14
+        },
+        {
+          "playerName": "Singulares",
+          "health": 0
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 0
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.3,
+        "bench": 0.4
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-5",
+      "stageNumber": 5,
+      "roundNumber": 5,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1707000,
+      "gold": 53,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 20,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 3
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 3,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Malphite",
+        "DA_Draven18",
+        "DA_18_MasterYi_AD",
+        "DA_KogMaw18_AD",
+        "DA_18_Tristana"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.4,
+        "bench": 0.3
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "5-6",
+      "stageNumber": 5,
+      "roundNumber": 6,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1767000,
+      "gold": 49,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 22,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 4
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 3,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Azir",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": [
+            "DA_GuinsoosRageblade"
+          ]
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_18_Caitlyn",
+        "DA_KogMaw18_AD",
+        "DA_Fiddlesticks18",
+        null,
+        null
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Spellweaver",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 52
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 14
+        },
+        {
+          "playerName": "inflames",
+          "health": 7
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 2
+        },
+        {
+          "playerName": "Singulares",
+          "health": 0
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 0
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.4,
+        "bench": 0.3
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "6-1",
+      "stageNumber": 6,
+      "roundNumber": 1,
+      "phase": "planning",
+      "phaseMoment": "start",
+      "videoTimestampMs": 1847000,
+      "gold": 66,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 26,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 5
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 3,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_CrimsonRaptor18",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_CrimsonRaptor18",
+        "DA_18_Rengar",
+        "DA_18_Tristana",
+        "DA_18_Caitlyn",
+        "DA_18_MasterYi_AD"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 37
+        },
+        {
+          "playerName": "inflames",
+          "health": 7
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 2
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 2
+        },
+        {
+          "playerName": "Singulares",
+          "health": 0
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 0
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.3
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "6-2",
+      "stageNumber": 6,
+      "roundNumber": 2,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 1947000,
+      "gold": 43,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 28,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 6
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 3,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_CrimsonRaptor18",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        null,
+        "DA_Murkwolf18",
+        "DA_18_Xayah",
+        "DA_Murkwolf18",
+        "DA_18_ElderDragon"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Kyouko Hori",
+          "health": 19
+        },
+        {
+          "playerName": "Darth Nub",
+          "health": 2
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 2
+        },
+        {
+          "playerName": "inflames",
+          "health": 0
+        },
+        {
+          "playerName": "Singulares",
+          "health": 0
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 0
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.3
+      },
+      "provenance": "manual"
+    },
+    {
+      "matchId": "study-wasianiverson-khazix-reroll",
+      "stage": "6-3",
+      "stageNumber": 6,
+      "roundNumber": 3,
+      "phase": "planning",
+      "phaseMoment": "end",
+      "videoTimestampMs": 2017000,
+      "gold": 52,
+      "health": 50,
+      "level": 7,
+      "xp": {
+        "current": 30,
+        "needed": 56
+      },
+      "streak": {
+        "type": "win",
+        "count": 7
+      },
+      "board": [
+        {
+          "championId": "DA_18_KhaZix",
+          "row": 1,
+          "col": 3,
+          "star": 3,
+          "items": [
+            "DA_18_EmblemBlackthorn",
+            "DA_18_EmblemExecutioner",
+            "DA_HandOfJustice"
+          ]
+        },
+        {
+          "championId": "DA_18_Rakan",
+          "row": 0,
+          "col": 3,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Hecarim",
+          "row": 0,
+          "col": 2,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Aphelios",
+          "row": 3,
+          "col": 4,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Soraka",
+          "row": 3,
+          "col": 5,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_18_Zyra",
+          "row": 3,
+          "col": 1,
+          "star": 1,
+          "items": []
+        },
+        {
+          "championId": "DA_CrimsonRaptor18",
+          "row": 2,
+          "col": 6,
+          "star": 1,
+          "items": []
+        }
+      ],
+      "bench": [
+        {
+          "championId": "DA_Scuttlecrab18",
+          "star": 1,
+          "items": []
+        }
+      ],
+      "shop": [
+        "DA_Vi18",
+        "DA_Krug18",
+        "DA_18_Ezreal",
+        "DA_18_MasterYi_AD",
+        "DA_18_Yunara"
+      ],
+      "benchItems": [],
+      "activeTraits": [
+        {
+          "traitId": "DA_18_Executioner",
+          "count": 4,
+          "style": "gold"
+        },
+        {
+          "traitId": "DA_18_Lunar",
+          "count": 4,
+          "style": "silver"
+        },
+        {
+          "traitId": "DA_18_Rapidfire",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Summoner",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Blackthorn",
+          "count": 2,
+          "style": "bronze"
+        },
+        {
+          "traitId": "DA_18_Ravager",
+          "count": 2,
+          "style": "bronze"
+        }
+      ],
+      "augments": [
+        "DA_SpreadingRoots",
+        "DA_GainGold"
+      ],
+      "lobby": [
+        {
+          "playerName": "Darth Nub",
+          "health": 2
+        },
+        {
+          "playerName": "Kyouko Hori",
+          "health": 1
+        },
+        {
+          "playerName": "VIT setsuko",
+          "health": 0
+        },
+        {
+          "playerName": "inflames",
+          "health": 0
+        },
+        {
+          "playerName": "Singulares",
+          "health": 0
+        },
+        {
+          "playerName": "ACAD Dishsoap",
+          "health": 0
+        },
+        {
+          "playerName": "VIT k3soju",
+          "health": 0
+        }
+      ],
+      "confidence": {
+        "gold": 1,
+        "health": 1,
+        "level": 1,
+        "xp": 1,
+        "streak": 1,
+        "shop": 1,
+        "board": 0.35,
+        "bench": 0.3
+      },
+      "provenance": "manual"
+    }
+  ],
+  "finalPlacement": 1,
+  "title": "Kha'Zix reroll: the whole game, state by state",
+  "notes": "Annotated from the VOD on 2026-09-24 by reading paused frames in the owner's browser: HUD fields (gold, HP, level, XP, streak, shop, lobby) are read directly and carry confidence 1; boards are deduced from the trait panel and the units visible, listed only when identifiable, with confidence 0.3–0.7 (the unit itself, its hex and its items are approximate). Most rounds have one state (end of planning); 2-3, 2-5, 4-1, 4-5 have start and end. Income events that were not visible (PvE drops, wisps) show up as residuals in the decisions rather than being invented.",
+  "annotatedBy": "Claude Fable 5.1 (frame reading, supervised)"
+}

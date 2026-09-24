@@ -79,7 +79,7 @@
       "level": 4,
       "xp": {
         "current": 0,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -152,7 +152,7 @@
       "level": 4,
       "xp": {
         "current": 2,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -225,7 +225,7 @@
       "level": 4,
       "xp": {
         "current": 2,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -309,7 +309,7 @@
       "level": 4,
       "xp": {
         "current": 4,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -393,7 +393,7 @@
       "level": 4,
       "xp": {
         "current": 4,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -483,7 +483,7 @@
       "level": 4,
       "xp": {
         "current": 6,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -586,7 +586,7 @@
       "level": 4,
       "xp": {
         "current": 6,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -682,7 +682,7 @@
       "level": 4,
       "xp": {
         "current": 8,
-        "needed": 20
+        "needed": 10
       },
       "board": [
         {
@@ -777,8 +777,8 @@
       "gold": 7,
       "level": 5,
       "xp": {
-        "current": 0,
-        "needed": 36
+        "current": 10,
+        "needed": 20
       },
       "board": [
         {
@@ -870,8 +870,8 @@
       "gold": 12,
       "level": 5,
       "xp": {
-        "current": 2,
-        "needed": 36
+        "current": 12,
+        "needed": 20
       },
       "board": [
         {
@@ -963,8 +963,8 @@
       "gold": 12,
       "level": 5,
       "xp": {
-        "current": 2,
-        "needed": 36
+        "current": 12,
+        "needed": 20
       },
       "board": [
         {
@@ -1056,8 +1056,8 @@
       "gold": 20,
       "level": 5,
       "xp": {
-        "current": 4,
-        "needed": 36
+        "current": 14,
+        "needed": 20
       },
       "board": [
         {
@@ -1159,8 +1159,8 @@
       "gold": 20,
       "level": 5,
       "xp": {
-        "current": 4,
-        "needed": 36
+        "current": 14,
+        "needed": 20
       },
       "board": [
         {
@@ -1254,8 +1254,8 @@
       "gold": 28,
       "level": 5,
       "xp": {
-        "current": 6,
-        "needed": 36
+        "current": 16,
+        "needed": 20
       },
       "board": [
         {
@@ -1347,9 +1347,9 @@
       "phase": "planning",
       "phaseMoment": "end",
       "gold": 21,
-      "level": 5,
+      "level": 6,
       "xp": {
-        "current": 10,
+        "current": 0,
         "needed": 36
       },
       "board": [
@@ -1436,9 +1436,9 @@
       "phase": "augment-select",
       "phaseMoment": "start",
       "gold": 29,
-      "level": 5,
+      "level": 6,
       "xp": {
-        "current": 12,
+        "current": 2,
         "needed": 36
       },
       "board": [
@@ -1529,11 +1529,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 0,
+      "gold": 12,
       "level": 6,
       "xp": {
-        "current": 0,
-        "needed": 48
+        "current": 14,
+        "needed": 36
       },
       "board": [
         {
@@ -1637,11 +1637,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 5,
+      "gold": 18,
       "level": 6,
       "xp": {
-        "current": 2,
-        "needed": 48
+        "current": 16,
+        "needed": 36
       },
       "board": [
         {
@@ -1745,11 +1745,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 5,
+      "gold": 18,
       "level": 6,
       "xp": {
-        "current": 2,
-        "needed": 48
+        "current": 16,
+        "needed": 36
       },
       "board": [
         {
@@ -1853,11 +1853,11 @@
       "confidence": {},
       "phase": "carousel",
       "phaseMoment": "start",
-      "gold": 10,
+      "gold": 24,
       "level": 6,
       "xp": {
-        "current": 4,
-        "needed": 48
+        "current": 18,
+        "needed": 36
       },
       "board": [
         {
@@ -1974,11 +1974,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 10,
+      "gold": 24,
       "level": 6,
       "xp": {
-        "current": 4,
-        "needed": 48
+        "current": 18,
+        "needed": 36
       },
       "board": [
         {
@@ -2088,11 +2088,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 17,
+      "gold": 32,
       "level": 6,
       "xp": {
-        "current": 6,
-        "needed": 48
+        "current": 20,
+        "needed": 36
       },
       "board": [
         {
@@ -2202,11 +2202,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 5,
+      "gold": 20,
       "level": 6,
       "xp": {
-        "current": 6,
-        "needed": 48
+        "current": 20,
+        "needed": 36
       },
       "board": [
         {
@@ -2316,11 +2316,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 11,
+      "gold": 28,
       "level": 6,
       "xp": {
-        "current": 8,
-        "needed": 48
+        "current": 22,
+        "needed": 36
       },
       "board": [
         {
@@ -2430,11 +2430,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 11,
+      "gold": 28,
       "level": 6,
       "xp": {
-        "current": 8,
-        "needed": 48
+        "current": 22,
+        "needed": 36
       },
       "board": [
         {
@@ -2544,11 +2544,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 22,
+      "gold": 40,
       "level": 6,
       "xp": {
-        "current": 10,
-        "needed": 48
+        "current": 24,
+        "needed": 36
       },
       "board": [
         {
@@ -2666,11 +2666,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 22,
+      "gold": 40,
       "level": 6,
       "xp": {
-        "current": 10,
-        "needed": 48
+        "current": 24,
+        "needed": 36
       },
       "board": [
         {
@@ -2780,11 +2780,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 31,
+      "gold": 51,
       "level": 6,
       "xp": {
-        "current": 12,
-        "needed": 48
+        "current": 26,
+        "needed": 36
       },
       "board": [
         {
@@ -2894,11 +2894,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 24,
+      "gold": 44,
       "level": 6,
       "xp": {
-        "current": 12,
-        "needed": 48
+        "current": 26,
+        "needed": 36
       },
       "board": [
         {
@@ -3013,11 +3013,11 @@
       "confidence": {},
       "phase": "augment-select",
       "phaseMoment": "start",
-      "gold": 34,
+      "gold": 56,
       "level": 6,
       "xp": {
-        "current": 14,
-        "needed": 48
+        "current": 28,
+        "needed": 36
       },
       "board": [
         {
@@ -3137,11 +3137,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 23,
+      "gold": 45,
       "level": 6,
       "xp": {
-        "current": 14,
-        "needed": 48
+        "current": 28,
+        "needed": 36
       },
       "board": [
         {
@@ -3262,11 +3262,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 30,
+      "gold": 54,
       "level": 6,
       "xp": {
-        "current": 16,
-        "needed": 48
+        "current": 30,
+        "needed": 36
       },
       "board": [
         {
@@ -3387,11 +3387,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 11,
+      "gold": 35,
       "level": 6,
       "xp": {
-        "current": 16,
-        "needed": 48
+        "current": 30,
+        "needed": 36
       },
       "board": [
         {
@@ -3497,11 +3497,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "start",
-      "gold": 17,
+      "gold": 43,
       "level": 6,
       "xp": {
-        "current": 18,
-        "needed": 48
+        "current": 32,
+        "needed": 36
       },
       "board": [
         {
@@ -3607,11 +3607,11 @@
       "confidence": {},
       "phase": "planning",
       "phaseMoment": "end",
-      "gold": 1,
+      "gold": 39,
       "level": 6,
       "xp": {
-        "current": 30,
-        "needed": 48
+        "current": 32,
+        "needed": 36
       },
       "board": [
         {

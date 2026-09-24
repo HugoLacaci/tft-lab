@@ -27,6 +27,7 @@ export interface SetConstants {
   baseIncome: number;
   /** Extra gold by streak length (win or loss). */
   streakGold: { streak: string; gold: number }[];
+  /** XP needed while AT `level` to reach the next one (the in-game bar: at level 6 it reads x/36). */
   xpToLevel: { level: number; xp: number }[];
   passiveXp: number;
   xpPerPurchase: { xp: number; gold: number };

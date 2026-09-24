@@ -29,7 +29,7 @@ export default function AiPage() {
     guideAnchors: anchors,
   };
   const k = getConstants();
-  const xpNeeded = Object.fromEntries(k.xpToLevel.map((r) => [r.level - 1, r.xp]));
+  const xpNeeded = Object.fromEntries(k.xpToLevel.map((r) => [r.level, r.xp]));
   return (
     <div>
       <div className="mb-6">
