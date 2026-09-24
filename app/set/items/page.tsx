@@ -4,6 +4,7 @@ import { ItemList } from "@/components/set/ItemList";
 import { requireSetData } from "@/lib/set-data";
 import { loadTiers, ranksById } from "@/lib/tiers";
 import { loadMeta, metaItemsById } from "@/lib/meta";
+import { inferTraitKinds } from "@/lib/trait-kinds";
 
 export const metadata = { title: "Items" };
 
@@ -17,6 +18,7 @@ export default function ItemsPage() {
   // Live ranks from Riot data win; the curated file fills the gaps.
   const ranks = { ...ranksById(data.items, tiers?.items), ...Object.fromEntries(Object.values(metaItems).map((m) => [m.id, m.rank])) };
   const stats = Object.fromEntries(Object.values(metaItems).map((m) => [m.id, { avg: m.avg, games: m.games }]));
+  const traitKinds = inferTraitKinds(data.champions, data.items, (id) => components[id]?.name);
   const emblemTraits = new Set(data.items.filter((i) => i.kind === "emblem").flatMap((i) => i.associatedTraits));
   const noEmblem = data.traits.filter((t) => !emblemTraits.has(t.id)).map((t) => t.name).sort();
   const items = data.items
@@ -36,7 +38,7 @@ export default function ItemsPage() {
           {tiers ? `items without live data use the curated list (${tiers.patch}, ${tiers.verifiedOn}); ` : ""}
           no badge means unranked.
         </p>
-        <ItemList items={items} components={components} traits={traits} ranks={ranks} stats={stats} patch={meta?.patch ?? ""} noEmblem={noEmblem} />
+        <ItemList items={items} components={components} traits={traits} traitKinds={traitKinds} ranks={ranks} stats={stats} patch={meta?.patch ?? ""} noEmblem={noEmblem} />
       </section>
     </div>
   );

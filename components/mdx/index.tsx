@@ -6,6 +6,8 @@ import { ItemCombineMatrix } from "./ItemCombineMatrix";
 import { TraitBreakpoints } from "./TraitBreakpoints";
 import { BoardExample } from "./BoardExample";
 import { DrillThis, CheckYourself } from "./Drill";
+import { StatChip, StatIcon, StatWords } from "@/components/set/StatIcon";
+import type { StatKey } from "@/lib/stat-meta";
 
 /**
  * Components available inside any MDX file (guides and set prose).
@@ -37,4 +39,8 @@ export const mdxComponents: MDXComponents = {
   BoardExample,
   DrillThis,
   CheckYourself,
+  /** `<Stat k="AD" />` — icon + short label; `label` overrides the text, `icon` shows only the glyph. */
+  Stat: ({ k, label, icon }: { k: StatKey; label?: string; icon?: boolean }) => (icon ? <StatIcon stat={k} /> : <StatChip stat={k} label={label} />),
+  /** `<StatWords text="…" />` — prose with an icon before every stat word. */
+  StatWords,
 };

@@ -2396,7 +2396,7 @@
       ],
       "augments": [
         {
-          "augmentId": "DA_CursedCrown",
+          "augmentId": "TFT7_Augment_CursedCrown",
           "note": "Cursed Crown lets you farm eight 3★s at level 6; econ = items > combat."
         },
         {

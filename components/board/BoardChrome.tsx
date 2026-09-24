@@ -7,6 +7,7 @@ import type { BenchUnit } from "@/lib/scenario-schema";
 import type { ItemLookup, UnitLookup } from "@/lib/set-data";
 import { costColor } from "@/lib/costs";
 import { UnitToken } from "./UnitToken";
+import { StatIcon } from "@/components/set/StatIcon";
 
 export interface BoardStatus {
   gold: number;
@@ -102,9 +103,20 @@ function StatusBar({ status, items }: { status: BoardStatus; items: Record<strin
   return (
     <div className="panel flex flex-wrap items-center gap-x-4 gap-y-1 px-3 py-2 text-xs">
       <Stat label="Stage" value={status.stage} />
-      <Stat label="Gold" value={`${status.gold}`} color="var(--gold)" />
       <span className="flex items-center gap-1.5">
-        <span className="display text-[0.6rem] uppercase tracking-wider text-dim">HP</span>
+        <span className="display inline-flex items-center gap-1 text-[0.6rem] uppercase tracking-wider text-dim">
+          <StatIcon stat="Gold" size="0.9rem" />
+          Gold
+        </span>
+        <span className="font-semibold tabular-nums" style={{ color: "var(--gold)" }}>
+          {status.gold}
+        </span>
+      </span>
+      <span className="flex items-center gap-1.5">
+        <span className="display inline-flex items-center gap-1 text-[0.6rem] uppercase tracking-wider text-dim">
+          <StatIcon stat="HP" size="0.9rem" title="Player health" />
+          HP
+        </span>
         <span className="relative inline-block h-2 w-16 bg-[var(--bg-deep)]" aria-hidden>
           <span className="absolute inset-y-0 left-0" style={{ width: `${status.hp}%`, background: hpColor }} />
         </span>

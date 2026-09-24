@@ -1,4 +1,5 @@
 import { StyleBadge, TraitIcon, UnitIcon } from "@/components/set/icons";
+import { RichText } from "@/components/set/RichText";
 import { loadSetData } from "@/lib/set-data";
 import Link from "next/link";
 
@@ -22,12 +23,16 @@ export function TraitBreakpoints({ trait, showUnits = true }: { trait: string; s
           {t.name}
         </Link>
       </div>
-      {t.desc ? <p className="mt-2 text-sm text-dim">{t.desc}</p> : null}
+      {t.desc ? (
+        <p className="mt-2 text-sm text-dim">
+          <RichText text={t.desc} words />
+        </p>
+      ) : null}
       <ul className="mt-3 space-y-1.5 text-sm">
         {t.breakpoints.map((b) => (
           <li key={b.units} className="flex items-start gap-2">
             <StyleBadge style={b.style}>{b.units}</StyleBadge>
-            <span>{b.desc.replace(/^\(\d+\)\s*/, "")}</span>
+            <RichText text={b.desc.replace(/^\(\d+\)\s*/, "")} words />
           </li>
         ))}
       </ul>

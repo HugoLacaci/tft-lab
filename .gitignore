@@ -13,3 +13,4 @@ next-env.d.ts
 .scratch/
 .lh-*.json
 .scratch-*
+/public/search-index.json

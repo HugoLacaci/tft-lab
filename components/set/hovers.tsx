@@ -11,8 +11,10 @@ import type { Champion, Item, Trait } from "@/lib/types";
 import { classifyTags, TAG_COLOR, TAG_LABEL, type Tag } from "@/lib/tags";
 import { ItemIcon, TraitIcon, UnitIcon } from "./icons";
 import { RichText } from "./RichText";
+import { StatChip, StatIcon } from "./StatIcon";
 import { RankBadge } from "./RankBadge";
 import type { Rank } from "@/lib/tiers";
+import { STATS, type StatKey } from "@/lib/stat-meta";
 
 export function Hover({ children, content, delay = 1000, side = "right" }: { children: ReactNode; content: ReactNode; delay?: number; side?: "top" | "right" | "bottom" | "left" }) {
   return (
@@ -34,7 +36,7 @@ export type ChampionCardData = Pick<Champion, "id" | "name" | "cost" | "icon" | 
 
 export function ChampionCard({ c, traits }: { c: ChampionCardData; traits: Record<string, Pick<Trait, "id" | "name" | "icon">> }) {
   const s = c.stats;
-  const scales = [c.ability.scaling.ad ? "AD" : null, c.ability.scaling.ap ? "AP" : null].filter(Boolean) as string[];
+  const scales = [c.ability.scaling.ad ? "AD" : null, c.ability.scaling.ap ? "AP" : null].filter(Boolean) as StatKey[];
   return (
     <div>
       <div className="flex items-center gap-2">
@@ -50,8 +52,9 @@ export function ChampionCard({ c, traits }: { c: ChampionCardData; traits: Recor
             ))}
           </div>
         </div>
-        <span className="display ml-auto text-[0.7rem] font-bold" style={{ color: `var(--cost-${c.cost})` }}>
-          {c.cost}g
+        <span className="display ml-auto inline-flex items-center gap-1 text-[0.7rem] font-bold" style={{ color: `var(--cost-${c.cost})` }}>
+          {c.cost}
+          <StatIcon stat="Gold" size="0.95em" />
         </span>
       </div>
       <div className="mt-2 grid grid-cols-4 gap-x-2 gap-y-0.5 border-y border-[var(--gold-dim)] py-1.5 text-[0.65rem] tabular-nums">
@@ -67,23 +70,41 @@ export function ChampionCard({ c, traits }: { c: ChampionCardData; traits: Recor
       <div className="mt-2 flex items-center gap-2">
         <span className="display text-[0.72rem] text-gold-bright">{c.ability.name || "Ability"}</span>
         {scales.length ? (
-          <span className="ml-auto text-[0.62rem] text-dim">
-            scales with <RichText text={scales.map((x) => `[[${x}]]`).join(" ")} />
+          <span className="ml-auto inline-flex items-center gap-1 text-[0.62rem] text-dim">
+            scales with{" "}
+            {scales.map((x) => (
+              <StatChip key={x} stat={x} />
+            ))}
           </span>
         ) : null}
       </div>
       <p className="mt-1 leading-relaxed text-ink">
-        <RichText text={c.ability.rich || c.ability.desc || "No ability text in the synced data."} />
+        <RichText text={c.ability.rich || c.ability.desc || "No ability text in the synced data."} words />
       </p>
     </div>
   );
 }
 
-function Stat({ k, v }: { k: string; v: number | string }) {
+/** One row of the stat bar: icon + short label on the left, value on the right. */
+function Stat({ k, v }: { k: StatKey; v: number | string }) {
   return (
-    <span className="flex justify-between gap-1">
-      <span className="text-dim">{k}</span>
+    <span className="flex items-center justify-between gap-1">
+      <span className="inline-flex items-center gap-1 text-dim">
+        <StatIcon stat={k} />
+        {STATS[k].label}
+      </span>
       <span className="text-gold-bright">{v}</span>
+    </span>
+  );
+}
+
+/** Stat line for items: icon, value and the short label ("⚔ +10% AD"). */
+export function StatValue({ stat, value, className = "" }: { stat: StatKey; value: string; className?: string }) {
+  return (
+    <span className={`inline-flex items-center gap-1 whitespace-nowrap ${className}`}>
+      <StatIcon stat={stat} />
+      <span className="tabular-nums text-gold-bright">{value}</span>
+      <span className="text-[0.85em] text-dim">{STATS[stat].label}</span>
     </span>
   );
 }
@@ -102,8 +123,31 @@ const KIND_LABEL: Record<Item["kind"], string> = {
   other: "Other",
 };
 
-export function itemStats(e: Record<string, number>): { k: string; v: string }[] {
-  const out: { k: string; v: string }[] = [];
+/** Effect keys `itemStats` understands; the rest are item-specific numbers. */
+export const STAT_EFFECT_KEYS = new Set([
+  "AD",
+  "AD_NotStatBar",
+  "AP",
+  "AP_NotStatBar",
+  "AS",
+  "Health",
+  "PercentMaxHP",
+  "BonusPercentHP",
+  "Armor",
+  "MagicResist",
+  "CritChance",
+  "ManaRegen",
+  "Mana",
+  "StatOmnivamp",
+  "StatOmnivamp_NotStatBar",
+  "LifeSteal",
+  "DamageAmp",
+  "BonusDamage",
+  "BaseDurability",
+]);
+
+export function itemStats(e: Record<string, number>): { k: StatKey; v: string }[] {
+  const out: { k: StatKey; v: string }[] = [];
   const pct = (x: number) => `${Math.round(x * 100)}%`;
   if (e.AD) out.push({ k: "AD", v: `+${pct(e.AD)}` });
   if (e.AD_NotStatBar) out.push({ k: "AD", v: `+${pct(e.AD_NotStatBar)}` });
@@ -153,10 +197,7 @@ export function ItemCard({ i, components, traits, rank, stat }: { i: ItemCardDat
       {stats.length ? (
         <div className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 border-y border-[var(--gold-dim)] py-1.5 text-[0.68rem]">
           {stats.map((s, idx) => (
-            <span key={idx} className="inline-flex items-center gap-1">
-              <RichText text={`[[${s.k}]]`} />
-              <span className="tabular-nums text-gold-bright">{s.v}</span>
-            </span>
+            <StatValue key={idx} stat={s.k} value={s.v} />
           ))}
         </div>
       ) : null}
@@ -173,7 +214,7 @@ export function ItemCard({ i, components, traits, rank, stat }: { i: ItemCardDat
       ) : null}
       {i.rich || i.desc ? (
         <p className="mt-2 leading-relaxed text-ink">
-          <RichText text={i.rich || i.desc} />
+          <RichText text={i.rich || i.desc} words />
         </p>
       ) : null}
       {recipe.length ? (

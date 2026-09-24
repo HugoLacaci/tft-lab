@@ -6,6 +6,7 @@ import type { Augment, AugmentTier } from "@/lib/types";
 import { TagChips, tagsFor } from "./hovers";
 import { ItemIcon, TierBadge } from "./icons";
 import { RankBadge } from "./RankBadge";
+import { RichText } from "./RichText";
 import type { Rank } from "@/lib/tiers";
 
 const TIERS: AugmentTier[] = ["silver", "gold", "prismatic"];
@@ -74,7 +75,9 @@ export function AugmentList({ augments, traits, ranks = {} }: { augments: Augmen
                 <TagChips tags={tags} size="xs" />
               </div>
               {a.associatedTraits.length ? <div className="mt-0.5 text-xs text-gold">{a.associatedTraits.map((t) => traitName.get(t) ?? t).join(", ")}</div> : null}
-              <p className="mt-1 whitespace-pre-line text-xs text-dim">{a.desc}</p>
+              <p className="mt-1 text-xs text-dim">
+                <RichText text={a.desc} words />
+              </p>
             </div>
           </li>
         ))}

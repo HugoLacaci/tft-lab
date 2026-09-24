@@ -1,8 +1,21 @@
 name: sync-set
 
+# Keeps the site on the live patch without anyone touching it.
+#
+# Every six hours (Riot ships patches on Tuesday/Wednesday, and the notes go
+# up hours before CommunityDragon catches up) it pulls the set data, the patch
+# notes, the wisp costs and the stat icons, validates, and:
+#   - same set, validation clean  → commits to the default branch and redeploys
+#   - same set, curated content stale → still commits the DATA (warnings are
+#     not fatal, see scripts/validate.ts) and opens an issue listing what the
+#     comps/tiers reference that no longer exists
+#   - hard validation error       → opens a PR with the data for a human look
+#   - new set                     → opens a PR (the written content needs a pass)
+# A failed run also opens an issue, so a silent break cannot last for days.
+
 on:
   schedule:
-    - cron: "0 6 * * *" # 06:00 UTC daily
+    - cron: "17 */6 * * *" # every 6 h, off the hour to dodge the queue
   workflow_dispatch:
     inputs:
       count:
@@ -12,7 +25,12 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
   actions: write
+
+concurrency:
+  group: sync-set
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -38,6 +56,10 @@ jobs:
         run: npm run sync-wisps
         continue-on-error: true
 
+      - name: Mirror the in-game stat icons
+        run: npm run sync-stat-icons
+        continue-on-error: true
+
       - name: Diff the curated comps against the previous patch
         run: npm run sync-comps
         continue-on-error: true
@@ -54,7 +76,7 @@ jobs:
         shell: bash
         run: |
           echo "changed=$(git status --porcelain data/generated public/assets | wc -l | tr -d ' ')" >> "$GITHUB_OUTPUT"
-          echo "patch=$(node -e "try{const p=require('./data/generated/patch-notes.json');console.log(p.notes[0]?.title||'')}catch{console.log('')}")" >> "$GITHUB_OUTPUT"
+          echo "patch=$(node -e "try{const p=require('./data/generated/patch-notes.json');console.log(p.notes[0]?.patch||p.notes[0]?.title||'')}catch{console.log('')}")" >> "$GITHUB_OUTPUT"
           echo "set_name=$(node -e "const c=require('./data/generated/current.json');const fs=require('fs');const m='content/sets/'+c.setNumber+'/meta.json';const d=fs.existsSync(m)?JSON.parse(fs.readFileSync(m,'utf8')).displayName:null;console.log((d&&d.trim())||('Set '+c.setNumber))")" >> "$GITHUB_OUTPUT"
           if [ -f data/generated/SET_CHANGED ]; then
             echo "new_set=true" >> "$GITHUB_OUTPUT"
@@ -74,21 +96,45 @@ jobs:
             echo "new_set=false" >> "$GITHUB_OUTPUT"
             {
               echo "body<<EOF"
-              echo "Scheduled sync of the live set data and mirrored icons. No set change."
+              echo "Scheduled sync of the live set data, patch notes and mirrored icons. No set change."
               echo "EOF"
             } >> "$GITHUB_OUTPUT"
           fi
 
+      # Errors (malformed data, broken scenarios) fail this step. Warnings
+      # (curated comps/tiers naming ids the new patch removed) do not: the
+      # data still ships and an issue is opened below.
       - name: Validate and test with the new data
+        id: validate
         if: steps.inspect.outputs.changed != '0'
+        continue-on-error: true
+        shell: bash
         run: |
-          npm run validate
+          set -o pipefail
+          npm run validate 2>&1 | tee validate.log
           npm test
 
-      # Same set: commit straight to the default branch and redeploy. Nothing to review:
-      # validation and tests just passed on the new data.
+      - name: Collect curated-content warnings
+        id: warnings
+        if: steps.inspect.outputs.changed != '0'
+        shell: bash
+        run: |
+          if [ -f validate.log ] && grep -q "curated-content warning" validate.log; then
+            echo "any=true" >> "$GITHUB_OUTPUT"
+            {
+              echo "text<<EOF"
+              sed -n '/curated-content warning/,/^$/p' validate.log | sed '1d;$d'
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+          else
+            echo "any=false" >> "$GITHUB_OUTPUT"
+          fi
+          rm -f validate.log
+
+      # Same set, validation clean or warnings only: commit straight to the
+      # default branch and redeploy.
       - name: Commit and deploy
-        if: steps.inspect.outputs.changed != '0' && steps.inspect.outputs.new_set != 'true'
+        if: steps.inspect.outputs.changed != '0' && steps.inspect.outputs.new_set != 'true' && steps.validate.outcome == 'success'
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
@@ -96,10 +142,47 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/generated public/assets
-          git commit -m "chore: sync set data (${{ steps.inspect.outputs.set_name }})" -m "${{ steps.inspect.outputs.body }}"
+          git commit -m "chore: sync set data (${{ steps.inspect.outputs.set_name }}, patch ${{ steps.inspect.outputs.patch }})" -m "${{ steps.inspect.outputs.body }}"
           git push
           # Pushes made with GITHUB_TOKEN do not trigger other workflows; dispatch the deploy explicitly.
           gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+
+      # Curated content went stale on this patch: the site is live with the
+      # new data, but someone should update comps.json / tiers.json.
+      - name: Open or update the "curated content is stale" issue
+        if: steps.warnings.outputs.any == 'true' && steps.inspect.outputs.new_set != 'true' && steps.validate.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TEXT: ${{ steps.warnings.outputs.text }}
+          PATCH: ${{ steps.inspect.outputs.patch }}
+        shell: bash
+        run: |
+          title="Curated content references ids removed on patch ${PATCH}"
+          body=$(printf 'The data sync shipped (the site is on patch %s), but the hand-curated content names things this patch no longer has. Fix `content/sets/<n>/comps.json` / `tiers.json` and run `npm run validate -- --strict`.\n\n```\n%s\n```\n' "$PATCH" "$TEXT")
+          existing=$(gh issue list --label curated-stale --state open --search "$title" --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+          else
+            gh label create curated-stale --description "comps/tiers reference ids the live patch removed" --color d4c5f9 --force >/dev/null 2>&1 || true
+            gh issue create --title "$title" --label curated-stale --body "$body"
+          fi
+
+      # Hard validation error with the new data: nothing was committed. Open
+      # a PR so the data is visible and a human decides.
+      - name: Open pull request (validation failed)
+        if: steps.inspect.outputs.changed != '0' && steps.inspect.outputs.new_set != 'true' && steps.validate.outcome != 'success'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/sync-set-needs-review
+          delete-branch: true
+          commit-message: "chore: sync set data (${{ steps.inspect.outputs.set_name }}, patch ${{ steps.inspect.outputs.patch }})"
+          title: "chore: sync needs review (${{ steps.inspect.outputs.set_name }}, patch ${{ steps.inspect.outputs.patch }})"
+          body: |
+            The scheduled sync produced data that fails `npm run validate` or `npm test`, so it was not committed.
+            See the failed step in the workflow run for the message.
+
+            ${{ steps.inspect.outputs.body }}
+          labels: sync,needs-review
 
       # New set: the data is live but the written content needs a human pass, so this stays a PR.
       - name: Open pull request (new set)
@@ -112,3 +195,31 @@ jobs:
           title: "chore: sync set data (${{ steps.inspect.outputs.set_name }})"
           body: ${{ steps.inspect.outputs.body }}
           labels: new-set,sync
+
+      - name: Fail the run when validation failed
+        if: steps.inspect.outputs.changed != '0' && steps.validate.outcome != 'success'
+        run: exit 1
+
+  # Any failure above (network, upstream schema change, validation) opens or
+  # bumps one issue, so a broken sync is noticed without watching the Actions tab.
+  report-failure:
+    needs: sync
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        shell: bash
+        run: |
+          title="Daily sync is failing"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --label sync-failed --state open --json number --jq '.[0].number')
+          body="The sync-set workflow failed: $RUN_URL"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh label create sync-failed --repo "$GITHUB_REPOSITORY" --description "the scheduled data sync is broken" --color b60205 --force >/dev/null 2>&1 || true
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --label sync-failed --body "$body"
+          fi

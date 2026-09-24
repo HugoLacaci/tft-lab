@@ -13,6 +13,13 @@ export interface Problem {
   file: string;
   field?: string;
   message: string;
+  /**
+   * "warning": hand-curated set content names an id/name the synced set no
+   * longer has. Non-fatal by default (scripts/validate.ts): the pages skip
+   * unknown ids, and the data must ship even when Riot renames something
+   * mid-set. Everything else is an error.
+   */
+  severity?: "error" | "warning";
 }
 
 const CurrentSchema = z.object({
@@ -308,5 +315,6 @@ export function validateCurated(root = process.cwd()): Problem[] {
       if (!wispNames.has(norm(name))) problems.push({ file: rel, field: `costs.${name}`, message: "no wisp with that name in the synced set" });
     }
   }
-  return problems;
+  // Stale references are warnings; malformed files and bad ranks stay errors.
+  return problems.map((p) => (/^unknown (champion|item|augment) id |^no (item|wisp|augment) with that name/.test(p.message) ? { ...p, severity: "warning" as const } : p));
 }

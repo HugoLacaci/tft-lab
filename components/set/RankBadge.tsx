@@ -1,7 +1,7 @@
 import type { Rank } from "@/lib/tiers";
 
 const COLOR: Record<Rank, string> = {
-  S: "#ffb642",
+  S: "#d98c1a",
   A: "#1bc47d",
   B: "#2f7fdc",
   C: "#a3b0bd",

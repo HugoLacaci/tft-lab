@@ -3,8 +3,8 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-09-22T10:31:51.963Z",
-  "patch": "16.18",
+  "syncedAt": "2026-09-24T08:49:07.679Z",
+  "patch": "16.19",
   "source": "cdragon"
  },
  "champions": [
@@ -224,13 +224,13 @@
    },
    "ability": {
     "name": "Bellows Breath",
-    "desc": "Active: Gain {ShieldCalc1}  Shield for {ShieldDuration} seconds and deal {MagicDamageCalc1}  magic damage to enemies in a cone.\n\nQuest: Each player combat, Ornn stores damage blocked as Forge Power, doubled at 3-star. Gain an Artifact Anvil each time he gains enough Forge Power.\n(Forge Power: {Stack}\n / {GenericCalc1}\n)",
+    "desc": "Active: Gain {ShieldCalc1}  Shield for {ShieldDuration} seconds and deal {MagicDamageCalc1}  magic damage to enemies in a cone.\n\nQuest: Each player combat, Ornn stores damage blocked as Forge Power, increased by {DamageTaken3StarScalar} at 3-star. Gain an Artifact Anvil each time he gains enough Forge Power.\n(Forge Power: {Stack}\n / {GenericCalc1}\n)",
     "icon": "",
     "scaling": {
      "ad": false,
      "ap": true
     },
-    "rich": "Active: Gain {ShieldCalc1} [[AP]] Shield for {ShieldDuration} seconds and deal {MagicDamageCalc1} [[AP]] magic damage to enemies in a cone.\n\nQuest: Each player combat, Ornn stores damage blocked as Forge Power, doubled at 3-star. Gain an Artifact Anvil each time he gains enough Forge Power.\n(Forge Power: {Stack}\n/ {GenericCalc1}\n)"
+    "rich": "Active: Gain {ShieldCalc1} [[AP]] Shield for {ShieldDuration} seconds and deal {MagicDamageCalc1} [[AP]] magic damage to enemies in a cone.\n\nQuest: Each player combat, Ornn stores damage blocked as Forge Power, increased by {DamageTaken3StarScalar} at 3-star. Gain an Artifact Anvil each time he gains enough Forge Power.\n(Forge Power: {Stack}\n/ {GenericCalc1}\n)"
    }
   },
   {
@@ -1180,7 +1180,7 @@
    "icon": "/assets/set-18/tft18_masteryi__tft18_masteryi_square.png",
    "stats": {
     "hp": 850,
-    "ad": 65,
+    "ad": 62,
     "armor": 55,
     "mr": 55,
     "range": 1,
@@ -1249,7 +1249,7 @@
     "range": 1,
     "mana": 50,
     "initialMana": 10,
-    "attackSpeed": 0.800000011920929,
+    "attackSpeed": 0.75,
     "critChance": 0.25,
     "critMultiplier": 1.399999976158142
    },
@@ -1436,7 +1436,7 @@
    "icon": "/assets/set-18/tft18_brambleback__tft18_brambleback_square.png",
    "stats": {
     "hp": 1100,
-    "ad": 115,
+    "ad": 120,
     "armor": 65,
     "mr": 65,
     "range": 1,
@@ -4704,19 +4704,6 @@
    "rich": "Combat Start: Gain a 25% max Health Shield for 8 seconds.\n\nWhen the Shield expires, gain 25% Ability Power."
   },
   {
-   "id": "DA_CrystalBall18",
-   "name": "Crystal Ball",
-   "desc": "Reveal your next opponent. Your team gains 12% Attack Speed.",
-   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
-   "composition": [],
-   "kind": "charm",
-   "effects": {
-    "AttackSpeed": 0.12
-   },
-   "associatedTraits": [],
-   "rich": "Reveal your next opponent. Your team gains 12% Attack Speed."
-  },
-  {
    "id": "DA_CurioCart18",
    "name": "Curio Cart",
    "desc": "Open an item store. Items cost 0 to {TooltipMaxCostOfItem} gold.",
@@ -5843,7 +5830,7 @@
    "rich": "Your highest Health unit grows, gaining 350 Health."
   },
   {
-   "id": "TFT9_Item_OrnnHullbreaker",
+   "id": "DA_Artifact_Hullcrusher",
    "name": "Hullcrusher",
    "desc": "Combat Start: If there are no adjacent allies, gain 400 Health, 10% Attack Damage, and 10% Ability Power.",
    "icon": "/assets/set-18/ornn_items__tft9_ornnitem_hullbreaker.png",
@@ -7289,15 +7276,16 @@
   {
    "id": "DA_Quicken18",
    "name": "Quicken",
-   "desc": "On cast, your champions gain {AttackSpeedGain}% Attack Speed for 4 seconds.",
+   "desc": "On cast, your champions gain 30% Attack Speed for 4 seconds.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {
+    "AttackSpeedGain": 0.3,
     "Duration": 4
    },
    "associatedTraits": [],
-   "rich": "On cast, your champions gain {AttackSpeedGain}% Attack Speed for 4 seconds."
+   "rich": "On cast, your champions gain 30% Attack Speed for 4 seconds."
   },
   {
    "id": "DA_Quicksilver",
@@ -10036,7 +10024,7 @@
   },
   {
    "id": "DA_BonusGift",
-   "name": "Bonus Gift",
+   "name": "Bonus Gifts",
    "desc": "Whenever you open a loot orb, you have a 25% chance to gain a gray loot orb. Gain {StartingOrbs} gray loot orbs.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
@@ -10044,7 +10032,7 @@
   },
   {
    "id": "DA_BonusGiftPlus",
-   "name": "Bonus Gift+",
+   "name": "Bonus Gifts+",
    "desc": "Whenever you open a loot orb, you have a 25% chance to gain a gray loot orb. Gain {StartingOrbs} gray loot orbs.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
@@ -10745,14 +10733,6 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_CursedCrown",
-   "name": "Cursed Crown",
-   "desc": "Gain +2 max team size, but you take double player damage when you lose a player combat.",
-   "icon": "/assets/set-18/hexcore__cursedcrown-iii.png",
-   "tier": "prismatic",
-   "associatedTraits": []
-  },
-  {
    "id": "TFT7_Augment_CursedCrown",
    "name": "Cursed Crown",
    "desc": "Gain +2 max team size and your team gains 4% Durability, but you take double player damage when you lose a player combat.",
@@ -11050,6 +11030,14 @@
    "desc": "Your champions that start combat with no adjacent champions gain a 30% max Health shield for 10 seconds.",
    "icon": "/assets/set-18/hexcore__exiles2.png",
    "tier": "gold",
+   "associatedTraits": []
+  },
+  {
+   "id": "DA_ExpectedUnexpectedness",
+   "name": "Expected Unexpectedness",
+   "desc": "Now and at the start of the next 2 stages, roll 3 dice. Gain various rewards based on their total.",
+   "icon": "/assets/set-18/hexcore__addicted-to-rolling-iii.png",
+   "tier": "prismatic",
    "associatedTraits": []
   },
   {
@@ -11881,7 +11869,7 @@
   {
    "id": "DA_ItsMeBaby",
    "name": "It's Me, Baby",
-   "desc": "Gain a spotlight in the bottom right corner. The champion in it gains 15% Damage Amp and 15% Attack Speed, and drops 1 gold every {TakedownsPerGold} takedowns.\n\nLore & Legends Tactician's Crown, 2026",
+   "desc": "Gain a championship hex in the bottom right corner. The champion in it gains 15% Damage Amp and 15% Attack Speed, and drops 1 gold every {TakedownsPerGold} takedowns.\n\nLore & Legends Tactician's Crown, 2026",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11905,7 +11893,7 @@
   {
    "id": "DA_BlackthornTraitAugment",
    "name": "Item Extraction",
-   "desc": "The first 4 times you sacrifice a champion in the Blackthorn hex, gain a copy of a random component they're holding. Gain a Veigar and a Rek'Sai.",
+   "desc": "The first 3 times you sacrifice a champion in the Blackthorn hex, gain a copy of a random component they're holding. Gain an Azir, Veigar, and a Rek'Sai.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": [
@@ -13193,7 +13181,7 @@
   {
    "id": "DA_ShimmerscaleEssence",
    "name": "Shimmerscale Essence",
-   "desc": "Gain a Mogul's Mail. After {NumberOfRoundsToWait}  player combats, gain a Gamblers Blade.",
+   "desc": "Gain a Gambler's Blade. After {NumberOfRoundsToWait} player combats, gain a Mogul's Mail.",
    "icon": "/assets/set-18/hexcore__shimmerscaleessence_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -13209,7 +13197,7 @@
   {
    "id": "DA_ShoppingSpree",
    "name": "Shopping Spree",
-   "desc": "When you level up, gain a number of free shop refreshes equal to your level +1. Gain 6 gold.",
+   "desc": "When you level up, gain a number of Shop refreshes equal to your level +1. Gain 6 gold.",
    "icon": "/assets/set-18/hexcore__silver-ticket-iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -13927,7 +13915,7 @@
   {
    "id": "DA_TradeSector",
    "name": "Trade Sector",
-   "desc": "Gain a free Shop reroll every round. Gain 2 gold.",
+   "desc": "Gain a Shop reroll every round. Gain 2 gold.",
    "icon": "/assets/set-18/hexcore__trade2.png",
    "tier": "gold",
    "associatedTraits": []
@@ -13943,7 +13931,7 @@
   {
    "id": "DA_TradeSectorPlus",
    "name": "Trade Sector+",
-   "desc": "Gain a free Shop reroll every round. Gain {NumGoldPlus} gold.",
+   "desc": "Gain a Shop reroll every round. Gain {NumGoldPlus} gold.",
    "icon": "/assets/set-18/hexcore__trade2.png",
    "tier": "gold",
    "associatedTraits": []
@@ -14065,7 +14053,7 @@
   {
    "id": "DA_UpwardMobility",
    "name": "Upward Mobility",
-   "desc": "Buying XP costs {ReducedXPCost} less. Gain {HealthOnLevelUp} Health and {RerollsOnLevelUp} free reroll whenever you level up.",
+   "desc": "Buying XP costs {ReducedXPCost} less. Gain {HealthOnLevelUp} Health and {RerollsOnLevelUp} Shop rerolls whenever you level up.",
    "icon": "/assets/set-18/hexcore__upwardmobility_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -14209,7 +14197,7 @@
   {
    "id": "DA_18_WeightTheWorth",
    "name": "Weight The Worth",
-   "desc": "The first time you 3-star a champion, gain a copy of them each round for the rest of the game. 3-starring the same champion again grants additional copies. Gain a Lesser Champion Duplicator and a Tiny Champion Duplicator.",
+   "desc": "The first time you 3-star a champion, gain a copy of them each round for the rest of the game. 3-starring the same champion again grants additional copies. Gain a Lesser Champion Duplicator.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": []

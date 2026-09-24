@@ -3,34 +3,31 @@ import { Panel } from "@/components/ui/Panel";
 import { Legend } from "@/components/ui/Legend";
 import { Glyph, type GlyphName } from "@/components/ui/Glyphs";
 import { RankEmblem } from "@/components/ui/RankEmblem";
+import { CompsSpotlight } from "@/components/home/CompsSpotlight";
+import { NewPill } from "@/components/ui/NewBadge";
 import { CURRENT_SET, isSynced } from "@/lib/current-set";
 import { setDisplayName } from "@/lib/set-meta";
 import { RANK_TIERS } from "@/lib/rank-tiers";
+import { loadSetData } from "@/lib/set-data";
+import { livePatch } from "@/lib/live-patch";
+import { loadPatchNotes } from "@/lib/patch-notes";
+import { newsStamps } from "@/lib/whats-new-server";
 
 const PILLARS: { href: string; title: string; kicker: string; body: string; cta: string; ctaHref: string; glyph: GlyphName }[] = [
-  {
-    href: "/guides",
-    title: "Guides",
-    kicker: "Learn the fundamentals",
-    body: "Economy, leveling, rolling, items, augments, positioning, scouting and HP management. Set-agnostic, written for players who already know the vocabulary and want the reasoning.",
-    cta: "Start with Economy",
-    ctaHref: "/guides/economy",
-    glyph: "guides",
-  },
   {
     href: "/trainer",
     title: "Trainer",
     kicker: "Drill the decisions",
     body: "Real board states on a real hex board. Make the call, get scored, read why. Missed drills come back on a spaced schedule until they stick.",
     cta: "Run a Daily 10",
-    ctaHref: "/trainer",
+    ctaHref: "/trainer/daily",
     glyph: "trainer",
   },
   {
     href: "/trainer/puzzles",
     title: "Puzzles",
     kicker: "Chess puzzles, but TFT",
-    body: "One board, one best move. Positioning and game-sense puzzles with the champions of the live set, graded by rank from Iron to Master+. Find the move, then read the key.",
+    body: "One board, one best move. Positioning and game-sense puzzles with the champions of the live set, graded by rank from Iron to Master+.",
     cta: "Open the ladder",
     ctaHref: "/trainer/puzzles",
     glyph: "puzzle",
@@ -39,83 +36,127 @@ const PILLARS: { href: string; title: string; kicker: string; body: string; cta:
     href: "/lab",
     title: "Lab",
     kicker: "Plan and simulate",
-    body: "Roll odds, an econ simulator, a printable cheat sheet, and a team planner that fights your board against an enemy board a few thousand times.",
+    body: "A team planner that fights your board against an enemy board a few thousand times, roll odds, an econ simulator and a printable cheat sheet.",
     cta: "Open the planner",
     ctaHref: "/lab/board",
     glyph: "lab",
+  },
+  {
+    href: "/guides",
+    title: "Guides",
+    kicker: "Learn the fundamentals",
+    body: "Economy, leveling, rolling, items, augments, positioning, scouting and HP management. Set-agnostic, written for players who want the reasoning.",
+    cta: "Start with Economy",
+    ctaHref: "/guides/economy",
+    glyph: "guides",
   },
 ];
 
 export default function HomePage() {
   const synced = isSynced();
   const setName = synced ? setDisplayName(CURRENT_SET.setNumber, CURRENT_SET.setName) : null;
-  return (
-    <div className="space-y-12">
-      <section className="relative py-10 sm:py-16">
-        {/* hero ornament: rotating hex rings behind the legends */}
-        <div aria-hidden className="pointer-events-none absolute -right-56 top-4 hidden h-[26rem] w-[26rem] lg:block xl:-right-72">
-          <svg viewBox="0 0 200 200" className="h-full w-full opacity-60">
-            <polygon points="100,6 181,53 181,147 100,194 19,147 19,53" fill="none" stroke="var(--gold)" strokeWidth="0.6" strokeDasharray="4 6" className="hex-spin" />
-            <polygon points="100,30 160,65 160,135 100,170 40,135 40,65" fill="none" stroke="var(--teal)" strokeWidth="0.6" strokeDasharray="2 5" className="hex-spin-rev" />
-            <polygon points="100,54 140,77 140,123 100,146 60,123 60,77" fill="none" stroke="var(--gold)" strokeWidth="0.5" opacity="0.6" />
-          </svg>
-          <div className="absolute left-[38%] top-[22%]">
-            <Legend name="pengu-3" size={128} delay={0} glow="rgba(200,170,110,0.5)" title="Pengu Featherknight" />
-          </div>
-          <div className="absolute left-[8%] top-[48%]">
-            <Legend name="choncc-2" size={104} delay={1.6} tint="#0ac8b9" glow="rgba(10,200,185,0.45)" title="Choncc" />
-          </div>
-          <div className="absolute left-[62%] top-[62%]">
-            <Legend name="silverwing" size={72} delay={0.8} tint="#c68cff" glow="rgba(198,140,255,0.45)" title="Silverwing" />
-          </div>
-        </div>
+  const patch = livePatch();
+  const set = loadSetData();
+  const notes = loadPatchNotes();
+  const newest = notes?.notes[0] ?? null;
+  const stamps = newsStamps();
+  const tiles: { href: string; label: string; n: string | number; news?: "comps" | "patch-notes" }[] = set
+    ? [
+        { href: "/set/champions", label: "Champions", n: set.champions.length },
+        { href: "/set/traits", label: "Traits", n: set.traits.length },
+        { href: "/set/items", label: "Items", n: set.items.filter((i) => i.kind !== "other" && i.kind !== "charm").length },
+        { href: "/set/augments", label: "Augments", n: set.augments.length },
+        { href: "/set/wisps", label: "Wisps", n: set.items.filter((i) => i.kind === "charm" && !/_Upgrade$/i.test(i.id)).length },
+        { href: "/set/patch-notes", label: "Patch notes", n: patch.fromNotes ? patch.label : "→", news: "patch-notes" },
+      ]
+    : [];
 
-        <div className="relative max-w-3xl">
-          <div className="rise display text-[0.7rem] uppercase tracking-[0.3em] text-gold">Iron → Diamond → Master+ → Competitive</div>
-          <h1 className="rise mt-3 text-3xl leading-tight sm:text-5xl" style={{ ["--i" as string]: 1 } as React.CSSProperties}>
-            Stop losing games in the rounds you don&apos;t remember.
-          </h1>
-          <p className="rise mt-5 max-w-2xl text-lg text-dim" style={{ ["--i" as string]: 2 } as React.CSSProperties}>
-            TFT Lab is a study tool for Teamfight Tactics. Not a meta site: the comps live elsewhere. This is where you
-            learn <em>why</em> the standard play is standard, drill the decisions that separate Diamond from Master,
-            and keep a record of the leaks you keep repeating.
-          </p>
-          <div className="rise mt-8 flex flex-wrap gap-3" style={{ ["--i" as string]: 3 } as React.CSSProperties}>
-            <Link href="/trainer" className="btn btn-primary">
-              Open the Trainer
-            </Link>
-            <Link href="/trainer/puzzles" className="btn">
-              <Glyph name="puzzle" size={16} />
-              Tactics puzzles
-            </Link>
-            <Link href="/guides/economy" className="btn">
-              Read the Economy guide
-            </Link>
-            {synced ? (
-              <Link href="/set" className="btn">
-                Set {CURRENT_SET.setNumber} · {setName}
+  return (
+    <div className="space-y-10 sm:space-y-12">
+      <section className="hero relative py-6 sm:py-10 lg:py-14">
+        <div className="hero-grid">
+          <div className="relative min-w-0">
+            <div className="rise display flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.7rem] uppercase tracking-[0.3em] text-gold">
+              {synced ? (
+                <>
+                  <span>
+                    Set {CURRENT_SET.setNumber} · {setName}
+                  </span>
+                  <span className="set-badge-patch normal-case tracking-normal">Patch {patch.label}</span>
+                  <NewPill area="patch-notes" stamps={stamps} />
+                </>
+              ) : (
+                <span>Teamfight Tactics</span>
+              )}
+            </div>
+            <h1 className="rise mt-3 text-3xl leading-tight sm:text-4xl lg:text-5xl" style={{ ["--i" as string]: 1 } as React.CSSProperties}>
+              The comps to play this patch, and the drills to play them well.
+            </h1>
+            <p className="hero-lede rise mt-4 max-w-2xl text-base text-dim sm:text-lg" style={{ ["--i" as string]: 2 } as React.CSSProperties}>
+              A tier list with positioning, items and augments for every comp. Champions, traits, items, augments and patch notes that refresh on their own every patch. Then a trainer, a fight simulator and a tracker
+              to turn knowledge into placements.
+            </p>
+            <div className="rise mt-6 flex flex-wrap gap-3" style={{ ["--i" as string]: 3 } as React.CSSProperties}>
+              <Link href="/set/comps" className="btn btn-lg btn-comps" data-testid="hero-comps">
+                <Glyph name="comps" size={18} strokeWidth={2} />
+                Comps tier list
               </Link>
-            ) : null}
-          </div>
-          <div className="rise mt-8 flex flex-wrap items-center gap-3 text-xs text-dim" style={{ ["--i" as string]: 4 } as React.CSSProperties}>
-            <span className="display uppercase tracking-[0.2em] text-gold">Puzzle ladder</span>
-            {RANK_TIERS.map((t) => (
-              <Link key={t.id} href={`/trainer/puzzles/${t.id}`} className="flex items-center gap-1 hover:no-underline" style={{ color: t.color }}>
-                <RankEmblem tier={t} size={22} />
-                <span className="display text-[0.65rem] uppercase tracking-wider">{t.short}</span>
+              <Link href="/set" className="btn btn-lg">
+                <Glyph name="set" size={16} />
+                Live set
               </Link>
-            ))}
+              <Link href="/trainer" className="btn btn-lg btn-primary">
+                <Glyph name="trainer" size={16} />
+                Trainer
+              </Link>
+            </div>
+            <div className="rise mt-6 flex flex-wrap items-center gap-3 text-xs text-dim" style={{ ["--i" as string]: 4 } as React.CSSProperties}>
+              <span className="display uppercase tracking-[0.2em] text-gold">Puzzle ladder</span>
+              {RANK_TIERS.map((t) => (
+                <Link key={t.id} href={`/trainer/puzzles/${t.id}`} className="flex items-center gap-1 hover:no-underline" style={{ color: t.color }}>
+                  <RankEmblem tier={t} size={22} />
+                  <span className="display text-[0.65rem] uppercase tracking-wider">{t.short}</span>
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="mt-10 flex justify-center gap-6 lg:hidden" aria-hidden>
-          <Legend name="pengu-3" size={84} />
-          <Legend name="choncc-2" size={84} delay={1.2} tint="#0ac8b9" glow="rgba(10,200,185,0.45)" />
+          <div className="min-w-0">
+            <CompsSpotlight />
+          </div>
         </div>
       </section>
 
+      {tiles.length ? (
+        <section aria-label="Live set" className="rise" style={{ ["--i" as string]: 4 } as React.CSSProperties}>
+          <div className="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <h2 className="text-lg sm:text-xl">Live set data</h2>
+            <span className="text-xs text-dim">
+              Synced {CURRENT_SET.syncedAt.slice(0, 10)} from CommunityDragon
+              {newest ? (
+                <>
+                  {" "}
+                  · newest notes: <Link href="/set/patch-notes">{newest.title}</Link> ({newest.publishedAt.slice(0, 10)})
+                </>
+              ) : null}
+            </span>
+          </div>
+          <div className="quick-tiles">
+            {tiles.map((t) => (
+              <Link key={t.href} href={t.href} className="panel panel-hover quick-tile">
+                <span className="quick-tile-n">{t.n}</span>
+                <span className="quick-tile-l">
+                  {t.label}
+                  {t.news ? <NewPill area={t.news} stamps={stamps} className="ml-1" /> : null}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {PILLARS.map((p, i) => (
-          <Panel key={p.href} as="article" className="panel-hover rise flex flex-col" style={{ ["--i" as string]: 2 + i } as React.CSSProperties}>
+          <Panel key={p.href} as="article" className="panel-hover rise flex flex-col" style={{ ["--i" as string]: 3 + i } as React.CSSProperties}>
             <div className="display flex items-center gap-2 text-[0.7rem] uppercase tracking-[0.2em] text-gold">
               <Glyph name={p.glyph} size={16} />
               {p.kicker}
@@ -135,24 +176,22 @@ export default function HomePage() {
 
       <section className="grid gap-4 md:grid-cols-2">
         <Panel className="rise flex gap-4" style={{ ["--i" as string]: 6 } as React.CSSProperties}>
-          <Legend name="hauntling" size={56} float={false} tint="#e0483a" glow="rgba(224,72,58,0.35)" />
+          <Legend name="runespirit" size={56} float={false} tint="#0ac8b9" glow="rgba(10,200,185,0.35)" />
           <div>
-            <h2 className="text-lg">What this is not</h2>
+            <h2 className="text-lg">Always on the live patch</h2>
             <p className="mt-2 text-sm text-dim">
-              It is not a stats site. We do not scrape MetaTFT, tactics.tools, Mobalytics or anyone else. When you need
-              the current meta, go to them; <Link href="/resources">Resources</Link> tells you which one to use for what.
-              Teaching is what lives here.
+              Champions, traits, items, augments and wisps sync from CommunityDragon several times a day; Riot&apos;s patch notes are mirrored the moment they go up. Comps are re-verified after each patch, and the
+              page says so when they are still being reviewed.
             </p>
           </div>
         </Panel>
         <Panel className="rise flex gap-4" style={{ ["--i" as string]: 7 } as React.CSSProperties}>
-          <Legend name="runespirit" size={56} float={false} tint="#0ac8b9" glow="rgba(10,200,185,0.35)" />
+          <Legend name="hauntling" size={56} float={false} tint="#e0483a" glow="rgba(224,72,58,0.35)" />
           <div>
-            <h2 className="text-lg">How it stays current</h2>
+            <h2 className="text-lg">Built for the climb</h2>
             <p className="mt-2 text-sm text-dim">
-              Champions, traits, items and augments sync from CommunityDragon on a schedule. When a new set ships, the{" "}
-              <Link href="/set">Set hub</Link> updates on its own and the written guides get a human pass. The
-              fundamentals do not change with the set.
+              Every comp opens on the real board, so positioning is something you see, not a paragraph. Every drill links to the guide that explains the reasoning, and the <Link href="/tracker">tracker</Link> turns
+              your own match history into the leaks to fix next.
             </p>
           </div>
         </Panel>

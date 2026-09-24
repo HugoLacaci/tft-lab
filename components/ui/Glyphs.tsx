@@ -4,7 +4,7 @@ import type { ScenarioCategory } from "@/lib/scenario-categories";
  * Line glyphs (currentColor, 24×24) for the trainer categories and a few
  * site-wide marks. Kept as plain SVG so they inherit the text colour.
  */
-const P: Record<ScenarioCategory | "puzzle" | "daily" | "trainer" | "lab" | "guides", React.ReactNode> = {
+const P: Record<ScenarioCategory | "puzzle" | "daily" | "trainer" | "lab" | "guides" | "comps" | "set" | "search" | "menu" | "close" | "tracker" | "routine" | "compete" | "resources" | "patch" | "bolt" | "arrow", React.ReactNode> = {
   econ: (
     <>
       <circle cx="12" cy="12" r="8.5" />
@@ -104,6 +104,68 @@ const P: Record<ScenarioCategory | "puzzle" | "daily" | "trainer" | "lab" | "gui
     <>
       <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z" />
       <path d="M4 18V5.5M8 7h8M8 10.5h6" />
+    </>
+  ),
+  /* tier list: three bars, the top one crowned */
+  comps: (
+    <>
+      <path d="M4 20h16" />
+      <path d="M5 15.5h14M5 11h10" />
+      <path d="M5 6.5l2.2 2.2L10 5l2.8 3.7L15 6.5V9H5z" />
+    </>
+  ),
+  /* set: a cluster of three hexes */
+  set: (
+    <>
+      <path d="M12 3l3.5 2v4L12 11l-3.5-2V5z" />
+      <path d="M6.5 12.5l3.5 2v4l-3.5 2-3.5-2v-4z" />
+      <path d="M17.5 12.5l3.5 2v4l-3.5 2-3.5-2v-4z" />
+    </>
+  ),
+  search: (
+    <>
+      <circle cx="10.5" cy="10.5" r="6" />
+      <path d="M15 15l5.5 5.5" />
+    </>
+  ),
+  menu: <path d="M4 7h16M4 12h16M4 17h16" />,
+  close: <path d="M6 6l12 12M18 6L6 18" />,
+  tracker: (
+    <>
+      <path d="M4 19h16" />
+      <path d="M6 15l4-5 3 3 5-7" />
+    </>
+  ),
+  routine: (
+    <>
+      <circle cx="12" cy="12" r="8.5" />
+      <path d="M12 7.5V12l3 2" />
+    </>
+  ),
+  compete: (
+    <>
+      <path d="M8 4h8v5a4 4 0 0 1-8 0z" />
+      <path d="M8 6H5a3 3 0 0 0 3 3.5M16 6h3a3 3 0 0 1-3 3.5" />
+      <path d="M12 13v4M9 20h6M10 17h4" />
+    </>
+  ),
+  resources: (
+    <>
+      <path d="M4 6a2 2 0 0 1 2-2h5v16H6a2 2 0 0 1-2-2z" />
+      <path d="M20 6a2 2 0 0 0-2-2h-5v16h5a2 2 0 0 0 2-2z" />
+    </>
+  ),
+  patch: (
+    <>
+      <path d="M6 3h9l4 4v14H6z" />
+      <path d="M15 3v4h4M9 11h6M9 15h6" />
+    </>
+  ),
+  bolt: <path d="M13 2L5 13h6l-1 9 9-12h-6z" />,
+  arrow: (
+    <>
+      <path d="M5 12h14" />
+      <path d="M13 6l6 6-6 6" />
     </>
   ),
 };

@@ -6,7 +6,7 @@
  * and late units, augments, how to play).
  */
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Board } from "@/components/board/Board";
 import type { Comp, CompsFile } from "@/lib/comps";
 import type { ItemLookup, UnitLookup } from "@/lib/set-data";
@@ -16,6 +16,16 @@ import { RankBadge } from "./RankBadge";
 import { ChangeBadge, ChangeIcon, CHANGE_META } from "./ChangeBadge";
 import { changeCounts, type ChangeKind, type CompChange, type CompsChangesFile } from "@/lib/comps-changes";
 import { useMarkSeen } from "@/lib/whats-new";
+import { Glyph } from "@/components/ui/Glyphs";
+
+/** Curated patch vs live patch, computed server-side (lib/live-patch.ts). */
+export interface CompsFreshness {
+  curatedPatch: string | null;
+  livePatch: string;
+  stale: boolean;
+  publishedAt: string | null;
+  notesHref: string | null;
+}
 
 const TIER_ORDER: Record<Comp["tier"], number> = { S: 0, A: 1, B: 2, C: 3, X: 4 };
 
@@ -53,14 +63,37 @@ export interface CompListProps {
   augments: Record<string, { id: string; name: string; icon: string; tier: "silver" | "gold" | "prismatic"; desc: string }>;
   itemRanks: Record<string, Rank>;
   augmentRanks: Record<string, Rank>;
+  freshness?: CompsFreshness | null;
 }
 
 const TIER_COLOR: Record<Comp["tier"], string> = { S: "#ffb642", A: "#1bc47d", B: "#2f7fdc", C: "#a3b0bd", X: "#c440e0" };
 const TIER_LABEL: Record<Comp["tier"], string> = { S: "S tier", A: "A tier", B: "B tier", C: "C tier", X: "Situational" };
 const STYLE_LABEL: Record<Comp["style"], string> = { "fast-9": "Fast 9", reroll: "Reroll", standard: "Standard", emblem: "Emblem / augment" };
 
-export function CompList({ file, changes = null, changesStamp = null, meta, live = {}, units, items, traitNames, traits = {}, augments, itemRanks, augmentRanks }: CompListProps) {
+export function CompList({ file, changes = null, changesStamp = null, meta, live = {}, units, items, traitNames, traits = {}, augments, itemRanks, augmentRanks, freshness = null }: CompListProps) {
   const [open, setOpen] = useState<string | null>(null);
+  // Deep links: /set/comps/#comp-<id> opens that comp (search palette, home spotlight, shared links).
+  useEffect(() => {
+    const fromHash = () => {
+      const id = decodeURIComponent(window.location.hash.replace(/^#comp-/, ""));
+      if (window.location.hash.startsWith("#comp-") && id) {
+        setOpen(id);
+        setTimeout(() => document.getElementById(`comp-${id}`)?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+      }
+    };
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    return () => window.removeEventListener("hashchange", fromHash);
+  }, []);
+  const toggle = (id: string) => {
+    const next = open === id ? null : id;
+    setOpen(next);
+    try {
+      window.history.replaceState(null, "", next ? `#comp-${next}` : window.location.pathname + window.location.search);
+    } catch {
+      /* ignore */
+    }
+  };
   const [style, setStyle] = useState<Comp["style"] | "">("");
   const [q, setQ] = useState("");
   const [onlyChanged, setOnlyChanged] = useState(false);
@@ -78,7 +111,21 @@ export function CompList({ file, changes = null, changesStamp = null, meta, live
   };
   return (
     <div className="space-y-6">
-      <div className="flex flex-wrap items-center gap-2">
+      {freshness?.stale ? (
+        <div className="stale-note" role="status" data-testid="comps-stale">
+          <span className="display text-[0.62rem] uppercase tracking-[0.2em] text-[#ffb642]">Patch {freshness.livePatch} is live</span>
+          <span>
+            These comps were curated on patch {freshness.curatedPatch}
+            {file.verifiedOn ? ` (${file.verifiedOn})` : ""}. The units, items and augments below are already the live ones; tiers and lines are being re-verified against the new patch.
+          </span>
+          {freshness.notesHref ? (
+            <Link href={freshness.notesHref} className="ml-auto inline-flex items-center gap-1 whitespace-nowrap">
+              Read the {freshness.livePatch} notes <Glyph name="arrow" size={14} />
+            </Link>
+          ) : null}
+        </div>
+      ) : null}
+      <div className="comps-toolbar flex flex-wrap items-center gap-2">
         <input className="input max-w-xs" placeholder="Search comp or unit" aria-label="Search comps" value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="flex flex-wrap gap-1" role="group" aria-label="Style">
           {(Object.keys(STYLE_LABEL) as Comp["style"][]).map((s) => (
@@ -87,8 +134,15 @@ export function CompList({ file, changes = null, changesStamp = null, meta, live
             </button>
           ))}
         </div>
+        <div className="flex gap-1" role="group" aria-label="Jump to tier">
+          {tiers.map((t) => (
+            <a key={t} href={`#tier-${t}`} className="tier-hex h-7 w-6 text-xs hover:no-underline" style={{ background: TIER_COLOR[t] }} title={TIER_LABEL[t]}>
+              {t}
+            </a>
+          ))}
+        </div>
         <span className="text-xs text-dim">
-          Patch {file.patch} · curated {file.verifiedOn} · click a comp to open the guide
+          {freshness?.stale ? `Curated on ${file.patch}` : `Patch ${file.patch}`} · {file.verifiedOn} · {list.length} comps
         </span>
       </div>
 
@@ -115,12 +169,13 @@ export function CompList({ file, changes = null, changesStamp = null, meta, live
       ) : null}
 
       {tiers.map((t) => (
-        <section key={t} aria-label={TIER_LABEL[t]}>
-          <div className="mb-2 flex items-center gap-2">
-            <span className="hex display flex h-8 w-7 items-center justify-center text-sm font-bold text-[var(--bg-deep)]" style={{ background: TIER_COLOR[t] }}>
+        <section key={t} id={`tier-${t}`} aria-label={TIER_LABEL[t]} className="scroll-mt-32">
+          <div className="tier-band" style={{ ["--tier" as string]: TIER_COLOR[t] } as React.CSSProperties}>
+            <span className="tier-hex h-8 w-7 text-sm" style={{ background: TIER_COLOR[t] }}>
               {t}
             </span>
-            <span className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold">{TIER_LABEL[t]}</span>
+            <span className="display text-[0.7rem] uppercase tracking-[0.2em] text-gold-bright">{TIER_LABEL[t]}</span>
+            <span className="text-xs text-dim">{list.filter((c) => c.tier === t).length}</span>
           </div>
           <ul className="space-y-2">
             {list
@@ -130,7 +185,7 @@ export function CompList({ file, changes = null, changesStamp = null, meta, live
                 const moved = ch && (ch.kind === "up" || ch.kind === "down");
                 return (
                   <li key={c.id} id={`comp-${c.id}`} className={moved ? "comp-moved" : ch ? "pop" : ""} style={moved ? ({ ["--move-color" as string]: CHANGE_META[ch.kind].color } as React.CSSProperties) : undefined}>
-                    <CompCard comp={c} change={ch} liveStat={live[c.id]} isOpen={open === c.id} onToggle={() => setOpen(open === c.id ? null : c.id)} units={units} items={items} traitNames={traitNames} traits={traits} augments={augments} itemRanks={itemRanks} augmentRanks={augmentRanks} />
+                    <CompCard comp={c} change={ch} liveStat={live[c.id]} isOpen={open === c.id} onToggle={() => toggle(c.id)} units={units} items={items} traitNames={traitNames} traits={traits} augments={augments} itemRanks={itemRanks} augmentRanks={augmentRanks} />
                   </li>
                 );
               })}
@@ -225,7 +280,7 @@ function CompCard({
   augments,
   itemRanks,
   augmentRanks,
-}: { comp: Comp; change?: CompChange; liveStat?: LiveComp; isOpen: boolean; onToggle: () => void } & Omit<CompListProps, "file" | "meta" | "live" | "changes" | "changesStamp">) {
+}: { comp: Comp; change?: CompChange; liveStat?: LiveComp; isOpen: boolean; onToggle: () => void } & Omit<CompListProps, "file" | "meta" | "live" | "changes" | "changesStamp" | "freshness">) {
   const board = c.board.map(([championId, row, col, star, its]) => ({ championId, row, col, star, items: its }));
   const carries = new Set(c.carries.map((x) => x.championId));
   const ordered = [...board].sort((a, b) => (carries.has(b.championId) ? 1 : 0) - (carries.has(a.championId) ? 1 : 0) || (units[b.championId]?.cost ?? 0) - (units[a.championId]?.cost ?? 0));
@@ -254,7 +309,7 @@ function CompCard({
       .sort((a, b) => (b.style ? 1 : 0) - (a.style ? 1 : 0) || b.n - a.n);
   }, [board, units, traits]);
   return (
-    <div className={`panel ${isOpen ? "panel-raised" : ""}`}>
+    <div className={`panel comp-card ${isOpen ? "panel-raised" : ""}`} style={{ ["--tier" as string]: TIER_COLOR[c.tier] } as React.CSSProperties}>
       <button type="button" className="flex w-full flex-wrap items-center gap-3 p-3 text-left" onClick={onToggle} aria-expanded={isOpen}>
         <span className="hex display flex h-7 w-6 shrink-0 items-center justify-center text-xs font-bold text-[var(--bg-deep)]" style={{ background: TIER_COLOR[c.tier] }}>
           {c.tier}
@@ -291,7 +346,7 @@ function CompCard({
             );
           })}
         </span>
-        <span className="ml-auto hidden flex-wrap gap-1 text-[0.65rem] text-dim md:flex">
+        <span className="comp-traits ml-auto flex w-full flex-wrap gap-1 text-[0.65rem] text-dim md:w-auto">
           {activeTraits.slice(0, 5).map((t) => (
             <span key={t.id} className="inline-flex items-center gap-1 border px-1" style={{ borderColor: t.style ? `var(--style-${t.style})` : "var(--gold-dim)", color: t.style ? "var(--gold-bright)" : undefined }}>
               <TraitIcon icon={traits[t.id]?.icon ?? ""} name={traitNames[t.id] ?? t.id} size={11} />

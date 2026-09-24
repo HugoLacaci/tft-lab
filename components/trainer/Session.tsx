@@ -19,6 +19,7 @@ import { Panel } from "@/components/ui/Panel";
 import { RankEmblem } from "@/components/ui/RankEmblem";
 import { Legend } from "@/components/ui/Legend";
 import { Glyph } from "@/components/ui/Glyphs";
+import { StatIcon } from "@/components/set/StatIcon";
 
 export type SessionMode = "category" | "daily" | "puzzles";
 
@@ -195,7 +196,7 @@ export function Session({ data, rendered, mode, title }: { data: SessionData; re
                 <ul className="mt-1 space-y-0.5 text-xs text-dim">
                   {s.state.lobby.map((l) => (
                     <li key={l.player}>
-                      <span className="text-ink">{l.player}</span> · {l.hp} HP · {l.note}
+                      <span className="text-ink">{l.player}</span> · {l.hp} <StatIcon stat="HP" title="Player health" /> · {l.note}
                     </li>
                   ))}
                 </ul>

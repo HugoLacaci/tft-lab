@@ -19,7 +19,7 @@ const TABS: { href: string; label: string; news?: "comps" | "patch-notes" }[] = 
 export function SetSubnav({ stamps }: { stamps: NewsStamps }) {
   const pathname = usePathname();
   return (
-    <nav aria-label="Set sections" className="flex flex-wrap gap-2">
+    <nav aria-label="Set sections" className="chip-scroll">
       {TABS.map((t) => {
         const active = t.href === "/set" ? pathname === "/set" || pathname === "/set/" : pathname.startsWith(t.href);
         return (

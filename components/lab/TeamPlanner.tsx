@@ -15,8 +15,9 @@ import * as Tabs from "@radix-ui/react-tabs";
 import { DndContext, DragOverlay, PointerSensor, KeyboardSensor, pointerWithin, rectIntersection, useDndMonitor, useDraggable, useSensor, useSensors, type CollisionDetection } from "@dnd-kit/core";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Board, type BoardSide } from "@/components/board/Board";
-import { ChampionCard, Hover, ItemCard, TagChips, tagsFor } from "@/components/set/hovers";
+import { ChampionCard, Hover, ItemCard, itemStats, StatValue, TagChips, tagsFor } from "@/components/set/hovers";
 import { ItemIcon, TierBadge, TraitIcon, UnitIcon } from "@/components/set/icons";
+import { StatChip, StatIcon, StatWords } from "@/components/set/StatIcon";
 import { RankBadge } from "@/components/set/RankBadge";
 import type { Rank } from "@/lib/tiers";
 import { COSTS, type Cost } from "@/lib/costs";
@@ -401,13 +402,14 @@ export function TeamPlanner({ data }: { data: PlannerData }) {
           <summary className="cursor-pointer">How the fight is estimated</summary>
           <div className="mt-2 max-w-3xl space-y-1">
             <p>
-              This is a model, not the game client. Unit base stats, attack speed, crit, range and mana come from the Set {data.setNumber} data (patch {data.patch}); item stats come from the item effects. Riot ships no ability numbers, so an ability is worth a cost-based
-              amount (1-cost 180 … 5-cost 520 at 100 AP, ×1.5 per star) scaled by AP, or by AD when its text scales with AD; abilities that mention heals, shields or stuns trade part of that damage for the effect, and area abilities splash 45% to hexes around the target.
+              <StatWords
+                text={`This is a model, not the game client. Unit base stats, attack speed, crit, range and mana come from the Set ${data.setNumber} data (patch ${data.patch}); item stats come from the item effects. Riot ships no ability numbers, so an ability is worth a cost-based amount (1-cost 180 … 5-cost 520 at 100 AP, ×1.5 per star) scaled by AP, or by AD when its text scales with AD; abilities that mention heals, shields or stuns trade part of that damage for the effect, and area abilities splash 45% to hexes around the target.`}
+              />
             </p>
             <p>
-              Active trait breakpoints give their holders a bonus by tier (bronze 6%, silver 12%, gold 20%, prismatic 32% to HP and damage). Augments give the team 3/6/10% by tier, skewed towards damage or HP by their text; economy augments do nothing in combat. Named items the
-              engine understands: Guinsoo, Titan&apos;s, Kraken&apos;s, Warmog&apos;s, Dragon&apos;s Claw, Sunfire, Red Buff, Morello, Bramble, Ionic Spark, Evenshroud, Void Staff, Last Whisper, Bloodthirster, Sterak&apos;s, Edge of Night, Protector&apos;s Vow, Crownguard, Archangel&apos;s, Blue Buff, Gunblade, Giant Slayer, Striker&apos;s
-              Flail, Steadfast Heart, Quicksilver, Spirit Visage, IE/JG spell crit. Everything else is its raw stats.
+              <StatWords
+                text={`Active trait breakpoints give their holders a bonus by tier (bronze 6%, silver 12%, gold 20%, prismatic 32% to HP and damage). Augments give the team 3/6/10% by tier, skewed towards damage or HP by their text; economy augments do nothing in combat. Named items the engine understands: Guinsoo, Titan's, Kraken's, Warmog's, Dragon's Claw, Sunfire, Red Buff, Morello, Bramble, Ionic Spark, Evenshroud, Void Staff, Last Whisper, Bloodthirster, Sterak's, Edge of Night, Protector's Vow, Crownguard, Archangel's, Blue Buff, Gunblade, Giant Slayer, Striker's Flail, Steadfast Heart, Quicksilver, Spirit Visage, IE/JG spell crit. Everything else is its raw stats.`}
+              />
             </p>
             <p>Use it to compare two boards or two item sets relative to each other, not to predict an exact outcome.</p>
           </div>
@@ -532,9 +534,20 @@ function UnitEditor({
             </span>
           </div>
           <div className="mt-0.5 text-xs text-gold">{champion.traits.map((t) => traitNames[t] ?? t).join(" · ")}</div>
-          <div className="mt-1 text-[0.7rem] text-dim">
-            {hp} HP · {ad} AD · {champion.stats.attackSpeed.toFixed(2)} AS · {champion.stats.armor}/{champion.stats.mr} res · range {champion.stats.range} · {champion.stats.mana} mana
-            {champion.ability.scaling.ad && champion.ability.scaling.ap ? " · ability scales AD+AP" : champion.ability.scaling.ad ? " · ability scales AD" : " · ability scales AP"}
+          <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[0.7rem] text-dim">
+            <StatChip stat="HP" label={hp} />
+            <StatChip stat="AD" label={ad} />
+            <StatChip stat="AS" label={champion.stats.attackSpeed.toFixed(2)} />
+            <StatChip stat="Armor" label={champion.stats.armor} />
+            <StatChip stat="MR" label={champion.stats.mr} />
+            <StatChip stat="Range" label={champion.stats.range} />
+            <StatChip stat="Mana" label={`${champion.stats.initialMana}/${champion.stats.mana}`} />
+            <span className="inline-flex items-center gap-1">
+              · ability scales
+              {champion.ability.scaling.ad ? <StatIcon stat="AD" /> : null}
+              {champion.ability.scaling.ad && champion.ability.scaling.ap ? "+" : null}
+              {champion.ability.scaling.ap || !champion.ability.scaling.ad ? <StatIcon stat="AP" /> : null}
+            </span>
           </div>
           <div className="mt-2 flex flex-wrap items-center gap-2">
             <span className="display text-[0.6rem] uppercase tracking-wider text-dim">Star</span>
@@ -665,18 +678,17 @@ function ItemPicker({ items, components, traits, ranks, onPick, target }: { item
   );
 }
 
-function summarizeEffects(i: Item): string {
-  const e = i.effects;
-  const parts: string[] = [];
-  if (e.AD) parts.push(`+${Math.round(e.AD * 100)}% AD`);
-  if (e.AP) parts.push(`+${e.AP} AP`);
-  if (e.AS) parts.push(`+${e.AS}% AS`);
-  if (e.Health) parts.push(`+${e.Health} HP`);
-  if (e.Armor) parts.push(`+${e.Armor} armor`);
-  if (e.MagicResist) parts.push(`+${e.MagicResist} MR`);
-  if (e.CritChance) parts.push(`+${e.CritChance}% crit`);
-  if (e.ManaRegen) parts.push(`+${e.ManaRegen} mana/s`);
-  return parts.length ? parts.join(" · ") : (i.desc.split("\n")[0] ?? "");
+/** One-line item summary for the picker: stat icons with values, or the first line of the text. */
+function summarizeEffects(i: Item): React.ReactNode {
+  const stats = itemStats(i.effects);
+  if (!stats.length) return i.desc.split("\n")[0] ?? "";
+  return (
+    <span className="inline-flex flex-wrap gap-x-1.5">
+      {stats.map((s, idx) => (
+        <StatValue key={idx} stat={s.k} value={s.v} />
+      ))}
+    </span>
+  );
 }
 
 function AugmentPicker({ augments, chosen, ranks, onToggle }: { augments: Augment[]; chosen: string[]; ranks: Record<string, Rank>; onToggle: (a: Augment) => void }) {

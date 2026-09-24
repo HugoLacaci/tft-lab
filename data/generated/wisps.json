@@ -1,5 +1,5 @@
 {
- "syncedAt": "2026-09-22T10:32:14.434Z",
+ "syncedAt": "2026-09-24T08:49:23.797Z",
  "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
  "wisps": [
   {
@@ -82,14 +82,14 @@
   {
    "name": "Major Polymorph",
    "cost": 0,
-   "desc": "A random 4-cost you own permanently transforms into a 5-cost.Requirements: during the first 3 seconds of planning",
+   "desc": "A random 4-cost you own permanently transforms into a 5-cost.",
    "stage": "4-2 to 5-7",
    "locale": "en"
   },
   {
    "name": "Minor Polymorph",
    "cost": 0,
-   "desc": "A random 1-cost you own permanently transforms into a 2-cost.Requirements: during the first 3 seconds of planning",
+   "desc": "A random 1-cost you own permanently transforms into a 2-cost.",
    "stage": "2-1 to 3-4",
    "locale": "en"
   },
@@ -103,7 +103,7 @@
   {
    "name": "Polymorph",
    "cost": 0,
-   "desc": "A random 2-cost you own permanently transforms into a 3-cost.Requirements: during the first 3 seconds of planning",
+   "desc": "A random 2-cost you own permanently transforms into a 3-cost.",
    "stage": "2-1 to 4-1",
    "locale": "en"
   },
@@ -572,7 +572,7 @@
   {
    "name": "Mana-Rich Soil",
    "cost": 2,
-   "desc": "Your Casters have 18% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
+   "desc": "Your Casters have 15% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -794,13 +794,6 @@
    "locale": "en"
   },
   {
-   "name": "Blood and Iron",
-   "cost": 3,
-   "desc": "After 20 champion deaths, gain a component anvil.",
-   "stage": "3-1 to 4-1",
-   "locale": "en"
-  },
-  {
    "name": "Border Village",
    "cost": 3,
    "desc": "Reroll your shop with all 2-star 2-cost champions.",
@@ -824,7 +817,7 @@
   {
    "name": "Combust",
    "cost": 3,
-   "desc": "Your champions explode on death, dealing 12% Max Health magic damage.",
+   "desc": "Your champions explode on death, dealing 15% Max Health magic damage.",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -1025,6 +1018,13 @@
    "locale": "en"
   },
   {
+   "name": "Blood and Iron",
+   "cost": 4,
+   "desc": "After 20 champion deaths, gain a component anvil.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
    "name": "Component Bounty",
    "cost": 4,
    "desc": "If you win the next player combat, gain a random component.",
@@ -1194,7 +1194,7 @@
   },
   {
    "name": "Three Me",
-   "cost": 9,
+   "cost": 10,
    "desc": "Gain a random 2-star 3-cost champion.",
    "stage": "3-1 to 4-1",
    "locale": "en"

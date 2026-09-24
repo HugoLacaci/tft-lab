@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "npm run validate && npm run sync-comps && next build",
+    "dev": "npm run build-search && next dev",
+    "build": "npm run validate && npm run sync-comps && npm run build-search && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
@@ -12,11 +12,14 @@
     "sync-patch-notes": "tsx scripts/sync-patch-notes.ts",
     "sync-meta": "tsx scripts/sync-meta.ts",
     "sync-wisps": "tsx scripts/sync-wisps.ts",
+    "sync-stat-icons": "tsx scripts/sync-stat-icons.ts",
     "sync-comps": "tsx scripts/sync-comps.ts",
     "validate": "tsx scripts/validate.ts",
     "test": "vitest run",
     "test:watch": "vitest",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "validate:strict": "tsx scripts/validate.ts --strict",
+    "build-search": "tsx scripts/build-search-index.ts"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

@@ -35,7 +35,9 @@ Dark hextech look: `components/layout/Backdrop.tsx` is a fixed decorative layer 
 ## Set hub extras
 
 - **Champion pages** (`/set/champions/<id>`): ability text and a base-stats table at 1, 2 and 3 stars (health ×1.8 and attack damage ×1.5 per star, the constants `lib/sim/stats.ts` uses; auto-attack DPS = AD × attack speed).
-- **Hover cards** (`components/set/hovers.tsx`): champions and items show an in-game style tooltip after ~1 s; ability and item text keep the stat icons as coloured badges (`renderDescRich`).
+- **Hover cards** (`components/set/hovers.tsx`): champions and items show an in-game style tooltip after ~1 s; ability and item text keep the stat icons (`renderDescRich`).
+- **Item catalogue order** (`/set/items`, `components/set/ItemList.tsx`): an "All" kind first, then Components / Completed / Emblems / …; sorted by type by default (Tank, Mage, Physical damage, Bruiser, Hybrid, Utility, with group headers), or by tier, name A→Z or Z→A. The type comes from `lib/item-roles.ts` (a completed item from its two components, a component from its name, anything without a recipe from its stat effects). Emblems sort origins first (Spatula recipes, then uncraftable ones), then classes (Frying Pan recipes, then uncraftable). Riot ships no origin/class flag, so `lib/trait-kinds.ts` infers it: Spatula emblems mark origins, Frying Pan emblems classes, and the champions' trait combinations settle the rest.
+- **Stat icons** (`components/set/StatIcon.tsx`; names, colours, word rules and the icon file map in `lib/stat-meta.ts`): the game's own stat icons. The client resolves `%i:scaleAD%`-style tokens to the "text icons" under CommunityDragon's `assets/ux/fonts/texticons/` (`lol/statsicon/scalead.png`, `scaleap`, `scalehealth`, `scalearmor`, `scalemr`, `scaleas`, `scalemana`, `scalecrit`, `scalecritmult`, `scaleda`, `scaledr`, `scalesv`, `scalels`, `scalerange`, `scalelevel`, `lol/gameplay/goldcoins.png`, `tft/tft_manaregenicon.png`…); `npm run sync-stat-icons` mirrors them into `public/assets/stats/` (ETag-aware, also in the daily workflow) and the PNGs are committed. `RichText` turns `[[AD]]` markers into icons and, with `words`, puts an icon before plain stat names too ("Attack Damage", "Armor", upper-case "HP"), which is how augment and trait text, which ships without icon tokens, gets them. Used in the hover cards (stats, cost in gold), the champion page (stat table, ability, traits), the items / augments / wisps / traits pages, the planner (unit editor, item picker) and the trainer's board status (gold and player HP). In MDX: `<Stat k="AD" />` (icon + label, `label="…"` to override, `icon` for the icon alone) and `<StatWords text="…" />`.
 - **Tags** (`lib/tags.ts`): augments and wisps are tagged Combat / Gold / Item / Shop / Trait / Utility from their text and filterable by tag.
 - **Wisps** (`/set/wisps`): the set mechanic entries (`kind: "charm"` in the normaliser, CDragon tag `{5b609ae2}`). Gold costs are not in the game files; `content/sets/<n>/wisps.json` holds guide-sourced costs and the page sorts by cost.
 - **Comps** (`/set/comps`, `content/sets/<n>/comps.json`, schema in `lib/comps.ts`): hand-curated tier list with board positioning (rendered on the real board), carries and items, flex/extra units, augments and how to play; every id is validated against the synced set. "Open in the team planner" loads the board into `/lab/board`.
@@ -66,7 +68,8 @@ Next.js 15 (App Router, `output: 'export'`), TypeScript strict, Tailwind v4 with
 | `npm run sync-wisps` | Wisp gold costs and stages into `data/generated/wisps.json` |
 | `npm run sync-comps` | Diff the curated comps against the previous patch into `data/generated/comps-changes.json` (runs in `build`) |
 | `npm run sync-meta` | Item / unit / comp statistics from top-ladder Riot matches into `data/generated/meta.json` (needs `RIOT_API_KEY`) |
-| `npm run validate` | Scenario schema + ids, guide links/anchors, MDX syntax, hardcoded-set check |
+| `npm run validate` | Scenario schema + ids, guide links/anchors, MDX syntax, hardcoded-set check. Curated comps/tiers naming an id the live patch removed are **warnings** (printed, exit 0); `npm run validate:strict` makes them fatal (use it when authoring content) |
+| `npm run build-search` | Write `public/search-index.json` for the site-wide search (runs in `build` and `dev`; gitignored) |
 | `npm test` | Unit tests (odds math, econ, normalizer, grading, SRS, hex geometry, fight simulator, Riot analysis) |
 | `npm run e2e` | Playwright: smoke test per route, board screenshots at 360/768/1440, keyboard-only trainer flow (serves `out/`) |
 | `npm run lint`, `npm run typecheck` | ESLint, `tsc --noEmit` |
@@ -83,7 +86,17 @@ Sync flags: `--set=<n>` (force a set number; simulates a rollover), `--source=dd
 
 The UI reads only `current.json` and `set-<n>.json`. Nothing outside `content/sets/`, `data/generated/` and `data/constants/set-<n>.ts` may hardcode a set number; `npm run validate` enforces it. The header badge, the `/set` hub, the trainer's set filter and the constants lookup all derive from `current.json`.
 
-`.github/workflows/sync-set.yml` runs the sync daily at 06:00 UTC (and on dispatch). Same set: it commits the refreshed data directly and dispatches the deploy. New set: it opens a PR `chore: sync set data (<name>)` labelled `new-set`, with the list of content that needs a human pass in the body.
+`.github/workflows/sync-set.yml` runs every six hours (and on dispatch): set data, patch notes, wisp costs, stat icons, comps diff, optional Riot meta. Outcomes:
+
+- **Same set, validation clean or warnings only** → commits the data to the default branch and dispatches the deploy. The site is on the new patch within minutes of the run.
+- **Curated content stale** (a comp names an augment Riot renamed, a tier names a wisp that left the pool) → the data still ships; the run opens or bumps an issue labelled `curated-stale` listing what to fix in `content/sets/<n>/`. The comps page shows a "patch X is live, curated on Y" note until the file's `patch` field catches up (`lib/live-patch.ts`).
+- **Hard validation error or failing tests** → nothing is committed; a PR `chore: sync needs review` carries the data, and the run fails.
+- **New set** → PR `chore: sync set data (<name>)` labelled `new-set`, with the list of content that needs a human pass.
+- **Any failure** (network, upstream schema change) → an issue labelled `sync-failed` is opened or commented, so a broken sync is noticed without watching the Actions tab.
+
+Why warnings: on 2026-09-23 patch 18.3 renamed `DA_CursedCrown` to `TFT7_Augment_CursedCrown` and removed the Crystal Ball wisp; the validator treated both as fatal, the run failed and the site stayed on 18.2 for a day. Stale curated references now degrade (unknown augments are skipped on the comps page) instead of blocking the data.
+
+The patch label shown everywhere ("18.3") comes from the newest patch note, not from CDragon's `patch` field, which is the client build ("16.19").
 
 ## When a new set drops (runbook)
 
@@ -120,6 +133,16 @@ public/assets/       set-<n>/ mirrored icons, generic/ archetype icons
 docs/cdragon-schema.md   the upstream shape as observed
 e2e/, tests/         Playwright, Vitest
 ```
+
+## Navigation, search and responsive layout
+
+- **Header** (`components/layout/Header.tsx`, `SiteNav.tsx`, `nav.ts`): one row at every width. Comps is the accented first item; Routine / Compete / Resources live only in the menu sheet (`secondary`). The set badge shows set, name and live patch. `activeNavHref` lights the longest matching item, so `/set/comps` lights Comps rather than Set.
+- **Search** (`components/layout/SearchPalette.tsx`, `lib/search.ts`): Ctrl/⌘ K, `/`, the header button or the bottom bar. Static index from `scripts/build-search-index.ts` (champions, traits, items, augments, wisps, comps, guides, pages), fetched once on first open. Every query token must match; name prefix beats name substring beats extra words (traits on a champion, units in a comp).
+- **Phones**: bottom bar (`BottomNav.tsx`: Comps, Set, Trainer, Lab, Search) hidden from `lg` up and on short landscape screens; menu sheet with big tap targets; the set sub-nav scrolls sideways (`.chip-scroll`) and sticks under the header.
+- **Landscape and safe areas**: `viewport-fit=cover` plus `env(safe-area-inset-*)` padding on header, main, footer and bottom bar. `@media (orientation: landscape) and (max-height: 520px)` shortens the header, drops the bottom bar and hero padding, and disables the backdrop scenes. The page column is `--content-w` (72rem, 80rem from 1700px); the gutter scenes derive from it. `main` clips horizontal overflow so decorative absolutes never cause a horizontal scrollbar.
+- **Home** (`app/page.tsx`, `components/home/CompsSpotlight.tsx`): the hero's primary action is the comps tier list, next to a card with the top comps and their boards (each row deep-links to `/set/comps/#comp-<id>`, which `CompList` opens on load). Then live-set tiles with counts, the four pillars, and how the site stays current.
+- **Comps page**: stale-patch note, sticky toolbar with tier jump chips, tier bands, trait chips on phones (first three), deep links in the URL hash.
+- **Brand**: `app/icon.png`, `app/apple-icon.png`, `app/opengraph-image.png` and `public/icons/*` were generated from the header hex mark (sharp, see git history); `app/manifest.ts` makes the site installable.
 
 ## Deploying (GitHub Pages, or any static host)
 

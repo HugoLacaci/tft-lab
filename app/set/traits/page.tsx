@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Panel, SectionTitle } from "@/components/ui/Panel";
 import { CostPip, StyleBadge, TraitIcon, UnitIcon } from "@/components/set/icons";
+import { RichText } from "@/components/set/RichText";
 import { requireSetData } from "@/lib/set-data";
 
 export const metadata = { title: "Traits" };
@@ -21,12 +22,16 @@ export default function TraitsPage() {
               <h2 className="text-lg">{t.name}</h2>
               <span className="ml-auto text-xs text-dim">{carriers(t.id).length} units</span>
             </div>
-            {t.desc ? <p className="mt-2 text-sm text-dim">{t.desc}</p> : null}
+            {t.desc ? (
+              <p className="mt-2 text-sm text-dim">
+                <RichText text={t.desc} words />
+              </p>
+            ) : null}
             <ul className="mt-3 space-y-1.5 text-sm">
               {t.breakpoints.map((b) => (
                 <li key={`${b.units}-${b.style}-${b.desc.slice(0, 12)}`} className="flex items-start gap-2">
                   <StyleBadge style={b.style}>{b.units}</StyleBadge>
-                  <span>{b.desc.replace(/^\(\d+\)\s*/, "")}</span>
+                  <RichText text={b.desc.replace(/^\(\d+\)\s*/, "")} words />
                 </li>
               ))}
               {t.breakpoints.length === 0 ? <li className="text-dim">No breakpoints in the synced data.</li> : null}

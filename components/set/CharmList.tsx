@@ -3,18 +3,20 @@
 import { useMemo, useState } from "react";
 import { TAG_LABEL, TAGS, type Tag } from "@/lib/tags";
 import type { Item } from "@/lib/types";
-import { TagChips, tagsFor } from "./hovers";
+import { itemStats, STAT_EFFECT_KEYS, StatValue, TagChips, tagsFor } from "./hovers";
 import { ItemIcon } from "./icons";
 import { RichText } from "./RichText";
+import { StatIcon } from "./StatIcon";
 import { RankBadge } from "./RankBadge";
 import type { Rank } from "@/lib/tiers";
 
 export type WispData = Pick<Item, "id" | "name" | "desc" | "rich" | "icon" | "effects"> & { cost: number | null; stage?: string | null; upgrade: boolean; rank?: Rank };
 const RANK_ORDER: Record<Rank, number> = { S: 0, A: 1, B: 2, C: 3, D: 4, F: 5 };
 
+/** Effect numbers that are not a plain stat (those get icons via `itemStats`). */
 function effectList(e: Record<string, number>): string {
   return Object.entries(e)
-    .filter(([k]) => !/^\d/.test(k))
+    .filter(([k]) => !/^\d/.test(k) && !STAT_EFFECT_KEYS.has(k))
     .map(([k, v]) => `${k.replace(/([a-z])([A-Z])/g, "$1 $2")}: ${v}`)
     .join(" · ");
 }
@@ -72,8 +74,9 @@ export function WispList({ wisps, known }: { wisps: WispData[]; known: number })
           <li key={c.id} className="panel flex gap-3 p-3">
             <div className="flex flex-col items-center gap-1">
               <ItemIcon icon={c.icon} name={c.name} size={40} />
-              <span className="display text-[0.7rem] font-bold tabular-nums" style={{ color: c.cost === null ? "var(--text-dim)" : "var(--gold)" }} title={c.cost === null ? "Cost not published" : `Gold cost${c.stage ? ` · appears ${c.stage}` : ""}`}>
-                {c.cost === null ? "?g" : `${c.cost}g`}
+              <span className="display inline-flex items-center gap-0.5 text-[0.7rem] font-bold tabular-nums" style={{ color: c.cost === null ? "var(--text-dim)" : "var(--gold)" }} title={c.cost === null ? "Cost not published" : `Gold cost${c.stage ? ` · appears ${c.stage}` : ""}`}>
+                {c.cost === null ? "?" : c.cost}
+                <StatIcon stat="Gold" size="0.95em" />
               </span>
               {c.stage ? <span className="text-center text-[0.55rem] leading-tight text-dim">{c.stage}</span> : null}
             </div>
@@ -87,9 +90,16 @@ export function WispList({ wisps, known }: { wisps: WispData[]; known: number })
                 <TagChips tags={tags} size="xs" />
               </div>
               <p className="mt-1 text-xs text-ink">
-                <RichText text={c.rich || c.desc} />
+                <RichText text={c.rich || c.desc} words />
               </p>
-              {Object.keys(c.effects).length ? <p className="mt-1 text-[0.65rem] text-dim">{effectList(c.effects)}</p> : null}
+              {itemStats(c.effects).length ? (
+                <div className="mt-1 flex flex-wrap gap-x-2 text-[0.68rem]">
+                  {itemStats(c.effects).map((s, idx) => (
+                    <StatValue key={idx} stat={s.k} value={s.v} />
+                  ))}
+                </div>
+              ) : null}
+              {effectList(c.effects) ? <p className="mt-1 text-[0.65rem] text-dim">{effectList(c.effects)}</p> : null}
             </div>
           </li>
         ))}
