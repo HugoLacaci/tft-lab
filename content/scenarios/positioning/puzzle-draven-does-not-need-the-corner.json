@@ -151,5 +151,7 @@
   "explanation": "Two divers, two corners. Kobuko at 1-star is the lowest-health unit on your board, so Rengar goes to him; Kha'Zix goes to whichever corner is farthest from his own. Both of your back corners are therefore landing zones, and the only thing a corner ever bought a carry was distance, which Draven does not need: with range 6 he attacks from anywhere on the board. Put him in the centre of the back two rows, next to Ivern for the shield and with Vi and Diana ready to collapse on whatever lands.\n\nColumn 6 is the other diver corner. Column 5 is adjacent to it and to Diana, which makes the group Kha'Zix wants.",
   "principle": "Ask what the hex buys the carry. If the answer is distance and the carry has range, the hex buys nothing.",
   "guideLink": "/guides/positioning#counter-positioning",
-  "commonMistake": "Cornering a long-range carry out of habit, straight into the second diver."
+  "commonMistake": "Cornering a long-range carry out of habit, straight into the second diver.",
+  "hint": "Check where each diver lands, which unit is your lowest-health bait, and how far Draven's range 6 reaches from the centre.",
+  "lesson": "positioning-multiple-threats"
 }

@@ -1,0 +1,157 @@
+{
+  "id": "endgame-five-one-rolldown-with-a-pool-count",
+  "category": "endgame",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8, 66 gold, 41 HP, five players left, 24 XP from level 9. Ahri and Sett are both 1-star with their items and you hold a spare copy of each. Seat 2 plays 2-star Ahri with two spares on the bench and Seat 5 holds one; nobody else has Ahri or Sett. Put the steps of this round in the order that gets the most out of the 66 gold.",
+  "state": {
+    "stage": "5-1",
+    "gold": 66,
+    "hp": 41,
+    "level": 8,
+    "xpToNext": 24,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Sett",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yorick",
+        "row": 0,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Rakan",
+        "row": 1,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_MasterYi_AD",
+        "row": 1,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ahri",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "DA_RabadonsDeathcap",
+          "DA_BlueBuff",
+          "DA_JeweledGauntlet"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Ahri",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "DA_18_Sett",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "star": 1,
+        "items": [],
+        "slot": 2
+      }
+    ],
+    "shop": [
+      "DA_18_Teemo",
+      "DA_18_Shen",
+      "DA_18_Camille",
+      "DA_18_Varus",
+      "DA_Krug18"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 74,
+        "note": "Ahri 2-star with two spares on the bench, Blossom"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 52,
+        "note": "Elderwood Ezreal, no Blossom units"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 58,
+        "note": "Rapidfire Aphelios, one Ahri on the bench, no Sett"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 33,
+        "note": "Coven, no Ahri, no Sett"
+      }
+    ]
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Roll to the floor, buying every Sett and any 5-cost that fits, and stop at the stop condition even with gold left",
+      "Count the pool: your Ahri and Sett copies plus the ones on Seat 2's and Seat 5's boards and benches",
+      "Reposition against the next opponent with the new units before the timer ends",
+      "Level to 9 (24 gold) for the ninth slot and the 5-cost odds, and sell the bench units that are not part of the target",
+      "Set the target from the count: two Ahri left and eight Sett means roll for the Sett 2-star and a 5-cost, take an Ahri if one shows, floor 10"
+    ],
+    "correctOrder": [
+      1,
+      4,
+      3,
+      0,
+      2
+    ]
+  },
+  "explanation": "The target depends on the pool, so the count comes first. Ten Ahri exist: you hold two, Seat 2 five, Seat 5 one; two remain. Ten Sett exist: you hold two, eight remain. At level 9 a slot is a 4-cost 33% of the time; with roughly 115 four-cost copies left, a Sett is in about 2.3% of slots and an Ahri in 0.6%. The 32 gold left after levelling is sixteen shops: they find a Sett more than four times in five and an Ahri one time in three. So the target is Sett 2-star plus a 5-cost, with Ahri a bonus you buy if she appears but never roll for.\n\nLevel before rolling: it takes 5-cost odds from 3% to 15% and gives the 5-cost a slot instead of a sale. Clear the bench at the same time so a hit never waits for space. Then roll to the floor without re-deciding, and reposition last: new units in old hexes lose fights the old board would have won.",
+  "principle": "Count, then target, then level, then roll, then position. The count is the only step that can change the ones after it.",
+  "guideLink": "/guides/rolling#rolldown-discipline",
+  "commonMistake": "Pressing D before counting the pool, and finding out mid-roll that the carry has two copies left.",
+  "hint": "Ask which step can change every step that comes after it, and put that one first.",
+  "lesson": "endgame-last-rolldown"
+}

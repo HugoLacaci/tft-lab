@@ -1,0 +1,112 @@
+{
+  "id": "welcome-why-fifty-earns-more",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 6, exactly 50 gold, 78 HP, the board is holding its own. A friend watching says 'you have loads, refresh a few times'. If you refresh down to 20 gold and stay there, how does your income change from the next round on?",
+  "state": {
+    "stage": "3-2",
+    "gold": 50,
+    "hp": 78,
+    "level": 6,
+    "xpToNext": 30,
+    "streak": {
+      "type": "win",
+      "count": 0
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:tank-3",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:assassin-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "three",
+        "label": "3 gold less every round: interest drops from 5 to 2, on top of the 5 base"
+      },
+      {
+        "id": "flat",
+        "label": "Nothing changes: income is a flat 5 a round whatever you hold"
+      },
+      {
+        "id": "five",
+        "label": "5 gold less every round: interest only pays at exactly 50"
+      },
+      {
+        "id": "one",
+        "label": "1 gold less: interest is 1 a round regardless of the amount"
+      }
+    ],
+    "correct": [
+      "three"
+    ]
+  },
+  "explanation": "Interest is 1 gold per 10 held at the end of the round, capped at 5. At 50 you earn 5 base plus 5 interest, 10 a round; at 20 you earn 5 plus 2, 7 a round. The 3-gold gap repeats every round you stay at 20, so the 'few refreshes' cost 30 gold up front and about 15 more in lost interest over the rest of the stage. The second number is the one beginners never see.\n\n'Income is flat' is the belief that keeps players at 0 gold all game. The pile pays you for existing.",
+  "principle": "Every 10 gold you hold pays 1 gold a round. 50 earns double what 0 earns.",
+  "guideLink": "/guides/welcome#gold-and-interest",
+  "commonMistake": "Treating 50 gold as 'spare' rather than as the thing producing half your income.",
+  "hint": "Write down the income at 50 and the income at 20, base plus interest, and subtract.",
+  "lesson": "welcome-gold"
+}

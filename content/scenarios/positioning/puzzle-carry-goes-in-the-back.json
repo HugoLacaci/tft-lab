@@ -85,5 +85,7 @@
   "explanation": "Ranged units attack from four hexes away, so a carry on the back row starts shooting immediately while every enemy melee unit has to walk through your frontline first. Row 0 is where the fight happens; row 3 is where damage is dealt safely. Any back-row hex that is not a corner is fine at this stage: the corners are fine too against most boards, but keep the habit of the centre-back until you scout a reason to move.\n\nThe frontline stays together in the middle so enemies bump into it before they find the carry.",
   "principle": "Tanks in front, carries in the back. Damage that is not being hit is damage that keeps happening.",
   "guideLink": "/guides/positioning#frontline-and-backline-defaults",
-  "commonMistake": "Dropping the carry wherever there is a free hex, often row 1 or 2, because the board feels full."
+  "commonMistake": "Dropping the carry wherever there is a free hex, often row 1 or 2, because the board feels full.",
+  "hint": "Count how many hexes the carry can shoot across, and which row lets enemies reach it last.",
+  "lesson": "positioning-front-and-back"
 }

@@ -1,0 +1,130 @@
+{
+  "id": "after-the-4-1-rolldown-what-to-check",
+  "category": "scouting",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1. You levelled to 7 and rolled 34 gold: your 4-cost carry is now 2-star with two items and you have 14 gold left at 58 HP. The board just changed shape and the planning timer has about 15 seconds. What is the one thing you check before it runs out?",
+  "state": {
+    "stage": "4-1",
+    "gold": 14,
+    "hp": 58,
+    "level": 7,
+    "xpToNext": 30,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-3",
+        "row": 3,
+        "col": 6,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 5",
+        "hp": 62,
+        "note": "Your next opponent"
+      },
+      {
+        "player": "Seat 2",
+        "hp": 90,
+        "note": "Strongest board, 4-win streak"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 71,
+        "note": "Holds one copy of your carry"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "next-opponent",
+        "label": "Seat 5's board: whether they have divers, hooks or area damage, and where your new 2-star carry has to stand against it"
+      },
+      {
+        "id": "contest",
+        "label": "Seat 7's bench: how many copies of your carry they hold, to decide whether to keep rolling at 4-2"
+      },
+      {
+        "id": "strongest",
+        "label": "Seat 2's items and level, to know how many rounds until they beat you"
+      },
+      {
+        "id": "augments",
+        "label": "Which augments Seat 2 and Seat 7 took, to judge who scales into stage 5"
+      }
+    ],
+    "correct": [
+      "next-opponent"
+    ]
+  },
+  "explanation": "A rolldown that hits changes your board, and a changed board has not been positioned against anyone. The 2-star carry with two items is now the unit every opposing diver and splash wants, and the only decision you can still take this round, with 14 gold and 15 seconds, is where it stands. Seat 5's board answers that: divers mean the carry leaves the corner and a body takes it, a line ability means it leaves the column, area damage means the backline spreads.\n\nCounting Seat 7's copies is the tempting one, because contest is what you were thinking about while rolling. But that count belonged before the rolldown, and with 14 gold you are not rolling at 4-2 whatever it says; it changes nothing until 4-5. The strongest board and the augments are stage 4 context you read next round.\n\nScout in the order the decisions come due. After a rolldown, positioning is the only one due now.",
+  "principle": "After a rolldown, the first scout is the next opponent, because the new board has not been positioned against anyone yet.",
+  "guideLink": "/guides/scouting#the-scout-routine",
+  "commonMistake": "Spending the last seconds counting copies of the carry you just 2-starred, then fighting with it in the corner against two assassins.",
+  "hint": "Ask which of the four checks changes something you can still do before the timer ends this round.",
+  "lesson": "scouting-routine"
+}

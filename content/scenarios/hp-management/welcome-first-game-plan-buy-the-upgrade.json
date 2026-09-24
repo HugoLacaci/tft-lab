@@ -1,0 +1,93 @@
+{
+  "id": "welcome-first-game-plan-buy-the-upgrade",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-2, level 4, 9 gold, 96 HP. The shop shows a third copy of your 1-cost carry: you own two, so buying it (1 gold) makes a 2-star. Buying leaves 8 gold, and you had hoped to reach 10 for your first interest gold. What do you do?",
+  "state": {
+    "stage": "2-2",
+    "gold": 9,
+    "hp": 96,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-1",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:carry-1",
+      "generic:support-2",
+      "generic:tank-2",
+      "generic:caster-2",
+      "generic:bruiser-2"
+    ],
+    "items": [
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "buy",
+        "label": "Buy it: a 2-star carry wins fights now, and 8 or 9 gold pays the same 0 interest either way"
+      },
+      {
+        "id": "hold",
+        "label": "Skip it and hold 9 so you reach 10 next round for 1 interest"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh once (2 gold) hoping for a 2-cost, which is stronger than a 1-cost"
+      }
+    ],
+    "correct": [
+      "buy"
+    ]
+  },
+  "explanation": "The first rule of the plan is to field the strongest board every round, and a 2-star is the biggest strength jump the early game offers: three copies merge into a unit with roughly 80% more health and damage. It costs 1 gold. Interest is paid per full 10 gold you hold, so 9 and 8 both earn 0: buying costs you nothing today, and next round's income puts you past 10 either way.\n\nHolding 9 gold to reach 10 makes sense only when the buy does not change a fight. This one does. Refreshing is the real leak: 2 gold for a random shop when the shop in front of you already has the best possible buy. Upgrades that are on screen come first; the shop will not offer this copy again next round.",
+  "principle": "A 2-star on screen beats a gold in the bank. Buy the upgrade, then save with what is left.",
+  "guideLink": "/guides/welcome#your-first-game-plan",
+  "commonMistake": "Skipping a 1-gold 2-star to protect an interest breakpoint that 8 gold does not even reach.",
+  "hint": "Compare the interest 8 gold and 9 gold earn, then look at what the third copy does to your board.",
+  "lesson": "welcome-first-game-plan"
+}

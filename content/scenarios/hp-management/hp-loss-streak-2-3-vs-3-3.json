@@ -1,0 +1,110 @@
+{
+  "id": "hp-loss-streak-2-3-vs-3-3",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6, 55 HP, 46 gold, three losses in a row. Earlier, at 2-3 with 88 HP and no pairs, you let the losses run and banked the streak gold; it worked. Now the board has one 2-star and no items on the carry, and stage-3 losses are costing you 8 to 10 HP each. Same play again?",
+  "state": {
+    "stage": "3-3",
+    "gold": 46,
+    "hp": 55,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:carry-3",
+      "generic:tank-1",
+      "generic:bruiser-2",
+      "generic:caster-1",
+      "generic:support-1"
+    ],
+    "items": [
+      "generic:item:ad",
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "stabilise",
+        "label": "No. Slam the AD item on the carry, buy the carry copy for the 2-star, and roll below 50 for front-line upgrades: three more losses at stage-3 damage leave you near 25 entering stage 4"
+      },
+      {
+        "id": "streak",
+        "label": "Yes: streak gold plus interest is the same maths at every stage; keep losing to 4-1 and roll then with 70 gold"
+      },
+      {
+        "id": "until-3-5",
+        "label": "Yes, but only until 3-5, then level to 7 and roll"
+      }
+    ],
+    "correct": [
+      "stabilise"
+    ]
+  },
+  "explanation": "A loss streak is affordable when the HP it costs is cheap, and HP is cheap in stage 2: a 2-3 loss against a four-unit board costs 3 to 6 HP, so at 88 HP you could lose the whole stage and enter stage 3 above 65 with a fat bank. Stage 3 is a different price: six-unit boards and stage damage make each loss 8 to 10, and stage-4 losses are 12 and more. From 55 HP, three more losses put you around 28 at 4-1, where one bad rolldown is an 8th. The bank you would gain (about 10 extra gold over three rounds) does not buy back 30 HP.\n\nSo the play flips: spend now. The AD item on the carry, the copy that makes him 2-star, then roll under 50 for the front-line upgrades until the fights are close. Sitting at 50 with a board that loses every round is the mistake the whole lesson exists for. 'Until 3-5' is the same mistake with a date on it: two more losses at 9 HP each is 37 at the point you finally act.",
+  "principle": "A loss streak is a stage-2 tool. From stage 3 on, count the HP per loss before you agree to another one.",
+  "guideLink": "/guides/hp#hp-is-a-resource",
+  "commonMistake": "Copying the stage-2 loss streak into stage 3 because it 'worked last time', without noticing each loss now costs twice the HP.",
+  "hint": "Multiply the HP per loss at this stage by the losses left until you would act, and see where that leaves you at 4-1.",
+  "lesson": "hp-strongest-board"
+}

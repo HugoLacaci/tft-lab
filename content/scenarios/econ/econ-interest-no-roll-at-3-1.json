@@ -1,0 +1,102 @@
+{
+  "id": "econ-interest-no-roll-at-3-1",
+  "category": "econ",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 5, 38 gold, 80 HP, two losses in a row. Your carry is a 1-star 2-cost with one item and you have one pair on the bench. Next round is 3-2, when the lobby levels to 6 and the augment is chosen. A friend says to roll 10 gold now 'for pairs'. Do you?",
+  "state": {
+    "stage": "3-1",
+    "gold": 38,
+    "hp": 80,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:bruiser-2",
+      "generic:caster-1",
+      "generic:support-2",
+      "generic:tank-1",
+      "generic:caster-3"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "hold",
+        "label": "Hold: level to 6 at 3-2 (8 gold), then let income take you to 50 by 3-5. No rolling before 4-1 without a pair that wins fights"
+      },
+      {
+        "id": "roll-10",
+        "label": "Roll 10 gold now for the carry copy: two losses in a row means the board needs help"
+      },
+      {
+        "id": "roll-20",
+        "label": "Roll 20 gold: at 80 HP you can afford it and pairs are cheap at level 5"
+      }
+    ],
+    "correct": [
+      "hold"
+    ]
+  },
+  "explanation": "A roll at 3-1 costs 2 gold per refresh plus the interest on everything it takes you below. 38 to 28 is 1 gold of interest lost per round for every round it takes to get back, and after level 6 at 3-2 you would be at 20 gold with a 1-star 2-cost carry and a loss streak, never reaching 50 before 4-1. Two losses at 80 HP in early stage 3 cost you around 12 HP, which is affordable; the board is not collapsing, it is just not winning, and a level-5 shop is 45% 1-costs and 33% 2-costs: the specific carry copy you want is roughly one slot in six.\n\nThe legitimate reasons to roll before 4-1 are a pair on the bench that would win the fights you are losing (you have one, but a 2-star 2-cost carry with one item does not turn two losses into wins by itself) and HP below the point where losses become 8ths. Neither applies. Hold, level at 3-2 with everyone else, and arrive at 4-1 with the 50 that pays for the real rolldown. Rolling 20 is the same mistake twice.",
+  "principle": "Rolling at 3-1 is paid twice: in gold and in the interest you lose every round until you get back.",
+  "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+  "commonMistake": "Rolling 'a little' at 3-1 after two losses, then levelling at 3-2 on 20 gold and playing stage 3 with no interest at all.",
+  "hint": "Count what 38 gold becomes after 10 gold of rolling and 8 gold for level 6, and whether that number reaches 50 before 4-1.",
+  "lesson": "econ-interest-basics"
+}

@@ -142,5 +142,7 @@
   "explanation": "Ahri's bomb goes where the most enemies are grouped, and its damage falls off with distance from the centre. Three units side by side on row 3 are the biggest group on your board, so the bomb lands on Karma and hits all three for near full damage. Spread them: one caster per two hexes, using row 2 and row 3, so the largest group is your frontline of Sett, Alistar and Vi, which is built to take it, and any bomb on the backline catches one unit at full damage instead of three.\n\nClumping tighter makes it worse. Moving only Cassiopeia still leaves a pair, and a pair still beats a single tank for the targeting.",
   "principle": "Against area damage that seeks groups, your biggest group must be the tanks. Spread the squishies.",
   "guideLink": "/guides/positioning#spread-vs-clump",
-  "commonMistake": "Fixing the problem by moving one unit, which leaves a pair that still attracts the cast."
+  "commonMistake": "Fixing the problem by moving one unit, which leaves a pair that still attracts the cast.",
+  "hint": "Count the units in each group on your board and ask which group the bomb picks; then check whether moving one unit still leaves a pair.",
+  "lesson": "positioning-spread-clump"
 }

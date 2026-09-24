@@ -66,7 +66,7 @@ export default function RoutinePage() {
           <Panel>
             <h3 className="text-base">Trainer</h3>
             <p className="mt-2 text-sm text-dim">
-              Twenty minutes in your weakest category, once a week. The <Link href="/trainer">Daily 10</Link> weights toward it automatically and brings back what you missed after 1, 3 and 7 days. The point is not the score. It is that the decision becomes boring.
+              Twenty minutes, once a week: the next lesson on the <Link href="/trainer/path">learning path</Link> if you have not finished it, otherwise your weakest category. The <Link href="/trainer/daily">Daily 10</Link> weights toward it automatically, <Link href="/trainer/missed">replay</Link> brings back what you missed, and the spaced schedule returns it after 1, 3 and 7 days. The point is not the score. It is that the decision becomes boring.
             </p>
           </Panel>
           <Panel>

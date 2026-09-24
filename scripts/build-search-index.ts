@@ -15,6 +15,7 @@ import { loadComps } from "../lib/comps";
 import { guideSlugs, readGuide } from "../lib/guide-sections";
 import { SCENARIO_CATEGORIES, CATEGORY_LABELS } from "../lib/scenario-categories";
 import { RANK_TIERS } from "../lib/rank-tiers";
+import { LESSONS, moduleById } from "../lib/curriculum";
 
 export type SearchKind = "comp" | "champion" | "trait" | "item" | "augment" | "wisp" | "guide" | "page";
 
@@ -86,6 +87,10 @@ function build(): SearchRecord[] {
     ["Wisps", "/set/wisps/", "Set mechanic"],
     ["Trainer", "/trainer/", "Decision drills"],
     ["Daily 10", "/trainer/daily/", "Today's drills"],
+    ["Learning path", "/trainer/path/", "Lessons from Welcome to Mastery"],
+    ["Welcome to TFT", "/trainer/welcome/", "Learn to play from zero"],
+    ["Replay missed drills", "/trainer/missed/", "Trainer"],
+    ["Drills made for you", "/trainer/ai/", "AI-written drills for your weak spots"],
     ["Puzzles", "/trainer/puzzles/", "Ladder by rank"],
     ["Team planner", "/lab/board/", "Build and simulate a board"],
     ["Roll odds", "/lab/odds/", "Calculator"],
@@ -99,6 +104,7 @@ function build(): SearchRecord[] {
   for (const [n, h, s] of pages) out.push({ k: "page", n, h, s });
   for (const c of SCENARIO_CATEGORIES) out.push({ k: "page", n: `${CATEGORY_LABELS[c]} drills`, h: `/trainer/${c}/`, s: "Trainer" });
   for (const t of RANK_TIERS) out.push({ k: "page", n: `${t.label} puzzles`, h: `/trainer/puzzles/${t.id}/`, s: "Puzzle ladder" });
+  for (const l of LESSONS) out.push({ k: "page", n: l.title, h: `/trainer/path/${l.id}/`, s: `Lesson · ${moduleById(l.module)?.title ?? ""}`, w: l.blurb });
   return out;
 }
 

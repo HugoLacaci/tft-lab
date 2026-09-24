@@ -1,0 +1,107 @@
+{
+  "id": "welcome-swap-out-the-lonely-traits",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-1, level 6, 22 gold. Board: Leona, Ornn, Camille in front; Kayle, Varus, Xayah behind. Defender 2 and Rapidfire 3 are active; Camille brings Coven 1 of 3 and Ravager 1 of 2. You just bought Shen (Inferno, Defender), who is on the bench. What do you do?",
+  "state": {
+    "stage": "3-1",
+    "gold": 22,
+    "hp": 78,
+    "level": 6,
+    "xpToNext": 26,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Shen",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Kobuko",
+      "DA_Gromp18_AP",
+      "DA_18_Sentry",
+      "DA_18_Teemo",
+      "DA_18_Yorick"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "swap",
+        "label": "Put Shen in for Camille: Camille's traits are both at 1, and Shen adds Inferno 2 with Varus"
+      },
+      {
+        "id": "keep",
+        "label": "Keep Camille and bench Shen for later: changing the board mid-stage breaks your rhythm"
+      },
+      {
+        "id": "sell",
+        "label": "Sell Shen: you already have two Defenders and a third does not reach a breakpoint"
+      }
+    ],
+    "correct": [
+      "swap"
+    ]
+  },
+  "explanation": "Camille brings Coven 1 of 3 and Ravager 1 of 2: two traits, zero bonuses. Shen makes Defender 3 of 4, which adds nothing new, but he also shares Inferno with Varus, and Inferno starts at 2: your Inferno damage now burns and wounds. He is a shield-casting tank as well, so the front line gets stronger, not weaker.\n\n'A third Defender is useless' is half right and misses the second trait. Champions have two or three traits and any of them can activate; read them all before you sell.",
+  "principle": "A unit whose traits are all at 1 is the first unit to replace.",
+  "guideLink": "/guides/welcome#traits-and-breakpoints",
+  "commonMistake": "Judging a champion by one trait, and keeping a unit on the board because it has 'always been there'.",
+  "hint": "List every trait of the unit on the bench and every trait of the weakest unit on the board. Which of them reach a breakpoint?",
+  "lesson": "welcome-traits"
+}

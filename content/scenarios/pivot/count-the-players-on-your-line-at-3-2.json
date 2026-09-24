@@ -1,0 +1,133 @@
+{
+  "id": "count-the-players-on-your-line-at-3-2",
+  "category": "pivot",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2 augment round, level 6, 48 gold, 74 HP. You are on Coven: a 1-star Cassiopeia with Blue Buff, a second copy on the bench, and Morgana as the 4-cost you are aiming for at level 8. Read the scout report and count the players committed to your line. What do you do?",
+  "state": {
+    "stage": "3-2",
+    "gold": 48,
+    "hp": 74,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Elise",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kobuko",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 1,
+        "col": 1,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "DA_BlueBuff"
+        ]
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Cassiopeia",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Warwick",
+      "DA_18_Kobuko",
+      "DA_18_Veigar",
+      "DA_18_Alistar",
+      "DA_Gromp18_AP"
+    ],
+    "items": [
+      "DA_Component_NeedlesslyLargeRod"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 82,
+        "note": "Cassiopeia 2-star with Blue Buff, Elise, Camille and Caitlyn around her: Coven 4"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 90,
+        "note": "One Cassiopeia on the bench, no item, playing Solar with Leona and Kayle"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 68,
+        "note": "Morgana 1-star on the board with Deathcap, Coven 3"
+      },
+      {
+        "player": "Seat 8",
+        "hp": 77,
+        "note": "Tristana and a Caitlyn pair, Hunter, holding a Bow"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "pivot",
+        "label": "Two committed players, one already 2-star on your carry: sell the Cassiopeia pair, keep Blue Buff and the Rod for the next AP caster, and take the augment for a line nobody is on"
+      },
+      {
+        "id": "force",
+        "label": "It is one player on Cassiopeia and one on Morgana, one contester per unit: hold the line and roll at 4-2"
+      },
+      {
+        "id": "wait",
+        "label": "Keep the pair to 4-1 and see whether Seat 2 or Seat 5 drops it"
+      }
+    ],
+    "correct": [
+      "pivot"
+    ]
+  },
+  "explanation": "Count committed players, not units. Seat 2 has Cassiopeia 2-star with an item and four Coven around her: committed, and ahead of you. Seat 6 has Morgana itemised with Coven 3: committed to the same endgame, and will buy every Cassiopeia and Morgana they see. Seat 5 is one naked copy on a Solar board, soft, and does not count. That is two committed players on your line at 3-2, and two is the pivot signal for any line.\n\nThe pool makes it concrete. Cassiopeia has 18 copies: Seat 2 holds 3, Seat 5 holds 1, you hold 2, so 12 remain for a third copy two other players want first. Morgana has 10, one already gone, and at level 8 Seat 2 and Seat 6 roll for her the same round you do. You are contesting them, not the other way round.\n\nPivoting now costs 6 gold of Cassiopeia and nothing else: Blue Buff and the Rod are AP items any caster carries, and Elise, Leona and Kobuko are a frontline for anything. Waiting to 4-1 is choosing the expensive pivot while pretending you have not chosen.",
+  "principle": "Two committed players on your line at 3-2 is a pivot signal; count them by items and traits, not by feeling.",
+  "guideLink": "/guides/pivoting#reading-contest",
+  "commonMistake": "Counting 'one on the 3-cost, one on the 4-cost' as no contest, when both are on the same endgame board.",
+  "hint": "For each seat, ask two things: is there an item or a trait built around the unit, and are they ahead of you on copies?",
+  "lesson": "pivot-reading-contest"
+}

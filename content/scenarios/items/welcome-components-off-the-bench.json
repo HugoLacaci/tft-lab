@@ -1,0 +1,108 @@
+{
+  "id": "welcome-components-off-the-bench",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 6, 70 HP after three straight losses. Three components have sat in your item bar since 2-7: a sword, a vest and a rod. You have been waiting for a bow to make the 'right' item for your carry. What do you do this round?",
+  "state": {
+    "stage": "3-2",
+    "gold": 36,
+    "hp": 70,
+    "level": 6,
+    "xpToNext": 30,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:tank-1",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:assassin-2"
+    ],
+    "items": [
+      "generic:item:ad",
+      "generic:item:tank",
+      "generic:item:ap"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "slam",
+        "label": "Combine two of them now and put the item on the board; give the third component to a unit that uses it"
+      },
+      {
+        "id": "wait",
+        "label": "Keep waiting: 3-7 is the next PvE round and the bow will probably drop"
+      },
+      {
+        "id": "spread",
+        "label": "Put one component on each of three units so nothing is wasted"
+      }
+    ],
+    "correct": [
+      "slam"
+    ]
+  },
+  "explanation": "Three components on the bench have been in zero fights, and you have lost three rounds in a row. Sword plus vest, or rod plus vest, is a completed item today; not the item you dreamed of, but worth more than the dream because it goes on the board now and wins fights now. Waiting means at least three more player rounds of losses before 3-7, with no guarantee the bow drops then.\n\nOne component per unit is the other trap: a lone component is a small stat, a completed item is a big one. Pairing beats spreading.",
+  "principle": "A completed item on the board beats a perfect item on the bench.",
+  "guideLink": "/guides/welcome#items",
+  "commonMistake": "Holding components for the ideal combination while losing rounds with an itemless board.",
+  "hint": "How many fights have those components been in? How many rounds until the next guaranteed drop?",
+  "lesson": "welcome-items"
+}

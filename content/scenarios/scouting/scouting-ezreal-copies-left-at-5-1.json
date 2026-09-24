@@ -1,0 +1,157 @@
+{
+  "id": "scouting-ezreal-copies-left-at-5-1",
+  "category": "scouting",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8, 44 gold, 36 HP, six players left. Ezreal is 1-star with three items and you hold a second copy. Your scout: Seat 2 has a 2-star Ezreal and a spare on the bench, Seat 5 has one on the board, nobody else has any. Roughly twenty other 4-cost copies are out across the lobby. Before you roll: how likely is one shop to show an Ezreal, and what does 44 gold buy?",
+  "state": {
+    "stage": "5-1",
+    "gold": 44,
+    "hp": 36,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_BrambleVest"
+        ]
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_LeBlanc",
+        "row": 2,
+        "col": 6,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Azir",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ezreal",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge",
+          "DA_LastWhisper"
+        ]
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Ezreal",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Teemo",
+      "DA_18_Rammus",
+      "DA_18_Kayle",
+      "DA_18_Camille",
+      "DA_18_Sejuani"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 1",
+        "hp": 80,
+        "note": "Coven Morgana, no Ezreal"
+      },
+      {
+        "player": "Seat 2",
+        "hp": 68,
+        "note": "2-star Ezreal on the board and a spare on the bench"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 49,
+        "note": "One Ezreal on the board, Elderwood 4"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 28,
+        "note": "Blossom Sett, no Ezreal"
+      },
+      {
+        "player": "Seat 8",
+        "hp": 41,
+        "note": "Rapidfire Aphelios, no Ezreal"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "calc",
+        "label": "About one shop in 25: three of ten Ezreal are left in a 4-cost pool of about 115, so 22 shops are roughly a coin flip for one copy"
+      },
+      {
+        "id": "naive",
+        "label": "About one shop in three: at level 8 a slot is a 4-cost 30% of the time and Ezreal is the one you are looking for"
+      },
+      {
+        "id": "uncontested",
+        "label": "About one shop in ten, the same as any 4-cost at 8; contest changes who buys the copies, not the odds"
+      },
+      {
+        "id": "zero",
+        "label": "Zero: Seat 2 alone holds four, so the last copies are as good as gone and rolling is pointless"
+      }
+    ],
+    "correct": [
+      "calc"
+    ]
+  },
+  "explanation": "Count before you roll. Ten Ezreal exist: you hold two, Seat 2 four, Seat 5 one. Seven out, three left. The tier has fourteen 4-costs at ten copies, 140 in all; with your seven and about twenty other copies out, roughly 113 remain. A slot is a 4-cost 30% of the time and an Ezreal 3 of 113 of those: about 0.8% per slot, 4% per five-slot shop, one shop in 25. Forty-four gold is 22 shops, and 22 shots at 4% land at least once about 58% of the time.\n\nThe 30% figure is the tier, not your unit, and it is the number that sends players 40 gold into a dead pool. One in ten is right for an untouched pool and wrong here, because seven of ten are already on boards. Zero is also wrong: three copies are three copies, and every one Seat 5 misses is yours. The honest read is a coin flip for one 2-star; the next question is whether that is the best use of 44 gold at 36 HP.",
+  "principle": "Your odds are the tier odds times your share of the tier's pool; the second number is the one the lobby changes.",
+  "guideLink": "/guides/rolling#contest-math",
+  "commonMistake": "Reading '30% four-costs at level 8' as 30% for the four-cost you want.",
+  "hint": "Add up every Ezreal you can see on boards and benches, including your own, before you touch the odds table.",
+  "lesson": "endgame-last-rolldown"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "welcome-damage-item-on-the-shooter",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 5. You just combined a bow and a sword into a completed damage item. On the board: a 2-star tank with a defensive item, a 2-star bruiser beside it, a 2-star ranged carry at the back and a support behind the tank. Who holds the damage item?",
+  "state": {
+    "stage": "3-1",
+    "gold": 22,
+    "hp": 84,
+    "level": 5,
+    "xpToNext": 16,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:caster-2",
+      "generic:support-2",
+      "generic:bruiser-3",
+      "generic:carry-1"
+    ],
+    "items": [
+      "generic:item:carry-completed"
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:carry-completed",
+    "correctUnitIds": [
+      "generic:carry-2"
+    ]
+  },
+  "explanation": "A damage item multiplies the attacks of whoever holds it, so it goes on the champion whose attacks are your damage: the ranged carry in the back, who fights from the first second to the last. The bruiser is tempting because it is 2-star and 'in the fight', but front-row units spend the fight being hit and die first, and a damage item on a dead unit does nothing.\n\nThe tank already has its defensive item; a sword on it makes neither a better tank nor a real damage dealer. Damage items go where the damage comes from.",
+  "principle": "Damage items on the damage dealer, and the damage dealer is the one who survives to keep attacking.",
+  "guideLink": "/guides/welcome#items",
+  "commonMistake": "Putting the damage item on the front-row unit because it is 'in the fight' and the carry looks fragile.",
+  "hint": "Ask which champion will still be attacking thirty seconds into the fight, and whose attacks you need to be bigger.",
+  "lesson": "welcome-items"
+}

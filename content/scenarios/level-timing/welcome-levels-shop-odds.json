@@ -1,0 +1,102 @@
+{
+  "id": "welcome-levels-shop-odds",
+  "category": "level-timing",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 6, 40 gold, 12 XP from level 7, 70 HP. You want a 4-cost carry. Per shop slot, 4-costs appear 5% of the time at level 6, 10% at level 7 and 30% at level 8 (level 8 is another 76 XP after 7). Which is the cheapest way to make 4-costs show up in your shop?",
+  "state": {
+    "stage": "3-5",
+    "gold": 40,
+    "hp": 70,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-1",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "seven",
+        "label": "Buy 12 XP (12 gold) for level 7 first: 4-costs double from 5% to 10% per slot, then refresh"
+      },
+      {
+        "id": "refresh",
+        "label": "Stay level 6 and refresh: a refresh is 2 gold and an XP purchase is 4, so refreshing is cheaper"
+      },
+      {
+        "id": "eight",
+        "label": "Go straight to level 8 now, where 4-costs are 30%"
+      }
+    ],
+    "correct": [
+      "seven"
+    ]
+  },
+  "explanation": "The shop is drawn from odds that depend on your level. The table for 1/2/3/4/5-costs is 30/40/25/5/0 at level 6, 16/30/43/10/1 at level 7 and 15/20/32/30/3 at level 8. At level 6 a refresh shows five slots at 5% each: about one 4-cost every four refreshes, 8 gold apiece. At level 7 that doubles to about one every two refreshes, and the odds stay for the rest of the game while a refresh is gone once the round ends. 12 gold for level 7 is paid once and pays back on every shop from here on.\n\nLevel 8 is the real 4-cost level (30%), but it costs 12 gold plus another 76 XP, 88 gold in total, and you have 40. Refreshing at level 6 feels cheap because each click is 2 gold, and it is the most expensive line: most of the 40 gold buys shops full of 1- and 2-costs you do not want. Level first, then refresh.",
+  "principle": "Higher levels show more expensive champions. Buy the level before you buy the refreshes.",
+  "guideLink": "/guides/welcome#levels-and-xp",
+  "commonMistake": "Refreshing at a low level for a champion the level barely offers, because 2 gold a click feels cheaper than 4.",
+  "hint": "Compare what 12 gold buys as XP (a permanent change in the odds) against what the same 12 gold buys as six refreshes at 5%.",
+  "lesson": "welcome-levels"
+}

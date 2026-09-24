@@ -1,0 +1,91 @@
+{
+  "id": "defender-heart-at-the-breakpoint",
+  "category": "augment",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-2 silver augment, level 6, 44 gold, 76 HP. Your frontline is Leona, Shen and Ornn, all 2-star: three Defenders, and Defender activates at 2, 4 and 6. Your items are already slammed and no component is loose. Options: Trait Heart for Defender (+1 Defender), Component Anvil (one component of your choice now) and Second Wind (heal 20 HP over four rounds). Which do you take?",
+  "state": {
+    "stage": "3-2",
+    "gold": 44,
+    "hp": 76,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Shen",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_GuinsoosRageblade"
+        ]
+      },
+      {
+        "championId": "DA_Cinderling18",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 0,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Kobuko",
+      "DA_18_Elise",
+      "DA_18_Varus",
+      "DA_18_Teemo",
+      "DA_18_Sejuani"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "augment",
+    "options": [
+      "generic:aug:trait-plus-one",
+      "generic:aug:item-component",
+      "generic:aug:utility-hp"
+    ],
+    "correct": "generic:aug:trait-plus-one"
+  },
+  "explanation": "A +1 trait augment is worth exactly one thing: a breakpoint you cross the moment you take it and hold for the rest of the game. Here it does both. Three Defenders plus the Heart is Defender 4 this round, with no unit to find, and it stays 4 when Leona or Shen are replaced later by Rammus or Lillia, both Defenders. It also frees a slot: Defender 4 with three bodies leaves a unit slot for a carry at level 6 and 7, and in stage 3 a slot is worth a breakpoint on its own.\n\nComponent Anvil is the tempting one, but with nothing loose the component sits on the bench until the 3-7 drop gives it a partner, five rounds away, and a completed item then is what the Heart's free slot buys you now. Second Wind at 76 HP heals damage you have not taken; it is the pick at 40 HP, not here.\n\nSilver augments are small, so the tie-break is the one you use this round.",
+  "principle": "A trait +1 is only an augment when it crosses a breakpoint today and stays crossed.",
+  "guideLink": "/guides/augments#silver-gold-prismatic",
+  "commonMistake": "Rating the Heart as 'just +1' and taking a component that sits on the bench for five rounds.",
+  "hint": "Count your Defenders, look at the next breakpoint, then ask which Defenders will still be on the board at 4-5.",
+  "lesson": "augments-reading"
+}

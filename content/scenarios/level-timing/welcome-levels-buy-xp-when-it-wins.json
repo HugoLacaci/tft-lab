@@ -1,0 +1,91 @@
+{
+  "id": "welcome-levels-buy-xp-when-it-wins",
+  "category": "level-timing",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-6, level 4, 14 gold, 4 XP from level 5, 84 HP after three losses in a row. A 2-star bruiser is on your bench and your four board units all survive to the end of fights, barely losing. Buying XP costs 4 gold for 4 XP. Do you buy?",
+  "state": {
+    "stage": "2-6",
+    "gold": 14,
+    "hp": 84,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:bruiser-1",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-2",
+      "generic:support-1",
+      "generic:carry-1",
+      "generic:caster-2",
+      null
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "xp",
+        "label": "Buy 4 XP: the 2-star bruiser becomes your fifth unit and turns close losses into wins"
+      },
+      {
+        "id": "hold",
+        "label": "Hold the 14 gold so you reach 20 next round and earn 2 interest"
+      },
+      {
+        "id": "roll",
+        "label": "Refresh the shop twice (4 gold) looking for something better than the bruiser"
+      }
+    ],
+    "correct": [
+      "xp"
+    ]
+  },
+  "explanation": "Buy XP when one more unit would win the fights you are currently losing, and that is exactly this board. Your fights are close and you have a ready 2-star that cannot fit. One purchase adds it: 14 gold becomes 10, still 1 interest. Holding for 20 gold gains 1 gold of interest next round and costs you the fight in front of you; at three losses in a row with 84 HP the HP is the real price, and the stage-3 fights that follow hit harder.\n\nRefreshing is the worst of the three: it spends the same 4 gold on a chance of a unit that still would not fit at level 4. The level is the bottleneck, not the shop. Level 5 at 2-5 or 2-6 is also the standard timing, so you are not paying for anything unusual.",
+  "principle": "When a fifth unit wins the next fight, 4 gold of XP is the best buy on the screen.",
+  "guideLink": "/guides/welcome#levels-and-xp",
+  "commonMistake": "Chasing an interest breakpoint while a ready 2-star sits on the bench and the board keeps losing.",
+  "hint": "Ask what stops the bruiser from fighting right now, and whether 1 extra interest gold is worth another loss at 2-6.",
+  "lesson": "welcome-levels"
+}

@@ -132,5 +132,7 @@
   "explanation": "Count the fights. The two low players die in two or three rounds if you keep beating them, and every round you beat them you take no damage. That is a guaranteed second place, worth far more than the difference between second and first. Rolling for a board that might beat first means losing to the low players while you are mid-transition, which is how a locked second turns into a fourth. Level 9 with 52 gold does not cap a board this round either.\n\nOnce the two low players are out, spend everything: at that point the only question is whether you can beat first, and gold in the bank does nothing.",
   "principle": "Play for the placement you can actually reach. Lock it, then gamble with what is left.",
   "guideLink": "/guides/hp#playing-for-top-4-with-a-6th-place-board",
-  "commonMistake": "Seeing first place as the goal in every lobby, and turning a sure second into a coin flip."
+  "commonMistake": "Seeing first place as the goal in every lobby, and turning a sure second into a coin flip.",
+  "hint": "Count how many rounds the two low players survive if you keep beating them, and what you risk if you are mid-transition when you face them.",
+  "lesson": "endgame-placement"
 }

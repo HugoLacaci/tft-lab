@@ -1,0 +1,88 @@
+{
+  "id": "welcome-which-trait-is-active",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-2, level 5, four units on the board: Leona, Varus, Xayah and Karma. The trait panel reads Rapidfire 2, then Defender, Solar, Inferno, Elderwood, Fae, Blossom and Spellweaver all at 1. Which of these traits is giving you a bonus right now?",
+  "state": {
+    "stage": "2-2",
+    "gold": 10,
+    "hp": 100,
+    "level": 5,
+    "xpToNext": 20,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Kobuko",
+      "DA_18_Camille",
+      "DA_18_Sentry",
+      "DA_18_RekSai",
+      "DA_18_Yorick"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "rapidfire",
+        "label": "Only Rapidfire: Varus and Xayah reach its first breakpoint of 2"
+      },
+      {
+        "id": "all",
+        "label": "All of them a little: every trait icon on the panel counts for something"
+      },
+      {
+        "id": "defender",
+        "label": "Rapidfire and Defender: Leona is a strong Defender on her own"
+      },
+      {
+        "id": "none",
+        "label": "None yet: traits only activate from stage 3"
+      }
+    ],
+    "correct": [
+      "rapidfire"
+    ]
+  },
+  "explanation": "A trait pays out only when the board reaches one of its breakpoints. Rapidfire starts at 2, Varus plus Xayah make 2, so the whole team has bonus attack speed and those two gain more with every attack. Defender starts at 2 and Leona is 1 of 2; Solar and Blossom start at 3; Fae, Inferno, Elderwood and Spellweaver all sit at 1. Those seven icons show what you could switch on, not what is on.\n\n'A little each' is the natural guess and it is exactly wrong: traits are all or nothing at each breakpoint. Below the first number, a trait is decoration.",
+  "principle": "A trait below its first breakpoint gives nothing. The panel shows potential, not power.",
+  "guideLink": "/guides/welcome#traits-and-breakpoints",
+  "commonMistake": "Counting every grey trait icon as a small bonus and building a board of eight traits at 1.",
+  "hint": "For each trait on the panel, compare the number you have with the first number in its breakpoint list.",
+  "lesson": "welcome-traits"
+}

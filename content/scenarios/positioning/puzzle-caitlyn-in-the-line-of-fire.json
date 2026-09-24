@@ -121,5 +121,7 @@
   "explanation": "Sentinel, Karma and Caitlyn stand stacked in column 3, one behind the other, which is the line an arrow through your frontline follows. His arrow picks the line with the most enemies, so every cast goes through your tank, your support and your carry. Swap Caitlyn with Kobuko: Caitlyn moves to column 0 in row 2, off the line and still in range, and Kobuko becomes the body in the column that takes the arrow.\n\nSwapping Karma out instead still leaves two units in the column, and Caitlyn is the one you cannot afford to lose.",
   "principle": "Against line damage, never stack your important units in one column. Give the line a tank and a body, not a carry.",
   "guideLink": "/guides/positioning#spread-vs-clump",
-  "commonMistake": "Moving the tank off the column instead of the carry, which just makes the carry the first thing the arrow reaches."
+  "commonMistake": "Moving the tank off the column instead of the carry, which just makes the carry the first thing the arrow reaches.",
+  "hint": "Look for the column where three of your units stand one behind the other, and ask which of them you can least afford to lose.",
+  "lesson": "positioning-spread-clump"
 }

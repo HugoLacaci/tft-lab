@@ -81,5 +81,7 @@
   "explanation": "A melee carry has to reach the enemy to deal damage, so the back row is wrong: he would walk the whole board while the fight happens without him. The front row is also wrong: he takes the first hits and every enemy cast before your tanks do. Row 1, directly behind the tank line, is the answer. Your tanks engage first, take the aggro, and Yi steps forward one hex into a fight where the enemy is already busy.\n\nColumn 2 or 3 keeps him behind two of your three tanks. Column 4 behind Rammus works too but leaves his other side open.",
   "principle": "Melee carries sit one row behind the tanks: close enough to engage, protected for the first seconds.",
   "guideLink": "/guides/positioning#melee-carries",
-  "commonMistake": "Treating every carry as a backliner and dropping Master Yi in row 3, where he arrives to the fight last."
+  "commonMistake": "Treating every carry as a backliner and dropping Master Yi in row 3, where he arrives to the fight last.",
+  "hint": "Check Yi's range and how far he walks from each row before he attacks; then look at who takes the first hits in row 0.",
+  "lesson": "positioning-front-and-back"
 }

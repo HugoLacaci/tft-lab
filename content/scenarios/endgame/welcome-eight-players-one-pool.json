@@ -1,0 +1,102 @@
+{
+  "id": "welcome-eight-players-one-pool",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 5, 14 gold. You own two copies of a 1-cost tank and the shop shows a third. While scouting you saw that Seat 2 and Seat 7 each field a 2-star of the same tank. Buy it now, or wait for a better moment?",
+  "state": {
+    "stage": "2-5",
+    "gold": 14,
+    "hp": 88,
+    "level": 5,
+    "xpToNext": 16,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:tank-1",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:support-2",
+      "generic:bruiser-2",
+      "generic:caster-1",
+      "generic:assassin-1"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 80,
+        "note": "2-star copy of your 1-cost tank on the board"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 76,
+        "note": "2-star copy of your 1-cost tank on the board"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "buy",
+        "label": "Buy it now: there are 30 copies in the shared pool and eight are already taken, so it gets rarer every round"
+      },
+      {
+        "id": "later",
+        "label": "Skip it and refresh later: 1-costs are so common that a third copy shows up whenever you want it"
+      },
+      {
+        "id": "two",
+        "label": "Wait until you see two copies in one shop, so you can 2-star and keep a spare"
+      }
+    ],
+    "correct": [
+      "buy"
+    ]
+  },
+  "explanation": "All eight players buy from one shared pool: 30 copies of every 1-cost champion, 25 of each 2-cost, down to 9 of each 5-cost. Two other players holding a 2-star means six copies gone, your two make eight, and every copy anyone buys from now on is one you never see. The third copy in your shop right now is a 1-gold 2-star; in three rounds it may not exist.\n\n'It will show up later' is true for a champion nobody else is playing. When two boards already run it, later is exactly when the shop stops showing it.",
+  "principle": "The shop draws from a pool the other seven players are emptying; a copy you need is worth buying when you see it.",
+  "guideLink": "/guides/welcome#what-is-tft",
+  "commonMistake": "Treating 1-costs as infinite and skipping the third copy because it 'always comes back'.",
+  "hint": "Count how many copies of that tank are already sitting on boards across the lobby, including yours.",
+  "lesson": "welcome-the-basics"
+}

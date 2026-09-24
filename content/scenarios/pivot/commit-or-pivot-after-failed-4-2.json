@@ -1,0 +1,149 @@
+{
+  "id": "commit-or-pivot-after-failed-4-2",
+  "category": "pivot",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2, level 8, 38 HP. You rolled 40 gold for a second copy of your 4-cost AD carry: you found one, so you hold a pair, plus a 2-star 4-cost tank. On the way you bought one copy of a 4-cost AP caster that a stats site rates above your carry. You have 18 gold, a loose tank component and a loose AP component. Commit or pivot?",
+  "state": {
+    "stage": "4-2",
+    "gold": 18,
+    "hp": 38,
+    "level": 8,
+    "xpToNext": 60,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-4",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-3",
+        "row": 3,
+        "col": 6,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-4",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:caster-4",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": [
+      "generic:item:tank",
+      "generic:item:ap"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 3",
+        "hp": 70,
+        "note": "2-star of your carry with three items"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 55,
+        "note": "One copy of your carry on the bench"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 62,
+        "note": "2-star of the AP caster with two AP items"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "commit",
+        "label": "Commit: stop rolling, slam the tank component on the 2-star tank, keep the carry pair, sell the caster, position defensively, and roll for the third copy at 4-5 with 18 plus two rounds of income"
+      },
+      {
+        "id": "pivot",
+        "label": "Pivot: sell the carry pair for 8, keep the caster and the AP component, and roll 26 for two more caster copies"
+      },
+      {
+        "id": "roll-on",
+        "label": "Roll the last 18 now: one copy finishes the 2-star and everything else is secondary"
+      }
+    ],
+    "correct": [
+      "commit"
+    ]
+  },
+  "explanation": "A pivot after a failed rolldown is only a pivot if the rolldown found the new line for you. It found one copy of a caster whose 2-star Seat 4 already owns with two AP items: you would start a contested line from one copy, 26 gold and one component, with no board while you do it. That is damage control that ends 7th.\n\nWhat the rolldown did find is worth keeping: the tank 2-star with a slammed item slows the bleeding, and the carry pair is one copy from the board you planned. Count the pool: 10 copies, you hold 2, Seat 3 holds 3, Seat 6 holds 1, so 4 remain and one shop shows one about 5% of the time. The last 18 gold is nine shops, roughly one chance in three, and a miss leaves you at 0 gold and 38 HP taking 13 a loss. At 4-5 you have about 30, fifteen shops, closer to a coin flip.\n\nSo: slam everything, 2-star what you found, position for the next opponent, and roll once more at 4-5 with a floor. Selling the caster returns 4 gold and a bench slot; it was never a line.",
+  "principle": "After a failed rolldown, pivot only to what the rolldown actually found; otherwise commit, stabilise and roll again with income.",
+  "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+  "commonMistake": "Selling the carry pair for a single copy of a higher-rated unit and rolling 26 gold into a line another player already 2-starred.",
+  "hint": "Count the copies of both 4-costs still in the pool, then ask what each choice leaves you with at 0 gold and 38 HP if it misses.",
+  "lesson": "pivot-execution"
+}

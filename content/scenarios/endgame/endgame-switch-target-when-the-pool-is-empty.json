@@ -1,0 +1,145 @@
+{
+  "id": "endgame-switch-target-when-the-pool-is-empty",
+  "category": "endgame",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-1, level 8, 61 gold, 28 HP, five players left. Aphelios is 1-star with Rageblade, Infinity Edge and Last Whisper. Scouting: Seat 1 has a 2-star Aphelios plus two spare copies, Seat 4 has a 2-star, Seat 6 has one and is at 9 HP. Nobody in the lobby plays Sivir, and one is in your shop. What is the rolldown target?",
+  "state": {
+    "stage": "5-1",
+    "gold": 61,
+    "hp": 28,
+    "level": 8,
+    "xpToNext": 46,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Krug18",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 2,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_CrimsonRaptor18",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Aphelios",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Sivir",
+      "DA_18_Teemo",
+      "DA_18_Cassiopeia",
+      "DA_18_Shen",
+      "DA_18_Camille"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 1",
+        "hp": 81,
+        "note": "Aphelios 2-star with two spare copies on the bench"
+      },
+      {
+        "player": "Seat 3",
+        "hp": 47,
+        "note": "Coven Morgana; no Sivir anywhere in the lobby"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 55,
+        "note": "Aphelios 2-star with three items"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 9,
+        "note": "One Aphelios; loses to everyone"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "sivir",
+        "label": "Buy the Sivir, move the three items to her, roll to 10 for her 2-star and sell Aphelios once she is in"
+      },
+      {
+        "id": "aphelios",
+        "label": "Roll to 10 for Aphelios: Seat 6 dies this round and his copy comes back, and the shop only has to show two"
+      },
+      {
+        "id": "hold",
+        "label": "Hold 50, level 9 at 5-2 and roll there for a 5-cost carry instead of any 4-cost"
+      },
+      {
+        "id": "bodies",
+        "label": "Keep Aphelios and roll for Rapidfire 2-stars around him; a 1-star carry with the trait still does damage"
+      }
+    ],
+    "correct": [
+      "sivir"
+    ]
+  },
+  "explanation": "Count. Ten Aphelios exist: you hold one, Seat 1 five, Seat 4 three, Seat 6 one. That is ten. The pool has zero, a shop cannot show what is not in the pool, and a rolldown for Aphelios hits nothing until someone dies. When Seat 6 goes, one copy returns: one in roughly 115 four-cost copies, 0.26% per slot, one shop in 75. You need two.\n\nThe items are the carry, not the unit. Rageblade, Infinity Edge and Last Whisper fit any ranged AD 4-cost, and Sivir is one nobody holds: ten copies in the pool, about 2.6% per slot, one shop in eight, and twenty-odd shops find two more copies most of the time. You lose Rapidfire on the carry and gain a 2-star with three items, which beats a 1-star with a trait every time. Levelling to 9 at 28 HP means one loss at 20 damage before you have rolled at all. Rolling for bodies around a carry who cannot kill anything fixes the wrong half of the board.",
+  "principle": "When the pool count says zero, the target changes, not the floor. Items make a carry; the champion is whoever the pool can still give you.",
+  "guideLink": "/guides/rolling#contest-math",
+  "commonMistake": "Rolling for the unit the items were built for after the lobby has bought every copy of it.",
+  "hint": "Add up every Aphelios you can see across the other four players and compare the total with the size of a 4-cost pool.",
+  "lesson": "endgame-last-rolldown"
+}

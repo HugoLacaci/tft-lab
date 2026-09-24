@@ -86,5 +86,7 @@
   "explanation": "Ionic Spark is an aura: it only affects enemies within a few hexes of its holder. Your casters are Cassiopeia, Karma and Teemo, and the enemies you want shredded are the ones they hit, which are the enemy frontliners standing against your tanks. So the aura wants to be in the front row. Sett or Alistar both work; Sett is the main tank and stays alive longest, so he is the best holder.\n\nOn Cassiopeia in the back row the aura covers nothing until the enemy is already on top of her, and it takes a slot from a real damage item.",
   "principle": "Aura items go where the enemies are, which means the frontline, on the unit that survives longest.",
   "guideLink": "/guides/items#who-gets-the-tank-item",
-  "commonMistake": "Giving Ionic Spark to the AP carry because the tooltip mentions magic resist."
+  "commonMistake": "Giving Ionic Spark to the AP carry because the tooltip mentions magic resist.",
+  "hint": "Read how far the Spark's aura reaches, then look at where the enemies you want shredded will be standing.",
+  "lesson": "items-holders"
 }

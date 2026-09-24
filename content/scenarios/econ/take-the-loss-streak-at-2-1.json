@@ -1,0 +1,101 @@
+{
+  "id": "take-the-loss-streak-at-2-1",
+  "category": "econ",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1 augment round, 100 HP, level 4 with 10 gold. Your opener is four unpaired 1-costs and one tank component; the two strongest boards in the lobby already have 2-stars with an item. Stage 2 losses cost 2 to 4 HP, stage 3 losses 8 to 10, and the curve turns at 3-5. Which plan do you commit to?",
+  "state": {
+    "stage": "2-1",
+    "gold": 10,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 18,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:bruiser-1"
+    ],
+    "items": [
+      "generic:item:tank"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 100,
+        "note": "2-star 1-cost carry with a completed item, three units of one trait"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 100,
+        "note": "Two 2-stars, holding two components"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "streak-exit",
+        "label": "Take the loss streak: buy pairs only, bank to 50 by 3-1, keep losing through 3-2, and convert at 3-5 with level 7 and a rolldown"
+      },
+      {
+        "id": "fight",
+        "label": "Fight for the win streak: roll the 10 gold for pairs now, since a win streak pays the same"
+      },
+      {
+        "id": "open-ended",
+        "label": "Loss-streak with no fixed round: keep banking until HP reaches 40, then roll"
+      },
+      {
+        "id": "to-4-2",
+        "label": "Loss-streak to 4-2 for the maximum streak gold and a level-8 rolldown"
+      }
+    ],
+    "correct": [
+      "streak-exit"
+    ]
+  },
+  "explanation": "You are not choosing whether to lose stage 2; the two boards with itemised 2-stars decided that. You are choosing whether to be paid for it. From 2-1 to 3-3 is eight fights; the streak gold climbs from 1 to 3 across them and adds about 15 gold on top of interest, which is why you reach 50 around 3-1 instead of 3-5. The HP bill is five stage 2 losses at 3 and three stage 3 losses at 9, roughly 42, so you reach 3-5 near 58 HP with 60 or more gold. Level 7 at 3-5 with 40 to roll, while the lobby sits at 6 holding 50, is the whole point.\n\nThe exit is a round, not an HP number. At 3-5 a loss starts costing 12 to 15 and the streak still pays 3, so from there every loss is a bad trade. Streaking to 4-2 adds three losses at that price, about 35 HP, and you convert near 25 HP under panic. Waiting for 40 HP is the same mistake with a different clock: it triggers around 4-1, after the curve turned.\n\nRolling 10 gold at 2-1 for pairs is losing the same fights with no interest.",
+  "principle": "A loss streak is an income line with an exit round chosen at the start: convert at 3-5, before the damage curve makes losses expensive.",
+  "guideLink": "/guides/economy#loss-streaking-on-purpose",
+  "commonMistake": "Loss-streaking with no exit round and converting at 4-2 from 25 HP, which is losing with extra steps.",
+  "hint": "Add up the streak gold and the HP over the rounds until 3-5, then do the same sum for the rounds until 4-2.",
+  "lesson": "econ-loss-streaks"
+}

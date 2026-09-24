@@ -159,5 +159,7 @@
   "explanation": "Kennen does not walk into your tanks; his cast carries him through a group of enemies and the firestorm hits everything around where he stops. Three casters in a row on the back line are exactly the group he picks. Spread them so that no two are adjacent: Ahri in one back corner, Yunara in the other, Karma on row 2 behind the tanks. Now the biggest group on your board is Sett, Maokai and Yorick, which is where the rush goes, and the firestorm catches at most one caster.\n\nTaric between them keeps the group, and the shield does not stop a firestorm that hits three units. Ahri on row 1 hands Kennen your carry.",
   "principle": "When a cast seeks groups, decide which group it finds. Make it the tanks.",
   "guideLink": "/guides/positioning#spread-vs-clump",
-  "commonMistake": "Trusting the frontline to stop a champion whose ability is a dash."
+  "commonMistake": "Trusting the frontline to stop a champion whose ability is a dash.",
+  "hint": "Read how Kennen picks where to go, then count the units in your largest group and which units are in it.",
+  "lesson": "positioning-counter"
 }

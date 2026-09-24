@@ -1,0 +1,106 @@
+{
+  "id": "reject-the-top-rated-augment",
+  "category": "augment",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2 gold augment, level 6, 51 gold, 61 HP. You are on a 2-cost reroll: the carry is 2-star with two items and you hold 7 of her 9 copies, with two more on other boards. A loose AD component combines with nothing. The stats site's top gold augment this patch is Level Up! (8 XP now, +2 XP a round). The others are Item Anvil and Backline Tempo. Which do you take?",
+  "state": {
+    "stage": "4-2",
+    "gold": 51,
+    "hp": 61,
+    "level": 6,
+    "xpToNext": 10,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-1",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": [
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "augment",
+    "options": [
+      "generic:aug:tempo-xp",
+      "generic:aug:item-completed",
+      "generic:aug:combat-backline-as"
+    ],
+    "correct": "generic:aug:item-completed"
+  },
+  "explanation": "The number on the site is the average placement of players who took Level Up!, almost all of them fast-8 boards at 4-2, for whom 8 XP is level 8 a round early. Your board is level 6 on purpose. At 6 a 2-cost is 40% of a slot; at 7 it is 30%. With 16 copies of your carry in a 2-cost pool of about 265, one slot shows her 2.4% of the time at 6 and 1.8% at 7. Over the 20 rolls you will make from interest this stage, that is 2.4 expected copies against 1.8, and you need exactly 2. The top-rated augment moves you from hitting the 3-star to probably not.\n\nItem Anvil is power this round and every round after: a third completed item on the carry, chosen from four, and no more hoping the 4-7 drop pairs the dead component. Backline Tempo is the acceptable second; 20% attack speed on a real carry is fine, but a completed item is more.\n\nFramework, question two: does it fit the econ plan you chose at 3-2? Level Up! fails it.",
+  "principle": "An augment that is best on average is best for the plan the average player was on; check it against yours before the tier list.",
+  "guideLink": "/guides/augments#why-the-highest-winrate-augment-is-wrong-for-you",
+  "commonMistake": "Taking the top-rated XP augment on a reroll board and levelling away the odds for the last two copies.",
+  "hint": "Ask what each augment does to the odds of the two copies you still need, at the level you have chosen to sit at.",
+  "lesson": "augments-vs-board"
+}

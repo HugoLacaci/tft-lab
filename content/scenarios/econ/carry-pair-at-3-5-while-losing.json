@@ -1,0 +1,116 @@
+{
+  "id": "carry-pair-at-3-5-while-losing",
+  "category": "econ",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 7, 50 gold, 44 HP on a 4-loss streak that costs about 9 HP a round. Your 3-cost carry is 1-star with two completed items and a second copy sits on the bench. The 4-2 rolldown is three rounds away and the shop has nothing. Do you roll below 50 for the third copy?",
+  "state": {
+    "stage": "3-5",
+    "gold": 50,
+    "hp": 44,
+    "level": 7,
+    "xpToNext": 28,
+    "streak": {
+      "type": "loss",
+      "count": 4
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-3",
+      "generic:support-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "roll-stop",
+        "label": "Roll now, buy every copy, and stop at the 2-star or at 30 gold, whichever comes first"
+      },
+      {
+        "id": "hold",
+        "label": "Hold 50: the 4-2 rolldown is three rounds away and interest is 5 a round"
+      },
+      {
+        "id": "roll-zero",
+        "label": "Roll to 0 until the copy appears; at 44 HP nothing else matters"
+      }
+    ],
+    "correct": [
+      "roll-stop"
+    ]
+  },
+  "explanation": "This is the pair worth breaking 50 for. At level 7 a 3-cost is 43% of every slot, and with 16 of your carry's 18 copies in the pool one shop shows it about 14% of the time. Ten shops, 20 gold, find it roughly four times in five; the expected cost is around 14. What you buy is a 2-star carry holding two completed items, which flips the fights you are losing at 9 HP each: three rounds of that is 27 HP, and stage 4 losses cost 12 to 15.\n\nHolding costs the same gold in a different currency. Sitting at 50 pays 5 a round and the rolls cost about 2 interest a round for three rounds, so the roll is 20 gold plus 6 interest against 27 HP of losses you do not have to take.\n\nRolling to 0 is the other mistake. At 44 HP you are above the two-losses line for stage 3, so there is no emergency. If 20 gold misses, the pool is telling you the unit is contested and you need the 30 you kept for 4-2. The stop is set before the first roll, not after the tenth.",
+  "principle": "A pair of the itemised carry on a losing board is the one pair that justifies dipping under 50, with a stop decided first.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Holding 50 through three losses to 'save for 4-2' and arriving there at 17 HP with a 1-star carry.",
+  "hint": "Work out what one shop costs, how often it shows the copy at your level, and what three more losses cost in HP.",
+  "lesson": "econ-pairs-and-rolls"
+}

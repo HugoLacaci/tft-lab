@@ -1,0 +1,103 @@
+{
+  "id": "welcome-first-game-plan-at-4-1",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 6, 58 gold, 61 HP, three losses in a row. You are 14 XP from level 7. Your carry is a 1-star 3-cost with two items and your tank is a 2-star 2-cost; the rest of the board is 2-star 1- and 2-costs. This is the round the plan has been saving for. What do you do?",
+  "state": {
+    "stage": "4-1",
+    "gold": 58,
+    "hp": 61,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:support-1",
+      "generic:carry-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "level-roll",
+        "label": "Buy level 7 (14 gold), then roll down to about 20 gold looking for the 2-star on your carry and a stronger seventh unit"
+      },
+      {
+        "id": "hold",
+        "label": "Stay level 6 and keep the 58: 5 interest a round is too good to give up"
+      },
+      {
+        "id": "roll-6",
+        "label": "Roll all 58 at level 6 without levelling; 3-costs are 25% at level 6 and you need the carry copies"
+      }
+    ],
+    "correct": [
+      "level-roll"
+    ]
+  },
+  "explanation": "4-1 is the round the plan saves for: level 7, then roll. At level 7 the shop shows 3-costs 43% of the time per slot (25% at level 6) and 4-costs at 10% instead of 5%, so every 2 gold you roll after levelling is worth almost twice as much for the carry you need. Level first, because it also adds a seventh unit to a board that is losing. 58 minus 14 leaves 44; rolling to about 20 keeps 2 interest and gives you twelve refreshes at the better odds. Stop when the carry is 2-star or when you reach the gold you promised to keep.\n\nHolding at 61 HP on three losses means stage-4 losses of 10 or more HP each while you earn 5 interest: the maths does not work. Rolling at level 6 without levelling spends the same gold at half the odds and leaves you a unit short for the whole of stage 4. Level, then roll; not the other way round and not neither.",
+  "principle": "At 4-1: level to 7 first, then roll for the upgrades. The bank was for this.",
+  "guideLink": "/guides/welcome#your-first-game-plan",
+  "commonMistake": "Rolling at 4-1 before buying level 7, or sitting on 50 gold at 60 HP because interest feels safer than spending.",
+  "hint": "Compare the 3-cost and 4-cost odds at level 6 and level 7, and count the HP three more stage-4 losses would cost.",
+  "lesson": "welcome-first-game-plan"
+}

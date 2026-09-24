@@ -22,6 +22,7 @@ export const NAV: readonly NavItem[] = [
   { href: "/lab", label: "Lab", short: "Lab", glyph: "lab" },
   { href: "/guides", label: "Guides", glyph: "guides" },
   { href: "/tracker", label: "Tracker", glyph: "tracker" },
+  { href: "/trainer/welcome", label: "Learn TFT", glyph: "guides", secondary: true },
   { href: "/routine", label: "Routine", glyph: "routine", secondary: true },
   { href: "/compete", label: "Compete", glyph: "compete", secondary: true },
   { href: "/resources", label: "Resources", glyph: "resources", secondary: true },

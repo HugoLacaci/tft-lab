@@ -1,0 +1,83 @@
+{
+  "id": "welcome-second-defender",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-1, level 4, 6 gold. Leona (Solar, Defender), Varus (Inferno, Rapidfire) and Yunara (Blossom, Executioner) are on the board with one free slot. The shop offers five 1-cost champions: Ornn, Camille, Rakan, Kobuko and Veigar. Which one do you buy for the fourth slot?",
+  "state": {
+    "stage": "2-1",
+    "gold": 6,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 18,
+    "streak": {
+      "type": "win",
+      "count": 0
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Yunara",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Ornn",
+      "DA_18_Camille",
+      "DA_18_Rakan",
+      "DA_18_Kobuko",
+      "DA_18_Veigar"
+    ],
+    "items": [
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "ornn",
+        "label": "Ornn (Elderwood, Defender): with Leona that makes Defender 2"
+      },
+      {
+        "id": "camille",
+        "label": "Camille (Coven, Ravager): a melee fighter to stand in front"
+      },
+      {
+        "id": "rakan",
+        "label": "Rakan (Fae, Juggernaut, Vanguard): three traits is more than the others bring"
+      },
+      {
+        "id": "veigar",
+        "label": "Veigar (Blackthorn, Sprykin, Spellweaver): a second spell caster for the back row"
+      }
+    ],
+    "correct": [
+      "ornn"
+    ]
+  },
+  "explanation": "Ornn shares Defender with Leona, and Defender switches on at 2: the whole team gains armour and magic resist, and the two Defenders gain more. That is a team-wide bonus for 1 gold, and Ornn is a tank, so he stands exactly where you need a body. Every other option adds traits sitting at 1 of 2 or 1 of 3, which is nothing.\n\nRakan is the trap: three icons look like more value, but Fae 1/2, Juggernaut 1/2 and Vanguard 1/2 are three bonuses you do not have. Traits count on the board, not on the card.",
+  "principle": "When costs are equal, buy the champion that reaches a breakpoint with what you already field.",
+  "guideLink": "/guides/welcome#traits-and-breakpoints",
+  "commonMistake": "Picking the unit with the most trait icons instead of the one whose trait actually activates.",
+  "hint": "Find the trait on your panel sitting at 1 of 2, then look for the champion in the shop that shares it.",
+  "lesson": "welcome-traits"
+}

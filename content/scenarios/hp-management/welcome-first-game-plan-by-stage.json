@@ -1,0 +1,77 @@
+{
+  "id": "welcome-first-game-plan-by-stage",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Your first game plan, stage by stage. Put the steps in the order you carry them out from stage 2 to stage 4.",
+  "state": {
+    "stage": "2-1",
+    "gold": 8,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 20,
+    "streak": {
+      "type": "win",
+      "count": 0
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:carry-1",
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:tank-2",
+      "generic:bruiser-2"
+    ],
+    "items": [
+      "generic:item:ad",
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Level to 7 at 4-1, then roll for the 2-star upgrades your board is missing",
+      "Buy pairs and field every 2-star you make; level to 5 at 2-5",
+      "Commit to one direction from 4-2 on: your augments, your items and the units you already have decide it",
+      "Level to 6 at 3-2 and combine your components into two items on the units you have",
+      "Save toward 50 gold through the rest of stage 3 while the board holds"
+    ],
+    "correctOrder": [
+      1,
+      3,
+      4,
+      0,
+      2
+    ]
+  },
+  "explanation": "Stage 2 is about the board: buy pairs, turn them into 2-stars, put the 2-stars on the board, and take level 5 at 2-5 so the fifth unit fights. At 3-2 you level to 6 with the lobby and slam two completed items on the units you actually have; an item on the board wins fights now, a component on the bench wins nothing. The rest of stage 3 is the save: with a stable board you buy nothing and let interest take you to 50. At 4-1 you level to 7 and spend the bank rolling for the 2-star upgrades your carry and tank are missing. From 4-2 you commit: one direction, chosen from your augments, your items and the units you already have, and you stop saving for a plan that has not started.\n\nThe order matters because each step pays for the next. Skipping the save means arriving at 4-1 with nothing to roll. Rolling in stage 3 instead of saving is the same mistake. Committing before 4-2 locks you into whatever you had at 3-2, which is usually not much.",
+  "principle": "Strongest board, then save, then level and roll at 4-1, then commit. In that order.",
+  "guideLink": "/guides/welcome#your-first-game-plan",
+  "commonMistake": "Rolling in stage 3 for upgrades and then having no bank for the level-7 rolldown at 4-1 where the upgrades actually appear.",
+  "hint": "Work forwards from stage 2 and ask, for each step, what it costs and where the gold for it comes from.",
+  "lesson": "welcome-first-game-plan"
+}

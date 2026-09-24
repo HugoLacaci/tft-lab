@@ -7,6 +7,7 @@ import { setDisplayName } from "@/lib/set-meta";
 export const metadata = { title: "Guides" };
 
 const PILLARS: { id: string; title: string; blurb: string }[] = [
+  { id: "start", title: "Start here", blurb: "Never played? What the game is and how a round works, with nothing assumed. Pairs with the Welcome lessons in the Trainer." },
   { id: "economy", title: "Economy & tempo", blurb: "Gold, XP, rolling. The three levers and how they trade against each other." },
   { id: "board", title: "Board & items", blurb: "Items, augments, positioning: turning gold into a board that wins fights." },
   { id: "game", title: "Reading the game", blurb: "Scouting, HP, stage plans, pivots: the decisions that depend on the other seven players." },

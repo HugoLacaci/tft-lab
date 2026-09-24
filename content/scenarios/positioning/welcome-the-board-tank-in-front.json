@@ -1,0 +1,80 @@
+{
+  "id": "welcome-the-board-tank-in-front",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-2, level 4, three units on the board. Your 2-star bruiser stands in the middle of the front row; your two ranged units stand in the back. You just bought a third copy of your tank and it became a 2-star on the bench. Place it where it does its job: taking the hits.",
+  "state": {
+    "stage": "2-2",
+    "gold": 6,
+    "hp": 96,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:tank-1",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-1",
+      "generic:caster-2",
+      "generic:tank-2",
+      "generic:carry-1",
+      "generic:bruiser-2"
+    ],
+    "items": [
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:tank-1",
+    "correctHexes": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 0,
+        "col": 4
+      }
+    ]
+  },
+  "explanation": "Enemy units walk toward the closest thing on your board and hit it. Row 0 is the front line: a unit there is the first thing they meet. The tank is built to be hit, so it belongs there, next to the bruiser you already have. Either side of him, (0,2) or (0,4), is right: two bodies side by side in the centre catch every enemy that walks up the middle, and neither has to fight alone.\n\nA front hex on the far edge is worse: the tank fights its own private battle in the corner while the bruiser takes everything else. The back row is the actual mistake: a tank behind the carries is a tank that does nothing until the carries are already dead, and the enemy walks past it to reach them. Front row for the units that take damage, back row for the units that deal it.",
+  "principle": "Tanks in the front row, beside each other, so every enemy bumps into them first.",
+  "guideLink": "/guides/welcome#the-board",
+  "commonMistake": "Dropping a new unit on any free hex, often in the back next to the carries, so the tank never gets hit and the carry does.",
+  "hint": "Find the row the enemy reaches first and the unit already standing there. The new tank wants to be its neighbour.",
+  "lesson": "welcome-the-board"
+}

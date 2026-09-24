@@ -1,0 +1,109 @@
+{
+  "id": "econ-interest-sit-at-50",
+  "category": "econ",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6, exactly 50 gold, 74 HP, fights alternating wins and losses. The shop shows a second copy of a 2-cost support that sits on your bench and is not on your board (2 gold), plus units you do not play. What do you buy?",
+  "state": {
+    "stage": "3-3",
+    "gold": 50,
+    "hp": 74,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:support-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:tank-1",
+      null,
+      "generic:bruiser-2",
+      null
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "nothing",
+        "label": "Nothing: 50 gold earns the maximum 5 interest, and a pair of a unit that is not on your board changes no fight"
+      },
+      {
+        "id": "pair",
+        "label": "Buy the support copy (48 gold): 2-stars start with pairs and it is only 2 gold"
+      },
+      {
+        "id": "pair-roll",
+        "label": "Buy the copy and refresh once for the third: a 2-star support would round out the board"
+      }
+    ],
+    "correct": [
+      "nothing"
+    ]
+  },
+  "explanation": "50 is the ceiling for interest: 5 gold a round for holding 50 or more. Drop to 48 and you earn 4 next round, so the pair costs 2 gold plus 1 gold of interest, 3 gold for a unit that is not on your board and that you would still need a third copy of. Small buys like this, made every round, are how a player who 'reached 50' shows up at 4-1 with 38.\n\nThe rule for sitting at 50: buy only what goes on the board this round and changes a fight, or what makes a 2-star of a unit already on the board. A bench pair of a support you do not field is neither. Refreshing for the third copy compounds it: 4 gold plus interest, at level 6 where that 2-cost is one of many 2-cost slots, for a 2-star you did not plan to play. Hold the 50, take the 10 gold income, and spend it at 4-1 where it buys level 7 and a rolldown.",
+  "principle": "At 50, buy only what goes on the board and changes a fight. Everything else costs its price plus interest.",
+  "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+  "commonMistake": "Nibbling at 50 gold with 2-gold 'cheap' pairs and never actually earning the 5 interest that reaching 50 was for.",
+  "hint": "Work out what your interest is at 50 and at 48, and whether the support would even be on the board after you buy it.",
+  "lesson": "econ-interest-basics"
+}

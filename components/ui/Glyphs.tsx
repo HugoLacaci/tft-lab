@@ -4,7 +4,39 @@ import type { ScenarioCategory } from "@/lib/scenario-categories";
  * Line glyphs (currentColor, 24×24) for the trainer categories and a few
  * site-wide marks. Kept as plain SVG so they inherit the text colour.
  */
-const P: Record<ScenarioCategory | "puzzle" | "daily" | "trainer" | "lab" | "guides" | "comps" | "set" | "search" | "menu" | "close" | "tracker" | "routine" | "compete" | "resources" | "patch" | "bolt" | "arrow", React.ReactNode> = {
+const P: Record<ScenarioCategory | "puzzle" | "daily" | "trainer" | "lab" | "guides" | "comps" | "set" | "search" | "menu" | "close" | "tracker" | "routine" | "compete" | "resources" | "patch" | "bolt" | "arrow" | "hint" | "path" | "replay" | "spark" | "lock" | "check", React.ReactNode> = {
+  hint: (
+    <>
+      <path d="M9 18h6M10 21h4" />
+      <path d="M12 3a6 6 0 0 0-3.5 10.9c.7.5 1 1.3 1 2.1h5c0-.8.3-1.6 1-2.1A6 6 0 0 0 12 3z" />
+    </>
+  ),
+  path: (
+    <>
+      <circle cx="5" cy="6" r="2" />
+      <circle cx="19" cy="18" r="2" />
+      <path d="M7 6h6a3 3 0 0 1 0 6h-2a3 3 0 0 0 0 6h6" />
+    </>
+  ),
+  replay: (
+    <>
+      <path d="M4 12a8 8 0 1 0 2.5-5.8" />
+      <path d="M4 4v5h5" />
+    </>
+  ),
+  spark: (
+    <>
+      <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" />
+      <path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" />
+    </>
+  ),
+  lock: (
+    <>
+      <rect x="5" y="11" width="14" height="10" rx="1" />
+      <path d="M8 11V7a4 4 0 0 1 8 0v4" />
+    </>
+  ),
+  check: <path d="M5 12.5l4.5 4.5L19 7" />,
   econ: (
     <>
       <circle cx="12" cy="12" r="8.5" />

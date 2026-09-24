@@ -1,0 +1,90 @@
+{
+  "id": "combat-augment-while-bleeding-at-3-2",
+  "category": "augment",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2 silver augment. You are level 6 with 39 gold at 48 HP on a 3-loss streak, losing about 8 HP a round. Your board is 2-star cheap units with one completed item on the carry, and you run two units of a trait whose next breakpoint is 4. Options: Sturdy Frontline (front two rows gain 150 HP and 12 armor), Compounding Interest (+1 interest per 10 gold, max +2) and Trait Heart (+1 to that trait). Which do you take?",
+  "state": {
+    "stage": "3-2",
+    "gold": 39,
+    "hp": 48,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-1",
+      "generic:caster-3",
+      "generic:support-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "augment",
+    "options": [
+      "generic:aug:combat-frontline",
+      "generic:aug:econ-interest",
+      "generic:aug:trait-plus-one"
+    ],
+    "correct": "generic:aug:combat-frontline"
+  },
+  "explanation": "48 HP at 8 a loss is six losses in stage 3, but stage 4 losses cost 12 to 15, so you have about four losses of decisions left and you are losing every round. That puts you on the floor side of the line: the augment has to make the next fight better.\n\nSturdy Frontline does exactly that: 150 HP and 12 armor on three frontliners, this round and every round after. Compounding Interest is the trap for a player who loves econ: you are at 39 and losing, so the extra interest only exists once you sit above 50, and even then it is 1 or 2 gold a round for ten rounds, cashed at 4-5 when the HP is gone. Trait Heart takes the trait from 2 to 3 with the breakpoint at 4: it does nothing until you find and field another unit, and nothing is not power this round.\n\nSilver augments are small, so the tie-break is always the one you can use before the timer ends.",
+  "principle": "Below 50 HP and losing, take the silver augment that changes the next fight, not the one that pays in stage 5.",
+  "guideLink": "/guides/augments#silver-gold-prismatic",
+  "commonMistake": "Taking the interest augment at 39 gold because it 'pays for itself', when it pays nothing until you are above 50 and still alive.",
+  "hint": "Count how many losses you have left at the damage you are taking now, then ask which augment does anything before those losses run out.",
+  "lesson": "augments-reading"
+}

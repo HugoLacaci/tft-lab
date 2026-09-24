@@ -160,5 +160,7 @@
   "explanation": "The Iron rule is that tanks stand together. The Master exception is a frontline built to punish that: Elder Dragon's every attack splashes onto adjacent units and Sejuani's cone hits the same cluster, so three tanks in a row means three tanks taking every hit. Sett and Maokai already share the splash; Taric should not. Put him one hex apart: column 5 on the front row, or row 1 column 4 or 5, where he still meets the enemy melee but is not adjacent to the pair. Column 0 works on the other side for the same reason. Column 4 and column 1 are adjacent to the pair and wrong.\n\nHis passive shields allies near him when he or his pair drops low, so one hex of separation costs nothing.",
   "principle": "Every default has the board that breaks it. Adjacent tanks share splash; against splash, leave a gap.",
   "guideLink": "/guides/positioning#spread-vs-clump",
-  "commonMistake": "Applying the tanks-together rule against the one comp that cleaves the whole line."
+  "commonMistake": "Applying the tanks-together rule against the one comp that cleaves the whole line.",
+  "hint": "Find the hexes adjacent to Sett and Maokai, and look for a front-row or row-1 hex that touches neither.",
+  "lesson": "positioning-multiple-threats"
 }

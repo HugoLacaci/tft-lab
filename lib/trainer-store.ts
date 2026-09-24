@@ -9,7 +9,10 @@ import { safeGet, safeRemove, safeSet } from "./storage";
 
 interface TrainerState {
   progress: Progress;
-  record: (scenarioId: string, category: ScenarioCategory, correct: boolean) => void;
+  record: (scenarioId: string, category: ScenarioCategory, correct: boolean, opts?: { hinted?: boolean }) => void;
+  /** "I'm Gold" → unlock the path up to that module index. */
+  setPlaced: (moduleIndex: number) => void;
+  markLessonPassed: (lessonId: string) => void;
   reset: () => void;
   hydrated: boolean;
   setHydrated: () => void;
@@ -30,7 +33,7 @@ export const useTrainer = create<TrainerState>()(
       progress: emptyProgress(),
       hydrated: false,
       setHydrated: () => set({ hydrated: true }),
-      record: (scenarioId, category, correct) => {
+      record: (scenarioId, category, correct, opts) => {
         const p = structuredClone(get().progress);
         const cat = p.perCategory[category] ?? { attempts: 0, correct: 0 };
         cat.attempts++;
@@ -42,10 +45,19 @@ export const useTrainer = create<TrainerState>()(
         const seen = p.seen[scenarioId] ?? { attempts: 0, correct: 0 };
         seen.attempts++;
         if (correct) seen.correct++;
+        seen.last = correct;
+        seen.at = Date.now();
+        if (opts?.hinted) seen.hinted = (seen.hinted ?? 0) + 1;
         p.seen[scenarioId] = seen;
         const entry = p.srs[scenarioId] ?? newEntry(scenarioId);
         p.srs[scenarioId] = review(entry, correct);
         set({ progress: p });
+      },
+      setPlaced: (moduleIndex) => set({ progress: { ...get().progress, placed: moduleIndex } }),
+      markLessonPassed: (lessonId) => {
+        const p = get().progress;
+        if (p.lessonsPassed?.[lessonId]) return;
+        set({ progress: { ...p, lessonsPassed: { ...(p.lessonsPassed ?? {}), [lessonId]: isoDay() } } });
       },
       reset: () => set({ progress: emptyProgress() }),
     }),

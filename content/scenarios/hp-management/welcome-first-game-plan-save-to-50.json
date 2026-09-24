@@ -1,0 +1,102 @@
+{
+  "id": "welcome-first-game-plan-save-to-50",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6, 42 gold, 78 HP. Your board has three 2-stars and two completed items and wins about half its fights. The shop shows nothing you own and nothing that would go on the board. You are 14 XP from level 7. What is the plan for the next two rounds?",
+  "state": {
+    "stage": "3-3",
+    "gold": 42,
+    "hp": 78,
+    "level": 6,
+    "xpToNext": 14,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:tank-1",
+      "generic:carry-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "save",
+        "label": "Buy nothing: income takes you to 50 by 3-5, and from there you earn the maximum 5 interest every round into stage 4"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh three times (6 gold) for a fourth 2-star; the board is only winning half its fights"
+      },
+      {
+        "id": "level",
+        "label": "Buy level 7 now (14 gold) for a seventh unit"
+      }
+    ],
+    "correct": [
+      "save"
+    ]
+  },
+  "explanation": "The plan says: once the board is stable, save to 50 and stay there. Stable does not mean winning everything; it means fights are close and HP is not draining. At 78 HP winning half the fights in stage 3, you are fine. From 42 gold, income of 5 plus interest of 4 takes you to 51 next round, and every round after that earns 10 gold. That bank is what pays for level 7 at 4-1 and the roll that follows, which is where the game is decided.\n\nRefreshing at 3-3 for a fourth 2-star is what the plan is designed to stop: 6 gold now costs 6 gold plus the interest on it for every round until 4-1, and the shop at level 6 is mostly 1- and 2-costs. Level 7 now is early: the standard is 4-1, and a seventh unit does not change a stable stage-3 board enough to justify sitting under 30 gold.",
+  "principle": "Stable board, no upgrades on screen: buy nothing and let the interest carry you to 50.",
+  "guideLink": "/guides/welcome#your-first-game-plan",
+  "commonMistake": "Refreshing 'a little' every round of stage 3 on a stable board and arriving at 4-1 with 30 gold instead of 60.",
+  "hint": "Count what 42 gold becomes after next round's income and interest, and what you would actually be buying with any gold you spend now.",
+  "lesson": "welcome-first-game-plan"
+}

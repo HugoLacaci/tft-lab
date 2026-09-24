@@ -1,0 +1,158 @@
+{
+  "id": "welcome-sell-what-you-do-not-need",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 6, 24 gold. Your bench is full. The shop shows the third copy of your 2-cost ranged carry, which would make it 2-star, but you cannot buy with no bench space. Two 1-cost assassins from stage 2 sit on the bench unused. What do you do?",
+  "state": {
+    "stage": "3-1",
+    "gold": 24,
+    "hp": 80,
+    "level": 6,
+    "xpToNext": 20,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:assassin-1",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      },
+      {
+        "championId": "generic:assassin-1",
+        "star": 1,
+        "items": [],
+        "slot": 2
+      },
+      {
+        "championId": "generic:support-2",
+        "star": 1,
+        "items": [],
+        "slot": 3
+      },
+      {
+        "championId": "generic:caster-1",
+        "star": 1,
+        "items": [],
+        "slot": 4
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "star": 1,
+        "items": [],
+        "slot": 5
+      },
+      {
+        "championId": "generic:tank-3",
+        "star": 1,
+        "items": [],
+        "slot": 6
+      },
+      {
+        "championId": "generic:carry-1",
+        "star": 1,
+        "items": [],
+        "slot": 7
+      },
+      {
+        "championId": "generic:support-3",
+        "star": 1,
+        "items": [],
+        "slot": 8
+      }
+    ],
+    "shop": [
+      "generic:carry-2",
+      "generic:tank-1",
+      "generic:caster-3",
+      "generic:bruiser-2",
+      "generic:support-1"
+    ],
+    "items": [
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "sell",
+        "label": "Sell one of the unused 1-cost assassins (you get the 1 gold back) and buy the carry copy"
+      },
+      {
+        "id": "skip",
+        "label": "Skip the copy: selling loses gold, and the carry will come around again"
+      },
+      {
+        "id": "tank",
+        "label": "Sell the 2-star tank on the board to make room"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh the shop so the copy goes away and you can stop worrying about it"
+      }
+    ],
+    "correct": [
+      "sell"
+    ]
+  },
+  "explanation": "Selling a 1-star returns exactly what you paid, so the assassin costs nothing to turn back into 1 gold and a bench slot. That slot lets you buy the third copy, and the three carries merge into a 2-star that goes straight onto the board. A bench full of units you are not using is not 'options'; it is the reason you cannot buy the upgrade in front of you.\n\n'Selling loses gold' is only true of 2-stars of 2-cost or higher. Selling the 2-star tank from the board is backwards: that unit is winning your fights.",
+  "principle": "Bench space is a resource. Sell what you are not going to play so the upgrade has somewhere to land.",
+  "guideLink": "/guides/welcome#the-shop-and-star-ups",
+  "commonMistake": "Hoarding stage-2 leftovers on the bench until the copy of a real unit cannot be bought.",
+  "hint": "Which bench units have not been on the board for two rounds, and what does each one sell for?",
+  "lesson": "welcome-the-shop"
+}

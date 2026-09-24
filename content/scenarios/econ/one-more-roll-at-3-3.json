@@ -1,0 +1,101 @@
+{
+  "id": "one-more-roll-at-3-3",
+  "category": "econ",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6, 71 HP, 2-win streak. You rolled once this round looking for a second copy of your 1-star 3-cost carry and saw nothing; you are now at 41 gold. The board is 2-starred everywhere else and winning. The voice says one more. Do you roll again?",
+  "state": {
+    "stage": "3-3",
+    "gold": 41,
+    "hp": 71,
+    "level": 6,
+    "xpToNext": 16,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-1",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "stop",
+        "label": "No. Stop at 41, bank, and roll again only at a planned point with a target and a stop"
+      },
+      {
+        "id": "one-more",
+        "label": "One more: it is 2 gold and you only need one copy to have a pair"
+      },
+      {
+        "id": "two-more",
+        "label": "Two more, then stop no matter what"
+      }
+    ],
+    "correct": [
+      "stop"
+    ]
+  },
+  "explanation": "The first roll is spent; it is not an argument for the second. Price the second roll on its own: 2 gold now, and 41 becomes 39, which drops next round's interest from 4 to 3 and keeps you under 50 a round longer than the player who stopped. Call it 4 gold. What the 4 gold buys is one shop at level 6, where 3-costs are 25% of a slot and your carry is one of fourteen: roughly an 8% chance of seeing it. And seeing it does not upgrade the carry; it gives you a pair, still 1-star, with a third copy to find later.\n\nSo the honest offer is 4 gold for an 8% chance of not yet having a 2-star, on a board that is winning without it. Two more rolls double the price and leave you at 37, a full two rounds off 50.\n\nThe habit is binary: you are saving or you are rolling down. This round was a saving round, and the first roll already broke it once. Do not break it twice.",
+  "principle": "A roll you already made is sunk; price the next one on its own, and the price is never just 2 gold.",
+  "guideLink": "/guides/economy#roll-a-little-each-round",
+  "commonMistake": "Rolling a second time because the first one 'was close', and reaching 4-2 ten gold lighter with the same 1-star carry.",
+  "hint": "Write down what the roll costs including interest over the next two rounds, and what a hit actually gives you right now.",
+  "lesson": "econ-pairs-and-rolls"
+}

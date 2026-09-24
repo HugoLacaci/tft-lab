@@ -1,0 +1,103 @@
+{
+  "id": "level-timing-seven-at-4-1-or-roll-at-six",
+  "category": "level-timing",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 6, 52 gold, 70 HP, alternating wins and losses. Your six units are all 2-stars (1-, 2- and 3-costs) with three items in play, and you are 12 XP from level 7. At level 6 the shop shows 3-costs 25% and 4-costs 5% per slot; at level 7 it is 43% and 10%. Level to 7, or roll at 6 for the 3-cost upgrades?",
+  "state": {
+    "stage": "4-1",
+    "gold": 52,
+    "hp": 70,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:carry-1",
+      "generic:tank-1",
+      "generic:caster-2",
+      "generic:bruiser-2",
+      "generic:support-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "seven",
+        "label": "Level to 7 (12 gold), field a seventh unit, and keep 40: roll at 4-2 after the augment only if the board needs it"
+      },
+      {
+        "id": "roll-six",
+        "label": "Stay level 6 and roll 30 gold: the 2-stars are done, so go for a 3-star on the 3-cost carry"
+      },
+      {
+        "id": "save-eight",
+        "label": "Stay level 6 and save to 88 gold so you can jump straight to level 8 at 4-5"
+      }
+    ],
+    "correct": [
+      "seven"
+    ]
+  },
+  "explanation": "A full 2-star board of cheap units at 4-1 has done its job; what it needs next is a 4-cost carry or tank, and those come from level 7 and 8 shops. Level 7 doubles 4-cost odds (5% to 10%) and nearly doubles 3-costs (25% to 43%), adds a seventh unit immediately, and costs 12 gold: 52 becomes 40, still 4 interest, and 4-2 (the augment round) is where the level-7 roll happens if the board needs one.\n\nRolling at level 6 spends 30 gold in a shop that is 70% 1- and 2-costs, and a 3-star 3-cost needs nine copies from a pool of 18 that other players hold too; you would find two copies and be at 22 gold, level 6, at 4-2. Saving to 88 for level 8 means three more stage-4 fights at level 6 against level-7 boards, at 10 to 15 HP a loss; 70 HP does not survive that plan. The standard timing exists because the lobby follows it: 7 at 4-1, 8 around 4-5 or 5-1.",
+  "principle": "Level 7 at 4-1. A 2-star board of cheap units has no upgrades left at level 6; the upgrades are in the level-7 shop.",
+  "guideLink": "/guides/leveling#standard-level-timings",
+  "commonMistake": "Rolling at level 6 on a finished 2-star board, chasing 3-stars in a shop that is mostly 1- and 2-costs.",
+  "hint": "Compare the 3-cost and 4-cost odds at 6 and 7, then ask what a level-6 shop can still add to a board whose units are all 2-star.",
+  "lesson": "level-standard-timings"
+}

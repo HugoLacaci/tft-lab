@@ -1,0 +1,117 @@
+{
+  "id": "welcome-losing-costs-hp",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-3, level 4, 12 gold, 94 HP after two losses. You just lost to Seat 3: their 2-star ranged carry and their tank were still standing when your last unit died. What did that loss actually cost you?",
+  "state": {
+    "stage": "2-3",
+    "gold": 12,
+    "hp": 94,
+    "level": 4,
+    "xpToNext": 8,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-2",
+      "generic:support-1",
+      "generic:carry-1",
+      "generic:bruiser-2",
+      "generic:caster-2"
+    ],
+    "items": [],
+    "enemyBoard": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "hp",
+        "label": "Some HP: a few points now, more for each enemy unit left standing, and more in later stages"
+      },
+      {
+        "id": "units",
+        "label": "The champions that died: they are gone and you have to buy them again"
+      },
+      {
+        "id": "gold",
+        "label": "Gold: the loser pays part of the winner's income"
+      },
+      {
+        "id": "nothing",
+        "label": "Nothing yet: losses only count when the stage ends"
+      }
+    ],
+    "correct": [
+      "hp"
+    ]
+  },
+  "explanation": "A lost fight costs HP and nothing else. Your champions are back at full health next round, your gold is untouched, and the damage depends on the stage and on how many enemy units were still alive: two survivors at stage 2 is a handful of HP, the same result at stage 5 is a chunk of the bar. That is why the early game is cheap and the late game is not.\n\nThe tempting idea is that the champions that died are lost. They are not. The only resource that never comes back is HP.",
+  "principle": "Losing a fight costs HP, never units or gold, and the cost grows with the stage.",
+  "guideLink": "/guides/welcome#what-is-tft",
+  "commonMistake": "Rebuying or panic-selling after a loss because the board 'died', when the board is exactly as it was.",
+  "hint": "Look at your bench and your gold after the fight. Has anything changed apart from the HP bar?",
+  "lesson": "welcome-the-basics"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "welcome-the-board-your-carry-died-first",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "puzzle",
+  "title": "Your carry died first",
+  "setAgnostic": true,
+  "prompt": "Stage 2-3. You bought your units in the order they appeared and dropped them where there was room. Last fight your 2-star carry, holding your only item, died in the first seconds while your 2-star tank stood untouched in the back. One swap fixes the board before the next fight.",
+  "state": {
+    "stage": "2-3",
+    "gold": 14,
+    "hp": 88,
+    "level": 4,
+    "xpToNext": 2,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:carry-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:support-1",
+      "generic:tank-2",
+      "generic:caster-2",
+      "generic:carry-1",
+      "generic:bruiser-2"
+    ],
+    "items": [],
+    "enemyBoard": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ]
+  },
+  "question": {
+    "type": "swap",
+    "correctPairs": [
+      [
+        "generic:carry-2",
+        "generic:tank-1"
+      ]
+    ]
+  },
+  "explanation": "The carry is in the front row and the tank is in the back. Enemies walk to the closest unit and hit it, so your carry was the closest unit: it took every hit and died before it fired more than a few shots, and the item on it did nothing. The tank, built to absorb that damage, stood in row 3 with nothing to do. Swapping the two puts the tank next to the bruiser in the centre of the front line and the carry in the back row, four hexes from the fight.\n\nThis is the habit the lesson is about: after a loss, look at which of your units died first and ask whether it was supposed to. A carry dying first is almost always a positioning problem, not a strength problem, and it is fixed for free in the planning phase. The other units are fine where they are: the bruiser belongs in front and the caster belongs behind.",
+  "principle": "After a loss, check who died first. If it was the carry, move it before you buy anything.",
+  "guideLink": "/guides/welcome#the-board",
+  "commonMistake": "Answering a lost fight with a refresh instead of looking at the board: the carry was in the front row the whole time.",
+  "hint": "Look at which unit died first last fight and which row it stands in. Then look at where the unit that should have taken those hits is standing.",
+  "lesson": "welcome-the-board"
+}

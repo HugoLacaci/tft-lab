@@ -1,0 +1,110 @@
+{
+  "id": "welcome-the-round-augments-when",
+  "category": "endgame",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 7, 38 gold, 48 HP after a bad stage 3, three losses in a row. Your friend says not to worry: 'you get an augment next round to fix the board'. Augments come at 2-1, 3-2 and 4-2. Is your friend right, and what does it mean for this round?",
+  "state": {
+    "stage": "4-1",
+    "gold": 38,
+    "hp": 48,
+    "level": 7,
+    "xpToNext": 20,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 3,
+        "col": 1,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:carry-3",
+      "generic:tank-1",
+      "generic:caster-3",
+      "generic:bruiser-1",
+      "generic:support-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "yes",
+        "label": "Yes: 4-2 is the third and last augment. This round, roll for 2-stars anyway; the augment is a bonus on top of the board, not a rescue"
+      },
+      {
+        "id": "no-4-1",
+        "label": "No: augments come at 2-1, 3-1 and 4-1, so you already missed this stage's pick"
+      },
+      {
+        "id": "carousel",
+        "label": "No: 4-2 is the carousel; the next augment is at 5-2"
+      }
+    ],
+    "correct": [
+      "yes"
+    ]
+  },
+  "explanation": "Augments come three times a game: 2-1, 3-2 and 4-2. So yes, there is one next round, and it is the last one. But an augment is a bonus on top of the board, not a replacement for it: at 48 HP with three losses in a row the fights at 4-1 and 4-2 still happen, and stage-4 losses cost 10 HP or more each. The plan this round is the standard one for 4-1: you are level 7 already, so roll some of the 38 gold for 2-stars on your carry and tank, and pick the 4-2 augment that helps the board you will have then (a combat augment, not an econ one at this HP).\n\nThe wrong answers are wrong about the calendar. 4-1 is a fight, 4-4 is the carousel and 4-7 is monsters; the only augment round in stage 4 is 4-2. Knowing where the augment sits stops you from banking gold for a rescue that is not coming and from missing the one that is.",
+  "principle": "Augments come at 2-1, 3-2 and 4-2. They add to a board; they do not replace fixing it.",
+  "guideLink": "/guides/welcome#the-flow-of-a-game",
+  "commonMistake": "Holding gold at 4-1 waiting for the augment to 'fix' a losing board, and arriving at 4-3 with the same board and less HP.",
+  "hint": "Write down the three augment rounds and check which of them is still ahead of you. Then ask whether an augment stops the next loss by itself.",
+  "lesson": "welcome-the-round"
+}

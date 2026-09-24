@@ -1,0 +1,112 @@
+{
+  "id": "welcome-count-next-round-income",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 6, 27 gold, three losses in a row. You decide to buy nothing this round. How much gold arrives at the start of 3-6?",
+  "state": {
+    "stage": "3-5",
+    "gold": 27,
+    "hp": 72,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:caster-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:tank-3",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:assassin-1"
+    ],
+    "items": [
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "eight",
+        "label": "8: 5 base + 2 interest for 27 gold + 1 for a 3-loss streak"
+      },
+      {
+        "id": "five",
+        "label": "5: base income only, streaks pay only for wins"
+      },
+      {
+        "id": "seven",
+        "label": "7: 5 base + 2 interest; losing pays nothing"
+      },
+      {
+        "id": "nine",
+        "label": "9: 5 base + 3 interest, because 27 rounds up + 1 streak"
+      }
+    ],
+    "correct": [
+      "eight"
+    ]
+  },
+  "explanation": "Income has three parts. Base is 5 from stage 3. Interest is 1 per full 10 held: 27 gives 2, not 3, because interest rounds down. Streak gold pays the same for losses as for wins: 1 at two or three in a row, 2 at four or five, 3 at six or more. So 5 + 2 + 1 = 8, and you start 3-6 at 35.\n\n'Losing pays nothing' is the common belief and it changes how people play: a player who knows the streak pays does not panic-spend to break it. Rounding down is the other one to remember: 29 gold earns the same interest as 20.",
+  "principle": "Income = base + 1 per 10 held (rounded down) + streak, and losing streaks count.",
+  "guideLink": "/guides/welcome#gold-and-interest",
+  "commonMistake": "Assuming a losing streak pays nothing, and rounding interest up.",
+  "hint": "Break the income into base, interest and streak, and remember that interest counts whole tens only.",
+  "lesson": "welcome-gold"
+}

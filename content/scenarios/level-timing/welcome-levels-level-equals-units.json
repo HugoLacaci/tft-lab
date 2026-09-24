@@ -1,0 +1,91 @@
+{
+  "id": "welcome-levels-level-equals-units",
+  "category": "level-timing",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-3, level 4, 12 gold, 2 XP from level 5. Four units are on your board and a 2-star tank sits on the bench. There are plenty of empty hexes, but when you drag the tank onto the board it bounces back. How do you get it into this fight without losing another unit?",
+  "state": {
+    "stage": "2-3",
+    "gold": 12,
+    "hp": 90,
+    "level": 4,
+    "xpToNext": 2,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:tank-1",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:tank-2",
+      "generic:carry-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "xp",
+        "label": "Buy 4 XP for 4 gold: level 5 lets five units fight, and the tank goes in"
+      },
+      {
+        "id": "hex",
+        "label": "Drag it to the empty hex in the front row again; there is room on the board"
+      },
+      {
+        "id": "sell",
+        "label": "Sell the 1-star support to free a slot, then place the tank"
+      }
+    ],
+    "correct": [
+      "xp"
+    ]
+  },
+  "explanation": "Your level is the number of units you may field, not the number of empty hexes. At level 4 the board holds four, no matter how much space is left. You are 2 XP short of 5, and the smallest purchase is 4 XP for 4 gold, so one click puts you at level 5 with 2 XP toward 6 and the 2-star tank fights this round. 12 gold becomes 8; you were not going to reach 20 for a second interest gold this round anyway.\n\nSelling the support does open a slot, but you still have four units on the board: you traded a unit for a unit. That is the right move only when you cannot afford XP. Dragging again does nothing: the board is not full of hexes, it is full of units.",
+  "principle": "Level equals units on the board. The fifth unit costs 4 gold of XP, not an empty hex.",
+  "guideLink": "/guides/welcome#levels-and-xp",
+  "commonMistake": "Selling a unit to 'make room' when a single XP purchase would have added a fifth unit instead.",
+  "hint": "Count the units already on the board and compare it with your level. Then look at how much XP you are missing and what 4 gold buys.",
+  "lesson": "welcome-levels"
+}

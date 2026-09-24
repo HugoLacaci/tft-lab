@@ -102,5 +102,7 @@
   "explanation": "Four losses at 3-2 with 79 HP is a loss streak you are already paying for, so collect what it pays: the streak bonus on top of interest every round, plus the strongest carousel picks. Trying to win now with a level and one 2-star costs you the streak gold and probably still loses, which is the worst of both. Rolling 20 at level 5 finds 1- and 2-cost pairs that do not make a board and drops you under 50.\n\nThe plan is to arrive at 4-1 with 90-plus gold and 60-plus HP, level to 7 or 8, and roll down once into a real board. The HP is the price; you have it.",
   "principle": "A loss streak is a decision, not an accident. Once you are in it, stay in it until the rolldown.",
   "guideLink": "/guides/economy#loss-streaking-on-purpose",
-  "commonMistake": "Breaking a streak for a single unlikely win, losing anyway, and arriving at 4-1 with neither gold nor HP."
+  "commonMistake": "Breaking a streak for a single unlikely win, losing anyway, and arriving at 4-1 with neither gold nor HP.",
+  "hint": "Add up what the loss streak pays you per round in gold and carousel priority, and compare it with what one level and one 2-star would win.",
+  "lesson": "econ-loss-streaks"
 }

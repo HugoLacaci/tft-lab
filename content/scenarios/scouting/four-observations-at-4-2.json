@@ -1,0 +1,142 @@
+{
+  "id": "four-observations-at-4-2",
+  "category": "scouting",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 4-2 augment round, level 8, 56 gold, 52 HP, holding one copy of your 4-cost carry with two items. Your planned rolldown could be this round or next. You scouted and wrote down four things (see the scout panel). Which one changes what you do this round?",
+  "state": {
+    "stage": "4-2",
+    "gold": 56,
+    "hp": 52,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-4",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-3",
+        "row": 3,
+        "col": 6,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 5",
+        "hp": 30,
+        "note": "Level 8 with 70 gold, holding one copy of your carry, 4-loss streak"
+      },
+      {
+        "player": "Seat 3",
+        "hp": 88,
+        "note": "Your next opponent and the strongest board: two 2-star 4-costs with items"
+      },
+      {
+        "player": "Seat 1",
+        "hp": 90,
+        "note": "Took an econ augment at 2-1, level 7, holding 60"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 64,
+        "note": "2-star of your 4-cost tank, no copies of your carry"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "seat5",
+        "label": "Seat 5: at 30 HP with 70 gold at level 8 they must roll this round, and they hold your carry; roll now, before their rolldown drains the pool"
+      },
+      {
+        "id": "seat3",
+        "label": "Seat 3: you lose this fight whatever you do, so hold the gold this round and roll at 4-3"
+      },
+      {
+        "id": "seat1",
+        "label": "Seat 1: their econ augment means they out-scale you, so play for 2nd and level toward 9 instead of rolling"
+      },
+      {
+        "id": "seat6",
+        "label": "Seat 6: a 2-star of your tank means the tank is contested, so switch the tank target to another 4-cost"
+      }
+    ],
+    "correct": [
+      "seat5"
+    ]
+  },
+  "explanation": "The observation that changes a decision is the one with a clock on it. Seat 5 is at 30 HP, which at 13 a loss is the two-losses line, with 70 gold at level 8: they roll this round, they have no choice, and they hold your carry. Seventy gold is thirty-five shops; with 8 of your carry's copies in a 4-cost tier of about 125, each shop pulls one out about 9% of the time, so their rolldown removes around three copies before your first roll if you wait. Rolling now, you see those copies first and they see what you leave.\n\nSeat 3 being your next opponent is real, but 'I lose anyway' is a reason to position, not to hold: the rolldown is for the next six fights, not this one, and delaying it hands Seat 5 the pool. Seat 1's augment is context for stage 5. Seat 6's tank 2-star is one contester on a 4-cost with 6 copies left, which is normal and changes nothing.",
+  "principle": "Scouting changes a decision when it has a deadline: a player who must roll this round on your unit means you roll first.",
+  "guideLink": "/guides/scouting#scouting-must-change-a-decision",
+  "commonMistake": "Noting that someone holds your carry without reading their HP and gold, which is what says whether they roll before you.",
+  "hint": "For each seat, ask whether the observation forces an action this round or only describes the lobby.",
+  "lesson": "scouting-changes-decisions"
+}

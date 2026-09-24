@@ -1,0 +1,150 @@
+{
+  "id": "welcome-fourth-place-is-fine",
+  "category": "hp-management",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 4-5, level 7, 34 gold, 31 HP. Six players are left. Your board loses to the three players above you and beats the two below you. What is the goal now?",
+  "state": {
+    "stage": "4-5",
+    "gold": 34,
+    "hp": 31,
+    "level": 7,
+    "xpToNext": 30,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:tank-3",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:bruiser-3",
+      "generic:carry-3",
+      "generic:support-3",
+      "generic:caster-4",
+      "generic:tank-2"
+    ],
+    "items": [
+      "generic:item:tank"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 1",
+        "hp": 74,
+        "note": "Strongest board, on a win streak"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 60,
+        "note": "Beats you"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 52,
+        "note": "Beats you narrowly"
+      },
+      {
+        "player": "Seat 2",
+        "hp": 22,
+        "note": "Loses to you"
+      },
+      {
+        "player": "Seat 8",
+        "hp": 12,
+        "note": "Loses to you, one loss from out"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "top4",
+        "label": "Play for top 4: keep the strongest board you can, spend the gold on 2-stars for units you already have, and let the two players below you go out first"
+      },
+      {
+        "id": "first",
+        "label": "Play for 1st: sell the board and rebuild around whatever 4-costs the shop shows, because only a win counts"
+      },
+      {
+        "id": "save",
+        "label": "Save to 50 for interest; the board is what it is"
+      }
+    ],
+    "correct": [
+      "top4"
+    ]
+  },
+  "explanation": "Placement is what you play for, and in ranked 1st to 4th all gain rating. With six left, two players must go out before you. Both are below you on HP and both lose to your board, so keeping that board strong, with the 34 gold turned into the carry pair and a third tank, is what gets you 4th or better. Once top 4 is locked you can think about climbing.\n\nSelling to gamble for 1st is how a 4th becomes an 8th: a rebuilt board at 4-5 loses to everyone, including the two you were beating. Saving is wrong too: at 31 HP that interest never gets spent.",
+  "principle": "Top 4 is a win. Lock it before you chase 1st.",
+  "guideLink": "/guides/welcome#what-is-tft",
+  "commonMistake": "Throwing away a safe top-4 board to gamble for 1st, and finishing 7th.",
+  "hint": "Count how many players have to go out before you for the result to gain rating, and check which players those are.",
+  "lesson": "welcome-the-basics"
+}

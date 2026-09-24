@@ -1,0 +1,121 @@
+{
+  "id": "contest-from-opening-boards-at-2-1",
+  "category": "scouting",
+  "difficulty": 2,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-1 augment round. You hold a pair of Caitlyn with a Recurve Bow and a B.F. Sword and are leaning toward a Caitlyn reroll. Read the scout report on the four boards that matter. Which players are actually on your line? Pick every one that is.",
+  "state": {
+    "stage": "2-1",
+    "gold": 9,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 18,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Elise",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Caitlyn",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Varus",
+      "DA_18_Kobuko",
+      "DA_18_Teemo",
+      "DA_18_Ornn",
+      "DA_18_Kayle"
+    ],
+    "items": [
+      "DA_Component_RecurveBow",
+      "DA_Component_BFSword"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 100,
+        "note": "Caitlyn 1-star on the board next to Camille and Elise, a Recurve Bow on the bench"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 100,
+        "note": "Two Caitlyns on the bench, Sparring Gloves and a Chain Vest"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 100,
+        "note": "Leona, Kayle and Sejuani on the board, holding a Chain Vest"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 100,
+        "note": "Xayah with a Recurve Bow, Ornn and Alistar beside her"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "seat2",
+        "label": "Seat 2: Caitlyn on the board with two Coven units and a Bow"
+      },
+      {
+        "id": "seat4",
+        "label": "Seat 4: two Caitlyns kept on the bench"
+      },
+      {
+        "id": "seat6",
+        "label": "Seat 6: three Solar units and a Chain Vest"
+      },
+      {
+        "id": "seat7",
+        "label": "Seat 7: Xayah holding a Recurve Bow"
+      }
+    ],
+    "correct": [
+      "seat2",
+      "seat4"
+    ]
+  },
+  "explanation": "Contest at 2-1 shows in units and kept pairs, not in components. Seat 2 has Caitlyn on the board with two other Coven units and a Bow waiting: a Coven or Hunter opener built on the 2-cost you want. Seat 4 has no Caitlyn on the board but two on the bench, and a pair kept on the bench at 2-1 is a player planning to 2-star her. Those two are on your line.\n\nSeat 7 holds a Bow too, which is why players misread it, but the Bow is on Xayah with two Elderwood units: a different carry and a different trait. A flexible component is not evidence of a line. Seat 6 is three Solar units and a Vest, with no overlap.\n\nThe arithmetic: Caitlyn has 25 copies. You hold 2, Seat 2 holds 1, Seat 4 holds 2, so 20 remain and a 3-star needs 7 more from a pool two other players buy from every round. Contest is soft at 2-1, so you do not sell, but you stop investing: no rolling for her, keep both lines the Bow and Sword can build, and re-count at 3-2.",
+  "principle": "Read contest from units and kept pairs; a component on a bench is a flexible item, not a line.",
+  "guideLink": "/guides/scouting#what-to-look-for",
+  "commonMistake": "Counting every player holding a Bow as a Caitlyn contester and missing the one with two copies on the bench.",
+  "hint": "For each board, look at which units are kept together and which are paired on the bench, before you look at the items.",
+  "lesson": "scouting-routine"
+}

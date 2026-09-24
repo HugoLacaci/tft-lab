@@ -1,0 +1,158 @@
+{
+  "id": "endgame-fourth-place-board-stop-rolling",
+  "category": "endgame",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 5-2, level 8, 47 gold, 30 HP, five players left. Your rolldown at 5-1 hit: Sivir and Sentinel are 2-star with their items and every unit on the board is 2-star. Seats 1 and 3 are level 9 with capped boards you lose to badly; Seat 4 beat you by two units and sits at 24 HP; Seat 7 is at 12 HP and loses to everyone. You hold two spare Tristana. Level 9 is 52 XP away. What do you do with the 47 gold?",
+  "state": {
+    "stage": "5-2",
+    "gold": 47,
+    "hp": 30,
+    "level": 8,
+    "xpToNext": 52,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_Krug18",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Rammus",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Brambleback18",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Tristana",
+        "row": 2,
+        "col": 6,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Cinderling18",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sivir",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_InfinityEdge",
+          "DA_LastWhisper",
+          "DA_GuinsoosRageblade"
+        ]
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Tristana",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "DA_18_Tristana",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "DA_18_Kayle",
+      "DA_18_Shen",
+      "DA_18_Hecarim",
+      "DA_18_Teemo",
+      "DA_18_Camille"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 1",
+        "hp": 84,
+        "note": "Level 9, 2-star Ashe with three items and two 5-costs; you lose badly"
+      },
+      {
+        "player": "Seat 3",
+        "hp": 62,
+        "note": "Level 9, capped Coven with 2-star Kennen; you lose"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 24,
+        "note": "2-star Ezreal and a 2-star Tristana; beat you by two units at 5-1"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 12,
+        "note": "1-star board; loses to everyone, including you"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "stop",
+        "label": "Stop rolling. Bank this round, level 9 at 5-3 with gold left over, and roll there for Ashe or Elder Dragon"
+      },
+      {
+        "id": "roll8",
+        "label": "Roll to 10 now at level 8 for a 5-cost or any 2-star upgrade; every fight matters at 30 HP"
+      },
+      {
+        "id": "trist",
+        "label": "Roll 20 for the Tristana 3-star: you hold four and she is the cheapest upgrade on the board"
+      },
+      {
+        "id": "zero",
+        "label": "Roll to 0 now: 30 HP is under the two-losses line at stage 5, so stabilise"
+      }
+    ],
+    "correct": [
+      "stop"
+    ]
+  },
+  "explanation": "Your board at 8 is finished; only a 5-cost moves it. At level 8 a slot is a 5-cost 3% of the time; with roughly 80 five-cost copies left and 15 of them Ashe or Elder Dragon, that is 0.6% per slot, 3% per shop, and 18 shops find one about 40% of the time, and then it must replace a unit. At level 9 the same targets are 13% per shop: ten shops find one three times in four and it joins the board as a ninth unit. Banking puts you at 56 at 5-3, level 9 costs 52, and you roll from there at the right odds.\n\nSeat 7 dies on his next loss, which locks top 4; 3rd is a race with Seat 4 at 24 HP where both of you lose to the top two. The two-losses rule is about turning losses into wins, and no roll at 8 turns a loss to Seat 1 or 3 into anything. Tristana 3-star is arithmetic: Seat 4 holds three, you hold four, eleven remain, and 18 shops at 1.5% a slot produce about one copy, not five.",
+  "principle": "When 4th is locked and the boards above you are out of reach at 8, gold is for level 9, not for shops at the wrong odds.",
+  "guideLink": "/guides/stage-plan#stage-5-and-beyond",
+  "commonMistake": "Rolling at level 8 on a finished board because 'every fight matters', when nothing at 8 changes the fights you lose.",
+  "hint": "List the upgrades that could still change a fight against the boards above you, and check the odds of each at level 8 versus 9.",
+  "lesson": "endgame-placement"
+}

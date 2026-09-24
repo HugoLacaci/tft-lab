@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { SCENARIO_CATEGORIES } from "./scenario-categories";
+import { LESSON_IDS } from "./curriculum";
 
 /**
  * Scenario JSON schema. Files live in content/scenarios/<category>/<slug>.json
@@ -97,8 +98,13 @@ export const ScenarioSchema = z
     principle: z.string().min(10),
     guideLink: z.string().regex(/^\/guides\/[a-z-]+(#[a-z0-9-]+)?$/, "guideLink like /guides/economy#interest"),
     commonMistake: z.string().optional(),
+    /** One nudge shown on request before answering: what to look at, never the answer itself. */
+    hint: z.string().min(20).max(260).optional(),
+    /** Learning-path lesson this drill belongs to (lib/curriculum.ts). Drills without one still appear in category sessions, puzzles and the Daily 10. */
+    lesson: z.string().optional(),
   })
   .superRefine((s, ctx) => {
+    if (s.lesson && !LESSON_IDS.includes(s.lesson)) ctx.addIssue({ code: "custom", path: ["lesson"], message: `unknown lesson "${s.lesson}" (see lib/curriculum.ts)` });
     if (!s.setAgnostic && !s.set) ctx.addIssue({ code: "custom", path: ["set"], message: "set is required when setAgnostic is false" });
     if (s.question.type === "ordering") {
       const n = s.question.steps.length;

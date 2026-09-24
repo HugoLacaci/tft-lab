@@ -1,0 +1,74 @@
+{
+  "id": "prismatic-econ-vs-item-at-100-hp",
+  "category": "augment",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 2-1, prismatic augment round, 100 HP, level 4 with 11 gold. Your opener is four unpaired 1-costs and one tank component; no line has appeared yet. Options: Delayed Payout (8 gold at the start of every stage from now on), Radiant Promise (one item turns radiant at 5-1) and Reinforcements (a 2-star copy of your strongest unit and a completed defensive item now). Which do you take?",
+  "state": {
+    "stage": "2-1",
+    "gold": 11,
+    "hp": 100,
+    "level": 4,
+    "xpToNext": 18,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:carry-2",
+      "generic:tank-1",
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:bruiser-1"
+    ],
+    "items": [
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "augment",
+    "options": [
+      "generic:aug:econ-delayed",
+      "generic:aug:item-radiant-late",
+      "generic:aug:utility-stabilise"
+    ],
+    "correct": "generic:aug:econ-delayed"
+  },
+  "explanation": "Econ augments are bought with HP, and at 2-1 you have 100 of it and nothing else. Delayed Payout pays 8 at 3-1, 4-1 and 5-1, before the game is decided: 24 gold, plus the interest those 8 earn each time they push you across a 10-gold line a round early, call it 30 by 5-1. That is fifteen level-8 shops. The cost is surviving ten rounds without help, and stage 2 losses cost 2 to 4 HP: even a bad stage 2 leaves you near 80.\n\nReinforcements is the pick at 45 HP, not at 100. A 2-star 1-cost and a defensive item win a few stage 2 fights and maybe a short streak, 2 or 3 gold a round for four rounds: about 10 gold plus HP you were not going to run out of. Radiant Promise is ceiling on ceiling: it pays at 5-1, only if you have hit the carry it goes on, and gives nothing for the twenty rounds where you are weak.\n\nAt 100 HP with no line, buy the augment that turns HP into gold.",
+  "principle": "Take the econ augment when HP is the resource you have the most of, and never when it is the one running out.",
+  "guideLink": "/guides/augments#econ-augments-below-50-hp",
+  "commonMistake": "Taking the strength-now prismatic at full HP because it feels safe, and finishing 5th with 60 HP and no econ edge.",
+  "hint": "Add up what each augment has given you by 5-1, and ask what HP each one costs you to collect.",
+  "lesson": "augments-reading"
+}

@@ -1,0 +1,103 @@
+{
+  "id": "items-hold-for-the-carousel",
+  "category": "items",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6, 68 HP, 47 gold. You hold one AD component and one defensive component. Next round is the 3-4 carousel; there are several AD components on it and with 68 HP you pick in the middle of the order. Your 2-star ranged carry is naked. Combine AD + defensive now, or hold one round for the AD + AD item?",
+  "state": {
+    "stage": "3-3",
+    "gold": 47,
+    "hp": 68,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:support-1",
+      "generic:tank-1",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:carry-1"
+    ],
+    "items": [
+      "generic:item:ad",
+      "generic:item:tank"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "hold",
+        "label": "Hold one round: the carousel guarantees a component, several are AD, and next round the carry gets the AD item it wants instead of a mixed one"
+      },
+      {
+        "id": "combine",
+        "label": "Combine now: an item now always beats an item later, and 68 HP is not the moment to wait"
+      },
+      {
+        "id": "hold-4-2",
+        "label": "Hold both until the 4-cost carry at 4-2, so nothing is wasted"
+      }
+    ],
+    "correct": [
+      "hold"
+    ]
+  },
+  "explanation": "Holding a component is right in exactly one case: the completion is next round and it is close to guaranteed. Both apply here. The carousel is one round away, you will get a component from it, and with several AD components on the wheel and a mid-order pick the AD one is nearly certain. So the choice is a mixed AD + defensive item on the carry this round, or the proper AD item next round with the defensive component still in hand for a second tank item. One fight at 68 HP with a naked carry is the price; the mixed item would be on the carry for the rest of the game.\n\n'Combine now' is the right default and the wrong answer here, because the default assumes an unknown wait. Holding until 4-2 for a 4-cost carry is the real mistake: four fights away, not guaranteed, and the carousel plus the 3-7 monster round will bring more components anyway. Hold for next round when it is certain; never hold for a plan.",
+  "principle": "Hold a component only when the completion is next round and near certain. Anything further away, slam.",
+  "guideLink": "/guides/items#slam-or-hold",
+  "commonMistake": "Treating 'slam early' as 'slam always', and locking a mixed item on the carry the round before a carousel full of the right component.",
+  "hint": "Ask how many rounds until the component you want arrives, and how sure you are it arrives. One certain round is the only hold.",
+  "lesson": "items-slam-early"
+}

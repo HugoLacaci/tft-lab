@@ -1,0 +1,138 @@
+{
+  "id": "two-pair-opener-at-2-5-which-pair",
+  "category": "pivot",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 4 with 7 gold and 94 HP. You hold a pair of a 2-cost AD carry and a pair of a 2-cost AP caster on the bench, from two different lines, plus a Bow and a Sword. The shop shows a third copy of each at 2 gold, and the standard level 5 costs 4. Your scout shows two players already on the caster's line and nobody on the carry's. What do you buy?",
+  "state": {
+    "stage": "2-5",
+    "gold": 7,
+    "hp": 94,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      },
+      {
+        "championId": "generic:caster-2",
+        "star": 1,
+        "items": [],
+        "slot": 2
+      },
+      {
+        "championId": "generic:caster-2",
+        "star": 1,
+        "items": [],
+        "slot": 3
+      },
+      {
+        "championId": "generic:support-1",
+        "star": 1,
+        "items": [],
+        "slot": 4
+      }
+    ],
+    "shop": [
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:tank-1",
+      "generic:bruiser-1",
+      "generic:support-2"
+    ],
+    "items": [
+      "generic:item:ad",
+      "generic:item:ad"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 3",
+        "hp": 100,
+        "note": "2-star of your AP caster with two AP components"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 96,
+        "note": "Pair of your AP caster on the bench, a Rod on a placeholder"
+      },
+      {
+        "player": "Seat 1",
+        "hp": 90,
+        "note": "Tanks and a 1-cost AD reroll, holding a Vest"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "ad",
+        "label": "Buy the AD carry copy (2), level to 5 (4), and field the 2-star with the Bow and Sword on it; keep the caster pair on the bench"
+      },
+      {
+        "id": "ap",
+        "label": "Buy the caster copy: a 2-star caster is the stronger unit this round"
+      },
+      {
+        "id": "both",
+        "label": "Buy both copies (4 gold) and skip the level until 2-6"
+      },
+      {
+        "id": "neither",
+        "label": "Buy neither and level: a flex opener means not choosing until 3-2"
+      }
+    ],
+    "correct": [
+      "ad"
+    ]
+  },
+  "explanation": "Flexible does not mean strengthless. The AD carry copy gives you a 2-star that holds the Sword and the Bow this round, on a line nobody is on; the caster copy gives you a 2-star with no item that two players are already itemising, one of them ahead of you with a 2-star. Between two pairs that want the same gold, the one that matches your components and the empty pool wins.\n\nThe arithmetic: a 2-cost has 25 copies. Your caster: Seat 3 holds 3, Seat 6 holds 2, you hold 2, so 18 remain for three players who all keep buying. Your AD carry: 23 remain and one buyer. Six gold here is a level and a 2-star that fits your items, and the caster pair stays on the bench, costing two slots and nothing else, until 3-2 confirms the read.\n\nBuying both and skipping the level puts you a unit short for three fights at 2 to 4 HP each, for a bench 2-star with no slot to stand in. Buying neither confuses keeping options with refusing strength: a flex opener is the strongest board that still has two endgames.",
+  "principle": "When two pairs compete for the same gold, buy the one your items and the empty pool already chose.",
+  "guideLink": "/guides/pivoting#flex-openers",
+  "commonMistake": "Making the 2-star that looks stronger this round instead of the one that holds your items and has nobody on it.",
+  "hint": "Look at what each 2-star would hold this round, then count the copies of each unit that other players already have.",
+  "lesson": "pivot-reading-contest"
+}

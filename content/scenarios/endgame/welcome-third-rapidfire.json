@@ -1,0 +1,86 @@
+{
+  "id": "welcome-third-rapidfire",
+  "category": "endgame",
+  "difficulty": 1,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 2-5, level 5, 7 gold, one free slot. Board: Leona and Ornn (Defender 2), Varus and Kayle (Rapidfire 2, Solar 2 of 3). The shop shows Xayah for 1 gold, and Elise and Alistar for 2. Which champion goes in the fifth slot?",
+  "state": {
+    "stage": "2-5",
+    "gold": 7,
+    "hp": 90,
+    "level": 5,
+    "xpToNext": 10,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Ornn",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:ad"
+        ]
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Xayah",
+      "DA_18_Elise",
+      "DA_18_Alistar",
+      "DA_18_Sentry",
+      "DA_18_RekSai"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "xayah",
+        "label": "Xayah: Rapidfire goes from 2 to 3, its next breakpoint"
+      },
+      {
+        "id": "elise",
+        "label": "Elise: a 2-cost is stronger than any 1-cost, and she turns into a big spider"
+      },
+      {
+        "id": "alistar",
+        "label": "Alistar: a second frontliner with a heal, and he shares Elderwood with Ornn"
+      }
+    ],
+    "correct": [
+      "xayah"
+    ]
+  },
+  "explanation": "Rapidfire's breakpoints are 2, 3, 4 and 5. Xayah is the third Rapidfire, so the team's attack speed bonus steps up and the Rapidfire champions gain more on every attack: a bigger board-wide gain than any single 2-cost brings, for 1 gold. Elise is a fine unit, but Coven starts at 3 and Vanguard at 2, so she arrives with nothing switched on, and you already have two frontliners.\n\nAlistar 'shares Elderwood with Ornn', but Elderwood starts at 3: 2 of 3 is still nothing.",
+  "principle": "Next breakpoint beats next cost tier.",
+  "guideLink": "/guides/welcome#traits-and-breakpoints",
+  "commonMistake": "Buying the 2-cost because it is 'a better unit' when the 1-cost would push a trait to its next breakpoint.",
+  "hint": "Check which traits are one champion away from their next number, then look for that champion in the shop.",
+  "lesson": "welcome-traits"
+}

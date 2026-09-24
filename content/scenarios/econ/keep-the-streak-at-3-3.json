@@ -1,0 +1,113 @@
+{
+  "id": "keep-the-streak-at-3-3",
+  "category": "econ",
+  "difficulty": 3,
+  "setAgnostic": true,
+  "prompt": "Stage 3-3, level 6 with 56 gold and 66 HP on a 6-loss streak you planned, with a 3-5 exit. Level 7 costs only 4 XP this round and a 2-star 2-cost bruiser sits on your bench. Your next opponent has two itemised 2-star 3-costs. Do you level and field the bruiser to try to win this one?",
+  "state": {
+    "stage": "3-3",
+    "gold": 56,
+    "hp": 66,
+    "level": 6,
+    "xpToNext": 4,
+    "streak": {
+      "type": "loss",
+      "count": 6
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:bruiser-2",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": [
+      "generic:item:tank",
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "keep",
+        "label": "No. Bank, keep the streak, and level 7 at 3-5 when the passive XP has paid for it and you roll with a surplus"
+      },
+      {
+        "id": "level-now",
+        "label": "Yes: 4 gold for a level and a 2-star is cheap, and the fight might go either way"
+      },
+      {
+        "id": "roll-now",
+        "label": "Roll 20 now instead: at 66 HP the streak has paid enough"
+      }
+    ],
+    "correct": [
+      "keep"
+    ]
+  },
+  "explanation": "Ask whether the bigger board wins the fight. A 2-star 2-cost bruiser next to a 1-star carry does not beat two itemised 2-star 3-costs; you lose either way, about 9 HP. So the level buys nothing this round, and it is not even cheap: two rounds of passive XP give you level 7 at 3-5 for free, so the 4 gold pays for a slot used one round early on a board that loses regardless.\n\nThe real risk is winning by accident. A 6-loss streak pays 3 gold a round. One lucky win resets it; the next loss pays 0 and the one after 1, so a single win costs about 5 gold of streak on top of the 4 you spent, for 9 HP you were prepared to lose. That is the accidental loss streak.\n\nThe exit is 3-5, one loss away. You arrive near 57 HP with over 60 gold and level 7 for free, and the surplus becomes the rolldown that turns the streak into a board. Rolling now at 6, at 25% 3-cost odds with two rounds of interest still to collect, is exiting early at worse odds.",
+  "principle": "Keep the streak while a bigger board would still lose; spend on the round when the board can actually win.",
+  "guideLink": "/guides/economy#loss-streaking-on-purpose",
+  "commonMistake": "Spending 'only 4 gold' to level on a losing round, then winning one fight by accident and losing the streak bonus.",
+  "hint": "Before spending anything, decide honestly whether the extra unit wins this fight, and what a single win does to the streak gold.",
+  "lesson": "econ-loss-streaks"
+}

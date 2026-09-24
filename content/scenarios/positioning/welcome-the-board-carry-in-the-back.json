@@ -1,0 +1,97 @@
+{
+  "id": "welcome-the-board-carry-in-the-back",
+  "category": "positioning",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 5, four units on the board and the front line is set. Your 2-star ranged carry was on the bench while you gave it an item and is now the fifth unit. It attacks from four hexes away. Put it where it starts shooting immediately and nothing reaches it for as long as possible.",
+  "state": {
+    "stage": "2-5",
+    "gold": 22,
+    "hp": 90,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-2",
+      "generic:caster-2",
+      "generic:tank-1",
+      "generic:bruiser-2",
+      "generic:carry-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "placement",
+    "unitId": "generic:carry-2",
+    "correctHexes": [
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 5
+      }
+    ]
+  },
+  "explanation": "A ranged unit hits from four hexes away, so from row 3 it shoots from the first second while every enemy melee unit spends the opening of the fight walking into your front line. The carry is the unit doing your damage, and it deals damage for exactly as long as it is alive. Behind three frontliners in row 3 it lives the longest.\n\nRow 1 or row 2 feels safe because the board looks full, but a carry there is one or two hexes from the fight and gets hit by whatever pushes through, while its range is wasted. The very corners, (3,0) and (3,6), are not wrong at this stage, but the habit worth building is the middle of the back row: later on, corners are where enemy assassins jump. Keep it simple: tanks touching each other in row 0, carries along the middle of row 3.",
+  "principle": "Ranged carries go in the back row. Distance from the enemy is time spent dealing damage.",
+  "guideLink": "/guides/welcome#the-board",
+  "commonMistake": "Placing the carry in row 1 or 2 'behind the tanks' because it looks protected, where the first enemy through the line kills it.",
+  "hint": "Count how many hexes the carry can shoot across and find the row where the enemy melee needs the longest to reach it.",
+  "lesson": "welcome-the-board"
+}

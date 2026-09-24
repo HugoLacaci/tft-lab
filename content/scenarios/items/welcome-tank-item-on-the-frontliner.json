@@ -1,0 +1,81 @@
+{
+  "id": "welcome-tank-item-on-the-frontliner",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 5. You combined a vest and a belt into a completed defensive item. On the board: a 2-star tank in the front row, a 2-star 1-cost carry and a 1-star 3-cost caster in the back, and a support behind the tank. Who holds the defensive item?",
+  "state": {
+    "stage": "3-2",
+    "gold": 30,
+    "hp": 76,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:bruiser-1",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:caster-3",
+      "generic:support-2",
+      "generic:bruiser-2",
+      "generic:carry-2"
+    ],
+    "items": [
+      "generic:item:tank-completed"
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:tank-completed",
+    "correctUnitIds": [
+      "generic:tank-2"
+    ]
+  },
+  "explanation": "A defensive item is health and resistances, and those only matter on the champion that is being hit. The enemy walks to your closest unit, the tank in the front row, so the item on the tank keeps the whole line standing longer, and every second the line holds is a second your back row keeps attacking.\n\nThe 3-cost caster is the tempting holder because it is the most expensive unit you own, but nothing reaches it for most of the fight; armour on it is armour that is never tested. Items follow roles, not prices.",
+  "principle": "Tank items on whoever the enemy reaches first, not on whoever cost the most.",
+  "guideLink": "/guides/welcome#items",
+  "commonMistake": "Giving the defensive item to the highest-cost unit 'to protect the investment'.",
+  "hint": "Trace the path an enemy melee unit walks at the start of the fight. Which of your champions does it bump into?",
+  "lesson": "welcome-items"
+}

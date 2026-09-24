@@ -1,0 +1,106 @@
+{
+  "id": "rolldown-steps-at-4-1",
+  "category": "level-timing",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1, level 6 with 12 XP to 7, 61 gold, 50 HP on a 2-loss streak. Your 3-cost carry is 1-star with a pair on the bench and your 3-cost tank is 1-star; both are the reason you lose. Nobody else is rolling this round. Put the steps of a disciplined rolldown in order.",
+  "state": {
+    "stage": "4-1",
+    "gold": 61,
+    "hp": 50,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-3",
+      "generic:support-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Roll, buying every copy of both targets on sight, without re-deciding between shops",
+      "Buy level 7 first (12 gold), so every shop you pay for is at 43% 3-cost odds instead of 25%",
+      "With level-7 odds in front of you, name the targets: the third carry copy and two more copies of the tank",
+      "Stop the moment a stop condition triggers, even with gold left, and position the new 2-stars before the timer ends",
+      "Set the gold floor before the first roll: 25, so 4-2 still has income, interest and the augment to work with"
+    ],
+    "correctOrder": [
+      1,
+      2,
+      4,
+      0,
+      3
+    ]
+  },
+  "explanation": "Level first, because the odds are the foundation of everything after it: 3-costs are 25% of a slot at 6 and 43% at 7, so a shop bought before the level shows barely half the carries a shop bought after it does. Rolling at 6 and levelling half way through means the first half of the gold went at the wrong odds, which is how a 60-gold rolldown becomes a 30-gold one.\n\nThen the targets, named as units and counts, because 'upgrades' is not a target and a rolldown without one stops when you find something instead of what you need. Then the floor, set while you are still calm: 61 minus 12 for the level leaves 49, so a floor of 25 commits 24 gold, twelve shops, and keeps enough that 4-2 has interest, income and the augment to work with.\n\nOnly then roll, buying every copy on sight, and stop when the condition triggers rather than when the gold runs out. Positioning the new units is part of the rolldown: a 2-star you did not place is a 2-star in the corner.",
+  "principle": "Level, name the targets, set the floor, then roll and stop; a rolldown decided between shops is not a plan.",
+  "guideLink": "/guides/rolling#rolldown-discipline",
+  "commonMistake": "Pressing D at level 6 'to see', then buying the level with the gold that should have been rolled at 7.",
+  "hint": "Ask which step changes the value of every step after it, and which decisions must exist before the first shop appears.",
+  "lesson": "level-rolldowns"
+}

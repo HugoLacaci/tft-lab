@@ -1,0 +1,147 @@
+{
+  "id": "econ-stabilise-dip-at-4-5-with-32-hp",
+  "category": "econ",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-5, level 8, 50 gold, 32 HP on a 3-loss streak; the losses cost 12, 13 and 13. Morgana is 1-star with Deathcap, Shojin and Jeweled Gauntlet, with a second copy on the bench; Lillia is 1-star with the tank items. Nobody else plays Coven. Level 9 is 70 XP away. What is the plan for the 50 gold?",
+  "state": {
+    "stage": "4-5",
+    "gold": 50,
+    "hp": 32,
+    "level": 8,
+    "xpToNext": 70,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "DA_18_Lillia",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Elise",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Malphite",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Camille",
+        "row": 1,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Morgana",
+        "row": 2,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "DA_RabadonsDeathcap",
+          "DA_SpearOfShojin",
+          "DA_JeweledGauntlet"
+        ]
+      },
+      {
+        "championId": "DA_Karma18",
+        "row": 3,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Cassiopeia",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Morgana",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Shen",
+      "DA_18_Teemo",
+      "DA_18_Hecarim",
+      "DA_18_Varus",
+      "DA_Krug18"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 76,
+        "note": "Strongest board; you lost 13 to it at 4-3"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 58,
+        "note": "Beats you; nobody in the lobby plays Coven"
+      },
+      {
+        "player": "Seat 8",
+        "hp": 21,
+        "note": "Loses to you"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "hold",
+        "label": "Hold 50 and level 9 at 5-1: a 9-unit board with a 5-cost beats anything you roll into at 8"
+      },
+      {
+        "id": "half",
+        "label": "Roll 20 gold to 30 so you keep 3 interest, and finish the job at 5-1"
+      },
+      {
+        "id": "floor",
+        "label": "Roll now to a floor of 10 for Morgana and Lillia 2-star, buy every copy you see, stop the moment both are in"
+      },
+      {
+        "id": "xp",
+        "label": "Level 9 is too far to hold for; buy 20 XP toward it and roll the other 30"
+      }
+    ],
+    "correct": [
+      "floor"
+    ]
+  },
+  "explanation": "Do the HP arithmetic first. You take 13 a loss: 32 becomes 19 after 4-5 and 6 after 4-6, 4-7 is PvE, and you reach 5-1 with 6 HP where one loss costs 20. So you have exactly two losses left in the game and both are in the next two rounds. That is reason one to break 50: being alive is the game.\n\nThe target is concrete: one Morgana, two Lillia. Nobody else is on Coven, so eight Morgana are in the pool; at level 8 a slot is a 4-cost 30% of the time, and with roughly 120 four-cost copies left a specific Morgana is in about 2% of slots, one shop in ten. Forty gold is twenty shops: you find her close to nine times in ten, and usually a Lillia too. Rolling only to 30 keeps 3 gold of interest and halves the shops, turning a 90% rolldown into two in three on the round you cannot miss. Holding for 9 assumes you reach 5-5; you do not. XP adds nothing to a fight that starts in thirty seconds.",
+  "principle": "Under the two-losses line there is no econ decision left; the whole 50 goes into the fight.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Rolling half the gold to 'keep some interest' when the HP says there is no later round to spend the rest in.",
+  "hint": "Subtract the damage you have been taking from 32 twice and see which round that leaves you in.",
+  "lesson": "econ-breaking-50"
+}

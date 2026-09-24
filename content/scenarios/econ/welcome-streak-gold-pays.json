@@ -1,0 +1,108 @@
+{
+  "id": "welcome-streak-gold-pays",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-5, level 6, 51 gold, 90 HP, four wins in a row. The shop shows the third copy of your 3-cost carry for 3 gold, which makes it 2-star. Buying drops you to 48: 4 interest instead of 5. Buy, or hold the 50?",
+  "state": {
+    "stage": "3-5",
+    "gold": 51,
+    "hp": 90,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 4
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:carry-3",
+      "generic:support-2",
+      "generic:tank-1",
+      "generic:bruiser-1",
+      "generic:caster-3"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "buy",
+        "label": "Buy: the 2-star keeps the win streak alive, and the streak pays 2 gold a round and 0 HP lost, more than the 1 interest you give up"
+      },
+      {
+        "id": "hold",
+        "label": "Hold: never go under 50 once you are there"
+      },
+      {
+        "id": "roll",
+        "label": "Buy, and refresh a few times for more copies while you are winning"
+      }
+    ],
+    "correct": [
+      "buy"
+    ]
+  },
+  "explanation": "A 4-win streak pays +2 gold a round on top of base and interest, and a 6-win streak pays +3. Every loss costs HP. The 2-star carry is what keeps the streak going, so giving up 1 interest for a round to keep 2 streak gold and lose 0 HP is plainly the better trade, and from 48 you are back over 50 next round anyway.\n\n'Never go under 50' is a good habit turned into a bad rule: the reason to sit at 50 is income, and the streak is income too. The refreshes are where it goes wrong: real gold spent on a board that is already winning.",
+  "principle": "A streak is income. Keep it when the cost is a gold of interest and the payoff is 2 gold and no HP.",
+  "guideLink": "/guides/welcome#gold-and-interest",
+  "commonMistake": "Treating 50 as untouchable and letting a win streak die for 1 gold of interest.",
+  "hint": "Add up what a 4-win streak pays each round and compare it with the interest you lose at 48.",
+  "lesson": "welcome-gold"
+}

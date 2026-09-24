@@ -1,0 +1,102 @@
+{
+  "id": "welcome-levels-four-gold-four-xp",
+  "category": "level-timing",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 5, 30 gold, 8 XP from level 6, 77 HP. A 2-star caster is on the bench and would be your sixth unit. You get 2 XP free at the start of every round and can buy 4 XP for 4 gold at any time. What gets six units into this fight, and what does it cost?",
+  "state": {
+    "stage": "3-1",
+    "gold": 30,
+    "hp": 77,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:caster-2",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:carry-1",
+      "generic:tank-1",
+      "generic:support-2",
+      "generic:caster-1",
+      "generic:bruiser-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "two-buys",
+        "label": "Buy XP twice (8 gold): 8 XP reaches level 6 now and the caster fights this round"
+      },
+      {
+        "id": "one-buy",
+        "label": "Buy XP once (4 gold) now and once next round: same 8 gold, spread out"
+      },
+      {
+        "id": "free",
+        "label": "Wait for the free 2 XP a round: you reach level 6 without spending anything"
+      }
+    ],
+    "correct": [
+      "two-buys"
+    ]
+  },
+  "explanation": "XP is bought in blocks of 4 for 4 gold. You need 8, so two purchases, 8 gold, and you are level 6 before the fight with the 2-star caster on the board. 30 gold becomes 22, which still pays 2 interest, and the free 2 XP next round starts you toward level 7. Level 6 at 3-1 is a round ahead of the usual 3-2, which is fine when the sixth unit is already a 2-star.\n\nSpreading the buys costs the same 8 gold but the caster misses this fight, and with the free 2 XP arriving next round you would end up at 6 at 3-2 having spent 8 gold anyway. Waiting for free XP takes four rounds (2 a round for 8) and you reach 6 at 3-5, three fights late, to save 8 gold. A fight lost in stage 3 costs more HP than 8 gold buys back.",
+  "principle": "4 gold buys 4 XP. Count the XP you are missing, divide by four, and that is the price of the extra unit.",
+  "guideLink": "/guides/welcome#levels-and-xp",
+  "commonMistake": "Buying XP one click at a time across rounds and arriving a level short of the lobby for the fights that mattered.",
+  "hint": "Work out how many XP purchases 8 XP needs and how many rounds the free 2 XP would take instead.",
+  "lesson": "welcome-levels"
+}

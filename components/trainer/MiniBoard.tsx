@@ -1,16 +1,34 @@
 import Image from "next/image";
 import { asset } from "@/lib/asset";
 import { costColor } from "@/lib/costs";
-import { COLS, ROWS, boardSize, displayCoord, hexOffset } from "@/lib/hex";
+import { COLS, ROWS, boardSize, displayCoord, hexOffset, type HexCoord } from "@/lib/hex";
 import type { PlacedUnit } from "@/lib/scenario-schema";
 import type { UnitLookup } from "@/lib/set-data";
 
 /**
- * Static thumbnail of a scenario board for puzzle cards: the hex grid with
- * cost-ringed portraits, enemy half above when the scenario has one. No
- * interaction, no dnd; renders on the server.
+ * Static thumbnail of a scenario board for puzzle cards and solution views:
+ * the hex grid with cost-ringed portraits, enemy half above when the scenario
+ * has one, optional teal marks on "the answer" hexes. No interaction, no dnd;
+ * renders on the server and inside client components alike.
  */
-export function MiniBoard({ board, enemyBoard = [], units, hex = 18, className = "" }: { board: PlacedUnit[]; enemyBoard?: PlacedUnit[]; units: Record<string, Pick<UnitLookup, "icon" | "cost" | "name">>; hex?: number; className?: string }) {
+export function MiniBoard({
+  board,
+  enemyBoard = [],
+  units,
+  hex = 18,
+  className = "",
+  marks = [],
+  markColor = "var(--teal)",
+}: {
+  board: PlacedUnit[];
+  enemyBoard?: PlacedUnit[];
+  units: Record<string, Pick<UnitLookup, "icon" | "cost" | "name">>;
+  hex?: number;
+  className?: string;
+  /** Own-side hexes to ring (the solution). */
+  marks?: HexCoord[];
+  markColor?: string;
+}) {
   const versus = enemyBoard.length > 0;
   const rows = versus ? ROWS * 2 : ROWS;
   const size = boardSize(rows);
@@ -24,10 +42,11 @@ export function MiniBoard({ board, enemyBoard = [], units, hex = 18, className =
         const off = hexOffset(drow, dcol);
         const u = (side === "own" ? board : enemyBoard).find((x) => x.row === row && x.col === col);
         const lk = u ? units[u.championId] : undefined;
+        const marked = side === "own" && marks.some((m) => m.row === row && m.col === col);
         return (
           <div key={`${side}-${row}-${col}`} className="mini-hex" style={{ left: off.x * hex, top: off.y * hex }}>
-            <div className="hex h-full w-full" style={{ background: side === "enemy" ? "rgba(224,72,58,0.28)" : "rgba(200,170,110,0.28)" }}>
-              <div className="hex h-full w-full" style={{ transform: "scale(0.9)", background: side === "enemy" ? "#1a0f12" : "#0f1622" }} />
+            <div className="hex h-full w-full" style={{ background: marked ? markColor : side === "enemy" ? "rgba(224,72,58,0.28)" : "rgba(200,170,110,0.28)" }}>
+              <div className="hex h-full w-full" style={{ transform: marked ? "scale(0.82)" : "scale(0.9)", background: side === "enemy" ? "#1a0f12" : marked ? "#0d2a2a" : "#0f1622" }} />
             </div>
             {u && lk ? (
               <div className="mini-hex-unit absolute inset-0 flex items-center justify-center">
@@ -36,6 +55,13 @@ export function MiniBoard({ board, enemyBoard = [], units, hex = 18, className =
                     <Image src={asset(lk.icon)} alt="" width={32} height={32} unoptimized className="h-full w-full object-cover" />
                   </span>
                 </span>
+                {u.items.length ? (
+                  <span className="absolute bottom-0 right-0 flex gap-px" aria-hidden>
+                    {u.items.slice(0, 3).map((_, i) => (
+                      <span key={i} className="block rounded-full" style={{ width: Math.max(3, hex * 0.16), height: Math.max(3, hex * 0.16), background: "var(--gold)" }} />
+                    ))}
+                  </span>
+                ) : null}
               </div>
             ) : null}
           </div>

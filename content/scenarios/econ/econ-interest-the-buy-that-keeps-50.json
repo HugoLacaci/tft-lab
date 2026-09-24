@@ -1,0 +1,112 @@
+{
+  "id": "econ-interest-the-buy-that-keeps-50",
+  "category": "econ",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-1, level 5, 52 gold, 80 HP. The shop shows a third copy of your 2-cost caster (2 gold; it would become a 2-star on the board) and a second copy of a 3-cost bruiser you hold on the bench (3 gold, a pair). Interest is 1 gold per 10 held, up to 5 at 50. What do you buy?",
+  "state": {
+    "stage": "3-1",
+    "gold": 52,
+    "hp": 80,
+    "level": 5,
+    "xpToNext": 6,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:caster-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:caster-2",
+      "generic:bruiser-3",
+      "generic:support-1",
+      "generic:tank-1",
+      "generic:carry-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "caster",
+        "label": "Buy the caster copy only: 52 becomes 50, still 5 interest, and the caster on the board becomes a 2-star"
+      },
+      {
+        "id": "bruiser",
+        "label": "Buy the bruiser copy only: 52 becomes 49, a pair of a stronger unit"
+      },
+      {
+        "id": "both",
+        "label": "Buy both: 52 becomes 47, you get the 2-star and the pair"
+      },
+      {
+        "id": "neither",
+        "label": "Buy neither and keep 52"
+      }
+    ],
+    "correct": [
+      "caster"
+    ]
+  },
+  "explanation": "The interest breakpoint is 50: 52 and 50 both earn 5 gold next round, 49 earns 4. So the caster copy is effectively free: 2 gold for a 2-star on a unit already on the board, and the interest is untouched. The bruiser copy costs 3 gold plus 1 gold of interest next round, for a pair you may never complete, and if you buy both you are at 47 and paying the same lost interest for a 2-star you could have had for 2.\n\nThis is the whole skill of sitting at 50: you do not stop buying, you check where the purchase lands. On or above a multiple of 10 it costs its price; below, it costs its price plus the interest you crossed. Buy the 2-star, keep 50, and if the bruiser pair is still there after 3-2's income, buy it then from above 50. Buying neither leaves a 2-star on the screen for no reason: the copy is gone when the shop refreshes.",
+  "principle": "Check where a buy lands: at 50 it costs its price, at 49 it costs its price plus a gold every round until you climb back.",
+  "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+  "commonMistake": "Treating every cheap buy as the same cost, and dropping from 52 to 47 for two units when one of them was free and the other was not.",
+  "hint": "Do the subtraction for each option and see which ones stay on or above 50. Then ask which purchase goes on the board this round.",
+  "lesson": "econ-interest-basics"
+}

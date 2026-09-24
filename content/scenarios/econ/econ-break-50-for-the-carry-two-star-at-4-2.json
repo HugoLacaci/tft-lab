@@ -1,0 +1,126 @@
+{
+  "id": "econ-break-50-for-the-carry-two-star-at-4-2",
+  "category": "econ",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-2, level 8, 53 gold, 41 HP on a 3-loss streak. You took the augment and levelled at 4-1; the planned rolldown is 4-5. Aphelios is 1-star with Rageblade, Infinity Edge and Last Whisper and you hold a second copy on the bench. The shop shows a third. Buying him drops you to 49. Scouting says the next opponent beats your current board by two units. What do you do?",
+  "state": {
+    "stage": "4-2",
+    "gold": 53,
+    "hp": 41,
+    "level": 8,
+    "xpToNext": 80,
+    "streak": {
+      "type": "loss",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_GargoyleStoneplate"
+        ]
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_CrimsonRaptor18",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Aphelios",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Aphelios",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Aphelios",
+      "DA_18_Teemo",
+      "DA_Krug18",
+      "DA_18_Camille",
+      "DA_18_Kayle"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "buy",
+        "label": "Buy him, put the 2-star in, and stop: 49 gold, hold to 4-5"
+      },
+      {
+        "id": "lock",
+        "label": "Lock the shop and buy him at 4-3 so you collect the full 5 interest first"
+      },
+      {
+        "id": "roll",
+        "label": "Buy him and roll down to 30 while you are under 50 anyway; the rolldown is just three rounds early"
+      }
+    ],
+    "correct": [
+      "buy"
+    ]
+  },
+  "explanation": "The floor exists to make you arrive at your rolldown with the most gold. It is not a rule about the number 50. Here the arithmetic is one gold: at 49 you earn 4 interest at 4-3 instead of 5, and with base income you are back at 58 before 4-4. Against that one gold, the third copy turns a 1-star carry with three items into a 2-star, which is the difference between losing by two units and winning the 4-2 fight. Stage 4 losses cost 12 to 15 HP; at 41 you have three of them before stage 5, where one loss is 20. A 2-star carry now saves more HP in one fight than the interest earns in a whole stage.\n\nLocking the shop keeps the copy safe and keeps the 1 gold, and pays 12 to 15 HP for it. Rolling to 30 is the opposite error: 4-2 is not your rolldown, the tank is already 2-star, and 20 gold spent at 4-2 is 20 gold missing at 4-5 when the shop actually has to deliver.",
+  "principle": "One gold of interest is never worth a fight. Break the floor for the copy that changes the fight, then hold.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Locking the shop or skipping the copy to protect the number 50 when the missing interest is one gold and the fight is worth 12 HP.",
+  "hint": "Work out exactly how much interest 49 gold loses at 4-3, then compare it with what one stage-4 loss costs in HP.",
+  "lesson": "econ-breaking-50"
+}

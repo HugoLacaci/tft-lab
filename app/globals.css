@@ -724,3 +724,19 @@ a.panel:hover, .panel-hover:hover {
 @media (orientation: landscape) and (min-width: 900px) and (max-width: 1279px) {
   .site-main { padding-left: calc(2rem + var(--safe-l)); padding-right: calc(2rem + var(--safe-r)); }
 }
+
+/* Learning path ------------------------------------------------------------ */
+.bar { position: relative; height: 4px; width: 100%; background: var(--bg-raised); overflow: hidden; }
+.bar > span { display: block; height: 100%; transition: width 700ms cubic-bezier(0.2, 0.7, 0.2, 1); }
+.lesson-card { position: relative; transition: transform 160ms ease, border-color 160ms ease; }
+.lesson-card:hover { transform: translateY(-2px); }
+.lesson-locked { opacity: 0.55; filter: saturate(0.6); }
+.lesson-locked:hover { opacity: 0.8; }
+.lesson-next { box-shadow: 0 0 0 1px color-mix(in srgb, var(--teal) 40%, transparent), 0 8px 24px -12px var(--teal); }
+.module-locked { opacity: 0.85; }
+.hint-box { border-left: 2px solid var(--gold); background: color-mix(in srgb, var(--gold) 8%, transparent); padding: 0.5rem 0.75rem; animation: rise 320ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.solution { border: 1px solid color-mix(in srgb, var(--teal) 45%, transparent); background: color-mix(in srgb, var(--teal) 6%, transparent); padding: 0.75rem; }
+.path-steps { display: flex; gap: 0.35rem; align-items: center; }
+.path-step { height: 6px; flex: 1; background: var(--bg-raised); position: relative; overflow: hidden; }
+.path-step > span { position: absolute; inset: 0; width: var(--w, 0%); background: var(--c, var(--teal)); transition: width 700ms ease; }
+.key-input { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.8rem; }

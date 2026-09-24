@@ -1,0 +1,116 @@
+{
+  "id": "level-8-at-4-5-or-roll-at-7",
+  "category": "level-timing",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-5, level 7 with 62 gold and 55 HP on a 2-loss streak, losing about 12 HP a round. Your 4-cost carry and 4-cost tank are 1-star with items; your 3-cost caster is one copy from 2-star. Level 8 costs 20 XP. Do you level to 8 and roll, roll at 7, or hold for 5-1?",
+  "state": {
+    "stage": "4-5",
+    "gold": 62,
+    "hp": 55,
+    "level": 7,
+    "xpToNext": 20,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-4",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-3",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 5,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:caster-3",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "level-8",
+        "label": "Level to 8 (20 gold) and roll the remaining 42 for the two 4-costs; 62 is enough to do both"
+      },
+      {
+        "id": "roll-7",
+        "label": "Roll at 7: 3-costs are 43% here against 32% at 8, and the caster 2-star is the closest upgrade"
+      },
+      {
+        "id": "hold",
+        "label": "Hold 62, level 8 at 5-1 with 80 and roll then"
+      }
+    ],
+    "correct": [
+      "level-8"
+    ]
+  },
+  "explanation": "Name what changes your fights: the 1-star 4-costs holding the items. Then roll where they live. At level 7 a 4-cost is 10% of a slot; at 8 it is 30%. Sixty-two gold at 7 is thirty-one shops, 155 slots, about 15 four-cost slots. Twenty for the level and 42 rolled at 8 is twenty-one shops, 105 slots, about 32 four-cost slots: two thirds of the gold, twice the 4-costs, and an eighth unit on the board. The caster upgrade is not lost; 3-costs are still 32% at 8 and you need one copy.\n\nThis is the case where levelling and rolling in the same round is right: 62 leaves more than 40 to roll after the level, still a real rolldown. Below 60 you would pick one.\n\nHolding to 5-1 is the tempting greed at 55 HP. Two more losses at 12 to 13 put you near 30 entering stage 5, where a loss costs 20: two losses from elimination with the same board. The extra 18 gold at 5-1 is not worth 25 HP, and that pool has been through everyone else's 4-5 rolldown first.",
+  "principle": "Roll where the units that change your fights live: for 4-costs that is level 8, and at 60 gold you can afford to get there and roll.",
+  "guideLink": "/guides/leveling#levelling-and-rolling-in-the-same-round",
+  "commonMistake": "Rolling at 7 because the 3-cost odds look better, and finding 3-costs on a board that loses because its 4-costs are 1-star.",
+  "hint": "Count the 4-cost slots your gold shows at 7 versus at 8 after paying for the level.",
+  "lesson": "level-rolldowns"
+}

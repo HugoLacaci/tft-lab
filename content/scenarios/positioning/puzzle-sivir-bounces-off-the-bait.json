@@ -148,5 +148,7 @@
   "explanation": "Sivir's blade needs enemies near each other to bounce, and a kill gives it extra bounces. Ahri, Ashe and Alune in a row are a chain with a 1-star at the end of it: the blade lands, kills Alune, and the bonus bounces finish the two carries. Swap Alune with Diana. Diana in column 4 is a 2-star Vanguard body that does not die to one bounce, and Alune in the far corner of row 2 is out of bounce range of everyone. The chain is now two carries and a tank, and the kill bounce never triggers.\n\nSwapping Ahri or Ashe out leaves the 1-star in the chain, and the kill is what makes the cast explode.",
   "principle": "Bounces and chains are fed by kills. Remove the unit that dies, not the unit that matters.",
   "guideLink": "/guides/positioning#spread-vs-clump",
-  "commonMistake": "Spreading the carries apart and leaving the low-star body next to one of them, which still hands the cast its kill."
+  "commonMistake": "Spreading the carries apart and leaving the low-star body next to one of them, which still hands the cast its kill.",
+  "hint": "Find the unit the blade kills in one bounce, and trace which two units stand within bounce range of it.",
+  "lesson": "positioning-multiple-threats"
 }

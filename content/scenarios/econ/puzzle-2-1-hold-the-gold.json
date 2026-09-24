@@ -72,5 +72,7 @@
   "explanation": "At 2-1 gold is worth more later than now: every 10 gold you bank earns 1 gold of interest per round, all game. The shop shows a copy of a unit you own, so buy it: pairs are how you get 2-stars for free. Then stop. Rolling here finds nothing you can use for long, and levelling to 4 at 2-1 buys one extra 1-cost body for gold that would be earning interest.\n\nYou reach level 4 naturally at 2-2 with the free XP anyway.",
   "principle": "Buy pairs, bank the rest. Rolling and levelling in stage 2 are exceptions, not the plan.",
   "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
-  "commonMistake": "Rolling at 2-1 because there is nothing to do with the gold, which is exactly why you should keep it."
+  "commonMistake": "Rolling at 2-1 because there is nothing to do with the gold, which is exactly why you should keep it.",
+  "hint": "Check the shop for copies of units you already own, then ask what a roll at level 3 could find that you would keep.",
+  "lesson": "econ-interest-basics"
 }

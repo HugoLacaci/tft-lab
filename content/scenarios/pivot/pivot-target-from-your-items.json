@@ -1,0 +1,139 @@
+{
+  "id": "pivot-target-from-your-items",
+  "category": "pivot",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-5, level 7, 48 gold, 58 HP. Your Sivir plan is dead: three players hold her. Caitlyn carries Guinsoo's Rageblade and Last Whisper as a placeholder, Leona has Sunfire Cape, and you hold a Chain Vest and a Recurve Bow. Kayle and Varus give you Rapidfire 2. Which 4-cost do you pivot to for the 4-2 rolldown?",
+  "state": {
+    "stage": "3-5",
+    "gold": 48,
+    "hp": 58,
+    "level": 7,
+    "xpToNext": 28,
+    "streak": {
+      "type": "loss",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Shen",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sejuani",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 2,
+        "col": 1,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_LastWhisper"
+        ]
+      },
+      {
+        "championId": "DA_18_Tristana",
+        "row": 3,
+        "col": 6,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "DA_18_Kobuko",
+      "DA_18_Elise",
+      "DA_18_Rammus",
+      "DA_18_Teemo",
+      "DA_18_Hecarim"
+    ],
+    "items": [
+      "DA_Component_ChainVest",
+      "DA_Component_RecurveBow"
+    ],
+    "lobby": [
+      {
+        "player": "Seat 2",
+        "hp": 80,
+        "note": "Sivir 2-star, Hunter 4"
+      },
+      {
+        "player": "Seat 5",
+        "hp": 66,
+        "note": "Sivir 1-star plus one on the bench, Primal"
+      },
+      {
+        "player": "Seat 7",
+        "hp": 72,
+        "note": "Sivir 1-star, Hunter 3"
+      },
+      {
+        "player": "Seat 4",
+        "hp": 84,
+        "note": "Ahri 2-star with Deathcap, Blossom 5"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "aphelios",
+        "label": "Aphelios: a ranged AD 4-cost with Rapidfire, so Rageblade and Last Whisper move to him intact and Kayle and Varus make Rapidfire 3; nobody is on him"
+      },
+      {
+        "id": "ahri",
+        "label": "Ahri: the highest-rated 4-cost this patch, and Seat 4 shows the board works"
+      },
+      {
+        "id": "morgana",
+        "label": "Morgana: Coven with Caitlyn, so the trait is already started"
+      },
+      {
+        "id": "sivir",
+        "label": "Stay on Sivir: you have Hunter 2 with Caitlyn and Tristana and the items are hers"
+      }
+    ],
+    "correct": [
+      "aphelios"
+    ]
+  },
+  "explanation": "The pivot target is chosen by your items, then by the pool, and only then by the tier list. Rageblade and Last Whisper are attack-speed and armour-shred items for a ranged AD carry. Aphelios is exactly that, and he carries Rapidfire, which Kayle and Varus already hold at 2: one Aphelios is a 3-piece trait and both completed items at full value, with Caitlyn holding them until he is 2-star. Nobody is on him.\n\nSivir is closed: 10 copies, five already out across three players who buy every copy they see, and you need three. Ahri tops the list, but she deals magic damage, so both completed items would be wasted or sold, and Seat 4 already has her 2-star with Deathcap: contested, by a player ahead of you. Morgana is the trait trap: Coven with Caitlyn is a real start, but her damage is magic too, and a shared 2-cost is no reason to throw away two items.\n\nKeep Caitlyn as the holder, slam Vest and Bow where they fit, and let level 8 at 4-2 roll for Aphelios.",
+  "principle": "Pivot to the carry your completed items already fit and the pool still has; the tier list comes third.",
+  "guideLink": "/guides/pivoting#when-to-abandon-a-line",
+  "commonMistake": "Pivoting to the top-rated 4-cost and discovering that both completed items are for a different damage type.",
+  "hint": "List which 4-costs use the two completed items you already have, then remove the ones the scout report shows other players holding.",
+  "lesson": "pivot-execution"
+}

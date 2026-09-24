@@ -148,5 +148,7 @@
   "explanation": "A 1-star 1-cost has the lowest health on your board, so Rengar picks him wherever he is. That makes Kobuko a steering wheel: put him in the back-left corner, as far from Ahri and Ashe as the board allows, and Rengar's jump lands three hexes from anything that matters, with Vi next door to punish him. Kobuko dies, Rengar has to walk back across the board, and your carries had five free seconds.\n\nAnywhere near the carries drags Rengar into them. The front row wastes the bait: Rengar jumps over your tanks anyway, and Kobuko in the line just dies to Warwick first.",
   "principle": "A unit that will die anyway should die where it costs the enemy the most time.",
   "guideLink": "/guides/positioning#counter-positioning",
-  "commonMistake": "Filling the last slot with the extra body in the frontline because that is where bodies go."
+  "commonMistake": "Filling the last slot with the extra body in the frontline because that is where bodies go.",
+  "hint": "Find the lowest-health unit on your board, then look for the hex farthest from Ahri and Ashe that has a bruiser nearby.",
+  "lesson": "positioning-multiple-threats"
 }

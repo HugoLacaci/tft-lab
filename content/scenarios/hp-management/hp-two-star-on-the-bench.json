@@ -1,0 +1,102 @@
+{
+  "id": "hp-two-star-on-the-bench",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 5, 90 HP, 19 gold. Your five board units include a 1-star 2-cost caster with no synergy. On the bench sits a 2-star 1-cost bruiser, also without synergy, that you were 'keeping until something better'. What goes on the board this round?",
+  "state": {
+    "stage": "2-5",
+    "gold": 19,
+    "hp": 90,
+    "level": 5,
+    "xpToNext": 6,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:bruiser-1",
+        "star": 2,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:tank-2",
+      "generic:carry-1",
+      "generic:support-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "swap",
+        "label": "Put the 2-star bruiser on the board in place of the 1-star caster; a 2-star 1-cost beats a 1-star 2-cost"
+      },
+      {
+        "id": "keep",
+        "label": "Keep the caster: a 2-cost is a stronger unit than a 1-cost, and it might pair"
+      },
+      {
+        "id": "sell",
+        "label": "Sell the 2-star bruiser: a 1-cost will not be in your final board"
+      }
+    ],
+    "correct": [
+      "swap"
+    ]
+  },
+  "explanation": "Strongest board every round means the strongest units, not the most expensive ones. A 2-star has roughly 80% more health and damage than its 1-star, and a 2-star 1-cost is stronger than a 1-star 2-cost in almost every matchup: the cost step is smaller than the star step. The bruiser also goes in the front line where a second body helps your tank, while the caster is a back-row unit that dies when the front folds.\n\n'It might pair' is not a reason to field it: pairs sit on the bench fine, and this caster has no synergy and one copy. Selling the bruiser is the other extreme, throwing away 3 gold of board strength for a final board that is stages away. Every stage-2 fight you lose with a weaker board is HP you never get back; every unit on the bench that would beat a unit on the board is a fight you chose to lose.",
+  "principle": "The strongest unit plays, and a 2-star 1-cost is stronger than a 1-star 2-cost. Cost is not strength.",
+  "guideLink": "/guides/hp#hp-is-a-resource",
+  "commonMistake": "Fielding a 1-star because it costs more, while a 2-star of a cheaper unit waits on the bench 'for later'.",
+  "hint": "Compare what a star-up does to a unit's stats against what one cost level does. Then ask which of the two units survives longer in a fight.",
+  "lesson": "hp-strongest-board"
+}

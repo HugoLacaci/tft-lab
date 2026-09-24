@@ -144,5 +144,7 @@
   "explanation": "In this row geometry Ashe on the back-right corner touches only the hex to her left and the one diagonally in front, and both are empty: she is isolated, so Kha'Zix lands on the farthest enemy, finds nobody next to her, and one-shots your carry. Swap her with Yorick. Ashe moves to column 4, adjacent to Diana, so the isolation bonus is gone and the bodyguard is already there. Yorick takes the corner: he is the bait, and when he dies his Spirit Walker taunts, which pins Kha'Zix in the corner for another few seconds.\n\nSwapping Ashe with Karma just moves the isolation to the other corner.",
   "principle": "Read the condition on the ability. Isolation is a positioning error you can fix with one body.",
   "guideLink": "/guides/positioning#counter-positioning",
-  "commonMistake": "Moving the carry to the centre and leaving the corner empty, which makes the next-farthest unit the target with the same isolation problem."
+  "commonMistake": "Moving the carry to the centre and leaving the corner empty, which makes the next-farthest unit the target with the same isolation problem.",
+  "hint": "Check which hexes touch Ashe's corner and who is standing in them, then ask which unit you would happily hand Kha'Zix instead.",
+  "lesson": "positioning-multiple-threats"
 }

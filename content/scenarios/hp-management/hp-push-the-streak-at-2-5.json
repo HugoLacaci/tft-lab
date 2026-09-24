@@ -1,0 +1,101 @@
+{
+  "id": "hp-push-the-streak-at-2-5",
+  "category": "hp-management",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 4, 96 HP, 30 gold, three wins in a row. You are 4 XP from level 5. The shop shows the third copy of your 2-cost carry (2 gold): a 2-star. Win-streak gold is +1 at 2 and 3 wins, +2 at 4 and 5. Spend, or protect the 30 for interest?",
+  "state": {
+    "stage": "2-5",
+    "gold": 30,
+    "hp": 96,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 3
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:carry-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:support-2",
+        "star": 2,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:carry-2",
+      "generic:tank-2",
+      "generic:caster-2",
+      "generic:bruiser-2",
+      "generic:support-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "push",
+        "label": "Buy the carry copy and level to 5 (6 gold): the 2-star carry and the fifth unit keep the streak, and the fourth win pays +2 a round"
+      },
+      {
+        "id": "hold",
+        "label": "Hold 30: 3 interest a round is worth more than a 2-cost copy, and the streak breaks eventually"
+      },
+      {
+        "id": "push-roll",
+        "label": "Buy the copy, level, and roll the rest for more 2-stars to make sure"
+      }
+    ],
+    "correct": [
+      "push"
+    ]
+  },
+  "explanation": "A win streak is income and HP at the same time: every win is 0 HP lost for you and HP lost for someone else, and the streak gold rises with its length. Buying the 2-star carry and level 5 costs 6 gold, 30 to 24, which is 2 interest instead of 3 for one round: a cost of 1 gold. In return the fourth win moves the streak bonus from +1 to +2, paying that gold back immediately, and a 2-star carry plus a fifth unit is a board that keeps winning through 3-1 and 3-2 when the lobby's boards are still cheap.\n\nHolding 30 is the reflex of a player who learned 'save to 50' before learning what the saving is for. The streak is the better line at 96 HP with the strongest board: it grows the bank faster than interest does. Rolling the rest is greed of the other kind: 24 gold into a level-5 shop for 'more 2-stars' throws the interest away for upgrades the board does not need to keep winning.",
+  "principle": "A strong board on a win streak is a bank: spend the few gold that keep it winning, not the pile that sits behind it.",
+  "guideLink": "/guides/hp#hp-is-a-resource",
+  "commonMistake": "Letting a win streak die at 2-5 to protect one gold of interest, then losing the streak bonus and the HP lead both.",
+  "hint": "Add up what one interest gold costs you against what the fourth win's streak bonus pays, and count the units the lobby fields at 2-5.",
+  "lesson": "hp-strongest-board"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "welcome-combine-the-two-swords",
+  "category": "items",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 5. Your 2-star ranged carry has held a single sword component since stage 1, and you took a second sword at the carousel. Two components on one champion combine into a completed item. Who gets the second sword?",
+  "state": {
+    "stage": "2-5",
+    "gold": 16,
+    "hp": 92,
+    "level": 5,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:ad"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:support-1",
+      "generic:tank-2",
+      "generic:carry-2",
+      "generic:caster-1",
+      "generic:bruiser-2"
+    ],
+    "items": [
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "item-holder",
+    "itemId": "generic:item:ad",
+    "correctUnitIds": [
+      "generic:carry-1"
+    ]
+  },
+  "explanation": "Drop the second sword on the carry that already holds the first and the two combine into a completed damage item, worth far more than two loose swords. Giving it to the caster instead leaves two champions each holding half an item, and half an item is a small stat, not an item. The tank is worse again: a sword adds attack damage, and the tank's job is to be hit, not to hit.\n\nThe habit: when a component drops, look first for the champion already holding one.",
+  "principle": "Two components on the same champion make an item; one each on two champions makes nothing.",
+  "guideLink": "/guides/welcome#items",
+  "commonMistake": "Spreading components one per unit 'so everyone gets something' and never completing an item.",
+  "hint": "Which unit on the board is already holding a component, and what happens when a second one lands on it?",
+  "lesson": "welcome-items"
+}

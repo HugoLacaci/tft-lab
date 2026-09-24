@@ -71,5 +71,7 @@
   "explanation": "Varus is a ranged carry standing in the front row, so he is the first unit the enemy melee reaches and he dies before he casts. Leona is a tank standing in the back row, so she does nothing until everyone in front of her is dead. Swap them: Leona to the front next to Kobuko, Varus to the back next to Karma.\n\nThis happens more than you think, usually after a carousel or an item move drops a unit on the wrong hex. Before every fight, glance at the two rows: is every melee unit in front of every ranged one?",
   "principle": "Ranged in the back, melee in the front. Check it every round, not just when you build the board.",
   "guideLink": "/guides/positioning#frontline-and-backline-defaults",
-  "commonMistake": "Blaming the loss on the enemy having a stronger board and rolling to fix a problem that was two hexes wide."
+  "commonMistake": "Blaming the loss on the enemy having a stronger board and rolling to fix a problem that was two hexes wide.",
+  "hint": "Check each unit's range against the row it stands in, and ask who the enemy melee reaches first.",
+  "lesson": "positioning-front-and-back"
 }

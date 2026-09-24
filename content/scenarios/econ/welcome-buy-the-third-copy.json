@@ -1,0 +1,94 @@
+{
+  "id": "welcome-buy-the-third-copy",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 2-3, level 4, 11 gold. You own two copies of a 1-cost tank: one on the board, one on the bench. The shop shows a third copy for 1 gold, a 3-cost ranged carry for 3 and a 2-cost caster for 2. What do you buy?",
+  "state": {
+    "stage": "2-3",
+    "gold": 11,
+    "hp": 96,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:tank-1",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-3",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "copy",
+        "label": "The third tank copy: 1 gold turns your two 1-stars into a 2-star"
+      },
+      {
+        "id": "carry",
+        "label": "The 3-cost carry: it is the strongest unit in the shop"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh for 2 gold and look for something better"
+      },
+      {
+        "id": "hold",
+        "label": "Nothing: hold the 11 gold toward interest"
+      }
+    ],
+    "correct": [
+      "copy"
+    ]
+  },
+  "explanation": "Three copies merge into a 2-star the moment you buy the third, and a 2-star 1-cost has far more health and damage than the single copy it replaces. For 1 gold, that is the best buy in the game. The 3-cost carry looks stronger, but a 1-star 3-cost is not better than a 2-star 1-cost this early, costs three times as much, and belongs to no plan yet.\n\nRefreshing throws away a shop that already has what you need. Holding is right when the shop is empty; this shop is not.",
+  "principle": "A copy of a champion you own is the first thing to look for in every shop.",
+  "guideLink": "/guides/welcome#the-shop-and-star-ups",
+  "commonMistake": "Buying the most expensive unit in the shop instead of the 1-gold copy that makes a 2-star.",
+  "hint": "Compare each shop slot with what is already on your board and bench before you look at prices.",
+  "lesson": "welcome-the-shop"
+}

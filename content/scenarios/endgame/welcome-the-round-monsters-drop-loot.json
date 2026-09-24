@@ -1,0 +1,95 @@
+{
+  "id": "welcome-the-round-monsters-drop-loot",
+  "category": "endgame",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-6, level 5, 21 gold, 92 HP. Next round is 2-7, the monster round: it drops loot (components or gold) when the monsters die. Someone tells you to refresh the shop now so you are sure to beat the monsters. Your five units are all 2-stars. What do you do?",
+  "state": {
+    "stage": "2-6",
+    "gold": 21,
+    "hp": 92,
+    "level": 5,
+    "xpToNext": 8,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:support-1",
+      "generic:caster-2",
+      "generic:tank-1",
+      "generic:bruiser-2",
+      "generic:carry-1"
+    ],
+    "items": [
+      "generic:item:ad"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "hold",
+        "label": "Hold: five 2-stars clear the stage-2 monsters easily and the loot drops either way. Keep the 21 and pass 30 with next round's income for another interest gold"
+      },
+      {
+        "id": "refresh",
+        "label": "Refresh 10 gold to strengthen the board so you do not lose the items to the monsters"
+      },
+      {
+        "id": "level",
+        "label": "Buy XP to level 6 so a sixth unit helps against the monsters"
+      }
+    ],
+    "correct": [
+      "hold"
+    ]
+  },
+  "explanation": "Monster rounds are where items come from, and the stage-2 monsters are weak: any board that fields its units kills them, and yours is five 2-stars. The loot drops as the monsters die and is yours to pick up. Spending gold to 'make sure' is spending against a problem that does not exist. Hold the 21: income at 2-7 takes you past 30, which is 3 interest a round going into stage 3 instead of 2.\n\nRefreshing 10 gold buys nothing you need and drops you to 11 gold, 1 interest. Buying XP for a sixth unit makes even less sense: level 6 costs 8 gold here and the standard time for it is 3-2, when the augment round gives you a reason. The monster round is a free round; treat it as one. The only time to worry about a monster round is late in the game when a weak board can actually fail to kill everything, and then the fix is fielding your full board, not refreshing.",
+  "principle": "Monster rounds are free loot: field your units, kill the monsters, keep your gold.",
+  "guideLink": "/guides/welcome#the-flow-of-a-game",
+  "commonMistake": "Refreshing or levelling 'for the monsters' at 2-6 and entering stage 3 with half the interest you should have.",
+  "hint": "Ask whether your board can actually lose to stage-2 monsters, and what 21 gold becomes after next round's income if you spend nothing.",
+  "lesson": "welcome-the-round"
+}

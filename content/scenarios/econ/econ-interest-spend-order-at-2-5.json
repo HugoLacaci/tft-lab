@@ -1,0 +1,94 @@
+{
+  "id": "econ-interest-spend-order-at-2-5",
+  "category": "econ",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 2-5, level 4, 22 gold, 90 HP. The shop shows a third copy of your 1-cost tank (1 gold) and a second copy of your 2-cost carry (2 gold). A 2-star support is on your bench, and you are 4 XP from level 5. Put the spending in order, from the first thing you buy to what you do with the rest.",
+  "state": {
+    "stage": "2-5",
+    "gold": 22,
+    "hp": 90,
+    "level": 4,
+    "xpToNext": 4,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-1",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:tank-1",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:support-2",
+        "star": 2,
+        "items": [],
+        "slot": 1
+      }
+    ],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:bruiser-2",
+      "generic:support-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "ordering",
+    "steps": [
+      "Buy 4 XP (4 gold): level 5, and the 2-star support joins the board",
+      "Bank what is left; no refresh, the next 10 is a gold a round",
+      "Buy the third copy of the tank (1 gold): it becomes a 2-star on the board",
+      "Buy the second copy of the carry (2 gold): a pair toward the 2-star you want most"
+    ],
+    "correctOrder": [
+      2,
+      0,
+      3,
+      1
+    ]
+  },
+  "explanation": "Order by what the gold changes today. The tank copy is 1 gold for a 2-star that is already on the board: the largest strength per gold on the screen, and it disappears when the shop refreshes, so it goes first. XP is next: 4 gold puts a ready 2-star support into the fight as a fifth unit, and level 5 at 2-5 is the standard timing anyway. The carry pair is third: 2 gold for a copy you will want, but a pair alone wins nothing this round, so it comes after the two buys that do. That leaves 15 gold, which earns 1 interest; a refresh would drop it toward 13 for a random shop when the shop already gave you what you needed.\n\nThe common error is doing the list backwards: refreshing first 'to see', then finding there is no gold for the level, then buying the pair and losing the tank copy because the shop rolled over.",
+  "principle": "2-star on the board, then the level that adds a unit, then pairs, then the bank. Refreshing is not on the list.",
+  "guideLink": "/guides/economy#interest-and-the-50-gold-floor",
+  "commonMistake": "Refreshing first at 2-5 and then not having the 4 gold to level, while the 2-star copy that was in the shop is gone.",
+  "hint": "For each option ask: does it change the fight this round, and does it vanish if I wait? Then order by that.",
+  "lesson": "econ-interest-basics"
+}

@@ -123,5 +123,7 @@
   "explanation": "Six of ten Ahris are already out of the pool: your one plus their five. You need two more from the four that remain, while two players who are ahead of you on copies also want them, and Seat 3 is already 2-star. Rolling 44 gold into that pool is the worst odds on the table. Jeweled Gauntlet and Nashor's are not Ahri items; they are AP carry items, and Morgana is an uncontested AP carry with an Invoker line nobody is on. Keep Ahri as a body, roll for Morgana and Invokers, and sell Ahri when she is no longer your carry.\n\nHolding 50 and praying is how you go 7th with a 2-star Sett.",
   "principle": "Copies out of the pool are the number that decides a contest. Count them before you roll, and pivot on items, not on units.",
   "guideLink": "/guides/pivoting#reading-contest",
-  "commonMistake": "Racing two players to a unit because you have the items for it, when the items fit a different carry."
+  "commonMistake": "Racing two players to a unit because you have the items for it, when the items fit a different carry.",
+  "hint": "Subtract the six visible Ahri copies from the pool of 10, then look at which carries your two items would fit besides Ahri.",
+  "lesson": "scouting-changes-decisions"
 }

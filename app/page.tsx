@@ -17,10 +17,10 @@ const PILLARS: { href: string; title: string; kicker: string; body: string; cta:
   {
     href: "/trainer",
     title: "Trainer",
-    kicker: "Drill the decisions",
-    body: "Real board states on a real hex board. Make the call, get scored, read why. Missed drills come back on a spaced schedule until they stick.",
-    cta: "Run a Daily 10",
-    ctaHref: "/trainer/daily",
+    kicker: "A path from first game to Master",
+    body: "Lessons that build on each other, drilled on a real hex board: make the call, get scored, read why, ask for a hint, see the solution drawn. Missed drills come back until they stick, and an AI coach writes new ones for your weak spots.",
+    cta: "Start the path",
+    ctaHref: "/trainer/path",
     glyph: "trainer",
   },
   {
@@ -111,6 +111,9 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="rise mt-6 flex flex-wrap items-center gap-3 text-xs text-dim" style={{ ["--i" as string]: 4 } as React.CSSProperties}>
+              <Link href="/trainer/welcome" className="chip chip-active hover:no-underline">
+                New to TFT? Start here
+              </Link>
               <span className="display uppercase tracking-[0.2em] text-gold">Puzzle ladder</span>
               {RANK_TIERS.map((t) => (
                 <Link key={t.id} href={`/trainer/puzzles/${t.id}`} className="flex items-center gap-1 hover:no-underline" style={{ color: t.color }}>

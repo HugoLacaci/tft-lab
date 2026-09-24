@@ -1,0 +1,103 @@
+{
+  "id": "items-slam-two-at-3-2",
+  "category": "items",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 6, 71 HP, alternating wins and losses. You hold four components on the bench: two defensive, one AD, one AP. None of the pairs is the perfect item for the 4-cost carry you hope to find at 4-2. Your 2-star 2-cost tank and 2-star 3-cost carry are both naked. What do you do with the components?",
+  "state": {
+    "stage": "3-2",
+    "gold": 44,
+    "hp": 71,
+    "level": 6,
+    "xpToNext": 10,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-3",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 5,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:caster-1",
+      "generic:bruiser-2",
+      "generic:support-1",
+      "generic:carry-2"
+    ],
+    "items": [
+      "generic:item:tank",
+      "generic:item:tank",
+      "generic:item:ad",
+      "generic:item:ap"
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "slam-two",
+        "label": "Slam two items now: the two defensive components into a tank item on the 2-cost tank, and AD + AP into a damage item on the 3-cost carry"
+      },
+      {
+        "id": "hold",
+        "label": "Hold all four: the perfect items for the 4-cost carry are worth waiting for, and 71 HP is fine"
+      },
+      {
+        "id": "slam-one",
+        "label": "Slam only the tank item and keep AD and AP for the carry you will find at 4-2"
+      }
+    ],
+    "correct": [
+      "slam-two"
+    ]
+  },
+  "explanation": "By 3-2 you want two completed items on the board. A completed item is worth far more than the two components that made it: the components on the bench add zero to the fight, and the item adds a full stat line to a unit that is fighting now. Two defensive components on the 2-star tank in the centre make the front line hold; AD + AP on the 2-star 3-cost carry is not a perfect item, but a mixed damage item on the unit doing your damage still wins fights that a naked carry loses.\n\n'Perfect items for the 4-cost' is the trap: that carry is at 4-2 at the earliest, two rounds and a level away, and only if you find him. Between now and then there are three fights, and the 3-4 carousel and the 3-7 monster round will hand you more components. A 4-cost carry with two good items beats a 4-cost with two perfect items and 20 less HP behind him. Slamming only the tank item halves the benefit for the same reason. Two items by 3-2, on the units you have.",
+  "principle": "Two completed items on the board by 3-2. A component on the bench has a value of zero in every fight it sits out.",
+  "guideLink": "/guides/items#slam-or-hold",
+  "commonMistake": "Holding components for a carry who is not on the board yet, and losing three fights with a naked carry and a naked tank.",
+  "hint": "Count how many fights happen before 4-2 and what each of the four components contributes to them while on the bench.",
+  "lesson": "items-slam-early"
+}

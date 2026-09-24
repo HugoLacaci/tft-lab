@@ -69,5 +69,7 @@
   "explanation": "Rageblade gives stacking attack speed for every attack. It wants the unit that attacks the most and lives the longest: a ranged auto-attacker in the back row. Varus is a Rapidfire, whose trait already gains attack speed per attack, and he is your only backline attacker.\n\nOrnn and Kobuko are frontliners who want armour and health. Karma is a caster: she wants mana and ability power, not attack speed. Attack items on tanks are the most common item leak at this level.",
   "principle": "Attack-speed items go on the ranged auto-attacker. Tanks get tank items.",
   "guideLink": "/guides/items#slam-or-hold",
-  "commonMistake": "Giving the item to the unit with the most health because it feels safer."
+  "commonMistake": "Giving the item to the unit with the most health because it feels safer.",
+  "hint": "Look for the unit that attacks most often and stays alive longest; check each unit's range and role.",
+  "lesson": "items-slam-early"
 }

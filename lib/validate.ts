@@ -8,6 +8,7 @@ import { GENERIC_UNITS, GENERIC_ITEMS } from "@/data/archetypes";
 import { GENERIC_AUGMENTS } from "@/data/generic-augments";
 import type { SetData } from "./types";
 import { CompsFileSchema } from "./comps";
+import { LESSONS, MODULES } from "./curriculum";
 
 export interface Problem {
   file: string;
@@ -151,6 +152,10 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
     "/trainer",
     "/trainer/daily",
     "/trainer/puzzles",
+    "/trainer/path",
+    "/trainer/welcome",
+    "/trainer/missed",
+    "/trainer/ai",
     "/lab",
     "/lab/odds",
     "/lab/econ",
@@ -163,6 +168,7 @@ export function validateGuideLinks(root = process.cwd()): Problem[] {
   ]);
   for (const c of ["econ", "level-timing", "augment", "items", "positioning", "pivot", "carousel", "scouting", "hp-management", "endgame"]) routes.add(`/trainer/${c}`);
   for (const tier of ["iron-silver", "gold-platinum", "emerald-diamond", "master-plus"]) routes.add(`/trainer/puzzles/${tier}`);
+  for (const l of LESSONS) routes.add(`/trainer/path/${l.id}`);
   for (const g of guides) routes.add(`/guides/${g}`);
 
   for (const slug of guides) {
@@ -246,7 +252,37 @@ export async function validateMdxSyntax(root = process.cwd()): Promise<Problem[]
 }
 
 export async function runValidation(root = process.cwd()): Promise<Problem[]> {
-  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+  return [...validateCurrent(root), ...validateScenarios(root), ...validateGuideLinks(root), ...validateCurriculum(root), ...validateNoHardcodedSet(root), ...validateCurated(root), ...(await validateMdxSyntax(root))];
+}
+
+/**
+ * The learning path: every lesson links to a real guide anchor and belongs to
+ * a real module; a lesson with no drills is a warning (the path hides it).
+ */
+export function validateCurriculum(root = process.cwd()): Problem[] {
+  const problems: Problem[] = [];
+  const file = "lib/curriculum.ts";
+  const ids = new Set<string>();
+  const counts = new Map<string, number>();
+  for (const f of scenarioFiles(root)) {
+    try {
+      const s = JSON.parse(fs.readFileSync(f, "utf8")) as { lesson?: string };
+      if (s.lesson) counts.set(s.lesson, (counts.get(s.lesson) ?? 0) + 1);
+    } catch {
+      /* reported by validateScenarios */
+    }
+  }
+  for (const l of LESSONS) {
+    if (ids.has(l.id)) problems.push({ file, field: l.id, message: "duplicate lesson id" });
+    ids.add(l.id);
+    if (!MODULES.some((m) => m.id === l.module)) problems.push({ file, field: l.id, message: `unknown module "${l.module}"` });
+    const gl = parseGuideLink(l.guideLink);
+    const g = gl ? readGuide(gl.slug, path.join(root, "content", "guides")) : null;
+    if (!gl || !g) problems.push({ file, field: `${l.id}.guideLink`, message: `dead guide link ${l.guideLink}` });
+    else if (gl.anchor && extractSection(g.content, gl.anchor) === null) problems.push({ file, field: `${l.id}.guideLink`, message: `anchor #${gl.anchor} not found in ${gl.slug}.mdx` });
+    if (!counts.get(l.id)) problems.push({ file, field: l.id, message: "lesson has no drills yet (hidden from the path)", severity: "warning" });
+  }
+  return problems;
 }
 
 /**

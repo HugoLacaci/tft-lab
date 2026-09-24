@@ -1,0 +1,146 @@
+{
+  "id": "count-the-sivirs-before-you-roll",
+  "category": "scouting",
+  "difficulty": 3,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 4-2, augment taken, level 8 with 46 gold and 49 HP. Sivir is your carry: 1-star with Infinity Edge and Guinsoo's Rageblade, and a second copy on the bench. 4-costs have 10 copies each. Read the scout report, count the Sivirs out of the pool, and decide whether to roll now.",
+  "state": {
+    "stage": "4-2",
+    "gold": 46,
+    "hp": 49,
+    "level": 8,
+    "xpToNext": 40,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_18_Leona",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_Vi18",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sejuani",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_Nidalee18_AP",
+        "row": 2,
+        "col": 6,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Tristana",
+        "row": 3,
+        "col": 1,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Sivir",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "DA_InfinityEdge",
+          "DA_GuinsoosRageblade"
+        ]
+      },
+      {
+        "championId": "DA_18_Caitlyn",
+        "row": 3,
+        "col": 5,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Sivir",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Kobuko",
+      "DA_18_Elise",
+      "DA_18_Rammus",
+      "DA_18_Teemo",
+      "DA_18_Hecarim"
+    ],
+    "items": [],
+    "lobby": [
+      {
+        "player": "Seat 3",
+        "hp": 54,
+        "note": "Sivir 1-star on the board, Hunter 3, no items on her"
+      },
+      {
+        "player": "Seat 6",
+        "hp": 70,
+        "note": "Hunter 4 around a 2-star Tristana, no Sivir"
+      },
+      {
+        "player": "Seat 1",
+        "hp": 28,
+        "note": "Sold their Sivir last round, now on Coven"
+      },
+      {
+        "player": "Seat 8",
+        "hp": 80,
+        "note": "Strongest board: Ahri 2-star, Blossom 5"
+      }
+    ]
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "roll",
+        "label": "Roll now to a floor of 10: seven Sivirs are in the pool, one contester holds one, and 46 gold at level 8 is a real rolldown"
+      },
+      {
+        "id": "pivot",
+        "label": "Pivot: two Hunter boards means Sivir is contested, so sell her and roll for Ahri"
+      },
+      {
+        "id": "wait",
+        "label": "Hold 46 and roll at 4-5, once Seat 1 is out and Seat 3 has fallen further"
+      }
+    ],
+    "correct": [
+      "roll"
+    ]
+  },
+  "explanation": "Count before you roll, and count copies, not boards. You hold 2 Sivirs. Seat 3 holds 1. Seat 6 plays Hunter but has no Sivir, and Seat 1 sold theirs, which put it back in the pool. That is 3 out of 10, so 7 remain, and one contester with a single naked copy is normal contest on a 4-cost line. With the 4-cost tier near 125 copies after the lobby's boards, a level-8 slot shows Sivir about 1.7% of the time and a shop about 8%. Eighteen shops, 36 gold, find at least one copy roughly 78% of the time, and one is all you need.\n\nThe pivot is the wrong read: 'two Hunter boards' is a trait count, not a Sivir count, and Ahri is 2-star with Blossom 5 on the strongest board in the lobby, real contest by a player far ahead of you. Waiting to 4-5 does not improve the pool; Seat 3 rolling with income does, in their favour, and Seat 6 buys any Sivir they see. Two rounds at 12 a loss also puts you at 25 HP, the two-losses line.\n\nSeven in the pool, one soft contester, 46 gold at 8: this is what a rolldown is for.",
+  "principle": "Contest is a count of copies out of the pool, not a count of boards on the trait.",
+  "guideLink": "/guides/scouting#scouting-must-change-a-decision",
+  "commonMistake": "Reading every board on the carry's trait as a contester and pivoting off a 4-cost with seven copies still in the pool.",
+  "hint": "List each seat's Sivir copies, add your own, subtract from 10, then price a shop at level 8.",
+  "lesson": "scouting-changes-decisions"
+}

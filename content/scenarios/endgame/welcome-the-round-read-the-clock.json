@@ -1,0 +1,102 @@
+{
+  "id": "welcome-the-round-read-the-clock",
+  "category": "endgame",
+  "difficulty": 1,
+  "kind": "drill",
+  "setAgnostic": true,
+  "prompt": "The round counter at the top of the screen reads 3-2. You have 33 gold and 80 HP. A friend says items drop next round, so you should spend now. Read the clock: what round is this, and when does the next free thing actually arrive?",
+  "state": {
+    "stage": "3-2",
+    "gold": 33,
+    "hp": 80,
+    "level": 6,
+    "xpToNext": 12,
+    "streak": {
+      "type": "win",
+      "count": 2
+    },
+    "board": [
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-2",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:carry-1",
+      "generic:tank-1",
+      "generic:support-1",
+      "generic:caster-1",
+      "generic:bruiser-2"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "stage3",
+        "label": "Stage 3, round 2. The carousel (a free unit with an item) is two rounds away at 3-4 and the monster round that drops items is at 3-7. Nothing drops next round"
+      },
+      {
+        "id": "stage2",
+        "label": "Stage 2, round 3. The next carousel is 2-4, so items come next round"
+      },
+      {
+        "id": "round32",
+        "label": "Round 32 of the game. Items drop whenever you win a fight, so win this one"
+      }
+    ],
+    "correct": [
+      "stage3"
+    ]
+  },
+  "explanation": "The first number is the stage, the second is the round inside it: 3-2 is stage 3, round 2. Every stage has seven rounds. Rounds 1, 2, 3, 5 and 6 are fights against other players, round 4 is the carousel where every player picks a champion holding an item, and round 7 is against monsters and drops items or gold. So from 3-2 the next free thing is the carousel at 3-4, and the monster loot is at 3-7. Next round, 3-3, is just another player fight.\n\nThis matters for your gold: 33 gold at 3-2 becomes 50 by 3-5 if you hold, and nothing in the next two rounds forces you to spend. Items never drop for winning a player fight; they come from monster rounds, the carousel and augments. Read the clock before every spend so you know how many rounds your gold has to last.",
+  "principle": "Stage-round: seven rounds a stage, carousel at x-4, monsters at x-7. Know which comes next before you spend.",
+  "guideLink": "/guides/welcome#the-flow-of-a-game",
+  "commonMistake": "Spending at 3-3 because 'something drops next round', when the next drop is the 3-4 carousel and the next items are at 3-7.",
+  "hint": "Split the number into stage and round, then count which rounds of a stage are fights, which is the carousel and which is the monster round.",
+  "lesson": "welcome-the-round"
+}

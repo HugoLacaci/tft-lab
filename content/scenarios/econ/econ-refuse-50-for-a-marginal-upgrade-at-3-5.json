@@ -1,0 +1,122 @@
+{
+  "id": "econ-refuse-50-for-a-marginal-upgrade-at-3-5",
+  "category": "econ",
+  "difficulty": 4,
+  "setAgnostic": false,
+  "set": 18,
+  "prompt": "Stage 3-5, level 7, 52 gold, 71 HP, a stable mid-lobby board that has gone win, loss, win. Mama Beak is 2-star with Rageblade and Infinity Edge, Sentinel holds the tank items. Hecarim is 1-star on the board with a second copy on the bench. The shop shows a Kayle (your third, 2 gold) and a Malphite (4 gold). Level 8 and the rolldown are planned for 4-2. What do you buy this round?",
+  "state": {
+    "stage": "3-5",
+    "gold": 52,
+    "hp": 71,
+    "level": 7,
+    "xpToNext": 60,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "DA_Sentinel18",
+        "row": 0,
+        "col": 3,
+        "star": 1,
+        "items": [
+          "DA_WarmogsArmor",
+          "DA_SunfireCape"
+        ]
+      },
+      {
+        "championId": "DA_18_Alistar",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Hecarim",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Xayah",
+        "row": 2,
+        "col": 0,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "DA_18_Kayle",
+        "row": 3,
+        "col": 2,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "DA_CrimsonRaptor18",
+        "row": 3,
+        "col": 4,
+        "star": 2,
+        "items": [
+          "DA_GuinsoosRageblade",
+          "DA_InfinityEdge"
+        ]
+      },
+      {
+        "championId": "DA_18_Varus",
+        "row": 3,
+        "col": 6,
+        "star": 2,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "DA_18_Hecarim",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      }
+    ],
+    "shop": [
+      "DA_18_Kayle",
+      "DA_18_Malphite",
+      "DA_18_Camille",
+      "DA_18_Teemo",
+      "DA_Krug18"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "kayle",
+        "label": "Buy the Kayle for the 2-star and nothing else: you stay at exactly 50"
+      },
+      {
+        "id": "roll",
+        "label": "Buy the Kayle and roll twice for the third Hecarim: a 2-star frontline for 6 gold"
+      },
+      {
+        "id": "malphite",
+        "label": "Buy the Kayle and the Malphite: a 4-cost body is a bigger upgrade than a 2-star Hecarim"
+      },
+      {
+        "id": "nothing",
+        "label": "Buy nothing; 52 is above the floor and every gold counts at 4-2"
+      }
+    ],
+    "correct": [
+      "kayle"
+    ]
+  },
+  "explanation": "There is a line between spending the surplus and breaking the floor, and this round sits on it. The Kayle is a free 2-star: she is on your board, she costs 2, and 52 minus 2 is 50, so you lose nothing at 3-6. Buying nothing leaves 2 gold above the cap earning nothing and a 1-star on the board for no reason.\n\nRolling twice for Hecarim is the marginal upgrade the floor exists to refuse. At level 7 a slot is a 3-cost 43% of the time and there are fourteen 3-costs, so a specific one is in roughly 13% of shops; two shops find him about one time in four. The price is 4 gold of rolls plus 1 interest at 3-6, for an itemless 2-star 3-cost that a 4-cost tank replaces at 4-2. Malphite is worse: a single 4-cost you are not building around, bought at 3-5, drops you to 46 for a unit that wins no fight Sentinel was losing. Reach 4-2 at 60-plus and level 8; that is where the upgrades are.",
+  "principle": "Spend the surplus above 50 freely; spend the gold below it only for a fight you are losing.",
+  "guideLink": "/guides/economy#three-legitimate-reasons-to-break-50",
+  "commonMistake": "Treating 'I am winning anyway' as a licence to roll for small frontline upgrades three rounds before the planned rolldown.",
+  "hint": "Price each purchase against 50: which ones leave you on the floor and which take you under it, and what each buys for the 4-2 fight.",
+  "lesson": "econ-breaking-50"
+}

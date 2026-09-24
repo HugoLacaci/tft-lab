@@ -139,5 +139,7 @@
   "explanation": "Quicksilver makes its holder immune to crowd control for the opening seconds of the fight, and its value is the damage that keeps happening while everyone else is asleep or stunned. That is your main carry: Ashe already has Shojin and Red Buff, so she is the unit whose uptime decides the fight. Ahri is the second carry and a fine second choice if you had two.\n\nOn Sett it stops one stun on a unit whose job is to absorb casts anyway. On Alune it protects a 1-star body. Defensive items on the carry are not a waste when the enemy's plan is to turn the carry off.",
   "principle": "Anti-crowd-control goes on the unit whose downtime loses the fight, which is almost always the main carry.",
   "guideLink": "/guides/items#bis-is-a-preference",
-  "commonMistake": "Putting Quicksilver on the tank because it is a defensive item and tanks get defensive items."
+  "commonMistake": "Putting Quicksilver on the tank because it is a defensive item and tanks get defensive items.",
+  "hint": "Ask which unit's first few seconds of the fight matter most when the whole board is asleep or stunned.",
+  "lesson": "items-holders"
 }

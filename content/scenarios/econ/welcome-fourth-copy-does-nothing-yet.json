@@ -1,0 +1,142 @@
+{
+  "id": "welcome-fourth-copy-does-nothing-yet",
+  "category": "econ",
+  "difficulty": 1,
+  "setAgnostic": true,
+  "prompt": "Stage 3-2, level 6, 31 gold. Your 1-cost ranged carry is already 2-star and holds your item. The shop shows another copy for 1 gold and your bench has two free slots. Do you buy it?",
+  "state": {
+    "stage": "3-2",
+    "gold": 31,
+    "hp": 82,
+    "level": 6,
+    "xpToNext": 30,
+    "streak": {
+      "type": "win",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-1",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:bruiser-1",
+        "row": 0,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-1",
+        "row": 3,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-2",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:support-1",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [
+      {
+        "championId": "generic:caster-2",
+        "star": 1,
+        "items": [],
+        "slot": 0
+      },
+      {
+        "championId": "generic:tank-2",
+        "star": 1,
+        "items": [],
+        "slot": 1
+      },
+      {
+        "championId": "generic:support-2",
+        "star": 1,
+        "items": [],
+        "slot": 2
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "star": 1,
+        "items": [],
+        "slot": 3
+      },
+      {
+        "championId": "generic:caster-3",
+        "star": 1,
+        "items": [],
+        "slot": 4
+      },
+      {
+        "championId": "generic:carry-3",
+        "star": 1,
+        "items": [],
+        "slot": 5
+      },
+      {
+        "championId": "generic:support-1",
+        "star": 1,
+        "items": [],
+        "slot": 6
+      }
+    ],
+    "shop": [
+      "generic:carry-1",
+      "generic:tank-3",
+      "generic:assassin-2",
+      "generic:support-2",
+      "generic:bruiser-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "no",
+        "label": "No: a fourth copy does nothing on its own, a 3-star needs nine, and the bench slot is worth more"
+      },
+      {
+        "id": "yes",
+        "label": "Yes: every copy is progress toward the 3-star"
+      },
+      {
+        "id": "roll",
+        "label": "Yes, and refresh to look for more copies while they are cheap"
+      }
+    ],
+    "correct": [
+      "no"
+    ]
+  },
+  "explanation": "Three copies make a 2-star and nine make a 3-star. A fourth copy is not an upgrade of any kind: it sits on the bench until five more arrive, and at level 6 only 30% of shop slots are 1-costs, so 'five more' is a lot of rounds and gold. A 3-star 1-cost is a real plan for some boards, but one you choose on purpose with a full bench of copies, not something you drift into 1 gold at a time.\n\nRefreshing to hunt more copies is the expensive version of the same mistake: 2 gold a spin at 3-2, when you should be climbing toward 50.",
+  "principle": "Copies matter at three and at nine; the ones in between are bench space until you decide to go for the 3-star.",
+  "guideLink": "/guides/welcome#the-shop-and-star-ups",
+  "commonMistake": "Buying stray fourth and fifth copies 'for the 3-star' with no intention of rolling for it.",
+  "hint": "Count how many more copies the next upgrade needs, and how often a 1-cost appears in your shop at this level.",
+  "lesson": "welcome-the-shop"
+}

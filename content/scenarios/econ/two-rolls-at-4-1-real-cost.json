@@ -1,0 +1,113 @@
+{
+  "id": "two-rolls-at-4-1-real-cost",
+  "category": "econ",
+  "difficulty": 2,
+  "setAgnostic": true,
+  "prompt": "Stage 4-1. You just levelled to 7 and sit at 52 gold, 66 HP, 1-loss streak. Your planned level-8 rolldown is next round, after the 4-2 augment. You are tempted to roll twice now to look at two more shops. What do those two rolls really cost, and is it worth it?",
+  "state": {
+    "stage": "4-1",
+    "gold": 52,
+    "hp": 66,
+    "level": 7,
+    "xpToNext": 26,
+    "streak": {
+      "type": "loss",
+      "count": 1
+    },
+    "board": [
+      {
+        "championId": "generic:tank-3",
+        "row": 0,
+        "col": 3,
+        "star": 2,
+        "items": [
+          "generic:item:tank-completed"
+        ]
+      },
+      {
+        "championId": "generic:bruiser-2",
+        "row": 0,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:tank-2",
+        "row": 0,
+        "col": 4,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-2",
+        "row": 1,
+        "col": 3,
+        "star": 1,
+        "items": []
+      },
+      {
+        "championId": "generic:carry-4",
+        "row": 3,
+        "col": 4,
+        "star": 1,
+        "items": [
+          "generic:item:carry-completed",
+          "generic:item:carry-completed"
+        ]
+      },
+      {
+        "championId": "generic:caster-3",
+        "row": 3,
+        "col": 2,
+        "star": 2,
+        "items": []
+      },
+      {
+        "championId": "generic:support-3",
+        "row": 3,
+        "col": 6,
+        "star": 1,
+        "items": []
+      }
+    ],
+    "bench": [],
+    "shop": [
+      "generic:tank-1",
+      "generic:carry-2",
+      "generic:caster-2",
+      "generic:support-1",
+      "generic:bruiser-1"
+    ],
+    "items": []
+  },
+  "question": {
+    "type": "choice",
+    "options": [
+      {
+        "id": "four",
+        "label": "4 gold. Two rolls at 2 each; interest is unaffected because you stay above 40"
+      },
+      {
+        "id": "five",
+        "label": "About 5 gold: 4 for the rolls plus 1 interest at 4-2 for dropping under 50, spent on two shops at 10% 4-cost odds when the same 5 gold buys nearly three shops at 30% next round. Not worth it"
+      },
+      {
+        "id": "nine",
+        "label": "9 gold: 4 for the rolls plus the whole 5-gold interest tick, because any gold under 50 forfeits interest"
+      },
+      {
+        "id": "free",
+        "label": "Nothing extra: a 4-cost found at 7 is the same 4-cost you would find at 8"
+      }
+    ],
+    "correct": [
+      "five"
+    ]
+  },
+  "explanation": "Do the arithmetic once and the habit dies. The rolls are 4 gold. Dropping from 52 to 48 costs 1 interest at 4-2, because interest is 1 per 10 held, not all or nothing: you go from 5 to 4, not from 5 to 0. So the real price is 5 gold, and you enter the rolldown with 57 instead of 62.\n\nNow what the 5 gold buys. Two shops at level 7 are ten slots at 10% four-cost odds: one 4-cost slot on average, of any 4-cost. The same 5 gold at level 8 next round is two and a half shops, twelve slots at 30%: nearly four 4-cost slots. Every roll at 7 the round before a level-8 rolldown shows you a third of the 4-costs the same gold shows at 8. That is the real cost: not 5 gold, but 5 gold spent at the worst odds you will have all stage.\n\nThe player who says interest is unaffected above 40 has the rule wrong, and the player who says it costs 9 has it wrong the other way. Both roll anyway. Do not.",
+  "principle": "A roll the round before your rolldown costs 2 gold, a point of interest, and two thirds of its odds.",
+  "guideLink": "/guides/economy#the-real-cost-of-a-roll",
+  "commonMistake": "Rolling 'a couple' at 7 the round before levelling to 8, at a third of the odds you are about to pay for.",
+  "hint": "Count the interest step you cross, then compare what the same gold shows you at 7 today and at 8 tomorrow.",
+  "lesson": "econ-pairs-and-rolls"
+}

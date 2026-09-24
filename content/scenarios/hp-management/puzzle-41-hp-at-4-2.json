@@ -105,5 +105,7 @@
   "explanation": "41 HP at 4-2 is the last comfortable moment: you can afford two or three more losses, not six. Your comp needs 4-costs, and 4-costs are found at level 8, so the standard play is exactly the standard play: level to 8 at 4-2 and roll down to a floor of about 20 gold, stopping as soon as the board is stable. Waiting until 4-5 with 41 HP means bleeding into the 20s before you even start looking, and rolling at 7 chases 3-star 3-costs that your comp does not cap on.\n\nIf you were at 70 HP, saving to 4-5 for a bigger rolldown would be fine. HP is what removes that option.",
   "principle": "HP decides when you must roll; the comp decides at what level. At 41 HP on 4-2, that is level 8 now.",
   "guideLink": "/guides/hp#stabilise-vs-push",
-  "commonMistake": "Greeding one more round of interest at 41 HP and rolling at 4-5 from 25."
+  "commonMistake": "Greeding one more round of interest at 41 HP and rolling at 4-5 from 25.",
+  "hint": "Count the losses 41 HP buys through stage 4, and check at which level your comp's 4-costs actually show up.",
+  "lesson": "hp-thresholds"
 }
