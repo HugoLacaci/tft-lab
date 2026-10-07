@@ -1,5 +1,5 @@
 {
- "syncedAt": "2026-10-06T06:22:07.047Z",
+ "syncedAt": "2026-10-07T13:24:34.998Z",
  "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
  "wisps": [
   {
@@ -47,8 +47,15 @@
   {
    "name": "Doodad Jar",
    "cost": 0,
-   "desc": "Gain 1 consumable that gives permanent Armor and Magic Resist or Health.",
+   "desc": "Gain 1 consumable that gives permanent Armor and Magic Resist or Health.Requirements: at least 20 player health",
    "stage": "2-1 to 2-7",
+   "locale": "en"
+  },
+  {
+   "name": "Drizzle",
+   "cost": 0,
+   "desc": "After 8 seconds of combat, your team gains 10 Mana.Requirements: less than 10 gold",
+   "stage": "4-2 to 5-7",
    "locale": "en"
   },
   {
@@ -66,23 +73,37 @@
    "locale": "en"
   },
   {
+   "name": "Grove Armor",
+   "cost": 0,
+   "desc": "Your highest Health champion gains 15 Armor and 15 Magic Resist.Requirements: less than 10 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
    "name": "Knick-Knack Jar",
    "cost": 0,
-   "desc": "Gain 1 consumable that gives permanent Attack Damage or Attack Speed.",
+   "desc": "Gain 1 consumable that gives permanent Attack Damage or Attack Speed.Requirements: at least 20 player health",
    "stage": "2-1 to 2-7",
    "locale": "en"
   },
   {
    "name": "Life Debt",
    "cost": 0,
-   "desc": "Gain 1 gold for every 12 missing Player Health.Requirements: at least 70 missing player health",
+   "desc": "Gain 1 gold for every 12 missing Player Health.",
    "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Major Polymorph",
+   "cost": 0,
+   "desc": "A random 4-cost you own permanently transforms into a 5-cost.Requirements: during the first 2 seconds of planning",
+   "stage": "4-2 to 5-7",
    "locale": "en"
   },
   {
    "name": "Minor Polymorph",
    "cost": 0,
-   "desc": "A random 1-cost you own permanently transforms into a 2-cost.",
+   "desc": "A random 1-cost you own permanently transforms into a 2-cost.Requirements: during the first 2 seconds of planning",
    "stage": "2-1 to 3-4",
    "locale": "en"
   },
@@ -96,7 +117,7 @@
   {
    "name": "Polymorph",
    "cost": 0,
-   "desc": "A random 2-cost you own permanently transforms into a 3-cost.",
+   "desc": "A random 2-cost you own permanently transforms into a 3-cost.Requirements: during the first 2 seconds of planning",
    "stage": "2-1 to 4-1",
    "locale": "en"
   },
@@ -105,6 +126,20 @@
    "cost": 0,
    "desc": "Your champions gain 4% Attack Damage and Ability Power.",
    "stage": "4-2 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Returning Friend",
+   "cost": 0,
+   "desc": "Gain a temporary Training Dummy with two Giant's Belts.Requirements: less than 10 gold",
+   "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Room for a Shroom",
+   "cost": 0,
+   "desc": "Gain 2 random mushrooms.Requirements: less than 10 gold",
+   "stage": "4-2 to 5-7",
    "locale": "en"
   },
   {
@@ -124,14 +159,14 @@
   {
    "name": "Stealthy",
    "cost": 0,
-   "desc": "Your 2 strongest Fighters or Assassins are untargetable for 6 seconds.Requirements: 2 or more fighters on board",
+   "desc": "Your 3 strongest Fighters or Assassins are untargetable for 8 seconds.Requirements: 3 or more fighters on board",
    "stage": "4-2 to 5-7",
    "locale": "en"
   },
   {
    "name": "Thingamajig Jar",
    "cost": 0,
-   "desc": "Gain 1 consumable that gives permanent Ability Power or Mana Regen.",
+   "desc": "Gain 1 consumable that gives permanent Ability Power or Mana Regen.Requirements: at least 20 player health",
    "stage": "2-1 to 2-7",
    "locale": "en"
   },
@@ -159,7 +194,7 @@
   {
    "name": "Backrow Star",
    "cost": 1,
-   "desc": "A random back row champion gains 85% Attack Speed for 7 seconds.",
+   "desc": "A random back row champion gains 100% Attack Speed for 7 seconds.",
    "stage": "4-2 to 10-1",
    "locale": "en"
   },
@@ -192,16 +227,9 @@
    "locale": "en"
   },
   {
-   "name": "Crystal Ball",
-   "cost": 1,
-   "desc": "Reveal your next opponent. Your team gains 12% Attack Speed.",
-   "stage": "4-2 to 10-1",
-   "locale": "en"
-  },
-  {
    "name": "Doodad Bag",
    "cost": 1,
-   "desc": "Gain 2 consumables that give permanent Armor and Magic Resist or Health.",
+   "desc": "Gain 2 consumables that give permanent Armor and Magic Resist or Health.Requirements: at least 20 player health",
    "stage": "3-1 to 4-1",
    "locale": "en"
   },
@@ -264,7 +292,7 @@
   {
    "name": "Golden Goose",
    "cost": 1,
-   "desc": "Gain 1 gold for every 1700 damage your highest damage champion deals.",
+   "desc": "Gain 1 gold for every 1700 damage your highest damage champion deals.Requirements: at least 20 player health",
    "stage": "4-2 to 5-7",
    "locale": "en"
   },
@@ -290,6 +318,13 @@
    "locale": "en"
   },
   {
+   "name": "Improved Reach",
+   "cost": 1,
+   "desc": "Your Fighters gain 1 range.Requirements: 2 or more fighters on board; at least 1 itemized fighters on board",
+   "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
    "name": "Iron Core",
    "cost": 1,
    "desc": "Your front center champion gains 6% Max Health per front-row unit.",
@@ -306,7 +341,7 @@
   {
    "name": "Knick-Knack Bag",
    "cost": 1,
-   "desc": "Gain 2 consumables that give permanent Attack Damage or Attack Speed.",
+   "desc": "Gain 2 consumables that give permanent Attack Damage or Attack Speed.Requirements: at least 20 player health",
    "stage": "3-1 to 4-1",
    "locale": "en"
   },
@@ -369,7 +404,7 @@
   {
    "name": "Potted Lifebloom",
    "cost": 1,
-   "desc": "Gain a temporary Lifeblossom.Requirements: Elderwood trait active",
+   "desc": "Gain a temporary Lifebloom.Requirements: Elderwood trait active",
    "stage": "3-1 to 4-7",
    "locale": "en"
   },
@@ -385,13 +420,6 @@
    "cost": 1,
    "desc": "Your team gains 1 Mana Regen.",
    "stage": "3-1 to 4-7",
-   "locale": "en"
-  },
-  {
-   "name": "Search Party",
-   "cost": 1,
-   "desc": "Each of your shops has a 4-cost in it this round until you buy one.Requirements: at least 8 gold",
-   "stage": "3-5 to 4-7",
    "locale": "en"
   },
   {
@@ -418,7 +446,7 @@
   {
    "name": "Thingamajig Bag",
    "cost": 1,
-   "desc": "Gain 2 consumables that give permanent Ability Power or Mana Regen.",
+   "desc": "Gain 2 consumables that give permanent Ability Power or Mana Regen.Requirements: at least 20 player health",
    "stage": "3-1 to 4-1",
    "locale": "en"
   },
@@ -453,7 +481,7 @@
   {
    "name": "Barter",
    "cost": 2,
-   "desc": "The next champion sold this round sells for 200% gold.",
+   "desc": "The next champion sold this round sells for 200% gold.Requirements: at least 20 player health",
    "stage": "3-5 to 5-7",
    "locale": "en"
   },
@@ -509,7 +537,7 @@
   {
    "name": "Healing Pool",
    "cost": 2,
-   "desc": "Heal 5 Player Health.Requirements: at least 10 missing player health",
+   "desc": "Heal 5 Player Health.",
    "stage": "2-1 to 3-4",
    "locale": "en"
   },
@@ -535,13 +563,6 @@
    "locale": "en"
   },
   {
-   "name": "Improved Reach",
-   "cost": 2,
-   "desc": "Your Fighters gain 1 range.Requirements: 2 or more fighters on board; at least 1 itemized fighters on board",
-   "stage": "5-1 to 10-1",
-   "locale": "en"
-  },
-  {
    "name": "Ironwood",
    "cost": 2,
    "desc": "Enemies attacking your highest health champion deal 14% less damage.",
@@ -551,7 +572,7 @@
   {
    "name": "Killing Frenzy",
    "cost": 2,
-   "desc": "Fighters execute targets under 12% Health. They gain 15% Attack Speed on kill.Requirements: at least 1 itemized fighters on board; 2 or more fighters on board",
+   "desc": "Fighters execute targets under 12% Health. They gain 30% Attack Speed on kill.Requirements: at least 1 itemized fighters on board; 2 or more fighters on board",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -565,7 +586,7 @@
   {
    "name": "Mana-Rich Soil",
    "cost": 2,
-   "desc": "Your Casters have 15% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
+   "desc": "Your Casters have 18% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -682,6 +703,13 @@
    "locale": "en"
   },
   {
+   "name": "Slow Study",
+   "cost": 2,
+   "desc": "For each ally champion alive after 15 seconds, gain 2 XP.",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
    "name": "Snacktime!",
    "cost": 2,
    "desc": "The BFF eats enemies he damages under 16% Max Health.Requirements: Sprykin trait active",
@@ -787,6 +815,13 @@
    "locale": "en"
   },
   {
+   "name": "Blood and Iron",
+   "cost": 3,
+   "desc": "After 20 champion deaths, gain a component anvil.",
+   "stage": "3-1 to 4-1",
+   "locale": "en"
+  },
+  {
    "name": "Border Village",
    "cost": 3,
    "desc": "Reroll your shop with all 2-star 2-cost champions.",
@@ -810,7 +845,7 @@
   {
    "name": "Combust",
    "cost": 3,
-   "desc": "Your champions explode on death, dealing 15% Max Health magic damage.",
+   "desc": "Your champions explode on death, dealing 12% Max Health magic damage.",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -824,7 +859,7 @@
   {
    "name": "Doodad Sack",
    "cost": 3,
-   "desc": "Gain 3 consumables that give permanent Armor and Magic Resist or Health.",
+   "desc": "Gain 3 consumables that give permanent Armor and Magic Resist or Health.Requirements: at least 20 player health",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -838,7 +873,7 @@
   {
    "name": "Flow",
    "cost": 3,
-   "desc": "Your champions are Unstoppable and gain 15% Attack Speed for 10 seconds.",
+   "desc": "Your champions are unstoppable and gain 15% Attack Speed for 10 seconds.",
    "stage": "4-2 to 10-1",
    "locale": "en"
   },
@@ -859,7 +894,7 @@
   {
    "name": "Knick-Knack Sack",
    "cost": 3,
-   "desc": "Gain 3 consumables that give permanent Attack Damage or Attack Speed.",
+   "desc": "Gain 3 consumables that give permanent Attack Damage or Attack Speed.Requirements: at least 20 player health",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -880,7 +915,7 @@
   {
    "name": "Major Gambit",
    "cost": 3,
-   "desc": "If you win the next player combat, gain 8 Gold.",
+   "desc": "If you win the next player combat, gain 8 Gold.Requirements: at least 20 player health",
    "stage": "4-2 to 5-7",
    "locale": "en"
   },
@@ -962,16 +997,16 @@
    "locale": "en"
   },
   {
-   "name": "Slow Study",
+   "name": "Search Party",
    "cost": 3,
-   "desc": "For each ally champion alive after 15 seconds, gain 2 XP.",
+   "desc": "Each of your shops has a 4-cost in it this round until you buy one.Requirements: at least 10 gold",
    "stage": "3-5 to 4-7",
    "locale": "en"
   },
   {
    "name": "Thingamajig Sack",
    "cost": 3,
-   "desc": "Gain 3 consumables that give permanent Ability Power or Mana Regen.",
+   "desc": "Gain 3 consumables that give permanent Ability Power or Mana Regen.Requirements: at least 20 player health",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -1011,13 +1046,6 @@
    "locale": "en"
   },
   {
-   "name": "Blood and Iron",
-   "cost": 4,
-   "desc": "After 20 champion deaths, gain a component anvil.",
-   "stage": "3-1 to 4-1",
-   "locale": "en"
-  },
-  {
    "name": "Component Bounty",
    "cost": 4,
    "desc": "If you win the next player combat, gain a random component.",
@@ -1034,7 +1062,7 @@
   {
    "name": "Giant Growth",
    "cost": 4,
-   "desc": "Your highest Health unit grows, gaining 750 Health.",
+   "desc": "Your highest Health unit grows, gaining 800 Health.",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -1088,13 +1116,6 @@
    "locale": "en"
   },
   {
-   "name": "Forest Guide",
-   "cost": 5,
-   "desc": "Gain a random 4-cost champion.",
-   "stage": "2-1 to 2-7",
-   "locale": "en"
-  },
-  {
    "name": "Heroic Sacrifice",
    "cost": 5,
    "desc": "Your 3 strongest Champions gain HEROIC POWER, but other allies are sacrificed.Requirements: 2 or more champions with 3+ items",
@@ -1113,6 +1134,13 @@
    "cost": 6,
    "desc": "Up to 2 1-star champions temporarily star up during combat.Requirements: 2 or more 1-star champions on board, or an itemized 5-cost",
    "stage": "5-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Forest Guide",
+   "cost": 6,
+   "desc": "Gain a random 4-cost champion.",
+   "stage": "2-1 to 2-7",
    "locale": "en"
   },
   {
@@ -1187,7 +1215,7 @@
   },
   {
    "name": "Three Me",
-   "cost": 10,
+   "cost": 9,
    "desc": "Gain a random 2-star 3-cost champion.",
    "stage": "3-1 to 4-1",
    "locale": "en"

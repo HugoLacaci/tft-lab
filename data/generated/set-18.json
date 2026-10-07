@@ -3,8 +3,8 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-10-06T06:21:56.341Z",
-  "patch": "16.19",
+  "syncedAt": "2026-10-07T13:24:09.691Z",
+  "patch": "16.20",
   "source": "cdragon"
  },
  "champions": [
@@ -958,7 +958,7 @@
     "armor": 50,
     "mr": 50,
     "range": 1,
-    "mana": 30,
+    "mana": 40,
     "initialMana": 0,
     "attackSpeed": 0.800000011920929,
     "critChance": 0.25,
@@ -1180,7 +1180,7 @@
    "icon": "/assets/set-18/tft18_masteryi__tft18_masteryi_square.png",
    "stats": {
     "hp": 850,
-    "ad": 62,
+    "ad": 60,
     "armor": 55,
     "mr": 55,
     "range": 1,
@@ -1320,13 +1320,13 @@
    },
    "ability": {
     "name": "Furious Fists",
-    "desc": "Passive: On attack, restore {HealthCalc1}  Health.\n\nActive: Unleash a primal roar, restoring {HealthCalc3}  Health. Then gain {SpellAS} Attack Speed, {SpellDurability} Durability, and is Unstoppable for {SpellDuration} seconds.",
+    "desc": "Passive: On attack, restore {HealthCalc1}  Health.\n\nActive: Unleash a primal roar, restoring {HealthCalc3}  Health. Then gain {SpellAS} Attack Speed, {SpellDurability} Durability, and is unstoppable for {SpellDuration} seconds.",
     "icon": "",
     "scaling": {
      "ad": false,
      "ap": true
     },
-    "rich": "Passive: On attack, restore {HealthCalc1} [[HP]] Health.\n\nActive: Unleash a primal roar, restoring {HealthCalc3} [[AP]] Health. Then gain {SpellAS} Attack Speed, {SpellDurability} Durability, and is Unstoppable for {SpellDuration} seconds."
+    "rich": "Passive: On attack, restore {HealthCalc1} [[HP]] Health.\n\nActive: Unleash a primal roar, restoring {HealthCalc3} [[AP]] Health. Then gain {SpellAS} Attack Speed, {SpellDurability} Durability, and is unstoppable for {SpellDuration} seconds."
    }
   },
   {
@@ -1480,13 +1480,13 @@
    },
    "ability": {
     "name": "Forest's Flurry",
-    "desc": "Blink away from the current target, deal {PhysicalDamageCalc1}  physical damage to them, and gain {AttackSpeedCalc1}  Attack Speed.\n\nEvery 4th cast consumes the Attack Speed granted from Nature's Wrath and fires a blast through the largest group of enemies that deals {PhysicalDamageCalc2}  physical damage, reduced by {DamageReductionPerHit} for each enemy it passes through (minimum {MinDamagePercent}).",
+    "desc": "Blink away from the current target, deal {PhysicalDamageCalc1}  physical damage to them, and gain {AttackSpeedCalc1}  Attack Speed.\n\nEvery 4th cast consumes the Attack Speed granted from Forest's Flurry and fires a blast through the largest group of enemies that deals {PhysicalDamageCalc2}  physical damage, reduced by {DamageReductionPerHit} for each enemy it passes through (minimum {MinDamagePercent}).",
     "icon": "",
     "scaling": {
      "ad": true,
      "ap": true
     },
-    "rich": "Blink away from the current target, deal {PhysicalDamageCalc1} [[AD]] physical damage to them, and gain {AttackSpeedCalc1} [[AP]] Attack Speed.\n\nEvery 4th cast consumes the Attack Speed granted from Nature's Wrath and fires a blast through the largest group of enemies that deals {PhysicalDamageCalc2} [[AD]] physical damage, reduced by {DamageReductionPerHit} for each enemy it passes through (minimum {MinDamagePercent})."
+    "rich": "Blink away from the current target, deal {PhysicalDamageCalc1} [[AD]] physical damage to them, and gain {AttackSpeedCalc1} [[AP]] Attack Speed.\n\nEvery 4th cast consumes the Attack Speed granted from Forest's Flurry and fires a blast through the largest group of enemies that deals {PhysicalDamageCalc2} [[AD]] physical damage, reduced by {DamageReductionPerHit} for each enemy it passes through (minimum {MinDamagePercent})."
    }
   },
   {
@@ -1827,20 +1827,20 @@
     "mr": 45,
     "range": 6,
     "mana": 80,
-    "initialMana": 20,
+    "initialMana": 0,
     "attackSpeed": 0.800000011920929,
     "critChance": 0.25,
     "critMultiplier": 1.399999976158142
    },
    "ability": {
     "name": "Spirit Rift",
-    "desc": "Fire an arrow through the most enemies in a line that deals {PhysicalDamageCalc1}  physical damage, reduced by {DamageFalloffPerEnemy} per enemy hit (minimum {MinDamagePercent}).\n\nThe arrow leaves a trail for {RiftDuration} seconds that deals {PhysicalDamageCalc2}  + {MaxHealthDamagePerSecond} max Health physical damage per second to enemies within and {ChillPercent}% Slows them.\n\nSlow: Reduce Attack Speed",
+    "desc": "Fire an arrow through the most enemies in a line that deals {PhysicalDamageCalc1}  physical damage, reduced by {DamageFalloffPerEnemy} per enemy hit (minimum {MinDamagePercent}). If no enemies are hit refund {ManaRefund} of mana spent.\n\nThe arrow leaves a trail for {RiftDuration} seconds that deals {PhysicalDamageCalc2}  + {MaxHealthDamagePerSecond} max Health physical damage per second to enemies within and {ChillPercent}% Slows them.\n\nSlow: Reduce Attack Speed",
     "icon": "",
     "scaling": {
      "ad": true,
      "ap": true
     },
-    "rich": "Fire an arrow through the most enemies in a line that deals {PhysicalDamageCalc1} [[AD]] physical damage, reduced by {DamageFalloffPerEnemy} per enemy hit (minimum {MinDamagePercent}).\n\nThe arrow leaves a trail for {RiftDuration} seconds that deals {PhysicalDamageCalc2} [[AD]] [[AP]] + {MaxHealthDamagePerSecond} max Health physical damage per second to enemies within and {ChillPercent}% Slows them.\n\nSlow: Reduce Attack Speed"
+    "rich": "Fire an arrow through the most enemies in a line that deals {PhysicalDamageCalc1} [[AD]] physical damage, reduced by {DamageFalloffPerEnemy} per enemy hit (minimum {MinDamagePercent}). If no enemies are hit refund {ManaRefund} of mana spent.\n\nThe arrow leaves a trail for {RiftDuration} seconds that deals {PhysicalDamageCalc2} [[AD]] [[AP]] + {MaxHealthDamagePerSecond} max Health physical damage per second to enemies within and {ChillPercent}% Slows them.\n\nSlow: Reduce Attack Speed"
    }
   },
   {
@@ -1865,13 +1865,13 @@
    },
    "ability": {
     "name": "Whirling Death",
-    "desc": "Passive: Attacks target random enemies in range and apply a bleed that deals {PhysicalDamageCalc1}  physical damage over {BleedDuration} seconds. Every attack has a {GenericCalc1}  chance to deal {SpinningAxeDamageRatio} bonus physical damage and apply {SpinningAxeBleedStacks} bleeds instead.\n\nActive: Throw two giant axes towards the enemy with the most bleeds. Deal {PhysicalDamageCalc3}  physical damage to enemies hit and consume their bleed, instantly dealing the remaining damage. The axes then return, dealing {GenericCalc2}  physical damage to enemies hit.",
+    "desc": "Passive: Attacks target random enemies in range and apply a bleed that deals {PhysicalDamageCalc1}  physical damage over {BleedDuration} seconds. Every attack has a {GenericCalc1}  chance to deal {SpinningAxeDamageRatio} bonus physical damage and apply {SpinningAxeBleedStacks} bleeds instead.\n\nActive: Throw two giant axes towards the enemy with the most bleeds. Deal {PhysicalDamageCalc3}  physical damage to enemies hit and consume their bleed, instantly dealing the remaining damage. The axes then return, dealing {GenericCalc2}  physical damage to enemies hit. If no enemies are hit refund {ManaRefund} of mana spent.",
     "icon": "",
     "scaling": {
      "ad": true,
      "ap": true
     },
-    "rich": "Passive: Attacks target random enemies in range and apply a bleed that deals {PhysicalDamageCalc1} [[AD]] physical damage over {BleedDuration} seconds. Every attack has a {GenericCalc1} [[AP]] chance to deal {SpinningAxeDamageRatio} bonus physical damage and apply {SpinningAxeBleedStacks} bleeds instead.\n\nActive: Throw two giant axes towards the enemy with the most bleeds. Deal {PhysicalDamageCalc3} [[AD]] physical damage to enemies hit and consume their bleed, instantly dealing the remaining damage. The axes then return, dealing {GenericCalc2} [[AD]] physical damage to enemies hit."
+    "rich": "Passive: Attacks target random enemies in range and apply a bleed that deals {PhysicalDamageCalc1} [[AD]] physical damage over {BleedDuration} seconds. Every attack has a {GenericCalc1} [[AP]] chance to deal {SpinningAxeDamageRatio} bonus physical damage and apply {SpinningAxeBleedStacks} bleeds instead.\n\nActive: Throw two giant axes towards the enemy with the most bleeds. Deal {PhysicalDamageCalc3} [[AD]] physical damage to enemies hit and consume their bleed, instantly dealing the remaining damage. The axes then return, dealing {GenericCalc2} [[AD]] physical damage to enemies hit. If no enemies are hit refund {ManaRefund} of mana spent."
    }
   },
   {
@@ -2312,13 +2312,13 @@
    },
    "ability": {
     "name": "Final Spark",
-    "desc": "Passive: On cast, all allies that share a trait with Lux gain {ManaCalc1}  mana.\n\nActive: Fire a laser towards the most enemies in a line that deals {MagicDamageCalc1}  magic damage, reduced by {DamageReductionPerUnit} for each enemy hit (minimum {MinimumFalloffDamageRatio}).\n\nSolar Bonus: Deals {SolarBonusDamagePer3StarRadio} bonus damage for each unique 3-star champion fielded.",
+    "desc": "Passive: On cast, all allies that share a trait with Lux gain {ManaCalc1}  mana.\n\nActive: Fire a laser towards the most enemies in a line that deals {MagicDamageCalc1}  magic damage, reduced by {DamageReductionPerUnit} for each enemy hit (minimum {MinimumFalloffDamageRatio}).\n\nSolar Bonus: Deal {SolarBonusDamageRatio} bonus damage. For each unique 3-star champion fielded, deal an additional {SolarBonusDamagePer3StarRadio} bonus damage.",
     "icon": "",
     "scaling": {
      "ad": false,
      "ap": true
     },
-    "rich": "Passive: On cast, all allies that share a trait with Lux gain {ManaCalc1} [[AP]] mana.\n\nActive: Fire a laser towards the most enemies in a line that deals {MagicDamageCalc1} [[AP]] magic damage, reduced by {DamageReductionPerUnit} for each enemy hit (minimum {MinimumFalloffDamageRatio}).\n\nSolar Bonus: Deals {SolarBonusDamagePer3StarRadio} bonus damage for each unique 3-star champion fielded."
+    "rich": "Passive: On cast, all allies that share a trait with Lux gain {ManaCalc1} [[AP]] mana.\n\nActive: Fire a laser towards the most enemies in a line that deals {MagicDamageCalc1} [[AP]] magic damage, reduced by {DamageReductionPerUnit} for each enemy hit (minimum {MinimumFalloffDamageRatio}).\n\nSolar Bonus: Deal {SolarBonusDamageRatio} bonus damage. For each unique 3-star champion fielded, deal an additional {SolarBonusDamagePer3StarRadio} bonus damage."
    }
   },
   {
@@ -2336,7 +2336,7 @@
     "armor": 60,
     "mr": 60,
     "range": 1,
-    "mana": 90,
+    "mana": 100,
     "initialMana": 30,
     "attackSpeed": 0.6499999761581421,
     "critChance": 0.25,
@@ -2946,12 +2946,12 @@
     {
      "units": 2,
      "style": "bronze",
-     "desc": "(2) 5%  and 2.5% Heal."
+     "desc": "(2) 4.5%  and 2.5% Heal."
     },
     {
      "units": 4,
      "style": "gold",
-     "desc": "(4) 8%  and 4% Heal. After attracting 7 Pixies, start attracting Golden Pixies instead which grant gold."
+     "desc": "(4) 7%  and 4% Heal. After attracting 7 Pixies, start attracting Golden Pixies instead which grant gold."
     }
    ]
   },
@@ -2969,17 +2969,17 @@
     {
      "units": 3,
      "style": "silver",
-     "desc": "(3) 10% , 10%"
+     "desc": "(3) 12% , 10%"
     },
     {
      "units": 4,
      "style": "silver",
-     "desc": "(4) 14% , 14%"
+     "desc": "(4) 16% , 14%"
     },
     {
      "units": 5,
      "style": "gold",
-     "desc": "(5) 18% , 18%"
+     "desc": "(5) 20% , 18%"
     }
    ]
   },
@@ -3097,12 +3097,12 @@
     {
      "units": 7,
      "style": "gold",
-     "desc": "(7) Gain {GoldPerCharmPurchased} gold after buying a Wisp, 45%"
+     "desc": "(7) Gain {GoldPerCharmPurchased} gold after buying a Wisp, 50%"
     },
     {
      "units": 9,
      "style": "gold",
-     "desc": "(9) You can buy 2 Wisps per round, 50%"
+     "desc": "(9) You can buy 2 Wisps per round, 55%"
     },
     {
      "units": 11,
@@ -4954,6 +4954,19 @@
    "rich": "Gain 6% max health.\n\nEvery 2 seconds, heal 2.5% max Health."
   },
   {
+   "id": "DA_18_Drizzle",
+   "name": "Drizzle",
+   "desc": "After 8 seconds of combat, your team gains {ManaToGain} Mana.",
+   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
+   "composition": [],
+   "kind": "charm",
+   "effects": {
+    "Delay": 8
+   },
+   "associatedTraits": [],
+   "rich": "After 8 seconds of combat, your team gains {ManaToGain} Mana."
+  },
+  {
    "id": "TFT_Assist_Dummy_2xLocked",
    "name": "Dummy with 2 Lockets",
    "desc": "A training dummy with 2 Lockets of The Iron Solari, an item which shields allies on combat start.",
@@ -5182,17 +5195,6 @@
    "rich": "Gain {XPonDeath} XP for each enemy that dies."
   },
   {
-   "id": "DA_18_FieldofMice",
-   "name": "Field of Mice",
-   "desc": "Gain a Tiny Champion Duplicator for each unique one-cost fielded last round.",
-   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
-   "composition": [],
-   "kind": "charm",
-   "effects": {},
-   "associatedTraits": [],
-   "rich": "Gain a Tiny Champion Duplicator for each unique one-cost fielded last round."
-  },
-  {
    "id": "DA_Artifact_Fishbones",
    "name": "Fishbones",
    "desc": "The holder's attacks target random enemies.",
@@ -5262,7 +5264,7 @@
   {
    "id": "DA_Flow18",
    "name": "Flow",
-   "desc": "Your champions are Unstoppable and gain 15% Attack Speed for 10 seconds.",
+   "desc": "Your champions are unstoppable and gain 15% Attack Speed for 10 seconds.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
@@ -5271,7 +5273,7 @@
     "Duration": 10
    },
    "associatedTraits": [],
-   "rich": "Your champions are Unstoppable and gain 15% Attack Speed for 10 seconds."
+   "rich": "Your champions are unstoppable and gain 15% Attack Speed for 10 seconds."
   },
   {
    "id": "DA_Artifact_ForbiddenIdol",
@@ -5521,6 +5523,20 @@
    "effects": {},
    "associatedTraits": [],
    "rich": "Cast {NumCharms} random Wisps."
+  },
+  {
+   "id": "DA_18_GroveArmor",
+   "name": "Grove Armor",
+   "desc": "Your highest Health champion gains 15 Armor and 15 Magic Resist.",
+   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
+   "composition": [],
+   "kind": "charm",
+   "effects": {
+    "BonusArmor": 15,
+    "BonusMR": 15
+   },
+   "associatedTraits": [],
+   "rich": "Your highest Health champion gains 15 Armor and 15 Magic Resist."
   },
   {
    "id": "DA_GrowUp18",
@@ -6792,7 +6808,7 @@
    "rich": "Shrinks the holder, granting them increased movement speed and immunity to Slow, Burn, and Wound.\n\n[Chill]\n[Burn]\n[Wound]"
   },
   {
-   "id": "TFT7_Item_ShimmerscaleMogulsMail",
+   "id": "DA_Artifact_MogulsMail",
    "name": "Mogul's Mail",
    "desc": "Grants 1 Armor, 1 Magic Resist, and 5 Health when taking damage, stacking up to 35 times.\n\nAt full stacks, grant  1 gold and continue gaining  1 gold every 11 seconds.\n\nGold generated this game: {TFTUnitProperty.item:TFT_Item_GoldGenerated}\n\n[Unique - only 1 per champion]",
    "icon": "/assets/set-18/hexcore__tft7_item_shimmerscalemogulsmail.png",
@@ -6808,17 +6824,6 @@
    },
    "associatedTraits": [],
    "rich": "Grants 1 Armor, 1 Magic Resist, and 5 Health when taking damage, stacking up to 35 times.\n\nAt full stacks, grant [[goldCoins]] 1 gold and continue gaining [[goldCoins]] 1 gold every 11 seconds.\n\nGold generated this game: {TFTUnitProperty.item:TFT_Item_GoldGenerated}\n\n[Unique - only 1 per champion]"
-  },
-  {
-   "id": "DA_Artifact_MogulsMail",
-   "name": "Mogul'sMail",
-   "desc": "",
-   "icon": "/assets/set-18/hexcore__tft7_item_shimmerscalemogulsmail.png",
-   "composition": [],
-   "kind": "artifact",
-   "effects": {},
-   "associatedTraits": [],
-   "rich": ""
   },
   {
    "id": "DA_MoonlightRitual18",
@@ -7163,13 +7168,13 @@
   {
    "id": "DA_PottedLifebloom18",
    "name": "Potted Lifebloom",
-   "desc": "Gain a temporary Lifeblossom.",
+   "desc": "Gain a temporary Lifebloom.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {},
    "associatedTraits": [],
-   "rich": "Gain a temporary Lifeblossom."
+   "rich": "Gain a temporary Lifebloom."
   },
   {
    "id": "DA_PottedStonebark18",
@@ -8278,6 +8283,17 @@
    "rich": "Tanks reduce instances of incoming damage by {FlatDmgBlock}."
   },
   {
+   "id": "DA_FoundBigFriend18",
+   "name": "Returning Friend",
+   "desc": "Gain a temporary Training Dummy with two Giant's Belts.",
+   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
+   "composition": [],
+   "kind": "charm",
+   "effects": {},
+   "associatedTraits": [],
+   "rich": "Gain a temporary Training Dummy with two Giant's Belts."
+  },
+  {
    "id": "DA_Revenge18",
    "name": "Revenge",
    "desc": "Whenever an ally dies, your champions gain 4% stacking Damage Amp.",
@@ -8714,16 +8730,16 @@
   {
    "id": "DA_Stealthy18",
    "name": "Stealthy",
-   "desc": "Your 2 strongest Fighters or Assassins are untargetable for 6 seconds.",
+   "desc": "Your 3 strongest Fighters or Assassins are untargetable for 6 seconds.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {
-    "NumChampions": 2,
+    "NumChampions": 3,
     "UntargetableDuration": 6
    },
    "associatedTraits": [],
-   "rich": "Your 2 strongest Fighters or Assassins are untargetable for 6 seconds."
+   "rich": "Your 3 strongest Fighters or Assassins are untargetable for 6 seconds."
   },
   {
    "id": "DA_SteraksGage",
@@ -9233,6 +9249,17 @@
    "rich": "Next player combat, your Rivals' takedowns count twice."
   },
   {
+   "id": "DA_TrueFriendship18",
+   "name": "True Friendship",
+   "desc": "Gain {GoldForPlayer} gold and a Magnetic Remover. Your opponent gains {GoldForEnemy} gold and a Magnetic Remover.",
+   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
+   "composition": [],
+   "kind": "charm",
+   "effects": {},
+   "associatedTraits": [],
+   "rich": "Gain {GoldForPlayer} gold and a Magnetic Remover. Your opponent gains {GoldForEnemy} gold and a Magnetic Remover."
+  },
+  {
    "id": "DA_TurtlesVisit18",
    "name": "Turtle's Visit",
    "desc": "Gain the Turtle Primal buff for this combat.",
@@ -9382,13 +9409,13 @@
    "rich": "Damage from attacks and Abilities 30% Shred the target for 5 seconds. This effect does not stack.\n\nShred: Reduce Magic Resist"
   },
   {
-   "id": "TFT_Item_WarmogsArmor",
+   "id": "DA_WarmogsArmor",
    "name": "Warmog's Armor",
    "desc": "Gain 18% max Health.",
    "icon": "/assets/set-18/hexcore__tft_item_warmogsarmor.png",
    "composition": [
-    "TFT_Item_GiantsBelt",
-    "TFT_Item_GiantsBelt"
+    "DA_Component_GiantsBelt",
+    "DA_Component_GiantsBelt"
    ],
    "kind": "completed",
    "effects": {
@@ -9397,20 +9424,6 @@
    },
    "associatedTraits": [],
    "rich": "Gain 18% max Health."
-  },
-  {
-   "id": "DA_WarmogsArmor",
-   "name": "Warmogs Armor",
-   "desc": "",
-   "icon": "/assets/set-18/hexcore__tft_item_warmogsarmor.png",
-   "composition": [
-    "DA_Component_GiantsBelt",
-    "DA_Component_GiantsBelt"
-   ],
-   "kind": "completed",
-   "effects": {},
-   "associatedTraits": [],
-   "rich": ""
   },
   {
    "id": "DA_Artifact_WitsEnd",
@@ -10199,6 +10212,14 @@
    "associatedTraits": []
   },
   {
+   "id": "DA_CalculatedLoss",
+   "name": "Calculated Loss",
+   "desc": "After losing your combat, gain 2 gold and a free Shop reroll.",
+   "icon": "/assets/set-18/hexcore__calculatedloss2.png",
+   "tier": "gold",
+   "associatedTraits": []
+  },
+  {
    "id": "TFT6_Augment_CalculatedLoss",
    "name": "Calculated Loss",
    "desc": "After losing your combat, gain 2 gold and a free Shop reroll.",
@@ -10402,8 +10423,8 @@
    "id": "DA_18_SolarTraitAugment",
    "name": "Chosen of the Sun",
    "desc": "Gain a Leona, a Kayle, and a Sejuani. Leona gains 70 permanent max Health each round, increased by {HealthPerThreeStar} for each unique 3-star champion fielded.",
-   "icon": "/assets/set-18/hexcore__missing-t2.png",
-   "tier": "gold",
+   "icon": "/assets/set-18/hexcore__missing-t1.png",
+   "tier": "silver",
    "associatedTraits": [
     "DA_18_Solar"
    ]
@@ -10828,6 +10849,14 @@
    "desc": "Sell your board and bench. Gain 4 random 2-star {tier}-cost champions. Disable your Shop for the next {roundstoskip} rounds.",
    "icon": "/assets/set-18/hexcore__headstart_i.png",
    "tier": "silver",
+   "associatedTraits": []
+  },
+  {
+   "id": "DA_DoubleTrouble",
+   "name": "Double Trouble",
+   "desc": "When you field exactly 2 copies of a champion, they both gain {DamageStatAdd}% Attack Damage and Ability Power and {DefenseStatAdd} Armor, and Magic Resist. When you 3-star, gain a 2-star copy.",
+   "icon": "/assets/set-18/hexcore__double-trouble-ii.png",
+   "tier": "gold",
    "associatedTraits": []
   },
   {
@@ -12305,7 +12334,7 @@
   {
    "id": "DA_Min_Max",
    "name": "Min-Max",
-   "desc": "Gain a Golden Item Remover and 4 random components.",
+   "desc": "Gain a Golden Item Remover, 4 random components, and 4 gold.",
    "icon": "/assets/set-18/hexcore__minmax_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -12417,22 +12446,6 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_NestingDollsPlus",
-   "name": "Nesting Dolls",
-   "desc": "After a champion dies in combat, spawn a copy of them one star level lower with {HealthMultiplier}% health. Gain 3 free rerolls.",
-   "icon": "/assets/set-18/hexcore__missing-t3.png",
-   "tier": "prismatic",
-   "associatedTraits": []
-  },
-  {
-   "id": "DA_NestingDollsPlusPlus",
-   "name": "Nesting Dolls",
-   "desc": "After a champion dies in combat, spawn a copy of them one star level lower with {HealthMultiplier}% health. Gain 3 free rerolls.",
-   "icon": "/assets/set-18/hexcore__missing-t3.png",
-   "tier": "prismatic",
-   "associatedTraits": []
-  },
-  {
    "id": "TFT6_Augment_ForceOfNature",
    "name": "New Recruit",
    "desc": "Gain +1 max team size and 1 four-cost champion.",
@@ -12483,7 +12496,7 @@
   {
    "id": "DA_18_RiftbeastTraitAugment",
    "name": "Omega Riftbeast",
-   "desc": "You can now choose a second Alpha Riftbeast. Gain a Scuttlecrab, a Cinderling, and a Pebbles.",
+   "desc": "You can now choose a second Alpha Riftbeast. Alpha Riftbeasts gain 15% max Health and 12% Attack Speed. Gain a Scuttlecrab, a Cinderling, and a Pebbles.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": [
@@ -12597,7 +12610,7 @@
   {
    "id": "DA_PandorasItemsII",
    "name": "Pandora's Items II",
-   "desc": "Round start: items on your bench are randomized.\n\nGain {NumberOfComponentsII} random components.",
+   "desc": "Round start: items on your bench are randomized.\n\nGain {NumberOfComponentsII} random components and {GoldAmountII} gold.",
    "icon": "/assets/set-18/hexcore__pandora2.png",
    "tier": "gold",
    "associatedTraits": []
