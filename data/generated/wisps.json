@@ -1,11 +1,11 @@
 {
- "syncedAt": "2026-10-07T23:06:21.371Z",
+ "syncedAt": "2026-10-08T06:05:10.886Z",
  "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
  "wisps": [
   {
    "name": "Abandon Ship",
    "cost": 0,
-   "desc": "Sell your board and bench, gain 6 gold and 8 rerolls.Requirements: no 3-star champion",
+   "desc": "Sell your board and bench, gain 6 gold and 8 rerolls.Requirements: no 3-star champion; during the first 2 seconds of planning",
    "stage": "3-1 to 3-4",
    "locale": "en"
   },
@@ -423,6 +423,13 @@
    "locale": "en"
   },
   {
+   "name": "Search Party",
+   "cost": 1,
+   "desc": "Each of your shops has a 4-cost in it this round until you buy one.Requirements: at least 10 gold",
+   "stage": "3-5 to 4-7",
+   "locale": "en"
+  },
+  {
    "name": "Starfall",
    "cost": 1,
    "desc": "The first 6 times you reroll your shop this round, the lowest cost champion becomes 2-star.Requirements: at least 10 gold",
@@ -537,7 +544,7 @@
   {
    "name": "Healing Pool",
    "cost": 2,
-   "desc": "Heal 5 Player Health.",
+   "desc": "Heal 5 Player Health.Requirements: at least 10 missing player health",
    "stage": "2-1 to 3-4",
    "locale": "en"
   },
@@ -586,7 +593,7 @@
   {
    "name": "Mana-Rich Soil",
    "cost": 2,
-   "desc": "Your Casters have 18% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
+   "desc": "Your Casters have 15% reduced Max Mana.Requirements: 2 or more casters on board; at least 1 itemized casters on board",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -845,7 +852,7 @@
   {
    "name": "Combust",
    "cost": 3,
-   "desc": "Your champions explode on death, dealing 12% Max Health magic damage.",
+   "desc": "Your champions explode on death, dealing 15% Max Health magic damage.",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -994,13 +1001,6 @@
    "cost": 3,
    "desc": "Combat start: 2 champions without items gain a temporary recommended item.",
    "stage": "4-2 to 5-7",
-   "locale": "en"
-  },
-  {
-   "name": "Search Party",
-   "cost": 3,
-   "desc": "Each of your shops has a 4-cost in it this round until you buy one.Requirements: at least 10 gold",
-   "stage": "3-5 to 4-7",
    "locale": "en"
   },
   {
@@ -1215,7 +1215,7 @@
   },
   {
    "name": "Three Me",
-   "cost": 9,
+   "cost": 10,
    "desc": "Gain a random 2-star 3-cost champion.",
    "stage": "3-1 to 4-1",
    "locale": "en"
