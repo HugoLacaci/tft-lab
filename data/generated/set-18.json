@@ -3,8 +3,8 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-10-21T04:47:43.035Z",
-  "patch": "16.20",
+  "syncedAt": "2026-10-21T11:49:33.366Z",
+  "patch": "16.21",
   "source": "cdragon"
  },
  "champions": [
@@ -345,9 +345,9 @@
     "armor": 25,
     "mr": 25,
     "range": 4,
-    "mana": 120,
-    "initialMana": 30,
-    "attackSpeed": 0.699999988079071,
+    "mana": 110,
+    "initialMana": 20,
+    "attackSpeed": 0.75,
     "critChance": 0.25,
     "critMultiplier": 1.399999976158142
    },
@@ -1024,7 +1024,7 @@
     "mr": 50,
     "range": 1,
     "mana": 110,
-    "initialMana": 30,
+    "initialMana": 50,
     "attackSpeed": 0.6499999761581421,
     "critChance": 0.25,
     "critMultiplier": 1.399999976158142
@@ -1148,7 +1148,7 @@
    "icon": "/assets/set-18/tft18_raptor__tft18_crimsonraptor_teamplanner_splash.png",
    "stats": {
     "hp": 650,
-    "ad": 55,
+    "ad": 60,
     "armor": 35,
     "mr": 35,
     "range": 4,
@@ -1180,7 +1180,7 @@
    "icon": "/assets/set-18/tft18_masteryi__tft18_masteryi_square.png",
    "stats": {
     "hp": 850,
-    "ad": 60,
+    "ad": 63,
     "armor": 55,
     "mr": 55,
     "range": 1,
@@ -1280,7 +1280,7 @@
     "armor": 35,
     "mr": 35,
     "range": 4,
-    "mana": 60,
+    "mana": 50,
     "initialMana": 0,
     "attackSpeed": 0.75,
     "critChance": 0.25,
@@ -1796,7 +1796,7 @@
     "range": 4,
     "mana": 35,
     "initialMana": 0,
-    "attackSpeed": 0.800000011920929,
+    "attackSpeed": 0.8500000238418579,
     "critChance": 0.25,
     "critMultiplier": 1.399999976158142
    },
@@ -2366,9 +2366,9 @@
     "hp": 1300,
     "ad": 55,
     "armor": 65,
-    "mr": 65,
+    "mr": 70,
     "range": 1,
-    "mana": 65,
+    "mana": 70,
     "initialMana": 0,
     "attackSpeed": 0.75,
     "critChance": 0.25,
@@ -2501,7 +2501,7 @@
     {
      "units": 7,
      "style": "gold",
-     "desc": "(7) 45%  45% , and {TeamwideRatio}% of the BFF's Ability applies to your Sprykin champions."
+     "desc": "(7) 55%  55% , and {TeamwideRatio}% of the BFF's Ability applies to your Sprykin champions."
     }
    ]
   },
@@ -2856,7 +2856,7 @@
     {
      "units": 6,
      "style": "gold",
-     "desc": "(6) 600 ; Bonus is 60% stronger"
+     "desc": "(6) 600 ; Bonus is 50% stronger"
     }
    ]
   },
@@ -2946,12 +2946,12 @@
     {
      "units": 2,
      "style": "bronze",
-     "desc": "(2) 4.5%  and 2.5% Heal."
+     "desc": "(2) 4.5%  and 3% Heal."
     },
     {
      "units": 4,
      "style": "gold",
-     "desc": "(4) 7%  and 4% Heal. After attracting 7 Pixies, start attracting Golden Pixies instead which grant gold."
+     "desc": "(4) 7%  and 5% Heal. After attracting 7 Pixies, start attracting Golden Pixies instead which grant gold."
     }
    ]
   },
@@ -2969,17 +2969,17 @@
     {
      "units": 3,
      "style": "silver",
-     "desc": "(3) 12% , 10%"
+     "desc": "(3) 10% , 12%"
     },
     {
      "units": 4,
      "style": "silver",
-     "desc": "(4) 16% , 14%"
+     "desc": "(4) 14% , 16%"
     },
     {
      "units": 5,
      "style": "gold",
-     "desc": "(5) 20% , 18%"
+     "desc": "(5) 18% , 20%"
     }
    ]
   },
@@ -3056,7 +3056,7 @@
     {
      "units": 2,
      "style": "gold",
-     "desc": "(2) and grant a 8% max Health heal to the lowest Health ally."
+     "desc": "(2) and grant a 7% max Health heal to the lowest Health ally."
     }
    ]
   },
@@ -4102,16 +4102,16 @@
   {
    "id": "DA_18_BackrowStar",
    "name": "Backrow Star",
-   "desc": "A random back row champion gains 85% Attack Speed for 7 seconds.",
+   "desc": "A random back row champion gains 100% Attack Speed for 7 seconds.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {
     "ASDuration": 7,
-    "ASMultiplier": 0.85
+    "ASMultiplier": 1
    },
    "associatedTraits": [],
-   "rich": "A random back row champion gains 85% Attack Speed for 7 seconds."
+   "rich": "A random back row champion gains 100% Attack Speed for 7 seconds."
   },
   {
    "id": "TFT_Item_BansheesVeil",
@@ -5692,13 +5692,13 @@
   {
    "id": "DA_HealthPotion18_Charm",
    "name": "Health Potion",
-   "desc": "Gain a tempoary equippable Health Potion.",
+   "desc": "Gain a temporary equippable Health Potion.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {},
    "associatedTraits": [],
-   "rich": "Gain a tempoary equippable Health Potion."
+   "rich": "Gain a temporary equippable Health Potion."
   },
   {
    "id": "DA_HealthPotion18_Upgrade_Charm",
@@ -8283,7 +8283,7 @@
    "rich": "Tanks reduce instances of incoming damage by {FlatDmgBlock}."
   },
   {
-   "id": "DA_FoundBigFriend18",
+   "id": "DA_ReturningFriend",
    "name": "Returning Friend",
    "desc": "Gain a temporary Training Dummy with two Giant's Belts.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
@@ -8340,6 +8340,17 @@
    "effects": {},
    "associatedTraits": [],
    "rich": "For each ally champion alive after {WaitTime} seconds, gain a reroll."
+  },
+  {
+   "id": "DA_RoomForAShroom",
+   "name": "Room for a Shroom",
+   "desc": "Gain {ShroomsToGrant} random mushrooms.",
+   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
+   "composition": [],
+   "kind": "charm",
+   "effects": {},
+   "associatedTraits": [],
+   "rich": "Gain {ShroomsToGrant} random mushrooms."
   },
   {
    "id": "DA_Salvager18",
@@ -8730,16 +8741,16 @@
   {
    "id": "DA_Stealthy18",
    "name": "Stealthy",
-   "desc": "Your 3 strongest Fighters or Assassins are untargetable for 6 seconds.",
+   "desc": "Your 3 strongest Fighters or Assassins are untargetable for 8 seconds.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {
     "NumChampions": 3,
-    "UntargetableDuration": 6
+    "UntargetableDuration": 8
    },
    "associatedTraits": [],
-   "rich": "Your 3 strongest Fighters or Assassins are untargetable for 6 seconds."
+   "rich": "Your 3 strongest Fighters or Assassins are untargetable for 8 seconds."
   },
   {
    "id": "DA_SteraksGage",
@@ -9247,17 +9258,6 @@
    "effects": {},
    "associatedTraits": [],
    "rich": "Next player combat, your Rivals' takedowns count twice."
-  },
-  {
-   "id": "DA_TrueFriendship18",
-   "name": "True Friendship",
-   "desc": "Gain {GoldForPlayer} gold and a Magnetic Remover. Your opponent gains {GoldForEnemy} gold and a Magnetic Remover.",
-   "icon": "/assets/set-18/wands__set18_mechanicicon.png",
-   "composition": [],
-   "kind": "charm",
-   "effects": {},
-   "associatedTraits": [],
-   "rich": "Gain {GoldForPlayer} gold and a Magnetic Remover. Your opponent gains {GoldForEnemy} gold and a Magnetic Remover."
   },
   {
    "id": "DA_TurtlesVisit18",
@@ -10166,7 +10166,7 @@
   {
    "id": "DA_BronzeForLifeII",
    "name": "Bronze For Life II",
-   "desc": "Your team gains 2.5% Damage Amp and 4 Armor and Magic Resist for each Bronze-tier trait.",
+   "desc": "Your team gains 2.5% Damage Amp and 3 Armor and Magic Resist for each Bronze-tier trait.",
    "icon": "/assets/set-18/hexcore__bronzeforlife_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -10366,7 +10366,7 @@
   {
    "id": "DA_ChallengersGrace",
    "name": "Challenger's Grace",
-   "desc": "At the start of combat, allies gain {AttackSpeedMultiplier}% Attack Speed for 3 seconds. On takedown, allies dash to their next target and gain this bonus again.",
+   "desc": "At the start of combat, allies gain {AttackSpeedMultiplier}% Attack Speed for 4 seconds. On takedown, allies dash to their next target and gain this bonus again.",
    "icon": "/assets/set-18/choiceui__precisiongrace_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -10614,6 +10614,14 @@
    "associatedTraits": []
   },
   {
+   "id": "DA_ConstructACompanion",
+   "name": "Construct a Companion",
+   "desc": "The next 1-cost champion you buy is {ActorLevel}-star. Gain 2 gold.",
+   "icon": "/assets/set-18/hexcore__constructacompanion_iii.png",
+   "tier": "gold",
+   "associatedTraits": []
+  },
+  {
    "id": "TFT_Augment_ConstructACompanion",
    "name": "Construct a Companion",
    "desc": "The next 1-cost champion you buy is 3-star. Gain 2 gold.",
@@ -10852,14 +10860,6 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_DoubleTrouble",
-   "name": "Double Trouble",
-   "desc": "When you field exactly 2 copies of a champion, they both gain {DamageStatAdd}% Attack Damage and Ability Power and {DefenseStatAdd} Armor, and Magic Resist. When you 3-star, gain a 2-star copy.",
-   "icon": "/assets/set-18/hexcore__double-trouble-ii.png",
-   "tier": "gold",
-   "associatedTraits": []
-  },
-  {
    "id": "TFT6_Augment_Twins2",
    "name": "Double Trouble",
    "desc": "When you field exactly 2 copies of a champion, they both gain 30% Attack Damage and 30% Ability Power, Armor, and Magic Resist. When you 3-star, gain a 2-star copy.",
@@ -10926,7 +10926,7 @@
   {
    "id": "DA_ElectrochargeI",
    "name": "Electrocharge I",
-   "desc": "Every {ProcAttackCount} attacks an ally takes, they deal {DamageI}-{DamageI_4} (based on current Stage) magic damage to nearby enemies (1 second cooldown).",
+   "desc": "Every {ProcAttackCount} attacks an ally takes, they deal {DamageI}-{DamageI_2} (based on current Stage) magic damage to nearby enemies (1 second cooldown).",
    "icon": "/assets/set-18/hexcore__electrocharge-i.png",
    "tier": "silver",
    "associatedTraits": []
@@ -11272,6 +11272,14 @@
    "associatedTraits": []
   },
   {
+   "id": "DA_ForgeAFriend",
+   "name": "Forge A Friend",
+   "desc": "The next 1-cost champion you buy is {ActorLevel}-star. Gain 5 gold.",
+   "icon": "/assets/set-18/hexcore__constructacompanion_iii.png",
+   "tier": "silver",
+   "associatedTraits": []
+  },
+  {
    "id": "TFT_Augment_ForgedInStrength",
    "name": "Forged in Strength",
    "desc": "Gain 1 random Artifact. When you drop below 30 Health, gain 3 more random Artifacts.\n\nRemix Rumble Championship, 2023",
@@ -11354,7 +11362,7 @@
   {
    "id": "DA_GiantAndMighty",
    "name": "Giant and Mighty",
-   "desc": "Your team becomes large, gaining 200 Health and {HealthMultiplier}% max Health.",
+   "desc": "Your team becomes large, gaining 225 Health and {HealthMultiplier}% max Health.",
    "icon": "/assets/set-18/hexcore__giantandmighty_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -11642,7 +11650,7 @@
   {
    "id": "DA_HeartOfSteel",
    "name": "Heart of Steel",
-   "desc": "Gain a Steadfast Heart. Every {SurvivePeriodInSeconds} seconds of combat its holder survives, Steadfast Heart gains additional 16 permanent max Health.",
+   "desc": "Gain a Steadfast Heart. Every {SurvivePeriodInSeconds} seconds of combat its holder survives, Steadfast Heart gains additional 18 permanent max Health.",
    "icon": "/assets/set-18/hexcore__healthygains_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11698,7 +11706,7 @@
   {
    "id": "DA_HeroicGrabBag",
    "name": "Heroic Grab Bag",
-   "desc": "Gain 2 Lesser Champion Duplicators. Gain 4 gold.",
+   "desc": "Gain 2 Lesser Champion Duplicators. Gain 6 gold.",
    "icon": "/assets/set-18/hexcore__heroic-grab-bag-ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11850,7 +11858,7 @@
   {
    "id": "DA_InvestmentStrategyI",
    "name": "Investment Strategy I",
-   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Gain 4 gold now.",
+   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Gain 6 gold now.",
    "icon": "/assets/set-18/hexcore__investmentstrategy_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11866,7 +11874,7 @@
   {
    "id": "DA_InvestmentStrategy",
    "name": "Investment Strategy II",
-   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Your max interest is increased by {MaxInterestInc}. Gain 8 gold now.",
+   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Your max interest is increased by {MaxInterestInc}. Gain 10 gold now.",
    "icon": "/assets/set-18/hexcore__investmentstrategy_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -11922,7 +11930,7 @@
   {
    "id": "DA_BlackthornTraitAugment",
    "name": "Item Extraction",
-   "desc": "The first 3 times you sacrifice a champion in the Blackthorn hex, gain a copy of a random component they're holding. Gain an Azir, Veigar, and a Rek'Sai.",
+   "desc": "The first 3 times you sacrifice a champion in the Blackthorn hex, gain a copy of a random component they're holding. Gain an Azir and a Rek'Sai.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": [
@@ -12116,7 +12124,7 @@
   {
    "id": "DA_LevelUp",
    "name": "Level Up!",
-   "desc": "When you buy XP, gain an additional {AdditionalXP}. Gain 6 immediately.",
+   "desc": "When you buy XP, gain an additional {AdditionalXP}. Gain 10 immediately.",
    "icon": "/assets/set-18/hexcore__levelup3.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -12220,7 +12228,7 @@
   {
    "id": "DA_LuxurySubscription",
    "name": "Luxury Subscription",
-   "desc": "Gain a package containing a {1StarCost}-cost champion, a 2-star {2StarCost}-cost champion, and 3 gold.\n\nAt the start of the next {Stages} stages, gain the package again.",
+   "desc": "Gain a package containing a {1StarCost}-cost champion, a 2-star {2StarCost}-cost champion, and 5 gold.\n\nAt the start of the next {Stages} stages, gain the package again.",
    "icon": "/assets/set-18/hexcore__luxurysubscription_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -12608,7 +12616,7 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_PandorasItemsII",
+   "id": "DA_PandorasItemsIIMinus",
    "name": "Pandora's Items II",
    "desc": "Round start: items on your bench are randomized.\n\nGain {NumberOfComponentsII} random components and {GoldAmountII} gold.",
    "icon": "/assets/set-18/hexcore__pandora2.png",
@@ -12620,6 +12628,22 @@
    "name": "Pandora's Items II",
    "desc": "Round start: items on your bench are randomized.\n\nGain 2 random components.",
    "icon": "/assets/set-18/hexcore__pandora2.png",
+   "tier": "gold",
+   "associatedTraits": []
+  },
+  {
+   "id": "DA_PandorasItemsIIPlus",
+   "name": "Pandora's Items II+",
+   "desc": "Round start: items on your bench are randomized.\n\nGain {NumberOfComponentsII} random components and {GoldAmountIIPlus} gold.",
+   "icon": "/assets/set-18/hexcore__missing-t2.png",
+   "tier": "gold",
+   "associatedTraits": []
+  },
+  {
+   "id": "DA_PandorasItemsIIPlusPlus",
+   "name": "Pandora's Items II++",
+   "desc": "Round start: items on your bench are randomized.\n\nGain {NumberOfComponentsII} random components and {GoldAmountIIPlusPlus} gold.",
+   "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": []
   },
@@ -13050,7 +13074,7 @@
   {
    "id": "DA_Retribution",
    "name": "Retribution",
-   "desc": "Gain {NumItemsToGrant} Hands of Justice. Allies equipped with Hand of Justice gain Precision and 25% Critical Strike Chance.\n\nPrecision: Ability damage can critically strike. Additional Precision grants 10% Critical Strike Damage.",
+   "desc": "Gain {NumItemsToGrant} Hands of Justice. Allies equipped with Hand of Justice gain Precision and 15% Critical Strike Chance.\n\nPrecision: Ability damage can critically strike. Additional Precision grants 10% Critical Strike Damage.",
    "icon": "/assets/set-18/hexcore__retribution_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -13492,7 +13516,7 @@
   {
    "id": "DA_SpiritOfRedemption",
    "name": "Spirit Of Redemption",
-   "desc": "Gain a Spirit Visage. Every {TimeIntervalSeconds} seconds, Spirit Visage heals allies within 1 hex for 7.5% of their missing Health.",
+   "desc": "Gain a Spirit Visage. Every {TimeIntervalSeconds} seconds, Spirit Visage heals allies within 1 hex for 9% of their missing Health.",
    "icon": "/assets/set-18/hexcore__spiritofredemption_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -14122,7 +14146,7 @@
   {
    "id": "DA_VerticalityII",
    "name": "Verticality II",
-   "desc": "Champions gain 2% Attack Damage, 2% Ability Power, {resists} Armor, and {resists} Magic Resist for each ally that shares a trait with them.",
+   "desc": "Champions gain 2.5% Attack Damage, 2.5% Ability Power, {resists} Armor, and {resists} Magic Resist for each ally that shares a trait with them.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": []
@@ -14130,7 +14154,7 @@
   {
    "id": "DA_VerticalityIII",
    "name": "Verticality III",
-   "desc": "Champions gain 3.5% Attack Damage, 3.5% Ability Power, {resists} Armor, and {resists} Magic Resist for each ally that shares a trait with them.",
+   "desc": "Champions gain 4% Attack Damage, 4% Ability Power, {resists} Armor, and {resists} Magic Resist for each ally that shares a trait with them.",
    "icon": "/assets/set-18/hexcore__missing-t3.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -14194,7 +14218,7 @@
   {
    "id": "DA_WeStickTogether",
    "name": "We Stick Together",
-   "desc": "Gain a random Emblem and a completed item anvil. Allies that share a trait with that Emblem gain 30% Attack Speed. 0 0\n\nInto The Arcane Tactician's Crown, 2025",
+   "desc": "Gain an Emblem of a random trait and a completed item anvil. Allies with that trait gain 30% Attack Speed.\n0 0\n\nInto The Arcane Tactician's Crown, 2025",
    "icon": "/assets/set-18/hexcore__westicktogether_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
