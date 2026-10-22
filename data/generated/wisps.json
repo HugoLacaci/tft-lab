@@ -1,5 +1,5 @@
 {
- "syncedAt": "2026-10-22T17:11:32.067Z",
+ "syncedAt": "2026-10-22T21:36:25.482Z",
  "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
  "wisps": [
   {
@@ -556,13 +556,6 @@
    "locale": "en"
   },
   {
-   "name": "Hireling",
-   "cost": 2,
-   "desc": "A temporary 1-star 5-cost with 1 recommended items joins your team.",
-   "stage": "6-1 to 10-1",
-   "locale": "en"
-  },
-  {
    "name": "Homing Fireflies",
    "cost": 2,
    "desc": "Your Casters spawn a firefly per 20 Mana spent. Each deals 110 magic damage.",
@@ -602,13 +595,6 @@
    "cost": 2,
    "desc": "Your Marksmen's attacks grant 3% stacking Attack Speed.Requirements: at least 1 itemized marksmen on board",
    "stage": "4-2 to 10-1",
-   "locale": "en"
-  },
-  {
-   "name": "Moonlight Ritual",
-   "cost": 2,
-   "desc": "Your lowest star 1-cost or 2-cost champion stars up in combat.Requirements: at least 1 2-star 1 or 2-cost champion",
-   "stage": "3-1 to 4-7",
    "locale": "en"
   },
   {
@@ -941,6 +927,13 @@
    "locale": "en"
   },
   {
+   "name": "Moonlight Ritual",
+   "cost": 3,
+   "desc": "Your lowest star 1-cost or 2-cost champion stars up in combat.Requirements: at least 1 2-star 1 or 2-cost champion",
+   "stage": "3-1 to 4-7",
+   "locale": "en"
+  },
+  {
    "name": "Payday",
    "cost": 3,
    "desc": "For each ally champion that survives combat, gain 2 Gold.",
@@ -1127,6 +1120,13 @@
    "cost": 5,
    "desc": "Your 3 strongest Champions gain HEROIC POWER, but other allies are sacrificed.Requirements: 2 or more champions with 3+ items",
    "stage": "4-2 to 5-7",
+   "locale": "en"
+  },
+  {
+   "name": "Hireling",
+   "cost": 5,
+   "desc": "A temporary 1-star 5-cost with 1 recommended items joins your team.",
+   "stage": "6-1 to 10-1",
    "locale": "en"
   },
   {
