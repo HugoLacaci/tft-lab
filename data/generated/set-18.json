@@ -3,7 +3,7 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-10-28T12:55:29.227Z",
+  "syncedAt": "2026-10-28T22:35:24.992Z",
   "patch": "16.21",
   "source": "cdragon"
  },
@@ -5650,7 +5650,7 @@
    "id": "DA_HandOfJustice",
    "name": "Hand Of Justice",
    "desc": "Gain 2 effects:15% Attack Damage and 15% Ability Power.12% Omnivamp.\n\nWhile above 50% health, double the Attack Damage and Ability Power. While below 50% Health, double the Omnivamp.",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__tft_item_unstableconcoction.png",
    "composition": [
     "DA_Component_TearOfTheGoddess",
     "DA_Component_SparringGloves"
@@ -9186,7 +9186,7 @@
    "id": "TFT_Consumable_TrainingDummy",
    "name": "Training Dummy",
    "desc": "Use on a champion to spawn a movable Training Dummy nearby.\n\n [Cannot be used in combat.\nConsumable - This item disappears when used.]",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__tft_consumable_trainingdummy.png",
    "composition": [],
    "kind": "other",
    "effects": {},
@@ -13371,7 +13371,7 @@
    "id": "DA_SliceOfLife",
    "name": "Slice of Life",
    "desc": "Twice per stage, gain a random champion. Its cost increases by Stage. This effect ends after receiving {NumOfMaxCosts} {MaxChampCost}-cost champion.",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__slice_of_life_i.png",
    "tier": "silver",
    "associatedTraits": []
   },
@@ -13379,7 +13379,7 @@
    "id": "TFT_Augment_SliceOfLife",
    "name": "Slice of Life",
    "desc": "Twice per stage, gain a random champion. Its cost increases by Stage. This effect ends after receiving 1 5-cost champion.",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__slice_of_life_i.png",
    "tier": "silver",
    "associatedTraits": []
   },
