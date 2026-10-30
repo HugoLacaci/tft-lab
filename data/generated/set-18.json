@@ -3,7 +3,7 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-10-30T12:56:10.587Z",
+  "syncedAt": "2026-10-30T22:20:27.812Z",
   "patch": "16.21",
   "source": "cdragon"
  },
@@ -4414,7 +4414,9 @@
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
-   "effects": {},
+   "effects": {
+    "UpgradeHealth": 250
+   },
    "associatedTraits": [],
    "rich": "At the start of combat, a champion gains a temporary recommended item."
   },
