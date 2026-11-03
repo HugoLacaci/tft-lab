@@ -1,8 +1,17 @@
 {
- "syncedAt": "2026-11-03T14:15:56.831Z",
+ "syncedAt": "2026-11-03T23:24:39.617Z",
  "locale": "en-us",
  "source": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/",
  "index": [
+  {
+   "slug": "teamfight-tactics-patch-18-6",
+   "title": "Teamfight Tactics patch 18.6",
+   "description": "Small buffs & a standalone client that we’ll be iterating on in future patches. 18.6 is a big download!",
+   "publishedAt": "2026-11-03T19:00:00.000Z",
+   "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-6",
+   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7aaebca3079aebd84cd6c257a16beeb8a8ff31fb-1920x1080.jpg?accountingTag=TFT",
+   "patch": "18.6"
+  },
   {
    "slug": "teamfight-tactics-patch-18-5",
    "title": "Teamfight Tactics patch 18.5",
@@ -353,18 +362,51 @@
    "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-7-notes-2025",
    "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/31eaef6aa2dd2b8bb771ab9ebd195953cd21e79e-1920x1080.jpg?accountingTag=TFT",
    "patch": "14.7"
-  },
-  {
-   "slug": "teamfight-tactics-patch-14-6-notes-2025",
-   "title": "Teamfight Tactics patch 14.6 notes (2025)",
-   "description": "14.6 marks TFT’s sixth year anniversary, the return of Pengu’s Party, and a whole lotta buffs!",
-   "publishedAt": "2025-06-10T18:00:00.000Z",
-   "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-14-6-notes-2025",
-   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/a6f5f4ef5819dbf63ed18410dbb07521c43c7aac-1280x720.jpg?accountingTag=TFT",
-   "patch": "14.6"
   }
  ],
  "notes": [
+  {
+   "slug": "teamfight-tactics-patch-18-6",
+   "title": "Teamfight Tactics patch 18.6",
+   "description": "Small buffs & a standalone client that we’ll be iterating on in future patches. 18.6 is a big download!",
+   "publishedAt": "2026-11-03T19:00:00.000Z",
+   "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/teamfight-tactics-patch-18-6",
+   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/7aaebca3079aebd84cd6c257a16beeb8a8ff31fb-1920x1080.jpg?accountingTag=TFT",
+   "patch": "18.6",
+   "html": "<div><blockquote><p>It's the Tactician's Crown Patch!<br /><br />With our dedicated client launching this patch, the deploy is expected to take longer than normal across both PC &amp; mobile. We'll follow up with a more specific release time as the patch goes live across regions.<br /><br />The patch where we play the biggest tournament in the set is here, but you don't have to be competing for the crown to enjoy this one. With our 18.5 mid-patch updates last week that widened the meta by nerfing the dominant strategies (Kha'Zix and Brambleback) we're looking at small buffs to the Wilds for our 4-cost lines to keep them feeling Enchanted.<br /><br />Past balance changes, 18.6 has some huge changes, notably our move to a TFT standalone client, and some quality of life changes to in-game chat and more from our Follow the Fix efforts. For more details on the around-game changes to 18.6, including a small spoiler for Set 19 click it <a href=\"http://teamfighttactics.leagueoflegends.com/en-us/news/dev/new-client-set-19-tease-and-compensation-rewards\" target=\"_blank\" rel=\"noreferrer\">here</a>, and for more info on Follow the Fix click <a href=\"https://followthefix.teamfighttactics.leagueoflegends.com/en-us/\" target=\"_blank\" rel=\"noreferrer\">here</a> to check the site out which is still being updated each patch (note it gets updated after the patch deploys).<br /><br />Onto the notes!</p></blockquote><div><span><img src=\"https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/f6bf389636317d0e33ef7ab51c72928eda133f83-300x300.png\" /> Katie \"Riot Ukime\" Guo</span></div><div><span><img src=\"https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/324f7ff1edf0e0864b56f4068281aafdbb9af5f8-300x300.png\" /> Rodger \"Riot Prism\" Caudill</span></div><h2 id=\"patch-patch-highlights-\">PATCH HIGHLIGHTS</h2><div><div><div><a href=\"https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4009f3a70bc82d07e6ac7d6ba3598a8fd83eb236-1920x1080.jpg\" target=\"_blank\" rel=\"noreferrer\"><span><img src=\"https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4009f3a70bc82d07e6ac7d6ba3598a8fd83eb236-1920x1080.jpg\" /></span></a></div></div></div><h2 id=\"patch-new-standalone-client\">NEW STANDALONE CLIENT</h2><div><div><div><blockquote><p>Our standalone TFT client launches with this Patch! This initial release lays the foundation for improvements we'll roll out in 18.7 and beyond, leading up to Set 19.<br /><br />With this release, there are also some changes to cosmetics coming down the line. New cosmetics that have historically been usable across both TFT &amp; LoL—namely Little Legends &amp; Emotes—will not be shared cross-game as a result of being developed in different engines moving forward. Full details:<br /><br />Starting in Patch 19.1 with Set 19's release, you won't be able to use newly-released Little Legends as followers in ARAM. If you're currently using a Little Legend, you can still take them with you to the Howling Abyss, along with the rest of the Little Legend catalogue released before 19.1.<br /><br />Starting in Patch 19.2, TFT emotes will also be split from ones acquired in League of Legends. As with Little Legends, anything released prior to that patch will still be usable across both games.<br /><br />For more details on this, and the next two sections check out this <a href=\"http://teamfighttactics.leagueoflegends.com/en-us/news/dev/new-client-set-19-tease-and-compensation-rewards\" target=\"_blank\" rel=\"noreferrer\">link</a>.</p></blockquote></div></div></div><h2 id=\"patch-appreciation-missions\">APPRECIATION MISSIONS</h2><div><div><div><blockquote><p>We know the transition to Unreal has had its bumps, and we appreciate your patience and support. To say thanks and kick off Set 19, we're introducing a series of simple missions in Patch 19.1 and additional compensation for players who have purchased cosmetic content.</p></blockquote><hr /><ul><li>All Players:<ul><li>Play 1 game in Set 19 to earn <strong>500 Treasure Tokens</strong></li><li>Play 20 games in Set 19 to earn <strong>one random Mythic Chibi</strong><ul><li>To get specific: you'll earn a token that can be used on a new banner that contains only Mythic Chibis - no Unbound Tacticians or Mythic Little Legends.</li></ul></li></ul></li><li>Players who own a Mythic Tactician or Arena before Patch 18.7 will receive <strong>2 Mythic Medallions</strong></li><li>Players who own a Prestige Tactician before Patch 18.7 will receive an <strong>Unannounced Mythic Chibi</strong></li></ul></div></div></div><h2 id=\"patch-large-changes\">LARGE CHANGES</h2><div><div><div><blockquote><p>Large, like this patch's download size. Don't worry, future patches will return to normal size.</p></blockquote><hr /><h4>TRAITS</h4><p>Blossom and Sprykin: Buffing the verticals here that you typically play with an Emblem so you don't feel like you need a reforger when you get a Blossom/Sprykin Emblem. For Spykin, we're also buffing the backline option as most players opt to buff their melee tank or an Emblem-toting Rengar.</p><p>Elderwood: Elderwood (9) continues to outperform our other verticals even while being Emblem and skill-dependent.</p><ul><li><strong>Blossom</strong><ul><li>AD/AP: 12/30/50/55% <span>⇒</span> 12/30/55/65%</li></ul></li><li><strong>Elderwood</strong><ul><li>9 Piece HP Bonus: 25% <span>⇒</span> 10%</li></ul></li><li><strong>Sprykin</strong><ul><li>BFF Ranged AD/AP: 15/28/33% <span>⇒</span> 15/30/38%</li></ul></li></ul><hr /><h4>UNITS: TIER 1</h4><p>Kobuko and Rek'Sai: Ideally all our 1-costs have spots in various boards in the early and mid-game, but these two are often dropped from boards before we even get there. With these buffs we also expect the power floors of reroll Teemo and Veigar comps to be slightly higher as they often keep these champs around for longer.</p><ul><li><strong>Kobuko</strong><ul><li>Spell Healing (AP): 285/335/480 <span>⇒</span> 300/350/550</li></ul></li><li><strong>Rek'Sai</strong><ul><li>Spell Healing (AP): 10/14/20 <span>⇒</span> 10/16/24</li></ul></li></ul><hr /><h4>UNITS: TIER 2</h4><p>Murkwolf: Brambleback's nerf hurt this puppy's comp. And since he's never been the primary carry on reroll Ravager or Riftbeast boards, there's plenty of room to buff pup in the ruff to be worth the chase.</p><ul><li><strong>Murkwolf</strong><ul><li>Empowered Attack Damage: 65/100/160 AD <span>⇒</span> 65/100/180 AD</li></ul></li></ul><hr /><h4>UNITS: TIER 4</h4><p>Malphite: Malphite's getting a better AP ratio on his shield and his ability's damage. While the ability damage shouldn't be too impactful, it might allow him to actually clean up a fight if your backliners got wrapped by a rogue Brambleback that's just made it out with a sliver of health.</p><p>Nidalee: AD Nidaless dies pretty fast to Ahri/Zyra boards, so increasing her survivability should allow her to cycle through casts more effectively. A stronger third cast should help get through those pesky frontliners she gets stuck on like the cat-nip stuffed punching bags they tend to be. Nidalee's AP form has yet to really emerge as a primary carry in a comp this set. This is our bigger buff for the patch (although it's still relatively small) with buffs to her javelin attacks and a bigger one to the final javelin. Keep a look out for AP Nidalee/Juggernaut comps in lobbies near you.</p><p>Sentinel: If you're not running Malphite, you're likely running Sentinel in AP flex lines. Both are in a tough spot to play as primary tanks, so for Sentinel we're increasing the shield HP ratio making item's like Warmog's that much better.</p><ul><li><strong>Malphite</strong><ul><li>Shield: 735/885/2000 (AP) <span>⇒</span> 750/925/2000 (AP)</li><li>Spell Damage (AP): 40/60/2000 <span>⇒</span> 100/150/2000</li></ul></li><li><strong>Nidalee</strong><ul><li><strong>AD Form</strong><ul><li>Heal: 300/450/2000 (AP) <span>⇒</span> 325/550/2000 (AP)</li><li>Third Cast Bonus Damage: 125% <span>⇒</span> 140%</li></ul></li><li><strong>AP Form</strong><ul><li>Empowered Attack Damage: 185/275/2000 (AP) <span>⇒</span> 195/295/2000 (AP)</li><li>Third Attack Damage: 330/500/3000 (AP) <span>⇒</span> 350/525/3000 (AP)</li></ul></li></ul></li><li><strong>Sentinel</strong><ul><li>Shield HP Ratio: 10% <span>⇒</span> 12%</li></ul></li></ul><hr /><h4>AUGMENTS</h4><p>A lot of our combat Augments are strong, but Clockwork Accelerator and Plot Armor are not up to par with them.</p><p>Currently, Shopping Spree is our worst performing econ Prismatic on 2-1. Not by that much, but maybe by just one gold?</p><p>Unrivaled was hit hard by our Kha'Zix nerfs and it wasn't exactly meta before either. So we've got a real game changer of a buff for the duo here.</p><ul><li><strong>Clockwork Accelerator</strong><ul><li>AS per Proc: 10% <span>⇒</span> 12%</li></ul></li><li><strong>Embiggen</strong><ul><li>Bonus Pixie AD/AP: 50% <span>⇒</span> 35%</li></ul></li><li><strong>Plot Armor</strong><ul><li>Base Resists: 8 <span>⇒</span> 10</li></ul></li><li><strong>Shopping Spree</strong><ul><li>Initial Gold Granted: 6 <span>⇒</span> 7</li></ul></li><li><strong>Unrivaled</strong><ul><li>Rengar Heal Share: 25% <span>⇒</span> 50%</li><li>Kha'Zix Mana Share: 50% <span>⇒</span> 70%</li></ul></li></ul><hr /><h4>WISPS</h4><p>Emblems, especially when you can get multiple, can become powerful albeit situational win conditions. We're increasing the cost of Emblems with the Curio Cart to make them a bit bigger of an econ trade off.</p><p>Middle Path, which provides a shop full of two-star 3-costs is a situational yet high-powered Wisp. It's either great for your comp, or not worth the click already, but when it is great, it provides too much consistency for its cost.</p><ul><li><strong>Curio Cart</strong><ul><li>Emblem Cost: 15 <span>⇒</span> 17</li></ul></li><li><strong>Middle Path</strong><ul><li>Cost: 4 <span>⇒</span> 5</li><li>Upgrade Cost: 3 <span>⇒</span> 4</li></ul></li></ul></div></div></div><h2 id=\"patch-bug-fixes-and-follow-the-fix-check-in\">BUG FIXES AND FOLLOW THE FIX CHECK IN</h2><div><div><div><blockquote><p>While we'll still be listing our bug fixes for the patch here, be sure to check out the <a href=\"https://followthefix.teamfighttactics.leagueoflegends.com/en-us/\" target=\"_blank\" rel=\"noreferrer\">Follow the Fix</a> (FTF) website for a broader look at fixes, quality of life improvements, cosmetics conversion process, and more scheduled for this patch, next patch, and beyond. Some big bug highlights here are from the FTF tracker, such as adjusting in-game chat to show more lines with better readability and the re-introduction of Streamer mode.</p></blockquote><ul><li>Adjusted in-game chat to show more lines of chat with better-sized text and a lighter, less intrusive chat window</li><li>Fixed an issue where some consumables would switch places on the item bench after being used</li><li>Blighting Jewel no longer grants more AP than intended.</li><li>Calculated Loss now correctly grants gold at the beginning of the next planning phase.</li><li>Slightly Magic Roll now correctly grants its HP and size.</li><li>Cooking Pot is properly excluded from Coronation and Spreading Roots</li><li>Flexible and U.R.F. should now be mutually exclusive.</li><li>Gambler's Blade no longer drops gold on PVE rounds.</li><li>Streamer Mode has been returned</li><li>Hard Commit no longer grants ineligible emblems.</li><li>Moonrise and Solar Gift Wisp upgrades will no longer appear in the shop when Blossom is inactive.</li><li>Fixed various crashes</li><li>Fixed an issue where tethers were not always connecting properly to the target (visual only)</li><li>Fixed an issue where projectiles were moving inconsistently if both units were moving at the same time</li><li>Worth the Wait and Worth the Wait II now properly display the select champion's name in the Augment tooltip</li><li>Choncc or Treat: Solo Leveling has been disabled due to a trick (bug)</li><li>Slightly shortened Carousel release wait time</li><li>In the shop, Buy XP and Reroll hover states are easier to see on PC.</li><li>Fixed some issues causing Item borders to go missing on Mobile</li><li>/Deafen has been re-added as an in-chat command</li><li>Clear Mind will no longer grant XP erroneously under certain circumstances.</li><li>Cluttered mind will no longer grant XP erroneously under certain circumstances.</li><li>Nesting Anvils will no longer fail to grant the component anvil and gold when the player has a full bench</li></ul></div></div></div><h2 id=\"patch-cosmetics-converted-in-patch-18.6\">COSMETICS CONVERTED IN PATCH 18.6</h2><div><div><div><blockquote><p>73 Cosmetics will be readded this patch in addition to a couple of Arenas (not listed).</p></blockquote><ul><li>Prestige Chibi (1): Chibi Prestige Cafe Cuties Gwen</li><li>Mythic Chibi (2): Chibi Bewitching Yuumi; Chibi Dragonmancer Kai'Sa</li><li>Mythic Unbound (2): God-King Garen Unbound; T1 Pyke Unbound</li><li>Base Chibi (1): Chibi Ezreal</li><li>Little Legends (49): Anniversary Pengu; Atlantean Choncc; Chaos Pengu; Choncc; Disco Choncc; Drip Drummer Choncc; Earth Titan Choncc; Emo Choncc; Fabulous Fleur Choncc; Fencing Foilist Pengu; Fireborn Choncc; Honeybuzz Choncc; K/DA ALL OUT Featherknight; K/DA POP/STARS Featherknight; Kanmei Featherknight; Kiwi Doughcat; Lifeguard Choncc; Lunar Beast Choncc; Lunar Revel Choncc; Mixmaster Choncc; Order Pengu; Pengu Featherknight; Pengu Lisa; Pengu Pengu; Pentakill Choncc; Poggles Cosplay Pengu; Precious Panda Choncc; Ravenlord Featherknight; Rice Doughcat; Sakura Featherknight; Splash Town Choncc; Sun Kissed Choncc; Terra Inktales Featherknight; Tristana Cosplay Pengu; True Ice Featherknight; Umbra; Yasuo Cosplay Pengu; God of Tactics Pengu; Twilight Tactics Pengu; Akana Featherknight; Cheeper Featherknight; Dragon Trainer Pengu; Extra Spicy Featherknight; Ghost Doughcat; Ham Doughcat; Pengu with a Parasol; Salmon Doughcat; Whisker; Party God of Tactics Pengu</li><li>Mythic Booms (13): Bewitching Prowling Projectile; Chosen of the Wolf Death Lotus; Dragon Trainer Buster Shot; Galaxy Slayer Razor Shuriken; God-King Demacian Justice; Guqin Crescendo; High Noon Death Sentence; Mythmaker Paddle Star!; Mythmaker Vanguard’s Edge; Needlework; PROJECT: Silver Bolts; Star Guardian Glitterlance; Star Guardian Unleashed Power</li><li>Legendary Booms (6): Dawning Shadow; Death Sentence; Last Breath; Miss Fortune Make It Rain; Summon: Tibbers; Death From Below</li><li>Standard Boom (1): Make it Rain</li></ul></div></div></div></div>",
+   "headings": [
+    {
+     "level": 2,
+     "text": "PATCH HIGHLIGHTS",
+     "id": "patch-patch-highlights-"
+    },
+    {
+     "level": 2,
+     "text": "NEW STANDALONE CLIENT",
+     "id": "patch-new-standalone-client"
+    },
+    {
+     "level": 2,
+     "text": "APPRECIATION MISSIONS",
+     "id": "patch-appreciation-missions"
+    },
+    {
+     "level": 2,
+     "text": "LARGE CHANGES",
+     "id": "patch-large-changes"
+    },
+    {
+     "level": 2,
+     "text": "BUG FIXES AND FOLLOW THE FIX CHECK IN",
+     "id": "patch-bug-fixes-and-follow-the-fix-check-in"
+    },
+    {
+     "level": 2,
+     "text": "COSMETICS CONVERTED IN PATCH 18.6",
+     "id": "patch-cosmetics-converted-in-patch-18.6"
+    }
+   ]
+  },
   {
    "slug": "teamfight-tactics-patch-18-5",
    "title": "Teamfight Tactics patch 18.5",
@@ -673,17 +715,6 @@
      "id": "patch-large-changes"
     }
    ]
-  },
-  {
-   "slug": "enchanted-wilds-overview",
-   "title": "Enchanted Wilds Overview",
-   "description": "Learn about Wisps and most of the new traits found in the Enchanted Wilds!",
-   "publishedAt": "2026-07-27T15:00:00.000Z",
-   "url": "https://teamfighttactics.leagueoflegends.com/en-us/news/game-updates/enchanted-wilds-overview",
-   "image": "https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/4655b20a93afd761e45a6442a0aecb33aa0077af-1920x1080.jpg?accountingTag=TFT",
-   "patch": null,
-   "html": "<p>Make your way through the Enchanted Wilds, a set full of life from the summons of Elderwood, to the varied and helpful Wisps. Here we’ll go over some of the big verticals that comprise much of this forest and explore how Wisps work. So get ready to enter the Enchanted Wilds with our overview before the set goes live with patch 18.1 on August 26th!</p><h3>WISPS </h3><p>Wisps are an updated version of our Charms mechanic from Set 12, Magic N’ Mayhem, with quite a few quality-of-life changes and an all-new, adorable, dare-I-say enchanting, visual appearance.</p><p>Not sure what Charms or Wisps do? Here's a quick refresher: Wisps appear in your shop as temporary single-use sources of power in Combat, for resources like XP or gold, or even risky deals with conniving forest denizens.</p><p>You can purchase one Wisp per round, and it’ll appear in every other shop. Wisps will always appear in the rightmost slot, with most lasting just one round. As the game progresses, Wisps tend to get more powerful. And more powerful Wisps also cost more!</p>",
-   "headings": []
   }
  ]
 }
