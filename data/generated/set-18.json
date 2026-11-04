@@ -3,8 +3,8 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-11-04T06:22:57.293Z",
-  "patch": "16.21",
+  "syncedAt": "2026-11-04T19:45:53.844Z",
+  "patch": "16.22",
   "source": "cdragon"
  },
  "champions": [
@@ -2365,10 +2365,10 @@
    "stats": {
     "hp": 1300,
     "ad": 55,
-    "armor": 65,
+    "armor": 70,
     "mr": 70,
     "range": 1,
-    "mana": 70,
+    "mana": 65,
     "initialMana": 0,
     "attackSpeed": 0.75,
     "critChance": 0.25,
@@ -4182,15 +4182,15 @@
   {
    "id": "DA_BeggarsWisp18",
    "name": "Beggar's Wisp",
-   "desc": "The wilds couldn't find a wisp for you this roll. Gain 3 gold.",
+   "desc": "The wilds couldn't find a wisp for you this roll. Gain 2 gold.",
    "icon": "/assets/set-18/wands__set18_mechanicicon.png",
    "composition": [],
    "kind": "charm",
    "effects": {
-    "Gold": 3
+    "Gold": 2
    },
    "associatedTraits": [],
-   "rich": "The wilds couldn't find a wisp for you this roll. Gain 3 gold."
+   "rich": "The wilds couldn't find a wisp for you this roll. Gain 2 gold."
   },
   {
    "id": "DA_BigBoom18",
@@ -10168,7 +10168,7 @@
   {
    "id": "DA_BronzeForLifeII",
    "name": "Bronze For Life II",
-   "desc": "Your team gains 2.5% Damage Amp and 3 Armor and Magic Resist for each Bronze-tier trait.",
+   "desc": "Your team gains 2.5% Damage Amp and 2.5 Armor and Magic Resist for each Bronze-tier trait.",
    "icon": "/assets/set-18/hexcore__bronzeforlife_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -10192,7 +10192,7 @@
   {
    "id": "DA_BuildABud",
    "name": "Build A Bud",
-   "desc": "Gain a random {ActorLevel}-star 1-cost champion. Gain 6 gold.",
+   "desc": "Gain a random {ActorLevel}-star 1-cost champion. Gain 9 gold.",
    "icon": "/assets/set-18/hexcore__constructacompanion_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -10652,7 +10652,7 @@
   {
    "id": "DA_CookingPot",
    "name": "Cooking Pot",
-   "desc": "At the start of each turn, all allies holding a Frying Pan or Spatula item grant the nearest champion 60 permanent Health. Gain a Frying Pan.",
+   "desc": "At the start of each turn, all allies holding a Frying Pan or Spatula item grant the nearest champion 70 permanent Health. Gain a Frying Pan.",
    "icon": "/assets/set-18/hexcore__cookingpot_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -10750,7 +10750,7 @@
   {
    "id": "DA_CryMeARiver",
    "name": "Cry Me A River",
-   "desc": "Gain a Tear of the Goddess. Your team gains 1 Mana Regen. After {UpgradeDelay} seconds in combat, increase this to 4.",
+   "desc": "Gain a Tear of the Goddess. Your team gains 1 Mana Regen. After {UpgradeDelay} seconds in combat, increase this to 3.",
    "icon": "/assets/set-18/hexcore__crymeariver_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11650,14 +11650,6 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_HeartOfSteel",
-   "name": "Heart of Steel",
-   "desc": "Gain a Steadfast Heart. Every {SurvivePeriodInSeconds} seconds of combat its holder survives, Steadfast Heart gains additional 18 permanent max Health.",
-   "icon": "/assets/set-18/hexcore__healthygains_ii.png",
-   "tier": "gold",
-   "associatedTraits": []
-  },
-  {
    "id": "TFT_Augment_WarmogsBuckle",
    "name": "Heart of Steel",
    "desc": "Gain a Steadfast Heart. Every 10 seconds of combat its holder survives, Steadfast Heart gains additional {Health} permanent max Health.",
@@ -11860,7 +11852,7 @@
   {
    "id": "DA_InvestmentStrategyI",
    "name": "Investment Strategy I",
-   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Gain 6 gold now.",
+   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Gain 3 gold now.",
    "icon": "/assets/set-18/hexcore__investmentstrategy_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -11876,7 +11868,7 @@
   {
    "id": "DA_InvestmentStrategy",
    "name": "Investment Strategy II",
-   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Your max interest is increased by {MaxInterestInc}. Gain 10 gold now.",
+   "desc": "Your champions gain {MaxHealthPerInterest} permanent max health per interest you earn. Your max interest is increased by {MaxInterestInc}. Gain 6 gold now.",
    "icon": "/assets/set-18/hexcore__investmentstrategy_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -12294,7 +12286,7 @@
   {
    "id": "DA_MaliciousMonetization",
    "name": "Malicious Monetization",
-   "desc": "Gain 4 gold. For the next 2 rounds, enemy champions drop {GoldPerEnemy} gold when killed.",
+   "desc": "Gain 6 gold. For the next 2 rounds, enemy champions drop {GoldPerEnemy} gold when killed.",
    "icon": "/assets/set-18/hexcore__mirroredmonetization_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -12442,7 +12434,7 @@
   {
    "id": "DA_NestingAnvils",
    "name": "Nesting Anvils",
-   "desc": "Gain an Artifact Anvil. After you open it, gain a Component Anvil. After you open that, gain 4 gold.",
+   "desc": "Gain an Artifact Anvil. After you open it, gain a Component Anvil. After you open that, gain 6 gold.",
    "icon": "/assets/set-18/hexcore__missing-t3.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -12506,7 +12498,7 @@
   {
    "id": "DA_18_RiftbeastTraitAugment",
    "name": "Omega Riftbeast",
-   "desc": "You can now choose a second Alpha Riftbeast. Alpha Riftbeasts gain 15% max Health and 12% Attack Speed. Gain a Scuttlecrab, a Cinderling, and a Pebbles.",
+   "desc": "You can now choose a second Alpha Riftbeast. Alpha Riftbeasts gain 8% max Health and 8% Attack Speed. Gain a Scuttlecrab, a Cinderling, and a Pebbles.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": [
@@ -12588,7 +12580,7 @@
   {
    "id": "DA_PandorasBench",
    "name": "Pandora's Bench",
-   "desc": "At the start of every round, champions on the 3 rightmost bench slots transform into random champions of the same cost. Gain 4 gold.",
+   "desc": "At the start of every round, champions on the 3 rightmost bench slots transform into random champions of the same cost. Gain 1 gold.",
    "icon": "/assets/set-18/hexcore__pandoras-bench-ii.png",
    "tier": "silver",
    "associatedTraits": []
@@ -12812,7 +12804,7 @@
   {
    "id": "DA_PrismaticDestiny",
    "name": "Prismatic Destiny",
-   "desc": "Gain a random Prismatic Augment and 4 gold.",
+   "desc": "Gain a random Prismatic Augment and 2 gold.",
    "icon": "/assets/set-18/hexcore__prismaticdestiny_iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -13204,7 +13196,7 @@
   {
    "id": "DA_SeraphimsStaff",
    "name": "Seraphim's Staff",
-   "desc": "Gain an Archangel's Staff. Archangel's Staff grants 2 additional Mana Regen if its holder has 90% or more Ability Power.",
+   "desc": "Gain an Archangel's Staff. Archangel's Staff grants 2 additional Mana Regen if its holder has 110% or more Ability Power.",
    "icon": "/assets/set-18/hexcore__seraphimsstaff_ii.png",
    "tier": "gold",
    "associatedTraits": []
