@@ -1,5 +1,5 @@
 {
- "syncedAt": "2026-11-04T19:46:13.321Z",
+ "syncedAt": "2026-11-05T06:47:17.798Z",
  "source": "https://lolchess.gg/rewards/set18/wisps?hl=en",
  "wisps": [
   {
@@ -33,7 +33,7 @@
   {
    "name": "Curio Cart",
    "cost": 0,
-   "desc": "Open an item store. Items cost 0 to 15 gold.Requirements: at least 10 gold",
+   "desc": "Open an item store. Items cost 0 to 17 gold.Requirements: at least 10 gold",
    "stage": "3-1 to 4-7",
    "locale": "en"
   },
@@ -586,7 +586,7 @@
   {
    "name": "Mana-Rich Soil",
    "cost": 2,
-   "desc": "Your Casters have 15% reduced Max Mana.Requirements: at least 1 itemized casters on board",
+   "desc": "Your Casters have 18% reduced Max Mana.Requirements: at least 1 itemized casters on board",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -831,7 +831,7 @@
   {
    "name": "Combust",
    "cost": 3,
-   "desc": "Your champions explode on death, dealing 15% Max Health magic damage.",
+   "desc": "Your champions explode on death, dealing 12% Max Health magic damage.",
    "stage": "5-1 to 10-1",
    "locale": "en"
   },
@@ -1109,13 +1109,6 @@
    "locale": "en"
   },
   {
-   "name": "Middle Path",
-   "cost": 4,
-   "desc": "Reroll your shop with all 2-star 3-cost champions.",
-   "stage": "3-5 to 4-7",
-   "locale": "en"
-  },
-  {
    "name": "Heroic Sacrifice",
    "cost": 5,
    "desc": "Your 3 strongest Champions gain HEROIC POWER, but other allies are sacrificed.Requirements: 2 or more champions with 3+ items",
@@ -1127,6 +1120,13 @@
    "cost": 5,
    "desc": "A temporary 1-star 5-cost with 1 recommended items joins your team.",
    "stage": "6-1 to 10-1",
+   "locale": "en"
+  },
+  {
+   "name": "Middle Path",
+   "cost": 5,
+   "desc": "Reroll your shop with all 2-star 3-cost champions.",
+   "stage": "3-5 to 4-7",
    "locale": "en"
   },
   {
