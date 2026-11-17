@@ -3,7 +3,7 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-11-17T07:55:46.510Z",
+  "syncedAt": "2026-11-17T20:56:04.765Z",
   "patch": "16.22",
   "source": "cdragon"
  },
@@ -10841,7 +10841,7 @@
    "id": "DA_DeadlierCaps",
    "name": "Deadlier Caps",
    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant 1 Mana Regen and permanently gain {AbilityPowerPercent}% Ability Power whenever their holders score a takedown.",
-   "icon": "/assets/set-18/hexcore__deadliercaps_ii.png",
+   "icon": "",
    "tier": "prismatic",
    "associatedTraits": []
   },
@@ -10849,7 +10849,7 @@
    "id": "TFT_Augment_DeadlierCaps",
    "name": "Deadlier Caps",
    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant 1 Mana Regen and permanently gain {AP}% Ability Power whenever their holders score a takedown.",
-   "icon": "/assets/set-18/hexcore__deadliercaps_ii.png",
+   "icon": "",
    "tier": "prismatic",
    "associatedTraits": []
   },
