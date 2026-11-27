@@ -3,8 +3,8 @@
   "number": 18,
   "name": "Set10",
   "mutator": "TFTSet18",
-  "syncedAt": "2026-11-17T20:56:04.765Z",
-  "patch": "16.22",
+  "syncedAt": "2026-11-27T08:34:10.189Z",
+  "patch": "16.23",
   "source": "cdragon"
  },
  "champions": [
@@ -3097,12 +3097,12 @@
     {
      "units": 7,
      "style": "gold",
-     "desc": "(7) Gain {GoldPerCharmPurchased} gold after buying a Wisp, 50%"
+     "desc": "(7) Gain {GoldPerCharmPurchased} gold after buying a Wisp, 55%"
     },
     {
      "units": 9,
      "style": "gold",
-     "desc": "(9) You can buy 2 Wisps per round, 55%"
+     "desc": "(9) You can buy 2 Wisps per round, 65%"
     },
     {
      "units": 11,
@@ -9932,7 +9932,7 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_18_BigGrabBag",
+   "id": "DA_BigGrabBag",
    "name": "Big Grab Bag",
    "desc": "Gain 3 random components, 2 gold, and 1 Reforger.",
    "icon": "/assets/set-18/hexcore__grab-bag-ii.png",
@@ -10118,7 +10118,7 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_18_BranchingOut",
+   "id": "DA_BranchingOut",
    "name": "Branching Out",
    "desc": "Gain a random Emblem.",
    "icon": "/assets/set-18/hexcore__branching-out-i.png",
@@ -10134,7 +10134,7 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_18_BranchingOutPlus",
+   "id": "DA_BranchingOutPlus",
    "name": "Branching Out+",
    "desc": "Gain a random Emblem and a Reforger.",
    "icon": "/assets/set-18/hexcore__branching-out-i.png",
@@ -10466,7 +10466,7 @@
   {
    "id": "DA_ClockworkAccelerator",
    "name": "Clockwork Accelerator",
-   "desc": "Your team gains 10% Attack Speed every {FrequencySeconds} seconds in combat.",
+   "desc": "Your team gains 12% Attack Speed every {FrequencySeconds} seconds in combat.",
    "icon": "/assets/set-18/hexcore__clockworkaccelerator_ii.png",
    "tier": "gold",
    "associatedTraits": []
@@ -10841,7 +10841,7 @@
    "id": "DA_DeadlierCaps",
    "name": "Deadlier Caps",
    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant 1 Mana Regen and permanently gain {AbilityPowerPercent}% Ability Power whenever their holders score a takedown.",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__deadliercaps_ii.png",
    "tier": "prismatic",
    "associatedTraits": []
   },
@@ -10849,7 +10849,7 @@
    "id": "TFT_Augment_DeadlierCaps",
    "name": "Deadlier Caps",
    "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant 1 Mana Regen and permanently gain {AP}% Ability Power whenever their holders score a takedown.",
-   "icon": "",
+   "icon": "/assets/set-18/hexcore__deadliercaps_ii.png",
    "tier": "prismatic",
    "associatedTraits": []
   },
@@ -10960,7 +10960,7 @@
   {
    "id": "DA_18_FaeTraitAugment",
    "name": "Embiggen",
-   "desc": "Fae pixies are now larger and grant 50% more Attack Damage and Ability Power. Fae champions gain {UpfrontADAP}% Attack Damage and Ability Power immediately. Gain a Xayah and a Rakan.",
+   "desc": "Fae pixies are now larger and grant 35% more Attack Damage and Ability Power. Fae champions gain {UpfrontADAP}% Attack Damage and Ability Power immediately. Gain a Xayah and a Rakan.",
    "icon": "/assets/set-18/hexcore__missing-t2.png",
    "tier": "gold",
    "associatedTraits": [
@@ -11538,7 +11538,7 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_18_GoodForSomethingI",
+   "id": "DA_GoodForSomethingI",
    "name": "Good For Something I",
    "desc": "Champions that aren't holding items have a {ChangeDrop}% chance to drop 1 gold on death.",
    "icon": "/assets/set-18/hexcore__good-for-something-i.png",
@@ -12538,9 +12538,9 @@
    "associatedTraits": []
   },
   {
-   "id": "DA_18_OneTwoFive",
+   "id": "DA_OneTwoFive",
    "name": "One, Two, Five!",
-   "desc": "Gain 1 random component, 2 gold, and 1 random 5-cost champion.",
+   "desc": "Gain 1 random component, 2 gold, and 1 random 5-cost champion",
    "icon": "/assets/set-18/hexcore__one-two-five-i.png",
    "tier": "silver",
    "associatedTraits": []
@@ -13228,7 +13228,7 @@
   {
    "id": "DA_ShoppingSpree",
    "name": "Shopping Spree",
-   "desc": "When you level up, gain a number of Shop refreshes equal to your level +1. Gain 6 gold.",
+   "desc": "When you level up, gain a number of Shop refreshes equal to your level +1. Gain 7 gold.",
    "icon": "/assets/set-18/hexcore__silver-ticket-iii.png",
    "tier": "prismatic",
    "associatedTraits": []
@@ -13574,7 +13574,7 @@
   {
    "id": "DA_Staffsmith",
    "name": "Staffsmith",
-   "desc": "Gain  {ItemQuantity} random completed items that build from Needlessly Large Rod.",
+   "desc": "Gain {ItemQuantity} random completed items that build from Needlessly Large Rod.",
    "icon": "/assets/set-18/hexcore__rodsmith_ii.png",
    "tier": "gold",
    "associatedTraits": []
