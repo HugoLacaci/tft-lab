@@ -80,7 +80,7 @@
     "type": "augment",
     "options": [
       "DA_18_ElderwoodTraitAugment",
-      "DA_18_BigGrabBag",
+      "DA_BigGrabBag",
       "DA_18_FOURcing"
     ],
     "correct": "DA_18_ElderwoodTraitAugment"

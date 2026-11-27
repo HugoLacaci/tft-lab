@@ -852,7 +852,7 @@
           "augmentId": "DA_JeweledLotus_I"
         },
         {
-          "augmentId": "DA_PandorasItemsII"
+          "augmentId": "DA_PandorasItemsIIMinus"
         },
         {
           "augmentId": "DA_Epoch"
@@ -1986,7 +1986,7 @@
           "augmentId": "DA_PortableForge"
         },
         {
-          "augmentId": "DA_PandorasItemsII"
+          "augmentId": "DA_PandorasItemsIIMinus"
         }
       ],
       "howToPlay": [
@@ -2655,7 +2655,7 @@
           "augmentId": "DA_SpreadingRoots"
         },
         {
-          "augmentId": "DA_18_BranchingOut",
+          "augmentId": "DA_BranchingOut",
           "note": "Emblem > items > econ."
         },
         {
